@@ -2,7 +2,7 @@
 
 The research behind [c4site.com.au](https://c4site.com.au): the tool guides, where your data goes, what the rules say, the AI answers we checked, the templates and the change log. Every fact names the page it came from and the date we read it.
 
-It's free to reuse under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Please credit "C4Site, c4site.com.au".
+It's free to reuse under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Please credit "C4Site, c4site.com.au". The licence's text is in `LICENSE`, and `NOTICE.md` covers credit and the words we quote.
 
 ## What's here
 
