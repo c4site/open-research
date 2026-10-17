@@ -1,0 +1,303 @@
+[
+  {
+    "id": "claude-to-zoom",
+    "from": "Claude",
+    "to": "Zoom (Zoom for Claude)",
+    "who": "anyone",
+    "plan_needed": "A licensed user on Zoom Workplace Pro, Pro Plus, Business, Business Plus, Enterprise, Enterprise Plus or Enterprise Bundle, with a Zoom account owner or admin with privileges, and meeting summary and smart recording switched on. A Claude account; Zoom's page doesn't name a Claude plan. On Claude Team or Enterprise an Owner adds the connector first.",
+    "steps": [
+      {
+        "where": "Claude (claude.ai or the desktop app), Customize",
+        "do": "Go to Customize > Connectors and select Discover.",
+        "see": "The Connectors directory opens."
+      },
+      {
+        "where": "Claude Connectors directory",
+        "do": "Search for Zoom for Claude (made by Zoom, Anthropic verified), open it and select Connect to Claude.",
+        "see": "You're sent to Zoom to sign in."
+      },
+      {
+        "where": "Zoom sign-in",
+        "do": "Sign in to Zoom and approve the access requested.",
+        "see": "You're returned to Claude. The exact Zoom approval screen isn't described in the docs we read."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Select + in the message box, then Connectors, and switch Zoom on.",
+        "see": "Zoom is available in this conversation."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Ask about a recorded meeting, for example its action items, or ask Claude to make a Zoom Doc of them.",
+        "see": "Claude answers from meeting summaries, transcripts and recordings you hosted or were given access to. Zoom's example says Claude confirms before creating a new Zoom Doc."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Claude, Customize > Connectors",
+        "do": "Select the Zoom connector, then Disconnect, or use the three-dot menu to Remove it.",
+        "see": "Claude is signed out of Zoom."
+      },
+      {
+        "where": "Zoom Marketplace, My Library",
+        "do": "Click the More icon next to the app, then Remove, and confirm.",
+        "see": "The app is removed from your Zoom account."
+      }
+    ],
+    "source": "S51, S34, S33, S50, S55",
+    "doc_updated": null
+  },
+  {
+    "id": "claude-to-zoom-canvas",
+    "from": "Claude",
+    "to": "Zoom Canvas",
+    "who": "anyone",
+    "plan_needed": "Zoom Canvas enabled, a Zoom account owner or admin with privileges (non-admins can add it only if the app is pre-approved in the Zoom Marketplace), a Claude account, and permission to connect third-party apps if your organisation manages that.",
+    "steps": [
+      {
+        "where": "Claude, left navigation",
+        "do": "Click Customize, then Connectors.",
+        "see": "Your connectors list."
+      },
+      {
+        "where": "Claude, Connectors",
+        "do": "Click the add icon, then Browse connectors. Search for Zoom Canvas and click Connect.",
+        "see": "You're sent to the Zoom Canvas for Claude page in the Zoom Marketplace. Zoom says the sign-in must start from Claude."
+      },
+      {
+        "where": "Zoom Marketplace",
+        "do": "Click Add at the top right, confirm the permissions and click Allow.",
+        "see": "You're redirected back to Claude."
+      },
+      {
+        "where": "Claude",
+        "do": "Complete the authorisation. Then in a chat click the add icon, then Connectors, and check the Zoom Canvas toggle is on.",
+        "see": "Claude can create, edit, share and manage Canvas files you have rights to. Zoom's examples show it renaming a file once you confirm."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Claude, Settings > Connectors",
+        "do": "Find and select Zoom Canvas, then click Remove.",
+        "see": "Claude can no longer reach your Canvas files."
+      }
+    ],
+    "source": "S36",
+    "doc_updated": "2026-09-11"
+  },
+  {
+    "id": "chatgpt-to-zoom",
+    "from": "ChatGPT",
+    "to": "Zoom (Zoom for ChatGPT)",
+    "who": "anyone",
+    "plan_needed": "A licensed user on Zoom Workplace Pro, Pro Plus, Business, Business Plus, Enterprise, Enterprise Plus or Enterprise Bundle, a Zoom account owner or admin with privileges, and a ChatGPT account. Meeting summary or smart recording must be on. The Ask tool needs a ZoomMate or Custom AI Companion licence. OpenAI says some workspaces need admin approval.",
+    "steps": [
+      {
+        "where": "ChatGPT",
+        "do": "Sign in, click your name, then Settings.",
+        "see": "ChatGPT settings."
+      },
+      {
+        "where": "ChatGPT Settings",
+        "do": "Click Apps & Connectors, then Zoom, then Connect. (OpenAI's current help pages call this area Plugins.)",
+        "see": "You're sent to the Zoom for ChatGPT page in the Zoom Marketplace."
+      },
+      {
+        "where": "Zoom Marketplace",
+        "do": "Click Add at the top right, confirm the permissions and click Allow.",
+        "see": "You're redirected back to ChatGPT."
+      },
+      {
+        "where": "ChatGPT",
+        "do": "Complete the authorisation.",
+        "see": "Zoom is connected."
+      },
+      {
+        "where": "ChatGPT chat",
+        "do": "Click the add icon, then More, then Zoom. Or type @Zoom or /Zoom, then ask for a meeting recap.",
+        "see": "ChatGPT answers from your Zoom meeting assets. Before creating a Zoom Canvas doc it asks you to confirm, and creates it only after you click Create."
+      }
+    ],
+    "undo": [
+      {
+        "where": "ChatGPT, Settings > Plugins",
+        "do": "Select Zoom, then Disconnect.",
+        "see": "Future access stops. Past chats and memories aren't deleted automatically."
+      },
+      {
+        "where": "Zoom App Marketplace",
+        "do": "Click Manage, then Added Apps, then Remove next to Zoom for ChatGPT.",
+        "see": "The app is removed from your Zoom account. (Zoom's general Marketplace article calls this area My Library.)"
+      }
+    ],
+    "source": "S41, S53, S39",
+    "doc_updated": "2026-09-17"
+  },
+  {
+    "id": "chatgpt-to-zoom-whiteboard",
+    "from": "ChatGPT",
+    "to": "Zoom Whiteboard",
+    "who": "anyone",
+    "plan_needed": "A paid Zoom Workplace Pro, Pro Plus, Business, Business Plus, Enterprise, Enterprise Plus or Enterprise Bundle account, Zoom Whiteboard enabled, access to ChatGPT connectors, and permission to connect third-party apps if your organisation manages that.",
+    "steps": [
+      {
+        "where": "ChatGPT",
+        "do": "Sign in, click your name, then Settings, then Apps & Connectors.",
+        "see": "The list of apps."
+      },
+      {
+        "where": "ChatGPT, Apps & Connectors",
+        "do": "Find and click Zoom Whiteboard, then click Connect.",
+        "see": "You're sent to the Zoom Whiteboard for ChatGPT page in the Zoom Marketplace."
+      },
+      {
+        "where": "Zoom Marketplace",
+        "do": "Click Add at the top right, confirm the permissions and click Allow.",
+        "see": "You're redirected back to ChatGPT, where you complete the authorisation."
+      },
+      {
+        "where": "ChatGPT chat",
+        "do": "Make sure the Zoom Whiteboard connector is on for the conversation, then describe the whiteboard you want.",
+        "see": "ChatGPT shows a preview when available. It can also update or delete whiteboards and change collaborators, depending on your permission settings."
+      }
+    ],
+    "undo": [
+      {
+        "where": "ChatGPT, Apps & Connectors",
+        "do": "Find and click Zoom Whiteboard, then click Remove.",
+        "see": "ChatGPT can no longer reach your whiteboards."
+      }
+    ],
+    "source": "S42, S52",
+    "doc_updated": "2026-09-22"
+  },
+  {
+    "id": "m365-admin-deploys-zoom-for-cowork",
+    "from": "Microsoft 365 Copilot (Cowork)",
+    "to": "Zoom (Zoom for Cowork)",
+    "who": "admin",
+    "plan_needed": "A Microsoft 365 Copilot account with administrator privileges to deploy the app, a Zoom account owner or admin with privileges, and meeting summary or smart recording switched on. Agentic search needs a ZoomMate licence.",
+    "steps": [
+      {
+        "where": "Microsoft 365 admin center",
+        "do": "Sign in with your administrator account, click Show all, then Settings, then Integrated apps.",
+        "see": "The Integrated apps page."
+      },
+      {
+        "where": "Microsoft 365 admin center, Integrated apps",
+        "do": "Select Get Apps (or View more apps), search for Zoom for Cowork and select it.",
+        "see": "The app's information, permissions and terms."
+      },
+      {
+        "where": "Zoom for Cowork deployment",
+        "do": "Review the permissions and terms, choose Everyone or Specific users/groups, and click Deploy. Then click Next and finish the wizard.",
+        "see": "A confirmation that the app was deployed."
+      },
+      {
+        "where": "Microsoft 365 Copilot (each user)",
+        "do": "Click Cowork at the top left, then the plugin icon (a puzzle piece), and check Zoom is switched on.",
+        "see": "You're asked to sign in to Zoom."
+      },
+      {
+        "where": "Zoom sign-in",
+        "do": "Sign in to your Zoom account and click Allow.",
+        "see": "Copilot can search your Zoom meetings. Before creating a Zoom Canvas doc of action items, Copilot asks you to confirm and creates it after you click Create."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Microsoft 365 admin center, Settings > Integrated apps",
+        "do": "Select the Zoom app, click Remove, then click Remove again to confirm.",
+        "see": "The app is removed for your organisation."
+      }
+    ],
+    "source": "S43",
+    "doc_updated": "2026-09-11"
+  },
+  {
+    "id": "m365-admin-adds-zoom-meetings-connector",
+    "from": "Microsoft 365 Copilot",
+    "to": "Zoom Meetings (Microsoft's Copilot connector)",
+    "who": "admin",
+    "plan_needed": "An AI administrator for the Microsoft 365 tenant, a paid Zoom Business or Enterprise plan with cloud recording enabled, and a Zoom account administrator to sign in and consent. Microsoft says the connector's app in the Zoom Marketplace isn't currently available in the EU.",
+    "steps": [
+      {
+        "where": "Microsoft 365 admin center, Zoom Meetings connector",
+        "do": "Start setting up the Zoom Meetings connector and accept or change its display name.",
+        "see": "The connector setup page. Microsoft's page doesn't say exactly where in the admin center you start."
+      },
+      {
+        "where": "Connector setup, Authentication",
+        "do": "Select OAuth 2.0, then Authorize, and sign in with a Zoom administrator account. Complete the consent screen.",
+        "see": "The connector can reach the Zoom APIs it needs."
+      },
+      {
+        "where": "Connector setup, Rollout",
+        "do": "Optionally switch on Rollout to limited audience and choose users and groups.",
+        "see": "Only those people get the connector at first."
+      },
+      {
+        "where": "Connector setup, Notice",
+        "do": "Tick the box next to the Notice section, then choose Create.",
+        "see": "Indexing starts right away. By default only each meeting's owner can see its content, with a check for changes every 15 minutes and a full crawl daily."
+      },
+      {
+        "where": "Microsoft 365 admin center, Copilot > Connectors > Your connections",
+        "do": "Confirm the connection state is Ready, then ask a Zoom host to ask Copilot about one of their recent recorded meetings.",
+        "see": "Copilot's answer cites the Zoom Meetings connection."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Not documented",
+        "do": "Microsoft's Zoom Meetings connector page doesn't describe removing the connection.",
+        "see": "Not described."
+      }
+    ],
+    "source": "S44, S45",
+    "doc_updated": "2026-10-06"
+  },
+  {
+    "id": "zoom-mcp-server-custom-connection",
+    "from": "Claude (custom connector) or ChatGPT (Developer mode)",
+    "to": "Zoom MCP servers",
+    "who": "admin",
+    "plan_needed": "A Zoom account with admin or developer rights, a Zoom app created in the Zoom App Marketplace, licences for the Zoom products you use, and access to Claude's custom connectors or ChatGPT's Developer mode. Suits someone with developer skills.",
+    "steps": [
+      {
+        "where": "Zoom App Marketplace",
+        "do": "Select Develop, then Build app, choose General app and click Create.",
+        "see": "Your new app's configuration screen."
+      },
+      {
+        "where": "Zoom app configuration, Scopes",
+        "do": "Click Scopes, then Add scopes. Choose what the app may do, then click Done.",
+        "see": "The app has the permissions the Zoom MCP server's tools need."
+      },
+      {
+        "where": "Claude, Customize > Connectors (option 1)",
+        "do": "Click +, then Add custom connector. Enter a name, the Zoom MCP server URL, and the app's OAuth client ID and secret, then click Add.",
+        "see": "In your Zoom app, set the OAuth redirect URL under Basic Information > OAuth Information to https://claude.ai/api/mcp/auth_callback."
+      },
+      {
+        "where": "ChatGPT, Settings > Apps > Advanced settings (option 2)",
+        "do": "Turn on Developer mode and click Confirm. Click Create app, enter a name and the MCP server URL, and choose OAuth. Under OAuth > Advanced settings > Client registration, choose User-Defined OAuth Client and the client_secret_basic method.",
+        "see": "Copy ChatGPT's callback value into the OAuth redirect URL field of your Zoom app."
+      },
+      {
+        "where": "Claude or ChatGPT",
+        "do": "Connect and sign in to Zoom when asked.",
+        "see": "The tools for that Zoom product area become available. Zoom's servers don't support automatic client registration, so each app is set up by hand."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Claude, Customize > Connectors",
+        "do": "Select the custom connector and remove it from the three-dot menu.",
+        "see": "Claude stops using the Zoom MCP server. Zoom's MCP guide doesn't describe the Zoom side."
+      }
+    ],
+    "source": "S37, S51",
+    "doc_updated": null
+  }
+]

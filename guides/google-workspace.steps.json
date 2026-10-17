@@ -1,0 +1,224 @@
+[
+  {
+    "id": "chatgpt-apps-to-google-workspace",
+    "from": "ChatGPT",
+    "to": "Google Workspace (Gmail, Google Drive)",
+    "who": "anyone",
+    "plan_needed": "A ChatGPT account. OpenAI's help centre couldn't be read on 15 Oct 2026, so which plans include the Google apps is unconfirmed. In ChatGPT Business or Enterprise the ChatGPT admin decides which apps are available. The Workspace admin's API controls must allow the app.",
+    "steps": [
+      { "where": "ChatGPT, Settings", "do": "Open Settings, then Apps", "see": "The list of apps you can connect" },
+      { "where": "Settings > Apps", "do": "Click Connect next to the app", "see": "A sign-in and permissions flow starts" },
+      { "where": "Sign-in and permission screens", "do": "Complete the authentication and permissions flow", "see": "The app is connected" },
+      { "where": "A ChatGPT chat", "do": "Choose the app under Tools", "see": "ChatGPT can use the app in that chat" }
+    ],
+    "source": "S74",
+    "doc_updated": "2026-09-04"
+  },
+  {
+    "id": "chatgpt-plugins-to-google-workspace",
+    "from": "ChatGPT",
+    "to": "Google Workspace (Gmail, Google Drive)",
+    "who": "anyone",
+    "plan_needed": "A ChatGPT account; plan requirements for the Gmail and Google Drive plugins are not stated in the pages we could read. Workspace-installed plugins are managed by the ChatGPT admin.",
+    "steps": [
+      { "where": "ChatGPT on the web or the desktop app", "do": "Open the Plugins tab", "see": "The plugin directory (OpenAI, workspace and Personal tabs)" },
+      { "where": "Plugins tab", "do": "Find the Gmail or Google Drive plugin, open it, and select the plus button to install it", "see": "The plugin installs" },
+      { "where": "Plugin install, or first use", "do": "If prompted, connect and sign in", "see": "The plugin can reach your Google account" },
+      { "where": "A new chat", "do": "Describe the task, or type @ and pick the plugin", "see": "ChatGPT uses the plugin for that task" }
+    ],
+    "source": "S75",
+    "doc_updated": null
+  },
+  {
+    "id": "chatgpt-for-google-sheets",
+    "from": "ChatGPT for Google Sheets (OpenAI add-on)",
+    "to": "Google Sheets",
+    "who": "anyone",
+    "plan_needed": "ChatGPT Free, Go, Plus or Pro; OpenAI also lists Business, Enterprise, Edu and K-12 users. The Workspace admin must allow Marketplace installs or allowlist the add-on.",
+    "steps": [
+      { "where": "Google Workspace Marketplace, 'ChatGPT' listing by OpenAI", "do": "Install the add-on", "see": "The add-on is added to your Google account" },
+      { "where": "Google Sheets", "do": "Open a spreadsheet", "see": "ChatGPT appears in a sidebar" },
+      { "where": "ChatGPT sidebar", "do": "Sign in with your OpenAI account", "see": "You can ask ChatGPT to build, edit or analyse the sheet" }
+    ],
+    "source": "S79",
+    "doc_updated": "2026-06-01"
+  },
+  {
+    "id": "claude-to-google-workspace",
+    "from": "Claude",
+    "to": "Google Workspace (Gmail, Google Calendar, Google Drive)",
+    "who": "anyone",
+    "plan_needed": "Any Claude plan, per Anthropic. On Team and Enterprise an Owner or Primary Owner must enable the connectors first. A Google admin may need to mark Claude as Trusted in API controls.",
+    "steps": [
+      { "where": "Claude, Customize > Connectors", "do": "Click + next to Connectors (or in a chat: click +, hover over Connectors, select Manage connectors, then click +)", "see": "The connectors directory" },
+      { "where": "Connectors directory", "do": "Click Gmail, Google Calendar or Google Drive, review the description, and click Connect", "see": "A Google sign-in screen" },
+      { "where": "Google sign-in and permission screens", "do": "Complete the authentication prompts", "see": "The connector shows as connected" },
+      { "where": "A Claude chat", "do": "Click + (or type /), hover over Connectors, and toggle on the services you want", "see": "Claude can use them in that conversation" }
+    ],
+    "source": "S81",
+    "doc_updated": null
+  },
+  {
+    "id": "claude-team-enable-google-connectors",
+    "from": "Claude (Team or Enterprise organisation)",
+    "to": "Google Workspace",
+    "who": "admin",
+    "plan_needed": "Claude Team or Enterprise; Owner or Primary Owner role",
+    "steps": [
+      { "where": "Claude, Organization settings > Connectors", "do": "Click Browse connectors", "see": "The connectors directory" },
+      { "where": "Connectors directory", "do": "Select the Google connector and choose Add to your team", "see": "Members can connect their own Google accounts; each person still signs in individually" }
+    ],
+    "source": "S81",
+    "doc_updated": null
+  },
+  {
+    "id": "google-admin-trust-claude",
+    "from": "Google Admin console",
+    "to": "Claude",
+    "who": "admin",
+    "plan_needed": "Any Google Workspace edition; an admin who can manage API controls",
+    "steps": [
+      { "where": "admin.google.com", "do": "Go to Security > Access and data control > API controls > Manage third-party app access", "see": "The list of configured apps" },
+      { "where": "Manage third-party app access", "do": "Add the Claude app and set it to Trusted", "see": "Claude is allowed to reach Workspace data" },
+      { "where": "Admin console", "do": "Wait about 15 minutes", "see": "Users can connect Claude's Google connectors" }
+    ],
+    "source": "S80",
+    "doc_updated": null
+  },
+  {
+    "id": "claude-in-google-docs-sheets-slides",
+    "from": "Claude for Google Workspace (Anthropic add-on, beta)",
+    "to": "Google Docs, Sheets and Slides",
+    "who": "anyone",
+    "plan_needed": "Claude Pro, Max, Team or Enterprise; a Google account that's allowed to install Marketplace apps",
+    "steps": [
+      { "where": "Google Workspace Marketplace, 'Claude' listing by Anthropic", "do": "Click Install", "see": "One install covers Docs, Sheets and Slides" },
+      { "where": "A Google Doc, Sheet or Slides file", "do": "Go to Extensions > Claude > Open Claude", "see": "The Claude sidebar opens" },
+      { "where": "Google permission prompt", "do": "Allow the two permissions Google requests", "see": "Claude can read and edit the open file" },
+      { "where": "Claude sidebar", "do": "Sign in with your Claude account (optionally turn on connectors)", "see": "Claude is ready; reload any files that were already open" }
+    ],
+    "source": "S83",
+    "doc_updated": "2026-10-14"
+  },
+  {
+    "id": "claude-addon-admin-install",
+    "from": "Google Admin (super admin)",
+    "to": "Claude for Google Workspace",
+    "who": "admin",
+    "plan_needed": "Google Workspace super admin; users need Claude Pro, Max, Team or Enterprise",
+    "steps": [
+      { "where": "Claude listing in Google Workspace Marketplace, signed in as a super admin", "do": "Click Admin install, then Continue", "see": "Installation options" },
+      { "where": "Installation options", "do": "Choose everyone in the organisation, or specific groups or organisational units", "see": "Data access and terms to review" },
+      { "where": "Terms screen", "do": "Tick the agreement box and click Finish", "see": "Claude is installed for the chosen users; they reload any open files" }
+    ],
+    "source": "S83",
+    "doc_updated": "2026-10-14"
+  },
+  {
+    "id": "microsoft-365-copilot-to-gmail",
+    "from": "Microsoft 365 Copilot",
+    "to": "Gmail, Google Calendar or Google Contacts",
+    "who": "anyone",
+    "plan_needed": "A Microsoft 365 work account with Copilot Chat. Microsoft-published connectors are on unless the Microsoft 365 admin disables them. Whether a paid Microsoft 365 Copilot licence is needed was not confirmed.",
+    "steps": [
+      { "where": "Microsoft 365 Copilot Chat", "do": "Select the ... menu, then Settings", "see": "The settings dialog" },
+      { "where": "Settings", "do": "Select Sources in the left pane", "see": "Available data sources" },
+      { "where": "Sources", "do": "Find Gmail (or Google Calendar or Google Contacts) and select Connect", "see": "A Google sign-in" },
+      { "where": "Google sign-in", "do": "Sign in with your own Google account and approve access", "see": "The source is connected" },
+      { "where": "Copilot Chat", "do": "Ask your question, naming the source", "see": "Copilot answers with live data fetched from Google" }
+    ],
+    "source": "S87",
+    "doc_updated": "2026-09-30"
+  },
+  {
+    "id": "microsoft-365-copilot-google-drive-connector",
+    "from": "Microsoft 365 Copilot (Google Drive connector)",
+    "to": "Google Drive",
+    "who": "admin",
+    "plan_needed": "A Google Workspace admin to create a Google Cloud service account with domain-wide delegation and read-only scopes; a Microsoft 365 admin to deploy the connector",
+    "steps": [
+      { "where": "Google Cloud and Google Admin console", "do": "Create a service account with domain-wide delegation, add the four read-only scopes Microsoft lists, and create a JSON key", "see": "A service account key ready to paste" },
+      { "where": "Microsoft 365 admin center", "do": "Select Copilot > Connectors", "see": "The connectors page" },
+      { "where": "Connectors, Gallery tab", "do": "Select Google Drive", "see": "The connector setup page" },
+      { "where": "Google Drive connector setup", "do": "Enter a display name, your Google Workspace domain and an administrator account email, then paste the service account key", "see": "Connection details filled in" },
+      { "where": "Google Drive connector setup", "do": "Optionally choose Custom setup and set access to Only people with access to this data source, then choose Create", "see": "Indexing starts straight away" }
+    ],
+    "source": "S86",
+    "doc_updated": "2025-11-18"
+  },
+  {
+    "id": "microsoft-copilot-personal-to-google",
+    "from": "Microsoft Copilot (personal account)",
+    "to": "Gmail, Google Drive, Google Calendar, Google Contacts",
+    "who": "anyone",
+    "plan_needed": "A personal Microsoft account on Copilot.com or the Copilot mobile app",
+    "steps": [
+      { "where": "Copilot", "do": "Select Profile, then Connectors", "see": "A list of services you can connect" },
+      { "where": "Connectors", "do": "Select Connect next to the service", "see": "A prompt to continue" },
+      { "where": "Connect prompt", "do": "Select Continue to… (for example, Continue to Gmail)", "see": "Google's sign-in" },
+      { "where": "Google sign-in", "do": "Choose the account and approve what Copilot can access", "see": "You're returned to Copilot with the connector switched on" }
+    ],
+    "source": "S90",
+    "doc_updated": null
+  },
+  {
+    "id": "gemini-integrations-to-third-party-apps",
+    "from": "Gemini in Google Workspace",
+    "to": "Asana, Atlassian Rovo, HubSpot, Mailchimp, Monday.com, QuickBooks, Salesforce",
+    "who": "anyone",
+    "plan_needed": "Business Standard or Plus, Enterprise Standard or Plus, or a supported add-on; the admin must allow integrations; some need a paid subscription to the other app",
+    "steps": [
+      { "where": "Google Workspace Marketplace integrations page, on a computer", "do": "Select the integration and click Connect", "see": "Google's access prompts" },
+      { "where": "Access prompts", "do": "Follow the instructions to grant access, and install the helper app if the listing says one is needed", "see": "The integration is connected" },
+      { "where": "Gmail, Docs, Sheets, Slides, Drive or Chat", "do": "Click the Ask Gemini icon, type @ and select the integration", "see": "The integration is attached to your prompt" },
+      { "where": "Gemini side panel", "do": "Enter your prompt and press Enter", "see": "Gemini answers with information from the other app (read only)" }
+    ],
+    "source": "S52",
+    "doc_updated": null
+  },
+  {
+    "id": "workspace-studio-to-third-party",
+    "from": "Google Workspace Studio",
+    "to": "Asana, Mailchimp, Salesforce, HubSpot, monday",
+    "who": "anyone",
+    "plan_needed": "A Workspace edition that includes Workspace Studio; admins may restrict integrations; paid third-party services need your own subscription",
+    "steps": [
+      { "where": "studio.workspace.google.com", "do": "Create a flow", "see": "The flow editor" },
+      { "where": "Flow editor, left panel", "do": "Click the integration step; if it isn't connected, click Connect", "see": "Instructions to let the integration access your Google Account data" },
+      { "where": "Connection screens", "do": "Follow the on-screen instructions, installing a helper app if asked", "see": "The integration step is ready to configure" },
+      { "where": "Flow editor", "do": "Configure the step, optionally click Test run, then click Turn on", "see": "The flow is live; note that a test run takes real actions" }
+    ],
+    "source": "S43",
+    "doc_updated": null
+  },
+  {
+    "id": "gemini-app-to-workspace-apps",
+    "from": "Gemini app",
+    "to": "Gmail, Google Calendar, Google Drive, Google Docs, Google Keep, Google Tasks, Google Chat",
+    "who": "anyone",
+    "plan_needed": "A qualifying Workspace edition; the admin has the app enabled and conversation history on",
+    "steps": [
+      { "where": "gemini.google.com", "do": "Sign in with the same account you use for Workspace", "see": "The Gemini app" },
+      { "where": "Prompt box", "do": "Type @ and select the app", "see": "The app is attached to your prompt" },
+      { "where": "Prompt box", "do": "Ask your question and click Submit", "see": "Gemini answers using that app, if your admin has enabled it" }
+    ],
+    "source": "S35",
+    "doc_updated": null
+  },
+  {
+    "id": "mcp-client-to-gmail-mcp-server",
+    "from": "An MCP client (for example Claude or Google Antigravity)",
+    "to": "Gmail (Google's Gmail MCP server, Developer Preview)",
+    "who": "admin",
+    "plan_needed": "Membership of the Google Workspace Developer Preview Program and a Google Cloud project; for Claude as the client, a Pro, Max, Team or Enterprise plan",
+    "steps": [
+      { "where": "Google Cloud project", "do": "Enable the Gmail API and the Gmail MCP API", "see": "Both APIs enabled" },
+      { "where": "Google Cloud console, OAuth consent screen", "do": "Set the app name, audience, test users, and the gmail.readonly and gmail.compose scopes", "see": "Consent screen configured" },
+      { "where": "Google Cloud console", "do": "Create an OAuth client ID and secret as a Web application, selecting Use this client for an AI-powered agent", "see": "A client ID and secret" },
+      { "where": "Your MCP client", "do": "Add the server https://gmailmcp.googleapis.com/mcp/v1 (Streamable HTTP) with the client ID and secret", "see": "The client lists the Gmail tools" },
+      { "where": "Google sign-in", "do": "Authenticate, then test with a prompt", "see": "The AI can search and read threads, create drafts and apply labels" }
+    ],
+    "source": "S69",
+    "doc_updated": "2026-10-12"
+  }
+]

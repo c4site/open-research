@@ -1,0 +1,253 @@
+[
+  {
+    "id": "hubspot-approve-ai-connector",
+    "from": "HubSpot (Super Admin)",
+    "to": "AI connector (ChatGPT, Claude and other Marketplace apps)",
+    "who": "admin",
+    "plan_needed": "Any HubSpot plan, including free tools. Needs a Super Admin. Only required when people without Super Admin or App Marketplace Access want to connect.",
+    "steps": [
+      { "where": "HubSpot, top navigation bar", "do": "Click the settings icon", "see": "HubSpot settings open" },
+      { "where": "HubSpot settings, left sidebar", "do": "Go to Integrations > Connected Apps", "see": "The Connected Apps page" },
+      { "where": "Connected Apps", "do": "Open the Approved apps tab and click Approve apps", "see": "A search for apps to approve" },
+      { "where": "Approve apps", "do": "Search for and select the app (for example the HubSpot connector for ChatGPT or Claude)", "see": "The app's listing with a Manage access banner" },
+      { "where": "Manage access banner", "do": "Click Approve", "see": "Install permission options" },
+      { "where": "Install permissions", "do": "Choose who can install: Admins, Specific users and teams, or Everyone", "see": "The chosen group is selected" },
+      { "where": "Install permissions", "do": "Click Next: Review data permissions", "see": "Required and optional data permissions" },
+      { "where": "Data permissions", "do": "Turn optional permissions on or off, then click Approve app", "see": "The app is approved and the chosen people can now connect it" }
+    ],
+    "source": "S80",
+    "doc_updated": "2026-09-10"
+  },
+  {
+    "id": "chatgpt-to-hubspot",
+    "from": "ChatGPT",
+    "to": "HubSpot",
+    "who": "anyone",
+    "plan_needed": "Any HubSpot plan, including free tools, plus a ChatGPT (OpenAI) account. HubSpot names no ChatGPT plan; OpenAI's own plan rules weren't confirmed. Users without Super Admin or App Marketplace Access need the connector approved first.",
+    "steps": [
+      { "where": "ChatGPT, bottom left", "do": "Click your profile icon, then Settings", "see": "ChatGPT settings open" },
+      { "where": "ChatGPT Settings", "do": "Click Apps", "see": "The list of apps" },
+      { "where": "Apps", "do": "Select HubSpot, then click Connect", "see": "A dialog about connecting HubSpot" },
+      { "where": "Connect dialog", "do": "Click Continue to HubSpot", "see": "HubSpot's sign-in page" },
+      { "where": "HubSpot sign-in", "do": "Log in to HubSpot and pick the HubSpot account to connect", "see": "The page 'Connecting HubSpot Connector for ChatGPT to HubSpot'" },
+      { "where": "HubSpot permissions page", "do": "Choose the permissions to allow and click Connect App", "see": "You're sent back to ChatGPT, connected" },
+      { "where": "ChatGPT chat", "do": "Click + > More > HubSpot, or mention 'HubSpot' in your prompt", "see": "ChatGPT can now answer from your HubSpot data" },
+      { "where": "ChatGPT chat (optional)", "do": "For a longer report: click + > Deep research, then switch HubSpot on in the Apps dropdown", "see": "A deep research report with sources in a side panel" },
+      { "where": "HubSpot connector tool settings in ChatGPT", "do": "Set Write tools to Needs Approval", "see": "ChatGPT asks before creating or updating any record" }
+    ],
+    "source": "S43",
+    "doc_updated": "2026-09-28"
+  },
+  {
+    "id": "claude-to-hubspot",
+    "from": "Claude",
+    "to": "HubSpot",
+    "who": "anyone",
+    "plan_needed": "A paid Claude plan (Pro, Max, Team or Enterprise) per HubSpot, and any HubSpot plan. On Team or Enterprise an Owner must add the connector first. Users without Super Admin or App Marketplace Access need HubSpot approval first.",
+    "steps": [
+      { "where": "claude.ai or the Claude desktop app", "do": "Go to Customize > Connectors", "see": "Your connectors page" },
+      { "where": "Connectors", "do": "Select Discover, type 'HubSpot' in Search connectors and open the listing", "see": "The HubSpot connector listing" },
+      { "where": "HubSpot listing", "do": "Select Connect to Claude (Team or Enterprise members see Request if an Owner hasn't added it)", "see": "HubSpot's sign-in page" },
+      { "where": "HubSpot sign-in", "do": "Sign in and choose the HubSpot account", "see": "HubSpot's permissions page" },
+      { "where": "HubSpot permissions page", "do": "Choose what to allow and approve (HubSpot's button reads Connect app)", "see": "You're returned to Claude" },
+      { "where": "Claude Connectors page", "do": "Check HubSpot under Your connectors", "see": "HubSpot shows the status Connected" },
+      { "where": "Claude chat", "do": "Select + > Connectors and switch HubSpot on", "see": "Claude can use HubSpot in this conversation" },
+      { "where": "Customize > Connectors > HubSpot", "do": "Under Tool permissions, set write tools to Needs approval", "see": "Claude asks before creating or updating any record" }
+    ],
+    "source": "S51",
+    "doc_updated": null
+  },
+  {
+    "id": "claude-owner-adds-hubspot-for-team",
+    "from": "Claude (Team or Enterprise Owner)",
+    "to": "HubSpot",
+    "who": "admin",
+    "plan_needed": "Claude Team or Enterprise, Owner role. Each member still connects their own HubSpot login afterwards.",
+    "steps": [
+      { "where": "claude.ai", "do": "Go to Customize > Connectors and select Discover", "see": "The connectors directory" },
+      { "where": "Connectors directory", "do": "Find HubSpot", "see": "The HubSpot listing" },
+      { "where": "HubSpot listing", "do": "Select Connect for your team", "see": "HubSpot is added for everyone in the organisation" },
+      { "where": "HubSpot listing (optional)", "do": "To try it alone first, select the arrow beside Connect for your team and choose Connect just for me", "see": "It's added for you only" },
+      { "where": "HubSpot listing", "do": "Connect your own account with Connect to Claude", "see": "HubSpot's sign-in page" },
+      { "where": "Organization settings > Connectors", "do": "Check Requested by your team for member requests", "see": "Pending requests to enable or dismiss" }
+    ],
+    "source": "S51",
+    "doc_updated": null
+  },
+  {
+    "id": "copilot-admin-allows-hubspot-agent",
+    "from": "Microsoft 365 admin center",
+    "to": "HubSpot Agent for Copilot",
+    "who": "admin",
+    "plan_needed": "Microsoft 365 admin. Users need a Microsoft 365 Copilot licence or the Microsoft 365 Copilot Chat add-on with an eligible Microsoft 365 licence (HubSpot's wording). Any HubSpot plan; a HubSpot Super Admin or App Marketplace user makes the first connection.",
+    "steps": [
+      { "where": "Microsoft 365 admin center", "do": "Go to Agents > All agents", "see": "The list of agents" },
+      { "where": "All agents", "do": "Search for HubSpot", "see": "The HubSpot agent and its status" },
+      { "where": "HubSpot agent", "do": "Check the status is Available; if not, open it and select Unblock", "see": "Status Available" },
+      { "where": "HubSpot agent, Users tab", "do": "Choose who can install it; All users in the organization can install saves people adding it themselves", "see": "The agent is available to the chosen users" }
+    ],
+    "source": "S59",
+    "doc_updated": "2026-09-24"
+  },
+  {
+    "id": "copilot-to-hubspot-agent",
+    "from": "Microsoft Copilot",
+    "to": "HubSpot",
+    "who": "anyone",
+    "plan_needed": "Microsoft 365 Copilot licence or the Copilot Chat add-on (HubSpot's wording), after the admin has made the agent available. Any HubSpot plan. Read-only.",
+    "steps": [
+      { "where": "Microsoft 365 Copilot Chat or Copilot in Microsoft Teams", "do": "Open it", "see": "Copilot with an Agents list in the left sidebar" },
+      { "where": "Left sidebar, Agents", "do": "Click HubSpot", "see": "The HubSpot agent with suggested prompts" },
+      { "where": "HubSpot agent chat", "do": "Type a prompt, or pick a suggested HubSpot prompt", "see": "A request to sign in" },
+      { "where": "HubSpot agent chat", "do": "Click Sign in to HubSpot", "see": "HubSpot's sign-in and permissions page" },
+      { "where": "HubSpot permissions page", "do": "Choose your HubSpot account and permissions, then click Connect app", "see": "Copilot answers using your HubSpot data" }
+    ],
+    "source": "S59",
+    "doc_updated": "2026-09-24"
+  },
+  {
+    "id": "copilot-federated-connector-to-hubspot",
+    "from": "Microsoft Copilot Chat (Microsoft's HubSpot federated connector)",
+    "to": "HubSpot",
+    "who": "anyone",
+    "plan_needed": "Microsoft 365 Copilot Chat with the connector enabled by the tenant admin (Microsoft-published federated connectors are on by default). Licence requirement not confirmed. Your own HubSpot login.",
+    "steps": [
+      { "where": "Microsoft 365 Copilot Chat", "do": "Open it", "see": "Copilot Chat" },
+      { "where": "Copilot Chat", "do": "Select the ... menu, then Settings", "see": "The settings dialog" },
+      { "where": "Settings dialog", "do": "Select Sources in the left pane", "see": "Available external data sources" },
+      { "where": "Sources", "do": "Find HubSpot, select Connect and sign in with your own HubSpot login", "see": "HubSpot is connected as a source" },
+      { "where": "Copilot Chat", "do": "Ask your question, naming HubSpot in the prompt", "see": "Copilot fetches live HubSpot data; any write action shows a confirmation card first" }
+    ],
+    "source": "S60",
+    "doc_updated": "2026-09-30"
+  },
+  {
+    "id": "gemini-app-to-hubspot",
+    "from": "Gemini app",
+    "to": "HubSpot",
+    "who": "anyone",
+    "plan_needed": "Per HubSpot: a paid Google Workspace Business Standard, Business Plus or Enterprise plan with Gemini Alpha (now called Gemini Beta) turned on. Any HubSpot plan. Read-only, English only.",
+    "steps": [
+      { "where": "Web browser", "do": "Go to gemini.google.com", "see": "The Gemini app" },
+      { "where": "Gemini, bottom left", "do": "Click Settings & Help, then Apps", "see": "The list of apps" },
+      { "where": "Apps", "do": "Switch HubSpot on", "see": "HubSpot's sign-in page" },
+      { "where": "HubSpot sign-in", "do": "Sign in with your HubSpot login", "see": "Gemini can answer @HubSpot prompts" }
+    ],
+    "source": "S64",
+    "doc_updated": "2026-08-21"
+  },
+  {
+    "id": "gemini-workspace-to-hubspot",
+    "from": "Gemini in Google Workspace",
+    "to": "HubSpot",
+    "who": "anyone",
+    "plan_needed": "Personal: Google AI Pro or Ultra. Work: Business Standard, Business Plus, Enterprise Standard, Enterprise Plus, Enterprise Essentials, Enterprise Essentials Plus or Google AI Pro for Education, with integrations allowed by the Workspace admin. Read-only.",
+    "steps": [
+      { "where": "Computer, Google Workspace Marketplace", "do": "Open the integrations page filtered to Gemini integrations", "see": "Gemini-compatible integrations" },
+      { "where": "Integrations page", "do": "Select HubSpot", "see": "HubSpot's integration details" },
+      { "where": "HubSpot integration page", "do": "Click Connect", "see": "Prompts to grant access" },
+      { "where": "Access prompts", "do": "Follow the on-screen steps to grant access", "see": "HubSpot is connected" },
+      { "where": "Gmail, Docs or Sheets, Gemini side panel", "do": "Type @ and choose HubSpot, then your prompt", "see": "Gemini answers from your HubSpot data" }
+    ],
+    "source": "S66",
+    "doc_updated": null
+  },
+  {
+    "id": "gemini-enterprise-to-hubspot",
+    "from": "Gemini Enterprise",
+    "to": "HubSpot",
+    "who": "admin",
+    "plan_needed": "Gemini Enterprise (Business edition). A HubSpot administrator authorises the connector first. Write capability not stated.",
+    "steps": [
+      { "where": "Gemini Enterprise", "do": "A HubSpot administrator authorises the HubSpot connector", "see": "The connector is authorised for the organisation" },
+      { "where": "Gemini Enterprise, Settings & help > Manage team > Connectors", "do": "Switch the HubSpot connector on", "see": "HubSpot is available to the team" },
+      { "where": "Gemini Enterprise", "do": "Each person authorises their own HubSpot account", "see": "Gemini Enterprise can use that person's HubSpot data" }
+    ],
+    "source": "S68",
+    "doc_updated": "2026-09-16"
+  },
+  {
+    "id": "mcp-client-to-hubspot-mcp-server",
+    "from": "Any MCP-compatible AI tool",
+    "to": "HubSpot MCP server",
+    "who": "admin",
+    "plan_needed": "Any HubSpot plan, with access to HubSpot's Development area, and an AI tool that supports OAuth with PKCE. Some tools need specific plans (AEO: Marketing Hub Pro or Enterprise; quotes: Revenue Hub Pro or Enterprise).",
+    "steps": [
+      { "where": "HubSpot, main navigation", "do": "Click Development", "see": "HubSpot's development area" },
+      { "where": "Development, left sidebar", "do": "Click MCP Connectors", "see": "Your MCP connectors" },
+      { "where": "MCP Connectors", "do": "Click Create MCP connector", "see": "A form for the connector's details" },
+      { "where": "Connector form", "do": "Fill in Name, Description, Redirect URL (from your AI tool) and Icon, then click Create", "see": "The connector details page" },
+      { "where": "Connector details page", "do": "Copy the client ID, client secret and redirect URL", "see": "Credentials ready to paste" },
+      { "where": "Your AI tool's settings", "do": "Add an MCP server at https://mcp.hubspot.com using those details", "see": "A HubSpot sign-in prompt" },
+      { "where": "HubSpot sign-in", "do": "Sign in, choose the HubSpot account, grant permissions and authorise", "see": "The AI tool is connected to HubSpot" },
+      { "where": "Your AI tool", "do": "Ask it to run get_user_details", "see": "A list of the objects and tools it can reach" }
+    ],
+    "source": "S70",
+    "doc_updated": null
+  },
+  {
+    "id": "agent-cli-to-hubspot",
+    "from": "AI coding agent (for example Claude Code, Claude Cowork or ChatGPT's Codex)",
+    "to": "HubSpot Agent CLI",
+    "who": "anyone",
+    "plan_needed": "Any HubSpot plan (beta). A Super Admin must allow you to connect. Claude Cowork Team or Enterprise may need api.hubapi.com allowed by an admin.",
+    "steps": [
+      { "where": "Your AI coding agent", "do": "Open it", "see": "The agent's workspace" },
+      { "where": "Agent workspace", "do": "Paste HubSpot's install prompt", "see": "The agent installs the CLI, starts sign-in and adds HubSpot's skills" },
+      { "where": "HubSpot sign-in", "do": "Sign in to HubSpot when asked", "see": "The permissions the CLI is asking for" },
+      { "where": "HubSpot permissions page", "do": "Review the requested permissions", "see": "What the agent will be able to do with your access" },
+      { "where": "HubSpot permissions page", "do": "Click Connect app", "see": "The coding agent can work with your HubSpot account" }
+    ],
+    "source": "S78",
+    "doc_updated": "2026-08-26"
+  },
+  {
+    "id": "developer-mcp-server-setup",
+    "from": "AI coding tool (Claude Code, Codex CLI, Cursor, Gemini CLI, VS Code or Windsurf)",
+    "to": "HubSpot developer MCP server",
+    "who": "anyone",
+    "plan_needed": "HubSpot CLI 8.2.0 or later. For building HubSpot apps and website content; the setup page doesn't say it touches CRM data.",
+    "steps": [
+      { "where": "Terminal", "do": "Run hs --version, or install the CLI with npm install -g @hubspot/cli", "see": "CLI version 8.2.0 or later" },
+      { "where": "Terminal", "do": "Run hs mcp setup", "see": "A list of supported coding tools" },
+      { "where": "Terminal", "do": "Pick your tools with the arrow keys and spacebar, then press Enter", "see": "A choice of standalone mode or the global CLI" },
+      { "where": "Terminal", "do": "Choose standalone mode or the global CLI", "see": "A success message" },
+      { "where": "Your coding tool", "do": "Restart it; in Claude Code run /mcp", "see": "HubSpotDev listed as a server" }
+    ],
+    "source": "S77",
+    "doc_updated": null
+  },
+  {
+    "id": "hubspot-workflow-to-custom-llm",
+    "from": "HubSpot workflow",
+    "to": "Your own AI model (OpenAI, Anthropic, Cohere, xAI or Google)",
+    "who": "admin",
+    "plan_needed": "HubSpot Enterprise (any hub), plus an API key from the AI provider (OpenAI: account owner; Anthropic: admin or developer).",
+    "steps": [
+      { "where": "HubSpot", "do": "Go to More > Automation > Workflows", "see": "Your workflows" },
+      { "where": "Workflows", "do": "Open or create a workflow and set its enrolment triggers", "see": "The workflow editor" },
+      { "where": "Workflow editor", "do": "Click the + icon and search for Use a custom LLM", "see": "The custom LLM action panel" },
+      { "where": "Custom LLM action", "do": "In AI provider, click Connect next to your provider", "see": "A dialog asking for an API key" },
+      { "where": "API key dialog", "do": "Paste your API key and click Connect to [LLM provider]", "see": "The provider is connected" },
+      { "where": "Custom LLM action", "do": "Choose an AI model, write the Prompt message, and set Temperature and Reasoning effort under Advanced settings if needed", "see": "The action is configured" },
+      { "where": "Custom LLM action", "do": "Click Save", "see": "The workflow will call your model when it runs" }
+    ],
+    "source": "S79",
+    "doc_updated": "2026-07-15"
+  },
+  {
+    "id": "breeze-assistant-to-connected-apps",
+    "from": "Breeze Assistant (HubSpot)",
+    "to": "Apps installed from HubSpot's App Marketplace (for example Slack, Gmail, Google Docs, Teams)",
+    "who": "anyone",
+    "plan_needed": "Any HubSpot plan with Breeze Assistant switched on. Installing an unapproved Marketplace app may need Super Admin approval.",
+    "steps": [
+      { "where": "HubSpot App Marketplace", "do": "Select the app and click Install", "see": "The app's install flow" },
+      { "where": "App install flow", "do": "Finish the install and read the setup guide in the Overview section", "see": "The app is installed" },
+      { "where": "HubSpot, top navigation bar", "do": "Click Breeze Assistant", "see": "Breeze Assistant with a right-hand panel" },
+      { "where": "Breeze Assistant, right panel", "do": "Use the Apps dropdown to pick sources, or turn on Use all apps as sources", "see": "Breeze Assistant can search the chosen apps" }
+    ],
+    "source": "S34",
+    "doc_updated": "2026-09-28"
+  }
+]

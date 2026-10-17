@@ -1,0 +1,341 @@
+[
+  {
+    "id": "claude-to-slack",
+    "from": "Claude",
+    "to": "Slack",
+    "who": "anyone",
+    "plan_needed": "A Claude account. Anthropic's Slack page names Team and Enterprise, and its blog says Pro and Max were added on 26 January 2026; Free isn't mentioned. Slack's docs say your Slack workspace admin must approve the MCP integration. On Claude Team or Enterprise an Owner adds the connector first (see claude-owner-adds-slack).",
+    "steps": [
+      {
+        "where": "Claude (claude.ai or the desktop app), Customize",
+        "do": "Go to Customize > Connectors and select Discover.",
+        "see": "The Connectors directory opens."
+      },
+      {
+        "where": "Claude Connectors directory",
+        "do": "Search for Slack (made by Slack, Anthropic verified) and open its page. Select Connect to Claude. On Team or Enterprise, an Owner sees Connect for your team instead.",
+        "see": "You're sent to Slack to sign in."
+      },
+      {
+        "where": "Slack sign-in",
+        "do": "Sign in to your Slack workspace, review the access Claude asks for and approve it.",
+        "see": "The exact Slack approval screen isn't described in the docs we read. Slack's docs say the integration must be approved by your Slack workspace admin."
+      },
+      {
+        "where": "Claude, Customize > Connectors",
+        "do": "Check the connector list.",
+        "see": "Slack shows under Your connectors with the status Connected."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Select + in the message box, then Connectors, and switch Slack on.",
+        "see": "Claude can search channels you can access, read threads and canvases, and send messages. It can ask before using a tool, depending on your tool permissions."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Ask something like \"What did the team decide about the launch date in #product-planning last week?\"",
+        "see": "Claude searches your channels, DMs and files and answers from what it finds."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Claude, Customize > Connectors",
+        "do": "Select Slack under Your connectors and select Disconnect. To take it off your account, open the three-dot menu and select Remove.",
+        "see": "Claude is signed out of Slack. The Slack-side steps aren't described in the docs we read."
+      }
+    ],
+    "source": "S45, S35, S31, S36, S37",
+    "doc_updated": null
+  },
+  {
+    "id": "claude-owner-adds-slack",
+    "from": "Claude",
+    "to": "Slack",
+    "who": "admin",
+    "plan_needed": "Claude Team or Enterprise, Owner role. Slack Enterprise+ organisations on Claude Team or Enterprise can also manage access through Okta.",
+    "steps": [
+      {
+        "where": "Claude, Organization settings",
+        "do": "Go to Organization settings > Connectors and click Browse connectors.",
+        "see": "The list of available connectors."
+      },
+      {
+        "where": "Claude connector list",
+        "do": "Select Slack and click Add to your team.",
+        "see": "Slack becomes available to the organisation. Nobody gets access automatically; each person still signs in."
+      },
+      {
+        "where": "Claude, Customize > Connectors (Owner)",
+        "do": "Optionally set each Slack tool or group of tools to Always allow, Needs approval or Blocked. Consider Needs approval for sending messages and editing canvases.",
+        "see": "The settings apply across the organisation and members can't override them."
+      },
+      {
+        "where": "Each member's Claude account",
+        "do": "Each person follows claude-to-slack and signs in to Slack themselves.",
+        "see": "Each person sees only what their own Slack account can see."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Claude, Organization settings > Connectors",
+        "do": "Remove the Slack connector for the organisation.",
+        "see": "Members can no longer use it. The exact button for removal at organisation level isn't named in the docs we read."
+      }
+    ],
+    "source": "S44, S45, S32",
+    "doc_updated": "2026-10-17"
+  },
+  {
+    "id": "claude-tag-in-slack",
+    "from": "Claude Tag",
+    "to": "Slack",
+    "who": "admin",
+    "plan_needed": "Claude Team or Enterprise (public beta), run by an Owner of the Claude organisation, with a Slack workspace admin to install the app and run the pairing command. Not available on Free, Pro or Max, or with Zero Data Retention, customer-managed encryption or the HIPAA configuration. Routines must be enabled. Team plans need usage credits loaded.",
+    "steps": [
+      {
+        "where": "claude.ai/admin-settings/claude-tag",
+        "do": "Click Start setup (or Resume setup).",
+        "see": "The setup page walks through pairing, optional GitHub and credits, then launch."
+      },
+      {
+        "where": "Claude Tag setup page, then the Slack Marketplace",
+        "do": "Click Add the Claude app, then Add to Slack, and approve the permissions.",
+        "see": "The Claude app is installed in the Slack workspace."
+      },
+      {
+        "where": "Slack, any channel in that workspace",
+        "do": "A Slack workspace admin runs /invite @Claude, then sends @Claude connect as a new message with no other text.",
+        "see": "Claude replies with a message only that admin can see, containing a pairing code. The code works once and expires in 15 minutes."
+      },
+      {
+        "where": "Claude Tag setup page",
+        "do": "Paste the code into Paste the pairing code, then click Pair workspace.",
+        "see": "Connected to followed by the workspace name appears under the field."
+      },
+      {
+        "where": "Claude Tag setup page, launch step",
+        "do": "Set a monthly spend limit, select at least one public channel and decide whether to leave Let members know they can now tag Claude switched on. Click Launch Claude Tag.",
+        "see": "You're set appears. Claude joins the chosen channels and answers mentions there."
+      },
+      {
+        "where": "Slack channel",
+        "do": "Mention @Claude and ask it to summarise what the channel decided this week and list any open questions.",
+        "see": "Claude replies in a thread. The reply ends with a footer naming the model and a Configure link."
+      }
+    ],
+    "undo": [
+      {
+        "where": "claude.ai/admin-settings/claude-tag",
+        "do": "Switch off Enable Claude Tag in Slack.",
+        "see": "Claude stops responding in Slack, including direct messages. Nothing is deleted."
+      },
+      {
+        "where": "claude.ai/admin-settings/claude-tag, Slack page, Connected workspaces",
+        "do": "Disconnect the workspace (or have a Slack admin uninstall the Claude app).",
+        "see": "Claude-side data for that workspace, including transcripts and memory, is permanently deleted. Messages Claude posted stay in Slack."
+      }
+    ],
+    "source": "S40, S39, S41, S42",
+    "doc_updated": null
+  },
+  {
+    "id": "chatgpt-to-slack",
+    "from": "ChatGPT",
+    "to": "Slack",
+    "who": "anyone",
+    "plan_needed": "A paid ChatGPT plan (Plus, Pro, Business, Enterprise or Edu). Any Slack plan. On Business the Slack app is on by default; on Enterprise and Edu an admin must enable it. If your Slack requires admin approval for app scopes, a Slack admin may need to approve the ChatGPT app.",
+    "steps": [
+      {
+        "where": "ChatGPT, Settings",
+        "do": "Open Settings and find Slack under Apps or Plugins, depending on what your account shows.",
+        "see": "The Slack app or plugin page."
+      },
+      {
+        "where": "Slack app page in ChatGPT",
+        "do": "Select Connect.",
+        "see": "You're sent to Slack to authorise."
+      },
+      {
+        "where": "Slack authorisation screen",
+        "do": "Choose the Slack workspace you want and approve access.",
+        "see": "ChatGPT connects to that one workspace. To switch workspaces later, disconnect and connect again."
+      },
+      {
+        "where": "ChatGPT chat",
+        "do": "Mention Slack with @ or pick it from the + menu, then ask, for example, for a summary of a channel this week.",
+        "see": "ChatGPT searches channels, threads and DMs you can access. Whether it asks before taking an action depends on your app permission setting."
+      }
+    ],
+    "undo": [
+      {
+        "where": "ChatGPT, Settings > Plugins",
+        "do": "Select the Slack app or plugin, then Disconnect.",
+        "see": "Future access stops. Past chats, saved files and memories aren't deleted automatically."
+      }
+    ],
+    "source": "S46, S54, S53",
+    "doc_updated": "2026-10-11"
+  },
+  {
+    "id": "chatgpt-admin-sets-up-at-chatgpt-in-slack",
+    "from": "ChatGPT (@ChatGPT)",
+    "to": "Slack",
+    "who": "admin",
+    "plan_needed": "ChatGPT Business, Enterprise or Edu with workspace credits. A ChatGPT workspace owner or admin sets it up; a Slack owner or app manager approves the app if required. Set up separately for each Slack workspace in an Enterprise Grid.",
+    "steps": [
+      {
+        "where": "OpenAI admin console",
+        "do": "Select the intended ChatGPT workspace.",
+        "see": "The workspace's admin console."
+      },
+      {
+        "where": "OpenAI admin console, Agents",
+        "do": "Open Agents, select @ChatGPT agents, select Add and choose Slack. Follow the prompts.",
+        "see": "You're asked to connect a Slack workspace."
+      },
+      {
+        "where": "Slack authorisation",
+        "do": "Connect the intended Slack workspace and review the requested permissions. Have the Slack workspace owner or authorised app manager complete app approval if required.",
+        "see": "If the ChatGPT app was already installed, you may see a warning about missing scopes that a Slack admin must approve."
+      },
+      {
+        "where": "OpenAI admin console, New agent",
+        "do": "Choose the connected Slack workspace, enter a recognisable name and select Create agent.",
+        "see": "The @ChatGPT agent is saved with its own service account."
+      },
+      {
+        "where": "OpenAI admin console, the agent",
+        "do": "To limit channels, select Selected channels only, add your test channels and select Save channel restrictions.",
+        "see": "Channel restrictions apply to Slack channels only. They don't restrict direct messages."
+      },
+      {
+        "where": "Slack test channel",
+        "do": "Add @ChatGPT to the channel and mention it in a fresh thread with a short request. Test a direct message separately.",
+        "see": "@ChatGPT replies in the thread, visible to everyone in the channel. It doesn't respond to guests or in Slack Connect channels."
+      }
+    ],
+    "undo": [
+      {
+        "where": "OpenAI admin console, Agents, the agent's Overview",
+        "do": "Turn off @ChatGPT and confirm.",
+        "see": "Responses pause and the configuration is kept."
+      },
+      {
+        "where": "OpenAI admin console, Agents, the agent's Overview",
+        "do": "Select Delete (or Manage agent, then Delete agent), review the confirmation and select Delete.",
+        "see": "The agent's configuration and service account are permanently removed. The Slack app installation stays."
+      }
+    ],
+    "source": "S49, S48, S47",
+    "doc_updated": "2026-10-17"
+  },
+  {
+    "id": "gemini-enterprise-app-for-slack",
+    "from": "Gemini Enterprise",
+    "to": "Slack",
+    "who": "admin",
+    "plan_needed": "A Gemini Enterprise subscription (Google's Slack pages cover the Standard, Plus, Pay-as-you-go and Frontline editions), a Gemini Enterprise app using Google Identity, the Project IAM Admin role on the Google Cloud project, and \"Access to the Slack AI add-on\" as Google lists it. Not available in the everyday Gemini app.",
+    "steps": [
+      {
+        "where": "Google Cloud console, APIs & Services > Credentials",
+        "do": "Create an OAuth client ID, choose Web application and add the redirect URI https://vertexaisearch.cloud.google.com/slack/oauth_callback.",
+        "see": "A client ID and client secret."
+      },
+      {
+        "where": "Gemini Enterprise, the app, Integration > Slack",
+        "do": "Enter your Slack workspace ID (the one starting with T), the client ID and the client secret, then click Save.",
+        "see": "The integration is saved. Each Gemini Enterprise app can link to one Slack workspace."
+      },
+      {
+        "where": "Slack install link from the Gemini Enterprise page",
+        "do": "Install the app in Slack and click Allow.",
+        "see": "A Slack workspace owner or admin can confirm it under Manage > Installed Apps."
+      },
+      {
+        "where": "Slack, each person",
+        "do": "Each person grants one-time access when prompted.",
+        "see": "People can message the app directly, or mention @Gemini Enterprise in a channel. Channel replies are shown only to the person who asked."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Not documented",
+        "do": "The Google pages we read don't describe removing the app or the integration.",
+        "see": "Not described."
+      }
+    ],
+    "source": "S64, S63, S65",
+    "doc_updated": "2026-10-14"
+  },
+  {
+    "id": "agentforce-agent-in-slack",
+    "from": "Agentforce (Salesforce)",
+    "to": "Slack",
+    "who": "admin",
+    "plan_needed": "Any Slack plan plus a Salesforce Agentforce licence. People without a Salesforce account need a provisional Salesforce licence. Slack workspace owners or admins (or org owners or admins on Enterprise), plus a Salesforce admin. Agents must use the Agentforce Employee Agent type.",
+    "steps": [
+      {
+        "where": "Slack and Salesforce",
+        "do": "Connect your Salesforce org to Slack and map Slack members to Salesforce accounts. On Pro or Business+ the mapping is under Admin > Workspace settings > Salesforce > Users.",
+        "see": "Slack members are linked to their Salesforce accounts."
+      },
+      {
+        "where": "Salesforce, Agentforce Studio",
+        "do": "Open Agents, select the agent, click the plus button next to Connections, choose Add connection, select Slack and click Add to agent. Then Commit version and Activate.",
+        "see": "The agent can be installed in Slack."
+      },
+      {
+        "where": "Slack (Pro or Business+)",
+        "do": "Go to Admin > Manage Agentforce, review the agent and click Install agent.",
+        "see": "The agent is installed for the workspace. On Enterprise, install it under Organisation settings > Salesforce > Agentforce, tick workspaces and click Add to workspaces."
+      },
+      {
+        "where": "Slack, a member",
+        "do": "Click Tools (or More), then Agents, and pick the agent under Installed agents. On mobile, tap Agentforce.",
+        "see": "The member can chat with the agent. Slack says agents only use information the person can access in Slack and Salesforce."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Not documented",
+        "do": "The Slack articles we read don't describe uninstalling an agent.",
+        "see": "Not described."
+      }
+    ],
+    "source": "S25, S26",
+    "doc_updated": null
+  },
+  {
+    "id": "ai-app-in-slack",
+    "from": "AI apps and agents from the Slack Marketplace",
+    "to": "Slack",
+    "who": "anyone",
+    "plan_needed": "Any Slack plan; guests can't use AI apps. If your workspace requires app approval, an owner or admin must approve the app first.",
+    "steps": [
+      {
+        "where": "Slack sidebar",
+        "do": "Click Agents & tools, then AgentExchange, and search for the app.",
+        "see": "The app's listing. Check what scopes it asks for before installing."
+      },
+      {
+        "where": "App listing",
+        "do": "Click Add to Slack, then Allow. If you need permission, add a message for your admin and click Submit request.",
+        "see": "The app is installed, or a request goes to your admin."
+      },
+      {
+        "where": "A channel",
+        "do": "Click the channel name, open the Agents & apps tab and click Add agent or app. Then mention the agent with @.",
+        "see": "The app can now read that channel's conversation as well as your messages with it."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Not documented",
+        "do": "The article we read doesn't describe removing an AI app.",
+        "see": "Not described."
+      }
+    ],
+    "source": "S24",
+    "doc_updated": null
+  }
+]

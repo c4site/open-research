@@ -1,0 +1,255 @@
+[
+  {
+    "id": "claude-to-xero",
+    "from": "Claude",
+    "to": "Xero",
+    "who": "anyone",
+    "plan_needed": "Claude Free or any paid plan, plus an active Xero subscription. On Claude Team or Enterprise, an Owner must add the connector for the team first (see claude-team-owner-adds-xero).",
+    "steps": [
+      {
+        "where": "Claude (claude.ai or the desktop app), Customize",
+        "do": "Go to Customize > Connectors and click the + button next to Connectors. Xero's own page also links straight to the Xero listing in Claude's directory.",
+        "see": "The connectors directory opens."
+      },
+      {
+        "where": "Claude connectors directory",
+        "do": "Click Xero, read its description, then click Connect.",
+        "see": "You're asked to sign in to Xero."
+      },
+      {
+        "where": "Xero sign-in",
+        "do": "Sign in with your usual Xero login.",
+        "see": "Xero asks which organisation to connect."
+      },
+      {
+        "where": "Xero organisation choice",
+        "do": "Choose the Xero organisation you want Claude to read.",
+        "see": "You're returned to Claude with Xero connected. The exact Xero approval screen wasn't in the docs we could read."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Click + (lower left) or type /, hover over Connectors, and check Xero is switched on.",
+        "see": "Xero is available in this conversation."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Ask about profit, cash, invoices or customers, for example who owes you money.",
+        "see": "Claude answers from live Xero data, read-only, with links back to the Xero report, invoice or contact it used."
+      }
+    ],
+    "source": "S6, S61",
+    "doc_updated": null
+  },
+  {
+    "id": "claude-team-owner-adds-xero",
+    "from": "Claude",
+    "to": "Xero",
+    "who": "admin",
+    "plan_needed": "Claude Team or Enterprise, Owner or Primary Owner role.",
+    "steps": [
+      {
+        "where": "Claude, Organization settings",
+        "do": "Go to Organization settings > Connectors and click Browse connectors at the bottom of the page.",
+        "see": "The list of available connectors."
+      },
+      {
+        "where": "Claude connector list",
+        "do": "Select Xero and click Add to your team.",
+        "see": "Xero becomes available to the team. Nobody gets access automatically."
+      },
+      {
+        "where": "Claude, Organization settings > Connectors",
+        "do": "Optionally set each tool or category to Always allow, Needs approval or Blocked.",
+        "see": "Members can't override these settings."
+      },
+      {
+        "where": "Each member's Claude account",
+        "do": "Each person follows claude-to-xero and signs in to Xero themselves.",
+        "see": "Each person sees only what their own Xero login allows."
+      }
+    ],
+    "source": "S61",
+    "doc_updated": null
+  },
+  {
+    "id": "claude-small-business-with-xero",
+    "from": "Claude for Small Business",
+    "to": "Xero",
+    "who": "anyone",
+    "plan_needed": "Any paid Claude plan (Anthropic recommends Team for businesses with more than one person), the Claude Cowork desktop app, and the Xero connector connected.",
+    "steps": [
+      {
+        "where": "Claude marketplace, Small Business plugin listing",
+        "do": "Click Install in Cowork.",
+        "see": "The plugin installs in Claude Cowork."
+      },
+      {
+        "where": "Claude Cowork",
+        "do": "Connect the Xero connector if you haven't already (see claude-to-xero).",
+        "see": "Workflows that list Xero can read your Xero data."
+      },
+      {
+        "where": "Claude Cowork",
+        "do": "Run a workflow such as /monday-brief or /close-month.",
+        "see": "The workflow starts in approval mode. Claude drafts and stages the work, and nothing is sent, posted or paid until you approve it."
+      }
+    ],
+    "source": "S63, S62",
+    "doc_updated": "2026-09-15"
+  },
+  {
+    "id": "chatgpt-to-xero",
+    "from": "ChatGPT",
+    "to": "Xero",
+    "who": "anyone",
+    "plan_needed": "A ChatGPT account and a Xero subscription. OpenAI says availability depends on your plan and workspace settings, and some workspaces need admin approval. Australian availability not confirmed.",
+    "steps": [
+      {
+        "where": "ChatGPT (web, desktop or mobile), Plugins",
+        "do": "Open the Plugins directory and search for Xero.",
+        "see": "The Xero plugin by Xero Limited appears."
+      },
+      {
+        "where": "Xero plugin details",
+        "do": "Open its details and select the plus button to install it (OpenAI's help centre calls this Install plugin).",
+        "see": "The plugin installs."
+      },
+      {
+        "where": "ChatGPT connection prompt",
+        "do": "When prompted, select Connect, sign in to Xero and approve access.",
+        "see": "The Xero connection is set up. The exact Xero screens weren't in the docs we could read."
+      },
+      {
+        "where": "New ChatGPT chat",
+        "do": "Start a new chat. Type @ and choose Xero, or just ask and let ChatGPT pick it.",
+        "see": "Read-only answers from live Xero data, with links back to Xero."
+      }
+    ],
+    "source": "S68, S67, S65",
+    "doc_updated": null
+  },
+  {
+    "id": "copilot-to-xero",
+    "from": "Microsoft Copilot",
+    "to": "Xero",
+    "who": "anyone",
+    "plan_needed": "A paid Microsoft 365 Business or Enterprise account and a Xero subscription. Your IT admin may need to approve the agent. These are Microsoft's general steps; Xero's own steps are in a Xero Central article we couldn't read.",
+    "steps": [
+      {
+        "where": "Microsoft Copilot app",
+        "do": "Select All Agents.",
+        "see": "The list of agents available to you."
+      },
+      {
+        "where": "Microsoft Copilot app, agent list",
+        "do": "Find the Xero agent and select it.",
+        "see": "Its details open in the details pane."
+      },
+      {
+        "where": "Agent details pane",
+        "do": "Select Add. If the button says Request approval, ask your IT admin to approve it first.",
+        "see": "The agent is added, or an approval request goes to your admin."
+      },
+      {
+        "where": "Xero sign-in",
+        "do": "Sign in to Xero when asked.",
+        "see": "Not described in the docs we could read."
+      },
+      {
+        "where": "Microsoft Copilot chat",
+        "do": "Ask about profit, cash position, receivables or overdue invoices.",
+        "see": "Read-only answers from Xero, with links to open the report, invoice or customer record in Xero."
+      }
+    ],
+    "source": "S71, S7",
+    "doc_updated": null
+  },
+  {
+    "id": "m365-admin-reviews-xero-agent",
+    "from": "Microsoft 365 admin center",
+    "to": "Xero agent",
+    "who": "admin",
+    "plan_needed": "Microsoft 365 admin access.",
+    "steps": [
+      {
+        "where": "Microsoft 365 admin center, Integrated apps",
+        "do": "Open the Integrated apps section and find the Xero agent.",
+        "see": "The agent's permissions and data access, plus its terms of use and privacy statement."
+      },
+      {
+        "where": "Microsoft 365 admin center, Integrated apps",
+        "do": "Allow the agent for some or all users, or block it.",
+        "see": "Users can only use agents the admin allows and that they've installed or been assigned."
+      }
+    ],
+    "source": "S69, S70",
+    "doc_updated": "2026-07-09"
+  },
+  {
+    "id": "gemini-to-xero",
+    "from": "Google Gemini",
+    "to": "Xero",
+    "who": "anyone",
+    "plan_needed": "A personal Google account signed in to Gemini. Work or school accounts need a qualifying Google Workspace edition, Keep Activity on, and an admin who has enabled the app. Google's general steps; Google's article doesn't name Xero yet, and Australian availability isn't confirmed.",
+    "steps": [
+      {
+        "where": "gemini.google.com",
+        "do": "In the sidebar, click Customize. If you don't see it, click More first.",
+        "see": "The Customize page opens."
+      },
+      {
+        "where": "Gemini, Customize",
+        "do": "At the top, click Connectors.",
+        "see": "The apps available to your account and country."
+      },
+      {
+        "where": "Gemini, Connectors",
+        "do": "Find Xero and click Add, then follow the on-screen instructions.",
+        "see": "Xero is connected. The Xero sign-in screens weren't in the docs we could read."
+      },
+      {
+        "where": "Gemini chat",
+        "do": "Type @ and select Xero, then ask your question.",
+        "see": "Answers from live Xero data. Any change, such as issuing an invoice, waits for your explicit confirmation."
+      }
+    ],
+    "source": "S72, S36",
+    "doc_updated": null
+  },
+  {
+    "id": "mcp-server-to-xero",
+    "from": "Xero MCP server (in an AI app such as Claude Desktop)",
+    "to": "Xero",
+    "who": "admin",
+    "plan_needed": "A Xero organisation in Australia, New Zealand, the UK or the US; a custom connection at $10 a month AUD incl. GST (free on the Demo Company); Node.js 18 or later; some programming experience.",
+    "steps": [
+      {
+        "where": "developer.xero.com",
+        "do": "Set up a custom connection, choose its permissions (scopes), and enter the email address of the Xero user who will authorise it. If it's for your own business, that's you.",
+        "see": "Xero emails the authorising user."
+      },
+      {
+        "where": "Authorising user's email, then Xero",
+        "do": "Open Xero's email and follow it to authorise the connection to the organisation.",
+        "see": "The connection is linked to that one organisation, and you get a client ID and secret."
+      },
+      {
+        "where": "Xero",
+        "do": "Purchase a custom connection subscription for the organisation.",
+        "see": "A recurring monthly charge of $10 AUD incl. GST per custom connection."
+      },
+      {
+        "where": "Your computer",
+        "do": "Install Node.js and add the Xero MCP server to your AI app's local configuration. Keep the client ID and secret only in that local file. Never paste them into a chat or a website.",
+        "see": "The AI app lists the Xero tools after a restart."
+      },
+      {
+        "where": "Your AI app",
+        "do": "Test against the Demo Company first, then ask something simple such as a list of overdue invoices.",
+        "see": "Read tools return data. Create and update tools change real records, so read every request before you approve it."
+      }
+    ],
+    "source": "S52, S51, S55",
+    "doc_updated": "2026-06-05"
+  }
+]

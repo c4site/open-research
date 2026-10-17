@@ -1,0 +1,277 @@
+[
+  {
+    "id": "chatgpt-to-microsoft-365",
+    "from": "ChatGPT",
+    "to": "Microsoft 365 (SharePoint, Outlook Email, Outlook Calendar, Microsoft Teams)",
+    "who": "anyone",
+    "plan_needed": "A ChatGPT plan that offers the Microsoft apps (OpenAI's pages say it depends on plan, region and workspace and don't list the plans). A Microsoft work or school account. Some actions need a Microsoft Entra admin's organisation-wide consent first.",
+    "steps": [
+      { "where": "ChatGPT, Settings", "do": "Open 'Settings' > 'Plugins' and select the app (SharePoint, Outlook Email, Outlook Calendar or Microsoft Teams). Older phone apps may say 'Apps' instead of 'Plugins'.", "see": "The app's page, with its setup or connection options." },
+      { "where": "ChatGPT, the app's page", "do": "Select 'Install plugin' if it's shown.", "see": "The app's connection or setup flow may start." },
+      { "where": "ChatGPT, the app's page", "do": "Select 'Connect' if prompted.", "see": "A Microsoft sign-in window opens." },
+      { "where": "Microsoft sign-in window", "do": "Sign in with your Microsoft work or school account.", "see": "Microsoft lists the permissions ChatGPT is asking for." },
+      { "where": "Microsoft permissions screen", "do": "Review the requested permissions and finish the authorisation.", "see": "You return to ChatGPT with the app connected. Mention it with @ or pick it from '+' in a chat." }
+    ],
+    "source": "S60",
+    "doc_updated": "2026-10-02 (shown as '13 days ago' on 15 Oct 2026)"
+  },
+  {
+    "id": "chatgpt-microsoft-entra-consent",
+    "from": "ChatGPT (workspace admin)",
+    "to": "Microsoft Entra ID (your Microsoft 365 tenant)",
+    "who": "admin",
+    "plan_needed": "A ChatGPT workspace (Business, Enterprise or Edu) owner or admin, plus a Microsoft Entra administrator who can grant organisation-wide consent. These can be different people.",
+    "steps": [
+      { "where": "ChatGPT Admin console", "do": "Open 'Admin console', pick the workspace and open 'Plugins'.", "see": "The workspace's plugins and apps." },
+      { "where": "ChatGPT Admin console, Plugins", "do": "Select 'Configure Microsoft permissions'. Review each Microsoft Graph permission and the ChatGPT actions listed under it, and select only the ones your organisation will allow.", "see": "A combined permission request for your Microsoft apps." },
+      { "where": "Microsoft Entra sign-in", "do": "Continue to Microsoft Entra (the older Apps page labels this 'Review permissions in Microsoft Entra') and sign in with an Entra admin account that can grant organisation-wide consent.", "see": "Microsoft's consent screen for the 'ChatGPT / OpenAI, L.L.C.' app." },
+      { "where": "Microsoft Entra consent screen", "do": "Check the organisation and app are right, then select 'Accept'. The screen approves the whole request at once.", "see": "You return to ChatGPT, where the approval shows as complete." },
+      { "where": "ChatGPT Admin console, the app's settings", "do": "Turn on the actions you want under 'Actions'. Approving permissions doesn't switch actions on by itself.", "see": "Members can use the enabled actions, though some may need to reconnect their Microsoft account." }
+    ],
+    "source": "S62",
+    "doc_updated": "2026-10-11 (shown as '4 days ago' on 15 Oct 2026)"
+  },
+  {
+    "id": "chatgpt-office-add-in",
+    "from": "ChatGPT",
+    "to": "Excel and PowerPoint (the 'ChatGPT' add-in, which also covers Word)",
+    "who": "anyone",
+    "plan_needed": "Any ChatGPT plan: Free, Go, Plus, Pro, Business, Enterprise, Edu or K-12, with usage limits.",
+    "steps": [
+      { "where": "Excel or PowerPoint (desktop or web)", "do": "Open the app and go to 'Home' > 'Add-ins'.", "see": "The add-ins store." },
+      { "where": "Add-ins store", "do": "Search for 'ChatGPT' and add it.", "see": "ChatGPT appears on the ribbon." },
+      { "where": "Excel or PowerPoint ribbon", "do": "Open ChatGPT from the ribbon.", "see": "A ChatGPT sidebar opens beside your file." },
+      { "where": "ChatGPT sidebar", "do": "Sign in with the ChatGPT account that has your plan.", "see": "You can ask ChatGPT to build, edit or explain the open file." }
+    ],
+    "source": "S68",
+    "doc_updated": "about Aug 2026 (shown as '2 months ago' on 15 Oct 2026)"
+  },
+  {
+    "id": "chatgpt-office-add-in-admin-deploy",
+    "from": "ChatGPT",
+    "to": "Excel and PowerPoint, deployed by a Microsoft 365 admin",
+    "who": "admin",
+    "plan_needed": "A Microsoft 365 admin, for organisations that block the store. Users still sign in with their own ChatGPT plan.",
+    "steps": [
+      { "where": "OpenAI help page", "do": "Download the manifest XML file OpenAI links to.", "see": "A manifest file saved on your computer." },
+      { "where": "Microsoft 365 admin center", "do": "Go to 'Integrated apps' and select 'Deploy Add-in'.", "see": "The add-in deployment options." },
+      { "where": "Microsoft 365 admin center, Integrated apps", "do": "Select 'Upload custom apps' and upload the manifest file.", "see": "The ChatGPT add-in ready to assign." },
+      { "where": "Microsoft 365 admin center, Integrated apps", "do": "Assign it to the right users or groups.", "see": "The add-in appears for those users in Excel and PowerPoint." }
+    ],
+    "source": "S68",
+    "doc_updated": "about Aug 2026 (shown as '2 months ago' on 15 Oct 2026)"
+  },
+  {
+    "id": "at-chatgpt-in-microsoft-teams",
+    "from": "ChatGPT (@ChatGPT)",
+    "to": "Microsoft Teams",
+    "who": "admin",
+    "plan_needed": "ChatGPT Business, Enterprise or Edu with workspace credits. The person connecting must be a ChatGPT workspace owner or admin and sign in with a Microsoft account holding Global Administrator or Privileged Role Administrator.",
+    "steps": [
+      { "where": "OpenAI admin console", "do": "Pick the ChatGPT workspace.", "see": "The workspace's admin settings." },
+      { "where": "OpenAI admin console, Agents", "do": "Open 'Agents', select '@ChatGPT agents', select 'Add', choose 'Microsoft Teams' and follow the prompts.", "see": "A Microsoft sign-in prompt." },
+      { "where": "Microsoft sign-in and consent", "do": "Sign in with the authorised Microsoft account, review the permissions and complete organisational consent.", "see": "The Teams tenant is connected and waiting for the app install." },
+      { "where": "Teams admin center", "do": "Select 'Open Teams admin center', open 'Users and groups', select 'Install app' and pick the users or groups.", "see": "The ChatGPT app installed for those people." },
+      { "where": "OpenAI admin console", "do": "Wait until the connection shows 'Ready', then select 'Done'.", "see": "The connection is ready for an agent." },
+      { "where": "OpenAI admin console, New agent", "do": "In 'New agent', check the tenant matches, name the agent and select 'Create agent'.", "see": "@ChatGPT is set up for your Teams tenant." },
+      { "where": "Microsoft Teams", "do": "Mention @ChatGPT in an approved channel with a test request.", "see": "@ChatGPT replies in the channel." }
+    ],
+    "source": "S67",
+    "doc_updated": "2026-10-14 (shown as '22 hours ago' on 15 Oct 2026)"
+  },
+  {
+    "id": "claude-org-enable-microsoft-365",
+    "from": "Claude (organisation owner)",
+    "to": "Microsoft 365 connector, switched on for a Claude Team or Enterprise organisation",
+    "who": "admin",
+    "plan_needed": "Claude Team or Enterprise. On Free, Pro and Max this step is skipped.",
+    "steps": [
+      { "where": "Claude", "do": "Sign in to Claude as an organisation owner.", "see": "Your Claude workspace." },
+      { "where": "Claude, Organization settings", "do": "Go to 'Organization settings' > 'Connectors'.", "see": "The organisation's connector list." },
+      { "where": "Claude, Connectors", "do": "Click '+ Add', then 'All available'.", "see": "The list of available connectors." },
+      { "where": "Claude, Connectors", "do": "Find 'Microsoft 365' and click 'Add to your team'.", "see": "Microsoft 365 is available to your members once a Microsoft Entra Global Administrator has also consented." }
+    ],
+    "source": "S71",
+    "doc_updated": "2026-10-14"
+  },
+  {
+    "id": "claude-microsoft-entra-consent",
+    "from": "Claude",
+    "to": "Microsoft Entra ID (your Microsoft 365 tenant)",
+    "who": "admin",
+    "plan_needed": "Any Claude plan. A Microsoft Entra Global Administrator, in a tenant tied to a Microsoft Business plan.",
+    "steps": [
+      { "where": "Claude, Customize", "do": "Go to 'Customize' > 'Connectors'.", "see": "Your connectors." },
+      { "where": "Claude, Connectors", "do": "Find 'Microsoft 365' and click 'Connect'.", "see": "A Microsoft sign-in window opens." },
+      { "where": "Microsoft sign-in window", "do": "Sign in with your Microsoft 365 Global Administrator credentials.", "see": "Microsoft's permissions screen." },
+      { "where": "Microsoft permissions screen", "do": "Accept the permissions, ticking the box to grant access on behalf of the whole organisation.", "see": "Other people in your tenant can now connect without seeing the consent prompt." }
+    ],
+    "source": "S71",
+    "doc_updated": "2026-10-14"
+  },
+  {
+    "id": "claude-to-microsoft-365",
+    "from": "Claude",
+    "to": "Microsoft 365 (SharePoint, OneDrive, Outlook, Teams)",
+    "who": "anyone",
+    "plan_needed": "Any Claude plan (Free, Pro, Max, Team or Enterprise), after an Entra Global Administrator's one-time consent. On Team and Enterprise the owner must add the connector first. Personal Microsoft accounts can't connect.",
+    "steps": [
+      { "where": "Claude, Customize", "do": "Go to 'Customize' > 'Connectors'.", "see": "Your connectors." },
+      { "where": "Claude, Connectors", "do": "Find 'Microsoft 365' in the list and click 'Connect'.", "see": "A Microsoft sign-in window opens." },
+      { "where": "Microsoft sign-in window", "do": "Sign in with your Microsoft 365 work account.", "see": "Claude can now search SharePoint, OneDrive, Outlook and Teams content you can already open. It also works in Claude's iOS and Android apps." }
+    ],
+    "source": "S72",
+    "doc_updated": "2026-09-08"
+  },
+  {
+    "id": "claude-for-microsoft-365-self-install",
+    "from": "Claude (Claude for Microsoft 365 add-in)",
+    "to": "Excel, Word and PowerPoint",
+    "who": "anyone",
+    "plan_needed": "A paid Claude plan: Pro, Max, Team or Enterprise.",
+    "steps": [
+      { "where": "Microsoft AppSource", "do": "Open the 'Claude for Microsoft 365' listing.", "see": "The add-in's marketplace page." },
+      { "where": "Microsoft AppSource", "do": "Select 'Get it now'.", "see": "The add-in installs for your account." },
+      { "where": "Excel", "do": "Open Excel, activate the add-in and sign in with your Claude account.", "see": "A Claude sidebar beside your workbook." }
+    ],
+    "source": "S74",
+    "doc_updated": null
+  },
+  {
+    "id": "claude-for-microsoft-365-org-deploy",
+    "from": "Claude (Claude for Microsoft 365 add-in)",
+    "to": "Excel, Word and PowerPoint, deployed across the organisation",
+    "who": "admin",
+    "plan_needed": "A Microsoft 365 admin. Users need a paid Claude plan (Pro, Max, Team or Enterprise), or an approved third-party platform set up by IT.",
+    "steps": [
+      { "where": "Microsoft 365 admin center, Settings", "do": "Go to 'Settings' > 'Org Settings' > 'User owned apps and services' and turn on 'Let users access the Office Store'.", "see": "Admin-deployed store add-ins can now reach users." },
+      { "where": "Microsoft 365 admin center, Settings", "do": "Go to 'Settings' > 'Integrated apps' > 'Add-ins'.", "see": "The add-ins deployment page." },
+      { "where": "Microsoft 365 admin center, Integrated apps", "do": "Search Microsoft AppSource for 'Claude for Microsoft 365'.", "see": "The Claude add-in listing." },
+      { "where": "Microsoft 365 admin center, Integrated apps", "do": "Assign it to the whole organisation or to chosen users or groups.", "see": "Users activate it from 'Home' > 'Add-ins' on Windows or 'Tools' > 'Add-ins' on Mac, then sign in." }
+    ],
+    "source": "S74",
+    "doc_updated": null
+  },
+  {
+    "id": "claude-for-outlook-graph-consent",
+    "from": "Claude (Claude for Outlook add-in, beta)",
+    "to": "Outlook mail and calendar through Microsoft Graph",
+    "who": "admin",
+    "plan_needed": "A Microsoft Entra Global Administrator. Mailboxes on Exchange Online. Users need a paid Claude plan (Pro, Max, Team or Enterprise).",
+    "steps": [
+      { "where": "Microsoft 365 admin center", "do": "Deploy the 'Claude for Outlook' add-in from 'Settings' > 'Integrated apps' to the organisation or chosen people.", "see": "The add-in rolls out, which can take up to 24 hours." },
+      { "where": "Web browser signed in to your tenant", "do": "As a Global Administrator, open the admin consent link from Anthropic's Claude for Outlook page.", "see": "A Microsoft permissions screen listing Mail.ReadWrite, Calendars.Read, User.Read and offline_access." },
+      { "where": "Microsoft permissions screen", "do": "Select 'Accept'.", "see": "Everyone in the organisation can use Claude for Outlook without separate Microsoft prompts. The grant takes effect straight away." },
+      { "where": "Outlook", "do": "Open any email, select the Claude button in the message ribbon and sign in with a Claude account.", "see": "A Claude pane that drafts replies into Outlook's compose pane, unsent." }
+    ],
+    "source": "S76",
+    "doc_updated": null
+  },
+  {
+    "id": "copilot-claude-models",
+    "from": "Claude (Anthropic models as a Microsoft subprocessor)",
+    "to": "Microsoft Copilot",
+    "who": "admin",
+    "plan_needed": "AI Administrator or Global Administrator role. Claude options appear in licensed Copilot experiences such as Researcher, Edit with Copilot and Copilot Studio.",
+    "steps": [
+      { "where": "Microsoft 365 admin center", "do": "Select 'Copilot' > 'Settings' > 'View all'.", "see": "The full list of Copilot settings." },
+      { "where": "Microsoft 365 admin center, Copilot settings", "do": "Select 'AI providers operating as Microsoft subprocessors'.", "see": "The providers available to your organisation." },
+      { "where": "AI providers operating as Microsoft subprocessors", "do": "Under 'Available subprocessors for your organization', select 'Anthropic', then 'Save'.", "see": "Anthropic is enabled as a subprocessor." },
+      { "where": "AI providers operating as Microsoft subprocessors", "do": "Under 'Choose who can access Anthropic models for Copilot and generative AI experiences', pick users or groups, then 'Save'.", "see": "Those people can choose Claude in Researcher and supported apps. To turn it off, the same page offers 'Disable Anthropic as a Microsoft subprocessor'." }
+    ],
+    "source": "S7",
+    "doc_updated": "2026-09-18"
+  },
+  {
+    "id": "copilot-openai-operated-models",
+    "from": "OpenAI-operated models (OpenAI as a Microsoft subprocessor)",
+    "to": "Microsoft Copilot",
+    "who": "admin",
+    "plan_needed": "AI Administrator or Global Administrator role. On by default for eligible commercial customers since 24 July 2026.",
+    "steps": [
+      { "where": "Microsoft 365 admin center", "do": "Select 'Copilot' > 'Settings' > 'View all'.", "see": "The full list of Copilot settings." },
+      { "where": "Microsoft 365 admin center, Copilot settings", "do": "Select 'AI providers operating as Microsoft subprocessors'.", "see": "The providers available to your organisation." },
+      { "where": "AI providers operating as Microsoft subprocessors", "do": "Under 'Available subprocessors for your organization', select 'OpenAI'.", "see": "The OpenAI access options." },
+      { "where": "AI providers operating as Microsoft subprocessors", "do": "Under 'Choose which users can access OpenAI operated models', pick 'All users', chosen users and groups, or 'No users', then 'Save'.", "see": "OpenAI-operated models are available to the people you chose, or to no one." }
+    ],
+    "source": "S8",
+    "doc_updated": "2026-10-09"
+  },
+  {
+    "id": "gemini-enterprise-to-sharepoint",
+    "from": "Gemini Enterprise (Google Cloud)",
+    "to": "Microsoft SharePoint Online",
+    "who": "admin",
+    "plan_needed": "Gemini Enterprise (Google documents the Standard, Plus, Pay-as-you-go and Frontline editions; Business edition is covered elsewhere). The Discovery Engine Editor role in Google Cloud. A Microsoft Entra admin, and a SharePoint admin's consent for the API permissions.",
+    "steps": [
+      { "where": "Microsoft Entra admin center", "do": "Go to 'Entra ID' > 'App registrations' > 'New registration'. Name the app and choose 'Accounts in this organizational directory only'.", "see": "A new app registration and its overview page." },
+      { "where": "Microsoft Entra admin center, the new app", "do": "Add the web redirect addresses Google lists, then create a client secret under 'Certificates & secrets'.", "see": "A client ID, client secret and tenant ID to copy." },
+      { "where": "Microsoft Entra admin center, API permissions", "do": "Add the Microsoft Graph and SharePoint permissions for the connection mode you want, and get admin consent.", "see": "The app holds the approved permissions." },
+      { "where": "Google Cloud console, Gemini Enterprise", "do": "Select 'Data stores' > 'Create data store', search for 'Microsoft SharePoint' and click 'Select'.", "see": "The SharePoint data store setup." },
+      { "where": "Google Cloud console, data store setup", "do": "Choose 'Federated search' or 'Data ingestion', enter the client ID, client secret, tenant ID and SharePoint address, and complete the sign-in.", "see": "The SharePoint connection is created." },
+      { "where": "Google Cloud console, Advanced options", "do": "Optionally include or exclude particular sites and folders.", "see": "Gemini Enterprise searches and acts only within the scope you set." }
+    ],
+    "source": "S85",
+    "doc_updated": "2026-10-14"
+  },
+  {
+    "id": "copilot-connector-to-other-tools",
+    "from": "Other business tools (for example Salesforce, ServiceNow, Jira, Google Drive)",
+    "to": "Microsoft Copilot and Microsoft Search (Copilot connectors)",
+    "who": "admin",
+    "plan_needed": "An AI administrator in the Microsoft 365 admin center, plus credentials for the outside system. Copilot-licensed users get connector content in Copilot. Copilot Chat users reach it through usage-billed agents.",
+    "steps": [
+      { "where": "Microsoft 365 admin center", "do": "Sign in to the Microsoft 365 admin center.", "see": "The admin home page." },
+      { "where": "Microsoft 365 admin center", "do": "Choose 'Copilot' > 'Connectors'.", "see": "The connectors page." },
+      { "where": "Copilot connectors", "do": "On the 'Connectors' tab, choose 'Gallery' and select the source, such as ServiceNow Knowledge or Salesforce.", "see": "The connection setup for that source." },
+      { "where": "Connection setup", "do": "Enter a name and the source's address, then choose how to sign in to it.", "see": "The connector is ready to deploy." },
+      { "where": "Connection setup", "do": "Roll it out to a small group of users first, then choose 'Create'.", "see": "The connector starts indexing with default settings." }
+    ],
+    "source": "S41",
+    "doc_updated": "2026-04-07"
+  },
+  {
+    "id": "work-iq-mcp-copilot-studio",
+    "from": "Copilot Studio agents (Work IQ MCP, preview)",
+    "to": "Microsoft 365 data through the Work IQ MCP server",
+    "who": "admin",
+    "plan_needed": "Usage-based billing set up with an Azure subscription. A Global Administrator for the one-time setup. Access to Copilot Studio for the agent builder.",
+    "steps": [
+      { "where": "Graph Explorer", "do": "As a Global Administrator, set the method to 'POST' and the address to the servicePrincipals endpoint, consent to Application.ReadWrite.All under 'Modify permissions', post the Work IQ app ID and select 'Run query'.", "see": "'201 Created', or a conflict message if it already exists." },
+      { "where": "Copilot Studio, your agent", "do": "Open the agent's 'Tools' tab and select 'Add Tool'.", "see": "The 'Add a tool' page." },
+      { "where": "Copilot Studio, Add a tool", "do": "Select 'MCP', then 'Work IQ (Preview)', then 'Create new connection' and 'Create'.", "see": "A sign-in prompt." },
+      { "where": "Copilot Studio", "do": "Sign in, then select 'Add and Configure'.", "see": "The agent can use Work IQ. It's read-only unless an admin turns on write operations." }
+    ],
+    "source": "S49",
+    "doc_updated": "2026-09-28 (setup step from S50, updated 2026-06-16)"
+  },
+  {
+    "id": "power-automate-copilot-flow",
+    "from": "Copilot in Power Automate",
+    "to": "Microsoft 365 apps and other services (cloud flows)",
+    "who": "anyone",
+    "plan_needed": "A Microsoft 365 work account, which includes Power Automate with standard connectors. Premium connectors need Power Automate Premium.",
+    "steps": [
+      { "where": "Power Automate (make.powerautomate.com)", "do": "Sign in and make sure 'Home' is selected.", "see": "The Power Automate home page." },
+      { "where": "Power Automate, Home", "do": "Select 'Create with Copilot' and describe the flow in 'What will your flow do?', then select the send arrow.", "see": "Copilot suggests a trigger and actions." },
+      { "where": "Power Automate, suggested flow", "do": "If it looks right, select 'Keep it and continue'.", "see": "A list of the connections the flow needs." },
+      { "where": "Power Automate, connections", "do": "Fix any connection marked with a red exclamation mark.", "see": "Every connection shows a green tick." },
+      { "where": "Power Automate", "do": "Select 'Create flow', finish off in the Copilot pane and select 'Save'.", "see": "The flow is saved, ready to test." }
+    ],
+    "source": "S46",
+    "doc_updated": "2026-09-18"
+  },
+  {
+    "id": "personal-copilot-on-work-files",
+    "from": "Copilot from a personal Microsoft 365 Personal, Family or Premium plan",
+    "to": "Work documents in Word, Excel, PowerPoint and Outlook",
+    "who": "anyone",
+    "plan_needed": "A personal Microsoft 365 subscription, and an organisation that hasn't disabled 'Multiple account access to Copilot for work documents'.",
+    "steps": [
+      { "where": "Word, Excel, PowerPoint or Outlook", "do": "Select your account profile in the app header.", "see": "The account menu." },
+      { "where": "Account menu", "do": "Select 'Add an account' and sign in with your personal Microsoft account.", "see": "Copilot from your personal plan works on the open work document. It can't reach the organisation's Microsoft Graph or other documents." }
+    ],
+    "source": "S53",
+    "doc_updated": null
+  }
+]

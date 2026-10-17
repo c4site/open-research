@@ -1,0 +1,40 @@
+[
+  {
+    "id": "developer-app-to-karbon-api",
+    "from": "Your own app or automation",
+    "to": "Karbon API",
+    "who": "admin",
+    "plan_needed": "A Karbon Business or Enterprise plan (Team has no API access). Firms are limited to one API application per account. Someone with access to Karbon Settings; the help article doesn't say which role. Programming skills to use the credentials. Karbon also lists an MCP server address (https://mcp.karbonhq.com) but publishes no steps for it, so it isn't covered here.",
+    "steps": [
+      {
+        "where": "Karbon, Settings",
+        "do": "Go to Settings. Under Integrations and Tools, select API Applications.",
+        "see": "The API Applications page."
+      },
+      {
+        "where": "Karbon, API Applications",
+        "do": "Select the API Applications tab, then click Enable API Access.",
+        "see": "The page refreshes and your API application appears in the list, named after your practice."
+      },
+      {
+        "where": "Karbon, API Applications list",
+        "do": "Click Manage next to your application.",
+        "see": "The API Authentication screen, showing an Application ID (used as the bearer token) and an Access Key (a JWT token)."
+      },
+      {
+        "where": "Karbon, API Authentication screen",
+        "do": "Click Copy for each value and store them in an environment variable or a secrets manager. Treat them like passwords, and never paste them into a chat or a website.",
+        "see": "Your app can now call the Karbon REST API, within its limit of 120 requests a minute."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Karbon, Settings > Integrations and Tools > API Applications",
+        "do": "Click Manage next to your application, then Rotate next to the Access Key, and confirm with Rotate.",
+        "see": "The old Access Key stops working immediately, along with anything still using it. The docs we read don't describe turning API access off entirely."
+      }
+    ],
+    "source": "S20, S32, S31",
+    "doc_updated": "2026-04-28"
+  }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "id": "leap-to-lawy",
+    "from": "LEAP",
+    "to": "LawY (built into LEAP)",
+    "who": "anyone",
+    "plan_needed": "Any LEAP subscription. LEAP says LawY, including lawyer verification, is included at no extra cost. Not available in the LEAP mobile app.",
+    "steps": [
+      {
+        "where": "LEAP, a matter",
+        "do": "Open any matter and go to the Details & Correspondence tab.",
+        "see": "The matter's correspondence list and ribbon."
+      },
+      {
+        "where": "LEAP ribbon, LEAP AI",
+        "do": "Select the LawY button in the LEAP AI ribbon.",
+        "see": "LawY opens in a new window (a new tab on the web)."
+      },
+      {
+        "where": "LawY, first launch only",
+        "do": "If prompted, select Allow as admin to consent for your firm, or Allow to consent for yourself only.",
+        "see": "LawY is ready to answer questions for the selected matter."
+      },
+      {
+        "where": "LawY",
+        "do": "Check the right matter is selected, type your legal question and select Ask.",
+        "see": "An instant AI-answer for the matter's jurisdiction and matter type, with numbered citations and a sources panel."
+      },
+      {
+        "where": "LawY",
+        "do": "For a checked answer, select Deep Research + Human Verification, tick the questions, choose Lawyer verification and select Next.",
+        "see": "The request appears under the Verification tab. LEAP says verification usually takes 1 to 3 business days and you get a notification in LEAP."
+      }
+    ],
+    "undo": [
+      {
+        "where": "LawY settings, Preferences tab",
+        "do": "Turn off Automatic Deep Research if you don't want background research memos.",
+        "see": "No more automatic research follow-ups. LEAP's help centre says LawY itself can't be switched off for individual users."
+      }
+    ],
+    "source": "S35, S27",
+    "doc_updated": "2026-09-01"
+  },
+  {
+    "id": "leap-matter-ai-word-add-in",
+    "from": "Microsoft Word",
+    "to": "LEAP Matter AI (Matter AI for Word add-in)",
+    "who": "anyone",
+    "plan_needed": "A LEAP subscription (Microsoft's listing says it requires a paid subscription to LEAP). The firm must accept Corto's Matter AI terms the first time it's used.",
+    "steps": [
+      {
+        "where": "Microsoft Word",
+        "do": "Open any Word document, then click File > Account and click Get Add-ins.",
+        "see": "The Office add-ins store."
+      },
+      {
+        "where": "Office add-ins store",
+        "do": "Search for and select Matter AI, then click Add.",
+        "see": "A License terms and Privacy policy window."
+      },
+      {
+        "where": "License terms and Privacy policy window",
+        "do": "Click Continue.",
+        "see": "The Matter AI add-in installs and appears in the Word ribbon under Add-ins."
+      },
+      {
+        "where": "Matter AI for Word panel, first use",
+        "do": "Tick the box next to \"I have read and agree to the terms and conditions\" and click Get Started. Sign in with your LEAP credentials and Connect to LEAP if prompted.",
+        "see": "The panel opens on the right. LEAP says the first use ingests the documents within all your LEAP matters, so the first prompt may take time."
+      },
+      {
+        "where": "Matter AI for Word panel",
+        "do": "For a document opened outside LEAP, start typing to select its matter, then ask your question.",
+        "see": "Answers you can copy or insert into the document."
+      }
+    ],
+    "source": "S36, S53",
+    "doc_updated": "2026-05-21"
+  },
+  {
+    "id": "zapier-to-leap",
+    "from": "Zapier",
+    "to": "LEAP",
+    "who": "anyone",
+    "plan_needed": "A Zapier account and a LEAP login. LEAP recommends turning on multi-factor authentication in Zapier. LEAP supports actions only, so every Zap must start with a trigger from another app.",
+    "steps": [
+      {
+        "where": "Zapier, Home page",
+        "do": "Log in to Zapier and select App Connections.",
+        "see": "Your list of connected apps."
+      },
+      {
+        "where": "Zapier, App Connections",
+        "do": "Select Add Connections and search for LEAP (Legal).",
+        "see": "LEAP (Legal) in the results."
+      },
+      {
+        "where": "Zapier, App Connections",
+        "do": "Select LEAP (Legal) and select Add Connection, then enter your LEAP credentials.",
+        "see": "A permissions window to confirm."
+      },
+      {
+        "where": "Zapier, Home page",
+        "do": "Select Create, then Zaps, and choose a trigger from another app.",
+        "see": "A new Zap with its first step set."
+      },
+      {
+        "where": "Zap editor",
+        "do": "Add an action step, search for LEAP (Legal), choose an action event such as Create Card and select your LEAP account.",
+        "see": "A form of LEAP fields to map. Test each step before turning the Zap on."
+      }
+    ],
+    "source": "S45",
+    "doc_updated": "2026-02-18"
+  },
+  {
+    "id": "claude-to-lawy",
+    "from": "Claude",
+    "to": "LawY (a separate paid LawY account)",
+    "who": "anyone",
+    "plan_needed": "A paid LawY account with Connected Agents switched on by a LawY Firm Administrator, and a Claude account. Nothing in LawY's or LEAP's documentation says this reaches matters stored in LEAP.",
+    "steps": [
+      {
+        "where": "Claude, connector settings",
+        "do": "LawY's article says go to Settings → Connectors (or browse the connector directory) and find LawY. Anthropic's current page calls this Customize > Connectors.",
+        "see": "The LawY connector. We didn't find LawY on Anthropic's public directory page on 17 October 2026."
+      },
+      {
+        "where": "Claude, LawY connector",
+        "do": "Choose Connect.",
+        "see": "Your browser opens the LawY sign-in."
+      },
+      {
+        "where": "LawY sign-in",
+        "do": "Sign in with your LawY account and approve the connection.",
+        "see": "You're returned to Claude with your accessible LawY matters available."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Ask something simple, such as \"List my LawY matters.\"",
+        "see": "A list of the matters your LawY access allows. The connector can create and update documents but can't delete anything."
+      }
+    ],
+    "undo": [
+      {
+        "where": "LawY, Connected Agents panel",
+        "do": "Disconnect the agent.",
+        "see": "LawY says this immediately suspends the agent's access. You can also disconnect in Claude's connector settings, and a firm administrator can block the connector for the whole firm."
+      }
+    ],
+    "source": "S26, S55",
+    "doc_updated": "2026-10-15"
+  },
+  {
+    "id": "chatgpt-to-lawy",
+    "from": "ChatGPT",
+    "to": "LawY (a separate paid LawY account)",
+    "who": "anyone",
+    "plan_needed": "A paid LawY account with Connected Agents switched on by a LawY Firm Administrator, and a ChatGPT account. Nothing in LawY's or LEAP's documentation says this reaches matters stored in LEAP.",
+    "steps": [
+      {
+        "where": "ChatGPT, settings",
+        "do": "LawY's article says open Settings → Apps & Connectors and find LawY. OpenAI's current help page calls this Settings > Plugins.",
+        "see": "The LawY entry. We didn't find LawY on OpenAI's public plugin page on 17 October 2026."
+      },
+      {
+        "where": "ChatGPT, LawY",
+        "do": "Choose Connect and sign in with your LawY account when prompted.",
+        "see": "The LawY sign-in and approval screen."
+      },
+      {
+        "where": "LawY approval",
+        "do": "Approve the connection.",
+        "see": "You're returned to ChatGPT."
+      },
+      {
+        "where": "ChatGPT chat",
+        "do": "Start with \"List my LawY matters.\"",
+        "see": "A list of the matters your LawY access allows."
+      }
+    ],
+    "undo": [
+      {
+        "where": "LawY, Connected Agents panel",
+        "do": "Disconnect the agent.",
+        "see": "LawY says access is suspended straight away. You can also disconnect in ChatGPT's settings."
+      }
+    ],
+    "source": "S26, S57",
+    "doc_updated": "2026-10-15"
+  }
+]

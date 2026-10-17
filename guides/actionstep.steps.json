@@ -1,0 +1,166 @@
+[
+  {
+    "id": "actionstep-admin-turns-on-trace",
+    "from": "Actionstep Practice Management (admin)",
+    "to": "Trace (AI time capture)",
+    "who": "admin",
+    "plan_needed": "The Trace add-on module (priced per user plus implementation fees; prices not published). Windows computers only. Early access customers get the installer from an Actionstep representative instead of the Admin > Trace page.",
+    "steps": [
+      {
+        "where": "Actionstep Practice Management, Admin > General",
+        "do": "Toggle the feature flags Trace, Trace Timesheet and Trace Suggestion to on.",
+        "see": "Trace is enabled for your system."
+      },
+      {
+        "where": "Actionstep Practice Management, Admin > Trace",
+        "do": "Click Installation Information and follow the instructions to download the installation file.",
+        "see": "The Trace installer (Trace.msi)."
+      },
+      {
+        "where": "Your IT deployment tools",
+        "do": "Share the file with IT to deploy remotely to timekeepers, or give it to fee earners to install themselves.",
+        "see": "Trace installed on each timekeeper's Windows computer."
+      }
+    ],
+    "source": "S15, S16",
+    "doc_updated": "2026-08-06"
+  },
+  {
+    "id": "actionstep-fee-earner-installs-trace",
+    "from": "A fee earner's Windows computer",
+    "to": "Trace (AI time capture)",
+    "who": "anyone",
+    "plan_needed": "Trace enabled for your firm by an admin, and the Trace.msi file from your admin or IT staff.",
+    "steps": [
+      {
+        "where": "Windows",
+        "do": "Double-click the Trace.msi file and complete the Trace Setup Wizard. If Microsoft Defender SmartScreen warns you, Actionstep says you can choose Run anyway as long as the file came from the Admin > Trace page.",
+        "see": "The final setup screen."
+      },
+      {
+        "where": "Trace Setup Wizard",
+        "do": "Select Launch Trace and click Finish.",
+        "see": "Trace prompts you to sign in to Actionstep."
+      },
+      {
+        "where": "Actionstep sign-in",
+        "do": "Sign in.",
+        "see": "A green Trace icon in the Windows system tray means it's tracking. Red means it isn't."
+      },
+      {
+        "where": "Actionstep Practice Management, Time > Timesheet",
+        "do": "Open the Trace panel on the right, review the suggested activities and the AI-suggested matters, and turn the right ones into time entries.",
+        "see": "Time entries with AI-drafted narratives. Nothing is posted until you create the entry."
+      }
+    ],
+    "source": "S16, S15, S17",
+    "doc_updated": "2026-10-12"
+  },
+  {
+    "id": "actionstep-ask-acumen",
+    "from": "Actionstep Practice Management",
+    "to": "Ask Acumen (AI questions about firm reports)",
+    "who": "anyone",
+    "plan_needed": "The Acumen add-on module, currently in early access. Answers follow each user's permissions.",
+    "steps": [
+      {
+        "where": "Actionstep Practice Management",
+        "do": "Go to Insights > Business Intelligence.",
+        "see": "The Insights page."
+      },
+      {
+        "where": "Insights panel on the left",
+        "do": "Click Firm Management.",
+        "see": "The Firm Management Dashboard."
+      },
+      {
+        "where": "Firm Management Dashboard",
+        "do": "Click the Ask Acumen button in the top-right corner.",
+        "see": "The Ask Acumen panel opens on the right."
+      },
+      {
+        "where": "Ask Acumen panel",
+        "do": "Type a question about the dashboard data, ideally with a date range, and press Enter.",
+        "see": "An answer grounded in your Actionstep data. Click Sources to see which data was used. Actionstep keeps chats during the beta to evaluate quality."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Ask Acumen panel, History",
+        "do": "Click the Delete icon next to a saved session.",
+        "see": "The saved session is removed from your history."
+      }
+    ],
+    "source": "S19",
+    "doc_updated": "2026-08-10"
+  },
+  {
+    "id": "actionstep-outlook-add-in",
+    "from": "Microsoft Outlook (Office 365)",
+    "to": "Actionstep Practice Management",
+    "who": "anyone",
+    "plan_needed": "Actionstep Practice Management and an Office 365 Business account using Exchange via Office 365. Listed as Free + O365 Subscription. An admin can grant tenant-wide consent or deploy the add-in to all staff from Services & add-ins in the Office 365 admin centre.",
+    "steps": [
+      {
+        "where": "Actionstep Practice Management, your user profile icon",
+        "do": "Choose Manage Profile, then in the Email mailboxes section click Add an Office 365 Mailbox and complete the Microsoft sign-in.",
+        "see": "Your Office 365 account is listed under Email mailboxes."
+      },
+      {
+        "where": "Outlook on the web or new Outlook",
+        "do": "Click the More Apps icon in the left menu bar, click Add apps, search for Actionstep for Outlook, click its tile and follow the prompts. In desktop Outlook, use Home > All Apps > Add Apps instead.",
+        "see": "The add-in is added."
+      },
+      {
+        "where": "Outlook, an email",
+        "do": "Select an email and click Open Actionstep on the Home ribbon (on the web, the Apps icon on the message, then Actionstep for Outlook).",
+        "see": "The Actionstep panel. Click the pin icon to keep it open."
+      },
+      {
+        "where": "Actionstep panel",
+        "do": "Click Log in, enter your Actionstep sign-in details and click Grant Access. Choose the system first if you have more than one.",
+        "see": "The add-in is connected. Actionstep says its AI suggests matters for filing emails and documents."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Actionstep panel in Outlook",
+        "do": "Click the person icon in the top-right corner, then click Logout.",
+        "see": "The add-in is signed out of Actionstep."
+      }
+    ],
+    "source": "S25, S26",
+    "doc_updated": "2026-09-15"
+  },
+  {
+    "id": "zapier-to-actionstep",
+    "from": "Zapier",
+    "to": "Actionstep Practice Management",
+    "who": "anyone",
+    "plan_needed": "A Zapier account and an Actionstep login. Listed as Free + Zapier Subscription. Actionstep Support can't directly support Zaps your team builds.",
+    "steps": [
+      {
+        "where": "Zapier",
+        "do": "Sign up for a Zapier account.",
+        "see": "Your Zapier dashboard."
+      },
+      {
+        "where": "Actionstep's Zapier article",
+        "do": "Use the article's install link for the Zapier integration and choose the apps you want to connect.",
+        "see": "Actionstep in your Zapier apps. Actionstep's article doesn't give screen-by-screen steps and points to Zapier's help."
+      },
+      {
+        "where": "Zapier",
+        "do": "Sign in to each app you're connecting, including Actionstep.",
+        "see": "Each app authenticated."
+      },
+      {
+        "where": "Zapier Zap editor",
+        "do": "Connect an Actionstep trigger (for example, a new matter is created) to an action in another app, or another app's trigger to an Actionstep action (for example, create a file note).",
+        "see": "A Zap that runs whenever the trigger happens."
+      }
+    ],
+    "source": "S23, S27",
+    "doc_updated": "2026-04-14"
+  }
+]

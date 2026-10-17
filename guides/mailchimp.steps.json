@@ -1,0 +1,237 @@
+[
+  {
+    "id": "claude-to-mailchimp",
+    "from": "Claude",
+    "to": "Mailchimp",
+    "who": "anyone",
+    "plan_needed": "An active Claude account and an active Mailchimp account, signed in with a role allowed to authorise third-party integrations in both (Mailchimp says usually Owner or Admin). Mailchimp's AI page says its AI connectors are on the Standard and Premium plans; its Claude help article doesn't name a plan. On Claude Team or Enterprise, an Owner must add the connector first (see claude-team-owner-adds-mailchimp).",
+    "steps": [
+      {
+        "where": "Claude (claude.ai or the desktop app), Customize",
+        "do": "Go to Customize > Connectors and click the + button next to Connectors.",
+        "see": "The connectors directory opens."
+      },
+      {
+        "where": "Claude connectors directory",
+        "do": "Find Mailchimp, listed as Intuit Mailchimp (made by Intuit Mailchimp, Anthropic verified), and click Connect.",
+        "see": "A Mailchimp sign-in screen."
+      },
+      {
+        "where": "Intuit Mailchimp sign-in",
+        "do": "Sign in with your Intuit Mailchimp account when prompted.",
+        "see": "Intuit Mailchimp shows as connected in Claude. The exact Mailchimp approval screen wasn't shown in the docs we read."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Click + (lower left) or type /, hover over Connectors, and check Intuit Mailchimp is switched on.",
+        "see": "The connector is available in this conversation."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Give Claude your goal and timeframe, for example a spring sale over the next three weeks. Answer any follow-up questions, then ask Claude to save the finished plan to your Mailchimp account.",
+        "see": "A campaign plan based on your past Mailchimp results, saved to your account as a draft. Mailchimp's help doesn't describe sending or scheduling from Claude; you finish and send in Mailchimp."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Claude, Customize > Connectors",
+        "do": "Select Intuit Mailchimp and disconnect it.",
+        "see": "Claude stops using your Mailchimp account. Mailchimp says to wait a moment before reconnecting, because reconnecting straight away can cause problems."
+      }
+    ],
+    "source": "S28, S27, S26",
+    "doc_updated": "2026-10-17"
+  },
+  {
+    "id": "claude-team-owner-adds-mailchimp",
+    "from": "Claude",
+    "to": "Mailchimp",
+    "who": "admin",
+    "plan_needed": "Claude Team or Enterprise, Owner or Primary Owner role.",
+    "steps": [
+      {
+        "where": "Claude, Organization settings",
+        "do": "Go to Organization settings > Connectors and click Browse connectors at the bottom of the page.",
+        "see": "The list of available connectors."
+      },
+      {
+        "where": "Claude connector list",
+        "do": "Select Intuit Mailchimp and click Add to your team.",
+        "see": "It becomes available to the team. Nobody gets access automatically."
+      },
+      {
+        "where": "Claude, Customize > Connectors > Intuit Mailchimp > Tool permissions",
+        "do": "Optionally set each tool or category to Always allow, Needs approval or Blocked. Needs approval is the careful choice for tools such as save-to-mailchimp and edit-campaign.",
+        "see": "Members follow these settings."
+      },
+      {
+        "where": "Each member's Claude account",
+        "do": "Each person follows claude-to-mailchimp and signs in to Mailchimp themselves.",
+        "see": "Each person reaches only what their own Mailchimp login allows."
+      }
+    ],
+    "source": "S28, S27",
+    "doc_updated": "2026-10-17"
+  },
+  {
+    "id": "chatgpt-to-mailchimp",
+    "from": "ChatGPT",
+    "to": "Mailchimp",
+    "who": "anyone",
+    "plan_needed": "A ChatGPT account. OpenAI says availability depends on your plan and workspace settings, and some workspaces need admin approval. Mailchimp's ChatGPT page says there's no extra cost and no specific plan needed, but its AI page says Standard and Premium. Mailchimp's pages disagree on whether it's available in Australia.",
+    "steps": [
+      {
+        "where": "ChatGPT (web or desktop app), Plugins tab",
+        "do": "Open the Plugins tab and search for Mailchimp.",
+        "see": "The Intuit Mailchimp plugin, with Intuit Inc as the developer."
+      },
+      {
+        "where": "Intuit Mailchimp plugin details",
+        "do": "Select the plus button to install it.",
+        "see": "The plugin installs. Some plugins ask you to connect straight away; others wait until you first use them."
+      },
+      {
+        "where": "Mailchimp sign-in",
+        "do": "When asked, connect your Mailchimp account, or create one.",
+        "see": "The connection is set up. The exact screens weren't in the docs we read."
+      },
+      {
+        "where": "New ChatGPT chat",
+        "do": "Start a new chat, type @ and choose Intuit Mailchimp, then describe the campaign goal.",
+        "see": "A campaign plan covering channels, send timing, audience segments and content ideas, based on your past results. OpenAI says drafts can be exported to Mailchimp, where you finish and send them."
+      }
+    ],
+    "undo": [
+      {
+        "where": "ChatGPT, Intuit Mailchimp plugin details",
+        "do": "Select Uninstall plugin if it's offered, then disconnect the Mailchimp connection in ChatGPT as well.",
+        "see": "OpenAI says uninstalling removes the plugin but the connection stays active until you disconnect it. Neither OpenAI's nor Mailchimp's page gives the disconnect steps."
+      }
+    ],
+    "source": "S34, S32, S33, S25",
+    "doc_updated": "2026-06-03"
+  },
+  {
+    "id": "gemini-workspace-to-mailchimp",
+    "from": "Gemini in Google Workspace (Gmail, Docs, Sheets, Slides, Drive, Chat)",
+    "to": "Mailchimp",
+    "who": "anyone",
+    "plan_needed": "Google lists Google AI Pro or Ultra for personal accounts, and editions including Business Standard, Business Plus, Enterprise Standard and Enterprise Plus for work accounts. Work accounts need an admin who allows integrations. Mailchimp says a Standard or Premium Mailchimp plan. Google's help says integrations only read for now.",
+    "steps": [
+      {
+        "where": "Google Workspace Marketplace, integrations page (on a computer)",
+        "do": "Open the integrations page and select the Intuit Mailchimp integration.",
+        "see": "The Intuit Mailchimp Connector listing, which says it works with Gemini and Workspace Studio."
+      },
+      {
+        "where": "Intuit Mailchimp Connector listing",
+        "do": "Click Connect and follow the on-screen instructions to grant access.",
+        "see": "The integration is connected. The Mailchimp sign-in screens weren't in the docs we read."
+      },
+      {
+        "where": "Gmail, Docs, Sheets, Slides, Drive or Chat",
+        "do": "Open Ask Gemini, type @ in the text box at the bottom, and select the Mailchimp integration.",
+        "see": "The integration is added to your prompt."
+      },
+      {
+        "where": "Ask Gemini",
+        "do": "Ask your question, for example how last month's campaigns performed, then press Enter.",
+        "see": "Gemini retrieves details about your campaigns, audience lists or recent subscriber reports."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Google Account, security settings",
+        "do": "On the 'Your connections to third-party app & services' card, click See all connections, select the app, click Delete all connections you have with it, then click Confirm.",
+        "see": "The connection is removed."
+      }
+    ],
+    "source": "S39, S40, S41, S2",
+    "doc_updated": null
+  },
+  {
+    "id": "google-admin-controls-mailchimp-integration",
+    "from": "Google Admin console",
+    "to": "Intuit Mailchimp integration for Gemini",
+    "who": "admin",
+    "plan_needed": "Google Workspace administrator. Google says the feature is on by default for users with Gemini for Google Workspace access.",
+    "steps": [
+      {
+        "where": "Google Admin console",
+        "do": "Go to Apps > Google Workspace Marketplace apps > Apps list.",
+        "see": "The Marketplace apps your organisation allows, including integrations."
+      },
+      {
+        "where": "Apps list",
+        "do": "Set whether the Intuit Mailchimp integration is allowed for the whole domain, an organisational unit or a group. If you use an allowlist, any helper app the integration needs must also be allowed.",
+        "see": "Only the people you choose can connect it."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Apps list",
+        "do": "Change the integration's access from Trusted to Blocked.",
+        "see": "Google says people already using the integration can keep using it after you block it, and API controls can't restrict integrations."
+      }
+    ],
+    "source": "S41, S42",
+    "doc_updated": "2026-10-13"
+  },
+  {
+    "id": "workspace-studio-to-mailchimp",
+    "from": "Google Workspace Studio (flows)",
+    "to": "Mailchimp",
+    "who": "anyone",
+    "plan_needed": "A Google Workspace account with Workspace Studio, and a Mailchimp account. Third-party steps are a Google beta, and your admin may limit which integrations you can use. Google's help names Mailchimp as an example but doesn't list its steps or actions.",
+    "steps": [
+      {
+        "where": "studio.workspace.google.com",
+        "do": "Create a flow.",
+        "see": "The flow builder."
+      },
+      {
+        "where": "Flow builder, left panel",
+        "do": "Click the Mailchimp integration step. If it isn't connected yet, click Connect and follow the instructions.",
+        "see": "The step is added to your flow. Google's page doesn't list Mailchimp's available steps."
+      },
+      {
+        "where": "Flow builder",
+        "do": "Set up the step, then optionally click Test run, choose the starting conditions and click Start.",
+        "see": "A test run takes real actions."
+      },
+      {
+        "where": "Flow builder",
+        "do": "Click Turn on.",
+        "see": "The flow runs on its starter. Google says flows can share your Google Account data with the third-party service, so make sure you trust it."
+      }
+    ],
+    "source": "S43",
+    "doc_updated": null
+  },
+  {
+    "id": "mcp-client-to-mailchimp-transactional",
+    "from": "An AI tool that supports MCP (Claude Desktop, Claude Code, Cursor or VS Code)",
+    "to": "Mailchimp Transactional (Mandrill)",
+    "who": "admin",
+    "plan_needed": "A Mailchimp Transactional (Mandrill) account with an API key, and an authenticated sending domain before you send email. Meant for developers.",
+    "steps": [
+      {
+        "where": "Mailchimp Transactional, API keys",
+        "do": "Choose or create an API key with permission for the actions the AI tool will take. For a restricted key, switch on the AI Agents permission group.",
+        "see": "A key that can use the MCP server. An unrestricted key can use it by default. Mailchimp's guide doesn't give the menu path for API keys."
+      },
+      {
+        "where": "Your AI tool's MCP settings",
+        "do": "Add the MCP server at https://mandrillapp.com/mcp, sending the API key as a bearer token in the Authorization header. Keep the key in your local settings only, never in a chat.",
+        "see": "The tool lists Mailchimp's Transactional tools, such as account_status and call_api."
+      },
+      {
+        "where": "Your AI tool",
+        "do": "Ask something low-risk first, such as your account status.",
+        "see": "Mailchimp's page doesn't describe a confirmation step before sends, so check each request before your AI tool runs it."
+      }
+    ],
+    "source": "S47",
+    "doc_updated": null
+  }
+]

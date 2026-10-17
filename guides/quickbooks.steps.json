@@ -1,0 +1,229 @@
+[
+  {
+    "id": "claude-to-quickbooks",
+    "from": "Claude",
+    "to": "QuickBooks",
+    "who": "anyone",
+    "plan_needed": "US customers only for now: Intuit says the QuickBooks connector for Claude is currently available to US customers only, and it's working to bring it to other regions. An active Claude account (Intuit names no plan). A QuickBooks subscription, or your own uploaded files to try it without one. On Claude Team or Enterprise, an Owner adds the connector first (see claude-team-owner-adds-quickbooks).",
+    "steps": [
+      {
+        "where": "Claude (claude.ai or the desktop app)",
+        "do": "Go to Connectors. Intuit's article says Connectors in the left navigation. Anthropic's help says Customize > Connectors, then click the + next to Connectors.",
+        "see": "The connectors directory opens."
+      },
+      {
+        "where": "Claude connectors directory",
+        "do": "Find QuickBooks (listed as Intuit QuickBooks, made by Intuit QuickBooks, with Anthropic's verified mark) and select Connect.",
+        "see": "You're asked to sign in to Intuit."
+      },
+      {
+        "where": "Intuit sign-in",
+        "do": "Sign in with your Intuit account.",
+        "see": "The Intuit approval screens aren't described in the docs we read. Intuit says the connector isn't available outside the US yet."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Click + (lower left) or type /, hover over Connectors, and check QuickBooks is switched on.",
+        "see": "QuickBooks is available in this conversation."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Ask about your finances, for example your cash flow or who owes you money.",
+        "see": "Answers from your QuickBooks data. Claude can also create, change and send invoices and estimates. Intuit says deleting one, or sending a payment reminder, waits for your confirmation."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Claude, Customize > Connectors",
+        "do": "Select QuickBooks and disconnect it.",
+        "see": "Claude no longer reaches your QuickBooks data. The Intuit-side steps aren't described in the docs we read."
+      }
+    ],
+    "source": "S36, S40, S37",
+    "doc_updated": "2026-10-02"
+  },
+  {
+    "id": "claude-team-owner-adds-quickbooks",
+    "from": "Claude",
+    "to": "QuickBooks",
+    "who": "admin",
+    "plan_needed": "Claude Team or Enterprise, Owner or Primary Owner role. The connector is for US QuickBooks customers only for now.",
+    "steps": [
+      {
+        "where": "Claude, Organization settings",
+        "do": "Go to Organization settings > Connectors and click Browse connectors at the bottom of the page.",
+        "see": "The list of available connectors."
+      },
+      {
+        "where": "Claude connector list",
+        "do": "Select QuickBooks and click Add to your team.",
+        "see": "QuickBooks becomes available to the team. Each person still has to sign in to Intuit themselves."
+      },
+      {
+        "where": "Claude, Customize > Connectors, Tool permissions",
+        "do": "Optionally select the connector, view Tool permissions, and set each permission category or tool to Always allow, Needs approval or Blocked.",
+        "see": "Claude follows that setting when it uses the connector's tools."
+      },
+      {
+        "where": "Each member's Claude account",
+        "do": "Each person follows claude-to-quickbooks and signs in with their own Intuit account.",
+        "see": "Claude inherits each person's permissions from QuickBooks."
+      }
+    ],
+    "source": "S40",
+    "doc_updated": null
+  },
+  {
+    "id": "claude-small-business-with-quickbooks",
+    "from": "Claude for Small Business",
+    "to": "QuickBooks",
+    "who": "anyone",
+    "plan_needed": "The Claude Cowork desktop app with Anthropic's Small Business plugin, and the QuickBooks connector connected. Intuit says that connector is for US customers only for now. The Anthropic pages we read don't name the Claude plan the plugin needs.",
+    "steps": [
+      {
+        "where": "Claude marketplace, Small Business plugin listing",
+        "do": "Click Install in Cowork.",
+        "see": "The plugin installs in Claude Cowork."
+      },
+      {
+        "where": "Claude Cowork",
+        "do": "Connect the QuickBooks connector if you haven't already (see claude-to-quickbooks).",
+        "see": "Workflows can read your QuickBooks data."
+      },
+      {
+        "where": "Claude Cowork",
+        "do": "Run a workflow, such as /close-month.",
+        "see": "Every workflow starts in approval mode. Anthropic says nothing sends, posts or pays until you say so."
+      }
+    ],
+    "source": "S42, S41, S36",
+    "doc_updated": "2026-05-13"
+  },
+  {
+    "id": "chatgpt-to-quickbooks",
+    "from": "ChatGPT",
+    "to": "QuickBooks",
+    "who": "anyone",
+    "plan_needed": "US customers only: Intuit says this is currently available to QuickBooks Online customers in the US. An active QuickBooks Online subscription and a ChatGPT account (Intuit names no plan; OpenAI says it depends on your plan, workspace, role and region). From Australia, ChatGPT's QuickBooks listing wouldn't load for us on 17 October 2026.",
+    "steps": [
+      {
+        "where": "ChatGPT (web, desktop or mobile)",
+        "do": "Select Plugins.",
+        "see": "The plugin directory."
+      },
+      {
+        "where": "ChatGPT Plugins",
+        "do": "Search for Intuit QuickBooks, or go to chatgpt.com/plugins/quickbooks, then select Connect Intuit QuickBooks.",
+        "see": "Intuit's sign-in. Intuit says the link works whether or not you're signed in to ChatGPT."
+      },
+      {
+        "where": "Intuit sign-in",
+        "do": "Sign in to your QuickBooks Online account.",
+        "see": "You're returned to ChatGPT automatically."
+      },
+      {
+        "where": "Intuit QuickBooks plugin",
+        "do": "Select Start chat.",
+        "see": "A new chat with the plugin."
+      },
+      {
+        "where": "ChatGPT chat",
+        "do": "Ask a simple question, such as your open invoices or your profit and loss.",
+        "see": "If ChatGPT returns your QuickBooks data, the connection works. Intuit says you review and confirm payroll changes before they're made, and can review invoices before anything is sent."
+      }
+    ],
+    "undo": [
+      {
+        "where": "ChatGPT, Settings > Plugins",
+        "do": "Select the Intuit QuickBooks plugin. Open the account's more options menu (•••) or Connection, then select Disconnect.",
+        "see": "Future access stops. Past chats, saved files and memories aren't deleted."
+      },
+      {
+        "where": "Intuit QuickBooks plugin details",
+        "do": "Select Uninstall plugin where it's offered.",
+        "see": "The plugin is removed. OpenAI says a separately connected server stays connected until you disconnect it."
+      }
+    ],
+    "source": "S47, S52, S53, S46, S51",
+    "doc_updated": "2026-08-26"
+  },
+  {
+    "id": "gemini-to-quickbooks",
+    "from": "Google Gemini (in Google Workspace)",
+    "to": "QuickBooks",
+    "who": "anyone",
+    "plan_needed": "US customers only: Google's listing calls it the official QuickBooks connector, available for customers in the US. A Google Workspace Business Standard, Business Plus, Enterprise Standard or Enterprise Plus licence, and a Workspace admin who allows integrations with Gemini (through Marketplace settings or the app allowlist). These are Google's general steps for integrations; Intuit publishes none.",
+    "steps": [
+      {
+        "where": "Google Workspace Marketplace, integrations page",
+        "do": "Find and select the Intuit Quickbooks Connector.",
+        "see": "Its listing. Any requirements are in the Overview section."
+      },
+      {
+        "where": "Intuit Quickbooks Connector listing",
+        "do": "Click Connect.",
+        "see": "On-screen steps to grant access."
+      },
+      {
+        "where": "Access screens",
+        "do": "Follow the steps to grant access.",
+        "see": "The QuickBooks and Google screens aren't described in the docs we read."
+      },
+      {
+        "where": "A Gemini in Workspace app",
+        "do": "Open Ask Gemini, type @, select the integration and enter your question.",
+        "see": "Answers from your QuickBooks data. Google's help says integrations currently support read actions only, though the listing talks about taking actions."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Google Account, security settings",
+        "do": "Find the card Your connections to third-party apps & services and click See all connections.",
+        "see": "Your list of connected apps."
+      },
+      {
+        "where": "Connections list",
+        "do": "Select the app, choose Delete all connections you have with it, and confirm.",
+        "see": "Data sharing between Gemini in Workspace and the integration stops."
+      }
+    ],
+    "source": "S58, S57, S59",
+    "doc_updated": "2026-10-16"
+  },
+  {
+    "id": "mcp-server-to-quickbooks",
+    "from": "QuickBooks MCP server (in an AI app such as Claude Code)",
+    "to": "QuickBooks",
+    "who": "admin",
+    "plan_needed": "Some programming experience. An app registered on the Intuit Developer Portal (the Intuit App Partner Program is open to partners based in Australia; its free Builder tier caps CorePlus API calls at 500,000 a month). Node.js and npm (the README's install steps use npm but don't name a version). A sandbox company for testing, and a public https callback address before connecting a live company.",
+    "steps": [
+      {
+        "where": "Intuit Developer Portal (developer.intuit.com)",
+        "do": "Register an app.",
+        "see": "A client ID and client secret for the app. Intuit doesn't offer per-user API keys."
+      },
+      {
+        "where": "Your computer",
+        "do": "Download the quickbooks-online-mcp-server repository from Intuit's GitHub, then run npm install and npm run build.",
+        "see": "The server is built on your computer."
+      },
+      {
+        "where": "Your computer",
+        "do": "Copy .env.example to .env and fill in your values. Keep the file on your own computer, and never paste these details into a chat or a website.",
+        "see": "The README says .env is left out of version control."
+      },
+      {
+        "where": "Your computer",
+        "do": "For a sandbox company, run npm run auth to complete the one-time sign-in in your browser.",
+        "see": "The server can then run without a browser until the 100-day refresh window lapses. A live company needs a public https callback for this step."
+      },
+      {
+        "where": "Your AI app",
+        "do": "Add the server to the app's MCP settings (the README shows Claude Code) and restart it.",
+        "see": "The QuickBooks tools appear. Many can create, update or delete records, so read every change before you approve it."
+      }
+    ],
+    "source": "S60, S62",
+    "doc_updated": "2026-09-15"
+  }
+]

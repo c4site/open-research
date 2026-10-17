@@ -1,0 +1,400 @@
+[
+  {
+    "id": "claude-to-dropbox",
+    "from": "Claude",
+    "to": "Dropbox",
+    "who": "anyone",
+    "plan_needed": "Any Dropbox plan and any Claude plan that has directory connectors (Anthropic says Claude, Cowork, Claude Desktop and Claude mobile). Your organisation must allow the Dropbox app; on Claude Team or Enterprise an owner adds it first (see claude-owner-allows-dropbox).",
+    "steps": [
+      {
+        "where": "claude.ai",
+        "do": "Click the add (+) icon in the search bar, then Add connectors.",
+        "see": "The connectors directory opens."
+      },
+      {
+        "where": "Claude connectors directory",
+        "do": "Click the add (+) icon next to Dropbox (made by Dropbox, Anthropic verified).",
+        "see": "You're sent to Dropbox to sign in."
+      },
+      {
+        "where": "Dropbox sign-in",
+        "do": "Log in to the Dropbox account you want Claude to use.",
+        "see": "Dropbox lists the permissions Claude asks for: view and edit files and folders, sharing information and file requests, and view account information."
+      },
+      {
+        "where": "Dropbox permissions screen",
+        "do": "Review the permissions and click Continue.",
+        "see": "You're returned to Claude with Dropbox connected."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Click + (or type /), go to Connectors and switch Dropbox on.",
+        "see": "Claude can find, organise and share files and save text files to Dropbox, within your own Dropbox permissions."
+      }
+    ],
+    "desktop_alternative": "In the Claude desktop app, in the Chat, Cowork or Code tab: Customize > Connectors > Add > Browse connectors, search for Dropbox, add it, log in and click Continue.",
+    "undo": [
+      {
+        "where": "Claude, Customize > Connectors",
+        "do": "Select Dropbox and disconnect it.",
+        "see": "Claude can no longer reach your Dropbox. Dropbox's Claude page doesn't give steps for the Dropbox side."
+      }
+    ],
+    "source": "S31, S53, S51",
+    "doc_updated": "2026-09-17"
+  },
+  {
+    "id": "claude-plugin-dropbox",
+    "from": "Claude Cowork or Claude Code",
+    "to": "Dropbox",
+    "who": "anyone",
+    "plan_needed": "A paid Claude plan (Pro, Max, Team or Enterprise) and any Dropbox plan. Your organisation must allow the plugin.",
+    "steps": [
+      {
+        "where": "claude.ai, or the Claude desktop app (Chat, Cowork or Code tab)",
+        "do": "On claude.ai click Browse plugins. In the desktop app click Customize > Plugins > Add.",
+        "see": "The plugin directory."
+      },
+      {
+        "where": "Plugin directory",
+        "do": "Search for Dropbox and add it.",
+        "see": "You may be asked to authorise Dropbox."
+      },
+      {
+        "where": "Dropbox sign-in",
+        "do": "Complete the Dropbox authorisation if prompted.",
+        "see": "The plugin is installed. Dropbox says it can organise files and folders, make share links and save text files."
+      }
+    ],
+    "source": "S31, S52, S54",
+    "doc_updated": "2026-09-17"
+  },
+  {
+    "id": "claude-owner-allows-dropbox",
+    "from": "Claude (Team or Enterprise owner)",
+    "to": "Dropbox",
+    "who": "admin",
+    "plan_needed": "Claude Team or Enterprise, owner role.",
+    "steps": [
+      {
+        "where": "claude.ai, Organizational Settings",
+        "do": "Go to Connectors, click Add+ for Dropbox and save. (Anthropic's own path: Organization settings > Connectors > Browse connectors > Add to your team.)",
+        "see": "Dropbox is available to the team. Each person still signs in to their own Dropbox."
+      },
+      {
+        "where": "Organization settings > Connectors",
+        "do": "Optionally set each Dropbox tool to Always allow, Needs approval or Blocked.",
+        "see": "Members can't override these settings."
+      },
+      {
+        "where": "Organizational Settings, Plugins",
+        "do": "Open the more options menu next to Dropbox and choose Not available, Installed by Default, Available to Install or Required.",
+        "see": "The plugin's availability for your team changes. Anthropic's plugin page lists only Available to install, Installed by default and Required."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Organizational Settings, Connectors",
+        "do": "Open the more options menu next to Dropbox and click Delete.",
+        "see": "The Dropbox connector is blocked for the team."
+      }
+    ],
+    "source": "S31, S53, S54",
+    "doc_updated": "2026-09-17"
+  },
+  {
+    "id": "chatgpt-to-dropbox",
+    "from": "ChatGPT",
+    "to": "Dropbox",
+    "who": "anyone",
+    "plan_needed": "Any Dropbox plan. Neither Dropbox nor OpenAI names the ChatGPT plans; OpenAI says availability depends on plan, region and workspace settings, and some workspaces need admin approval.",
+    "steps": [
+      {
+        "where": "ChatGPT",
+        "do": "Click Plugins in the left sidebar.",
+        "see": "The plugin directory."
+      },
+      {
+        "where": "Plugin directory",
+        "do": "Select Dropbox (developer: Dropbox) and click Install plugin.",
+        "see": "A prompt to sign in."
+      },
+      {
+        "where": "Plugin details",
+        "do": "Click Sign in with Dropbox.",
+        "see": "The Dropbox sign-in page."
+      },
+      {
+        "where": "Dropbox sign-in",
+        "do": "Log in. If you have paired personal and work accounts, choose the one to connect.",
+        "see": "Dropbox is connected. The exact approval screen wasn't in the docs we read."
+      },
+      {
+        "where": "ChatGPT chat",
+        "do": "Enter @Dropbox in your prompt, or click the add button in the prompt box and choose Dropbox, then describe what you want.",
+        "see": "ChatGPT can find, summarise, organise, move, copy, delete, save and share. Dropbox says it asks permission before changing anything."
+      }
+    ],
+    "undo": [
+      {
+        "where": "ChatGPT, Settings > Plugins",
+        "do": "Select Dropbox and disconnect it.",
+        "see": "ChatGPT stops using your Dropbox."
+      },
+      {
+        "where": "dropbox.com",
+        "do": "Click your avatar (bottom left), then Settings > Apps. Click the arrow next to ChatGPT, then Disconnect.",
+        "see": "The connection is removed on the Dropbox side."
+      }
+    ],
+    "source": "S30, S61, S58",
+    "doc_updated": "2026-09-30"
+  },
+  {
+    "id": "chatgpt-to-dropbox-dash",
+    "from": "ChatGPT",
+    "to": "Dropbox Dash",
+    "who": "anyone",
+    "plan_needed": "A Dash plan or Dash trial (team must be in the US, UK or Australia). OpenAI says availability depends on the plugin, your plan and workspace settings.",
+    "steps": [
+      {
+        "where": "ChatGPT plugin directory",
+        "do": "Find the Dropbox Dash plugin (developer: Dropbox).",
+        "see": "The plugin's details."
+      },
+      {
+        "where": "Plugin details",
+        "do": "Install the plugin, then follow the prompts to review permissions and connect.",
+        "see": "Not described in detail in the pages we read."
+      },
+      {
+        "where": "ChatGPT chat",
+        "do": "Type @ in the prompt field, select Dropbox Dash and ask a work question.",
+        "see": "Dash pulls in content from your connected work apps. It only uses content you're allowed to see in each app."
+      }
+    ],
+    "source": "S59, S60, S34",
+    "doc_updated": "2026-09-17"
+  },
+  {
+    "id": "copilot-cowork-to-dropbox",
+    "from": "Microsoft Copilot (Copilot Cowork)",
+    "to": "Dropbox",
+    "who": "anyone",
+    "plan_needed": "Any Dropbox plan and Microsoft Copilot with Cowork. Cowork for work accounts is generally available to Microsoft 365 Copilot tenants; Cowork for personal accounts is in preview. Your organisation might need to approve the plugin.",
+    "steps": [
+      {
+        "where": "copilot.com or the Copilot desktop app",
+        "do": "Log in to your Microsoft Copilot account.",
+        "see": "Copilot opens. Microsoft gives copilot.cloud.microsoft as the web address for Cowork on work accounts."
+      },
+      {
+        "where": "Copilot",
+        "do": "Go to Copilot Cowork and click Customize in the left navigation bar.",
+        "see": "Plugins you can add."
+      },
+      {
+        "where": "Cowork, Customize",
+        "do": "Search for Dropbox for Copilot. Click Install, then Connect.",
+        "see": "A Dropbox authorisation window."
+      },
+      {
+        "where": "Dropbox authorisation window",
+        "do": "Log in to Dropbox and click Allow.",
+        "see": "Dropbox is connected to Cowork."
+      },
+      {
+        "where": "Copilot Cowork",
+        "do": "Click New task and mention Dropbox in your prompt.",
+        "see": "Copilot can find, summarise and organise files, make shared links and save new text files up to 5 MB. Cowork asks before important actions."
+      }
+    ],
+    "undo": [
+      {
+        "where": "dropbox.com",
+        "do": "Click your avatar, then Settings > Apps. Click the arrow next to Copilot, then Disconnect.",
+        "see": "Copilot loses access to your Dropbox."
+      },
+      {
+        "where": "Copilot Cowork",
+        "do": "Select + > Customize, find the plugin and select Remove from Cowork.",
+        "see": "The plugin is removed. Plugins your admin deployed can only be removed by the admin."
+      }
+    ],
+    "source": "S32, S69, S68",
+    "doc_updated": "2026-09-30"
+  },
+  {
+    "id": "m365-admin-deploys-dropbox-connector",
+    "from": "Microsoft 365 admin center",
+    "to": "Dropbox (Microsoft-built Copilot connector)",
+    "who": "admin",
+    "plan_needed": "Dropbox Advanced or Enterprise, a Dropbox admin, and a Microsoft 365 admin.",
+    "steps": [
+      {
+        "where": "Dropbox App Console (Dropbox admin)",
+        "do": "Select Create app. Give it a unique name, Scoped access and Full Dropbox access.",
+        "see": "A new Dropbox app."
+      },
+      {
+        "where": "Dropbox App Console, OAuth 2.0 and Permissions tabs",
+        "do": "Add Microsoft's redirect address and the scopes Microsoft lists.",
+        "see": "The app is ready to authorise the connector."
+      },
+      {
+        "where": "Dropbox App Console, Settings tab",
+        "do": "Copy the app key and app secret.",
+        "see": "The two values the Microsoft admin needs."
+      },
+      {
+        "where": "Microsoft 365 admin center",
+        "do": "Choose Copilot > Connectors, open the Gallery tab and choose Dropbox.",
+        "see": "The Dropbox connector setup page."
+      },
+      {
+        "where": "Dropbox connector setup",
+        "do": "Enter the app key and app secret. Optionally switch on Rollout to limited audience.",
+        "see": "Authentication is set up (OAuth 2.0 is required)."
+      },
+      {
+        "where": "Dropbox connector setup, Custom setup",
+        "do": "Under access permissions choose Only people with access to this data source, then choose Create.",
+        "see": "Indexing starts straight away. Without this change the default makes every file anyone can open in Dropbox visible to all Microsoft 365 users in your tenant."
+      }
+    ],
+    "source": "S65, S64, S63",
+    "doc_updated": "2025-12-16"
+  },
+  {
+    "id": "gemini-to-dropbox",
+    "from": "Google Gemini",
+    "to": "Dropbox",
+    "who": "anyone",
+    "plan_needed": "A personal Google account, aged 18 or over, in the US, with Keep Activity on. Not offered in Australia: Google lists it as US only. Work and school accounts aren't supported yet.",
+    "steps": [
+      {
+        "where": "gemini.google.com",
+        "do": "Log in and click Settings.",
+        "see": "Gemini settings."
+      },
+      {
+        "where": "Gemini settings",
+        "do": "Click Personal Intelligence, then Connected apps.",
+        "see": "Your connected apps."
+      },
+      {
+        "where": "Connected apps",
+        "do": "Click Other and switch Dropbox On.",
+        "see": "A permission prompt."
+      },
+      {
+        "where": "Permission prompts",
+        "do": "Click Allow, then Continue. Click Agree and continue, then Allow.",
+        "see": "Dropbox is connected."
+      },
+      {
+        "where": "Gemini chat",
+        "do": "Type @Dropbox in the prompt box and ask.",
+        "see": "Gemini can find, summarise, create, rename, move and delete files. You confirm deleting, sharing, permission changes and bulk actions."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Gemini, Connected Apps settings",
+        "do": "Disconnect Dropbox.",
+        "see": "Gemini stops using Dropbox."
+      },
+      {
+        "where": "dropbox.com",
+        "do": "Click your avatar, then Settings > Apps. Click the arrow next to Gemini, then Disconnect.",
+        "see": "The connection is removed on the Dropbox side."
+      }
+    ],
+    "source": "S33, S73, S74",
+    "doc_updated": "2026-09-21"
+  },
+  {
+    "id": "dropbox-mcp-in-claude",
+    "from": "Claude (custom connector)",
+    "to": "Dropbox remote MCP server (beta)",
+    "who": "anyone",
+    "plan_needed": "A Claude plan that allows custom connectors (Dropbox says 'select Claude plans'). Your Dropbox admin may control whether you can connect apps. The server is in beta.",
+    "steps": [
+      {
+        "where": "Claude web or desktop",
+        "do": "Go to Settings > Connectors and click Add custom connector.",
+        "see": "A form for the connector's name and address."
+      },
+      {
+        "where": "Add custom connector",
+        "do": "Enter the name Dropbox MCP and the address https://mcp.dropbox.com/mcp, then click Add.",
+        "see": "The connector is added."
+      },
+      {
+        "where": "Dropbox sign-in",
+        "do": "Sign in to Dropbox when asked and approve the access.",
+        "see": "Claude can read, create, move, delete and share through the server's tools. Deleted items go to Deleted files."
+      }
+    ],
+    "source": "S35",
+    "doc_updated": "2026-09-30"
+  },
+  {
+    "id": "dropbox-mcp-in-chatgpt",
+    "from": "ChatGPT (custom app)",
+    "to": "Dropbox remote MCP server (beta)",
+    "who": "admin",
+    "plan_needed": "ChatGPT Business, Enterprise or Edu for full MCP (Pro can connect read and fetch only). On Business only admins and owners can create these. The server is in beta.",
+    "steps": [
+      {
+        "where": "ChatGPT, Settings > Apps & Connectors > Advanced settings",
+        "do": "Dropbox's steps: toggle Developer mode on and click Confirm.",
+        "see": "OpenAI's current page says Enterprise and Edu users can add a custom MCP server from Plugins without turning on Developer Mode first."
+      },
+      {
+        "where": "ChatGPT, Settings > Apps",
+        "do": "Click Create app. Enter the name Dropbox MCP and the address https://mcp.dropbox.com/mcp, and set Authentication to OAuth.",
+        "see": "A risk warning to acknowledge."
+      },
+      {
+        "where": "Create app",
+        "do": "Tick the acknowledgement box and click Create.",
+        "see": "You're asked to sign in to Dropbox."
+      },
+      {
+        "where": "Dropbox sign-in",
+        "do": "Complete the Dropbox sign-in and approve access.",
+        "see": "The Dropbox MCP tools are available in ChatGPT."
+      }
+    ],
+    "source": "S35, S62",
+    "doc_updated": "2026-09-30"
+  },
+  {
+    "id": "dropbox-admin-blocks-ai-app",
+    "from": "Dropbox admin console",
+    "to": "AI apps (ChatGPT, Claude, Copilot, Gemini and others)",
+    "who": "admin",
+    "plan_needed": "Dropbox Standard, Business, Advanced, Business Plus or Enterprise, team admin.",
+    "steps": [
+      {
+        "where": "dropbox.com, Admin console",
+        "do": "Under Products, open the dropdown beside Dropbox, click Settings and open the Integrations tab.",
+        "see": "The team's app settings and app list."
+      },
+      {
+        "where": "Integrations tab, app list",
+        "do": "Tick each app you want to block, then click Block.",
+        "see": "Blocked apps still appear in the App Center but can't be connected."
+      },
+      {
+        "where": "Integrations tab, Default connection permissions",
+        "do": "Optionally open the dropdown next to Connecting registered integrations and select Block.",
+        "see": "New registered integrations are blocked by default."
+      }
+    ],
+    "note": "Dropbox says blocking apps doesn't disconnect team members who are already connected.",
+    "source": "S28",
+    "doc_updated": "2025-10-22"
+  }
+]

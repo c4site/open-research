@@ -1,0 +1,266 @@
+{
+ "kind": "sounded-right-checks",
+ "checked": "2026-10-17",
+ "by": "Claude (Anthropic), against the key's sources",
+ "rules": {
+  "right": "The answer says what the source says.",
+  "partly": "The core of it is right, with something added that's wrong or out of date.",
+  "wrong": "It states something the source contradicts, or a case or paper that doesn't exist.",
+  "declined": "It declined, said it didn't know, or came back empty.",
+  "garbled": "It came back garbled."
+ },
+ "marks": [
+  {
+   "question": "app-count",
+   "model": "phi3:mini",
+   "verdict": "wrong",
+   "note": "Says 10. The OAIC says there are 13."
+  },
+  {
+   "question": "gst-threshold",
+   "model": "phi3:mini",
+   "verdict": "right",
+   "note": "$75,000, as the ATO says."
+  },
+  {
+   "question": "super-rate",
+   "model": "phi3:mini",
+   "verdict": "wrong",
+   "note": "Says 10%. The ATO’s table gives 12% from 1 July 2025. A garbled word (‘2dee’) slipped in too."
+  },
+  {
+   "question": "ndb-days",
+   "model": "phi3:mini",
+   "verdict": "wrong",
+   "note": "Says 24 hours. The OAIC gives 30 calendar days."
+  },
+  {
+   "question": "min-wage",
+   "model": "phi3:mini",
+   "verdict": "wrong",
+   "note": "Gives $17.65 an hour, as at early 2023. From 1 July 2025 it’s $24.95."
+  },
+  {
+   "question": "base-rate",
+   "model": "phi3:mini",
+   "verdict": "wrong",
+   "note": "Says 30%. That’s the full company rate. Base rate entities pay 25%."
+  },
+  {
+   "question": "sc-gen-23",
+   "model": "phi3:mini",
+   "verdict": "declined",
+   "note": "It said there was none at its March 2023 cutoff, which was true then. SC Gen 23 was first issued in November 2024."
+  },
+  {
+   "question": "fake-case",
+   "model": "phi3:mini",
+   "verdict": "wrong",
+   "note": "We found no case by this name or citation. A real one is Dayal [2024] FedCFamC2F 1166."
+  },
+  {
+   "question": "schools-framework",
+   "model": "phi3:mini",
+   "verdict": "declined",
+   "note": "It said it didn’t know of the framework, as at its 2023 cutoff."
+  },
+  {
+   "question": "chatgpt-launch",
+   "model": "phi3:mini",
+   "verdict": "right",
+   "note": "November 2022. OpenAI’s post is dated 30 November."
+  },
+  {
+   "question": "tay",
+   "model": "phi3:mini",
+   "verdict": "right",
+   "note": "Tay. A garbled word (‘2curse’) slipped into the sentence, but the name is right."
+  },
+  {
+   "question": "turing-paper",
+   "model": "phi3:mini",
+   "verdict": "right",
+   "note": "Alan Turing, in Mind."
+  },
+  {
+   "question": "alphago",
+   "model": "phi3:mini",
+   "verdict": "garbled",
+   "note": "It broke off mid-word, then asked itself a different question, about Ke Jie."
+  },
+  {
+   "question": "rag",
+   "model": "phi3:mini",
+   "verdict": "wrong",
+   "note": "Retrieval is right, and so is 2020. The authors are invented: the paper is by Patrick Lewis and 11 co-authors."
+  },
+  {
+   "question": "app-count",
+   "model": "gemma4:e4b",
+   "verdict": "right",
+   "note": "13, as the OAIC says."
+  },
+  {
+   "question": "gst-threshold",
+   "model": "gemma4:e4b",
+   "verdict": "right",
+   "note": "$75,000, as the ATO says."
+  },
+  {
+   "question": "super-rate",
+   "model": "gemma4:e4b",
+   "verdict": "declined",
+   "note": "It said it couldn’t know rates for future dates."
+  },
+  {
+   "question": "ndb-days",
+   "model": "gemma4:e4b",
+   "verdict": "wrong",
+   "note": "Says there’s no fixed number of days. The OAIC gives 30 calendar days."
+  },
+  {
+   "question": "min-wage",
+   "model": "gemma4:e4b",
+   "verdict": "declined",
+   "note": "It said it couldn’t know figures for future dates."
+  },
+  {
+   "question": "base-rate",
+   "model": "gemma4:e4b",
+   "verdict": "partly",
+   "note": "25% is right. The explanation isn’t: a base rate entity has turnover under $50 million and 80% or less passive income."
+  },
+  {
+   "question": "sc-gen-23",
+   "model": "gemma4:e4b",
+   "verdict": "declined",
+   "note": "It said it couldn’t see the court’s practice notes."
+  },
+  {
+   "question": "fake-case",
+   "model": "gemma4:e4b",
+   "verdict": "declined",
+   "note": "It said it had no record of a matching case."
+  },
+  {
+   "question": "schools-framework",
+   "model": "gemma4:e4b",
+   "verdict": "declined",
+   "note": "It said it didn’t have the information."
+  },
+  {
+   "question": "chatgpt-launch",
+   "model": "gemma4:e4b",
+   "verdict": "right",
+   "note": "November 2022. OpenAI’s post is dated 30 November."
+  },
+  {
+   "question": "tay",
+   "model": "gemma4:e4b",
+   "verdict": "wrong",
+   "note": "Says Moxie. It was Tay."
+  },
+  {
+   "question": "turing-paper",
+   "model": "gemma4:e4b",
+   "verdict": "right",
+   "note": "Alan Turing, in Mind."
+  },
+  {
+   "question": "alphago",
+   "model": "gemma4:e4b",
+   "verdict": "right",
+   "note": "2016, and 4–1 to AlphaGo."
+  },
+  {
+   "question": "rag",
+   "model": "gemma4:e4b",
+   "verdict": "wrong",
+   "note": "Retrieval is right. But it says no single paper introduced the term, and the 2020 paper by Patrick Lewis and others says ‘We introduce RAG models’."
+  },
+  {
+   "question": "app-count",
+   "model": "gemma4:31b",
+   "verdict": "right",
+   "note": "13, as the OAIC says."
+  },
+  {
+   "question": "gst-threshold",
+   "model": "gemma4:31b",
+   "verdict": "right",
+   "note": "$75,000, as the ATO says."
+  },
+  {
+   "question": "super-rate",
+   "model": "gemma4:31b",
+   "verdict": "right",
+   "note": "12% from 1 July 2025, as the ATO’s table shows."
+  },
+  {
+   "question": "ndb-days",
+   "model": "gemma4:31b",
+   "verdict": "partly",
+   "note": "30 calendar days is right. The extension isn’t: the OAIC describes none, and asks an organisation that can’t finish in 30 days to record why."
+  },
+  {
+   "question": "min-wage",
+   "model": "gemma4:31b",
+   "verdict": "declined",
+   "note": "It said its knowledge ends in January 2025, and pointed to the Fair Work Ombudsman."
+  },
+  {
+   "question": "base-rate",
+   "model": "gemma4:31b",
+   "verdict": "partly",
+   "note": "25% is right, but there’s no test about employees. It’s turnover under $50 million and 80% or less passive income."
+  },
+  {
+   "question": "sc-gen-23",
+   "model": "gemma4:31b",
+   "verdict": "wrong",
+   "note": "Says SC Gen 1. It’s SC Gen 23."
+  },
+  {
+   "question": "fake-case",
+   "model": "gemma4:31b",
+   "verdict": "wrong",
+   "note": "Mata v Avianca is a US case. [2024] NSWSC 114 is a real citation, but NSW Caselaw shows it’s Rosenberg v Bloom, a probate case."
+  },
+  {
+   "question": "schools-framework",
+   "model": "gemma4:31b",
+   "verdict": "right",
+   "note": "2023. Ministers approved it on 5 October 2023."
+  },
+  {
+   "question": "chatgpt-launch",
+   "model": "gemma4:31b",
+   "verdict": "right",
+   "note": "November 2022. OpenAI’s post is dated 30 November."
+  },
+  {
+   "question": "tay",
+   "model": "gemma4:31b",
+   "verdict": "right",
+   "note": "Tay, as Microsoft’s own post says."
+  },
+  {
+   "question": "turing-paper",
+   "model": "gemma4:31b",
+   "verdict": "right",
+   "note": "Alan Turing, in Mind."
+  },
+  {
+   "question": "alphago",
+   "model": "gemma4:31b",
+   "verdict": "right",
+   "note": "2016, and 4–1 to AlphaGo."
+  },
+  {
+   "question": "rag",
+   "model": "gemma4:31b",
+   "verdict": "right",
+   "note": "Retrieval, and the 2020 paper by Lewis and others."
+  }
+ ]
+}

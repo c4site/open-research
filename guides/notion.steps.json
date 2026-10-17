@@ -1,0 +1,379 @@
+[
+  {
+    "id": "claude-to-notion",
+    "from": "Claude",
+    "to": "Notion",
+    "who": "anyone",
+    "plan_needed": "Any Claude plan with directory connectors (Claude, Cowork, Claude Desktop, Claude mobile) and any Notion plan. Notion workspace guests can't connect. On Claude Team or Enterprise an owner adds the connector first (see claude-owner-adds-notion).",
+    "steps": [
+      {
+        "where": "Claude, Customize",
+        "do": "Go to Customize > Connectors and click + next to Connectors.",
+        "see": "The connectors directory."
+      },
+      {
+        "where": "Claude connectors directory",
+        "do": "Choose the Notion connector (made by Notion, Anthropic verified), review it and click Connect.",
+        "see": "You're sent to Notion to sign in."
+      },
+      {
+        "where": "Notion sign-in",
+        "do": "Sign in to Notion and approve the access.",
+        "see": "You're returned to Claude with Notion connected. The exact Notion approval screen wasn't in the docs we read."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Click + (or type /), hover over Connectors and switch Notion on.",
+        "see": "Claude can search, read, create and update Notion pages and databases, with your full Notion permissions."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Claude, Customize > Connectors",
+        "do": "Select Notion and disconnect it.",
+        "see": "Claude can no longer reach your Notion workspace."
+      }
+    ],
+    "source": "S40, S38, S22",
+    "doc_updated": "2026-10-17"
+  },
+  {
+    "id": "claude-owner-adds-notion",
+    "from": "Claude (Team or Enterprise owner)",
+    "to": "Notion",
+    "who": "admin",
+    "plan_needed": "Claude Team or Enterprise, owner role.",
+    "steps": [
+      {
+        "where": "Claude, Organization settings",
+        "do": "Go to Organization settings > Connectors and click Browse connectors.",
+        "see": "The list of connectors."
+      },
+      {
+        "where": "Connector list",
+        "do": "Select the Notion connector and click Add to your team.",
+        "see": "Notion becomes available to the team. Each person still signs in to their own Notion account."
+      },
+      {
+        "where": "Organization settings > Connectors",
+        "do": "Optionally set each tool, or group of tools, to Always allow, Needs approval or Blocked.",
+        "see": "Members can't override these settings."
+      }
+    ],
+    "source": "S40",
+    "doc_updated": "2026-10-17"
+  },
+  {
+    "id": "claude-enterprise-managed-notion",
+    "from": "Claude (organisation connector)",
+    "to": "Notion (enterprise-managed connection)",
+    "who": "admin",
+    "plan_needed": "Notion Enterprise with Okta running Notion's SAML single sign-on and Cross App Access. Claude organisation connectors.",
+    "steps": [
+      {
+        "where": "Okta (Okta admin)",
+        "do": "Turn on SSO and Cross App Access, add the Claude-to-Notion MCP connection, and assign users or groups.",
+        "see": "Okta is ready to grant access."
+      },
+      {
+        "where": "Notion, Identity settings (organisation or workspace owner)",
+        "do": "Enable the feature, confirm the Okta issuer URL and choose the one workspace the connection covers.",
+        "see": "Notion accepts connections managed by Okta."
+      },
+      {
+        "where": "Claude admin settings",
+        "do": "Add the Notion connector at https://mcp.notion.com/mcp, turn on Enterprise managed authentication and run the connection test.",
+        "see": "Members who sign in to Claude with company SSO get Notion tools automatically, with no Notion approval screen."
+      }
+    ],
+    "note": "Notion says removing someone in Okta blocks new connections, but an active connection can last up to eight hours unless it's disconnected in Notion.",
+    "source": "S26",
+    "doc_updated": null
+  },
+  {
+    "id": "claude-agents-in-notion",
+    "from": "Notion (Claude agents, beta)",
+    "to": "Claude",
+    "who": "anyone",
+    "plan_needed": "Notion Business or Enterprise, paid with Notion credits. No Anthropic account needed (you can't use your own). Off by default for Enterprise and HIPAA workspaces until an owner turns it on. Rolling out gradually.",
+    "steps": [
+      {
+        "where": "Notion, Settings > Notion AI > Agent > Manage external agents (Enterprise owners only)",
+        "do": "Turn Claude agents on for the workspace.",
+        "see": "Claude agents become available to create."
+      },
+      {
+        "where": "Notion sidebar, Agents",
+        "do": "Select New Agent, then Claude.",
+        "see": "A choice of a default template or starting from scratch."
+      },
+      {
+        "where": "New Claude agent",
+        "do": "Pick a template or start from scratch. Some templates connect to GitHub using your personal access token.",
+        "see": "A new Claude agent in your workspace."
+      },
+      {
+        "where": "Claude agent settings",
+        "do": "Share the agent with only the pages and databases it needs, choose its access level, and set its triggers.",
+        "see": "The agent can chat, work from task boards and create or update content it has edit access to. It can't browse the web."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Notion, Settings > Notion AI > Agents > Manage external agents",
+        "do": "Switch Claude agents off.",
+        "see": "Claude agents stop working in the workspace."
+      }
+    ],
+    "source": "S20, S31",
+    "doc_updated": "2026-07-01"
+  },
+  {
+    "id": "chatgpt-to-notion",
+    "from": "ChatGPT",
+    "to": "Notion",
+    "who": "anyone",
+    "plan_needed": "A ChatGPT account. OpenAI says availability depends on your ChatGPT plan, workspace settings and Notion permissions. Notion guests can't connect through Notion MCP.",
+    "steps": [
+      {
+        "where": "ChatGPT, Settings",
+        "do": "Open Settings > Plugins.",
+        "see": "Your plugins and apps."
+      },
+      {
+        "where": "Plugins",
+        "do": "Find and select Notion.",
+        "see": "Notion's details (developer: Notion AI; version 3.0.1)."
+      },
+      {
+        "where": "Notion details",
+        "do": "Select Connect. If Notion is listed as a plugin, select Install plugin and complete the connection prompt.",
+        "see": "You're sent to Notion to sign in."
+      },
+      {
+        "where": "Notion sign-in",
+        "do": "Sign in to the Notion account you want to use. Review the workspace and content in the request, then approve.",
+        "see": "ChatGPT can search and read the pages that account can see, and may create or update pages depending on your settings and approvals."
+      }
+    ],
+    "undo": [
+      {
+        "where": "ChatGPT, Settings > Plugins",
+        "do": "Select Notion and use the disconnect option.",
+        "see": "ChatGPT stops using your Notion account."
+      }
+    ],
+    "source": "S43, S47",
+    "doc_updated": "2026-09-26"
+  },
+  {
+    "id": "notion-agent-uses-chatgpt-plan",
+    "from": "Notion Agent",
+    "to": "ChatGPT plan (billing only)",
+    "who": "anyone",
+    "plan_needed": "A Notion Business or Enterprise workspace (members only, not guests) and a ChatGPT Plus, Pro or Go account. Notion Agent only; not Custom Agents.",
+    "steps": [
+      {
+        "where": "Notion, Settings > Notion AI > Usage",
+        "do": "Under Connected subscriptions, select Connect next to ChatGPT. (Or in Notion Agent, open the model picker and select Connect ChatGPT plan under Subscriptions.)",
+        "see": "A ChatGPT sign-in."
+      },
+      {
+        "where": "ChatGPT sign-in",
+        "do": "Sign in to ChatGPT and allow Notion to connect to your account.",
+        "see": "You're returned to Notion."
+      },
+      {
+        "where": "Notion Agent model picker",
+        "do": "Pick a specific GPT model.",
+        "see": "The picker shows which plan is in use before you send. Auto or non-GPT models still use Notion's plan."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Notion, Settings > Notion AI > Usage",
+        "do": "Find ChatGPT under Connected subscriptions. Turn off Use your ChatGPT plan, or select Disconnect.",
+        "see": "Notion Agent runs on your Notion plan again."
+      }
+    ],
+    "source": "S28",
+    "doc_updated": "2026-10-13"
+  },
+  {
+    "id": "copilot-to-notion",
+    "from": "Microsoft 365 Copilot",
+    "to": "Notion (Microsoft-built federated connector)",
+    "who": "anyone",
+    "plan_needed": "A Microsoft 365 Copilot licence, with the connector allowed by your admin. Any Notion account the person can sign in to.",
+    "steps": [
+      {
+        "where": "Microsoft 365 Copilot Chat",
+        "do": "Select the ... menu, then Settings.",
+        "see": "The settings dialog."
+      },
+      {
+        "where": "Copilot Chat settings",
+        "do": "Select Sources in the left pane.",
+        "see": "Data sources you can connect."
+      },
+      {
+        "where": "Sources",
+        "do": "Find Notion, select Connect and sign in to Notion with your own account.",
+        "see": "Notion is connected. Nothing is indexed into Microsoft 365; Copilot fetches it live."
+      },
+      {
+        "where": "Copilot Chat",
+        "do": "Ask a question that names Notion and what you're looking for.",
+        "see": "Answers from the Notion pages your account can see."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Copilot Chat settings, or Researcher",
+        "do": "Turn the Notion source off, or manage it in Copilot Chat settings.",
+        "see": "Copilot stops using Notion."
+      }
+    ],
+    "source": "S48, S49",
+    "doc_updated": "2026-09-30"
+  },
+  {
+    "id": "m365-admin-manages-notion-connector",
+    "from": "Microsoft 365 admin center",
+    "to": "Notion (federated connector)",
+    "who": "admin",
+    "plan_needed": "Microsoft 365 admin access. Users need Microsoft 365 Copilot licences.",
+    "steps": [
+      {
+        "where": "Microsoft 365 admin center, Agents > Settings > Agent and plugin access",
+        "do": "Check whether Allow agents and plugins built by Microsoft is selected.",
+        "see": "If it is, Microsoft-built connectors such as Notion are available to the users in User access."
+      },
+      {
+        "where": "Microsoft 365 admin center, Copilot connectors > Your connections",
+        "do": "Select Notion to enable or disable it, or choose Add staging to limit it to chosen users or groups.",
+        "see": "Only those users see Notion as a source in Copilot."
+      }
+    ],
+    "source": "S48",
+    "doc_updated": "2026-09-30"
+  },
+  {
+    "id": "gemini-enterprise-to-notion",
+    "from": "Gemini Enterprise (Google Cloud)",
+    "to": "Notion",
+    "who": "admin",
+    "plan_needed": "Gemini Enterprise; the Discovery Engine Editor role; a Notion OAuth integration with its client ID and secret. Federated search is in public preview. Not the everyday Gemini app, which has no Notion connection.",
+    "steps": [
+      {
+        "where": "Google Cloud console, Gemini Enterprise",
+        "do": "Select or create a project, click Data stores, then Create data store.",
+        "see": "The Select a data source page."
+      },
+      {
+        "where": "Select a data source",
+        "do": "Search for Notion and click Select on the Notion card.",
+        "see": "The Notion data store settings."
+      },
+      {
+        "where": "Data section",
+        "do": "Set Connector mode to Federated search and click Continue.",
+        "see": "Authentication settings."
+      },
+      {
+        "where": "Authentication settings",
+        "do": "Enter the Client ID and Client Secret from your Notion integration, click Login, then Continue.",
+        "see": "Choices of what to search and which actions to allow."
+      },
+      {
+        "where": "Entities to search, Actions, Configuration",
+        "do": "Choose what to search and any Notion actions to enable, pick a location and a name, then continue through Billing.",
+        "see": "The data store changes from Creating to Active on the Data Stores page."
+      }
+    ],
+    "source": "S55, S54",
+    "doc_updated": "2026-10-14"
+  },
+  {
+    "id": "notion-mcp-claude-code",
+    "from": "Claude Code",
+    "to": "Notion MCP",
+    "who": "anyone",
+    "plan_needed": "Claude Code and any Notion plan (some features vary by plan). Notion guests can't connect.",
+    "steps": [
+      {
+        "where": "Terminal",
+        "do": "Run: claude mcp add --transport http notion https://mcp.notion.com/mcp",
+        "see": "Notion is added as an MCP server."
+      },
+      {
+        "where": "Claude Code",
+        "do": "Run /mcp and follow the sign-in flow.",
+        "see": "Notion tools are available, acting with your full Notion permissions."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Claude Code MCP settings",
+        "do": "Use Clear authentication or Disconnect for the Notion server.",
+        "see": "Claude Code stops using your Notion account."
+      }
+    ],
+    "source": "S24",
+    "doc_updated": null
+  },
+  {
+    "id": "notion-mcp-codex",
+    "from": "Codex (ChatGPT)",
+    "to": "Notion MCP",
+    "who": "anyone",
+    "plan_needed": "Codex and any Notion plan (some features vary by plan). Notion guests can't connect.",
+    "steps": [
+      {
+        "where": "~/.codex/config.toml",
+        "do": "Add an [mcp_servers.notion] entry with url = \"https://mcp.notion.com/mcp\".",
+        "see": "Codex knows about the Notion server."
+      },
+      {
+        "where": "Terminal",
+        "do": "Run: codex mcp login notion, and complete the sign-in.",
+        "see": "Notion tools are available in Codex."
+      }
+    ],
+    "source": "S24",
+    "doc_updated": null
+  },
+  {
+    "id": "notion-enterprise-approves-ai-apps",
+    "from": "Notion (Enterprise workspace owner)",
+    "to": "Outside AI apps using Notion MCP",
+    "who": "admin",
+    "plan_needed": "Notion Enterprise, workspace owner.",
+    "steps": [
+      {
+        "where": "Notion, Settings > Connections",
+        "do": "Open the Permissions tab.",
+        "see": "Connection permissions, including AI apps."
+      },
+      {
+        "where": "Permissions, AI apps",
+        "do": "Set Restrict AI apps members can connect to to Only from approved list.",
+        "see": "AI apps already connected are added to the approved list automatically."
+      },
+      {
+        "where": "Permissions, AI apps",
+        "do": "Click Manage approved AI apps, then Add approved AI apps to approve more.",
+        "see": "Members can connect Notion MCP only from approved apps. Notion blocks calls from apps that aren't approved."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Notion, Settings > Connections",
+        "do": "Use Disconnect All Users.",
+        "see": "Every AI app connected through Notion MCP is disconnected. People must sign in again, from approved apps only."
+      }
+    ],
+    "source": "S22",
+    "doc_updated": null
+  }
+]

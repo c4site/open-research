@@ -1,0 +1,226 @@
+[
+  {
+    "id": "smokeball-archie-word-add-in",
+    "from": "Microsoft Word",
+    "to": "Smokeball Archie (Word add-in)",
+    "who": "anyone",
+    "plan_needed": "The Archie add-on (on Boost, Grow or Prosper+). Microsoft's Marketplace lists the add-in itself as free. Changes save back to Smokeball differently depending on your plan and whether you use Word desktop or Word on the web.",
+    "steps": [
+      {
+        "where": "Microsoft Word on your PC",
+        "do": "Select Add-ins on the right-hand side of the Word ribbon, then select More add-ins and click the Store tab.",
+        "see": "The Microsoft add-in store."
+      },
+      {
+        "where": "Microsoft add-in store",
+        "do": "Search for \"Archie\" and install the Smokeball Archie add-in. If you can't find it, Smokeball's article links to the Microsoft Marketplace listing, where you click Get it now.",
+        "see": "The add-in installs."
+      },
+      {
+        "where": "Word ribbon",
+        "do": "Select Add-ins again and click Smokeball Archie.",
+        "see": "The Archie panel opens on the right-hand side of Word."
+      },
+      {
+        "where": "Archie panel",
+        "do": "Log in with your Smokeball email, password and 2FA code when prompted.",
+        "see": "Archie connects to the matter automatically if the document came from Smokeball."
+      },
+      {
+        "where": "Archie panel",
+        "do": "For a document opened outside Smokeball, click Assign a matter to this document and choose the matter.",
+        "see": "Archie can now use that matter's details, documents and emails. Its edits appear as Word tracked changes for you to accept or reject."
+      }
+    ],
+    "source": "S19, S50",
+    "doc_updated": "2026-10-01"
+  },
+  {
+    "id": "smokeball-new-outlook-add-in",
+    "from": "Microsoft Outlook (new Outlook or Outlook on the web)",
+    "to": "Smokeball, with Archie drafting",
+    "who": "anyone",
+    "plan_needed": "Smokeball Boost, Grow or Prosper+, and a paid Microsoft 365 Business or Education mailbox. Archie features need the Archie add-on. Personal Outlook.com, Hotmail and Gmail accounts aren't supported. If you see Admin approval required, your IT administrator must allow Outlook add-ins.",
+    "steps": [
+      {
+        "where": "Outlook on the web or the Outlook (new) app",
+        "do": "Select the Apps icon on the left panel, then select Add apps.",
+        "see": "The add-ins store."
+      },
+      {
+        "where": "Outlook add-ins store",
+        "do": "Search for Smokeball, click \"Smokeball for Outlook\" and select Add.",
+        "see": "The app is added."
+      },
+      {
+        "where": "Outlook inbox",
+        "do": "Select an email, click the Apps icon in the email and select Smokeball for Outlook.",
+        "see": "The Smokeball toolbar appears on the right."
+      },
+      {
+        "where": "Smokeball toolbar",
+        "do": "Confirm your Country and click Connect to Smokeball, then log in when the browser window opens. You may also be asked to log in to Microsoft to authorise the connection.",
+        "see": "The toolbar shows your most recently worked-on Smokeball matters. Select the Pin icon to keep it in view."
+      },
+      {
+        "where": "New email, Smokeball toolbar",
+        "do": "With the Archie add-on, select Rapid Reply or Draft with Archie.",
+        "see": "AI-drafted text to review and edit before you send."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Smokeball toolbar in new Outlook",
+        "do": "Click Logout in the bottom corner of the toolbar.",
+        "see": "You can go back to the classic Outlook integration."
+      }
+    ],
+    "source": "S21, S11",
+    "doc_updated": "2026-08-27"
+  },
+  {
+    "id": "smokeball-archie-to-lawy",
+    "from": "Smokeball Archie",
+    "to": "LawY (legal research)",
+    "who": "anyone",
+    "plan_needed": "The Archie add-on. LawY, including Deep Research and lawyer verification, is included at no extra cost.",
+    "steps": [
+      {
+        "where": "Smokeball desktop app or web app",
+        "do": "Open a matter and select the Archie tab.",
+        "see": "The Archie screen."
+      },
+      {
+        "where": "Archie screen",
+        "do": "Select Legal Research in the top-left corner.",
+        "see": "The LawY chat box, set to the matter's practice area."
+      },
+      {
+        "where": "LawY chat box",
+        "do": "Type your legal question.",
+        "see": "An answer with links to the resources LawY considered and suggested follow-up questions."
+      },
+      {
+        "where": "LawY conversation",
+        "do": "To go further, select Deep Research + Human Verification, tick the questions, select relevant facts and choose Request Research.",
+        "see": "Deep Research takes about an hour. With verification, a qualified lawyer reviews it in about 1 to 3 business days. Smokeball says the verifier sees only the rephrased question, the AI answer and the facts you selected."
+      }
+    ],
+    "source": "S26, S10",
+    "doc_updated": "2025-11-05"
+  },
+  {
+    "id": "smokeball-owner-switches-archie-off-for-a-user",
+    "from": "Smokeball Settings (Firm Owner)",
+    "to": "Archie access for one staff member",
+    "who": "admin",
+    "plan_needed": "Firm Owner permissions. By default every user in the firm can use Archie.",
+    "steps": [
+      {
+        "where": "Smokeball desktop app",
+        "do": "Select the Settings (gear) icon to open Smokeball Settings.",
+        "see": "Smokeball Settings."
+      },
+      {
+        "where": "Smokeball Settings",
+        "do": "Select Staff & Users from the left menu, then select the Permissions button.",
+        "see": "The permissions grid. Only Firm Owners can open it."
+      },
+      {
+        "where": "Permissions",
+        "do": "Select the user in the Name column and untick the Archie column.",
+        "see": "That user loses the Archie tab, the Archie matter widget and Archie settings."
+      },
+      {
+        "where": "Permissions",
+        "do": "Select Save & Close.",
+        "see": "The change applies."
+      }
+    ],
+    "source": "S18, S16",
+    "doc_updated": "2026-10-07"
+  },
+  {
+    "id": "zapier-to-smokeball",
+    "from": "Zapier",
+    "to": "Smokeball",
+    "who": "anyone",
+    "plan_needed": "A Zapier account and a Smokeball login. Smokeball's support covers the integration working in Smokeball; questions about Zapier's own features go to Zapier.",
+    "steps": [
+      {
+        "where": "Zapier",
+        "do": "Log in and go to App Connections on the left menu.",
+        "see": "Your connected apps."
+      },
+      {
+        "where": "Zapier, App Connections",
+        "do": "Select Add connection, type Smokeball into the search field and select it.",
+        "see": "The Smokeball app."
+      },
+      {
+        "where": "Zapier, App Connections",
+        "do": "Select Add connection, confirm your region in the window that opens and log in with your Smokeball credentials.",
+        "see": "Smokeball is listed among your connected apps."
+      },
+      {
+        "where": "Zapier, Create > Zap",
+        "do": "Choose a Smokeball trigger event (for example New Matter) or add a Smokeball action event (for example Create Task), then test the step.",
+        "see": "A working Zap you can publish."
+      }
+    ],
+    "source": "S33",
+    "doc_updated": "2026-08-03"
+  },
+  {
+    "id": "ai-legal-assistant-to-smokeball",
+    "from": "AI Legal Assistant (third-party AI tool)",
+    "to": "Smokeball",
+    "who": "anyone",
+    "plan_needed": "An AI Legal Assistant account (priced by that company) and a Smokeball login. Smokeball integrates with it but doesn't develop or manage it.",
+    "steps": [
+      {
+        "where": "AI Legal Assistant",
+        "do": "Open AI Legal Assistant, select your profile picture in the top-right corner, then select Integrations.",
+        "see": "The list of integrations."
+      },
+      {
+        "where": "AI Legal Assistant, Integrations",
+        "do": "Select Connect under Smokeball and log in with your Smokeball username and password.",
+        "see": "A Smokeball folder appears under Integrations on the AI Legal Assistant home page."
+      },
+      {
+        "where": "AI Legal Assistant",
+        "do": "Create a document as usual.",
+        "see": "A version of the document is saved to the Smokeball matter."
+      }
+    ],
+    "source": "S35",
+    "doc_updated": "2026-07-23"
+  },
+  {
+    "id": "ai-legal-toolbox-to-smokeball",
+    "from": "AI Legal Toolbox (third-party Outlook app)",
+    "to": "Smokeball",
+    "who": "anyone",
+    "plan_needed": "An AI Legal Toolbox account (pricing on its own website) and a Smokeball login. Support for the tool comes from AI Legal Toolbox.",
+    "steps": [
+      {
+        "where": "AI Legal Toolbox app in Outlook",
+        "do": "Log in, go to the Tools tab and select Connect Smokeball account.",
+        "see": "A sign-in window."
+      },
+      {
+        "where": "Sign-in window",
+        "do": "Enter the email address and password you use for Smokeball, then select Sign in.",
+        "see": "The Tools tab shows Matters, Time, Contacts and History."
+      },
+      {
+        "where": "Tools tab",
+        "do": "Use Matters or Contacts to look up Smokeball records, or Time to create a time entry for a matter.",
+        "see": "The record or time entry in Smokeball. History shows linked emails and sync status."
+      }
+    ],
+    "source": "S36",
+    "doc_updated": "2026-10-07"
+  }
+]

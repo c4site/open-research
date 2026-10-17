@@ -1,0 +1,51 @@
+{
+ "kind": "changes",
+ "entries": [
+  {
+   "date": "2026-10-17",
+   "kind": "added",
+   "tools": [
+    "leap",
+    "smokeball",
+    "actionstep",
+    "quickbooks",
+    "karbon",
+    "slack",
+    "zoom",
+    "dropbox",
+    "notion",
+    "compass",
+    "seqta",
+    "shopify",
+    "mailchimp"
+   ],
+   "text": "Thirteen guides added: LEAP, Smokeball and Actionstep for law firms, QuickBooks and Karbon for accounting, Slack, Zoom, Dropbox and Notion, Compass and SEQTA for schools, and Shopify and Mailchimp. Each was read from the vendor’s own pages on 17 October 2026."
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "added",
+   "tools": [
+    "microsoft-365",
+    "google-workspace",
+    "canva",
+    "xero",
+    "myob",
+    "hubspot"
+   ],
+   "text": "AI in your tools published, with its first six guides: Microsoft 365, Google Workspace, Canva, Xero, MYOB and HubSpot."
+  },
+  {
+   "date": "2026-10-15",
+   "kind": "checked",
+   "tools": [
+    "microsoft-365",
+    "google-workspace",
+    "canva",
+    "xero",
+    "myob",
+    "hubspot"
+   ],
+   "text": "First check of Microsoft 365, Google Workspace, Canva, Xero, MYOB and HubSpot, against each vendor’s own documentation."
+  }
+ ]
+}

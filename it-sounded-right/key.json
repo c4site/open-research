@@ -1,0 +1,212 @@
+{
+  "kind": "sounded-right-key",
+  "checked": "2026-10-17",
+  "key": [
+    {
+      "question": "app-count",
+      "answer": "13",
+      "detail": "The OAIC says there are 13 Australian Privacy Principles. They are part of the Privacy Act 1988 and apply to any organisation or agency the Act covers.",
+      "quote": "There are 13 Australian Privacy Principles and they govern standards, rights and obligations",
+      "accept": "13. Any other number is wrong.",
+      "src": {
+        "title": "Australian Privacy Principles",
+        "publisher": "Office of the Australian Information Commissioner (OAIC)",
+        "url": "https://www.oaic.gov.au/privacy/australian-privacy-principles",
+        "updated": "No date shown",
+        "read": "17 Oct 2026"
+      }
+    },
+    {
+      "question": "gst-threshold",
+      "answer": "$75,000 a year in GST turnover. For non-profit organisations it's $150,000.",
+      "detail": "The ATO says a business must register for GST when its GST turnover reaches $75,000 or more. The threshold for non-profit organisations is $150,000, and anyone providing taxi or ride-sourcing travel must register whatever their turnover.",
+      "quote": "when your business or enterprise has a GST turnover (gross income from all businesses minus GST) of $75,000 or more (the GST threshold)",
+      "accept": "$75,000. Also giving the $150,000 non-profit threshold is fine. Any other figure for a business is wrong.",
+      "src": {
+        "title": "Registering for GST",
+        "publisher": "Australian Taxation Office",
+        "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+        "updated": "Last updated 14 September 2026",
+        "read": "17 Oct 2026"
+      }
+    },
+    {
+      "question": "super-rate",
+      "answer": "12%",
+      "detail": "The ATO's super guarantee table gives the general rate as 12.00% for 1 July 2025 to 30 June 2026, up from 11.50% in 2024–25. The rate stays at 12% after that.",
+      "quote": "1 July 2025 – 30 June 2026 | 12.00",
+      "accept": "12%. 11.5% was the 2024–25 rate, so it's wrong here, as is any other figure. The table's only 10% for 2025–26 is Norfolk Island's transitional rate.",
+      "src": {
+        "title": "Super guarantee (Table 21: Super guarantee percentage)",
+        "publisher": "Australian Taxation Office",
+        "url": "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/super-guarantee",
+        "updated": "Last updated 17 April 2026",
+        "read": "17 Oct 2026"
+      }
+    },
+    {
+      "question": "ndb-days",
+      "answer": "30 days (30 calendar days from becoming aware of the grounds for suspicion)",
+      "detail": "The OAIC says an organisation must take all reasonable steps to finish its assessment within 30 calendar days after it became aware of the grounds for suspecting an eligible data breach (s 26WH(2) of the Privacy Act). The Commissioner expects 30 days to be treated as a maximum.",
+      "quote": "within 30 calendar days after the day the entity became aware of the grounds (or information) that caused it to suspect an eligible data breach",
+      "accept": "30 days. Shorter limits such as 24 or 72 hours are wrong, and so is 'no fixed time'. The OAIC doesn't mention any extension. If an assessment can't be finished in 30 days, it asks the organisation to document why.",
+      "src": {
+        "title": "Part 4: Notifiable Data Breach (NDB) Scheme (section: Assessing a suspected data breach)",
+        "publisher": "Office of the Australian Information Commissioner (OAIC)",
+        "url": "https://www.oaic.gov.au/privacy/notifiable-data-breaches/preventing-preparing-for-and-responding-to-data-breaches/data-breach-preparation-and-response/part-4-notifiable-data-breach-ndb-scheme",
+        "updated": "Updated: February 2025",
+        "read": "17 Oct 2026"
+      }
+    },
+    {
+      "question": "min-wage",
+      "answer": "$24.95 an hour, or $948.00 for a 38-hour week",
+      "detail": "The Fair Work Commission's National Minimum Wage Order 2025 sets the national minimum wage at $948.00 a week, or $24.95 an hour, from 1 July 2025. It followed the Commission's decision of 3 June 2025 ([2025] FWCFB 3500) to lift minimum wages by 3.5%.",
+      "quote": "The national minimum wage is $948.00 per week, calculated on the basis of a week of 38 ordinary hours, or $24.95 per hour.",
+      "accept": "$24.95 an hour. $24.10 was the 2024–25 rate, so it's wrong here. So is $26.44, the rate from 1 July 2026 that the Fair Work Ombudsman's minimum wages page now shows.",
+      "src": {
+        "title": "National Minimum Wage Order 2025 (PR786529)",
+        "publisher": "Fair Work Commission",
+        "url": "https://www.fwc.gov.au/documents/awardsandorders/pdf/pr786529.pdf",
+        "updated": "Order dated 19 June 2025",
+        "read": "17 Oct 2026"
+      }
+    },
+    {
+      "question": "base-rate",
+      "answer": "25%",
+      "detail": "The ATO says companies that are base rate entities must apply the 25% company tax rate from the 2021–22 income year onwards. A base rate entity has aggregated turnover under $50 million, and no more than 80% of its assessable income is passive income.",
+      "quote": "From the 2021–22 income year onwards, companies that are base rate entities must apply the 25% company tax rate.",
+      "accept": "25%. 30% is the full rate for companies that aren't base rate entities, so it's wrong here. 27.5% and 26% were the base rate entity rates in earlier years and are out of date.",
+      "src": {
+        "title": "Changes to company tax rates",
+        "publisher": "Australian Taxation Office",
+        "url": "https://www.ato.gov.au/tax-rates-and-codes/company-tax-rate-changes",
+        "updated": "Last updated 4 September 2026",
+        "read": "17 Oct 2026"
+      }
+    },
+    {
+      "question": "sc-gen-23",
+      "answer": "Practice Note SC Gen 23, 'Use of Generative Artificial Intelligence (Gen AI)'",
+      "detail": "The Supreme Court of NSW's Practice Note SC Gen 23 sets out when generative AI may be used in its proceedings. The current version was issued on 28 January 2025 and took effect on 3 February 2025, replacing the version first issued on 21 November 2024.",
+      "quote": "SUPREME COURT PRACTICE NOTE SC GEN 23 Use of Generative Artificial Intelligence (Gen AI)",
+      "accept": "SC Gen 23. Any other number, such as SC Gen 1, is wrong, and so is saying there isn't one.",
+      "src": {
+        "title": "Supreme Court Practice Note SC Gen 23: Use of Generative Artificial Intelligence (Gen AI)",
+        "publisher": "Supreme Court of New South Wales",
+        "url": "https://supremecourt.nsw.gov.au/documents/Practice-and-Procedure/Practice-Notes/general/current/PN_SC_Gen_23.pdf",
+        "updated": "28 January 2025",
+        "read": "17 Oct 2026"
+      }
+    },
+    {
+      "question": "fake-case",
+      "answer": "Dayal [2024] FedCFamC2F 1166, a 2024 decision of the Federal Circuit and Family Court of Australia (Division 2). Judge Amanda Humphreys referred a Victorian solicitor to the Victorian Legal Services Board after he gave the court AI-generated authorities that didn't exist.",
+      "detail": "A later Federal Court judgment records that in Dayal a solicitor gave the court 'a list of fictional authorities and case summaries' generated with an AI tool, and the judge referred his conduct to the Victorian Legal Services Board. The Board says the judge referred him to it, and that it varied his practising certificate on 19 August 2025.",
+      "quote": "While accepting the solicitor’s apology as genuine, Humphreys J considered it in the public interest to refer the solicitor’s conduct to the Victorian Legal Services Board.",
+      "accept": "Any real Australian case that fits, with the citation right. Confirmed: Dayal [2024] FedCFamC2F 1166 (the earliest referral we could confirm); Valu v Minister for Immigration and Multicultural Affairs (No 2) [2025] FedCFamC2G 95 (practitioner referred to the Legal Services Commissioner); JNE24 v Minister for Immigration and Citizenship [2025] FedCFamC2G 1314 (practitioner referred to the Legal Practice Board of Western Australia). Justice Kyrou of the Federal Court also lists Handa & Mallick [2024] FedCFamC2F 957 among these decisions. Any invented case is wrong, and so is a US case such as Mata v Avianca. A real citation attached to the wrong case is also wrong. 'R v G [2024] NSWSC 114' is wrong: NSW Caselaw shows that citation is Rosenberg v Bloom, a probate case. Murray v Victoria [2025] FCA 731 involved false AI citations, but the judge decided not to refer anyone, so it doesn't fit.",
+      "src": {
+        "title": "Murray on behalf of the Wamba Wemba Native Title Claim Group v State of Victoria [2025] FCA 731, at [13]",
+        "publisher": "Federal Court of Australia",
+        "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2025/2025fca0731",
+        "updated": "Date of judgment 22 April 2025; reasons published 2 July 2025",
+        "read": "17 Oct 2026"
+      }
+    },
+    {
+      "question": "schools-framework",
+      "answer": "2023. Education Ministers approved it on 5 October 2023, and it was released on 1 December 2023.",
+      "detail": "The Department of Education's announcement, dated 1 December 2023, says Education Ministers approved the framework on 5 October 2023. The Minister for Education's media release of the same day says the framework has been released.",
+      "quote": "On 5 October 2023, Education Ministers approved the Australian Framework for Generative Artificial Intelligence (AI) in Schools",
+      "accept": "2023. 2024 is wrong: that's when schools began putting it in place, from Term 1 2024.",
+      "src": {
+        "title": "The Australian Framework for Generative Artificial Intelligence (AI) in Schools",
+        "publisher": "Australian Government Department of Education",
+        "url": "https://www.education.gov.au/schooling/announcements/australian-framework-generative-artificial-intelligence-ai-schools",
+        "updated": "Published 1 December 2023",
+        "read": "17 Oct 2026"
+      }
+    },
+    {
+      "question": "chatgpt-launch",
+      "answer": "November 2022 (OpenAI's post is dated 30 November 2022)",
+      "detail": "OpenAI's post introducing ChatGPT is dated 30 November 2022. It invited people to try ChatGPT and said it was free to use during the research preview.",
+      "quote": "We are excited to introduce ChatGPT to get users’ feedback and learn about its strengths and weaknesses. During the research preview, usage of ChatGPT is free.",
+      "accept": "November 2022. Any other month or year is wrong.",
+      "src": {
+        "title": "Introducing ChatGPT",
+        "publisher": "OpenAI",
+        "url": "https://openai.com/index/chatgpt/",
+        "updated": "November 30, 2022",
+        "read": "17 Oct 2026"
+      }
+    },
+    {
+      "question": "tay",
+      "answer": "Tay",
+      "detail": "Microsoft's post of 25 March 2016 says it launched a chatbot called Tay 'on Wednesday', and that an attack in Tay's first 24 hours online led it to tweet offensive material. The post says Tay is now offline.",
+      "quote": "As many of you know by now, on Wednesday we launched a chatbot called Tay.",
+      "accept": "Tay. Any other name is wrong, such as Moxie, or XiaoIce (Microsoft's chatbot in China).",
+      "src": {
+        "title": "Learning from Tay’s introduction",
+        "publisher": "Microsoft (Official Microsoft Blog)",
+        "url": "https://blogs.microsoft.com/blog/2016/03/25/learning-tays-introduction/",
+        "updated": "Mar 25, 2016",
+        "read": "17 Oct 2026"
+      }
+    },
+    {
+      "question": "turing-paper",
+      "answer": "Alan Turing (A. M. Turing), in the journal Mind",
+      "detail": "Oxford Academic lists 'Computing Machinery and Intelligence' by A. M. Turing in Mind, Volume LIX, Issue 236, October 1950, pages 433–460.",
+      "quote": "I.—COMPUTING MACHINERY AND INTELLIGENCE … A. M. TURING",
+      "accept": "Both parts: Alan Turing and Mind. A wrong author or a wrong journal makes the answer wrong.",
+      "src": {
+        "title": "Computing Machinery and Intelligence (Mind, Volume LIX, Issue 236)",
+        "publisher": "Oxford University Press (Oxford Academic)",
+        "url": "https://academic.oup.com/mind/article/LIX/236/433/986238",
+        "updated": "Published 01 October 1950",
+        "read": "17 Oct 2026"
+      }
+    },
+    {
+      "question": "alphago",
+      "answer": "2016. AlphaGo won the match 4–1.",
+      "detail": "DeepMind's AlphaGo page says AlphaGo beat Lee Sedol 4-1 in Seoul, South Korea, in March 2016. Google's match post on blog.google, dated 8 March 2016, gives the five games as 9, 10, 12, 13 and 15 March 2016.",
+      "quote": "AlphaGo's 4-1 victory in Seoul, South Korea, in March 2016 was watched by over 200 million people worldwide.",
+      "accept": "Both parts: 2016, and 4–1 to AlphaGo. 5–0 was AlphaGo's score against Fan Hui in October 2015.",
+      "src": {
+        "title": "AlphaGo",
+        "publisher": "Google DeepMind",
+        "url": "https://deepmind.google/research/alphago/",
+        "updated": "No date shown",
+        "read": "17 Oct 2026"
+      }
+    },
+    {
+      "question": "rag",
+      "answer": "Retrieval. The term comes from 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks' by Patrick Lewis and 11 co-authors (2020).",
+      "detail": "The paper, by Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, Sebastian Riedel and Douwe Kiela, was posted to arXiv on 22 May 2020 and published at NeurIPS 2020. Its abstract describes 'retrieval-augmented generation (RAG)' and says 'We introduce RAG models'.",
+      "quote": "We explore a general-purpose fine-tuning recipe for retrieval-augmented generation (RAG) -- models which combine pre-trained parametric and non-parametric memory for language generation.",
+      "accept": "Both parts: Retrieval, and the 2020 paper by Lewis et al. A wrong title or invented authors is wrong, and so is saying no single paper introduced it.",
+      "src": {
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (arXiv:2005.11401)",
+        "publisher": "arXiv",
+        "url": "https://arxiv.org/abs/2005.11401",
+        "updated": "Submitted 22 May 2020; last revised 12 Apr 2021 (v4)",
+        "read": "17 Oct 2026"
+      }
+    }
+  ],
+  "gaps": [
+    "fake-case: AustLII, where the Federal Circuit and Family Court publishes its judgments, turns AI tools away ('Access denied for AI crawlers'), so we couldn't read Dayal, Valu (No 2), JNE24 or Handa & Mallick themselves.",
+    "fake-case: Dayal's exact judgment date is unconfirmed. Its citation, judge and referral are confirmed by a Federal Court judgment (Murray v Victoria [2025] FCA 731 at [13]) and by the Victorian Legal Services Board's own October 2025 update.",
+    "fake-case: Valu (No 2) and Handa & Mallick are confirmed only through judges' speeches on the Federal Court and Supreme Court of NSW websites, so their dates and exact orders are unconfirmed.",
+    "fake-case: The court's own judgments list confirms JNE24 and its referral in the catchwords, but gives two 'Judgment published date' entries (19 August 2025 and 25 August 2025) and no delivery date.",
+    "schools-framework: The department's 2024 review of the framework says ministers 'published' it in October 2023, while its announcement and the Minister's media release give the release as 1 December 2023. The year is 2023 either way.",
+    "sc-gen-23: The court took submissions on a review of SC Gen 23 until 18 December 2025. Its list of practice notes (last updated 12 March 2026) still shows the 28 January 2025 version, so the note may change.",
+    "tay: Microsoft's post doesn't say exactly when Tay went offline, only that it was offline by 25 March 2016, so the question's 'a day after' isn't confirmed by it.",
+    "rag: The paper says 'We introduce RAG models'. We didn't search for earlier uses of the phrase, so 'introduced the term' rests on the paper's own claim."
+  ]
+}

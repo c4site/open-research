@@ -1,0 +1,151 @@
+[
+  {
+    "id": "chatgpt-to-canva",
+    "from": "ChatGPT",
+    "to": "Canva",
+    "who": "anyone",
+    "plan_needed": "A ChatGPT account and any Canva account, including Free and Education. On ChatGPT Business or Enterprise, a workspace admin must turn on Apps & Connectors first. On a Canva team, the Canva admin may need to allow the AI Connector. OpenAI's own plan and country rules couldn't be confirmed (help.openai.com returned HTTP 403).",
+    "steps": [
+      { "where": "ChatGPT (desktop), main screen", "do": "Open ChatGPT and select Settings", "see": "ChatGPT settings open" },
+      { "where": "ChatGPT settings", "do": "Select @ Plugins", "see": "The plugins list" },
+      { "where": "@ Plugins", "do": "Select Canva and follow the prompts to connect your Canva account. Sign in to the right Canva account and authorise Canva if asked", "see": "Canva's sign-in and permission screens, then you're back in ChatGPT" },
+      { "where": "@ Plugins", "do": "Check the Canva entry", "see": "Canva shows as connected/enabled" },
+      { "where": "A ChatGPT chat", "do": "Turn Canva on in the chat. Describe what you want, including the type of design and any text, and say you want it in Canva", "see": "ChatGPT shows design options as previews" },
+      { "where": "The chat result", "do": "Select an option, then Save or Open in Canva", "see": "The design opens in Canva and is saved to your account. Only designs you select are saved" }
+    ],
+    "source": "S60",
+    "doc_updated": null
+  },
+  {
+    "id": "claude-to-canva",
+    "from": "Claude",
+    "to": "Canva",
+    "who": "anyone",
+    "plan_needed": "Any Claude plan (directory connectors are available to all users on Claude, Cowork, Claude Desktop and the mobile apps; mobile install is in beta). Any Canva account, including Free. On Claude Team or Enterprise an Owner must add the connector for the organisation first.",
+    "steps": [
+      { "where": "Claude (web or desktop app)", "do": "Go to Customize > Connectors and click + next to Connectors (Canva's own help page calls this Settings > Connectors)", "see": "The connectors directory" },
+      { "where": "Connectors directory", "do": "Find Canva and click it", "see": "The Canva connector page: Made by Canva, Anthropic verified" },
+      { "where": "Canva connector page", "do": "Click Connect, then sign in to Canva and approve access", "see": "Canva's sign-in and authorisation prompts, then Canva shows as connected" },
+      { "where": "A Claude chat", "do": "Click + (or type /), hover over Connectors and turn Canva on", "see": "Canva's tools are available in that conversation" }
+    ],
+    "source": "S92",
+    "doc_updated": null
+  },
+  {
+    "id": "claude-org-add-canva",
+    "from": "Claude (Team or Enterprise owner)",
+    "to": "Canva",
+    "who": "admin",
+    "plan_needed": "Claude Team or Enterprise, with the Owner or Primary Owner role. Each member still signs in to Canva themselves.",
+    "steps": [
+      { "where": "Claude, organisation admin area", "do": "Go to Organization settings > Connectors", "see": "The organisation's connectors" },
+      { "where": "Organization settings > Connectors", "do": "Click Browse connectors, find Canva and click Add to your team", "see": "Canva becomes available for members to connect" },
+      { "where": "Organization settings > Connectors > Canva", "do": "Optionally set each tool to Always allow, Needs approval or Blocked", "see": "The settings apply to everyone, and members can't override them" }
+    ],
+    "source": "S92",
+    "doc_updated": null
+  },
+  {
+    "id": "canva-cross-app-access-claude",
+    "from": "Canva Enterprise (admin)",
+    "to": "Claude (Team or Enterprise)",
+    "who": "admin",
+    "plan_needed": "Canva Enterprise with SSO set up, Okta as the identity provider (beta), Claude Team or Enterprise (beta), and admin access to Canva, Okta and Claude.",
+    "steps": [
+      { "where": "Canva, Settings", "do": "Open Settings > Security > Cross app access and turn on Enable Cross app access", "see": "Cross app access is switched on" },
+      { "where": "Settings > Security > Cross app access", "do": "Only if your ID-JAG issuer URL differs from your SAML Identity Provider Issuer: select Add ID-JAG Issuer, enter the ID-JAG Issuer URL and select Add Issuer", "see": "The issuer appears in the ID-JAG Issuer list" },
+      { "where": "Okta admin console and Claude admin settings", "do": "Set up Okta using Okta's guide, and in Claude follow Anthropic's 'Authorize MCP connectors for your entire organization'", "see": "The Canva connector is set up for the organisation" },
+      { "where": "Canva and Claude", "do": "Check the toggle is on, the issuer is listed, and the Canva connector shows as active in Claude", "see": "Members who sign in with SSO can use Canva in Claude without setting it up themselves" }
+    ],
+    "source": "S64",
+    "doc_updated": null
+  },
+  {
+    "id": "gemini-to-canva",
+    "from": "Gemini",
+    "to": "Canva",
+    "who": "anyone",
+    "plan_needed": "A personal Google Account (work and school accounts aren't supported), Keep Activity turned on, the Gemini web or mobile app in English, and a Canva account. Resizing, Brand Template search and autofill need a Canva Enterprise team.",
+    "steps": [
+      { "where": "gemini.google.com or the Gemini mobile app", "do": "Open Gemini", "see": "A new chat" },
+      { "where": "Gemini chat", "do": "Ask Gemini to do something in Canva, mentioning 'Canva' or adding @Canva to the prompt", "see": "If Canva isn't connected, Gemini offers to connect it" },
+      { "where": "Gemini connection prompt", "do": "Choose to connect, and link your Canva account to your Google Account if asked", "see": "Canva's sign-in and linking screens" },
+      { "where": "On-screen instructions", "do": "Follow the remaining on-screen instructions", "see": "Canva is connected and Gemini carries out the request" }
+    ],
+    "source": "S96",
+    "doc_updated": null
+  },
+  {
+    "id": "gemini-settings-to-canva",
+    "from": "Gemini (settings)",
+    "to": "Canva",
+    "who": "anyone",
+    "plan_needed": "Same as connecting from a chat: personal Google Account, Keep Activity on, English, and a Canva account.",
+    "steps": [
+      { "where": "gemini.google.com sidebar (computer)", "do": "Click Customize. If you can't see it, click More first", "see": "Gemini's customisation options" },
+      { "where": "Customize", "do": "At the top, click Connectors", "see": "The list of connected apps" },
+      { "where": "Connectors", "do": "Find Canva and click Add, then follow the on-screen instructions (Canva's page gives the path as Settings > Personal Intelligence > Connected Apps > Other > Canva toggle)", "see": "Canva's sign-in and linking screens, then Canva is connected" }
+    ],
+    "source": "S97",
+    "doc_updated": null
+  },
+  {
+    "id": "copilot-chat-to-canva",
+    "from": "Microsoft Copilot (Chat)",
+    "to": "Canva",
+    "who": "anyone",
+    "plan_needed": "A Microsoft 365 work or school account with Copilot. The Microsoft 365 admin may need to enable the Agent store or approve the agent (you'd see Request approval instead of Add). The Canva team admin may need to allow third-party integrations and the AI Connector. Microsoft's licence rules for this agent weren't confirmed.",
+    "steps": [
+      { "where": "Microsoft Copilot", "do": "Select Agent store", "see": "The agents marketplace" },
+      { "where": "Agent store", "do": "Search for Canva agent, select it and install it", "see": "The Canva agent is installed (or a Request approval option if your organisation needs IT approval)" },
+      { "where": "Copilot chat", "do": "Select New chat, select the plus icon, then Chat with an agent", "see": "A search for installed agents" },
+      { "where": "Chat with an agent", "do": "Type Canva and select the agent", "see": "A chat with the Canva agent and its suggested prompts" },
+      { "where": "Canva agent chat", "do": "Use a suggested prompt or type your own request", "see": "You may be asked to sign in to Canva and authorise it, then the agent responds" }
+    ],
+    "source": "S63",
+    "doc_updated": null
+  },
+  {
+    "id": "copilot-cowork-to-canva",
+    "from": "Microsoft Copilot (Cowork)",
+    "to": "Canva",
+    "who": "anyone",
+    "plan_needed": "A Microsoft 365 Copilot licence, with Cowork and usage-based billing switched on by the organisation. The Canva team admin may need to allow third-party integrations and the AI Connector.",
+    "steps": [
+      { "where": "Copilot Cowork, a task thread", "do": "Select the plus icon and open customisation (manage plugins)", "see": "The plugins list" },
+      { "where": "manage plugins", "do": "Search for Canva agent and install it", "see": "Canva agent appears in your plugins" },
+      { "where": "manage plugins", "do": "Select Canva agent and turn it on with the toggle", "see": "The Canva agent is enabled for Cowork" },
+      { "where": "Task thread", "do": "Type / and choose one of the Canva agent's skills", "see": "Cowork runs the Canva agent skill" }
+    ],
+    "source": "S63",
+    "doc_updated": null
+  },
+  {
+    "id": "canva-admin-ai-connector-switch",
+    "from": "Canva (team admin)",
+    "to": "AI assistants (ChatGPT, Claude, Gemini, Copilot and others)",
+    "who": "admin",
+    "plan_needed": "An admin on Canva Teams, Business, Nonprofit, Education or Enterprise. The switch applies to the whole team.",
+    "steps": [
+      { "where": "Canva", "do": "Go to Admin Dashboard", "see": "Canva's admin area" },
+      { "where": "Admin Dashboard", "do": "Select Controls and Permissions, then Third-party integrations", "see": "The third-party integrations settings, including Canva's AI Connector" },
+      { "where": "Third-party integrations", "do": "Turn Canva's AI Connector on or off", "see": "When it's off, nobody on the team can connect an assistant and existing connections stop working" }
+    ],
+    "source": "S56",
+    "doc_updated": null
+  },
+  {
+    "id": "canva-ai-to-other-apps",
+    "from": "Canva AI",
+    "to": "Slack, Gmail, Zoom, Notion, Asana, Google Drive, HubSpot, Gong and other apps",
+    "who": "anyone",
+    "plan_needed": "Canva Pro, Teams, Business or Nonprofit (Canva AI 2.0 connectors; marked 'Soon' for Enterprise). Some apps may need organisation or admin approval. Blocked by default in Canva Education.",
+    "steps": [
+      { "where": "Canva homepage", "do": "Go to Canva AI, select the plus icon and choose Connect apps", "see": "The list of apps that work with Canva AI" },
+      { "where": "Connect apps", "do": "Pick an app. If your account isn't linked yet, select Connect and follow the prompts", "see": "The app's sign-in and permission screens, then the app is linked" },
+      { "where": "Canva AI prompt box", "do": "Turn the app on with its toggle, type a prompt that names the app or the information you need, and select Submit", "see": "Canva AI reads from the app (read-only, text only) and uses it as context" }
+    ],
+    "source": "S65",
+    "doc_updated": null
+  }
+]

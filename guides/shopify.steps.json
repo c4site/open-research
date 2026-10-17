@@ -1,0 +1,317 @@
+[
+  {
+    "id": "claude-to-shopify",
+    "from": "Claude",
+    "to": "Shopify",
+    "who": "anyone",
+    "plan_needed": "A Claude account and a Shopify store you own, or one you create through Claude. Shopify charges no extra fee and doesn't name a Claude plan. Shopify says to set it up in a desktop browser. On Claude Team or Enterprise, an Owner must add the connector first (see claude-team-owner-adds-shopify).",
+    "steps": [
+      {
+        "where": "Claude (claude.ai or the desktop app), Customize",
+        "do": "Go to Customize > Connectors and click the + button next to Connectors. Shopify's help page also links straight to the install page at claude.ai/directory/connectors/shopify.",
+        "see": "The connectors directory opens."
+      },
+      {
+        "where": "Claude connectors directory",
+        "do": "Click Shopify (Made by Shopify, Anthropic verified), then click Connect.",
+        "see": "Claude sends you to your Shopify admin."
+      },
+      {
+        "where": "Shopify admin",
+        "do": "Sign in, read the data access level Claude is asking for, then approve it or decline. Read-only access lets it view data; write access lets it edit data and act for you.",
+        "see": "Claude can reach your store within the access you approved and the permissions of the staff account you signed in with. The exact Shopify approval screen wasn't shown in the docs we read."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Click + (lower left) or type /, hover over Connectors, and check Shopify is switched on.",
+        "see": "Shopify is available in this conversation."
+      },
+      {
+        "where": "Claude chat",
+        "do": "Ask about your store and mention Shopify by name, for example last week's sales by product.",
+        "see": "Answers from live store data. Shopify says the connector asks you to confirm before Admin API changes and before creating a discount code. It can't issue refunds, cancel orders, change payments or edit your live theme."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Claude, Customize > Connectors",
+        "do": "Select Shopify and disconnect it.",
+        "see": "Claude stops using your store."
+      },
+      {
+        "where": "Shopify admin",
+        "do": "Uninstall the integration.",
+        "see": "The tool can no longer read or edit store data. Shopify's page doesn't give the menu path."
+      }
+    ],
+    "source": "S59, S58, S22, S26",
+    "doc_updated": "2026-10-17"
+  },
+  {
+    "id": "claude-team-owner-adds-shopify",
+    "from": "Claude",
+    "to": "Shopify",
+    "who": "admin",
+    "plan_needed": "Claude Team or Enterprise, Owner or Primary Owner role.",
+    "steps": [
+      {
+        "where": "Claude, Organization settings",
+        "do": "Go to Organization settings > Connectors and click Browse connectors at the bottom of the page.",
+        "see": "The list of available connectors."
+      },
+      {
+        "where": "Claude connector list",
+        "do": "Select Shopify and click Add to your team.",
+        "see": "Shopify becomes available to the team. Nobody gets access automatically."
+      },
+      {
+        "where": "Claude, Customize > Connectors > Shopify > Tool permissions",
+        "do": "Optionally set each tool or category to Always allow, Needs approval or Blocked. Needs approval is the careful choice for tools that change products, stock or discounts.",
+        "see": "Members follow these settings."
+      },
+      {
+        "where": "Each member's Claude account",
+        "do": "Each person follows claude-to-shopify and signs in to Shopify themselves.",
+        "see": "Each person's access is limited by their own Shopify staff permissions."
+      }
+    ],
+    "source": "S59, S26",
+    "doc_updated": "2026-10-17"
+  },
+  {
+    "id": "chatgpt-to-shopify",
+    "from": "ChatGPT",
+    "to": "Shopify",
+    "who": "anyone",
+    "plan_needed": "A ChatGPT account and a Shopify store you own. OpenAI says availability depends on your plan and workspace settings, and some workspaces need admin approval. Shopify charges no extra fee and says to set it up in a desktop browser.",
+    "steps": [
+      {
+        "where": "ChatGPT (web or desktop app), Plugins tab",
+        "do": "Open the Plugins tab and search for Shopify. Shopify's help page also links to chatgpt.com/plugins/shopify.",
+        "see": "The Shopify plugin, with Shopify as the developer."
+      },
+      {
+        "where": "Shopify plugin details",
+        "do": "Select the plus button to install it.",
+        "see": "The plugin installs. Some plugins ask you to connect straight away; others wait until you first use them."
+      },
+      {
+        "where": "Shopify admin",
+        "do": "When prompted, connect, sign in to Shopify, and approve or decline the data access ChatGPT asks for.",
+        "see": "The connection is set up. The exact screens weren't in the docs we read."
+      },
+      {
+        "where": "New ChatGPT chat",
+        "do": "Start a new chat, type @Shopify and say what you want, such as a list of this week's orders.",
+        "see": "ChatGPT works with your store. Shopify says product drafts open in a panel you can edit before saving, and it asks you to confirm before Admin API changes."
+      }
+    ],
+    "undo": [
+      {
+        "where": "ChatGPT, Shopify plugin details",
+        "do": "Select Uninstall plugin if it's offered, then disconnect the Shopify connection in ChatGPT as well.",
+        "see": "OpenAI says uninstalling removes the plugin but the connection stays active until you disconnect it. OpenAI's page doesn't give the disconnect steps."
+      },
+      {
+        "where": "Shopify admin",
+        "do": "Uninstall the integration.",
+        "see": "The tool can no longer read or edit store data. Shopify's page doesn't give the menu path."
+      }
+    ],
+    "source": "S66, S23, S26, S64",
+    "doc_updated": null
+  },
+  {
+    "id": "copilot-cowork-to-shopify",
+    "from": "Microsoft Copilot (Copilot Cowork and Copilot Chat)",
+    "to": "Shopify",
+    "who": "anyone",
+    "plan_needed": "A Microsoft 365 Copilot licence (Microsoft requires one for Cowork plugins), a Shopify store you own or one you create at sign-in, and an IT admin who has made the plugin available. Shopify documents the Shopify plugin for Microsoft Copilot, but Microsoft's Cowork plugin list of 15 October 2026 didn't include it, so check it's there before you plan around it.",
+    "steps": [
+      {
+        "where": "Copilot Cowork",
+        "do": "Open a conversation or the Cowork home page, select the + button, then select Customize.",
+        "see": "The plugin list, which you can search by name or category."
+      },
+      {
+        "where": "Cowork, Customize",
+        "do": "Search for Shopify, open its details and add it. If it isn't listed, ask your IT admin.",
+        "see": "The plugin is added. Admin-deployed plugins appear without you adding them."
+      },
+      {
+        "where": "Shopify sign-in",
+        "do": "When Copilot first needs your store, select Connect, sign in to Shopify and approve the access it asks for.",
+        "see": "Cowork remembers the connection for future conversations. The exact Shopify screens weren't in the docs we read."
+      },
+      {
+        "where": "Copilot Chat (optional)",
+        "do": "Open the Shopify agent from Agents, and mention Shopify in each request.",
+        "see": "Shopify says that if you ask without opening the agent, Copilot may only be able to view data."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Copilot Cowork, + > Customize",
+        "do": "Find Shopify and select Remove from Cowork.",
+        "see": "Its connectors leave future conversations. Plugins your admin deployed can only be removed by the admin, but you can switch them off in the Sources & Skills panel."
+      },
+      {
+        "where": "Shopify admin",
+        "do": "Uninstall the integration.",
+        "see": "Shopify says revoking its access doesn't change Microsoft 365 access, and the reverse is also true."
+      }
+    ],
+    "source": "S70, S69, S71, S24",
+    "doc_updated": "2026-08-27"
+  },
+  {
+    "id": "m365-admin-deploys-cowork-plugin",
+    "from": "Microsoft 365 admin center",
+    "to": "Copilot Cowork plugins (such as Shopify, if listed)",
+    "who": "admin",
+    "plan_needed": "Microsoft 365 tenant administrator or Copilot administrator role. Users need Microsoft 365 Copilot licences.",
+    "steps": [
+      {
+        "where": "Microsoft 365 admin center",
+        "do": "Sign in, then select Agents and either All agents or Tools.",
+        "see": "The list of agents and plugins available to the organisation."
+      },
+      {
+        "where": "Agents list",
+        "do": "Search for the plugin by name and select it to open its details.",
+        "see": "The plugin's details, including its description."
+      },
+      {
+        "where": "Plugin details",
+        "do": "Select Installed for, choose All users or Specific users/groups, then select Next and install.",
+        "see": "The plugin is added for those users automatically, with a Managed by your organization label. Each user still signs in to the outside service themselves."
+      },
+      {
+        "where": "Agents > Tools > the plugin > Users tab",
+        "do": "To limit or stop it, set it to available to specific users or groups, or select Block.",
+        "see": "Blocking makes it unavailable to everyone in new conversations."
+      }
+    ],
+    "source": "S71",
+    "doc_updated": "2026-08-31"
+  },
+  {
+    "id": "gemini-to-shopify",
+    "from": "Google Gemini",
+    "to": "Shopify",
+    "who": "anyone",
+    "plan_needed": "A Shopify store you own. Google's availability table lists the Shopify app for personal Google accounts only, aged 18 or over, in the US, in English. Going by that table it isn't available to Australian users yet.",
+    "steps": [
+      {
+        "where": "gemini.google.com",
+        "do": "In the sidebar, click Customize, then click Connectors at the top.",
+        "see": "The apps available to your account and country."
+      },
+      {
+        "where": "Gemini, Connectors",
+        "do": "Find Shopify and click Add, then follow the on-screen instructions. You can also type @ in a chat and choose Shopify.",
+        "see": "Gemini asks you to approve the connection."
+      },
+      {
+        "where": "Shopify admin",
+        "do": "Sign in and approve or decline the data access Gemini asks for. Without write access the connector only reads.",
+        "see": "Shopify is connected. The exact screens weren't in the docs we read."
+      },
+      {
+        "where": "Gemini chat",
+        "do": "Type @ and select Shopify, then ask your question.",
+        "see": "Answers from live store data. Shopify says it asks you to confirm before Admin API changes and before creating a discount code."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Gemini, Customize > Connectors",
+        "do": "Click More options next to Shopify, then Disconnect.",
+        "see": "Gemini stops using your store. Shopify says that to switch stores you unlink Shopify here and then ask for Shopify again."
+      },
+      {
+        "where": "Shopify admin",
+        "do": "Uninstall the integration.",
+        "see": "The tool can no longer read or edit store data."
+      }
+    ],
+    "source": "S80, S81, S25, S26",
+    "doc_updated": null
+  },
+  {
+    "id": "shopify-ai-shopping-channels",
+    "from": "Shopify (agentic storefronts)",
+    "to": "AI shopping channels: ChatGPT, Microsoft Copilot, Google AI Mode and Gemini, Meta",
+    "who": "admin",
+    "plan_needed": "The store owner, or staff with the Products > View and App and sales channel > Agentic permissions. Selling in ChatGPT and Copilot needs you to sell to US customers; Google also needs a US-based store and a Google Merchant Center account. It's on by default for eligible stores.",
+    "steps": [
+      {
+        "where": "Shopify admin, Sales channels > Agentic",
+        "do": "Open the Agentic page.",
+        "see": "Each channel's access and direct checkout status, whether you're eligible, and how many products are in Shopify Catalog."
+      },
+      {
+        "where": "Sales channels > Agentic",
+        "do": "Turn off Allow Shopify to manage for me.",
+        "see": "The manual controls appear. This setting is on by default."
+      },
+      {
+        "where": "Sales channels > Agentic",
+        "do": "Turn off Shopify Catalog access to stop all third-party AI channels, or turn off Auto enroll new storefronts to stop new ones being added. To change one channel, click it (for example ChatGPT or Microsoft Copilot) and turn Shopify Catalog access or Direct checkout on or off.",
+        "see": "Your choices are ready to save."
+      },
+      {
+        "where": "Sales channels > Agentic",
+        "do": "Click Save.",
+        "see": "Shopify says it can take up to 7 days for your product data to stop being shared, and AI channels can still find products by crawling the web."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Sales channels > Agentic",
+        "do": "Turn Allow Shopify to manage for me back on and click Save.",
+        "see": "All agentic storefront settings are switched back on, including direct checkout and automatic enrolment in new channels."
+      }
+    ],
+    "source": "S31, S33, S34, S35",
+    "doc_updated": null
+  },
+  {
+    "id": "shopify-cli-connector",
+    "from": "A coding tool on your computer (Claude Code, Codex, Cursor or Visual Studio Code)",
+    "to": "Shopify (through the Shopify API)",
+    "who": "admin",
+    "plan_needed": "Access to the store you want to connect, the Shopify CLI installed on your computer, and a supported coding tool. The Shopify AI Toolkit needs Node.js 18 or later. Meant for developers.",
+    "steps": [
+      {
+        "where": "Shopify admin",
+        "do": "Confirm you have access to the store you want to connect.",
+        "see": "Your staff permissions set the limit of what the coding tool can do."
+      },
+      {
+        "where": "Your computer",
+        "do": "Install the Shopify CLI.",
+        "see": "The CLI is available in your terminal."
+      },
+      {
+        "where": "Your computer, your coding tool",
+        "do": "Install the Shopify AI Toolkit and authorise your local AI tool, following the Shopify AI Toolkit documentation. For Claude Code, Shopify's recommended command is: claude plugin install shopify-ai-toolkit@claude-plugins-official",
+        "see": "The coding tool has Shopify's skills and docs."
+      },
+      {
+        "where": "Shopify approval screen",
+        "do": "Review the data access you're granting before you accept, as you would for any app.",
+        "see": "The tool can read and change store data through the Shopify API, within the access you granted. Shopify says the connector authorizes API access and nothing more."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Shopify admin",
+        "do": "Revoke the connector's access.",
+        "see": "Shopify's page mentions revoking access but doesn't give the steps. After switching stores, start a new conversation in your coding tool."
+      }
+    ],
+    "source": "S29, S52",
+    "doc_updated": null
+  }
+]

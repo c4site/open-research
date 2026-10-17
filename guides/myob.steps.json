@@ -1,0 +1,100 @@
+[
+  {
+    "id": "myob-owner-allows-ai-access",
+    "from": "MYOB My Account (Owner user)",
+    "to": "Claude or ChatGPT",
+    "who": "admin",
+    "plan_needed": "An active MYOB Business Lite, Pro or AccountRight subscription. Must be done by the business owner (the Owner user in the MYOB Business file). This only permits a connection; someone still has to connect from Claude or ChatGPT.",
+    "steps": [
+      { "where": "My Account (myaccount.myob.com)", "do": "Sign in to My Account", "see": "Your MYOB account home" },
+      { "where": "My Account", "do": "If you have several MYOB businesses, choose the one you want to allow AI access to", "see": "That business is selected" },
+      { "where": "My Account, quick links on the right", "do": "Click Manage AI connections", "see": "The AI connections area" },
+      { "where": "Manage AI connections", "do": "Click AI file access", "see": "A list of your businesses" },
+      { "where": "AI file access", "do": "Find the business you want to connect", "see": "Options for Claude and ChatGPT" },
+      { "where": "AI file access", "do": "Choose to allow access for Claude, ChatGPT or both", "see": "Access is allowed. Nothing is connected yet: a user still connects from Claude or ChatGPT" }
+    ],
+    "source": "S4",
+    "doc_updated": null
+  },
+  {
+    "id": "claude-to-myob",
+    "from": "Claude",
+    "to": "MYOB",
+    "who": "anyone",
+    "plan_needed": "Owner must first allow Claude in My Account (myob-owner-allows-ai-access). Any user with access to the MYOB Business file, with their own Claude account and MYOB username and password. MYOB Business Lite, Pro or AccountRight subscription. On Claude Team or Enterprise, an Owner or Primary Owner must first enable the connector for the organisation. Beta, rolling out gradually.",
+    "steps": [
+      { "where": "Claude, Connectors directory (Customize > Connectors, then +)", "do": "Open the Connectors directory in your Claude account", "see": "The list of available connectors (on a Claude Team plan without permission to enable connectors, you see a Request button that goes to your Owners)" },
+      { "where": "Connectors directory", "do": "Search for MYOB, then click Connect to Claude", "see": "MYOB's sign-in, if you're not already signed in" },
+      { "where": "MYOB sign-in", "do": "If prompted, enter your MYOB username and password", "see": "MYOB asks which business file to connect, if you have more than one" },
+      { "where": "MYOB file choice", "do": "Choose the MYOB Business file you want to connect", "see": "A connection confirmation" },
+      { "where": "Connection confirmation", "do": "Click Done", "see": "MYOB is connected. In a chat, use + > Connectors to switch it on or off for that conversation" }
+    ],
+    "source": "S4, S33, S34",
+    "doc_updated": null
+  },
+  {
+    "id": "chatgpt-to-myob",
+    "from": "ChatGPT",
+    "to": "MYOB",
+    "who": "anyone",
+    "plan_needed": "Owner must first allow ChatGPT in My Account (myob-owner-allows-ai-access). Any user with access to the MYOB Business file, with their own ChatGPT subscription and MYOB username and password. MYOB Business Lite, Pro or AccountRight subscription. MYOB names no ChatGPT plan; OpenAI's plan and workspace-admin rules could not be confirmed.",
+    "steps": [
+      { "where": "ChatGPT", "do": "Open Plugins in your ChatGPT account", "see": "The plugin directory" },
+      { "where": "Plugins", "do": "Search for MYOB, then click Install plugin (OpenAI's general guide describes opening the plugin's details and selecting the plus button)", "see": "MYOB's sign-in, if you're not already signed in, and the plugin's requested permissions to review" },
+      { "where": "MYOB sign-in", "do": "If prompted, enter your MYOB username and password", "see": "MYOB asks which business file to connect, if you have more than one" },
+      { "where": "MYOB file choice", "do": "Choose the MYOB Business file you want to connect", "see": "A connection confirmation" },
+      { "where": "Connection confirmation", "do": "Click Done", "see": "MYOB is installed" },
+      { "where": "Any ChatGPT chat", "do": "Select the MYOB plugin before each question", "see": "Answers come from your MYOB data. If MYOB isn't selected, ChatGPT defaults to a web search" }
+    ],
+    "source": "S4, S39",
+    "doc_updated": null
+  },
+  {
+    "id": "myob-export-to-copilot-in-excel",
+    "from": "MYOB",
+    "to": "Microsoft Copilot in Excel",
+    "who": "anyone",
+    "plan_needed": "No official connection exists; this copies a report out of MYOB. Needs access to the report in MYOB, desktop Excel 2010 or later for MYOB's Excel export, and a Microsoft 365 subscription that includes Copilot.",
+    "steps": [
+      { "where": "MYOB Business (browser), Reporting", "do": "Open the report you want, such as Profit and Loss", "see": "The report on screen" },
+      { "where": "The report", "do": "Optionally filter it or add, remove or reorder columns", "see": "The report as you want it exported" },
+      { "where": "Export menu", "do": "Choose Excel, then click Export", "see": "An Excel file saves to your Downloads folder" },
+      { "where": "Excel", "do": "Open the file and select the Copilot icon in the lower-right corner", "see": "Copilot opens in Allow editing mode" },
+      { "where": "Copilot in Excel", "do": "Choose Allow editing, Plan or Chat only, then ask your question", "see": "Copilot answers from the copied report. Nothing changes in MYOB" }
+    ],
+    "source": "S32, S42",
+    "doc_updated": null
+  },
+  {
+    "id": "myob-export-to-gemini",
+    "from": "MYOB",
+    "to": "Google Gemini",
+    "who": "anyone",
+    "plan_needed": "No official connection exists; this copies a report out of MYOB. Needs access to the report in MYOB and a Google account signed in to Gemini Apps. Up to 10 files per prompt, 100 MB per file.",
+    "steps": [
+      { "where": "MYOB Business (browser), Reporting", "do": "Open the report you want, then from the Export menu choose Excel or PDF and click Export", "see": "Excel saves to Downloads; a PDF opens in a new browser tab to download" },
+      { "where": "Gemini on the web", "do": "Type your prompt, click Add files, then Upload files", "see": "Your device's file picker" },
+      { "where": "File picker", "do": "Choose the exported file", "see": "The file is attached to your prompt" },
+      { "where": "Gemini", "do": "Click Submit", "see": "Gemini answers from the uploaded copy. The file counts toward your Gemini Apps activity storage" }
+    ],
+    "source": "S32, S43",
+    "doc_updated": null
+  },
+  {
+    "id": "developer-app-to-myob-api",
+    "from": "Your own app or automation",
+    "to": "MYOB Business API",
+    "who": "admin",
+    "plan_needed": "MYOB Developer Program membership (cheapest listed tier $110 a month including GST; no free API access mentioned). An online MYOB Business or AccountRight company file. A MYOB administrator must approve consent for one company file. Bound by MYOB's Developer Program and Platform Terms, which bar training AI on MYOB data and bar MCP servers that wrap MYOB's API for outside AI agents.",
+    "steps": [
+      { "where": "developer.myob.com", "do": "Join the Developer Program: choose a level and fill in the form", "see": "MYOB processes your membership" },
+      { "where": "MYOB API access registration form", "do": "Submit the registration form for API access", "see": "MYOB sets up a my.MYOB login and invites you to a sandbox company file" },
+      { "where": "my.MYOB, Developer tab", "do": "Click Register App, enter the app name and redirect URL, then click Register App", "see": "Your API key and secret appear, with usage and quota details" },
+      { "where": "Your app", "do": "Send the user to MYOB's sign-in page, requesting only the granular scopes the app needs (for example sme-sales)", "see": "MYOB's consent screen listing the requested access" },
+      { "where": "MYOB consent screen", "do": "A MYOB administrator approves consent for a single company file", "see": "MYOB returns a code and a businessId to the app" },
+      { "where": "Your app", "do": "Exchange the code for an access token, then call the API with the token, API key and company file credentials", "see": "The app can read and, where scopes allow, create, update or delete records" }
+    ],
+    "source": "S48, S44, S45, S46",
+    "doc_updated": "Getting Started: April 2023; Authentication: March 2025; Granular Data Scopes: November 2025"
+  }
+]
