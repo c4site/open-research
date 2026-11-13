@@ -7,14 +7,19 @@
     "plan_needed": "Claude Free or any paid plan, plus an active Xero subscription. On Claude Team or Enterprise, an Owner must add the connector for the team first (see claude-team-owner-adds-xero).",
     "steps": [
       {
-        "where": "Claude (claude.ai or the desktop app), Customize",
-        "do": "Go to Customize > Connectors and click the + button next to Connectors. Xero's own page also links straight to the Xero listing in Claude's directory.",
-        "see": "The connectors directory opens."
+        "where": "Claude (claude.ai or the desktop app)",
+        "do": "In Claude, go to Customize > Connectors. In the desktop app, Customize is in the sidebar.",
+        "see": "The Connectors page."
       },
       {
-        "where": "Claude connectors directory",
-        "do": "Click Xero, read its description, then click Connect.",
-        "see": "You're asked to sign in to Xero."
+        "where": "Claude, the Connectors page",
+        "do": "Select Discover, type \"Xero\" in Search connectors, then select Xero.",
+        "see": "Xero's listing, made by Xero Limited, under Financial services."
+      },
+      {
+        "where": "Claude's directory, the Xero listing",
+        "do": "Select Connect to Claude. Anthropic's docs use that name, and the public listing showed Add to Claude on 13 November 2026, so select whichever you see.",
+        "see": "Xero's sign-in page. On claude.ai it opens in the same tab. In the desktop app it opens in your browser."
       },
       {
         "where": "Xero sign-in",
@@ -23,21 +28,21 @@
       },
       {
         "where": "Xero organisation choice",
-        "do": "Choose the Xero organisation you want Claude to read.",
-        "see": "You're returned to Claude with Xero connected. The exact Xero approval screen wasn't in the docs we could read."
+        "do": "Choose the organisation you want Claude to read, then select Allow.",
+        "see": "You're back in Claude, with Xero under Your connectors."
       },
       {
         "where": "Claude chat",
-        "do": "Click + (lower left) or type /, hover over Connectors, and check Xero is switched on.",
-        "see": "Xero is available in this conversation."
+        "do": "In a new chat, select + in the message box, then Connectors, and switch Xero on.",
+        "see": "Xero's toggle is on for this conversation."
       },
       {
         "where": "Claude chat",
-        "do": "Ask about profit, cash, invoices or customers, for example who owes you money.",
-        "see": "Claude answers from live Xero data, read-only, with links back to the Xero report, invoice or contact it used."
+        "do": "Ask a first question. If Claude asks to use a Xero tool, select Allow once.",
+        "see": "An answer from live Xero data, with links back to the Xero report, invoice or contact it used."
       }
     ],
-    "source": "S6, S61",
+    "source": "S84, S85, S87, S43",
     "doc_updated": null
   },
   {
@@ -49,26 +54,26 @@
     "steps": [
       {
         "where": "Claude, Organization settings",
-        "do": "Go to Organization settings > Connectors and click Browse connectors at the bottom of the page.",
-        "see": "The list of available connectors."
-      },
-      {
-        "where": "Claude connector list",
-        "do": "Select Xero and click Add to your team.",
+        "do": "Go to Organization settings > Connectors, click Browse connectors, select Xero and click Add to your team.",
         "see": "Xero becomes available to the team. Nobody gets access automatically."
       },
       {
-        "where": "Claude, Organization settings > Connectors",
-        "do": "Optionally set each tool or category to Always allow, Needs approval or Blocked.",
+        "where": "Claude's connector directory",
+        "do": "From the directory, the button reads Connect for your team. To try it on your own first, select the arrow beside it, then Connect just for me.",
+        "see": ""
+      },
+      {
+        "where": "Claude, Organization settings",
+        "do": "Under Tool permissions, choose Always allow, Needs approval or Blocked for each group of tools or for a single tool. Anthropic says these settings apply to everyone in the organisation.",
         "see": "Members can't override these settings."
       },
       {
-        "where": "Each member's Claude account",
-        "do": "Each person follows claude-to-xero and signs in to Xero themselves.",
+        "where": "Your team",
+        "do": "Tell each person to connect their own Xero login. Nobody gets access automatically.",
         "see": "Each person sees only what their own Xero login allows."
       }
     ],
-    "source": "S61",
+    "source": "S61, S85, S86",
     "doc_updated": null
   },
   {
@@ -153,7 +158,7 @@
       {
         "where": "Xero sign-in",
         "do": "Sign in to Xero when asked.",
-        "see": "Not described in the docs we could read."
+        "see": ""
       },
       {
         "where": "Microsoft Copilot chat",

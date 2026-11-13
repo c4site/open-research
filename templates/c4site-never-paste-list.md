@@ -39,7 +39,7 @@ If the answer to either is yes, leave it out, or take the details out first. Swa
 
 Ask [name] before you paste. If our policy restricts or bans a tool, that beats this list.
 
-*General guidance from C4Site. It isn’t legal advice. Where your organisation’s own policy says something different, follow your policy.*
+*From C4Site. General information, not legal advice. Where your organisation’s own policy says something different, follow your policy.*
 
 ---
 

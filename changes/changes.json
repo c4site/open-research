@@ -2,6 +2,30 @@
  "kind": "changes",
  "entries": [
   {
+   "date": "2026-11-13",
+   "kind": "changed",
+   "tools": [
+    "xero"
+   ],
+   "text": "Claude’s way of adding a connector has changed since we read it on 15 October. You now select Discover, type the name in Search connectors, and select Connect to Claude (the public Xero listing shows Add to Claude). We’ve rewritten the Claude and Xero connection in full: what you need before you start, seven steps, how to check it worked, what to do if it doesn’t, the 20 things Claude can read, and three ways to undo it.",
+   "src": {
+    "label": "Anthropic’s “Get started with connectors”",
+    "href": "https://claude.com/docs/connectors/getting-started"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "changed",
+   "tools": [
+    "how-ai-connects"
+   ],
+   "text": "OpenAI has retired ChatGPT agent, which it also called agent mode. Its help page now opens with “ChatGPT agent is no longer available” and points to ChatGPT Work. We’ve taken the agent mode lines out of How AI connects. OpenAI’s example of a hidden instruction is still on that page, so it stays in ours.",
+   "src": {
+    "label": "OpenAI’s ChatGPT agent page",
+    "href": "https://help.openai.com/en/articles/11752874-chatgpt-agent"
+   }
+  },
+  {
    "date": "2026-10-17",
    "kind": "added",
    "tools": [

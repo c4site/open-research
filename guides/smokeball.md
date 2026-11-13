@@ -201,7 +201,7 @@ Smokeball's Archie runs OpenAI, Anthropic and Google models inside Smokeball. Us
 **Limits**
 
 - Smokeball's terms make you responsible for keeping user IDs to one person each and for the actions taken with them. [S5]
-- Our reading: giving an AI tool your Smokeball login to work in the app sits awkwardly with that. This isn't legal advice.
+- Our reading: giving an AI tool your Smokeball login to work in the app sits awkwardly with that. General information, not legal advice.
 
 ### ChatGPT and Smokeball
 

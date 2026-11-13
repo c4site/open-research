@@ -546,7 +546,7 @@ OpenAI's help centre adds that uninstalling a plugin can disconnect every accoun
 - **New Zealand data in predictions.** Whether "other MYOB businesses" in Smart Reconciliation includes New Zealand businesses.
 - **AccountRight Premier and Solo AI.** Premier isn't in the pricing page's AI comparison [S2], and Solo's only AI item, Category Suggestions, has no Solo help article. [S2][S26]
 - **Prices we didn't capture.** Practice Compliance, MYOB Acumatica AI features, and whether plan prices include GST.
-- **Our search allowance ran out** near the end of this research, so we couldn't run a final sweep for Google or Microsoft announcements about MYOB, or for an official MYOB page on the API scope deadline.
+- **Google or Microsoft announcements about MYOB, and an official MYOB page on the API scope deadline.** We didn't run a final search for either.
 
 ## Sources
 

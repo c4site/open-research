@@ -927,7 +927,7 @@ Newsroom dates come from each page's publishing data, in UTC.
 - **AI Mode in Google Search in Australia.** Not stated. [S68]
 - **Tools we didn't research one by one:** AI Voice, the Music and Sound Effect Generator, Magic Animate, alt text suggestions, Magic Activities, Transform into Doc, AI Shapes, Background Remover, Image Upscaler, Canva Grow, and signing in to Leonardo.Ai with a Canva account.
 - **The other assistants on Canva's list**, including Amazon Quick Suite and Perplexity Computer. Not researched. [S58][S59]
-- **Our web search allowance ran out** partway through. After that we checked leads only by opening vendor pages we already had addresses for.
+- **Connections announced somewhere we didn't look.** Late in this research we read only Canva's and the AI makers' own pages that we already knew of, so a connection announced elsewhere could be missing.
 
 ## Sources
 

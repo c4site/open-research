@@ -75,7 +75,6 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 | Connector registry | No | No | No | No | No | Yes | [S7][S8] |
 
 - Edu isn't on either pricing page. OpenAI's help pages group Edu with Enterprise for apps and admin controls. [S5][S6]
-- Agent mode is listed for Plus, Pro, Business, Enterprise and Edu. OpenAI says Free doesn't have it. Go isn't named. [S14]
 
 ### Connecting an app
 
@@ -130,13 +129,11 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 - OpenAI says custom apps aren't verified by OpenAI, and the workspace is responsible for vetting them. [S6][S5]
 - If the server's sign-in isn't set up to renew itself, people may have to sign in again later. [S5]
 
-### Deep research, agent mode and ChatGPT Work
+### Deep research and ChatGPT Work
 
 - Deep research can use connected apps that support it, and uses their read actions only. [S13][S5]
-- Agent mode can use apps as data sources. OpenAI asks for extra caution, because an agent with access to email or files is exposed to prompt injection. [S14]
-- OpenAI's tips for agent mode: enable only the apps the task needs, and avoid open-ended requests like "Check my email and handle everything". [S14]
-- Agent mode asks you to confirm high-impact actions and monitors for prompt injection. OpenAI says these measures don't eliminate all risk. [S14]
-- In Enterprise workspaces, agent mode is off until an owner turns it on, and it can only use apps the workspace has enabled. [S14]
+- ChatGPT agent, which OpenAI also called agent mode, is no longer offered. Its help page now opens with "ChatGPT agent is no longer available" and points to ChatGPT Work for longer, multi-step tasks. [S14]
+- The same page still carries OpenAI's own example of a hidden instruction. An agent asked to find a restaurant reads a malicious comment that tells it to fetch a password reset code from Gmail and send it to another website. [S14]
 - ChatGPT Work is OpenAI's agent for longer, multi-step jobs, and it can use connected apps. [S15]
 - Workspace agents, for Business and Enterprise, are shared agents that builders can give apps and custom MCP servers. Each agent's builder decides which app actions need a user's approval. [S16][S6]
 - Eligible users can set a task to run when a connected app receives a matching event, such as a new Gmail message. [S1]
@@ -153,7 +150,6 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 ### Australia
 
 - Australia is on OpenAI's list of supported countries. [S19]
-- Agent mode is offered in all supported countries. [S14]
 - Eligible API customers and new Enterprise and Edu customers can have their content stored in Australia. [S17][S8]
 - OpenAI offers in-region AI processing (it calls this inference residency) only for Europe, the United States and the UAE. Australia isn't on that list. [S17]
 - Data sent to apps or MCP servers can be stored outside the chosen region. [S17][S6]
@@ -264,7 +260,7 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 
 ## Microsoft Copilot
 
-Another researcher covers Microsoft 365 in depth. This is the short version.
+[Our Microsoft 365 guide](https://c4site.com.au/ai-in-your-tools/microsoft-365/) covers this in depth. This is the short version.
 
 ### Copilot Chat and the paid licence
 
@@ -312,7 +308,7 @@ Another researcher covers Microsoft 365 in depth. This is the short version.
 
 ## Gemini
 
-Another researcher covers Google Workspace in depth. This is the short version.
+[Our Google Workspace guide](https://c4site.com.au/ai-in-your-tools/google-workspace/) covers this in depth. This is the short version.
 
 ### Personal accounts: Connected Apps
 
@@ -542,7 +538,7 @@ The one-pager's line "kept or used to train, depending on tool and settings" sti
 - Connectors in Microsoft's personal Copilot app. We didn't research these.
 - Prices in Australian dollars. OpenAI's Business page shows A$ headline prices next to fine print in another, unlabelled currency, and Claude's pricing page shows US dollars only. We've named plans instead. [S8][S35]
 - Exact update dates for Google's Gemini help articles and Make's help centre, which show no date.
-- Research note: the session's shared web-search allowance ran out partway through. Later checks were done by opening known official pages directly. Google's Workspace admin settings for third-party apps in Gemini weren't covered in depth.
+- How Google Workspace admins control third-party apps in Gemini. We didn't read those admin settings in depth.
 
 ## Sources
 
@@ -563,7 +559,7 @@ Many help centres show relative dates such as "4 days ago". Where a page carried
 | S11 | Google app data controls FAQ | OpenAI | https://help.openai.com/en/articles/10408842-google-app-data-controls-faq | "Updated: 20 days ago" (25 Sep 2026, UTC) | 15 Oct 2026 |
 | S12 | Memory in ChatGPT | OpenAI | https://help.openai.com/en/articles/8590148 | "Updated: 26 days ago" (19 Sep 2026, UTC) | 15 Oct 2026 |
 | S13 | Deep research in ChatGPT | OpenAI | https://help.openai.com/en/articles/10500283-deep-research | "Updated: 24 days ago" (21 Sep 2026, UTC) | 15 Oct 2026 |
-| S14 | ChatGPT agent | OpenAI | https://help.openai.com/en/articles/11752874-chatgpt-agent | "Updated: last month" (15 Sep 2026, UTC) | 15 Oct 2026 |
+| S14 | ChatGPT agent | OpenAI | https://help.openai.com/en/articles/11752874-chatgpt-agent | "Updated: 16 days ago" (about 27 Oct 2026) | 12 Nov 2026 |
 | S15 | ChatGPT Work and Codex | OpenAI | https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex | "Updated: 5 days ago" (10 Oct 2026, UTC) | 15 Oct 2026 |
 | S16 | ChatGPT Workspace Agents for Enterprise and Business | OpenAI | https://help.openai.com/en/articles/20001143 | "Updated: 2 days ago" (13 Oct 2026, UTC) | 15 Oct 2026 |
 | S17 | Data residency and inference residency for ChatGPT | OpenAI | https://help.openai.com/en/articles/9903489 | "Updated: 12 days ago" (3 Oct 2026, UTC) | 15 Oct 2026 |

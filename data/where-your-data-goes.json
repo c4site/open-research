@@ -715,6 +715,22 @@
    "read": "17 Oct 2026"
   },
   {
+   "id": "data-register-copilot-gemini:S34",
+   "title": "Microsoft Copilot for individuals: your activity history (the training line, read again)",
+   "publisher": "Microsoft",
+   "url": "https://support.microsoft.com/en-us/privacy/microsoft-copilot/activity-history",
+   "updated": "No date shown",
+   "read": "13 Nov 2026"
+  },
+  {
+   "id": "data-register-copilot-gemini:S35",
+   "title": "Microsoft Privacy Statement (the line on training AI models, read again)",
+   "publisher": "Microsoft",
+   "url": "https://www.microsoft.com/en-us/privacy/privacystatement",
+   "updated": "Last Updated: November 2026",
+   "read": "13 Nov 2026"
+  },
+  {
    "id": "data-register-others:S1",
    "title": "Perplexity Privacy Notice",
    "publisher": "Perplexity AI",
@@ -1457,6 +1473,7 @@
      },
      "optOut": {
       "value": "yes",
+      "short": "Already off",
       "words": "Yes. Training is already off, and a Primary Owner or Owner can also block thumbs feedback with \"Rate chats\" under Organization settings > Data and Privacy.",
       "src": [
        "data-register-chatgpt-claude:S33"
@@ -1613,15 +1630,19 @@
      "plan": "Updated Copilot app (from 18 August 2026)",
      "who": "Personal Microsoft accounts, with or without a Microsoft 365 subscription",
      "trains": {
-      "value": "no",
-      "words": "Microsoft says prompts, responses and file contents in the updated app aren't used to train foundation models. Its Privacy Statement adds that Copilot uses prompts to improve its services, including advertising.",
+      "value": "unclear",
+      "short": "Not its main models, the maker says",
+      "words": "Not its foundation models, Microsoft says: prompts, responses and file contents in the updated app aren't used to train them. Foundation models are the large general models an assistant runs on. Its Privacy Statement says Microsoft may use your data to develop and train its AI models, and that Copilot uses prompts to improve its services, including advertising.",
       "src": [
        "data-register-copilot-gemini:S1",
-       "data-register-copilot-gemini:S4"
+       "data-register-copilot-gemini:S4",
+       "data-register-copilot-gemini:S34",
+       "data-register-copilot-gemini:S35"
       ]
      },
      "optOut": {
-      "value": "not-needed",
+      "value": "no",
+      "short": "None listed",
       "words": "The updated app's privacy controls list no training switch. Under Settings > Personalization you can turn off 'Saved memories', 'One shared experience' (which lets your chats personalise Bing, Edge and MSN) and 'Allow ads personalization'.",
       "src": [
        "data-register-copilot-gemini:S2"
@@ -2088,7 +2109,7 @@
      "plan": "Free",
      "who": "Personal accounts in the Meta AI app, WhatsApp, Instagram, Facebook and Messenger",
      "trains": {
-      "value": "yes-default",
+      "value": "yes",
       "words": "Yes. Meta says your chats with its AI, including questions and images you ask for, can be used to train AI models. It also uses them to personalise your experience and ads. Private messages with friends aren't used unless someone shares them with Meta AI.",
       "src": [
        "data-register-others:S23",
@@ -2099,6 +2120,7 @@
      },
      "optOut": {
       "value": "unclear",
+      "short": "No setting",
       "words": "There's no setting. Meta's Privacy Centre links 'objection request' forms (one for your AI chats and public posts, one for WhatsApp AI messages), but Meta says objections are possible 'in certain countries' without naming them. We couldn't confirm they cover Australia.",
       "src": [
        "data-register-others:S25",

@@ -910,7 +910,7 @@ HubSpot's help centre also has a page for a Lovable connector (an AI app builder
 - **Australian availability of ChatGPT Ads and the AI Growth Bundle.** Neither page mentions Australia. [S47][S82]
 - **AI-specific certifications.** HubSpot's AI trust page mentions independent audits but names no AI standard such as ISO 42001. [S7]
 - **The Lovable connector.** It's a private beta, and HubSpot marks the page confidential. [S83]
-- **Connectors for other AI assistants.** Our web search allowance ran out partway through, so we didn't search separately for official HubSpot links to Perplexity, Mistral or other assistants. The HubSpot pages we read name only the four covered here. [S81]
+- **Connectors for other AI assistants.** We didn't search separately for official HubSpot links to Perplexity, Mistral or other assistants. The HubSpot pages we read name only the four covered here. [S81]
 
 ## Sources
 

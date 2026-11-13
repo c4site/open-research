@@ -255,65 +255,118 @@ Claude calls its links "connectors". ChatGPT calls them "plugins". Microsoft cal
 
 **Official?**
 
-- Yes. The "Xero connector in Claude" is made by Xero Limited and listed in Anthropic's connector directory, added April 2026. [S60] [S6]
+- Yes. The "Xero connector in Claude" is made by Xero Limited and listed in Anthropic's connector directory, added April 2026. [S84] [S87]
 - Xero announced it as live on 13 May 2026 for users with an active Xero subscription. [S24]
 - Xero is also one of the integrations in Anthropic's "Claude for Small Business", announced 15 September 2026. [S62] [S34]
 
-**What it can see and do**
+**In one line**
 
-- It reads live Xero data: profit and loss, cash position, financial position, invoices, bills, aged receivables and payables, contacts and bank account transactions. [S60]
-- It also reads purchase orders, repeating invoices and bills, chart of accounts, tracking categories and top customers. [S60]
-- It's read-only. Anthropic's listing says "Claude connects with read-only access." [S60]
-- Xero says Claude can't edit invoices, post transactions or change anything in your books. [S6]
-- Claude gives you links back to the Xero report, invoice or contact it used, so you can check before you act. [S6]
-- In Claude for Small Business, Xero appears in workflows such as the Monday weekly brief, Proposal Builder and Close the Month. [S62]
-- Xero lists business pulse, overdue invoice chasing, cash flow snapshot, accounts payable preparation and month-end preparation among the workflows it supports there. [S34]
-- Anthropic says "Every workflow starts in approval mode." Claude drafts and stages the work, then waits for your approval before anything goes out. [S63]
+Claude can read your Xero figures and answer questions about them. It can't change anything in Xero. [S84] [S87]
 
-**What you need**
+**Before you start**
 
-- An active Xero subscription. Xero Central says the connector works on any Xero business pricing plan. [S6] [S43]
-- A Claude account on a free or paid plan. Xero doesn't charge for the connector. [S6]
-- On Claude Team and Enterprise, an Owner must add the connector for the team first. Each person then signs in separately. [S61]
-- Claude for Small Business is available on every paid Claude plan and runs in the Claude Cowork desktop app. [S62]
+| You need | Detail |
+|---|---|
+| A Claude account | Free or paid. Xero says "a Claude account (either free or paid)", and Claude's pricing page lists "Connect your apps and tools" on the Free plan. [S87] [S89] |
+| A Xero subscription | An active one. Xero Central said the connector works on any Xero business pricing plan. [S87] [S43] |
+| Your own Xero login | The connector follows your Xero permissions, so Claude sees what your login can see. [S87] |
+| Cost | Xero says "the Xero connector is free to add". [S87] |
+| An admin? | On a personal Claude plan, no. On Team and Enterprise, an Owner adds the connector for the organisation first, then each person connects their own Xero login. [S85] [S86] |
+| Where it works | claude.ai and the Claude desktop app. Anthropic's help centre says installing connectors on a phone is in beta. [S86] Once connected, a connector is available on web, desktop and mobile. [S85] |
+| Time | Xero says "Connecting takes only a few minutes". We haven't timed our own run. [S87] |
 
-**Steps to connect** (Xero's page and Anthropic's help article, neither dated)
+**Which path?**
 
-1. In Claude, go to **Customize > Connectors** and click **+** next to **Connectors**. Xero's page also links straight to the Xero listing in Claude's directory. [S61] [S6]
-2. Click **Xero**, read its description, then click **Connect**. [S61]
-3. Sign in with your Xero login. [S6]
-4. Choose the Xero organisation you want to use. [S6]
-5. In a chat, click **+** (lower left) or type **/**, hover over **Connectors**, and check Xero is switched on. [S61]
-6. Ask about profit, cash, invoices or customers. [S6]
+- **On my own** (a personal Claude plan): follow the seven steps below. [S86]
+- **A member of a Team or Enterprise plan:** if you see **Request**, or a note to ask an Owner, where the connect button should be, your organisation hasn't added Xero yet. Ask an Owner. [S85]
+- **A Team or Enterprise Owner:** do the owner steps first. They're under the seven steps. [S85] [S86]
 
-Team and Enterprise Owners first go to **Organization settings > Connectors**, click **Browse connectors**, choose the connector and click **Add to your team**. They can then set each tool to **Always allow**, **Needs approval** or **Blocked**. [S61]
+**Steps to connect** (Anthropic's connector docs, no date shown; Claude's Xero listing, added April 2026; Xero's Claude page, no date shown; all read 13 November 2026)
+
+1. In Claude, go to **Customize > Connectors**. In the desktop app, **Customize** is in the sidebar. [S85]
+2. Select **Discover**, type "Xero" in **Search connectors**, then select **Xero**. [S85] [S84]
+3. Select **Connect to Claude**. Anthropic's docs use that name, and the public listing showed **Add to Claude** on 13 November 2026, so select whichever you see. [S85] [S84]
+4. Sign in with your usual Xero login. [S87] [S43]
+5. Choose the organisation you want Claude to read, then select **Allow**. [S87] [S43]
+6. In a new chat, select **+** in the message box, then **Connectors**, and switch Xero on. [S85]
+7. Ask a first question. If Claude asks to use a Xero tool, select **Allow once**. [S85] [S87]
 
 For Claude for Small Business (Anthropic's plugin listing, not dated):
 
 1. On the Small Business plugin listing, click **Install in Cowork**. [S63]
-2. Connect the Xero connector as above if you haven't already. [S62] [S61]
+2. Connect the Xero connector as above if you haven't already. [S62] [S85]
 3. Run a workflow such as **/monday-brief** or **/close-month**. It starts in approval mode, so Claude drafts and stages the work and waits for your OK. [S63]
 
-Xero's own article starts from Claude's Connector Directory and ends with **Allow** once you've picked the organisation. It connects one Xero organisation at a time, so to switch you disconnect and connect again. [S43]
+**Owner steps, on Team and Enterprise**
+
+1. Go to **Organization settings > Connectors**, click **Browse connectors**, select Xero and click **Add to your team**. [S86]
+2. From the directory, the button reads **Connect for your team**. To try it on your own first, select the arrow beside it, then **Connect just for me**. [S85]
+3. Under **Tool permissions**, choose **Always allow**, **Needs approval** or **Blocked** for each group of tools or for a single tool. Anthropic says these settings apply to everyone in the organisation. [S85] [S86]
+4. Tell each person to connect their own Xero login. Nobody gets access automatically. [S86]
+
+**Check it worked**
+
+- Xero shows under **Your connectors** with the status **Connected**. [S85]
+- Claude's answer links back to the Xero report, invoice or contact it used. Open one and compare a figure with the same report in Xero. That check is our advice, based on Xero's description of the links. [S87]
+
+**If it doesn't work**
+
+- **You see Request where the connect button should be.** Your organisation hasn't added Xero. Ask an Owner. [S85]
+- **The connector's row shows Reconnect.** Claude has lost access to Xero. Select it and sign in again. [S85]
+- **You need a different organisation.** Xero Central said Claude connects one Xero organisation at a time, so you disconnect and connect again (read 15 October 2026). Xero's Claude page now says owners "can switch between business entities", and accountants and bookkeepers between clients. The two pages disagree, so go by what you see. [S43] [S87]
+- Neither company describes what you see if the Xero sign-in fails, or what happens when your Xero role can't see some reports.
+
+**What it can read**
+
+- Anthropic's listing names 20 tools. [S84]
+- Your financial position, cash position, and profit and loss. [S84]
+- Your top customers by revenue. [S84]
+- Your organisation's details and financial year, and which organisations are connected. [S84]
+- Aged receivables (who owes you) and aged payables (who you owe). [S84]
+- Invoices, an invoice summary, bills, and repeating invoices and bills. [S84]
+- Contacts, tracking categories, purchase orders and the chart of accounts. [S84]
+- Bank account transactions. [S84]
+- A "1099 report summary". A 1099 is a US tax form, which suggests the tool set isn't tailored to Australia. That's our inference; Xero doesn't say. [S84]
+
+**What it can change**
+
+- Nothing. Anthropic's listing says "Claude connects with read-only access." [S84]
+- Xero says Claude can't create, edit, approve, reconcile or pay anything in Xero. To act on something, you follow the link and make the change in Xero yourself. [S87]
+- Xero calls it read-only "at launch", which suggests that may change. [S87]
+
+**Does it ask first?**
+
+- Claude can ask for your approval before it uses a tool. **Allow once** continues. **Always allow** skips the question for that tool from then on. You can change this later under the connector's **Tool permissions**. [S85]
+- In Claude for Small Business, Anthropic says "Every workflow starts in approval mode." Claude drafts and stages the work, then waits for your approval before anything goes out. [S63]
+
+**Your data**
+
+- Anthropic's listing says "Any data retrieved is used only to respond to your questions and is never stored between sessions." [S84]
+- Xero says "Your Xero data is never used to train AI", and that connector data "isn't combined across organizations". [S87]
+- Xero also says "Your Claude plan and settings control conversation data use." [S87]
+- Anthropic says raw content from connectors isn't used for training. On Claude's Free, Pro and Max plans, your chats are used if you've turned on **Model Improvement** in your privacy settings, and that includes anything you paste in. [S88]
+- Anthropic says it doesn't train on business data by default on Team and Enterprise plans. [S62]
 
 **To disconnect**
 
-- In Claude, go to **Customize > Connectors**, select Xero and disconnect it. [S61]
-- Xero's article: open your Connectors settings in Claude, open Xero, click **Disconnect**, then **Disconnect** again to confirm. [S43]
-- On the Xero side, Xero's general steps for any connected app are: click the organisation name, select **Settings**, click **Connected apps**, then click **Disconnect** beside the app and confirm. That article doesn't name Claude, ChatGPT, Copilot or Gemini. [S48]
-- Xero says disconnecting stops new data going to the app, but data already sent may still be available. [S48]
+- **Just this chat:** select **+**, then **Connectors**, and switch Xero off. Claude stays signed in to Xero. [S85]
+- **Disconnect:** go to **Customize > Connectors**, select Xero under **Your connectors**, and select **Disconnect**. Xero stays in your list showing **Connect**, so you can sign in again later. Xero Central added that you click **Disconnect** a second time to confirm (read 15 October 2026). [S85] [S43]
+- **Remove it completely:** open the three-dot menu and select **Remove**. On Team and Enterprise plans, an Owner removes it for everyone from **Organization settings > Connectors**. [S85]
+- **From Xero's side:** click the organisation name, select **Settings**, click **Connected apps**, then click **Disconnect** beside the app and confirm. This is Xero's general article for any connected app. It doesn't name Claude, ChatGPT, Copilot or Gemini (read 15 October 2026). [S48]
+- **What stays behind:** Xero says disconnecting stops new data going to the app, but data already sent may still be available. Neither company says what happens to Xero figures already in your Claude chats. [S48]
+
+**A first safe thing to try**
+
+- Ask "Who owes me money, and how overdue are they?" That uses the aged receivables tool, which only reads. [S84]
+- Don't paste extra client details into the chat. Claude already reads what it needs from Xero, and pasted content counts toward training if Model Improvement is on. That's our advice. [S88]
 
 **Limits**
 
-- Read-only "at launch". [S6]
-- Advisers work with one client organisation at a time. Xero says switching between clients without reconnecting is coming. [S34]
-- Xero says the connector is "not a source of tax, compliance, or financial advice" and doesn't replace your accountant, bookkeeper or JAX. [S6]
-- The tool list includes a "1099" report summary, which is a US tax form. That suggests the tool set isn't tailored to Australia. That's our inference; Xero doesn't say. [S60]
-- Xero says data shared through the integration is used only for your session. It says business data is never used to train Claude's models. [S24]
-- Anthropic's listing says retrieved data is used only to answer you and isn't stored between sessions. [S60]
-- Anthropic says raw content from connectors isn't used for training unless you copy it into the chat. [S64]
-- On Claude's Free, Pro and Max plans, your chats are used for training if you allow it in the **Model Improvement** setting, or if a chat is flagged for safety review. [S64]
-- Anthropic says it doesn't train on business data by default on Team and Enterprise plans. [S62]
+- Read-only "at launch". [S87]
+- Xero says the connector is "not a source of tax, compliance, or financial advice" and doesn't replace your accountant, bookkeeper or JAX. [S87]
+- In Claude for Small Business, Xero appears in workflows such as the Monday weekly brief, Proposal Builder and Close the Month. [S62]
+- Xero lists business pulse, overdue invoice chasing, cash flow snapshot, accounts payable preparation and month-end preparation among the workflows it supports there. [S34]
+- Claude for Small Business is available on every paid Claude plan and runs in the Claude Cowork desktop app. [S62]
 
 ### ChatGPT and Xero
 
@@ -587,7 +640,7 @@ For admins, the **Integrated apps** section of the Microsoft 365 admin center sh
 
 - Xero's terms say to keep your login details safe and not let anyone else use them. [S20]
 - Xero's developer terms ban bots and browser extensions that simulate user actions without Xero's authorisation. [S53]
-- Our reading: use the official connections that ask you to approve access, and don't give an AI tool your Xero password. This isn't legal advice.
+- Our reading: use the official connections that ask you to approve access, and don't give an AI tool your Xero password. General information, not legal advice.
 
 **Untrusted text**
 
@@ -649,12 +702,11 @@ Xero's JAX vision page carries a warning that "future product features may diffe
 - **AI in Xero Practice Manager.** None found in the sources we read. [S14]
 - **Hubdoc's future** alongside Smart Document Capture. No retirement notice was found. [S59]
 - **Claude for Small Business in Australia.** Anthropic's announcement doesn't say whether it's offered here. [S62]
-- **Our search budget** ran out partway through, so a few items above stayed unverified.
 - We didn't rely on third-party claims. For example, one vendor said it found no Xero listing in ChatGPT on 7 October 2026, but Xero's and OpenAI's own pages say the plugin exists.
 
 ## Sources
 
-All sources were read on 15 October 2026.
+Sources were read on 15 October 2026, except S84 to S89. Those were read on 13 November 2026, when the Claude connection was rewritten.
 
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
@@ -741,3 +793,9 @@ All sources were read on 15 October 2026.
 | S81 | Admin controls, security, and compliance for plugins and apps | OpenAI Help Center | https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps | "Updated: 17 hours ago" (14 Oct 2026, UTC) | 15 Oct 2026 |
 | S82 | Analytics pricing plans, Australia | Xero Central | https://central.xero.com/0/article/Analytics-powered-by-Syft-pricing-plans-AU | No date shown (sitemap: 4 Aug 2026) | 15 Oct 2026 |
 | S83 | About short-term cash flow, Australia | Xero Central | https://central.xero.com/0/article/STCF-Cash-Predictions-AU | No date shown (sitemap: 29 Jul 2026) | 15 Oct 2026 |
+| S84 | Xero (Claude's connector listing, read again) | Anthropic | https://claude.com/marketplace/connectors/xero | "Added April 2026" | 13 Nov 2026 |
+| S85 | Get started with connectors | Anthropic (Claude docs) | https://claude.com/docs/connectors/getting-started | No date shown | 13 Nov 2026 |
+| S86 | Use connectors to extend Claude's capabilities (read again) | Anthropic Help Center | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated this week" (no date) | 13 Nov 2026 |
+| S87 | Claude (Xero connector in Claude, read again) | Xero | https://www.xero.com/au/ai-in-accounting/claude/ | No date shown (© 2026) | 13 Nov 2026 |
+| S88 | Is my data used for model training? (read again) | Anthropic Privacy Center | https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training | Updated 16 Mar 2026 | 13 Nov 2026 |
+| S89 | Plans and pricing | Anthropic | https://claude.com/pricing | No date shown | 13 Nov 2026 |

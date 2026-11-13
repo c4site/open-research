@@ -1041,7 +1041,7 @@ MCP (Model Context Protocol) is a standard way for an AI tool to plug into anoth
 
 ## Sources
 
-All pages were read on 15 October 2026. Google's admin help on support.google.com/a now redirects (301) to knowledge.workspace.google.com, which we observed when fetching S36, S55 and S56.
+All pages were read on 15 October 2026. Google's admin help on support.google.com/a now redirects to knowledge.workspace.google.com. We saw that on S36, S55 and S56.
 
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|

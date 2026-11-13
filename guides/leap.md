@@ -248,7 +248,7 @@ LEAP's own AI uses OpenAI and Anthropic models inside LEAP. Using them doesn't l
 **Limits**
 
 - LEAP's terms say you must not use LEAP "via mechanical, programmatic, robotic, scripted or any other automated means" or scrape it, except as the agreement expressly permits. [S14]
-- Our reading: that rules out home-made connectors and AI browser agents working in LEAP. This isn't legal advice.
+- Our reading: that rules out home-made connectors and AI browser agents working in LEAP. General information, not legal advice.
 
 ### ChatGPT and LEAP
 

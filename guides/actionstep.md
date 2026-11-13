@@ -197,7 +197,7 @@ In plain words, a connector lets a chat assistant such as Claude or ChatGPT look
 **Limits**
 
 - Actionstep's terms make you responsible for keeping usernames and passwords secure and confidential. [S14]
-- Our reading: giving an AI tool your Actionstep login to work in the app sits awkwardly with that. This isn't legal advice.
+- Our reading: giving an AI tool your Actionstep login to work in the app sits awkwardly with that. General information, not legal advice.
 
 ### ChatGPT and Actionstep
 

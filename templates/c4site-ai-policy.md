@@ -24,6 +24,8 @@ The person who sends the work owns the work. "The AI wrote it" is not an explana
 
 Anything unclear, or a tool you want on the list: [name, email]. Last updated [date]. Applies to everyone who does work for us, including contractors.
 
+*A template from C4Site. General information, not legal advice. If you’re in a regulated profession, check it against your own obligations before you use it.*
+
 ---
 
 From C4Site, c4site.com.au. Free to use, change and share under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); please keep this credit.

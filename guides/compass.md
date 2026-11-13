@@ -372,7 +372,7 @@ On Team and Enterprise plans, an Owner first goes to **Organization settings > C
 **Logins and AI browser agents**
 
 - Compass's terms forbid shared logins and third-party integration through the platform, and Compass watches for bots. [S12]
-- Our reading: use the connector your school has approved, and don't give any AI tool your Compass password. This isn't legal advice.
+- Our reading: use the connector your school has approved, and don't give any AI tool your Compass password. General information, not legal advice.
 
 ## Announced changes
 

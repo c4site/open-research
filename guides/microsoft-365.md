@@ -599,7 +599,6 @@ For Outlook, add one more step. A Global Administrator opens Anthropic's admin-c
 - **Copilot Chat in Outlook on the web and on phones.** Microsoft's help page lists only Outlook for Microsoft 365 on Windows and Mac and the new Outlook for Windows [S25].
 - **Whether ChatGPT or Claude can connect straight to Microsoft's Work IQ MCP server.** Microsoft documents GitHub Copilot CLI, Microsoft Foundry and Copilot Studio only [S49].
 - **Other AI add-ins in Microsoft's marketplace.** We only checked OpenAI's and Anthropic's official listings [S70][S78].
-- Our web-search allowance ran out near the end of this research. Pages we reached by direct address are cited. Anything we couldn't reach is listed above.
 
 ## Sources
 

@@ -562,7 +562,7 @@ Zoom for Cowork (Zoom's support article, last modified 11 September 2026):
 - Zoom shows a lit AI icon for summaries and questions, and a banner, transcription icon and pencil icon for My Notes in Zoom meetings. [S11]
 - People can choose not to see the My Notes banner again, so they may not see it in later meetings. [S11]
 - Outside Zoom meetings, My Notes gives the other people no notice. Zoom reminds users to follow the law, which may include giving notice. [S14] [S26]
-- Our note: whether you need people's consent depends on where you and they are. This isn't legal advice.
+- Our note: whether you need people's consent depends on where you and they are. General information, not legal advice.
 
 **Summaries travel**
 
