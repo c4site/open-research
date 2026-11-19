@@ -35,7 +35,7 @@
       }
     ],
     "source": "S40, S38, S22",
-    "doc_updated": "2026-10-17"
+    "doc_updated": "2026-11-18"
   },
   {
     "id": "claude-owner-adds-notion",
@@ -61,14 +61,14 @@
       }
     ],
     "source": "S40",
-    "doc_updated": "2026-10-17"
+    "doc_updated": "2026-11-18"
   },
   {
     "id": "claude-enterprise-managed-notion",
     "from": "Claude (organisation connector)",
     "to": "Notion (enterprise-managed connection)",
     "who": "admin",
-    "plan_needed": "Notion Enterprise with Okta running Notion's SAML single sign-on and Cross App Access. Claude organisation connectors.",
+    "plan_needed": "Notion Enterprise with Okta running Notion's SAML single sign-on and Cross App Access. Claude organisation connectors. (Notion now also documents Claude auto-connect (beta), which works with any SAML provider; it isn't covered by these steps.)",
     "steps": [
       {
         "where": "Okta (Okta admin)",
@@ -76,8 +76,8 @@
         "see": "Okta is ready to grant access."
       },
       {
-        "where": "Notion, Identity settings (organisation or workspace owner)",
-        "do": "Enable the feature, confirm the Okta issuer URL and choose the one workspace the connection covers.",
+        "where": "Notion, Settings > Identity > Enterprise-managed connections (organisation or workspace owner)",
+        "do": "Turn on enterprise-managed connections, confirm the Okta issuer URL, choose the one workspace the connection covers, then select Turn on.",
         "see": "Notion accepts connections managed by Okta."
       },
       {
@@ -143,7 +143,7 @@
       {
         "where": "Plugins",
         "do": "Find and select Notion.",
-        "see": "Notion's details (developer: Notion AI; version 3.0.1)."
+        "see": "Notion's details (developer: Notion; version 3.0.9)."
       },
       {
         "where": "Notion details",
@@ -164,17 +164,17 @@
       }
     ],
     "source": "S43, S47",
-    "doc_updated": "2026-09-26"
+    "doc_updated": "2026-10-23"
   },
   {
     "id": "notion-agent-uses-chatgpt-plan",
     "from": "Notion Agent",
     "to": "ChatGPT plan (billing only)",
     "who": "anyone",
-    "plan_needed": "A Notion Business or Enterprise workspace (members only, not guests) and a ChatGPT Plus, Pro or Go account. Notion Agent only; not Custom Agents.",
+    "plan_needed": "A Notion Business or Enterprise workspace (members only, not guests) and a ChatGPT Plus, Pro, Business or Go account. On ChatGPT Business, your ChatGPT admin must allow Notion. Notion Agent only; not Custom Agents.",
     "steps": [
       {
-        "where": "Notion, Settings > Notion AI > Usage",
+        "where": "Notion, Settings > Notion AI > Me",
         "do": "Under Connected subscriptions, select Connect next to ChatGPT. (Or in Notion Agent, open the model picker and select Connect ChatGPT plan under Subscriptions.)",
         "see": "A ChatGPT sign-in."
       },
@@ -186,7 +186,7 @@
       {
         "where": "Notion Agent model picker",
         "do": "Pick a specific GPT model.",
-        "see": "The picker shows which plan is in use before you send. Auto or non-GPT models still use Notion's plan."
+        "see": "The picker shows which plan is in use before you send. Auto uses your Standard credits, and a non-GPT model you pick uses your Select credits."
       }
     ],
     "undo": [
@@ -197,7 +197,7 @@
       }
     ],
     "source": "S28",
-    "doc_updated": "2026-10-13"
+    "doc_updated": null
   },
   {
     "id": "copilot-to-notion",
@@ -235,7 +235,7 @@
       }
     ],
     "source": "S48, S49",
-    "doc_updated": "2026-09-30"
+    "doc_updated": "2026-11-16"
   },
   {
     "id": "m365-admin-manages-notion-connector",
@@ -256,7 +256,7 @@
       }
     ],
     "source": "S48",
-    "doc_updated": "2026-09-30"
+    "doc_updated": "2026-11-16"
   },
   {
     "id": "gemini-enterprise-to-notion",
@@ -292,7 +292,7 @@
       }
     ],
     "source": "S55, S54",
-    "doc_updated": "2026-10-14"
+    "doc_updated": "2026-11-10"
   },
   {
     "id": "notion-mcp-claude-code",
@@ -351,25 +351,30 @@
     "plan_needed": "Notion Enterprise, workspace owner.",
     "steps": [
       {
-        "where": "Notion, Settings > Connections",
-        "do": "Open the Permissions tab.",
-        "see": "Connection permissions, including AI apps."
+        "where": "Notion, Settings > Notion MCP",
+        "do": "Open the Manage workspace clients tab.",
+        "see": "The MCP clients in your workspace and who can connect them."
       },
       {
-        "where": "Permissions, AI apps",
-        "do": "Set Restrict AI apps members can connect to to Only from approved list.",
-        "see": "AI apps already connected are added to the approved list automatically."
+        "where": "Manage workspace clients",
+        "do": "Select Approved MCP clients (or Manage approved list if none are approved yet). Select Add approved MCP client, search for the app or add it by its redirect URL, then select Approve.",
+        "see": "The app is on the approved list. MCP clients that workspace owners connect are approved automatically; ones other members connected are not."
       },
       {
-        "where": "Permissions, AI apps",
-        "do": "Click Manage approved AI apps, then Add approved AI apps to approve more.",
-        "see": "Members can connect Notion MCP only from approved apps. Notion blocks calls from apps that aren't approved."
+        "where": "Manage workspace clients, Which clients members can connect",
+        "do": "Choose Approved MCP clients only, then select Switch anyway to confirm.",
+        "see": "Notion warns that unapproved clients stop working straight away. Members can connect only approved apps, from Settings > Notion MCP > Enable."
       }
     ],
     "undo": [
       {
-        "where": "Notion, Settings > Connections",
-        "do": "Use Disconnect All Users.",
+        "where": "Notion, Settings > Notion MCP > Manage workspace clients > All MCP clients",
+        "do": "Open an app's ••• menu and select Disconnect all members, or use View members to disconnect one person.",
+        "see": "Those members lose that app's access and must reconnect, from approved apps only."
+      },
+      {
+        "where": "Notion, Settings > Notion MCP > Manage workspace clients",
+        "do": "Under Disconnect all connections to Notion MCP, select Disconnect all users.",
         "see": "Every AI app connected through Notion MCP is disconnected. People must sign in again, from approved apps only."
       }
     ],

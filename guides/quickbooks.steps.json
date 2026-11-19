@@ -8,7 +8,7 @@
     "steps": [
       {
         "where": "Claude (claude.ai or the desktop app)",
-        "do": "Go to Connectors. Intuit's article says Connectors in the left navigation. Anthropic's help says Customize > Connectors, then click the + next to Connectors.",
+        "do": "Open Claude.ai, select Customize in the left sidebar, then select Connectors. Anthropic's help adds that you click the + next to Connectors to browse.",
         "see": "The connectors directory opens."
       },
       {
@@ -18,18 +18,18 @@
       },
       {
         "where": "Intuit sign-in",
-        "do": "Sign in with your Intuit account.",
+        "do": "If you have an Intuit account, sign in when asked. Intuit says you can still use the connector without one.",
         "see": "The Intuit approval screens aren't described in the docs we read. Intuit says the connector isn't available outside the US yet."
       },
       {
         "where": "Claude chat",
-        "do": "Click + (lower left) or type /, hover over Connectors, and check QuickBooks is switched on.",
-        "see": "QuickBooks is available in this conversation."
+        "do": "Ask Claude a question about your finances, for example your cash flow or who owes you money.",
+        "see": "Answers from your QuickBooks data. Claude can also create, change and send invoices and estimates. Intuit says deleting one, or sending a payment reminder, waits for your confirmation."
       },
       {
         "where": "Claude chat",
-        "do": "Ask about your finances, for example your cash flow or who owes you money.",
-        "see": "Answers from your QuickBooks data. Claude can also create, change and send invoices and estimates. Intuit says deleting one, or sending a payment reminder, waits for your confirmation."
+        "do": "In a chat, click + (lower left) or type /, hover over Connectors, and check QuickBooks is switched on.",
+        "see": "QuickBooks is available in this conversation."
       }
     ],
     "undo": [
@@ -40,7 +40,7 @@
       }
     ],
     "source": "S36, S40, S37",
-    "doc_updated": "2026-10-02"
+    "doc_updated": "2026-10-28"
   },
   {
     "id": "claude-team-owner-adds-quickbooks",
@@ -104,7 +104,7 @@
     "from": "ChatGPT",
     "to": "QuickBooks",
     "who": "anyone",
-    "plan_needed": "US customers only: Intuit says this is currently available to QuickBooks Online customers in the US. An active QuickBooks Online subscription and a ChatGPT account (Intuit names no plan; OpenAI says it depends on your plan, workspace, role and region). From Australia, ChatGPT's QuickBooks listing wouldn't load for us on 17 October 2026.",
+    "plan_needed": "US customers only: Intuit says this is currently available to QuickBooks Online customers in the US. An active QuickBooks Online subscription and a ChatGPT account (Intuit names no plan; OpenAI says it depends on your plan, workspace, role and region). From Australia, ChatGPT's QuickBooks listing wouldn't load for us on 17 October 2026. On 18 November 2026 it loaded for us, signed out, but Intuit's help still says US customers only.",
     "steps": [
       {
         "where": "ChatGPT (web, desktop or mobile)",
@@ -152,27 +152,22 @@
     "from": "Google Gemini (in Google Workspace)",
     "to": "QuickBooks",
     "who": "anyone",
-    "plan_needed": "US customers only: Google's listing calls it the official QuickBooks connector, available for customers in the US. A Google Workspace Business Standard, Business Plus, Enterprise Standard or Enterprise Plus licence, and a Workspace admin who allows integrations with Gemini (through Marketplace settings or the app allowlist). These are Google's general steps for integrations; Intuit publishes none.",
+    "plan_needed": "US customers only: Google's listing calls it the official QuickBooks connector, available for customers in the US. A Google Workspace Business Standard, Business Plus, Enterprise Standard or Enterprise Plus licence, and a Workspace admin who allows connectors with Gemini (through Marketplace settings or the app allowlist). These are Google's general steps for connectors (Google's admin help still calls them integrations); Intuit publishes none.",
     "steps": [
       {
-        "where": "Google Workspace Marketplace, integrations page",
-        "do": "Find and select the Intuit Quickbooks Connector.",
+        "where": "Google Workspace Marketplace, connectors page",
+        "do": "Go to the Google Workspace Marketplace connectors page, then find and select the Intuit Quickbooks Connector.",
         "see": "Its listing. Any requirements are in the Overview section."
       },
       {
         "where": "Intuit Quickbooks Connector listing",
-        "do": "Click Connect.",
-        "see": "On-screen steps to grant access."
-      },
-      {
-        "where": "Access screens",
-        "do": "Follow the steps to grant access.",
+        "do": "Click Connect, then follow the on-screen steps to grant access.",
         "see": "The QuickBooks and Google screens aren't described in the docs we read."
       },
       {
         "where": "A Gemini in Workspace app",
-        "do": "Open Ask Gemini, type @, select the integration and enter your question.",
-        "see": "Answers from your QuickBooks data. Google's help says integrations currently support read actions only, though the listing talks about taking actions."
+        "do": "Open Ask Gemini, type @, choose the connector and enter your question.",
+        "see": "Answers from your QuickBooks data. Google's help says connectors currently support read actions only, though the listing talks about taking actions."
       }
     ],
     "undo": [
@@ -189,6 +184,49 @@
     ],
     "source": "S58, S57, S59",
     "doc_updated": "2026-10-16"
+  },
+  {
+    "id": "copilot-to-quickbooks",
+    "from": "Microsoft Copilot (Microsoft 365 Copilot Chat)",
+    "to": "QuickBooks",
+    "who": "anyone",
+    "plan_needed": "US customers only: Microsoft's listing for the Intuit QuickBooks plugin says it's available in the United States, and that availability may vary by market. An active QuickBooks Online account (payroll features need a QuickBooks Payroll subscription). A Microsoft 365 Copilot licence, and an admin who allows connectors from outside publishers or turns this one on in the Microsoft 365 admin center. These are Microsoft's general steps for federated connectors; Intuit publishes none.",
+    "steps": [
+      {
+        "where": "Microsoft 365 Copilot Chat",
+        "do": "Open Microsoft 365 Copilot Chat.",
+        "see": "Copilot Chat."
+      },
+      {
+        "where": "Microsoft 365 Copilot Chat",
+        "do": "Select the ellipsis (...) menu, then select Settings.",
+        "see": "The settings dialog."
+      },
+      {
+        "where": "Microsoft 365 Copilot Chat, Settings",
+        "do": "In the settings dialog, select Sources in the left pane.",
+        "see": "The data sources your admin has made available."
+      },
+      {
+        "where": "Microsoft 365 Copilot Chat, Settings > Sources",
+        "do": "Find QuickBooks, select Connect and complete the sign-in.",
+        "see": "You sign in with your own account. The Intuit sign-in screens aren't described in the docs we read."
+      },
+      {
+        "where": "Microsoft 365 Copilot Chat",
+        "do": "Type your question in Copilot Chat.",
+        "see": "Answers from your QuickBooks data. Before Copilot creates, changes or deletes anything, it shows the action and asks you to approve it."
+      }
+    ],
+    "undo": [
+      {
+        "where": "Microsoft 365 Copilot Chat, Settings > Sources",
+        "do": "Select the connector to review or reset what it's allowed to do, or turn the source off.",
+        "see": "Microsoft's docs don't describe any Intuit-side steps."
+      }
+    ],
+    "source": "S54, S65",
+    "doc_updated": "2026-11-16"
   },
   {
     "id": "mcp-server-to-quickbooks",

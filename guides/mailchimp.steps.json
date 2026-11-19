@@ -40,7 +40,7 @@
       }
     ],
     "source": "S28, S27, S26",
-    "doc_updated": "2026-10-17"
+    "doc_updated": "2026-11-18"
   },
   {
     "id": "claude-team-owner-adds-mailchimp",
@@ -71,7 +71,7 @@
       }
     ],
     "source": "S28, S27",
-    "doc_updated": "2026-10-17"
+    "doc_updated": "2026-11-18"
   },
   {
     "id": "chatgpt-to-mailchimp",
@@ -116,26 +116,26 @@
     "from": "Gemini in Google Workspace (Gmail, Docs, Sheets, Slides, Drive, Chat)",
     "to": "Mailchimp",
     "who": "anyone",
-    "plan_needed": "Google lists Google AI Pro or Ultra for personal accounts, and editions including Business Standard, Business Plus, Enterprise Standard and Enterprise Plus for work accounts. Work accounts need an admin who allows integrations. Mailchimp says a Standard or Premium Mailchimp plan. Google's help says integrations only read for now.",
+    "plan_needed": "Google lists Google AI Pro or Ultra for personal accounts, and editions including Business Standard, Business Plus, Enterprise Standard and Enterprise Plus for work accounts. Work accounts need an admin who allows connectors. Mailchimp says a Standard or Premium Mailchimp plan. Google's help says connectors only read for now.",
     "steps": [
       {
-        "where": "Google Workspace Marketplace, integrations page (on a computer)",
-        "do": "Open the integrations page and select the Intuit Mailchimp integration.",
-        "see": "The Intuit Mailchimp Connector listing, which says it works with Gemini and Workspace Studio."
+        "where": "Google Workspace Marketplace, connectors page (on a computer)",
+        "do": "On a computer, go to the Google Workspace Marketplace connectors page.",
+        "see": "The connectors that work with Gemini in Workspace."
       },
       {
         "where": "Intuit Mailchimp Connector listing",
-        "do": "Click Connect and follow the on-screen instructions to grant access.",
-        "see": "The integration is connected. The Mailchimp sign-in screens weren't in the docs we read."
+        "do": "Select the Intuit Mailchimp connector and click Connect.",
+        "see": "The Intuit Mailchimp Connector listing, which says it works with Gemini and Workspace Studio, then the on-screen steps to grant access."
+      },
+      {
+        "where": "Access screens",
+        "do": "Follow the on-screen steps to grant access.",
+        "see": "The connector is connected. The Mailchimp sign-in screens weren't in the docs we read."
       },
       {
         "where": "Gmail, Docs, Sheets, Slides, Drive or Chat",
-        "do": "Open Ask Gemini, type @ in the text box at the bottom, and select the Mailchimp integration.",
-        "see": "The integration is added to your prompt."
-      },
-      {
-        "where": "Ask Gemini",
-        "do": "Ask your question, for example how last month's campaigns performed, then press Enter.",
+        "do": "Open Ask Gemini, type @ in the text box, choose the connector, then ask your question, for example how last month's campaigns performed.",
         "see": "Gemini retrieves details about your campaigns, audience lists or recent subscriber reports."
       }
     ],
@@ -175,7 +175,7 @@
       }
     ],
     "source": "S41, S42",
-    "doc_updated": "2026-10-13"
+    "doc_updated": "2026-11-10"
   },
   {
     "id": "workspace-studio-to-mailchimp",

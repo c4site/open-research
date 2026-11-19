@@ -13,7 +13,7 @@
       },
       {
         "where": "Claude connectors directory",
-        "do": "Click Shopify (Made by Shopify, Anthropic verified), then click Connect.",
+        "do": "Click Shopify (Made by Shopify, Anthropic verified), then click Connect or Install.",
         "see": "Claude sends you to your Shopify admin."
       },
       {
@@ -45,7 +45,7 @@
       }
     ],
     "source": "S59, S58, S22, S26",
-    "doc_updated": "2026-10-17"
+    "doc_updated": "2026-11-18"
   },
   {
     "id": "claude-team-owner-adds-shopify",
@@ -76,7 +76,7 @@
       }
     ],
     "source": "S59, S26",
-    "doc_updated": "2026-10-17"
+    "doc_updated": "2026-11-18"
   },
   {
     "id": "chatgpt-to-shopify",
@@ -126,7 +126,7 @@
     "from": "Microsoft Copilot (Copilot Cowork and Copilot Chat)",
     "to": "Shopify",
     "who": "anyone",
-    "plan_needed": "A Microsoft 365 Copilot licence (Microsoft requires one for Cowork plugins), a Shopify store you own or one you create at sign-in, and an IT admin who has made the plugin available. Shopify documents the Shopify plugin for Microsoft Copilot, but Microsoft's Cowork plugin list of 15 October 2026 didn't include it, so check it's there before you plan around it.",
+    "plan_needed": "A Microsoft 365 Copilot licence (Microsoft requires one for Cowork plugins), a Shopify store you own or one you create at sign-in, and an IT admin who has made the plugin available. Shopify documents the Shopify plugin for Microsoft Copilot, and Microsoft now lists Shopify as a federated Copilot connector. Microsoft's Cowork plugin list of 13 November 2026 still didn't include it, so check it's there before you plan around it.",
     "steps": [
       {
         "where": "Copilot Cowork",
@@ -162,7 +162,7 @@
       }
     ],
     "source": "S70, S69, S71, S24",
-    "doc_updated": "2026-08-27"
+    "doc_updated": "2026-11-16"
   },
   {
     "id": "m365-admin-deploys-cowork-plugin",
@@ -193,7 +193,7 @@
       }
     ],
     "source": "S71",
-    "doc_updated": "2026-08-31"
+    "doc_updated": "2026-11-16"
   },
   {
     "id": "gemini-to-shopify",
@@ -243,7 +243,7 @@
     "from": "Shopify (agentic storefronts)",
     "to": "AI shopping channels: ChatGPT, Microsoft Copilot, Google AI Mode and Gemini, Meta",
     "who": "admin",
-    "plan_needed": "The store owner, or staff with the Products > View and App and sales channel > Agentic permissions. Selling in ChatGPT and Copilot needs you to sell to US customers; Google also needs a US-based store and a Google Merchant Center account. It's on by default for eligible stores.",
+    "plan_needed": "The store owner, or staff with the Products > View permission plus Manage and install apps and channels or App and sales channel > Agentic. Changing the settings needs Manage and install apps and channels. Selling in ChatGPT and Copilot needs you to sell to US customers. Google needs you to sell to customers in the US, Canada or Australia, plus a Google Merchant Center account, and its checkout is still rolling out. It's on by default for eligible stores.",
     "steps": [
       {
         "where": "Shopify admin, Sales channels > Agentic",

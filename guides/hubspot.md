@@ -1,5 +1,5 @@
 # HubSpot: the AI inside it, and the AI that connects to it
-Researched 15 October 2026 from vendor documentation. Every line is tagged with its source.
+Researched 18 November 2026 from vendor documentation. Every line is tagged with its source.
 
 ## The short version
 
@@ -7,7 +7,7 @@ HubSpot's own AI assistant, Breeze Assistant, comes with every plan including th
 Its AI agents, which do work like answering customer chats or researching prospects, have all spent HubSpot Credits since 23 July 2026. [S14][S17][S20]
 Paid plans include monthly credits, and credit packs bought from 16 September 2026 bill any extra use as overage by default. [S12][S11]
 HubSpot has official connectors for ChatGPT, Claude, Microsoft Copilot and Gemini, and they work on any HubSpot plan. [S81][S43][S48][S59][S64]
-ChatGPT and Claude can create and update records once you confirm, while HubSpot's Copilot agent and its Gemini connector can only read. [S43][S48][S59][S64]
+ChatGPT, Claude and HubSpot's Copilot agent can create and update records once you confirm. Its Gemini connector can only read. [S43][S48][S59][S64]
 Each connector sees only what that person can already see in HubSpot, and a Super Admin controls who may connect. [S43][S48][S80]
 HubSpot may use your customer data to train its own AI models unless a Super Admin switches off **AI Model Training**, which is on by default. [S5][S3]
 Accounts can be hosted in Sydney, but HubSpot's sub-processor list shows its AI providers handle Australian-hosted data in the United States. [S10][S9]
@@ -38,7 +38,7 @@ Every vendor here warns the AI can be wrong, so set connectors to ask before the
 | Prospecting agent and data agent | Not listed [S20][S21] | Yes, uses credits [S20][S21] | Yes [S20][S21] | Yes [S20][S21] |
 | Customer agent | Not listed [S18] | Not listed [S18] | Yes, uses credits [S18] | Yes [S18] |
 | Agent Hub and Agent Builder | Not listed [S1] | HubSpot's pages disagree [S1][S16] | Yes, public beta [S16][S74] | Yes, public beta [S16][S74] |
-| Notetaker and deal progression | Not listed | Not listed | Sales Hub or Service Hub Professional [S26][S27] | Sales Hub or Service Hub Enterprise [S26][S27] |
+| Notetaker and deal progression | Not listed | Notetaker only, on Sales Hub or Service Hub Starter with a Core seat [S26] | Sales Hub or Service Hub Professional [S26][S27] | Sales Hub or Service Hub Enterprise [S26][S27] |
 | Content agent and AEO | Not listed | Not listed | Marketing Hub Professional [S28][S29] | Marketing Hub Enterprise [S28][S29] |
 | Knowledge base agent | Not listed | Not listed | Service Hub Professional [S30] | Service Hub Enterprise [S30] |
 | Sensitive Data settings | Not listed | Not listed | Not listed | Yes [S36] |
@@ -76,11 +76,11 @@ First, a Super Admin controls the AI switches at settings icon > **Account manag
 
 Changes to these switches show in the audit log. In a multi-account setup, each account is set separately. [S3]
 
-Second, for accounts hosted in Australia, HubSpot's sub-processor list names AWS, Google and OpenAI as "AI Service Provider" for HubSpot AI, all processing in the United States. Baseten joins that list from 16 October 2026, also in the United States. [S9]
+Second, for accounts hosted in Australia, HubSpot's sub-processor list names AWS, Google and OpenAI as "AI Service Provider" for HubSpot AI, all processing in the United States. Baseten joined that list on 16 October 2026, also in the United States. [S9]
 
 HubSpot's model cards list models from OpenAI, Anthropic and Google behind its assistant and agents, plus Perplexity for some other AI features. Each card notes "Model Zero Data Retention" and no customer data used for third-party model training. [S8]
 
-A note on names. Breeze Assistant still carries the Breeze name. [S2] HubSpot's old "Understand Breeze" help link now opens a page called "Understand Agent Hub", and current help articles call the agents "customer agent", "prospecting agent" and so on. [S1][S17][S20] HubSpot's April 2026 news still said "Breeze Customer Agent". [S42] It appears HubSpot is dropping Breeze from agent names. That's our inference, and HubSpot hasn't announced it.
+A note on names. Breeze Assistant still carries the Breeze name. [S2] HubSpot's Breeze Assistant page now says Agent Hub was "formerly Breeze Agents" and Agent Builder "formerly Breeze studio". [S37] HubSpot's old "Understand Breeze" help link now opens a page called "Understand Agent Hub", and current help articles call the agents "customer agent", "prospecting agent" and so on. [S1][S17][S20] HubSpot's April 2026 news still said "Breeze Customer Agent". [S42] It appears HubSpot is dropping Breeze from agent names too. That's our inference.
 
 ### Breeze Assistant
 
@@ -93,6 +93,8 @@ It can search apps you've installed from HubSpot's App Marketplace, such as Gmai
 It keeps chat history (on by default), "memories" of a user's preferences, saved prompts, and projects that group chats with shared instructions and files. [S2][S33]
 Since September 2026 it can run a saved prompt daily, weekly or monthly, with results landing as a new chat. [S74]
 Outputs can be saved as "artifacts", such as HTML pages or documents, and shared with users, teams or the whole company. [S2]
+HubSpot's article also covers deep research on questions that span several parts of your account, and importing memories from another AI assistant. [S2]
+Projects can use connected apps, browse the web and, with a **Write to the CRM** tool, create or update records during a chat. [S33]
 
 **Where to find it.** Click **Breeze Assistant** in the top navigation bar. [S2]
 The **Breeze** dropdown holds **New chat**, **Chats** and **Artifacts**, with **Memories** under **More**. [S2]
@@ -100,9 +102,10 @@ On a record, **Actions** > **Summarize** gives a Breeze Assistant summary. [S25]
 It's also in the HubSpot mobile app for iOS and Android. [S37]
 
 **Plans and cost.** All products and plans, free tools included. [S2]
-HubSpot says it's included "at no additional cost" and that it doesn't consume credits. [S37][S4]
+HubSpot says it's included "at no additional cost" and that it doesn't consume credits. [S37][S2]
+Asking it to run an AI agent may use credits. [S2]
 Some of what it does needs more: building agents or workflows needs Professional or Enterprise, and quotes need Revenue Hub Professional or Enterprise. [S2]
-Content generation is capped at 30 requests a minute and 1,000 a day. [S2]
+Content generation is capped at 100 requests per account in any rolling one-minute window. [S2]
 
 **On by default, and who controls it.** On for all users by default. [S3][S4]
 A Super Admin can switch off **Give users access to Breeze Assistant**, or remove it for particular users or teams through the **Breeze Assistant** user permission. [S3][S4]
@@ -125,7 +128,7 @@ HubSpot's AI help index also lists AI sales emails in the HubSpot Sales Office 3
 
 **Plans and cost.** All products and plans. [S24] The article doesn't mention credits. Limits are 30 generations a minute and 1,000 a day, with prompts and responses capped at 4,000 tokens. [S24]
 
-**On by default, and who controls it.** It needs **Give users access to generative AI tools and features**, which is on by default. [S3][S24] Some uses also need the normal tool permission, such as edit and publish rights for pages. [S24]
+**On by default, and who controls it.** HubSpot's article lists five switches a Super Admin must turn on: the generative AI, CRM data, customer conversation data, files data and Breeze Assistant switches. **Files data** is off by default. [S24][S3] Some uses also need the normal tool permission, such as edit and publish rights for pages. [S24]
 
 **Your data.** Generated text appears in a side panel for you to check before it goes in. [S24]
 
@@ -157,10 +160,11 @@ Agents can also be triggered from workflows. [S1][S84]
 Marketplace: **More** > **Agents** > **Agent Marketplace** > **Explore all** > choose an agent > **Add**. [S15]
 
 **Plans and cost.** HubSpot's Agent Hub article lists Starter, Professional and Enterprise for Marketing, Sales, Service, Data and Content Hub, and Professional or Enterprise for Smart CRM and Revenue Hub. [S1]
-HubSpot's news post and developer changelog describe Agent Hub and Agent Builder as a public beta for Professional and Enterprise. [S16][S74]
+HubSpot's news post describes Agent Hub and Agent Builder as a public beta for Professional and Enterprise. [S16] Its developer changelog says they need Professional or Enterprise. [S74]
 Since 23 July 2026, all AI agents consume HubSpot Credits. [S14]
 Custom agents cost 1 credit per "action unit" (beta). [S12]
 A test run (HubSpot calls it a simulation) estimates the credit cost without spending any credits or changing the CRM. [S14]
+The agent may still run its MCP tools during a test, so HubSpot suggests using sample data. [S14]
 You can cap each agent's monthly runs: **Agents** > **Agent Hub** > **Agents** tab > **Edit** > three dots > **Edit run limit**. [S14]
 
 **On by default, and who controls it.** Agents aren't running until someone installs or builds them. [S1][S15]
@@ -203,20 +207,22 @@ Voice calls are recorded and transcribed. [S19]
 
 ### Prospecting agent
 
-**What it does.** Watches companies in your target lists for signals such as funding or product launches. [S20]
-For each company it suggests up to three contacts that fit your buyer profiles, then writes personalised outreach. [S20]
-It can pull contacts from Apollo, Surfe, ZoomInfo or Seamless, one source at a time. [S20]
-You choose **Review before sending** or **Send automatically**. [S20]
+**What it does.** Watches companies in the audiences you set for buying signals, such as funding news or new product launches. [S20][S92]
+It suggests contacts who match the buyer personas you choose, up to a daily limit you set for each "play", then writes personalised outreach. [S92]
+You can also enrol contacts yourself, through Breeze Assistant or from a workflow. [S20]
+It can pull contacts from Apollo, Surfe, ZoomInfo or Seamless, one source at a time. [S93]
+You choose **Review emails**, where you approve each message, or **Send without review**. [S92]
 
-**Where to find it.** **More** > **Sales** > **Prospecting Agent**. [S20]
+**Where to find it.** **More** > **Sales** > **Prospecting Agent**. [S20][S92]
 
 **Plans and cost.** Starter, Professional or Enterprise of Marketing, Sales, Service, Data or Content Hub, and Professional or Enterprise of Smart CRM. Credits required. [S20]
-100 credits per lead it recommends outreach for. [S12] HubSpot's April 2026 news post said Professional and Enterprise only. [S42]
+100 credits per lead it recommends outreach for. [S12] Credits are used for leads you enrol yourself too. [S92] HubSpot's April 2026 news post said Professional and Enterprise only. [S42]
+HubSpot's AI help index lists a 14-day free access opt-in for the prospecting agent (beta). [S84]
 Credit-using actions don't run in sandbox accounts. [S20]
 
-**On by default, and who controls it.** Off until you set up a "play". [S20] It needs a Super Admin or the **Access prospecting agent** permission. [S20]
+**On by default, and who controls it.** Off until you set up a "play", which is a set of instructions for its research and outreach. [S92] Setting it up needs a Super Admin or the **Prospecting agent admin** permission. [S92][S93] Enrolling contacts needs the **Prospecting agent assignment** permission. [S20]
 
-**Your data.** It uses a year of engagement history on each contact, including form submissions, page views, calls, meetings, notes and email opens. [S20]
+**Your data.** It uses a year of engagement history on each contact, including form submissions, page views, calls, meetings, notes and email opens. [S20][S92]
 
 **In Australia.** No country limits stated. [S20] Processing as above. [S9]
 
@@ -224,7 +230,7 @@ Credit-using actions don't run in sandbox accounts. [S20]
 
 **What it does.** A "smart property" is a custom field the AI fills in for each record by answering a question you write. [S21]
 It can draw on web research, the company's website, existing property data or call transcripts. [S21]
-It also adds workflow actions ("Data Agent: Fill Smart Property" and "Data Agent: Research") and AI columns in Data Studio. [S21]
+It also adds workflow actions ("Data Agent: Fill Smart Property" and "Data Agent: Research") and "smart columns" in Data Studio. [S21]
 
 **Where to find it.** **More** > **Data Management** > **Data Agent**. [S21]
 
@@ -269,8 +275,9 @@ Deal progression (public beta) reads logged calls, meetings and emails, then sug
 **Where to find it.** Settings icon > **Notetaker**, then turn on **Conversation recording**, **Transcription and analysis** and **Meetings**. [S26]
 Deal progression: **Agents** > **Agent Hub** > **Overview** > **Deal progression** > **Set up deal progression**. [S27]
 
-**Plans and cost.** Sales Hub or Service Hub Professional or Enterprise, with a Sales or Service seat. [S26][S27]
-From 14 April 2026, each custom field captured from a transcript costs 10 credits per run. Standard fields are free. [S26]
+**Plans and cost.** Notetaker: Sales Hub or Service Hub Starter, Professional or Enterprise. Starter needs a Core seat, and Professional or Enterprise need a Sales or Service seat. [S26]
+Deal progression: Sales Hub or Service Hub Professional or Enterprise, with a Sales or Service seat. [S27]
+Each custom field captured from a transcript is a data agent run that uses credits. HubSpot points to its catalogue, which lists the data agent at 10 credits a response. Standard fields are free. [S26][S12]
 
 **On by default, and who controls it.** A Super Admin sets it up. [S26]
 The **Require explicit consent** switch emails attendees first, and if anyone declines or doesn't reply, the meeting isn't recorded. [S26]
@@ -279,6 +286,7 @@ Deal progression suggestions need approval by default. Automatic updates are opt
 **Your data.** Recordings are kept for two years. [S26]
 HubSpot says you're responsible for the disclosures and consents needed to record. [S26]
 Notetaker data is processed by a sub-processor, Hyperdoc Inc. [S26]
+HubSpot says Notetaker isn't covered by Sensitive Data and can't support protected health information. [S26]
 
 **In Australia.** HubSpot's Notetaker article says Hyperdoc is hosted on AWS in the US, the EU (Frankfurt) and Asia (Tokyo). [S26] The sub-processor list gives United States as Hyperdoc's location for Australian-hosted accounts. [S9]
 
@@ -307,7 +315,7 @@ AEO's monthly answer limit is 2,500 on Professional and 5,000 on Enterprise. [S2
 **What it does.** A beta agent that reads closed support tickets to find gaps in your help centre. [S30]
 It drafts articles to fill those gaps and suggests edits to existing ones. Drafts aren't published automatically. [S30]
 
-**Where to find it.** **Service** > **Knowledge Base** > **Suggestions** tab. [S30]
+**Where to find it.** **More** > **Service** > **Knowledge Base** > **Suggestions** tab. [S30]
 
 **Plans and cost.** Service Hub Professional or Enterprise. 200 credits per generated article. [S30][S12]
 
@@ -335,9 +343,9 @@ Each AI action inside a workflow costs 10 credits when it runs. [S12]
 ### AI context and knowledge vaults
 
 **What it does.** AI context is the business background agents use, such as your brand's tone or your ideal customer profiles. [S1]
-Knowledge vaults (beta) hold files and HubSpot content for specific agents and projects. [S32]
+Knowledge vaults hold files and HubSpot content for specific agents and projects. HubSpot's article no longer marks them as beta. [S32]
 
-**Where to find it.** Agent Hub's **Context** tab. [S1][S32]
+**Where to find it.** **Agents** > **Agent Hub** > **Context** tab > **Knowledge vaults** tab. [S1][S32]
 
 **Plans and cost.** Vaults: Starter, Professional or Enterprise of Marketing, Sales, Service, Data or Content Hub, and Professional or Enterprise of Smart CRM. [S32]
 Up to 50 vaults, with files up to 50 MB each. [S32]
@@ -381,7 +389,7 @@ HubSpot's developer docs say people already using those four should use the conn
 
 **Before anyone connects: HubSpot's approval step.** Super Admins and users with the **App Marketplace Access** permission can connect the ChatGPT and Claude connectors without approval. Everyone else needs a Super Admin to approve the connector first. [S43][S48]
 For the Copilot agent, a Super Admin or App Marketplace user has to make the first connection and choose its permissions. [S59]
-The connector articles point to HubSpot's general app approval steps, which a Super Admin follows like this (Manage access to apps, 10 September 2026): [S80][S43]
+The connector articles point to HubSpot's general app approval steps, which a Super Admin follows like this (Manage access to apps, 20 October 2026): [S80][S43]
 
 1. Click the settings icon in the top navigation bar. [S80]
 2. In the left sidebar, go to **Integrations** > **Connected Apps**. [S80]
@@ -396,16 +404,18 @@ To take it away from one person: **Manage access** > **Installed by** tab > **Un
 To take it away from everyone: **Manage access** > **Revoke Approval** tab > **Revoke app approval**, type the app's name, then **Revoke**. [S80]
 If a Super Admin adds data permissions later, each user has to reconnect to get the new access. [S43][S48]
 Super Admins can see in the audit log who connected a connector and when. Writes are logged against both the person and the connector. [S43][S48]
-HubSpot's April 2026 changelog describes this as the App Install Governance Tool (public beta), which lets Super Admins set read-only or write access for AI connectors. [S73]
+HubSpot's April 2026 changelog describes this as the App Install Governance Tool (public beta). It lets Super Admins control which apps are installed and choose optional data permissions, such as read-only or write access, and it names the ChatGPT, Claude and Gemini connectors. [S73]
+
+**Sensitive Data and the connectors.** HubSpot's October 2026 developer rollup (30 October) added a public beta that lets a Super Admin give AI connectors read-only access in accounts with Sensitive Data turned on. ChatGPT, Claude and Copilot can be given Sensitive Data properties and engagements. Gemini and HubSpot's MCP server can be given engagements only. Highly Sensitive Data properties stay blocked. [S94]
 
 ### ChatGPT and HubSpot
 
 **Official?** Yes. It's the "HubSpot connector for ChatGPT", built by HubSpot. [S43] It launched in June 2025 for deep research and added everyday chat in July 2025. [S44][S45] It can now write as well as read. [S43]
 OpenAI's plugin directory lists it as HubSpot, made by HubSpot, version 6.0.0. The plugin also bundles four HubSpot skills, including Customer Prep and Pipeline Health. [S86]
 
-**What it can see and do.** It can read contacts, leads, companies, deals, tickets, custom objects, products, quotes, invoices, orders, subscriptions, lists, campaigns, website and landing pages, blog posts, marketing emails, and calls, meetings, notes, tasks and emails. [S43]
-It can create and update contacts, leads, companies, deals, tickets, custom objects, line items, products, campaigns, landing pages, blog posts, marketing emails and all the engagement types. [S43]
-Users, quotes, invoices, orders, carts, subscriptions, lists, website pages and analytics are read-only. [S43]
+**What it can see and do.** It can read, create and update contacts, leads, companies, deals, tickets, custom objects, line items, products, campaigns, landing and website pages, blog posts, marketing emails, lists (HubSpot calls them segments), social posts, pipelines, and calls, meetings, notes, tasks and emails. [S43]
+It can read and create, but not update, campaign assets, marketing events and properties. [S43]
+Brands, campaign attribution, social post performance, quotes, invoices, orders, carts, subscriptions, inbox conversations, users, teams, AEO, buyer intent and saved reports are read-only. [S43]
 HubSpot's object table shows no delete permission for anything. [S43]
 Deep research mode writes a longer report with its sources shown in a side panel. [S43]
 Before any create or update, ChatGPT shows the change and waits for you to reply Yes or No. [S43]
@@ -416,7 +426,7 @@ HubSpot says you need an OpenAI account and names no ChatGPT plan. [S43] OpenAI'
 In ChatGPT Business, apps start switched on. In Enterprise and Edu, new plugins and apps generally stay off until an admin reviews them. [S89]
 If you're not a Super Admin and don't have App Marketplace Access, the connector has to be approved first. [S43]
 
-**Steps to connect** (HubSpot, 28 September 2026):
+**Steps to connect** (HubSpot, 12 November 2026):
 
 1. In ChatGPT, click your profile icon (bottom left), then **Settings**. [S43]
 2. Click **Apps**. [S43]
@@ -436,7 +446,7 @@ A Super Admin can also uninstall it for a person, or revoke it for everyone, fro
 
 **Limits.** Bulk creates and updates are capped at 10 records at a time. [S43]
 Your custom validation rules, including pipeline stage and association label rules, aren't applied when it creates or updates records. [S43]
-If Sensitive Data is turned on in HubSpot, it can't see any engagement data. [S43]
+If Sensitive Data is turned on in HubSpot, a Super Admin can give it read-only access to Sensitive Data properties and engagements when it's installed or reconnected. [S43][S94]
 Draft pages and posts only return basic details. Performance figures need a campaign name and date range in your prompt. [S43]
 It can't copy whole databases or customer lists, and one ChatGPT account connects to one HubSpot account at a time. [S43]
 HubSpot warns that answers can contain errors and recommends a person checks them. [S43]
@@ -444,7 +454,8 @@ HubSpot warns that answers can contain errors and recommends a person checks the
 **Your data and Australia.** On ChatGPT Enterprise, Business or Edu, connector data isn't used for training. [S43]
 On Free, Go, Plus or Pro you can opt out of training in ChatGPT's settings. If you don't, HubSpot says OpenAI may use connector data to improve the connector, but not for general model training. [S43]
 OpenAI's own help page is broader. On Free, Go, Plus and Pro, it says OpenAI may use information from apps to train its models if **Improve the model for everyone** is on. [S87]
-OpenAI keeps data accessed through the connector so the connector can work. [S43]
+OpenAI keeps data accessed through the connector so the connector can work, and HubSpot says some may stay after an OpenAI account closes. [S43]
+HubSpot may collect summaries of tool calls, with names of people, companies and deals anonymised. [S43]
 HubSpot says it respects your data centre while data passes through HubSpot's servers. The article sets no country limits. [S43]
 
 **Not the same thing:** HubSpot also connects to ChatGPT Ads (beta) for running ads in ChatGPT. That's an advertising account link and needs the **Ads publishing** permission. [S47][S46]
@@ -453,9 +464,10 @@ HubSpot says it respects your data centre while data passes through HubSpot's se
 
 **Official?** Yes. It's the "HubSpot connector for Claude", built by HubSpot and marked "Anthropic verified" in Claude's directory. [S48][S53] It launched on 29 July 2025, and write access was added on 20 November 2025. [S49][S50]
 
-**What it can see and do.** It can read, create and update contacts, leads, companies, deals, tickets, custom objects, line items, products, pipelines, landing pages, website pages, blog posts, marketing emails, and calls, meetings, notes, tasks and emails. [S48]
-It can read and create (but not update) properties, campaigns, campaign assets and marketing events. Quotes are in beta. [S48]
-Invoices, orders, payments, subscriptions, lists, campaign attribution, users, teams and inbox conversations are read-only. [S48]
+**What it can see and do.** It can read, create and update contacts, leads, companies, deals, tickets, custom objects, line items, products, pipelines, landing pages, website pages, blog posts, marketing emails, lists (HubSpot calls them segments), and calls, meetings, notes, tasks and emails. [S48]
+Creating and updating quotes and quote templates is in beta. [S48]
+It can read and create (but not update) properties, campaigns, campaign assets and marketing events. [S48]
+Invoices, orders, carts, payments, payment links, subscriptions, campaign attribution, users, teams, inbox conversations, AEO, buyer intent and saved reports are read-only. [S48]
 It can't delete anything. [S48]
 Before a create or update, Claude shows the change and waits for Yes or No. Afterwards a **View [record type] in HubSpot** link opens the record. [S48]
 Claude can also chart and analyse CRM data in plain language. [S49]
@@ -465,7 +477,7 @@ A paid Claude plan: Pro, Max, Team or Enterprise. [S48]
 On Team and Enterprise, an organisation Owner has to add the connector first. Then each person connects their own HubSpot login. [S51][S54]
 HubSpot's approval step applies as described above. [S48]
 
-**Steps to connect** (Claude's help, no date shown; the HubSpot permission screen is from HubSpot's article of 17 September 2026):
+**Steps to connect** (Claude's help, no date shown; the HubSpot permission screen is from HubSpot's article of 19 October 2026):
 
 1. In claude.ai or the Claude desktop app, go to **Customize** > **Connectors**. [S51]
 2. Select **Discover**, type "HubSpot" in **Search connectors** and open the listing. [S51]
@@ -497,7 +509,7 @@ HubSpot's article describes the older path: profile icon > **Settings** > **Conn
 **Limits.** Bulk creates and updates are capped at 10 records. [S48]
 Conditional property rules and pipeline stage checks are applied, but association label checks aren't. [S48]
 Only published pages and posts return content. Performance figures need a campaign name and date range. [S48]
-If Sensitive Data is on, it can't see engagement data. [S48]
+HubSpot's Claude article still says that if Sensitive Data is on, Claude can't see engagement data. [S48] Its October developer rollup says a Super Admin can now give Claude read-only access to Sensitive Data properties and engagements (public beta). [S94]
 One Claude account connects to one HubSpot account at a time. [S48]
 HubSpot's FAQ says Claude drafts campaign and workflow content for you to build yourself. Its object table lists marketing emails as create and update, so check what your account shows. [S48]
 HubSpot says Claude can make mistakes and recommends a person checks anything important. [S48]
@@ -510,28 +522,33 @@ HubSpot says it respects your data centre while data passes through HubSpot's se
 Anthropic notes that settings for where Claude runs don't change where connected services operate. [S54]
 HubSpot may collect summaries of tool calls, with names of people, companies and deals anonymised. [S48]
 
-**Two other Claude routes.** Claude Tag (Claude in Slack, public beta) has its own HubSpot link that an admin sets up with a HubSpot private app token and read scopes. [S57]
+**Other Claude routes.** Claude Tag (Claude in Slack, public beta) has its own HubSpot link that an admin sets up with a HubSpot private app token and read scopes. [S57]
 It connects with its own credential instead of a person's login. [S57]
 Anthropic's Claude for Small Business package (13 May 2026) includes HubSpot-based workflows in Claude Cowork. [S58]
 
+**Claude Design.** HubSpot also documents sending a landing page built in Claude Design to HubSpot as a draft, through the Claude connector. It needs a Pro, Max, Team or Enterprise plan, and landing pages are the only thing it sends. [S95]
+In Claude, click **Design** (bottom left) and build the page. Then click **Share** > **More formats and apps** > **Send** next to HubSpot. You review and publish the draft in HubSpot. [S95]
+If the page is already published, sending it again makes a new version rather than overwriting it. [S95]
+
 ### Microsoft Copilot and HubSpot
 
-Microsoft has renamed Microsoft 365 Copilot to Microsoft Copilot, and Microsoft 365 Copilot Chat to Microsoft Copilot Chat. Some screens still show the old names. [S63]
+Microsoft's own privacy page now calls the product Microsoft Copilot, and its chat Microsoft Copilot Chat. HubSpot's article still uses the older Microsoft 365 Copilot names. [S63][S59]
 There are two official routes, and they behave differently. [S59][S60][S61]
 
 **Route 1: the HubSpot Agent for Copilot**
 
 **Official?** Yes, built by HubSpot. [S59]
 
-**What it can see and do.** Read-only. It can't create or edit HubSpot data. [S59]
+**What it can see and do.** It reads and makes changes, and asks you to confirm before any create or update. [S59]
 It reads contacts, companies, deals, tickets, users, line items, quotes, invoices, orders, carts, products, subscriptions, lists, and calls, meetings, notes, tasks and emails. [S59]
+It can create and update contacts, companies, deals, tickets, line items, products, and calls, meetings, notes, tasks and emails. Users, quotes, invoices, orders, carts, subscriptions and lists are read-only. HubSpot's article doesn't mention deleting. [S59]
 It works in Copilot Chat and Copilot in Teams, on web, desktop and mobile. [S59]
 
 **What you need.** Any HubSpot plan. [S59]
 HubSpot says you need "a Microsoft 365 Copilot license or the Microsoft 365 Copilot Chat add-on license" with an eligible Microsoft 365 licence. [S59]
 A Microsoft 365 admin has to make the agent available, and a HubSpot Super Admin or App Marketplace user makes the first connection. [S59]
 
-**Steps for the Microsoft 365 admin** (HubSpot, 24 September 2026):
+**Steps for the Microsoft 365 admin** (HubSpot, 12 November 2026):
 
 1. In the Microsoft 365 admin center, go to **Agents** > **All agents**. [S59]
 2. Search for **HubSpot**. [S59]
@@ -545,11 +562,12 @@ A Microsoft 365 admin has to make the agent available, and a HubSpot Super Admin
 3. Type a prompt, or pick a suggested HubSpot prompt. [S59]
 4. When asked, click **Sign in to HubSpot**. [S59]
 5. Choose your HubSpot account and permissions, then click **Connect app**. [S59]
+6. Add your prompt and press Enter. If you ask it to create or update a record, Copilot asks you to confirm first. [S59]
 
 **To disconnect.** HubSpot's article only says to disconnect and reconnect if you want a different HubSpot account. It gives no steps. [S59]
 
 **Limits.** One HubSpot account per Copilot account. [S59]
-If Sensitive Data is on, it can't see engagement data. [S59]
+If Sensitive Data is on, a Super Admin can give it read-only access to Sensitive Data properties and engagements, and can take that away at any time. [S59]
 It can't copy CRM data or whole customer lists. [S59]
 HubSpot says Copilot can make mistakes and recommends a person checks the output. [S59]
 
@@ -559,14 +577,15 @@ HubSpot says Copilot can make mistakes and recommends a person checks the output
 
 **What it can see and do.** Federated connectors use MCP to fetch live data with each person's own sign-in. Nothing is copied into Microsoft 365. [S60]
 They work in Copilot Chat, agents, Cowork, Copilot in Word, Excel, PowerPoint and Outlook, and the Researcher agent. [S60]
-Microsoft started rolling out create, update and delete actions in early October 2026, where a connector provides those tools. They need the user's approval, and Researcher stays read-only. [S60]
-Microsoft's docs don't list which HubSpot tools this connector offers. [S60][S61]
+Where a connector provides the tools, Copilot can also create, update or delete data. Those tools need the user's approval, and Researcher stays read-only. [S60]
+Microsoft's docs don't list which HubSpot tools this connector offers. Microsoft says a list of each connector's tools in the admin center is coming soon. [S60][S61]
 
-**What you need.** Microsoft-published federated connectors are on by default in a Microsoft 365 tenant unless an admin turns them off. [S60]
+**What you need.** A Microsoft 365 Copilot licence. [S60]
+Microsoft-built federated connectors are available by default to everyone in **User access**, which defaults to **All users**. [S60][S62]
 Admins manage them under **Copilot connectors** > **Your connections** in the Microsoft 365 admin center, and can limit them to groups with **Add staging**. [S60]
-With the **Allowed agent types** setting, an admin can keep these connectors off, including future ones, and switch them on one at a time. [S60][S62]
+In **Agents** > **Settings** > **Agent and plugin access**, an admin can clear **Allow agents and plugins built by Microsoft** to keep these connectors off, including future ones, then switch them on one at a time. [S60][S62]
 
-**Steps to connect** (Microsoft, 30 September 2026):
+**Steps to connect** (Microsoft, 16 November 2026):
 
 1. Open Microsoft 365 Copilot Chat. [S60]
 2. Select the **...** menu, then **Settings**. [S60]
@@ -588,20 +607,21 @@ There are three official routes. [S64][S66][S68] The first two look like the sam
 
 **Route 1: the HubSpot connector for Gemini**
 
-**Official?** Yes. HubSpot documents it as the "HubSpot connector for Gemini". [S64] Its Google Workspace Marketplace listing, "HubSpot Integration", names Google as the developer. [S67]
+**Official?** Yes. HubSpot documents it as the "HubSpot connector for Gemini". [S64] Its Google Workspace Marketplace listing, now called "HubSpot Connector", names Google as the developer. [S67]
 
 **What it can see and do.** Read-only. It fetches contacts, companies and deals, how they link to each other, and their default properties. [S64]
 It works in the Gemini app and the Gemini side panel in Gmail, Docs, Sheets and Chat. [S64]
 You call it by typing **@HubSpot** before your prompt. [S64]
 It can pull lists of contacts, companies or deals by default properties, such as companies in one state. [S64]
 It's English only. [S64]
+Google's Marketplace listing also mentions tickets, which HubSpot's article doesn't list. [S67][S64]
 
 **What you need.** Any HubSpot plan. [S64]
 HubSpot says you need a paid Google Workspace Business Standard, Business Plus or Enterprise plan with "Gemini Alpha" turned on, and you connect using the same email you use for Gmail. [S64]
 Google has since renamed Gemini Alpha to Gemini Beta. Only an admin can turn it on. [S69]
 Google Workspace Marketplace admins control whether the organisation can use the connector. [S64]
 
-**Steps to connect from the Gemini app** (HubSpot, 21 August 2026):
+**Steps to connect from the Gemini app** (HubSpot, 13 November 2026):
 
 1. Go to gemini.google.com. [S64]
 2. Bottom left, click **Settings & Help**, then **Apps**. [S64]
@@ -611,29 +631,29 @@ Google Workspace Marketplace admins control whether the organisation can use the
 **To disconnect.** gemini.google.com > **Settings & Help** > **Apps** > switch **HubSpot** off > **Disconnect**. [S64]
 
 **Limits.** One HubSpot account per Google Workspace account. [S64]
-No access to Sensitive Data properties. [S64]
+No access to Sensitive Data properties. If Sensitive Data is on, a Super Admin can give it read-only access to Sensitive Data engagements. [S64][S94]
 HubSpot says Gemini can make mistakes and recommends a person checks the output. [S64]
-HubSpot's marketing page describes Gemini drafting emails and notes "you can action back in HubSpot". Its help article says the connector can't edit HubSpot data. [S81][S64]
+HubSpot's marketing page describes Gemini drafting emails and notes "you can action back in HubSpot", and Google's listing talks of content "to be actioned back in HubSpot". HubSpot's help article says the connector can't edit HubSpot data. [S81][S67][S64]
 
 **Route 2: Gemini in Google Workspace integrations**
 
 **Official?** Yes. Google announced on 15 September 2026 that HubSpot is one of seven tools Gemini in Workspace can reach through MCP. [S65]
 
-**What it can see and do.** Google's help says these integrations "currently only support read actions". [S66]
+**What it can see and do.** Google's help now calls these "connectors" and says they "currently only support read actions", such as searching for information. [S66]
 For HubSpot it lists finding contacts or companies and viewing active deal details. [S66]
 
 **What you need.** Google says the feature is on by default for users with Gemini for Workspace access. [S65]
 Google's help lists Google AI Pro or Ultra on personal accounts, and Business Standard, Business Plus, Enterprise Standard, Enterprise Plus, Enterprise Essentials, Enterprise Essentials Plus and Google AI Pro for Education on work accounts. [S66]
-For work accounts, an admin has to allow integrations. [S66]
+For work accounts, an admin has to turn on connectors for Gemini. [S66]
 Admins manage this at **Apps** > **Google Workspace Marketplace apps** > **Apps list**, for the whole domain, an organisational unit or a group. [S65]
 
 **Steps to connect** (Google, no date shown):
 
-1. On a computer, open the Google Workspace Marketplace integrations page, which is filtered to Gemini integrations. [S66]
+1. On a computer, go to the Google Workspace Marketplace connectors page. [S66]
 2. Select HubSpot. [S66]
 3. Click **Connect**. [S66]
 4. Follow the on-screen steps to grant access. [S66]
-5. In Gmail, Docs or Sheets, open the Gemini panel, type **@** and choose HubSpot. [S66][S64]
+5. In a supported app such as Gmail, Docs or Sheets, open **Ask Gemini**, type **@** in the text box and choose HubSpot. [S66][S64]
 
 **To disconnect.** In your Google Account's security settings, find *Your connections to third-party apps & services* > **See all connections** > the app > **Delete all connections you have with [app]** > **Confirm**. [S66]
 
@@ -643,10 +663,10 @@ Admins manage this at **Apps** > **Google Workspace Marketplace apps** > **Apps 
 
 **What it can see and do.** Its listed action is "Manage CRM Objects". Google doesn't say whether that includes writing. [S68]
 
-**Steps to connect** (Google, 16 September 2026):
+**Steps to connect** (Google, 15 October 2026):
 
 1. A HubSpot administrator authorises the HubSpot connector in Gemini Enterprise first. [S68]
-2. The connector is switched on in Gemini Enterprise under **Settings & help** > **Manage team** > **Connectors**. [S68]
+2. The connector is switched on in Gemini Enterprise under **Settings & help** > your team > **Manage team** > **Connectors**. [S68]
 3. Each person then authorises their own HubSpot account. [S68]
 
 **Your data and Australia (all routes).** HubSpot says Google doesn't use data shared through HubSpot to train its models. [S64]
@@ -657,7 +677,8 @@ HubSpot may collect anonymised summaries of tool calls. [S64]
 
 **Official?** Yes, built by HubSpot. Its public beta began on 1 September 2025, and HubSpot called it generally available in April 2026. [S76][S73]
 
-**What it can see and do.** It reads and writes CRM records and activities, landing and website pages, blog posts, campaigns, marketing email drafts, pipelines, custom properties and lists. [S70]
+**What it can see and do.** It reads and writes CRM records and activities, landing and website pages, blog posts, campaigns, marketing email drafts, pipelines, custom properties, static lists and social posts. [S70]
+It can also create AEO prompts and act on AEO recommendations, on Marketing Hub Professional or Enterprise. [S70]
 Quotes are in beta, and inbox conversations are read-only. [S70][S74]
 Several write tools need the user's explicit confirmation, including creating or updating records and publishing pages. [S70]
 Every action respects the person's existing HubSpot permissions. [S70]
@@ -685,7 +706,7 @@ Free tools accounts can't create custom pipelines. [S70]
 
 **Limits.** Searches return up to 200 results a page, and lookups take up to 100 IDs. [S70]
 There's no vector search, and the query tool can't join tables. [S70]
-Turning on Sensitive Data blocks activities and conversations. [S70]
+Turning on Sensitive Data blocks conversation data. [S70] A Super Admin can now give the MCP server read-only access to Sensitive Data engagements (public beta). [S94]
 When HubSpot adds tools, existing users have to reinstall to get the new permissions. [S70][S74]
 
 ### Coding agents and HubSpot (Agent CLI and the developer MCP server)
@@ -693,16 +714,16 @@ When HubSpot adds tools, existing users have to reinstall to get the new permiss
 **Official?** Yes, both built by HubSpot. [S78][S77]
 
 **What they can see and do.** The Agent CLI (beta) lets AI coding agents take on repetitive CRM jobs, including analysis and summaries. [S78]
-It acts with the connected person's permissions, "which can include creating, updating, or deleting records". [S78]
-It can read contacts, companies, deals, tickets, custom objects, workflows, pipelines, properties and activity history. Revenue records are read-only. [S78]
+It acts with the connected person's permissions, and HubSpot says "this could include creating, updating, or deleting records in your account". [S78]
+It can read contacts, companies, deals, tickets, custom objects, workflows, pipelines, properties, associations and activity history. Revenue records are read-only. [S78]
 A `--dry-run` option previews changes where it's available. [S78]
 The developer MCP server runs on your own computer and helps build HubSpot apps and website content. Its setup page doesn't say it touches CRM data. [S77]
 
-**What you need.** Agent CLI: any HubSpot plan and a compatible coding agent, such as Claude Code, Claude Cowork or the ChatGPT app. A Super Admin has to allow you to connect. [S78]
+**What you need.** Agent CLI: any HubSpot plan and a compatible coding agent, such as Claude Code, the Claude app or the ChatGPT app. A Super Admin has to allow you to connect. [S78]
 Claude Cowork Team or Enterprise users may need an admin to allow `api.hubapi.com` first. [S78]
 Developer MCP server: HubSpot CLI 8.2.0 or later, and Claude Code, Codex CLI, Cursor, Gemini CLI, VS Code or Windsurf. [S77]
 
-**Steps to connect the Agent CLI** (HubSpot, 26 August 2026):
+**Steps to connect the Agent CLI** (HubSpot, 29 September 2026):
 
 1. Open your AI coding agent. [S78]
 2. Paste HubSpot's install prompt into it. The prompt tells the agent to install the CLI, sign in and add HubSpot's skills. [S78]
@@ -751,47 +772,46 @@ The article doesn't say what data goes to the provider or who pays for usage. [S
 
 **Official?** Yes, both directions are HubSpot features. [S35][S34]
 
-**What it can see and do.** Agents built in Agent Builder can connect over MCP to Amplitude, Asana, Atlassian, Box, Canva, Fathom, G2, Gmail, Gong, Google Calendar, Google Chat, Google Drive, Linear, Notion, Slack, Xero and Zapier. Agents can read data there and take actions. [S35]
+**What it can see and do.** Agents built in Agent Builder can connect over MCP to Amplitude, Asana, Atlassian, Box, Canva, Fathom, G2, Gmail, Gong, Google Calendar, Google Chat, Google Drive, Linear, Notion, Slack, Xero and Zapier, with Zoom added in beta. Agents can read data there and take actions. [S35]
 Each tool can be set to Always allow, Ask permission or Never allow. [S35]
 Breeze Assistant can search apps you've installed from the App Marketplace, such as Slack, Gmail, Google Docs and Teams. [S34]
 
 **What you need.** Agent connections: Starter, Professional or Enterprise of Marketing, Sales, Service, Data or Content Hub, or Professional or Enterprise of Smart CRM, plus Agent Builder permissions. [S35]
 Breeze Assistant searches: any plan, with Breeze Assistant switched on. [S34]
 
-**Steps to connect apps to Breeze Assistant** (HubSpot, 28 September 2026):
+**Steps to connect apps to Breeze Assistant** (HubSpot, 5 November 2026):
 
 1. In HubSpot's **App Marketplace**, select the app and click **Install**. [S34]
 2. Finish the install and read the setup guide in the **Overview** section. [S34]
 3. Click **Breeze Assistant** in the top navigation bar. [S34]
 4. Use the **Apps** dropdown in the right panel to pick sources, or turn on **Use all apps as sources**. [S34]
 
-The agent connection article describes signing in through on-screen prompts, or pasting a server address for Zapier, but gives no click path. [S35]
+To connect an app to an agent, HubSpot's article now gives this path: **More** > **Agents** > **Agent Hub** > **Agents** tab, clone the agent, then **Add action** > **Connectors** tab > **Connect and add**, and follow the sign-in prompts. Zapier connects by pasting a server address instead. [S35]
 
-**To disconnect.** Agents: the **Connectors** tab in Agent Builder. [S35] Breeze Assistant: uninstall the app, and Breeze Assistant stops using its data. [S34]
+**To disconnect.** Agents: in Agent Builder, **Add action** > **Connectors** tab > the connector > **View details** > **Disconnect**. [S35] Breeze Assistant: uninstall the app, and Breeze Assistant stops using its data. [S34]
 
-**Limits.** HubSpot retired eight Breeze Assistant connectors on 26 September 2026: Smartsheet, GitBook, Azure DevOps, Guru, ReadMe, Productboard, Helpjuice and Document360. [S34]
-Prompts can include up to five web addresses. [S34]
+**Limits.** Prompts can include up to five web addresses. [S34]
 
 ### Other AI assistants and HubSpot
 
 HubSpot's AI tools page names only ChatGPT, Claude, Gemini and Copilot. [S81] None of the HubSpot pages we read mention an official connector for other assistants, such as Perplexity or Mistral's Le Chat. We didn't run a separate search for them.
 The documented alternative is HubSpot's MCP server, which works with any tool that supports OAuth with PKCE. [S70][S71]
-HubSpot's help centre also has a page for a Lovable connector (an AI app builder). It's a private beta and HubSpot marks the page confidential, so we've left the details out. [S83]
+HubSpot's help centre also has a page for a Lovable connector (an AI app builder). It's a private beta, and HubSpot says the article is for beta participants only, so we've left the details out. [S83]
 
 ## Jobs it's good for
 
-- **Prepare for a sales call.** Ask Claude or ChatGPT for the company, its open deals and the latest emails and meetings. Both can read engagement history unless Sensitive Data is on. [S48][S43] On any plan, Breeze Assistant can summarise a record, or prepare you for meetings once your calendar's connected. [S2][S25]
+- **Prepare for a sales call.** Ask Claude or ChatGPT for the company, its open deals and the latest emails and meetings. Both can read engagement history, though Sensitive Data can limit that. [S48][S43][S94] On any plan, Breeze Assistant can summarise a record, or prepare you for meetings once your calendar's connected. [S2][S25]
 - **Log the call straight after.** Tell ChatGPT or Claude what was agreed and have it add a note and a follow-up task. It shows the change and waits for your yes. [S43][S48]
 - **A Monday pipeline check.** Ask for open deals by stage, with a chart. Claude and Breeze Assistant can both chart CRM data. [S49][S2]
 - **Tidy up a handful of records.** Up to 10 at a time through ChatGPT or Claude. Check the result, since ChatGPT skips your custom validation rules. [S43][S48]
 - **A weekly digest.** Schedule a Breeze Assistant prompt to run every Monday. It lands as a new chat. [S74]
 - **Answer website chats after hours.** The customer agent answers from your help articles and website pages and hands over to a person when it's unsure. Professional plan or above, paid per resolved conversation. [S17][S18][S12]
 - **Fill in missing company details.** Data enrichment fills fields like industry and job title from Starter up, without credits. [S22] For questions enrichment can't answer, a smart property researches each record for 10 credits a response. [S21][S12]
-- **Turn meetings into notes and deal updates.** Notetaker records Zoom, Teams or Google Meet calls, and deal progression suggests field changes for you to approve. Sales Hub or Service Hub Professional. [S26][S27]
+- **Turn meetings into notes and deal updates.** Notetaker records Zoom, Teams or Google Meet calls, and deal progression suggests field changes for you to approve. Notetaker comes with Sales Hub or Service Hub from Starter, and deal progression from Professional. [S26][S27]
 - **First drafts of content.** Breeze Assistant has guides for drafting blog posts and landing pages. [S84] The content agent drafts posts and campaign assets on Marketing Hub Professional and never publishes by itself. [S28]
 - **Check a campaign's results.** Ask Claude or ChatGPT about a campaign by name and date range. [S48][S43]
 - **Find holes in your help centre.** The knowledge base agent reads closed tickets and drafts the missing articles for review. Service Hub Professional, 200 credits an article. [S30][S12]
-- **Look up a deal without leaving Teams.** The HubSpot Agent for Copilot answers in Copilot Chat and Teams. [S59]
+- **Look up a deal without leaving Teams.** The HubSpot Agent for Copilot answers in Copilot Chat and Teams, and can update the deal stage once you confirm. [S59]
 - **Pull a list into a Google Doc or Sheet.** In the Gemini side panel, @HubSpot can fetch contacts at a lifecycle stage. [S64]
 - **Turn a manual process into a workflow.** Describe it to Breeze Assistant on Professional. The workflow arrives switched off for you to check first. [S31]
 
@@ -814,22 +834,23 @@ HubSpot's help centre also has a page for a Lovable connector (an AI app builder
 **AI that writes to your CRM or talks to customers**
 
 - With **Always allow** set, ChatGPT and Claude can edit records without asking. HubSpot recommends **Needs Approval**. [S43][S48]
+- HubSpot's Copilot agent can now create and update records too. HubSpot says Copilot asks you to confirm each change. [S59]
 - The ChatGPT connector skips your custom validation rules. Claude applies pipeline stage checks but not association label checks. [S43][S48]
 - The connectors can't delete records. The Agent CLI can, within the person's permissions. [S43][S48][S78]
 - Breeze Assistant can create deals, notes, products and workflows within each person's permissions. [S2]
-- The prospecting agent can send emails without anyone reading them if you choose **Send automatically**. [S20]
+- The prospecting agent can send emails without anyone reading them if you choose **Send without review**. [S92]
 - The customer agent talks to customers directly. Its chat replies carry a "Powered by AI" label. [S17]
 - Deal progression asks for approval by default, but automatic updates can be switched on. [S27]
 
 **Customer personal information**
 
 - For Australian-hosted accounts, HubSpot lists its AI providers as processing in the United States. [S9]
-- New sub-processors for HubSpot AI start on 16 October 2026. HubSpot promises at least 30 days' notice of sub-processor changes to customers who opt in to notifications. [S9]
+- Three new sub-processors for HubSpot AI started on 16 October 2026. HubSpot promises at least 30 days' notice of sub-processor changes to customers who opt in to notifications. [S9]
 - Notetaker recordings are kept for two years, and HubSpot puts recording consent on you. [S26]
 - Once data reaches ChatGPT, Claude, Copilot or Gemini, that vendor's terms apply. [S43][S48][S59][S64]
 - On personal ChatGPT and Claude plans, whether your connector data can be used for training depends on your plan and privacy settings. [S43][S56]
-- HubSpot may keep anonymised summaries of what the AI asked for through its connectors. [S48][S59][S64]
-- Sensitive Data (Enterprise only) blocks engagement data from the connectors, and it opts you out of model training. [S36][S43][S48][S59][S5]
+- HubSpot may keep anonymised summaries of what the AI asked for through its connectors. [S43][S48][S59][S64]
+- Sensitive Data (Enterprise only) opts you out of model training. [S36][S5] Since a 30 October public beta, a Super Admin can give the connectors read-only access to Sensitive Data, so check what was granted when each connector was installed or reconnected. [S94][S43][S59][S64]
 - The knowledge base agent reads every conversation on closed tickets. [S30]
 - Data enrichment may feed limited business contact data back into HubSpot's dataset. [S22]
 - HubSpot advises keeping sensitive information out of data agent prompts. [S21]
@@ -848,7 +869,8 @@ HubSpot's help centre also has a page for a Lovable connector (an AI app builder
 - On credit packs bought from 16 September 2026, extra use is billed as overage by default. It arrives monthly in arrears on its own invoice. [S11]
 - Once you buy packs, HubSpot sets an account spend limit 50% above your monthly credits. Limits for individual features aren't on by default. [S11]
 - Without packs, credit-using features pause when credits run out. [S11]
-- Billing contacts and Super Admins get alerts at 75%, 85% and 90% of credits used. [S11]
+- Billing contacts get alerts at 75%, 85% and 90% of credits used. If there's no billing contact, Super Admins and Billing Admins get them. [S11]
+- HubSpot says customers can now swap seats for credits themselves without waiting for their contract to renew, and set credit limits for single features and actions. [S96]
 - Unused credits expire each month. [S11]
 - Some features charge credits when switched on and again monthly while they stay on. [S12]
 - Phone minutes and SMS used by agents are charged separately. [S12]
@@ -869,13 +891,11 @@ HubSpot's help centre also has a page for a Lovable connector (an AI app builder
 | 13 Jan 2026 | Self-service MCP connector setup ("MCP Auth Apps") entered public beta, announced 20 Jan | [S76] |
 | 14 Apr 2026 | Remote and developer MCP servers generally available; App Install Governance Tool in public beta | [S73] |
 | 14 Apr 2026 | Customer and prospecting agents moved to pay-per-outcome pricing | [S42] |
-| 14 Apr 2026 | Notetaker's custom field capture started costing 10 credits per run | [S26] |
 | 13 May 2026 | Anthropic launched Claude for Small Business, with HubSpot workflows | [S58] |
 | 29 Jun 2026 | MCP server can create, edit and publish landing pages | [S75] |
 | 9 Jul 2026 | OpenAI replaced ChatGPT's App Directory with a Plugin Directory; existing app connections carried on | [S90] |
 | 13 Jul 2026 | Custom assistants retired and moved into Breeze projects | [S33] |
 | 23 Jul 2026 | All AI agents now use credits; five agents retired; Agent Hub and Agent Builder in public beta | [S14][S15][S16] |
-| 25 Aug 2026 | Microsoft retired the PowerShell switch for federated connectors in favour of **Allowed agent types** | [S62] |
 | 31 Aug 2026 | Notetaker and video call recordings now only create meeting records | [S26] |
 | 15 Sep 2026 | MCP server and Claude connector expanded (custom objects, quotes beta, inbox conversations); Breeze Assistant can build agents (beta) and run scheduled prompts | [S74] |
 | 15 Sep 2026 | Google added HubSpot to Gemini in Workspace, on by default (post corrected 30 Sep) | [S65] |
@@ -883,123 +903,130 @@ HubSpot's help centre also has a page for a Lovable connector (an AI app builder
 | 16 Sep 2026 | ChatGPT Ads integration (beta) and a HubSpot and OpenAI "AI Growth Bundle" for new customers | [S46][S47] |
 | 16 Sep 2026 | New credit packs default to pay-as-you-go overage | [S11] |
 | 16 Sep 2026 | Customer agent voice billing began | [S19] |
-| 26 Sep 2026 | Eight Breeze Assistant app connectors retired | [S34] |
-| Early Oct 2026 | Microsoft began rolling out write actions for federated connectors | [S60] |
-| 16 Oct 2026 | Baseten, Bright Data and Exa Labs become HubSpot AI sub-processors, processing in the US | [S9] |
-| 31 Oct 2026 | Sign-up deadline for ChatGPT ad credits in the AI Growth Bundle; the offer page names US and EU advertisers | [S82] |
+| 15 Oct 2026 | HubSpot announced seat-to-credit swaps and spend controls switched on by default | [S96] |
+| 16 Oct 2026 | Baseten, Bright Data and Exa Labs became HubSpot AI sub-processors, processing in the US | [S9] |
+| 30 Oct 2026 | Public beta lets Super Admins give AI connectors read-only access to Sensitive Data | [S94] |
+| Not dated | HubSpot Agent for Copilot can create and update records (article updated 12 Nov 2026) | [S59] |
+| Not dated | Microsoft's federated connectors can create, update or delete data where a connector offers those tools (page dated 16 Nov 2026) | [S60] |
+| Not dated | Microsoft's admin control for federated connectors is now **Agent and plugin access** (page dated 15 Oct 2026) | [S62] |
 | Not dated | Commerce Hub renamed Revenue Hub | [S40] |
-| Not dated | Microsoft 365 Copilot renamed Microsoft Copilot (page dated 9 Jul 2026) | [S63] |
-| Not dated | Google renamed Gemini Alpha to Gemini Beta (page updated 13 Oct 2026) | [S69] |
+| Not dated | Microsoft's privacy page uses the name Microsoft Copilot (page dated 9 Jul 2026) | [S63] |
+| Not dated | Google renamed Gemini Alpha to Gemini Beta (page updated 16 Nov 2026) | [S69] |
 
 ## What we couldn't establish
 
 - **AUD prices.** We couldn't load HubSpot's AUD plan prices. The pages we read showed US dollars, and HubSpot's catalogue prices extra credits in US dollars only. [S39][S12][S13]
 - **Which ChatGPT plans can use the HubSpot plugin today.** OpenAI's pages say it depends on plan, workspace, role and region, and its HubSpot page lists no plans. [S85][S87] In 2025 HubSpot noted chat wasn't available on Plus. [S45] OpenAI's release notes show chat reached Plus on 11 August 2025, but no current OpenAI page names plans for it. [S90]
-- **Whether Starter can build custom agents.** HubSpot's Agent Hub article includes Starter [S1], and its setup guide lists Agent Builder from Starter up. [S4] Its Breeze Assistant article, news post and developer changelog say Professional or Enterprise. [S2][S16][S74]
-- **Trial lengths and plans for two agents.** The customer agent article says 14 days free [S17], but HubSpot's April news post said 28 days. [S42] The prospecting agent article includes Starter [S20], but the news post said Professional and Enterprise. [S42]
+- **Whether Starter can build custom agents.** HubSpot's Agent Hub article includes Starter [S1], and its setup guide lists Agent Builder from Starter up. [S4] HubSpot's Starter page lists Agent Builder too. [S39] Its Breeze Assistant article, news post and developer changelog say Professional or Enterprise. [S2][S16][S74]
+- **Trial lengths and plans for two agents.** The customer agent article says 14 days free [S17], but HubSpot's April news post said 28 days. [S42] The prospecting agent articles include Starter [S20][S92], but the news post said Professional and Enterprise. [S42] HubSpot's AI help index now lists a 14-day free access opt-in for the prospecting agent. [S84]
 - **How long Breeze Assistant keeps chats, memories and artifacts.** Not stated. [S2][S33]
 - **How HubSpot reaches Anthropic's models.** Its model cards list Claude models [S8], but Anthropic isn't on its sub-processor list. [S9]
 - **Whether connector traffic for Australian-hosted accounts stays in Sydney** before it reaches the AI vendor. HubSpot says it respects your data centre, with no Australia-specific detail. [S43][S48]
-- **Microsoft's HubSpot federated connector.** We couldn't find which HubSpot tools it exposes, whether write actions are live for HubSpot, which licence it needs, or whether HubSpot's approval step applies. [S60][S61]
+- **Microsoft's HubSpot federated connector.** We couldn't find which HubSpot tools it exposes, whether write actions are live for HubSpot, or whether HubSpot's approval step applies. [S60][S61]
+- **Claude and Sensitive Data.** HubSpot's Claude article (19 October) says Claude can't see engagement data when Sensitive Data is on. HubSpot's October developer rollup says a Super Admin can give Claude read-only access. [S48][S94]
+- **Whether AEO tracks Claude.** The AEO article lists ChatGPT, Gemini and Perplexity. HubSpot's MCP docs say AEO data includes answers from Claude too. [S29][S70]
 - **Removing the HubSpot Agent for Copilot.** HubSpot's article has no steps. [S59]
-- **Which Gemini rules apply now.** HubSpot's article (21 August) requires Gemini Alpha. Google's September launch says it's on by default for Gemini for Workspace users. [S64][S65][S69] We also couldn't confirm whether the Gemini Enterprise connector can write. [S68]
+- **Which Gemini rules apply now.** HubSpot's article (13 November) still requires Gemini Alpha, which Google now calls Gemini Beta. Google's September launch says it's on by default for Gemini for Workspace users. [S64][S65][S69] We also couldn't confirm whether the Gemini Enterprise connector can write. [S68]
 - **Revoking an MCP connector.** HubSpot's setup page doesn't cover it. [S70]
 - **Claude's Free plan.** HubSpot says a paid Claude plan is needed [S48], while Anthropic says directory connectors are available to all users. [S54] We didn't test it.
 - **Data enrichment and credits.** The enrichment article says no credits [S22]. HubSpot's setup guide marks the data enrichment permission as credit-using, which may be because it covers buyer intent too. [S4]
 - **Whether "Breeze Intelligence" is still sold under that name.** Current help articles don't use it. [S22]
 - **Australian availability of ChatGPT Ads and the AI Growth Bundle.** Neither page mentions Australia. [S47][S82]
 - **AI-specific certifications.** HubSpot's AI trust page mentions independent audits but names no AI standard such as ISO 42001. [S7]
-- **The Lovable connector.** It's a private beta, and HubSpot marks the page confidential. [S83]
+- **The Lovable connector.** It's a private beta, and HubSpot says the article is for beta participants only. [S83]
 - **Connectors for other AI assistants.** We didn't search separately for official HubSpot links to Perplexity, Mistral or other assistants. The HubSpot pages we read name only the four covered here. [S81]
+- **OpenAI's pages on 18 November.** We couldn't re-read OpenAI's HubSpot plugin page, its plugin listing or its five help centre articles, so the ChatGPT lines that rest on them are from 15 October. [S85][S86][S87][S88][S89][S90][S91]
 
 ## Sources
 
+Sources were read on 18 November 2026, except where a row shows an earlier date.
+
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
-| S1 | Understand Agent Hub (reached via the old "Understand Breeze" link, /ai/understand-breeze) | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/understand-agent-hub | 16 Sep 2026 | 15 Oct 2026 |
-| S2 | Use Breeze Assistant | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/use-breeze-assistant | 16 Sep 2026 | 15 Oct 2026 |
-| S3 | Manage AI settings | HubSpot Knowledge Base | https://knowledge.hubspot.com/account-management/manage-your-ai-settings | 8 Sep 2026 | 15 Oct 2026 |
-| S4 | Set up a HubSpot account to adopt AI features | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/set-up-a-hubspot-account-to-adopt-ai-features | 16 Sep 2026 | 15 Oct 2026 |
-| S5 | Understand HubSpot's AI model training | HubSpot Knowledge Base | https://knowledge.hubspot.com/account-management/hubspot-ai-mode-training | 8 Sep 2026 | 15 Oct 2026 |
-| S6 | HubSpot AI Cloud Infrastructure: Frequently Asked Questions | HubSpot Knowledge Base | https://knowledge.hubspot.com/account-security/hubspot-ai-cloud-infrastructure-frequently-asked-questions | 21 Jul 2026 | 15 Oct 2026 |
-| S7 | HubSpot's AI Trust and Safety | HubSpot | https://www.hubspot.com/products/artificial-intelligence/ai-trust | No date shown | 15 Oct 2026 |
-| S8 | HubSpot's AI Model Cards | HubSpot Trust Center | https://trust.hubspot.com/ai | No date shown | 15 Oct 2026 |
-| S9 | HubSpot Sub-Processors Page | HubSpot Legal | https://legal.hubspot.com/sub-processors-page | 16 Sep 2026 | 15 Oct 2026 |
-| S10 | HubSpot Cloud Infrastructure and Data Hosting: Frequently Asked Questions | HubSpot Knowledge Base | https://knowledge.hubspot.com/account-security/hubspot-cloud-infrastructure-and-data-hosting-frequently-asked-questions | 24 Jul 2026 | 15 Oct 2026 |
-| S11 | Manage HubSpot Credits | HubSpot Knowledge Base | https://knowledge.hubspot.com/account-management/understand-hubspot-credits-and-billing | 16 Sep 2026 | 15 Oct 2026 |
-| S12 | HubSpot Product & Services Catalog | HubSpot Legal | https://legal.hubspot.com/hubspot-product-and-services-catalog | No date shown | 15 Oct 2026 |
-| S13 | HubSpot Credits (Put HubSpot to work for you with credits) | HubSpot | https://www.hubspot.com/products/artificial-intelligence/credits | No date shown | 15 Oct 2026 |
-| S14 | Test and control agent credit usage | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/test-and-control-agent-credit-usage | 29 Sep 2026 | 15 Oct 2026 |
-| S15 | Install agents from the Agent Marketplace | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/install-agents-from-the-agent-marketplace | 16 Sep 2026 | 15 Oct 2026 |
-| S16 | Meet Agent Hub and Agent Builder: One place to build and manage AI agents with shared context | HubSpot Newsroom | https://www.hubspot.com/company-news/meet-agent-hub-and-agent-builder | Updated 23 Jul 2026 | 15 Oct 2026 |
-| S17 | Understand the customer agent | HubSpot Knowledge Base | https://knowledge.hubspot.com/customer-agent/understand-the-customer-agent | 16 Sep 2026 | 15 Oct 2026 |
-| S18 | Set up the customer agent | HubSpot Knowledge Base | https://knowledge.hubspot.com/customer-agent/set-up-the-customer-agent | 16 Sep 2026 | 15 Oct 2026 |
-| S19 | Set up customer agent voice | HubSpot Knowledge Base | https://knowledge.hubspot.com/calling/set-up-customer-agent-voice | 16 Sep 2026 | 15 Oct 2026 |
-| S20 | Set up and use the prospecting agent | HubSpot Knowledge Base | https://knowledge.hubspot.com/prospecting/use-the-prospecting-agent | 16 Sep 2026 | 15 Oct 2026 |
-| S21 | Set up and use the data agent | HubSpot Knowledge Base | https://knowledge.hubspot.com/data-management/use-data-agent | 13 Oct 2026 | 15 Oct 2026 |
-| S22 | Get started with data enrichment | HubSpot Knowledge Base | https://knowledge.hubspot.com/records/get-started-with-data-enrichment | 10 Jul 2026 | 15 Oct 2026 |
-| S23 | Manage data enrichment settings | HubSpot Knowledge Base | https://knowledge.hubspot.com/records/manage-data-enrichment-settings | 31 Jul 2026 | 15 Oct 2026 |
-| S24 | Generate and refine content with AI | HubSpot Knowledge Base | https://knowledge.hubspot.com/website-pages/generate-content-with-breeze | 10 Sep 2026 | 15 Oct 2026 |
-| S25 | Summarize a record | HubSpot Knowledge Base | https://knowledge.hubspot.com/records/summarize-records | 21 Sep 2026 | 15 Oct 2026 |
-| S26 | Record and take notes in meetings with Notetaker | HubSpot Knowledge Base | https://knowledge.hubspot.com/meetings-tool/record-and-take-notes-in-meetings-with-meeting-notetaker | 16 Sep 2026 | 15 Oct 2026 |
-| S27 | Move deals forward with deal progression | HubSpot Knowledge Base | https://knowledge.hubspot.com/records/move-deals-forward-with-deal-progression | 1 Oct 2026 | 15 Oct 2026 |
-| S28 | Create content with content agent | HubSpot Knowledge Base | https://knowledge.hubspot.com/website-and-landing-pages/create-content-with-content-agent | 16 Sep 2026 | 15 Oct 2026 |
-| S29 | Set up and analyze AEO | HubSpot Knowledge Base | https://knowledge.hubspot.com/seo/set-up-and-analyze-ai-visibility | 27 Aug 2026 | 15 Oct 2026 |
-| S30 | Set up and manage a knowledge base agent | HubSpot Knowledge Base | https://knowledge.hubspot.com/knowledge-base/create-a-knowledge-base-agent | 16 Sep 2026 | 15 Oct 2026 |
-| S31 | Build workflows using Breeze Assistant | HubSpot Knowledge Base | https://knowledge.hubspot.com/workflows/use-ai-assistants-in-workflows | 3 Aug 2026 | 15 Oct 2026 |
-| S32 | Manage AI context with knowledge vaults | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/manage-breeze-context-with-knowledge-vaults | 21 Aug 2026 | 15 Oct 2026 |
-| S33 | Create and manage projects in Breeze Assistant | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/create-and-manage-breeze-projects | 16 Sep 2026 | 15 Oct 2026 |
-| S34 | Search connected apps with Breeze Assistant | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai-tools/use-breeze-assistant-with-connected-apps | 28 Sep 2026 | 15 Oct 2026 |
-| S35 | Connect apps to HubSpot's AI agents | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/customize-breeze-agents-with-hubspot-mcp-client | 18 Sep 2026 | 15 Oct 2026 |
-| S36 | Store Sensitive Data in HubSpot | HubSpot Knowledge Base | https://knowledge.hubspot.com/account-security/store-sensitive-data | 8 Sep 2026 | 15 Oct 2026 |
-| S37 | Free AI Assistant for Every Team: HubSpot Breeze Assistant | HubSpot | https://www.hubspot.com/products/artificial-intelligence/breeze-ai-assistant | No date shown | 15 Oct 2026 |
-| S38 | Run, Build, and Manage Your AI Agents: Agent Hub | HubSpot | https://www.hubspot.com/products/artificial-intelligence | No date shown | 15 Oct 2026 |
-| S39 | HubSpot Starter: For Startups & Small Businesses | HubSpot | https://www.hubspot.com/products/crm/starter | No date shown | 15 Oct 2026 |
-| S40 | CPQ, Billing & Payments Software: HubSpot Revenue Hub | HubSpot | https://www.hubspot.com/products/revenue | No date shown | 15 Oct 2026 |
-| S41 | Fall 2026 Spotlight: HubSpot just made its most foundational product release | HubSpot Newsroom | https://www.hubspot.com/company-news/fall-26-spotlight | Updated 16 Sep 2026 | 15 Oct 2026 |
-| S42 | HubSpot's Customer Agent and Prospecting Agent: Now you pay when the task is complete | HubSpot Newsroom | https://www.hubspot.com/company-news/hubspots-customer-agent-and-prospecting-agent-now-you-pay-when-the-task-is-complete | Updated 13 Apr 2026 | 15 Oct 2026 |
-| S43 | Set up and use the HubSpot connector for ChatGPT | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/connect-your-hubspot-account-to-chatgpt | 28 Sep 2026 | 15 Oct 2026 |
-| S44 | HubSpot launches first CRM deep research connector with ChatGPT | HubSpot Newsroom | https://www.hubspot.com/company-news/hubspot-deep-research-connector-for-chatgpt | Updated 4 Jun 2025 | 15 Oct 2026 |
-| S45 | Expanding the HubSpot connector for ChatGPT | HubSpot Developer Changelog | https://developers.hubspot.com/changelog/hubspot-connector-chatgpt | 24 Jul 2025 | 15 Oct 2026 |
-| S46 | HubSpot and OpenAI deepen partnership to bring AI transformation to every SMB | HubSpot Newsroom | https://www.hubspot.com/company-news/hubspot-and-openai-deepen-partnership | Updated 16 Sep 2026 | 15 Oct 2026 |
-| S47 | Connect and manage ChatGPT Ads account in HubSpot | HubSpot Knowledge Base | https://knowledge.hubspot.com/connect-and-manage-chatgpt-ads-account-in-hubspot | 15 Sep 2026 | 15 Oct 2026 |
-| S48 | Set up and use the HubSpot connector for Claude | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/set-up-and-use-the-hubspot-connector-for-claude | 17 Sep 2026 | 15 Oct 2026 |
-| S49 | HubSpot launches first CRM connector for Anthropic's Claude | HubSpot Newsroom | https://www.hubspot.com/company-news/hubspot-connector-claude | Updated 29 Jul 2025 | 15 Oct 2026 |
-| S50 | Take Action With Claude: Update CRM Records and Access Engagement History | HubSpot Developer Changelog | https://developers.hubspot.com/changelog/claude-write-access-to-crm | 20 Nov 2025 | 15 Oct 2026 |
-| S51 | Get started with connectors | Anthropic (Claude docs) | https://claude.com/docs/connectors/getting-started | No date shown | 15 Oct 2026 |
-| S52 | Connectors directory | Anthropic (Claude docs) | https://claude.com/docs/connectors/directory | No date shown | 15 Oct 2026 |
-| S53 | HubSpot connector (Claude directory listing) | Anthropic | https://claude.com/connectors/hubspot | No date shown (listing says added November 2025) | 15 Oct 2026 |
-| S54 | Use connectors to extend Claude's capabilities | Anthropic Help Center | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated over 2 weeks ago" (no calendar date) | 15 Oct 2026 |
-| S55 | Is my data used for model training? (commercial products) | Anthropic Privacy Center | https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training | 18 Aug 2026 | 15 Oct 2026 |
-| S56 | How do I change my model improvement privacy settings? | Anthropic Privacy Center | https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings | 3 Aug 2026 | 15 Oct 2026 |
-| S57 | Connect HubSpot (Claude Tag) | Anthropic (Claude docs) | https://claude.com/docs/claude-tag/admins/connections/hubspot | No date shown | 15 Oct 2026 |
-| S58 | Introducing Claude for Small Business | Anthropic | https://www.anthropic.com/news/claude-for-small-business | 13 May 2026 | 15 Oct 2026 |
-| S59 | Set up and use the HubSpot Agent for Copilot | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/set-up-and-use-the-hubspot-agent-for-copilot | 24 Sep 2026 | 15 Oct 2026 |
-| S60 | Federated connectors overview: Microsoft 365 Copilot connectors | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | 30 Sep 2026 | 15 Oct 2026 |
-| S61 | Microsoft-built connectors gallery: Microsoft 365 Copilot connectors | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft | 30 Sep 2026 | 15 Oct 2026 |
-| S62 | Manage federated connector availability | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/manage-federated-connectors | 28 Apr 2026 | 15 Oct 2026 |
-| S63 | Data, Privacy, and Security for Microsoft Copilot | Microsoft Learn | https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy | 9 Jul 2026 | 15 Oct 2026 |
-| S64 | Set up and use the HubSpot connector for Gemini | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/set-up-and-use-hubspot-connector-for-gemini | 21 Aug 2026 | 15 Oct 2026 |
-| S65 | Connect to more tools with Gemini in Google Workspace | Google Workspace Updates | https://workspaceupdates.googleblog.com/2026/09/connect-to-more-tools-with-gemini-in-Google-Workspace.html | 15 Sep 2026 (corrected 30 Sep 2026) | 15 Oct 2026 |
-| S66 | Use integrations with Gemini in Workspace | Google Docs Editors Help | https://support.google.com/docs/answer/16796422?hl=en | No date shown | 15 Oct 2026 |
-| S67 | HubSpot Integration (Google Workspace Marketplace listing) | Google | https://workspace.google.com/marketplace/app/hubspot_integration/584788731981 | 26 Aug 2026 | 15 Oct 2026 |
-| S68 | Connect your Google apps and third-party data (Gemini Enterprise) | Google | https://support.google.com/g/answer/16550932?hl=en | 16 Sep 2026 | 15 Oct 2026 |
-| S69 | Turn access to Google Workspace with Gemini Beta on or off | Google Workspace Help | https://knowledge.workspace.google.com/admin/gemini/turn-access-to-google-workspace-with-gemini-alpha-on-or-off | 13 Oct 2026 | 15 Oct 2026 |
-| S70 | Integrate AI tools with the HubSpot MCP server | HubSpot Developer Docs | https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server | No date shown | 15 Oct 2026 |
-| S71 | Using the HubSpot MCP server | HubSpot Developer Docs | https://developers.hubspot.com/docs/build-with-ai/remote-mcp-server | No date shown | 15 Oct 2026 |
-| S72 | HubSpot MCP Server | HubSpot Developers | https://developers.hubspot.com/ai-tools/mcp | No date shown | 15 Oct 2026 |
-| S73 | Spring 2026 Spotlight | HubSpot Developer Changelog | https://developers.hubspot.com/changelog/spring-2026-spotlight | 14 Apr 2026 | 15 Oct 2026 |
-| S74 | Fall 2026 Spotlight: Developer / Builder Updates | HubSpot Developer Changelog | https://developers.hubspot.com/changelog/fall-2026-spotlight | 15 Sep 2026 | 15 Oct 2026 |
-| S75 | Developer updates for June 2026 | HubSpot Developer Changelog | https://developers.hubspot.com/changelog/june-2026-rollup | 29 Jun 2026 | 15 Oct 2026 |
-| S76 | Public Beta: Self-Service MCP Auth Apps for the HubSpot Remote MCP Server | HubSpot Developer Changelog | https://developers.hubspot.com/changelog/public-beta-self-service-mcp-auth-apps-for-the-hubspot-remote-mcp-server | 20 Jan 2026 | 15 Oct 2026 |
-| S77 | Set up the developer MCP server | HubSpot Developer Docs | https://developers.hubspot.com/docs/developer-tooling/local-development/developer-mcp/setup | No date shown | 15 Oct 2026 |
-| S78 | Use the HubSpot Agent CLI | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/use-the-hubspot-agent-cli | 26 Aug 2026 | 15 Oct 2026 |
-| S79 | Create and use custom LLM workflow actions | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/create-and-use-custom-llm-workflow-actions | 15 Jul 2026 | 15 Oct 2026 |
-| S80 | Manage access to apps | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/manage-access-to-ai-connectors | 10 Sep 2026 | 15 Oct 2026 |
-| S81 | Your HubSpot context in every AI tool | HubSpot | https://www.hubspot.com/ai-tools | No date shown | 15 Oct 2026 |
-| S82 | AI Growth Bundle offer page | HubSpot | https://offers.hubspot.com/ai-growth-bundle | No date shown | 15 Oct 2026 |
-| S83 | Build apps with the HubSpot connector for Lovable (private beta, marked confidential; don't publish details) | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/hubspot-connector-for-lovable | 15 Sep 2026 | 15 Oct 2026 |
-| S84 | AI Topics (index of HubSpot's AI help articles) | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/topics | No date shown | 15 Oct 2026 |
+| S1 | Understand Agent Hub (reached via the old "Understand Breeze" link, /ai/understand-breeze) | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/understand-agent-hub | 1 Oct 2026 | 18 Nov 2026 |
+| S2 | Use Breeze Assistant | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/use-breeze-assistant | 4 Nov 2026 | 18 Nov 2026 |
+| S3 | Manage AI settings | HubSpot Knowledge Base | https://knowledge.hubspot.com/account-management/manage-your-ai-settings | 8 Sep 2026 | 18 Nov 2026 |
+| S4 | Set up a HubSpot account to adopt AI features | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/set-up-a-hubspot-account-to-adopt-ai-features | 29 Oct 2026 | 18 Nov 2026 |
+| S5 | Understand HubSpot's AI model training | HubSpot Knowledge Base | https://knowledge.hubspot.com/account-management/hubspot-ai-mode-training | 8 Sep 2026 | 18 Nov 2026 |
+| S6 | HubSpot AI Cloud Infrastructure: Frequently Asked Questions | HubSpot Knowledge Base | https://knowledge.hubspot.com/account-security/hubspot-ai-cloud-infrastructure-frequently-asked-questions | 21 Jul 2026 | 18 Nov 2026 |
+| S7 | HubSpot's AI Trust and Safety | HubSpot | https://www.hubspot.com/products/artificial-intelligence/ai-trust | No date shown | 18 Nov 2026 |
+| S8 | HubSpot's AI Model Cards | HubSpot Trust Center | https://trust.hubspot.com/ai | No date shown | 18 Nov 2026 |
+| S9 | HubSpot Sub-Processors Page | HubSpot Legal | https://legal.hubspot.com/sub-processors-page | 16 Sep 2026 | 18 Nov 2026 |
+| S10 | HubSpot Cloud Infrastructure and Data Hosting: Frequently Asked Questions | HubSpot Knowledge Base | https://knowledge.hubspot.com/account-security/hubspot-cloud-infrastructure-and-data-hosting-frequently-asked-questions | 24 Jul 2026 | 18 Nov 2026 |
+| S11 | Manage HubSpot Credits | HubSpot Knowledge Base | https://knowledge.hubspot.com/account-management/understand-hubspot-credits-and-billing | 12 Nov 2026 | 18 Nov 2026 |
+| S12 | HubSpot Product & Services Catalog | HubSpot Legal | https://legal.hubspot.com/hubspot-product-and-services-catalog | No date shown | 18 Nov 2026 |
+| S13 | HubSpot Credits (Put HubSpot to work for you with credits) | HubSpot | https://www.hubspot.com/products/artificial-intelligence/credits | No date shown | 18 Nov 2026 |
+| S14 | Test and control agent credit usage | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/test-and-control-agent-credit-usage | 21 Oct 2026 | 18 Nov 2026 |
+| S15 | Install agents from the Agent Marketplace | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/install-agents-from-the-agent-marketplace | 16 Sep 2026 | 18 Nov 2026 |
+| S16 | Meet Agent Hub and Agent Builder: One place to build and manage AI agents with shared context | HubSpot Newsroom | https://www.hubspot.com/company-news/meet-agent-hub-and-agent-builder | Updated 23 Jul 2026 | 18 Nov 2026 |
+| S17 | Understand the customer agent | HubSpot Knowledge Base | https://knowledge.hubspot.com/customer-agent/understand-the-customer-agent | 16 Sep 2026 | 18 Nov 2026 |
+| S18 | Set up the customer agent | HubSpot Knowledge Base | https://knowledge.hubspot.com/customer-agent/set-up-the-customer-agent | 26 Oct 2026 | 18 Nov 2026 |
+| S19 | Set up customer agent voice | HubSpot Knowledge Base | https://knowledge.hubspot.com/calling/set-up-customer-agent-voice | 17 Sep 2026 | 18 Nov 2026 |
+| S20 | Enroll contacts to prospecting agent (formerly "Set up and use the prospecting agent") | HubSpot Knowledge Base | https://knowledge.hubspot.com/prospecting/use-the-prospecting-agent | 16 Nov 2026 | 18 Nov 2026 |
+| S21 | Set up and use the data agent | HubSpot Knowledge Base | https://knowledge.hubspot.com/data-management/use-data-agent | 13 Oct 2026 | 18 Nov 2026 |
+| S22 | Get started with data enrichment | HubSpot Knowledge Base | https://knowledge.hubspot.com/records/get-started-with-data-enrichment | 10 Jul 2026 | 18 Nov 2026 |
+| S23 | Manage data enrichment settings | HubSpot Knowledge Base | https://knowledge.hubspot.com/records/manage-data-enrichment-settings | 8 Oct 2026 | 18 Nov 2026 |
+| S24 | Generate and refine content with AI | HubSpot Knowledge Base | https://knowledge.hubspot.com/website-pages/generate-content-with-breeze | 2 Nov 2026 | 18 Nov 2026 |
+| S25 | Summarize a record | HubSpot Knowledge Base | https://knowledge.hubspot.com/records/summarize-records | 21 Sep 2026 | 18 Nov 2026 |
+| S26 | Record and take notes in meetings with Notetaker | HubSpot Knowledge Base | https://knowledge.hubspot.com/meetings-tool/record-and-take-notes-in-meetings-with-meeting-notetaker | 19 Oct 2026 | 18 Nov 2026 |
+| S27 | Move deals forward with deal progression | HubSpot Knowledge Base | https://knowledge.hubspot.com/records/move-deals-forward-with-deal-progression | 12 Oct 2026 | 18 Nov 2026 |
+| S28 | Create content with content agent | HubSpot Knowledge Base | https://knowledge.hubspot.com/website-and-landing-pages/create-content-with-content-agent | 12 Oct 2026 | 18 Nov 2026 |
+| S29 | Set up and analyze AEO | HubSpot Knowledge Base | https://knowledge.hubspot.com/seo/set-up-and-analyze-ai-visibility | 2 Oct 2026 | 18 Nov 2026 |
+| S30 | Set up and manage a knowledge base agent | HubSpot Knowledge Base | https://knowledge.hubspot.com/knowledge-base/create-a-knowledge-base-agent | 14 Oct 2026 | 18 Nov 2026 |
+| S31 | Build workflows using Breeze Assistant | HubSpot Knowledge Base | https://knowledge.hubspot.com/workflows/use-ai-assistants-in-workflows | 2 Oct 2026 | 18 Nov 2026 |
+| S32 | Manage AI context with knowledge vaults | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/manage-breeze-context-with-knowledge-vaults | 6 Nov 2026 | 18 Nov 2026 |
+| S33 | Create and manage projects in Breeze Assistant | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/create-and-manage-breeze-projects | 21 Oct 2026 | 18 Nov 2026 |
+| S34 | Search connected apps with Breeze Assistant | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai-tools/use-breeze-assistant-with-connected-apps | 5 Nov 2026 | 18 Nov 2026 |
+| S35 | Connect apps to HubSpot's AI agents | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/customize-breeze-agents-with-hubspot-mcp-client | 16 Oct 2026 | 18 Nov 2026 |
+| S36 | Store Sensitive Data in HubSpot | HubSpot Knowledge Base | https://knowledge.hubspot.com/account-security/store-sensitive-data | 12 Nov 2026 | 18 Nov 2026 |
+| S37 | Free AI Assistant for Every Team: HubSpot Breeze Assistant | HubSpot | https://www.hubspot.com/products/artificial-intelligence/breeze-ai-assistant | No date shown | 18 Nov 2026 |
+| S38 | Run, Build, and Manage Your AI Agents: Agent Hub | HubSpot | https://www.hubspot.com/products/artificial-intelligence | No date shown | 18 Nov 2026 |
+| S39 | HubSpot Starter: For Startups & Small Businesses | HubSpot | https://www.hubspot.com/products/crm/starter | No date shown | 18 Nov 2026 |
+| S40 | CPQ, Billing & Payments Software: HubSpot Revenue Hub | HubSpot | https://www.hubspot.com/products/revenue | No date shown | 18 Nov 2026 |
+| S41 | Fall 2026 Spotlight: HubSpot just made its most foundational product release | HubSpot Newsroom | https://www.hubspot.com/company-news/fall-26-spotlight | Updated 16 Sep 2026 | 18 Nov 2026 |
+| S42 | HubSpot's Customer Agent and Prospecting Agent: Now you pay when the task is complete | HubSpot Newsroom | https://www.hubspot.com/company-news/hubspots-customer-agent-and-prospecting-agent-now-you-pay-when-the-task-is-complete | Updated 13 Apr 2026 | 18 Nov 2026 |
+| S43 | Set up and use the HubSpot connector for ChatGPT | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/connect-your-hubspot-account-to-chatgpt | 12 Nov 2026 | 18 Nov 2026 |
+| S44 | HubSpot launches first CRM deep research connector with ChatGPT | HubSpot Newsroom | https://www.hubspot.com/company-news/hubspot-deep-research-connector-for-chatgpt | Updated 4 Jun 2025 | 18 Nov 2026 |
+| S45 | Expanding the HubSpot connector for ChatGPT | HubSpot Developer Changelog | https://developers.hubspot.com/changelog/hubspot-connector-chatgpt | 24 Jul 2025 | 18 Nov 2026 |
+| S46 | HubSpot and OpenAI deepen partnership to bring AI transformation to every SMB | HubSpot Newsroom | https://www.hubspot.com/company-news/hubspot-and-openai-deepen-partnership | Updated 16 Sep 2026 | 18 Nov 2026 |
+| S47 | Connect and manage ChatGPT Ads account in HubSpot | HubSpot Knowledge Base | https://knowledge.hubspot.com/connect-and-manage-chatgpt-ads-account-in-hubspot | 15 Oct 2026 | 18 Nov 2026 |
+| S48 | Set up and use the HubSpot connector for Claude | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/set-up-and-use-the-hubspot-connector-for-claude | 19 Oct 2026 | 18 Nov 2026 |
+| S49 | HubSpot launches first CRM connector for Anthropic's Claude | HubSpot Newsroom | https://www.hubspot.com/company-news/hubspot-connector-claude | Updated 29 Jul 2025 | 18 Nov 2026 |
+| S50 | Take Action With Claude: Update CRM Records and Access Engagement History | HubSpot Developer Changelog | https://developers.hubspot.com/changelog/claude-write-access-to-crm | 20 Nov 2025 | 18 Nov 2026 |
+| S51 | Get started with connectors | Anthropic (Claude docs) | https://claude.com/docs/connectors/getting-started | No date shown | 18 Nov 2026 |
+| S52 | Connectors directory | Anthropic (Claude docs) | https://claude.com/docs/connectors/directory | No date shown | 18 Nov 2026 |
+| S53 | HubSpot connector (Claude directory listing) | Anthropic | https://claude.com/connectors/hubspot | No date shown (listing says added November 2025) | 18 Nov 2026 |
+| S54 | Use connectors to extend Claude's capabilities | Anthropic Help Center | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated today" (18 Nov 2026) | 18 Nov 2026 |
+| S55 | Is my data used for model training? (commercial products) | Anthropic Privacy Center | https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training | 18 Aug 2026 | 18 Nov 2026 |
+| S56 | How do I change my model improvement privacy settings? | Anthropic Privacy Center | https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings | 3 Aug 2026 | 18 Nov 2026 |
+| S57 | Connect HubSpot (Claude Tag) | Anthropic (Claude docs) | https://claude.com/docs/claude-tag/admins/connections/hubspot | No date shown | 18 Nov 2026 |
+| S58 | Introducing Claude for Small Business | Anthropic | https://www.anthropic.com/news/claude-for-small-business | 13 May 2026 | 18 Nov 2026 |
+| S59 | Set up and use the HubSpot Agent for Copilot | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/set-up-and-use-the-hubspot-agent-for-copilot | 12 Nov 2026 | 18 Nov 2026 |
+| S60 | Federated connectors overview: Microsoft 365 Copilot connectors | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | 16 Nov 2026 | 18 Nov 2026 |
+| S61 | Microsoft-built connectors gallery: Microsoft 365 Copilot connectors | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft | 16 Nov 2026 | 18 Nov 2026 |
+| S62 | Manage federated connector availability | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/manage-federated-connectors | 15 Oct 2026 | 18 Nov 2026 |
+| S63 | Data, Privacy, and Security for Microsoft Copilot | Microsoft Learn | https://learn.microsoft.com/en-us/copilot/plan/microsoft-365-copilot-privacy | 9 Jul 2026 | 18 Nov 2026 |
+| S64 | Set up and use the HubSpot connector for Gemini | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/set-up-and-use-hubspot-connector-for-gemini | 13 Nov 2026 | 18 Nov 2026 |
+| S65 | Connect to more tools with Gemini in Google Workspace | Google Workspace Updates | https://workspaceupdates.googleblog.com/2026/09/connect-to-more-tools-with-gemini-in-Google-Workspace.html | 15 Sep 2026 (corrected 30 Sep 2026) | 18 Nov 2026 |
+| S66 | Use connectors with Gemini in Workspace | Google Docs Editors Help | https://support.google.com/docs/answer/16796422?hl=en | No date shown | 18 Nov 2026 |
+| S67 | HubSpot Connector (Google Workspace Marketplace listing, formerly "HubSpot Integration") | Google | https://workspace.google.com/marketplace/app/hubspot_integration/584788731981 | 30 Oct 2026 | 18 Nov 2026 |
+| S68 | Connect your Google apps and third-party data (Gemini Enterprise) | Google | https://support.google.com/g/answer/16550932?hl=en | 15 Oct 2026 | 18 Nov 2026 |
+| S69 | Turn access to Google Workspace with Gemini Beta on or off | Google Workspace Help | https://knowledge.workspace.google.com/admin/gemini/turn-access-to-google-workspace-with-gemini-alpha-on-or-off | 16 Nov 2026 | 18 Nov 2026 |
+| S70 | Integrate AI tools with the HubSpot MCP server | HubSpot Developer Docs | https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server | No date shown | 18 Nov 2026 |
+| S71 | Using the HubSpot MCP server | HubSpot Developer Docs | https://developers.hubspot.com/docs/build-with-ai/remote-mcp-server | No date shown | 18 Nov 2026 |
+| S72 | HubSpot MCP Server | HubSpot Developers | https://developers.hubspot.com/ai-tools/mcp | No date shown | 18 Nov 2026 |
+| S73 | Spring 2026 Spotlight | HubSpot Developer Changelog | https://developers.hubspot.com/changelog/spring-2026-spotlight | 14 Apr 2026 (last updated 15 Apr 2026) | 18 Nov 2026 |
+| S74 | Fall 2026 Spotlight: Developer / Builder Updates | HubSpot Developer Changelog | https://developers.hubspot.com/changelog/fall-2026-spotlight | 15 Sep 2026 | 18 Nov 2026 |
+| S75 | Developer updates for June 2026 | HubSpot Developer Changelog | https://developers.hubspot.com/changelog/june-2026-rollup | 29 Jun 2026 | 18 Nov 2026 |
+| S76 | Public Beta: Self-Service MCP Auth Apps for the HubSpot Remote MCP Server | HubSpot Developer Changelog | https://developers.hubspot.com/changelog/public-beta-self-service-mcp-auth-apps-for-the-hubspot-remote-mcp-server | 20 Jan 2026 | 18 Nov 2026 |
+| S77 | Set up the developer MCP server | HubSpot Developer Docs | https://developers.hubspot.com/docs/developer-tooling/local-development/developer-mcp/setup | No date shown | 18 Nov 2026 |
+| S78 | Use the HubSpot Agent CLI | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/use-the-hubspot-agent-cli | 29 Sep 2026 | 18 Nov 2026 |
+| S79 | Create and use custom LLM workflow actions | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/create-and-use-custom-llm-workflow-actions | 15 Jul 2026 | 18 Nov 2026 |
+| S80 | Manage access to apps | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/manage-access-to-ai-connectors | 20 Oct 2026 | 18 Nov 2026 |
+| S81 | Your HubSpot context in every AI tool | HubSpot | https://www.hubspot.com/ai-tools | No date shown | 18 Nov 2026 |
+| S82 | AI Growth Bundle: HubSpot and ChatGPT (offer page) | HubSpot | https://offers.hubspot.com/ai-growth-bundle | No date shown | 18 Nov 2026 |
+| S83 | Build apps with the HubSpot connector for Lovable (private beta, for participants only; don't publish details) | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/hubspot-connector-for-lovable | 5 Nov 2026 | 18 Nov 2026 |
+| S84 | AI Topics (index of HubSpot's AI help articles) | HubSpot Knowledge Base | https://knowledge.hubspot.com/ai/topics | No date shown | 18 Nov 2026 |
 | S85 | HubSpot plugin for ChatGPT | OpenAI | https://openai.com/business/plugins/hubspot/ | No date shown | 15 Oct 2026 |
 | S86 | HubSpot (ChatGPT plugin listing) | OpenAI | https://chatgpt.com/plugins/plugin_asdk_app_697acb8e53d88191bf7a79e62012ae14 | No date shown; version 6.0.0 | 15 Oct 2026 |
 | S87 | Connected apps in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt | "Updated: 4 days ago" (11 Oct 2026, UTC) | 15 Oct 2026 |
@@ -1007,3 +1034,8 @@ HubSpot's help centre also has a page for a Lovable connector (an AI app builder
 | S89 | Admin controls, security, and compliance for plugins and apps | OpenAI Help Center | https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps | "Updated: 17 hours ago" (14 Oct 2026, UTC) | 15 Oct 2026 |
 | S90 | ChatGPT release notes | OpenAI Help Center | https://help.openai.com/en/articles/6825453-chatgpt-release-notes | "Updated: 6 days ago" (9 Oct 2026, UTC) | 15 Oct 2026 |
 | S91 | Managing app permissions in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001495-managing-app-permissions-in-chatgpt | "Updated: 13 days ago" (2 Oct 2026, UTC) | 15 Oct 2026 |
+| S92 | Configure prospecting agent | HubSpot Knowledge Base | https://knowledge.hubspot.com/prospecting/configure-prospecting-agent | 16 Nov 2026 | 18 Nov 2026 |
+| S93 | Manage prospecting agent settings | HubSpot Knowledge Base | https://knowledge.hubspot.com/prospecting/manage-prospecting-agent-settings | 16 Nov 2026 | 18 Nov 2026 |
+| S94 | October 2026 Rollup | HubSpot Developer Changelog | https://developers.hubspot.com/changelog/october-2026-rollup | 30 Oct 2026 | 18 Nov 2026 |
+| S95 | Send landing pages from Claude Design to HubSpot | HubSpot Knowledge Base | https://knowledge.hubspot.com/integrations/send-landing-pages-from-claude-design-to-hubspot | 26 Aug 2026 | 18 Nov 2026 |
+| S96 | HubSpot gives customers more control of their AI spend with new spend caps, seat-to-credit swaps, and flex payment options | HubSpot Newsroom | https://www.hubspot.com/company-news/flexible-pricing | Updated 15 Oct 2026 | 18 Nov 2026 |

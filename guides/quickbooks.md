@@ -1,40 +1,41 @@
 # QuickBooks: the AI inside it, and the AI that connects to it
 
-Researched 17 October 2026 from vendor documentation. Every line is tagged with its source.
+Researched 18 November 2026 from vendor documentation. Every line is tagged with its source.
 
 ## The short version
 
-- QuickBooks' built-in AI is called Intuit Intelligence. On Australian plans it includes a chat and AI helpers called Accounting AI, GST AI, Customer AI, Finance AI and Project Management AI. [S1] [S4]
-- Intuit says its AI features cost nothing extra for now. The chat is in beta and only admin users get the full version. The number of questions each month is capped. [S1] [S18]
+- QuickBooks' built-in AI is called Intuit Intelligence. On Australian plans it includes a chat and AI helpers called Accounting AI, GST AI, Customer AI, Finance AI and Project Management AI. [S4] [S3]
+- The chat is in beta and only admin users get the full version. The number of questions each month is capped. [S3] [S18]
+- The regular plan prices on Intuit's Australian pricing page are higher than when we checked on 17 October 2026. Simple Start is now $35.99 a month and Advanced is $138. [S1]
 - GST AI checks your BAS figures before you lodge and suggests fixes. Intuit says it never changes a transaction or lodges anything itself. [S13] [S14]
 - Accounting AI suggests how to code bank transactions, and nothing is posted until you or your adviser approve it. Intuit says you can't turn AI features off one at a time. [S12] [S19]
-- Official QuickBooks connections exist for Claude, ChatGPT and Gemini, but all three are for US customers only for now. [S36] [S47] [S57]
-- The Claude and ChatGPT connections can also create and send invoices. Intuit describes confirmation steps for some actions, such as deleting an invoice or sending a payment reminder. [S36] [S46]
-- We found no official QuickBooks connection for Microsoft Copilot. [S54] [S55] [S56]
+- Official QuickBooks connections exist for Claude, ChatGPT, Microsoft Copilot and Gemini, but all four are for US customers only for now. [S36] [S47] [S65] [S57]
+- The Claude, ChatGPT and Copilot connections can also create and send invoices. Intuit and Microsoft describe confirmation steps for some actions, such as deleting an invoice or sending a payment reminder. [S36] [S46] [S65]
+- The Copilot plugin is new since our October check. Microsoft's listing says "This app is available in the United States." [S65] [S55]
 - Intuit's privacy statement says it may use personal information to train its own AI models. Intuit says its agreements stop OpenAI and Anthropic training their models on customer data. [S29] [S31]
 - Intuit may store and process personal information in the United States and other countries outside Australia. [S29] [S32]
 - For accountants, QuickBooks Online Accountant retires on 31 December 2026. Its replacement, Intuit Accountant Suite, carries the AI tools and is in beta. [S7]
 
 ## The tool, and the plans that matter
 
-QuickBooks Online is Intuit's online accounting software. In Australia it's sold by Intuit Australia Pty Ltd, and the plans are priced in AUD including GST. [S1] [S32]
+QuickBooks Online is Intuit's online accounting software. In Australia it's sold by Intuit Australia Pty Ltd, and Intuit's Australian terms say you're billed in Australian dollars. [S32]
 
-Intuit says QuickBooks has 7 million customers globally. Its Australian pricing page gives no figure for Australia. [S1]
+These are the regular monthly prices on the Australian pricing page as read on 18 November 2026. The page's own data gives them in AUD. [S1]
 
-These are the regular monthly prices on the Australian pricing page as read on 17 October 2026. [S1]
-
-| Plan | Price a month (AUD, incl. GST) | Users | AI the pricing page lists |
+| Plan | Price a month (AUD) | Users | AI the pricing page lists |
 |---|---|---|---|
-| Simple Start | $33 | 1, plus access for your accountant | Intuit Intelligence chat (beta, limited questions a month), Accounting AI, GST AI pre-lodgement check |
-| Essentials | $60 | 3, plus access for your accountant | As Simple Start, plus Accounting AI for sharing information with your accountant |
-| Plus | $84 | 5, plus access for your accountant | As Essentials, plus Accounting AI that "Finds and fixes errors" and Customer AI |
-| Advanced | $125 | 25, plus access for your accountant | As Plus, plus Finance AI, Project Management AI and workflow automation |
+| Simple Start | $35.99 | 1, plus access for your accountant | Chat for instant insights (beta, limited queries a month), smart expense organisation, custom automations (beta, limited capacity a month) |
+| Essentials | $66 | 3, plus access for your accountant | As Simple Start, plus AI-powered collaboration with your accountant and creating invoices in bulk (beta, limited capacity a month) |
+| Plus | $89.99 | 5, plus access for your accountant | As Essentials, plus AI insights and anomaly detection, and AI to source leads and automate follow-ups |
+| Advanced | $138 | 25, plus access for your accountant | As Plus, plus tailored financial insights, auto-created projects and workflow automation |
 
-Sources for the table: [S1]
+Sources for the table: [S1] [S3]
 
-- The pricing details say "All prices are in AUD and include GST." [S1]
-- New subscribers were offered 70% off, which makes the plans $9.90, $18, $25.20 and $37.50 a month. The banner says the discount lasts 6 months, but the offer terms on the same page say 3 months, with full price from month 4. [S1]
-- There's a 30-day free trial. QuickBooks Payroll, powered by Employment Hero, is charged separately for each active employee. [S1]
+- The pricing page doesn't say whether these prices include GST. [S1]
+- New subscribers paying monthly are offered 70% off for 6 months, which makes the plans $10.80, $19.80, $26.99 and $41.39 a month. After that the then-current monthly price applies. [S1]
+- Paying yearly, the offer is 50% off for 12 months: $194, $355.99, $485.99 and $745 for the first year, then $387.99, $712, $971.99 and $1,489.99 a year. [S1]
+- There's a 30-day free trial, but taking a discount means you can't have the trial. [S1]
+- Payroll Standard is "Included with every QuickBooks plan", with a charge of $6.81 per employee for each pay run. Payroll Advanced is $14.99 a month plus the same charge. Intuit's Australian terms call it QuickBooks Payroll powered by Employment Hero. [S1] [S32]
 - Finance AI is on Advanced only. It isn't available to businesses with multi-currency turned on. [S1]
 - Intuit's US help describes AI that Australian plans don't list. Its Payments AI is "only available to customers in the US". [S24] [S4]
 - Intuit's US launch in October 2025 also named a Payroll Agent and a Sales Tax Agent. The Australian AI page doesn't list either. [S27] [S4]
@@ -43,18 +44,18 @@ Sources for the table: [S1]
 
 - Intuit Accountant Suite is Intuit's platform for firms. One sign-in reaches every client's QuickBooks data. [S7]
 - Intuit says QuickBooks Online Accountant retires on 31 December 2026, and asks firms to move to Intuit Accountant Suite. [S7] [S16]
-- Intuit Intelligence chat isn't available in QuickBooks Online Accountant. [S1] [S16]
+- Intuit Intelligence chat isn't available in QuickBooks Online Accountant. [S16]
 - Core has no monthly fee. Accelerate is free during the beta, then A$113 a month from 20 January 2027, including GST. You can opt out at any time. [S7]
-- Intuit says the free beta for Accelerate and Books Close ends on 19 January 2027. [S7]
-- Books Close is a separate subscription that's free during the beta and charged after it. We didn't find its price. [S1] [S16]
-- The accountant page says a 50% discount applies to Accelerate and Books Close for the first 12 months. The pricing page's terms describe 50% off for the first 6 months, for new subscribers and firms moving from QuickBooks Online Accountant. [S7] [S1]
+- Intuit says the free beta for Accelerate has been extended through 20 January 2027. Its FAQ says the first charge comes on the firm's next regular billing date after 21 January 2027. [S7]
+- The accountant page lists Books Close Manual, in beta, among Accelerate's features. Intuit's May 2026 blog said Books Close was free during the beta. We didn't find a separate price for it. [S7] [S16]
+- The accountant page says a 50% discount applies automatically to Accelerate for the first 12 months. [S7]
 - A May 2026 Intuit blog said firms would be charged from 1 August 2026. The current pages say 20 January 2027. [S16] [S7]
 
 ## AI built in
 
-Intuit's Australian site describes Intuit Intelligence as "the engine that powers AI in your QuickBooks". Through the chat, it says, "you can ask any question and have AI complete tasks for you." [S2]
+Intuit's Australian site describes Intuit Intelligence as "the engine that powers AI in your QuickBooks". Through the chat, it says, "you can ask any question and have AI complete tasks for you." [S3]
 
-Intuit's older name, Intuit Assist, still appears on a US Intuit page and in some Australian help article addresses. [S28] [S18]
+Intuit's older name, Intuit Assist, still appears on a US Intuit page, in an FAQ on the Australian home page and in some Australian help article addresses. [S28] [S2] [S18]
 
 Intuit says the platform uses "large language models for reasoning, machine learning for prediction, and deterministic code where precision is critical". It also says "Intuit Intelligence can make mistakes." [S26]
 
@@ -81,12 +82,11 @@ In November 2025 Intuit said OpenAI's models would help power AI agents across i
 **Which plans have it**
 
 - All four Australian plans list it, marked Beta. [S1]
-- Primary and company admin users get the full chat. Other users can only use it for product support. [S3] [S1]
+- Primary and company admin users get the full chat. Other users can only use it for product support. [S3]
 - Intuit's Australian help says each eligible plan includes 25 chat prompts a month. An add-on gives 100 more for $10 a month, and there's no unlimited option. [S18]
 - Intuit's accountant page gives different monthly limits for client books: 25 on Simple Start, 50 on Essentials, 100 on Plus and 200 on Advanced. [S7]
 - Intuit's update notes say "Each account gets a set amount of capacity each month, and the amount varies by plan." [S17]
 - When the prompts run out, the chat stops until your next billing cycle. [S18]
-- Intuit says AI features are "currently available at no additional cost". [S1]
 
 **What happens to your data**
 
@@ -102,7 +102,7 @@ In November 2025 Intuit said OpenAI's models would help power AI agents across i
 
 - Intuit's Australian pricing page and help centre describe it, labelled beta. [S1] [S18]
 - Intuit announced the international rollout on 14 October 2026, with a Sydney dateline among others. [S26]
-- Intuit says some AI outputs are in English only, and recommends you "review all outputs carefully". [S1]
+- Intuit says AI outputs are currently in English only, and recommends you "review all outputs carefully". [S1]
 
 ### Accounting AI (bank feeds and books checks)
 
@@ -158,7 +158,7 @@ In November 2025 Intuit said OpenAI's models would help power AI agents across i
 
 **Which plans have it**
 
-- All four plans list it. [S13] [S1] [S6]
+- All four plans list it. [S13] [S6]
 - It's labelled beta. Intuit says beta features have limited availability and are subject to change. [S13] [S1]
 
 **What happens to your data**
@@ -287,7 +287,7 @@ In November 2025 Intuit said OpenAI's models would help power AI agents across i
 
 **Which plans have it**
 
-- During the beta, chat is capped at 200 questions a month on Core and 1,000 on Accelerate. [S7] [S1]
+- During the beta, chat is capped at 200 questions a month on Core and 1,000 on Accelerate. [S7]
 - Portfolio insights and the AI summary need Accelerate. [S7]
 - Questions you ask inside a client's books count toward that client's monthly prompts. [S7]
 
@@ -305,7 +305,7 @@ In November 2025 Intuit said OpenAI's models would help power AI agents across i
 
 A quick word on the jargon. Intuit's tools reach Claude through MCP (Model Context Protocol), a standard way for an AI assistant to use outside tools. [S33] [S37]
 
-Claude and ChatGPT call these links connectors and plugins. Google's Workspace pages call them integrations. In each case you sign in to QuickBooks and approve access. [S40] [S51] [S58]
+Claude and ChatGPT call these links connectors and plugins. Microsoft's catalogue lists QuickBooks as a plugin that includes a connector. Google's Gmail help now calls them connectors, though its admin help still says integrations. In each case you sign in to QuickBooks and approve access. [S40] [S51] [S65] [S54] [S58] [S59]
 
 ### Claude and QuickBooks
 
@@ -333,11 +333,11 @@ Claude and ChatGPT call these links connectors and plugins. Google's Workspace p
 - Intuit says you can try it without a QuickBooks subscription by uploading a CSV, PDF or image, or pasting transactions in. [S36] [S37]
 - On Claude Team and Enterprise, an Owner adds the connector for the organisation first. [S40]
 
-**Steps to connect** (Intuit's help article, updated 2 October 2026, US customers only)
+**Steps to connect** (Intuit's help article, updated 28 October 2026, US customers only)
 
-1. Open Claude.ai and go to Connectors in the left navigation. Anthropic's own help puts this at Customize > Connectors, then the + next to Connectors. [S36] [S40]
+1. Open Claude.ai, select Customize in the left sidebar, then select Connectors. Anthropic's help adds that you click the + next to Connectors to browse. [S36] [S40]
 2. Find QuickBooks and select Connect. [S36]
-3. Sign in to your Intuit account when asked. [S36]
+3. If you have an Intuit account, sign in when asked. Intuit says you can still use the connector without one. [S36]
 4. Ask Claude a question about your finances. [S36]
 5. In a chat, select + (lower left) or type /, hover over Connectors and check QuickBooks is switched on. [S40]
 
@@ -385,9 +385,9 @@ For Claude for Small Business, Anthropic says every task is started by you and y
 
 **What we saw from Australia**
 
-- On 17 October 2026, ChatGPT's QuickBooks listing said "We couldn't load this plugin right now" when we opened it from Australia, signed out. [S49]
-- Searching ChatGPT's directory for QuickBooks from Australia showed plugins from other developers, but not Intuit's. The same search for Xero showed Xero's own plugin. [S50]
-- Our reading: this fits Intuit's US-only statement. We weren't signed in, so we can't say what a signed-in Australian account sees. [S47] [S49] [S50]
+- On 18 November 2026, ChatGPT's QuickBooks listing loaded when we opened it from Australia, signed out. It showed Intuit QuickBooks with an Install plugin button. On 17 October it had said "We couldn't load this plugin right now." [S49]
+- Searching ChatGPT's directory for QuickBooks from Australia now shows Intuit QuickBooks first, followed by plugins from other developers. [S50]
+- Our reading: a listing that loads doesn't mean the connection works for an Australian account. Intuit's help still says it's for US customers, and we weren't signed in, so we can't say what happens when an Australian account tries to connect. [S47] [S49] [S50]
 
 **Steps to connect** (Intuit's help article, updated 26 August 2026, US customers only)
 
@@ -413,13 +413,44 @@ For Claude for Small Business, Anthropic says every task is started by you and y
 
 **Official?**
 
-- No official connection found. [S54] [S55] [S56]
+- Yes, for US customers. Microsoft's Copilot plugin catalogue lists "Intuit QuickBooks", created by "Intuit - Quickbooks", with one MCP connector and 9 skills. It says "This app is available in the United States." [S65]
+- Microsoft's gallery of partner-built Copilot connectors, updated 16 November 2026, lists an Intuit QuickBooks connector published by Intuit QuickBooks. Microsoft's list of federated connectors now names it too. Neither list had it on 17 October 2026. [S55] [S54]
+- It isn't in Microsoft's gallery of Microsoft-built connectors. [S56]
+- On 29 October 2026 Microsoft named Intuit QuickBooks among the partner plugins for finance work in Copilot, "Beginning to roll out through the Microsoft plugin registry". [S66]
+- We found no Intuit page about it. Intuit's announcements of AI partnerships name OpenAI and Anthropic. [S31] [S33] [S64]
 
-**What we checked**
+**What it can see and do**
 
-- Microsoft's list of federated Copilot connectors, updated 16 October 2026, names accounting and finance sources including Xero and Zoho Books. QuickBooks and Intuit aren't on it. [S54]
-- Microsoft's galleries of partner-built and Microsoft-built Copilot connectors don't list QuickBooks or Intuit either. [S55] [S56]
-- Intuit's announcements of AI partnerships name OpenAI and Anthropic. We found none naming Microsoft. [S31] [S33] [S64]
+- It reads profit and loss, cash flow, the balance sheet, receivables and payables ageing, and sales by customer or product. It can also compare you with similar businesses. [S65]
+- It can make changes. Microsoft's listing says it creates, updates, sends and duplicates invoices and estimates, sets up recurring invoices, adds customers and products, and sends payment links and reminders. [S65]
+- It can also add a new hire to QuickBooks Payroll and set their base pay, and read QuickBooks Capital loans. [S65]
+- The listing says "Always with a clear preview and your confirmation before anything is sent." [S65]
+- Microsoft says a connector's tools that create, change or delete data ask for your approval first, and you choose whether Copilot asks again next time. [S54]
+
+**What you need**
+
+- You need to be a US customer. Microsoft's listing also says "Availability may vary by market." [S65]
+- An active QuickBooks Online account. Payroll features need a QuickBooks Payroll subscription. [S65]
+- A Microsoft 365 Copilot licence. Your admin must allow connectors from outside publishers, or turn this one on, in the Microsoft 365 admin center. [S54]
+
+**Steps to connect** (Microsoft's general steps for federated connectors in Copilot Chat; we found none from Intuit. US customers only)
+
+1. Open Microsoft 365 Copilot Chat. [S54]
+2. Select the ellipsis (...) menu, then select Settings. [S54]
+3. In the settings dialog, select Sources in the left pane. [S54]
+4. Find QuickBooks, select Connect and complete the sign-in. [S54]
+5. Type your question in Copilot Chat. [S54]
+
+**To disconnect**
+
+- Microsoft says you can turn the source off in Researcher, or manage it in Copilot Chat's settings. [S54]
+- To review or reset what it's allowed to do, go to Settings > Sources and select the connector. [S54]
+
+**Limits**
+
+- It's for US customers only for now. [S65]
+- Microsoft says federated connectors don't copy or store data in Microsoft 365, and the connected system enforces your permissions. [S54]
+- We found no statement from Intuit or Microsoft about training on QuickBooks data passed through this plugin. [S65] [S54]
 
 ### Google Gemini and QuickBooks
 
@@ -432,20 +463,21 @@ For Claude for Small Business, Anthropic says every task is started by you and y
 
 - Profitability, cash flow, sales and outstanding invoices, receivables and payables ageing, and comparisons with similar businesses. It can produce profit and loss and cash flow statements. [S57]
 - The listing's tagline talks about "taking Intuit Quickbooks actions directly in Gemini". [S57]
-- Google's help says integrations "currently only support read actions" and can't make changes in third-party apps. The two Google pages don't agree on whether it can act. [S58] [S57]
+- Google's help now lists QuickBooks among its connectors, to "Retrieve financial records like customer invoices and logged expenses". [S58]
+- Google's help says connectors "currently only support read actions" and can't make changes in third-party apps. The two Google pages don't agree on whether it can act. [S58] [S57]
 
 **What you need**
 
 - A US QuickBooks customer. [S57]
 - A Google Workspace Business Standard, Business Plus, Enterprise Standard or Enterprise Plus licence. [S57]
-- Your Workspace admin must allow integrations with Gemini. Admins control them through Marketplace settings and the app allowlist. [S58] [S59]
+- Your Workspace admin must allow connectors with Gemini. Admins control them through Marketplace settings and the app allowlist. [S58] [S59]
 - The listing shows pricing as "Paid" without explaining it. [S57]
 
-**Steps to connect** (Google's general steps for integrations; we found none from Intuit)
+**Steps to connect** (Google's general steps for connectors; we found none from Intuit)
 
-1. Go to the Google Workspace Marketplace integrations page and select the integration. [S58]
+1. Go to the Google Workspace Marketplace connectors page and select the connector. [S58]
 2. Click Connect, then follow the on-screen steps to grant access. [S58]
-3. In a Gemini in Workspace app, open Ask Gemini, type @, choose the integration and enter your question. [S58]
+3. In a Gemini in Workspace app, open Ask Gemini, type @, choose the connector and enter your question. [S58]
 
 **To disconnect**
 
@@ -502,7 +534,7 @@ For Claude for Small Business, Anthropic says every task is started by you and y
 - Zapier has a listing in Intuit's QuickBooks app store for Australia. It describes code-free workflows that link QuickBooks Online with "more than 1,000 web apps". [S63]
 - The listing shows a Starter plan at $20 a month and a Teams plan at $250 a month, without naming a currency, plus a 14-day free trial. [S63]
 - The listing doesn't mention AI. [S63]
-- Intuit's pricing details say third-party integrations are "Subject to additional third party terms, conditions, and fees." [S1]
+- Intuit's pricing details say third-party applications "are subject to additional terms, conditions and fees." [S1]
 
 ## Jobs it's good for
 
@@ -510,7 +542,7 @@ For Claude for Small Business, Anthropic says every task is started by you and y
 - **The weekly bank feed.** Review the Ready to post group and post what's right in one go. [S20]
 - **Chasing missing receipts.** Use Accounting AI's request link so a client or team member can reply with the details and files. [S20]
 - **A month-end once-over.** On Plus or Advanced, run report insights on the Balance Sheet and Profit and Loss to find duplicates and miscoded items. [S20]
-- **Quick questions about your numbers.** Ask Intuit Intelligence chat, keeping the monthly prompt cap in mind. Only admin users get the full chat. [S18] [S1]
+- **Quick questions about your numbers.** Ask Intuit Intelligence chat, keeping the monthly prompt cap in mind. Only admin users get the full chat. [S18] [S3]
 - **Leads sitting in your inbox.** On Plus or Advanced, Customer AI drafts replies to likely leads. You decide what gets sent. [S21]
 - **A new job from a signed contract.** On Advanced, Project Management AI drafts the project from the contract for you to check. [S25] [S1]
 - **For accountants, a morning look across clients.** On Intuit Accountant Suite Accelerate, the AI summary shows which client files need attention. It's in beta. [S7]
@@ -520,12 +552,13 @@ For Claude for Small Business, Anthropic says every task is started by you and y
 
 **The outside AI connections are US-only for now**
 
-- The Claude, ChatGPT and Gemini connections for QuickBooks are all described as available to US customers only. [S36] [S47] [S57]
+- The Claude, ChatGPT, Copilot and Gemini connections for QuickBooks are all described as available to US customers only. [S36] [S47] [S65] [S57]
 - Intuit says it's working to bring the Claude connector to other regions "soon". It gives no date. [S36]
+- ChatGPT's QuickBooks listing now opens from Australia, but Intuit's help still says the plugin is for US customers. [S49] [S47]
 
 **Look-alike plugins**
 
-- Searching ChatGPT's directory for QuickBooks from Australia showed plugins from other developers, such as "QBO Connector by Meridian". [S50]
+- Searching ChatGPT's directory for QuickBooks from Australia shows Intuit's own plugin first, then plugins from other developers, such as "QBO Connector by Meridian". [S50]
 - These aren't Intuit's, and we haven't checked them. Our advice: treat any connection that isn't Intuit's own like any other outside app with access to your books. [S50]
 
 **You can't switch the AI off feature by feature**
@@ -536,7 +569,7 @@ For Claude for Small Business, Anthropic says every task is started by you and y
 **Caps and costs**
 
 - Chat prompts are capped each month, and Intuit's pages give different caps. An extra 100 prompts cost $10 a month, and no plan is unlimited. [S18] [S7]
-- Intuit says AI features cost nothing extra "currently". Its pricing page says pricing can change without notice. [S1]
+- Intuit's pricing page lists the AI features inside each plan and no longer says they cost nothing extra. It says QuickBooks "reserves the right to change pricing, features, support and service at any time". [S1]
 - Accelerate in Intuit Accountant Suite moves from free to A$113 a month on 20 January 2027. [S7]
 
 **Beta features**
@@ -565,17 +598,17 @@ For Claude for Small Business, Anthropic says every task is started by you and y
 
 **Figures in the marketing are mostly American**
 
-- Many of the time-saving and accuracy claims on Intuit's Australian pages are footnoted as surveys of US QuickBooks customers. [S1] [S15] [S16]
+- Many of the time-saving and accuracy claims on Intuit's Australian pages are footnoted as surveys of US QuickBooks customers. [S15] [S16]
 
 **Conflicting dates and prices**
 
-- The 70% off offer reads as 6 months in the banner and 3 months in the terms. [S1]
-- The Intuit Accountant Suite discount reads as 12 months on one page and 6 months on another. [S7] [S1]
-- Check your own subscription settings before relying on either. That's our advice. [S1] [S7]
+- Intuit's accountant page gives two starting points for Accelerate billing. Its offer terms say 20 January 2027, and its FAQ says the first charge comes on the firm's next billing date after 21 January 2027. [S7]
+- A May 2026 Intuit blog said firms would be charged from 1 August 2026. [S16]
+- Check your own subscription settings before relying on any of these. That's our advice. [S7]
 
 **For accountants**
 
-- QuickBooks Online Accountant retires on 31 December 2026, and Intuit Intelligence chat isn't available in it. [S7] [S1]
+- QuickBooks Online Accountant retires on 31 December 2026, and Intuit Intelligence chat isn't available in it. [S7] [S16]
 - Questions you ask in a client's books use up that client's prompts. [S7]
 
 **Developer tools can delete records**
@@ -588,11 +621,12 @@ For Claude for Small Business, Anthropic says every task is started by you and y
 - Intuit Intelligence chat: primary and company admin users. [S3] [S18]
 - Customer AI: the primary admin connects the inbox. [S21]
 - Claude Team and Enterprise: Owners add connectors and set tool permissions. [S40]
-- Gemini for work accounts: the Google Workspace admin allows integrations. [S58] [S59]
+- Microsoft Copilot: the Microsoft 365 admin allows connectors from outside publishers, or turns this one on. [S54]
+- Gemini for work accounts: the Google Workspace admin allows connectors. [S58] [S59]
 
 ## Announced changes
 
-Intuit's pages carry a warning that its roadmap "is subject to change" and that features "may be modified, delayed, or canceled" with no delivery guarantee. [S1]
+Intuit's pricing page says its product direction "represents no obligation and should not be relied on when making a purchasing decision". [S1]
 
 - **28 October 2025:** Intuit unveiled Intuit Intelligence and a team of AI agents in the US. [S27]
 - **13 November 2025:** Intuit announced its AI agents in Australia, with the GST AI Agent "coming soon". [S9]
@@ -608,20 +642,24 @@ Intuit's pages carry a warning that its roadmap "is subject to change" and that 
 - **October 2026:** Anthropic's directory added the Intuit Developer connector. [S38]
 - **14 October 2026:** Intuit Intelligence began rolling out internationally, with new features in beta. [S26]
 - **16 October 2026:** Google updated its listing for the Intuit Quickbooks Connector, still US-only. [S57]
+- **27 October 2026:** Intuit announced more AI tools, including Agentic Books Close for accounting firms. They're rolling out in the US first, "with additional capabilities and international availability to follow". [S67]
+- **29 October 2026:** Microsoft named Intuit QuickBooks among the partner plugins for finance work in Copilot. [S66]
+- **By 16 November 2026:** Microsoft's connector galleries listed an Intuit QuickBooks connector. Microsoft's plugin listing says it's available in the United States. [S55] [S65]
 - **Coming soon:** Intuit's Australian Intelligence page lists a cash flow forecast as coming soon. [S3]
 - **31 December 2026:** QuickBooks Online Accountant retires. [S7]
-- **19 and 20 January 2027:** The free beta for Accelerate and Books Close ends, and billing starts. [S7]
+- **20 January 2027:** The free beta for Accelerate ends. Intuit's FAQ says the first charge comes on the firm's next billing date after 21 January 2027. [S7]
 - **January 2027:** Intuit's ProPartner Accountants hub launches. [S7]
 
 ## What we couldn't establish
 
-- **When the outside AI connections reach Australia.** Intuit says the Claude connector is coming to other regions "soon", but gives no date. It says nothing similar for ChatGPT or Gemini. [S36] [S47] [S57]
-- **What a signed-in Australian ChatGPT account sees.** We only checked ChatGPT's directory while signed out. [S49] [S50]
+- **When the outside AI connections reach Australia.** Intuit says the Claude connector is coming to other regions "soon", but gives no date. It says nothing similar for ChatGPT or Gemini. Microsoft's Copilot listing says "Availability may vary by market." [S36] [S47] [S57] [S65]
+- **Whether an Australian ChatGPT account can connect.** The listing now loads from Australia, but we only checked while signed out. [S49] [S50]
 - **The real chat cap.** Intuit's Australian help says 25 prompts a month for each eligible plan. Its accountant page gives 25, 50, 100 or 200 depending on the plan. [S18] [S7]
 - **The add-on's currency.** The $10-a-month prompt add-on doesn't say whether it's in AUD. [S18] [S7]
-- **How long the 70% offer runs.** The banner says 6 months and the terms say 3. [S1]
-- **The Intuit Accountant Suite discount and start date.** Pages differ on 12 or 6 months of discount, and on billing from 1 August 2026 or 20 January 2027. [S7] [S1] [S16]
-- **The price of Books Close.** [S1] [S16]
+- **Whether the plan prices include GST.** The pricing page no longer says. Intuit's Australian terms say you're billed in AUD "plus any and all applicable taxes, including without limitation GST", as shown in the ordering terms. [S1] [S32]
+- **Whether the AI features stay free.** Intuit's pricing page no longer says they're available at no additional cost. [S1]
+- **When Accelerate billing starts.** Intuit's accountant page gives 20 January 2027 in its offer terms and the next billing date after 21 January 2027 in its FAQ. A May 2026 blog said 1 August 2026. [S7] [S16]
+- **The price of Books Close.** The accountant page lists Books Close Manual (beta) under Accelerate and gives no separate price. [S7] [S16]
 - **Whether Australian customers' data trains Intuit's models, and how to opt out.** The privacy statement allows AI training but doesn't describe an opt-out for it. [S29] [S30]
 - **Where AI processing happens for Australian customers, and which model makers process it.** Intuit names OpenAI's models for its agents but doesn't say where they run. [S64] [S29]
 - **Who reviews Smart Expert Categorisation.** Intuit only says "a human". [S17]
@@ -630,76 +668,79 @@ Intuit's pages carry a warning that its roadmap "is subject to change" and that 
 - **Australian help for Finance AI.** We only found the US article. [S23]
 - **Whether the US-only agents, such as Payments, Payroll and Sales Tax, will come to Australia.** [S24] [S27]
 - **Which countries Intuit's hosted MCP pilot covers.** [S61]
-- **A Microsoft connection.** We found none, and found no Intuit statement about Copilot. [S54] [S55] [S56]
+- **Intuit's own word on the Copilot plugin.** We found it only in Microsoft's lists, with no Intuit page or steps for it. The pages we read from either company say nothing about training or retention for it. [S65] [S55]
 - We didn't rely on third-party claims. Other companies offer their own QuickBooks connectors for AI tools, including some listed in ChatGPT's directory. They aren't Intuit's, and they aren't covered here. [S50]
 
 ## Sources
 
-All sources were read on 17 October 2026.
+All sources were read on 18 November 2026.
 
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
-| S1 | Plans and Pricing (Australia), including "Important pricing details and product information" | Intuit QuickBooks | https://quickbooks.intuit.com/au/pricing/ | No date shown (© 2026) | 17 Oct 2026 |
-| S2 | QuickBooks Australia home page | Intuit QuickBooks | https://quickbooks.intuit.com/au/ | No date shown (© 2026) | 17 Oct 2026 |
-| S3 | Intuit Intelligence (Australia) | Intuit QuickBooks | https://quickbooks.intuit.com/au/intuit-intelligence/ | No date shown | 17 Oct 2026 |
-| S4 | AI for Smarter Business Decisions (Australia) | Intuit QuickBooks | https://quickbooks.intuit.com/au/ai-agents/ | No date shown | 17 Oct 2026 |
-| S5 | AI Accounting (Australia) | Intuit QuickBooks | https://quickbooks.intuit.com/au/ai-agents/accounting/ | No date shown (© 2026) | 17 Oct 2026 |
-| S6 | BAS Statement: Lodge Online and Track GST | Intuit QuickBooks | https://quickbooks.intuit.com/au/gst-and-bas/ | No date shown | 17 Oct 2026 |
-| S7 | Intuit Accountant Suite (Australia), including its FAQs and pricing details | Intuit QuickBooks | https://quickbooks.intuit.com/au/accountants/intuit-accountant-suite/ | No date shown (© 2026) | 17 Oct 2026 |
-| S8 | Security (Australia) | Intuit QuickBooks | https://quickbooks.intuit.com/au/security/ | No date shown (© 2026) | 17 Oct 2026 |
-| S9 | Intuit's new Virtual Team of AI Agents on QuickBooks | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/news/intuits-new-virtual-team-of-ai-agents-on-quickbooks/ | Dateline 13 Nov 2025 (page metadata 13 and 14 Nov 2025) | 17 Oct 2026 |
-| S10 | Discover Intuit AI Agents in QuickBooks | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/product-update/intuit-ai-agents-for-australian-businesses/ | No date shown (page metadata 7 and 8 Nov 2025) | 17 Oct 2026 |
-| S11 | Grow Your Australian Business with the AI-Powered QuickBooks Platform | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/product-update/quickbooks-ai-platform-small-business-australia/ | No date shown (page metadata 12 and 13 Nov 2025) | 17 Oct 2026 |
-| S12 | QuickBooks Accounting Agent | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/product-update/quickbooks-accounting-agent/ | No date shown (page metadata 25 Nov 2025) | 17 Oct 2026 |
-| S13 | Lodge BAS with Confidence: QuickBooks GST AI Agent | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/product-update/quickbooks-gst-ai-agent-business/ | No date shown (page metadata 25 Nov 2025) | 17 Oct 2026 |
-| S14 | BAS Checklist 2026: 10 Steps to Lodge an Accurate BAS or IAS in QuickBooks | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/product-update/bas-checklist/ | No date shown (page metadata 17 Sep 2026; figures "checked" in September 2026) | 17 Oct 2026 |
-| S15 | QuickBooks AI agents for Accountants | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/accountants-and-bookkeepers/quickbooks-ai-agents-accountants-australia/ | No date shown (page metadata 12 Nov 2025 and 26 Mar 2026) | 17 Oct 2026 |
-| S16 | Intuit Intelligence for Accountants and Bookkeepers | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/accountants-and-bookkeepers/intuit-intelligence-ias/ | No date shown (page metadata 15 May 2026) | 17 Oct 2026 |
-| S17 | What's new with QuickBooks Online | QuickBooks Help (Australia) | https://quickbooks.intuit.com/learn-support/en-au/help-article/intuit-subscriptions/s-new-quickbooks-online/L66q5XLC5_AU_en_AU | "Updated 3 weeks ago"; latest entry August 2026 | 17 Oct 2026 |
-| S18 | Introducing Intuit Intelligence | QuickBooks Help (Australia) | https://quickbooks.intuit.com/learn-support/en-au/help-article/intuit-assist/introducing-intuit-intelligence/L189976Da_AU_en_AU | "Updated 3 weeks ago" | 17 Oct 2026 |
-| S19 | Overview of Intuit AI in QuickBooks Online | QuickBooks Help (Australia) | https://quickbooks.intuit.com/learn-support/en-au/help-article/accounting-bookkeeping/overview-agents-quickbooks-online/L9irCAtK4_AU_en_AU | "Updated 3 weeks ago" | 17 Oct 2026 |
-| S20 | Learn about Accounting AI features | QuickBooks Help (Australia) | https://quickbooks.intuit.com/learn-support/en-au/help-article/bank-transactions/learn-accounting-agent-features/L6pl9rv94_AU_en_AU | "Updated 1 week ago" | 17 Oct 2026 |
-| S21 | Get started with the Customer AI | QuickBooks Help (Australia) | https://quickbooks.intuit.com/learn-support/en-au/help-article/intuit-assist/get-started-customer-agent/L6KtREjm9_AU_en_AU | "Updated 2 months ago" | 17 Oct 2026 |
-| S22 | How's Intuit using Generative AI? | QuickBooks Help (Australia) | https://quickbooks.intuit.com/learn-support/en-au/help-article/intuit-ai/hows-intuit-using-generative-ai/L1Z16bIPW_AU_en_AU | "Updated 2 months ago" | 17 Oct 2026 |
-| S23 | Use the Finance AI for financial insights | QuickBooks Help (US) | https://quickbooks.intuit.com/learn-support/en-us/help-article/intuit-assist/get-started-finance-agent/L0g3aJO6W_US_en_US | Updated 24 Sep 2026 | 17 Oct 2026 |
-| S24 | Get started with the Payments AI | QuickBooks Help (US) | https://quickbooks.intuit.com/learn-support/en-us/help-article/intuit-assist/get-started-payments-agent/L0FyKj9NL_US_en_US | Updated 5 Aug 2026 | 17 Oct 2026 |
-| S25 | QuickBooks Project Management Agent | Intuit QuickBooks (global site) | https://quickbooks.intuit.com/global/resources/product-update/quickbooks-project-management-agent/ | No date shown (page metadata 13 Nov 2025 and 19 Feb 2026) | 17 Oct 2026 |
-| S26 | Intuit Intelligence Now Available Internationally, Fueling Success for Businesses and Accountants on One Unified Platform | Intuit (media release) | https://investors.intuit.com/news-events/press-releases/detail/1326/intuit-intelligence-now-available-internationally-fueling-success-for-businesses-and-accountants-on-one-unified-platform | 14 Oct 2026 | 17 Oct 2026 |
-| S27 | Intuit Unveils Revolutionary System of Intelligence to Help Businesses Grow in the AI Era | Intuit (media release) | https://investors.intuit.com/news-events/press-releases/detail/1277/intuit-unveils-revolutionary-system-of-intelligence-to-help-businesses-grow-in-the-ai-era | 28 Oct 2025 | 17 Oct 2026 |
-| S28 | Intuit Assist | Intuit | https://www.intuit.com/intuitassist/ | No date shown (© 2026) | 17 Oct 2026 |
-| S29 | Global Privacy Statement | Intuit | https://www.intuit.com/privacy/statement/ | Last updated 9 Mar 2026 | 17 Oct 2026 |
-| S30 | Intuit Responsible AI Governance | Intuit | https://www.intuit.com/privacy/responsible-ai/governance/ | No date shown (© 2026) | 17 Oct 2026 |
-| S31 | Intuit AI Principles: Strategic Partnerships with OpenAI and Anthropic | Intuit Blog | https://www.intuit.com/blog/innovative-thinking/tech-innovation/ai-principles-openai-anthropic-partnerships/ | 21 Jul 2026 | 17 Oct 2026 |
-| S32 | QuickBooks Online Terms of Service (Australia) | Intuit | https://www.intuit.com/legal/terms/en-au/quickbooks/online/ | Section A 25 Mar 2024; Section B version 12112025 | 17 Oct 2026 |
-| S33 | Intuit and Anthropic Partner to Bring Trusted Financial Intelligence and Custom AI Agents to Consumers and Businesses | Intuit (media release) | https://investors.intuit.com/news-events/press-releases/detail/1305/intuit-and-anthropic-partner-to-bring-trusted-financial-intelligence-and-custom-ai-agents-to-consumers-and-businesses | 24 Feb 2026 | 17 Oct 2026 |
-| S34 | Intuit Financial Intelligence comes to Claude via Anthropic | Intuit | https://www.intuit.com/anthropic/ | No date shown (© 2026) | 17 Oct 2026 |
-| S35 | TurboTax, QuickBooks, and more are now available in Claude | Intuit Blog | https://www.intuit.com/blog/news-social/intuit-apps-now-available-in-claude/ | 23 Apr 2026 | 17 Oct 2026 |
-| S36 | Use Claude to enter transactions and get insights in QuickBooks | QuickBooks Help (US) | https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US | Updated 2 Oct 2026 | 17 Oct 2026 |
-| S37 | Intuit QuickBooks connector | Anthropic | https://claude.com/connectors/quickbooks | "Added March 2026" | 17 Oct 2026 |
-| S38 | Intuit Developer connector | Anthropic | https://claude.com/marketplace/connectors/intuit-developer | "Added October 2026" | 17 Oct 2026 |
-| S39 | Connector verification | Anthropic | https://claude.com/docs/connectors/verification | No date shown | 17 Oct 2026 |
-| S40 | Use connectors to extend Claude's capabilities | Anthropic Help Center | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated today" (as shown on 17 Oct 2026) | 17 Oct 2026 |
-| S41 | Introducing Claude for Small Business | Anthropic | https://www.anthropic.com/news/claude-for-small-business | 13 May 2026 | 17 Oct 2026 |
-| S42 | Small Business plugin | Anthropic | https://claude.com/marketplace/plugins/small-business | No date shown (© 2026) | 17 Oct 2026 |
-| S43 | Is my data used for model training? (consumer plans) | Anthropic Privacy Center | https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training | Updated 16 Mar 2026 | 17 Oct 2026 |
-| S44 | Intuit Apps Launch in ChatGPT for Smarter Financial Insights | Intuit Blog | https://www.intuit.com/blog/news-social/intuit-apps-launch-chatgpt/ | Updated 5 Mar 2026 | 17 Oct 2026 |
-| S45 | QuickBooks expands into Claude and ChatGPT with new features | QuickBooks (news) | https://quickbooks.intuit.com/r/news/quickbooks-expands-into-claude-and-chatgpt-with-new-features/ | No date shown (page metadata 28 and 29 Jul 2026) | 17 Oct 2026 |
-| S46 | How's my business doing? QuickBooks can answer that with a new Plugin in ChatGPT | QuickBooks (news) | https://quickbooks.intuit.com/r/news/quickbooks-plugin-chatgpt/ | No date shown (page metadata 10 Sep 2026) | 17 Oct 2026 |
-| S47 | Connect QuickBooks Online to ChatGPT | QuickBooks Help (US) | https://quickbooks.intuit.com/learn-support/en-us/help-article/mobile-and-apps/connect-quickbooks-online-chatgpt/L0RDe9RPd_US_en_US | Updated 26 Aug 2026 | 17 Oct 2026 |
-| S48 | Intuit QuickBooks plugin for ChatGPT | OpenAI | https://openai.com/business/plugins/quickbooks/ | No date shown | 17 Oct 2026 |
-| S49 | ChatGPT plugin listing: Intuit QuickBooks | OpenAI | https://chatgpt.com/plugins/quickbooks | No date shown. Opened from Australia, signed out: "We couldn't load this plugin right now." | 17 Oct 2026 |
-| S50 | ChatGPT plugin directory: searches for "QuickBooks" and "Xero" | OpenAI | https://chatgpt.com/plugins?q=QuickBooks | No date shown. Searched from Australia, signed out | 17 Oct 2026 |
-| S51 | Plugins in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001256-plugins-in-chatgpt | "Updated: 8 hours ago" (as shown on 17 Oct 2026) | 17 Oct 2026 |
-| S52 | Connecting and managing app accounts in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt | "Updated: 8 hours ago" (as shown on 17 Oct 2026) | 17 Oct 2026 |
-| S53 | Plugins | OpenAI (ChatGPT docs) | https://learn.chatgpt.com/docs/plugins | No date shown | 17 Oct 2026 |
-| S54 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | ms.date 30 Sep 2026; updated 16 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S55 | Partner-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-partners | ms.date 27 Apr 2026; updated 25 Sep 2026 (page metadata) | 17 Oct 2026 |
-| S56 | Microsoft-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft | ms.date 30 Sep 2026 (page metadata) | 17 Oct 2026 |
-| S57 | Intuit Quickbooks Connector | Google Workspace Marketplace | https://workspace.google.com/marketplace/app/intuit_quickbooks_connector/52180752255 | Listing updated 16 Oct 2026 | 17 Oct 2026 |
-| S58 | Use integrations with Gemini in Workspace | Google (Gmail Help) | https://support.google.com/mail/answer/16796422?hl=en | No date shown | 17 Oct 2026 |
-| S59 | Support access to Workspace Integrations | Google Workspace Admin Help | https://knowledge.workspace.google.com/admin/gemini/support-access-to-workspace-integrations | Last updated 13 Oct 2026 UTC | 17 Oct 2026 |
-| S60 | quickbooks-online-mcp-server (README) | Intuit (intuit on GitHub) | https://github.com/intuit/quickbooks-online-mcp-server | Created 6 Oct 2025; last updated 15 Sep 2026 (GitHub repository data) | 17 Oct 2026 |
-| S61 | intuit-3p-ai-pilot (README) | Intuit (IntuitDeveloper on GitHub) | https://github.com/IntuitDeveloper/intuit-3p-ai-pilot | Last updated 11 Aug 2026 (GitHub repository data) | 17 Oct 2026 |
-| S62 | Partner tiers (Intuit App Partner Program) | Intuit Developer | https://developer.intuit.com/partners/benefits | No date shown (© 2026) | 17 Oct 2026 |
-| S63 | Zapier (app listing, Australia) | QuickBooks App Store | https://quickbooks.intuit.com/app/apps/appdetails/zapier/en-au/ | No date shown | 17 Oct 2026 |
-| S64 | Intuit and OpenAI Join Forces to Revolutionize Financial Intelligence | Intuit (media release) | https://investors.intuit.com/news-events/press-releases/detail/1284/intuit-and-openai-join-forces-to-revolutionize-financial-intelligence-powering-every-person-business-and-dream-with-personalized-experiences | 18 Nov 2025 | 17 Oct 2026 |
+| S1 | Plans and Pricing (Australia), including "Important pricing details and product information" | Intuit QuickBooks | https://quickbooks.intuit.com/au/pricing/ | No date shown (© 2026) | 18 Nov 2026 |
+| S2 | QuickBooks Australia home page | Intuit QuickBooks | https://quickbooks.intuit.com/au/ | No date shown (© 2026) | 18 Nov 2026 |
+| S3 | Intuit Intelligence (Australia) | Intuit QuickBooks | https://quickbooks.intuit.com/au/intuit-intelligence/ | No date shown (© 2026) | 18 Nov 2026 |
+| S4 | AI for Smarter Business Decisions (Australia) | Intuit QuickBooks | https://quickbooks.intuit.com/au/ai-agents/ | No date shown | 18 Nov 2026 |
+| S5 | AI Accounting (Australia) | Intuit QuickBooks | https://quickbooks.intuit.com/au/ai-agents/accounting/ | No date shown (© 2026) | 18 Nov 2026 |
+| S6 | BAS Statement: Lodge Online and Track GST | Intuit QuickBooks | https://quickbooks.intuit.com/au/gst-and-bas/ | No date shown | 18 Nov 2026 |
+| S7 | Intuit Accountant Suite (Australia), including its FAQs and pricing details | Intuit QuickBooks | https://quickbooks.intuit.com/au/accountants/intuit-accountant-suite/ | No date shown (© 2026) | 18 Nov 2026 |
+| S8 | Security (Australia) | Intuit QuickBooks | https://quickbooks.intuit.com/au/security/ | No date shown (© 2026) | 18 Nov 2026 |
+| S9 | Intuit's new Virtual Team of AI Agents on QuickBooks | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/news/intuits-new-virtual-team-of-ai-agents-on-quickbooks/ | Dateline 13 Nov 2025 (page metadata 13 and 14 Nov 2025) | 18 Nov 2026 |
+| S10 | Discover Intuit AI Agents in QuickBooks | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/product-update/intuit-ai-agents-for-australian-businesses/ | No date shown (page metadata 7 and 8 Nov 2025) | 18 Nov 2026 |
+| S11 | Grow Your Australian Business with the AI-Powered QuickBooks Platform | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/product-update/quickbooks-ai-platform-small-business-australia/ | No date shown (page metadata 12 and 13 Nov 2025) | 18 Nov 2026 |
+| S12 | QuickBooks Accounting Agent | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/product-update/quickbooks-accounting-agent/ | No date shown (page metadata 25 Nov 2025) | 18 Nov 2026 |
+| S13 | Lodge BAS with Confidence: QuickBooks GST AI Agent | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/product-update/quickbooks-gst-ai-agent-business/ | No date shown (page metadata 25 Nov 2025) | 18 Nov 2026 |
+| S14 | BAS Checklist 2026: 10 Steps to Lodge an Accurate BAS or IAS in QuickBooks | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/product-update/bas-checklist/ | No date shown (page metadata 17 Sep 2026; figures "checked" in September 2026) | 18 Nov 2026 |
+| S15 | QuickBooks AI agents for Accountants | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/accountants-and-bookkeepers/quickbooks-ai-agents-accountants-australia/ | No date shown (page metadata 12 Nov 2025 and 26 Mar 2026) | 18 Nov 2026 |
+| S16 | Intuit Intelligence for Accountants and Bookkeepers | QuickBooks Australia blog | https://quickbooks.intuit.com/au/blog/accountants-and-bookkeepers/intuit-intelligence-ias/ | No date shown (page metadata 15 May 2026) | 18 Nov 2026 |
+| S17 | What's new with QuickBooks Online | QuickBooks Help (Australia) | https://quickbooks.intuit.com/learn-support/en-au/help-article/intuit-subscriptions/s-new-quickbooks-online/L66q5XLC5_AU_en_AU | "Updated a day ago" (as shown on 18 Nov 2026); latest entry August 2026 | 18 Nov 2026 |
+| S18 | Introducing Intuit Intelligence | QuickBooks Help (Australia) | https://quickbooks.intuit.com/learn-support/en-au/help-article/intuit-assist/introducing-intuit-intelligence/L189976Da_AU_en_AU | "Updated 1 week ago" (as shown on 18 Nov 2026) | 18 Nov 2026 |
+| S19 | Overview of Intuit AI in QuickBooks Online | QuickBooks Help (Australia) | https://quickbooks.intuit.com/learn-support/en-au/help-article/accounting-bookkeeping/overview-agents-quickbooks-online/L9irCAtK4_AU_en_AU | "Updated 1 week ago" (as shown on 18 Nov 2026) | 18 Nov 2026 |
+| S20 | Learn about Accounting AI features | QuickBooks Help (Australia) | https://quickbooks.intuit.com/learn-support/en-au/help-article/bank-transactions/learn-accounting-agent-features/L6pl9rv94_AU_en_AU | "Updated 1 week ago" (as shown on 18 Nov 2026) | 18 Nov 2026 |
+| S21 | Get started with the Customer AI | QuickBooks Help (Australia) | https://quickbooks.intuit.com/learn-support/en-au/help-article/intuit-assist/get-started-customer-agent/L6KtREjm9_AU_en_AU | "Updated 3 months ago" (as shown on 18 Nov 2026) | 18 Nov 2026 |
+| S22 | How's Intuit using Generative AI? | QuickBooks Help (Australia) | https://quickbooks.intuit.com/learn-support/en-au/help-article/intuit-ai/hows-intuit-using-generative-ai/L1Z16bIPW_AU_en_AU | "Updated 3 months ago" (as shown on 18 Nov 2026) | 18 Nov 2026 |
+| S23 | Use the Finance AI for financial insights | QuickBooks Help (US) | https://quickbooks.intuit.com/learn-support/en-us/help-article/intuit-assist/get-started-finance-agent/L0g3aJO6W_US_en_US | Updated 24 Sep 2026 | 18 Nov 2026 |
+| S24 | Get started with the Payments AI | QuickBooks Help (US) | https://quickbooks.intuit.com/learn-support/en-us/help-article/intuit-assist/get-started-payments-agent/L0FyKj9NL_US_en_US | Updated 5 Aug 2026 | 18 Nov 2026 |
+| S25 | QuickBooks Project Management Agent | Intuit QuickBooks (global site) | https://quickbooks.intuit.com/global/resources/product-update/quickbooks-project-management-agent/ | No date shown (page metadata 13 Nov 2025 and 19 Feb 2026) | 18 Nov 2026 |
+| S26 | Intuit Intelligence Now Available Internationally, Fueling Success for Businesses and Accountants on One Unified Platform | Intuit (media release) | https://investors.intuit.com/news-events/press-releases/detail/1326/intuit-intelligence-now-available-internationally-fueling-success-for-businesses-and-accountants-on-one-unified-platform | 14 Oct 2026 | 18 Nov 2026 |
+| S27 | Intuit Unveils Revolutionary System of Intelligence to Help Businesses Grow in the AI Era | Intuit (media release) | https://investors.intuit.com/news-events/press-releases/detail/1277/intuit-unveils-revolutionary-system-of-intelligence-to-help-businesses-grow-in-the-ai-era | 28 Oct 2025 | 18 Nov 2026 |
+| S28 | Intuit Assist | Intuit | https://www.intuit.com/intuitassist/ | No date shown (© 2026) | 18 Nov 2026 |
+| S29 | Global Privacy Statement | Intuit | https://www.intuit.com/privacy/statement/ | Last updated 9 Mar 2026 | 18 Nov 2026 |
+| S30 | Intuit Responsible AI Governance | Intuit | https://www.intuit.com/privacy/responsible-ai/governance/ | No date shown (© 2026) | 18 Nov 2026 |
+| S31 | Intuit AI Principles: Strategic Partnerships with OpenAI and Anthropic | Intuit Blog | https://www.intuit.com/blog/innovative-thinking/tech-innovation/ai-principles-openai-anthropic-partnerships/ | 21 Jul 2026 | 18 Nov 2026 |
+| S32 | QuickBooks Online Terms of Service (Australia) | Intuit | https://www.intuit.com/legal/terms/en-au/quickbooks/online/ | Section A 25 Mar 2024; Section B version 12112025 | 18 Nov 2026 |
+| S33 | Intuit and Anthropic Partner to Bring Trusted Financial Intelligence and Custom AI Agents to Consumers and Businesses | Intuit (media release) | https://investors.intuit.com/news-events/press-releases/detail/1305/intuit-and-anthropic-partner-to-bring-trusted-financial-intelligence-and-custom-ai-agents-to-consumers-and-businesses | 24 Feb 2026 | 18 Nov 2026 |
+| S34 | Intuit Financial Intelligence comes to Claude via Anthropic | Intuit | https://www.intuit.com/anthropic/ | No date shown (© 2026) | 18 Nov 2026 |
+| S35 | TurboTax, QuickBooks, and more are now available in Claude | Intuit Blog | https://www.intuit.com/blog/news-social/intuit-apps-now-available-in-claude/ | 23 Apr 2026 | 18 Nov 2026 |
+| S36 | Use Claude to enter transactions and get insights in QuickBooks | QuickBooks Help (US) | https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US | Updated 28 Oct 2026 | 18 Nov 2026 |
+| S37 | Intuit QuickBooks connector | Anthropic | https://claude.com/connectors/quickbooks | "Added March 2026" | 18 Nov 2026 |
+| S38 | Intuit Developer connector | Anthropic | https://claude.com/marketplace/connectors/intuit-developer | "Added October 2026" | 18 Nov 2026 |
+| S39 | Connector verification | Anthropic | https://claude.com/docs/connectors/verification | No date shown | 18 Nov 2026 |
+| S40 | Use connectors to extend Claude's capabilities | Anthropic Help Center | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated today" (as shown on 18 Nov 2026) | 18 Nov 2026 |
+| S41 | Introducing Claude for Small Business | Anthropic | https://www.anthropic.com/news/claude-for-small-business | 13 May 2026 | 18 Nov 2026 |
+| S42 | Small Business plugin | Anthropic | https://claude.com/marketplace/plugins/small-business | No date shown (© 2026) | 18 Nov 2026 |
+| S43 | Is my data used for model training? (consumer plans) | Anthropic Privacy Center | https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training | Updated 16 Mar 2026 | 18 Nov 2026 |
+| S44 | Intuit Apps Launch in ChatGPT for Smarter Financial Insights | Intuit Blog | https://www.intuit.com/blog/news-social/intuit-apps-launch-chatgpt/ | Updated 5 Mar 2026 | 18 Nov 2026 |
+| S45 | QuickBooks expands into Claude and ChatGPT with new features | QuickBooks (news) | https://quickbooks.intuit.com/r/news/quickbooks-expands-into-claude-and-chatgpt-with-new-features/ | No date shown (page metadata 28 and 29 Jul 2026) | 18 Nov 2026 |
+| S46 | How's my business doing? QuickBooks can answer that with a new Plugin in ChatGPT | QuickBooks (news) | https://quickbooks.intuit.com/r/news/quickbooks-plugin-chatgpt/ | No date shown (page metadata 10 Sep 2026) | 18 Nov 2026 |
+| S47 | Connect QuickBooks Online to ChatGPT | QuickBooks Help (US) | https://quickbooks.intuit.com/learn-support/en-us/help-article/mobile-and-apps/connect-quickbooks-online-chatgpt/L0RDe9RPd_US_en_US | Updated 26 Aug 2026 | 18 Nov 2026 |
+| S48 | Intuit QuickBooks plugin for ChatGPT | OpenAI | https://openai.com/business/plugins/quickbooks/ | No date shown | 18 Nov 2026 |
+| S49 | ChatGPT plugin listing: Intuit QuickBooks | OpenAI | https://chatgpt.com/plugins/quickbooks | No date shown (version 6.0.7). Opened from Australia, signed out: the listing loaded. On 17 Oct 2026 it said "We couldn't load this plugin right now." | 18 Nov 2026 |
+| S50 | ChatGPT plugin directory: searches for "QuickBooks" and "Xero" | OpenAI | https://chatgpt.com/plugins?q=QuickBooks | No date shown. Searched from Australia, signed out | 18 Nov 2026 |
+| S51 | Plugins in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001256-plugins-in-chatgpt | "Updated: yesterday" (as shown on 18 Nov 2026) | 18 Nov 2026 |
+| S52 | Connecting and managing app accounts in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt | "Updated: yesterday" (as shown on 18 Nov 2026) | 18 Nov 2026 |
+| S53 | Plugins | OpenAI (ChatGPT docs) | https://learn.chatgpt.com/docs/plugins | No date shown | 18 Nov 2026 |
+| S54 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | ms.date 16 Nov 2026; updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S55 | Partner-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-partners | ms.date 16 Nov 2026; updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S56 | Microsoft-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft | ms.date 16 Nov 2026; updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S57 | Intuit Quickbooks Connector | Google Workspace Marketplace | https://workspace.google.com/marketplace/app/intuit_quickbooks_connector/52180752255 | Listing updated 16 Oct 2026 | 18 Nov 2026 |
+| S58 | Use connectors with Gemini in Workspace | Google (Gmail Help) | https://support.google.com/mail/answer/16796422?hl=en | No date shown | 18 Nov 2026 |
+| S59 | Support access to Workspace Integrations | Google Workspace Admin Help | https://knowledge.workspace.google.com/admin/gemini/support-access-to-workspace-integrations | Last updated 10 Nov 2026 UTC | 18 Nov 2026 |
+| S60 | quickbooks-online-mcp-server (README) | Intuit (intuit on GitHub) | https://github.com/intuit/quickbooks-online-mcp-server | Created 6 Oct 2025; code last updated 15 Sep 2026 (GitHub repository data) | 18 Nov 2026 |
+| S61 | intuit-3p-ai-pilot (README) | Intuit (IntuitDeveloper on GitHub) | https://github.com/IntuitDeveloper/intuit-3p-ai-pilot | Code last updated 11 Aug 2026 (GitHub repository data) | 18 Nov 2026 |
+| S62 | Partner tiers (Intuit App Partner Program) | Intuit Developer | https://developer.intuit.com/partners/benefits | No date shown (© 2026) | 18 Nov 2026 |
+| S63 | Zapier (app listing, Australia) | QuickBooks App Store | https://quickbooks.intuit.com/app/apps/appdetails/zapier/en-au/ | No date shown | 18 Nov 2026 |
+| S64 | Intuit and OpenAI Join Forces to Revolutionize Financial Intelligence | Intuit (media release) | https://investors.intuit.com/news-events/press-releases/detail/1284/intuit-and-openai-join-forces-to-revolutionize-financial-intelligence-powering-every-person-business-and-dream-with-personalized-experiences | 18 Nov 2025 | 18 Nov 2026 |
+| S65 | Intuit QuickBooks (Copilot Plugin Catalog) | Microsoft | https://www.microsoft.com/en-us/copilot/features/plugins/plugin/P_806dfb0d-ea29-54f2-1ef2-2b616ff4b249 | No date shown (version 1.0.1) | 18 Nov 2026 |
+| S66 | Microsoft Copilot for finance: Purpose-built for the way finance teams work | Microsoft (Copilot blog) | https://www.microsoft.com/en-us/copilot/blog/2026/10/29/microsoft-copilot-for-finance-purpose-built-for-the-way-finance-teams-work/ | 29 Oct 2026 | 18 Nov 2026 |
+| S67 | Intuit Expands Intelligence Platform to Power the Next Era of Accounting Firm and Business Growth | Intuit (media release) | https://investors.intuit.com/news-events/press-releases/detail/1329/intuit-expands-intelligence-platform-to-power-the-next-era-of-accounting-firm-and-business-growth | 27 Oct 2026 | 18 Nov 2026 |

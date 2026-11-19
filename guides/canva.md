@@ -1,14 +1,14 @@
 # Canva: the AI inside it, and the AI that connects to it
-Researched 15 October 2026 from vendor documentation. Every line is tagged with its source.
+Researched 18 November 2026 from vendor documentation. Every line is tagged with its source.
 
 Most of Canva's help pages show no "last updated" date, so the Sources table records the day we read each one. Where a Canva newsroom post shows no date on screen, we took the date from the page's own publishing data, which is in UTC.
 
 ## The short version
 
-Canva's AI is on every plan, including Free, but the free plan gets about 20 AI uses a month. [S1][S2]
-Paid plans get more, and the newest tools, like chatting with Canva AI to change a design or making video clips, use the allowance fastest. [S2]
+Canva's AI is on every plan, including Free, but Free gets only "limited access" to the AI tools that use a monthly allowance. [S1][S2]
+Pro gets 10 times Free's allowance for the Premium and Ultra tools, and Business gets 20 times. The newest tools, like chatting with Canva AI to change a design or making video clips, use it fastest. [S1][S2]
 Canva says it doesn't use content from Business, Teams, Enterprise or Education accounts to improve its AI, and Free and Pro users control this in their Privacy Settings. [S40][S42]
-On team and school plans, admins choose who gets each AI feature, but Canva AI itself can't be fully switched off. [S36][S8]
+On team and school plans, admins choose who gets each AI feature. [S36] Canva's FAQ says Canva AI "can't be fully turned off", but Canva is rolling out a switch that lets people on Free and Pro turn off its generative AI features for their own account. [S8][S114]
 Outside assistants can work inside your Canva account through Canva's "AI Connector", and Canva gives setup guides for ChatGPT, Claude, Gemini and Microsoft Copilot. [S56]
 A connected assistant can read your designs, and it can also create and edit designs and export files. [S56][S57]
 The connector works on every Canva plan, but some actions need a paid or Enterprise plan, and Canva's own pages disagree about which. [S56][S57][S77]
@@ -30,83 +30,92 @@ If you're billed outside the US and UK, your contract is with Canva Pty Ltd, an 
 - **MCP** (Model Context Protocol) is a shared standard that lets AI assistants use other software. Canva's AI Connector is "powered by the Canva MCP Server". [S59][S81]
 - Canva uses the word "connectors" for two different things. The **AI Connector** lets outside assistants like ChatGPT into your Canva account. [S56] **Connectors in Canva AI** go the other way, letting Canva's own AI read from apps like Gmail or Slack. [S65][S81]
 - A **Brand Kit** stores your brand's colours and fonts, among other things. [S67] A **Brand Template** is a reusable team layout, and **Autofill** fills one with your own data. [S57][S85]
+- **Canva Brush** and **Canva Craft** are AI models Canva built itself. Brush edits designs and Craft makes images. [S116][S115]
 
-**What each plan gets** (Australian pricing page and Canva's AI usage page, read 15 October 2026)
+**What each plan gets** (Australian pricing page and Canva's AI usage page, read 18 November 2026)
 
 | Plan | Who it's for | Price shown in AUD | Monthly AI allowance |
 |---|---|---|---|
-| Free | One person [S1] | A$0 [S1] | Up to 20 uses of Standard or Premium tools. No Ultra tools. [S1][S2] |
-| Pro | One person [S1] | A$165 a year [S1] | Standard tools don't count (fair use applies). Up to 200 Premium uses, or up to 20 Ultra uses. [S2] |
-| Business | Individuals and small teams [S55] | A$280 a year per person [S1] | Standard tools unlimited (fair use). Up to 400 Premium uses, or up to 40 Ultra uses. [S2] |
-| Enterprise | Organisations [S1] | No price shown ("Let's talk") [S1] | Same as Business. [S2] |
-| Canva Education | K–12 schools and teachers [S1][S39] | Free for eligible teachers and schools [S39] | Standard tools unlimited (fair use). Up to 200 Premium uses, or up to 20 Ultra uses. [S2] |
+| Free | One person [S1] | A$0 [S1] | Limited access to Standard and Premium tools. No Ultra tools, and no premium AI in Affinity. [S1][S2] |
+| Pro | One person [S1] | A$165 a year [S1] | Standard tools don't count (fair use applies). 10 times Free's allowance for Premium and Ultra tools. [S1][S2] |
+| Business | Individuals and small teams [S55] | A$280 a year per person [S1] | Standard tools don't count (fair use applies). 20 times Free's allowance for Premium and Ultra tools. [S1][S2] |
+| Enterprise | Organisations [S1] | No price shown ("Let's talk") [S1] | 20 times Free's allowance, the same as Business. [S2] The pricing page says to contact sales. [S1] |
+| Canva Education | K–12 schools and teachers [S1][S39] | Free for eligible teachers and schools [S39] | Standard tools don't count (fair use applies). 10 times Free's allowance for Premium and Ultra tools. [S2] |
 | Canva for Nonprofits | Eligible non-profits [S1] | Free for one team of up to 50 people. Extra seats are 50% off Enterprise pricing. [S1] | Same as Pro. [S2] |
-| Canva Teams | Existing subscribers only [S54] | Closed to new sign-ups and upgrades [S54] | Same as Pro. [S2] |
+| Canva Teams | Existing subscribers only [S54] | Closed to new sign-ups and upgrades [S54] | Not stated. Canva's usage page doesn't list Teams. [S2] |
 | Canva Campus | Higher education [S1] | No price shown [S1] | Not stated |
-| Pro Lite | Canva says it's "currently available in India and Indonesia" [S105] | Not on the Australian pricing page [S1] | Same as Free. [S105] |
+| Pro Lite | Sold in Argentina, Chile, Colombia, Costa Rica, Ecuador, Guatemala, India, Indonesia, Mexico, Panama and Peru. Not Australia. [S105] | Not on the Australian pricing page [S1] | Same as Free. [S105] |
 
 - The pricing page has a monthly and yearly switch ("Save from 16%"), but we could only read the yearly figures. [S1]
-- Canva's allowance figures are "up to" estimates that assume simple prompts and one type of tool. Real use with advanced tools is usually lower. [S2]
-- On Teams, Business, Nonprofits, Education and Enterprise, each member has their own allowance. Allowances aren't shared or pooled across the team. [S2]
-- Paid and Nonprofit allowances reset monthly on your billing date, including on yearly plans. [S2]
-- Free resets at 12:00 a.m. UTC on the first of each month. [S2] That's 8 am on the 1st in Perth (our conversion).
-- Pro and Business free trials get the Free allowance: up to 20 Standard or Premium uses, and no Ultra. [S2]
+- Canva no longer gives a number of uses for any plan. Its pages give Pro and Business allowances only as multiples of Free's, and don't say how much Free gets. [S1][S2]
+- Canva's allowance figures are estimates that assume simple prompts and one type of tool. Real use with advanced tools is usually at the lower end. [S2]
+- On Business, Nonprofits, Education and Enterprise, each member has their own allowance. Allowances aren't shared or pooled across the team. [S2]
+- Every seat's allowance resets in full on your billing date. [S2]
+- A seat added partway through the month gets part of the monthly allowance until the next reset. Someone moved into a seat another person left gets whatever allowance that seat has left. [S2]
+- Pro and Business free trials get the Free allowance, with no Ultra tools. [S1][S2]
 - To see what's left: profile icon > **Settings** > **Billing**, then look under **AI usage**. [S2]
 
-**What the tiers cover** (Canva's AI usage page)
+**What the tiers cover** (Canva's AI usage page and pricing page)
 
 | Tier | Tools Canva lists | How it's counted |
 |---|---|---|
-| Doesn't count on paid plans | Translate, Magic Write, Canva AI text answers, Photo and Video Animations, AI Voice [S2] | No allowance used on paid plans. On Free these still draw on the allowance. [S2] |
-| Standard | Image Upscaler, image generation with Canva AI, Magic Formulas [S2] | Cheapest. Doesn't count on paid plans, subject to fair use. [S2] |
-| Premium | Magic Layers, generating a design or elements with Canva AI, Canva Code interactives, Music and Sound Effect Generator, Form generator, Affinity's premium AI features [S2] | Draws on the allowance. [S2] |
-| Ultra | Conversational design with Canva AI 2.0, creating a video clip, creating an image with Canva AI [S2] | Uses the most. Not available on Free. [S2] |
+| Doesn't use the shared allowance | Translate and Magic Write [S2]. The pricing page also lists chatting with Canva AI, Magic Edit, Magic Eraser, Magic Expand, Magic Grab, background removal, Photo and Video Animations and AI Voice, among others. [S1] | Subject to fair use. [S1][S2] |
+| Standard | Image Upscaler and Magic Formulas [S2]. The pricing page also lists Magic Write for SEO and creating an image with Canva AI. [S1] | Doesn't count on paid plans, subject to fair use. On Free and Pro Lite it draws on the allowance, at the lowest rate. [S2] |
+| Premium | Magic Layers, generating a design or elements with Canva AI, creating an image with Canva AI, Canva Code interactives, the Music and Sound Effect Generator, the Form generator and Affinity's premium AI features [S2]. The pricing page adds Style Match, Magic Insights, Image to Video, AI ad creation with Canva Grow and conversational design. [S1] | Draws on the allowance. [S2] |
+| Ultra | Conversational design with Canva AI 2.0, and creating a video clip [S2]. The pricing page lists only high-quality video clips as Ultra. [S1] | Uses the most. Not available on Free. [S2] |
 
-- The usage page lists "Create an image with Canva AI" under more than one tier. [S2] Dream Lab's page says you can pick a quality tier, and higher tiers use more allowance. [S16] It appears the tier depends on the quality you choose (our inference).
+- Canva's two pages put some tools in different tiers. The usage page lists creating an image with Canva AI as Premium and conversational design as Ultra. The pricing page lists them as Standard and Premium. [S2][S1]
 - Canva AI 2.0 uses more of the allowance when a task includes larger design files or needs more steps. [S2]
 - Tasks that call on several AI tools cost more, and harder tasks may use more advanced models. [S2]
 
 **When you run out**
 
 - On Free, Standard and Premium tools keep working with short pauses between generations. Ultra tools stop until the reset. [S2]
-- On Pro and Teams you can keep using AI tools, with short pauses between tasks. [S2]
+- On Pro you can keep using AI tools, with short pauses between tasks. [S2]
 - Enterprise, Education and Nonprofits can keep using Premium features with short pauses. [S2]
+- Business can buy AI Pass or an AI top-up. The usage page doesn't mention pauses for Business. [S2]
 - Canva notifies you as you get close to the limit. [S2]
 
 **Buying more AI**
 
 - **AI Pass** is a monthly add-on for Pro, Teams, Business and Nonprofits plans managed on the web. [S52]
 - It isn't available on Free, Education or Enterprise, on free trials, on prepaid plans, or on plans billed through the Apple App Store or Google Play. [S52]
-- Canva's AI Pass page says it gives Pro, Teams and Nonprofits 40 times more AI, and Business 20 times more. [S52] The pricing page describes AI Pass as "40x" for Pro and Business. [S1]
+- Canva's AI Pass page says it gives Pro, Teams and Nonprofits 40 times more AI, and Business 20 times more. [S52] The pricing page now says the same: "40x more AI than Canva Pro - or 20x more than Canva Business". [S1]
 - AI Pass is charged per person. On Teams and Business, only owners and admins can buy it. [S52]
 - To buy it: profile icon > **Settings** > **Billing** > under **AI usage**, **Get more** > **Purchase AI Pass**. [S52]
 - To cancel it: **Settings** > **Billing** > next to AI Pass, **Remove** > **Remove AI Pass**. It stays until the end of the billing cycle. [S52]
 - **AI top-ups** are for Business only. Each adds one month's Business allowance and lasts 30 days. Unused allowance doesn't roll over, and only one top-up can be active at a time. [S53]
 - A manual top-up "can't be cancelled once purchased". [S53] Automatic top-ups need a web subscription and have a spend cap. [S53]
 - The Australian pricing page shows no price for either add-on. [S1] See "What we couldn't establish".
+- When you ask a connected assistant like ChatGPT for a video, Canva may offer to upgrade your plan or sell you an "AI Project Pack". [S57] The pages we read don't say what a Project Pack includes or costs.
 
 **Where your data lives**
 
 - Canva's Trust Center says "Canva stores your data in the United States". [S40]
 - The same page says Canva group companies process data in Australia, New Zealand, the Philippines, the United Kingdom and Singapore, as well as Europe and the US. [S40]
-- Canva's Privacy Policy (25 August 2026) says your information "will be stored and processed in" the United States, Australia, Singapore, the EU, the UK, the Philippines and New Zealand. [S41]
-- Canva's sub-processor list (17 April 2026) names the outside companies used for "Canva AI Services": Amazon Web Services (US and EU), and Anthropic, ElevenLabs, Features & Labels, Google, Nanonoble and OpenAI (all US). [S49]
+- Canva's Privacy Policy (2 November 2026) says your information "will be stored and processed in" the United States, Australia, Singapore, the EU, the UK, the Philippines and New Zealand. [S41]
+- Canva's sub-processor list (23 October 2026) names the outside companies used for "Canva AI Services". They are Amazon Web Services (US, EU, Australia and Japan), Alibaba Cloud (Singapore and US), Byteplus (Indonesia and Malaysia), and Anthropic, Baseten Labs, ElevenLabs, Features & Labels, Fireworks.ai, Google, Kling AI, Nanonoble and OpenAI (all US). [S49]
 - Leonardo.AI, a Canva group company, is listed for "Canva & Affinity AI Services" in Australia and the United States. [S49]
 - Canva Austria GmbH, another group company, is listed for "Canva and Affinity Photo and Video AI Services" in the EU and US. [S49]
-- The list says Nanonoble doesn't process customer personal data for Canva Education, Canva Enterprise, or customers with a signed Order Form. [S49]
+- The list says Alibaba Cloud, Byteplus, Kling AI and Nanonoble don't process customer personal data for Canva Education, Canva Enterprise, or customers with a signed Order Form. [S49]
 - We didn't find an option to keep Canva data in Australia only. See "What we couldn't establish".
 
 ## AI built in
 
-Three things apply to most features in this section.
+A few things apply to most features in this section.
 
 **Who controls it.** On Teams and Business, Magic and AI features are on for every member by default. [S36]
 Admins change this at profile icon > **Settings** > under **Controls and permissions**, **Permissions** > **Magic and AI**, then choose who can use each feature. [S36]
 The same controls are available to Enterprise and Education owners and admins. [S36]
 The **Magic and AI** list, in Canva's words: Magic Write, Magic Design, Magic Activities, Magic Edit, Magic Media, Transform into Doc, Dream Lab, Help Assistant for AI-generated design advice, Canva AI, Magic Insights, Canva Code, AI Shapes, AI Charts, Use team content to generate AI responses, Canva AI Music and Sound Effects, and Image to Video. [S36]
 Changes apply to new designs. Magic features already used in existing designs stay available. [S36]
-Some people may not get a feature even when it's switched on, because availability depends on the language set in Canva. [S36]
+Some people may not get a feature even when it's switched on, because availability can depend on language and region. [S36]
 Canva's FAQ says Canva AI "is a core feature and can't be fully turned off", though team and school admins can control access to it. [S8]
+
+**On Free and Pro, you can switch generative AI off yourself.** Canva is gradually rolling out an **Enable generative AI features** switch at profile icon > **Settings** > under **Controls and permissions**, **Permissions**. [S114]
+It's on by default. Turning it off stops Canva AI, Magic Write, Magic Media, Dream Lab, Canva Code, Translate designs and other generative tools. Non-generative tools like background remover keep working. [S114]
+A separate **AI-generated content** toggle, under **Your account** > **AI personalization**, shows you fewer AI-made templates and elements in search. [S114]
+The generative AI setting doesn't carry over if your account moves to Teams, Enterprise or Education. [S114]
 
 **Schools are set up differently.** "Only administrators and teachers have access by default." [S36] See "Schools and students" under What to watch for.
 
@@ -118,10 +127,13 @@ The feature blocks below only add what's specific to each one. "What to watch fo
 ### Canva AI (the assistant)
 
 **What it does.** A chat assistant for creating and editing designs, images, videos and code, and for brainstorming. [S3]
-Canva calls the original single-prompt version "Canva AI 1.0". "Canva AI 2.0" lets you create and edit by chatting inside the editor. [S3]
+"Canva AI 2.0" lets you create and edit by chatting inside the editor. [S3] Some help pages still call the older single-prompt version "Canva AI 1.0". [S18]
 In the editor it reads your design and changes it on the canvas, for example "Make all headlines blue". [S5]
 It can search the web for current information and apply your Brand Kit. [S3][S4]
 It can also run tasks on a daily, weekly or monthly schedule, up to 10 at a time. Each run starts a new chat and you get a notification when it's done. [S3]
+When generating designs you can choose between two models, **Canva Core** and **Canva Brush**. Brush is "a model trained at Canva". With Core, some designs may use a different model. Editing requests always use Brush. [S3][S8]
+Canva says the choice between the two is rolling out gradually. [S4][S8]
+Canva announced Brush on 30 October 2026. It said Brush was powering supported design edits "for Canva Pro subscribers, with expanded availability coming soon". [S116]
 Canva announced Canva AI 2.0 on 16 April 2026 as a research preview, saying general availability would roll out "over the coming weeks". [S11]
 Its help pages still say 2.0 features are rolling out gradually. [S9]
 
@@ -129,14 +141,15 @@ Its help pages still say 2.0 features are rolling out gradually. [S9]
 Type or speak your prompt, then press Enter or select **Submit**. The plus icon adds context: **Upload**, **Add from Canva**, **Apply brand** or **Connect**. [S7]
 In the editor, select the **Canva AI** tab in the sidebar and describe the change. The **Stop** button interrupts it. [S5]
 Or select an element and choose **Ask Canva** in the editor toolbar, which opens Canva AI in the side panel. [S6]
-Chat history is under the icon in the top corner. Scheduled tasks are under the panel icon > **Tasks**. [S3]
+Chat history is under the icon in the top corner, and scheduled tasks appear under **Scheduled Tasks** in the chat history. [S3]
+On paid plans you can have several Canva AI chats open at once. Free and Education are limited to two. [S3]
 
 **Plans and cost.** Canva AI itself is on every plan, including Free. [S10]
-Canva's help pages say the 2.0 features, including Memory Library and Connectors, come with Pro, Teams, Business and Nonprofit. [S3][S4]
-Free and Education users get "Canva AI 1.0" features, plus tools like Magic Write and Background Remover with limited monthly use. [S3]
-The page on editing by conversation lists Pro, Business and Enterprise instead, and says it "isn't available for everyone just yet". [S5]
-The Australian pricing page marks Canva AI 2.0 as "Soon" for Enterprise. [S1]
-Conversational design is an Ultra tool, the most expensive tier, and Free can't use Ultra tools. [S2]
+Canva's help pages say the 2.0 features, including Memory Library and Connectors, come with Pro, Teams, Business, Nonprofit and Enterprise. [S3][S4]
+Free and Education get some AI features, such as Magic Write, with limited monthly use. [S3] Free also gets Background Remover. [S4]
+The page on editing by conversation lists no plans, and says it "isn't available for everyone just yet". [S5]
+The Australian pricing page tags "The new Canva AI" as "New" on Free, Pro and Business, and "Soon" on Enterprise. [S1]
+Canva's usage page calls conversational design an Ultra tool, the most expensive tier, which Free can't use. [S2] The pricing page lists it as Premium. [S1]
 **Ask Canva** only uses your allowance when a request uses a premium AI feature. It doesn't appear in the toolbar on Free or Education. [S6]
 
 **On by default, and who controls it.** On by default for Teams and Business members. Admins use the **Canva AI** control under **Magic and AI**. [S36]
@@ -148,26 +161,27 @@ It says Google Workspace data is handled under Google's API Services User Data P
 The pages we read don't say how long Canva keeps Canva AI conversations. [S8][S41]
 
 **In Australia.** Canva doesn't name Australia as restricted, and English is supported. [S3]
-Canva does say Canva AI "may not yet be available in your country or region", and isn't available in every language yet. [S4]
+Canva does say Canva AI "may not be available in your selected Canva language or country/region yet". [S4]
 
 ### Memory Library
 
-**What it does.** Learns your style preferences, such as colours and tone, from your work in Canva and your Canva AI prompts. It keeps them in an "About Me" page, which is a Canva Doc. [S12]
-It doesn't keep chat details or the context of ongoing projects. [S12]
-Canva's FAQ says it is rolling out gradually. [S8]
+**What it does.** Gives Canva AI personal context. Your Memory Library holds an **About Me** page and any Canva designs you add as memory sources. [S12]
+Canva AI may update About Me automatically as you use it. It picks memory sources by relevance, so adding one doesn't guarantee it gets used. [S12]
+Teams can also keep shared team memories, which Canva manages separately. [S12]
+The page says some Canva AI features are rolling out gradually. [S12]
 
-**Where to find it.** Home > **Canva AI** > **Memory**. If there's no About Me page yet, select **Create About Me**. [S12]
+**Where to find it.** Home > **Canva AI** > the icon in the lower-left corner > **Memory**. If there's no About Me page yet, select **Create About Me**. [S12]
 
-**Plans and cost.** Pro, Teams, Business and Nonprofit. Education isn't listed. [S12]
+**Plans and cost.** Pro, Teams, Business and Nonprofit. Free and Education can create and use only one Memory. [S12]
 
 **On by default, and who controls it.** The page doesn't say whether it starts on or off. [S12]
-To turn it off (desktop only): account icon > **Your account** > **AI personalization**, then under **Memory**, turn off the **About Me** toggle. [S12]
-The page doesn't describe an admin control for it. [S12]
+To turn it off (desktop only): account icon > **Your account** > **AI personalization**, then under **Memory**, turn off the **About Me** toggle. That stops Canva AI saving to or using About Me, but doesn't delete it. [S12]
+The page points to separate pages on team memories and memory permissions, which we haven't read. [S12]
 
-**Your data.** You can edit the About Me page, or delete it with **File** > **Organize** > **Move to trash**. No retention period is stated. [S12]
+**Your data.** You can edit About Me, or delete it by moving it to the trash. Removing a design from Memory Library doesn't delete the design. No retention period is stated. [S12]
 Canva's Privacy Policy says you manage your Memories in your AI personalisation settings. [S41]
 
-**In Australia.** The page says it may be unavailable in some regions, without naming them. [S12]
+**In Australia.** No country limits stated. [S12]
 
 ### Connectors in Canva AI (Canva reading your other apps)
 
@@ -176,27 +190,28 @@ Canva's help names Slack, Gmail, Zoom, Notion, Asana, Google Drive, HubSpot and 
 Canva's 2.0 announcement also listed Google Calendar, Microsoft, Atlassian and Linear. [S11]
 **Can it act?** No. The connections are read-only. Canva AI can't edit, delete or create anything in those apps. [S65]
 Canva's developer docs add that they bring in text only, with no images or video. [S81]
-You can be limited to five active apps at a time. Canva AI may miss an app unless your prompt names it or the information you need. [S65]
+Canva AI may miss an app unless your prompt names it or the information you need. [S65]
 Canva builds all these connectors itself and isn't taking submissions from other companies. [S81]
 You can also import files from Google, Dropbox and OneDrive into Canva AI. It takes CSV, DOC, DOCX, XLS, XLSX, TXT, MD, PDF, JPG and PNG files, up to 10 MB each and three at a time. [S66]
 
 **Where to find it.** See the steps below. The editor route works on desktop and the web. It isn't available in the mobile app. [S65]
 
-**Steps to connect** (Canva Help Centre, no date shown; read 15 October 2026):
+**Steps to connect** (Canva Help Centre, no date shown; read 18 November 2026):
 
-1. On the homepage, go to **Canva AI**, select the plus icon and choose **Connect apps**. [S65]
-2. Pick an app. If your account isn't linked yet, select **Connect** and follow the prompts. [S65]
+1. On the homepage, go to **Canva AI**. In the search bar, select the plus icon, then choose **Connect**. [S65]
+2. Choose an app from the list. If your account isn't linked yet, select **Connect** and follow the prompts. [S65]
 3. Turn the app on with its toggle, type a prompt that names the app or the information you need, and select **Submit**. [S65]
 
-**Plans and cost.** Part of the 2.0 features for Pro, Teams, Business and Nonprofit. [S3]
-The pricing page lists "Canva AI connectors" as new for Pro and Business, and "Soon" for Enterprise. [S1] It doesn't say which kind of connector it means, though it sits next to Canva AI 2.0 (our reading).
+**Plans and cost.** Canva's connector page says they're "available to Canva Free and supported paid users", and that not every connector is on every account yet. [S65]
+Canva's Canva AI page lists Connectors as a 2.0 feature for Pro, Teams, Business, Nonprofit and Enterprise. [S3]
+The pricing page shows "Connectors in Canva AI" as not included on Free, included on Pro and Business, and "Coming soon" on Enterprise. [S1]
 
 **On by default, and who controls it.** Each person connects their own apps. Some apps may need organisation or admin approval. [S65]
 In Canva Education, "AI connectors are blocked for all Education users" by default. [S38] That page doesn't say whether it means these connectors, the AI Connector for outside assistants, or both.
 
 **Your data.** Canva AI only sees what your connected account is allowed to see in that app. [S65]
 Imported files are added to your Uploads folder. [S66]
-To disconnect: plus icon > **Connect apps** > **Manage apps** > the app > **Disconnect**. That disconnects it everywhere in Canva. Toggling an app off only stops Canva AI using it. [S65]
+To disconnect: plus icon > **Connect** > **Manage apps** > the app > **Disconnect**. That disconnects it everywhere in Canva. Toggling an app off only stops Canva AI using it. [S65]
 
 **In Australia.** No country limits stated. Some apps are still rolling out. [S65]
 
@@ -212,7 +227,7 @@ The admin control for it is still called **Magic Design**. Designs that follow y
 **Plans and cost.** It counts toward your AI usage. [S7] "Generating a design or elements with Canva AI" is a Premium tool. [S2]
 
 **On by default, and who controls it.** On by default for Teams and Business. [S36] Owners and admins decide who gets it, and students should ask their teacher. [S7]
-If an admin turns off Magic Design, a connected assistant like ChatGPT can't generate designs for anyone on that team either. [S57]
+If an admin turns off Magic Design, a connected assistant like ChatGPT can't generate designs for anyone on that team either. **Canva AI** has to be on for that person too. [S57]
 
 **Your data.** Uploads must be a supported format within Canva's size limit. [S7] The shared data rules at the start of this section apply.
 
@@ -228,7 +243,7 @@ It can also draft presenter notes from your slides or from a custom prompt. [S13
 For existing text, right-click it or select it, then choose **Magic Write** from the toolbar. [S13]
 For presentations: **Notes** > **Generate notes**. From the homepage: **Canva AI** > **Draft a doc**. [S13]
 
-**Plans and cost.** On paid plans it doesn't count toward the monthly allowance. On Free it does. [S2]
+**Plans and cost.** Canva's usage page says Magic Write doesn't count toward the shared allowance. [S2] Its Canva AI page says Free and Education get it "with limited monthly usage". [S3]
 
 **On by default, and who controls it.** Team admins and brand designers decide who on a team can use it, and teachers decide for their class. Canva Education admins and teachers can turn it on for students. [S14]
 
@@ -251,7 +266,7 @@ Magic Switch sits under **Resize** and includes a **Translate** option. [S27]
 Or **Resize** > under **Magic Switch**, **Translate** > set **Translate to** and **Apply to page** > **Translate** > **Open**. [S27]
 Or select the page > **Edit** > **Translate**. The settings there include **Reduce font size to fit** and **Duplicate page when translating**. [S27]
 
-**Plans and cost.** On paid plans Translate doesn't count toward the allowance. On Free it does. [S2]
+**Plans and cost.** Canva's usage page says Translate doesn't count toward the shared allowance. [S2]
 
 **On by default, and who controls it.** Translate isn't in the **Magic and AI** admin list. [S36] The pages we read don't describe a separate admin switch for it.
 
@@ -262,10 +277,11 @@ It gives no accuracy warning, but notes "Translate doesn't work with all fonts".
 
 ### Images: Magic Media, Dream Lab and AI image apps
 
-**What it does.** Magic Media makes images, graphics and 4-second videos from a text prompt. [S15]
-Dream Lab makes four images per prompt. You can add a reference image to guide the style or layout, and refine results with follow-up instructions. **Boost resolution** adds detail. [S16]
+**What it does.** Magic Media makes images, graphics and 4-second videos from a text prompt. It also has a **3D** tab. [S15]
+Dream Lab makes up to four images per prompt. You can add a reference image to guide the style or layout, and refine results with follow-up instructions. **Boost resolution** adds detail. [S16]
 Canva AI can also create images from a prompt. [S2]
 Paid plans also offer DALL·E (by OpenAI) and Imagen (by Google Cloud) as AI image generation apps. [S20]
+On 23 October 2026 Canva announced **Canva Craft**, its own image model, saying it's "available now in Canva and to developers through our public API". The post doesn't say which Canva tools use it. [S115]
 
 **Where to find it.** Magic Media: in the editor side panel select **Magic Media**, or search for it under **Apps**. Choose the **Images**, **Graphics** or **Videos** tab, describe what you want, then generate. [S15]
 Dream Lab: homepage > **More** > **Dream Lab** > type a prompt > **Generate**. It isn't inside the editor. [S16]
@@ -346,7 +362,7 @@ It takes single-page PNG or JPG files up to 5000 pixels on the longest edge. It 
 
 **Where to find it.** Home > **Magic Layers** > **Select Media**. Or in the editor, select an image > **Edit** > **Magic Layers**. [S25]
 
-**Plans and cost.** A Premium tool that uses your monthly allowance. [S2][S25] The pricing page lists it on Free and Pro. [S1]
+**Plans and cost.** A Premium tool that uses your monthly allowance. [S2][S25] The pricing page also lists it as Premium. [S1]
 
 **On by default, and who controls it.** The admin list has no separate Magic Layers control. [S36]
 
@@ -361,15 +377,15 @@ Since 8 June 2026 it also works inside ChatGPT and Gemini, turning images made t
 Charts made from a description are filled with sample data that matches the description. [S28]
 Data doesn't update by itself. You have to refresh or re-upload it, and uploads are CSV only. [S28]
 
-**Where to find it.** In a design, go to **Elements**, type a chart description, open the dropdown next to **Generate images** and select **Generate a chart**. [S28]
-For your own data: **Elements** > plus icon > **Upload** a CSV, or **Import** from a source and select **Add to Canva AI**. [S28]
+**Where to find it.** In a design, select **Canva AI** in the side panel, describe the chart in the prompt bar, then select **Submit**. [S28]
+For your own data, first select the plus icon (**Add something to your request**) and add a CSV upload, a connected data source or a Canva Sheet open in the editor. [S28]
 
-**Plans and cost.** The page doesn't say. [S28] Canva's 2 September 2026 update said Sheets data can become a chart "with a prompt". [S74]
+**Plans and cost.** The page says availability "may also depend on your plan's remaining AI credits or usage allowance". [S28] Canva's 2 September 2026 update said Sheets data can become a chart "with a prompt". [S74]
 
 **On by default, and who controls it.** Admins have an **AI Charts** control. [S36]
 
 **Your data.** Canva's warning: "Always verify and update the data with your own information before sharing." [S28]
-The page says the feature may still be rolling out. [S28]
+It can't make infographic charts or some less common chart types. [S28]
 
 **In Australia.** Not available in China. No other country limits stated. [S28]
 
@@ -439,7 +455,7 @@ Canva says "It's always best to double-check the responses for accuracy." [S35]
 ### Audio and other built-in tools
 
 Canva's usage page lists more AI tools than we could research one by one. [S2]
-- AI Voice and Photo and Video Animations don't count toward the allowance on paid plans. [S2]
+- AI Voice and Photo and Video Animations don't count toward the shared allowance. [S1]
 - The Music and Sound Effect Generator and the Form generator are Premium tools. Image Upscaler is a Standard tool. [S2]
 - Admins have separate controls for **Canva AI Music and Sound Effects**, **AI Shapes**, **Transform into Doc** and **Magic Activities**. [S36]
 - Canva's AI page also lists a Shape Generator, Magic Background, Style Match and a 3D Content Generator. [S10]
@@ -462,7 +478,7 @@ It covers privacy controls, automatic review of prompts and outputs, reporting, 
 
 **Indemnity.** Canva says "Eligible enterprise customers are indemnified for AI output, at no extra cost" when they use its Magic Studio products. [S45]
 Its AI page says this is for "enterprise customers with over 100 seats". [S10]
-The pricing page shows AI output indemnity isn't included on Free or Pro. [S1]
+The pricing page shows AI output indemnity isn't included on Free, Pro or Business, and lists "Minimum 100 seats" for Enterprise. [S1]
 We couldn't find indemnity wording specific to AI output in Canva's Master Services Agreement. [S48]
 
 **Moderation.** Canva automatically checks certain prompts and reviews outputs. [S44]
@@ -480,12 +496,13 @@ Canva gives setup guides for ChatGPT, Claude, Gemini and Microsoft Copilot. [S56
 
 **What it can see and do.** Canva says a connected assistant "can read design details and folders, and create and edit designs". [S56]
 It can reach projects you have permission to view, including folders shared with you. [S59]
-Canva's list of actions includes generating a design, creating a blank design, searching designs, and reading a design's details, pages, text and presenter notes. [S57]
-It also includes resizing, importing PDF, PowerPoint, Word and Google Slides files from a link, exporting, merging and copying designs, making folders and moving items, viewing comments, and searching and autofilling Brand Templates. [S57]
+Canva's list of actions includes creating designs and social videos, generating images, removing backgrounds, turning a flat image into an editable design, searching designs, and reading a design's details, pages and presenter notes. [S57]
+It also includes resizing, importing PDF, PowerPoint and other files from a link, exporting, merging and copying designs, making folders and moving items, viewing and replying to comments, and searching and autofilling Brand Templates. [S57]
 Exports can be PDF, PNG, MP4, PowerPoint, JPG and other formats. [S57]
-Canva's developer list adds uploading assets, adding comments and replies, generating images, removing backgrounds, and step-by-step design editing. [S77]
+Canva's developer list adds uploading assets, creating and publishing Brand Template drafts, separating an image into layers, and step-by-step design editing. [S77]
 **Can it delete?** Neither list includes a tool for deleting designs. [S57][S77]
-Which actions you actually get depends on the assistant. [S57]
+Some tools only appear in an assistant's "Agent mode", for example in Claude or Cursor. [S57]
+Creating a video needs Pro or above, and isn't available on a free trial, Education or Nonprofits. Removing a background needs Pro or above. [S57]
 
 **What you need.**
 - Any Canva plan can connect, including Free and Education. [S56][S59]
@@ -493,15 +510,15 @@ Which actions you actually get depends on the assistant. [S57]
 - On Teams, Business, Nonprofit, Education or Enterprise, your admin decides whether people can connect. [S56]
 - Some actions need more than a free plan, and Canva's pages disagree about which:
 
-| Action | Canva Help Centre | Canva's AI Connector page | Canva developer docs | Google's Gemini help |
-|---|---|---|---|---|
-| Search Brand Templates | Paid plans, including Education [S56][S57] | Enterprise only [S59] | Pro and above [S77] | Enterprise only [S96] |
-| Autofill a Brand Template | Enterprise [S57][S60], but another page says "all Canva plans except Pro Lite and Canva Free" [S56] | Enterprise only [S59] | Pro and above [S77] | Enterprise only [S96] |
-| Resize a design | Not stated | Paid plans [S59] | Pro and above. Free gets a limited trial. [S77] | Enterprise only [S96] |
+| Action | Canva Help Centre | Canva's AI Connector page | Canva developer docs |
+|---|---|---|---|
+| Search Brand Templates | Paid plans, including Education [S56][S57][S60] | Enterprise only [S59] | Pro and above [S77] |
+| Autofill a Brand Template | "All Canva plans except Pro Lite and Canva Free" [S56][S57][S60], but the same actions and ChatGPT pages also say autofilling a Brand Template needs Enterprise [S57][S60] | Enterprise only [S59] | Pro and above [S77] |
+| Resize a design | No plan stated [S57] | Paid plans [S59] | Pro and above. Free gets a limited trial. [S77] |
 
 - Exports from Free accounts are standard quality. Pro and above get higher quality, lossless PNG and transparent backgrounds. [S77]
 
-**Before anyone connects: the admin switch** (Canva Help Centre, no date shown; read 15 October 2026):
+**Before anyone connects: the admin switch** (Canva Help Centre, no date shown; read 18 November 2026):
 
 1. Go to **Admin Dashboard**. [S56]
 2. Select **Controls and Permissions**, then **Third-party integrations**. [S56]
@@ -512,12 +529,16 @@ The connector "counts as a third-party integration" and "uses the same permissio
 Team admins can currently only switch it on or off for the whole team. [S58]
 Canva's advice: "If your organisation isn't comfortable granting these permissions, leave it off." [S56]
 
+**Your team's AI permissions also apply.** Each AI tool in an assistant only works if the **Magic and AI** permissions it needs are on for that person. [S57]
+Creating a design needs **Canva AI** and **Magic Design**. Generating an image or a video needs **Canva AI** and **Magic Media**. Turning an image into an editable design needs **Magic Layers**. [S57]
+If one is off, the tool still shows in the assistant, but the person sees a message that their admin has turned it off. Finding, editing and exporting designs follow the AI Connector switch. [S57]
+
 **To disconnect from Canva's side.** In your Canva settings, go to **Your profile** > **Integrations connected to Canva** and select **Disconnect** next to **Canva AI Connector**. [S59]
 "The AI assistant loses access immediately, but your designs stay in Canva." [S59]
 You can also remove it in the assistant's own settings, as each block below shows. [S59]
 
 **Limits.**
-- AI actions like generating designs "may use your monthly Canva AI credits". [S56] Canva's usage page confirms your allowance can be spent generating designs inside connected assistants. [S2]
+- AI actions like generating designs "may use your monthly Canva AI credits". [S56] Canva's usage page says creating designs, generating images and using Magic Layers in a connected assistant use the same allowance as in Canva. In ChatGPT and Claude, Canva warns you when you're close to the limit. [S2]
 - Canva says "We'll introduce usage limits in the future." [S56]
 - Each person can make up to 300 requests a minute across all their AI tools. Some actions have lower caps, such as 10 image generations a minute. [S77]
 - Your assistant may have its own message or token limits. [S56]
@@ -531,18 +552,20 @@ On 8 June 2026 Canva said the Canva app in ChatGPT was "available to all users g
 OpenAI's plugin directory lists it as Canva, made by Canva Pty Ltd., version 17.0.1. [S109]
 
 **What it can see and do.** It creates designs from your description and shows options in the chat. You pick one to keep editing in Canva. [S60]
-You can also ask it to find your existing designs, resize or copy a design, import a design from a link, or turn an image into an editable design. [S60]
+You can also ask it to generate or edit an image, remove a background (Pro and above), turn a flat image into an editable design, find, resize or copy your designs, or import a design from a link. [S60]
+For designs that can be printed, like flyers or business cards, you can choose to print with Canva. The design opens in Canva with print options ready. [S60]
 Magic Layers works inside ChatGPT for images made there. [S69]
 Only designs you select are saved to your Canva account. To keep one, choose **Save** or **Open in Canva**. [S60]
-Searching Brand Templates needs a paid Canva plan, and autofill needs Enterprise. [S60]
+Searching Brand Templates needs a paid Canva plan. The page says autofill works on every plan except Pro Lite and Free, but its troubleshooting section still says autofill needs Enterprise. [S60]
+Making designs and images in ChatGPT uses your Canva AI allowance, not your ChatGPT plan. [S60]
 OpenAI's listing also mentions removing backgrounds and checking designs against your Brand Kit. Bulk Create needs a Canva Enterprise plan, and making designs or images uses Canva AI credits. [S109]
 
 **What you need.** A ChatGPT account and any Canva account, including Free and Education. [S60]
-Canva says a ChatGPT Business or Enterprise admin must turn on **Apps & Connectors** first. [S60] OpenAI's own pages say apps start switched on in Business. In Enterprise and Edu, new plugins and apps generally stay off until an admin reviews them under **Admin console** > **Plugins**. [S112]
+Canva says a ChatGPT Business or Enterprise admin must turn on **Apps & Connectors** first. [S60] OpenAI's own pages say apps start switched on in Business. New Enterprise and Edu workspaces start with a selected set of apps switched on, and other new plugins and apps generally stay off until an admin reviews them under **Admin Console** > **Plugins**. [S112]
 On a Canva team, your admin may need to allow the AI Connector. [S60]
 OpenAI says its plugin directory is open on every ChatGPT plan, while using a particular plugin depends on your plan, workspace, role and region. [S110] Its Canva page doesn't list plans or countries. [S108]
 
-**Steps to connect** (Canva Help Centre, no date shown; read 15 October 2026):
+**Steps to connect** (Canva Help Centre, no date shown; read 18 November 2026):
 
 1. Open ChatGPT and select **Settings**. [S60]
 2. Select **@ Plugins**. [S60]
@@ -574,18 +597,18 @@ Since 25 January 2026 you can apply your Brand Kit when making designs with Clau
 
 **What it can see and do.** Claude's listing sums it up as "Search, create, autofill, and export Canva designs". [S91]
 The listing shows 17 tools, including search-designs, get-design-content, generate-design, export-design, create-folder, move-item-to-folder and add-comment-thread-to-design. [S91]
-Canva says that in Claude its design tools are grouped into two, read_design and edit_design, and some tools only appear in "Agent mode". [S57]
+Canva says that in Claude its nine design tools are grouped into two, read_design and edit_design, and that edit_design can now insert text and pages. Some tools only appear in "Agent mode". [S57]
 
-**What you need.** Claude's directory connectors work for all users on Claude, Cowork, Claude Desktop and the Claude mobile apps. Installing them on mobile is in beta. [S92]
+**What you need.** Claude says web connectors work for all users on Claude, Cowork, Claude Desktop and Claude Mobile. Installing them on mobile is in beta. [S92]
 Any Canva plan, including Free. [S56]
 On Claude Team or Enterprise, an Owner or Primary Owner has to add the connector for the organisation first. Each person then signs in to Canva themselves. [S92]
 Claude is offered in Australia. [S95]
 
-**Steps to connect** (Claude Help Center, "Updated over 2 weeks ago" when read on 15 October 2026):
+**Steps to connect** (Claude Help Center, "Updated today" when read on 18 November 2026):
 
 1. In Claude, go to **Customize** > **Connectors** and click **+** next to **Connectors**. [S92]
 2. Find Canva in the directory and click it. [S92]
-3. Click **Connect**, then sign in to Canva and approve access. [S92]
+3. Click **Connect** or **Install**, then sign in to Canva and approve access. [S92]
 4. In a chat, click **+** (or type **/**), hover over **Connectors** and turn **Canva** on. [S92]
 
 Canva's own help page describes this as **Settings** > **Connectors** > **Canva**, then turning **Canva** on under **Connectors** in a new chat. [S61]
@@ -594,12 +617,13 @@ Canva's own help page describes this as **Settings** > **Connectors** > **Canva*
 
 1. Go to **Organization settings** > **Connectors**. [S92]
 2. Click **Browse connectors**, find Canva and click **Add to your team**. [S92]
-3. If you want, set each tool to **Always allow**, **Needs approval** or **Blocked**. Members can't override these. [S92]
+3. If you want, go to **Customize** > **Connectors**, select Canva and, under **Tool permissions**, set each tool or group to **Always allow**, **Needs approval** or **Blocked**. Members can't override these. [S92]
 
+Members who can't add connectors themselves can select **Request** on a connector's directory page. Requests are on by default on Team plans and off by default on Enterprise. [S92]
 Owners can also turn off just the interactive parts of a connector under **Organization settings** > **Connectors**. Its text-based functions keep working. [S93]
 
 **For Canva Enterprise: Cross app access (beta).** Canva Enterprise organisations that use Okta for single sign-on can give everyone the connector in Claude Team or Enterprise through their existing sign-on. [S64]
-Steps (Canva Help Centre, no date shown; read 15 October 2026):
+Steps (Canva Help Centre, no date shown; read 18 November 2026):
 
 1. In Canva, open **Settings** > **Security** > **Cross app access** and turn on **Enable Cross app access**. [S64]
 2. Only if your ID-JAG issuer URL differs from your SAML **Identity Provider Issuer**: select **Add ID-JAG Issuer**, enter the **ID-JAG Issuer URL** and select **Add Issuer**. [S64]
@@ -607,6 +631,7 @@ Steps (Canva Help Centre, no date shown; read 15 October 2026):
 4. Check the toggle is on, your issuer is listed, and the Canva connector shows as active in Claude. [S64]
 
 Members then don't need to set up the connector themselves. [S64]
+Anthropic's help appears to call this Enterprise-managed auth (it links to the same Anthropic article), and says it's in beta for Team and Enterprise plans. [S92]
 
 **To disconnect.**
 - In Claude: **Customize** > **Connectors** > select Canva and disconnect it. [S92]
@@ -627,25 +652,23 @@ Members then don't need to set up the connector themselves. [S64]
 
 **Official?** Yes. Canva gives setup steps, and Google documents Canva as a Gemini connected app. [S62][S96]
 
-**What it can see and do.** Google's help lists three areas. [S96]
-- Create designs from a prompt or a Gemini image, then edit things like text and background colours. [S96]
-- Search and manage assets: find designs, list folders and pages, create folders and move things between them. [S96]
-- Comments: list comments and replies, add comments and reply to them. [S96]
+**What it can see and do.** Google's table of connected apps describes it as "Create designs, manage assets, and collaborate in Canva." [S96]
 Canva adds that Gemini can use your Brand Kit and summarise existing designs. [S68] It can also turn Gemini images into editable layouts with Magic Layers. [S69]
-**What it can't do.** Manage Brand Kit assets, export designs to other formats, see reviews, or see your billing. [S96]
-These need a Canva Enterprise team: resizing, searching Brand Templates, autofilling them, and reading their data fields. [S96]
+Google says each app's details page in Gemini's Connected Apps settings lists its supported and unsupported actions. [S97] Those settings sit behind a sign-in, so we haven't read them. See "What we couldn't establish".
 
-**What you need.** A personal Google Account. Google says it "isn't available if you sign in to a work or school Google Account". [S96]
-**Keep Activity** must be on. [S96]
-The Gemini web or mobile app, in English. It doesn't work in Gems or Live chats. [S96]
-A Canva account linked to your Google Account. [S96]
+**What you need.** A personal Google Account. Google's table says "Personal Google Account only". [S96]
+You must be 13 or over. [S96]
+Gemini's **History** setting must be on, or connected apps won't work on gemini.google.com or iOS. [S97]
+It works in the Gemini web app, the mobile app and the Windows app, in chats and Tasks. [S96]
+Supported languages are English, French, Hindi, Indonesian and Portuguese. [S96]
+A Canva account linked to your Google Account. [S62]
 
-**Steps to connect** (Gemini Apps Help, no date shown; read 15 October 2026):
+**Steps to connect** (Gemini Apps Help, "Use & manage Connected Apps in Gemini", no date shown; read 18 November 2026):
 
-1. Go to gemini.google.com or open the Gemini mobile app. [S96]
-2. Ask Gemini to do something in Canva, and mention "Canva" or add **@Canva** to your prompt. [S96]
-3. If Canva isn't connected, you'll get the option to connect it. Link your Canva account to your Google Account if asked. [S96]
-4. Follow the on-screen instructions. [S96]
+1. On your computer, go to gemini.google.com. [S97]
+2. In the text box, type your request. To pick Canva, type **@** and select Canva. [S97]
+3. If Canva isn't connected, Gemini either connects it or asks your permission to connect it. Click **Submit**. [S97]
+4. Follow any on-screen instructions. [S97]
 
 Or from Gemini's settings on a computer (Gemini Apps Help, no date shown):
 
@@ -657,14 +680,14 @@ Canva's own page gives a different path: **Settings** > **Personal Intelligence*
 
 **To disconnect.** In Gemini: **Customize** > **Connectors** > Canva > **More options** > **Disconnect**. [S97]
 Canva's page: under **Connected Apps** > **Other**, turn Canva off, or select **Learn more** > **Unlink** to disconnect fully. [S62]
-Disconnecting doesn't delete anything already in your Gemini Apps Activity. [S98]
+Disconnecting doesn't delete anything already in your Gemini History. [S98]
 
 **Limits and data.**
-- Google says Gemini "saves and uses info from Connected Apps", including to provide and improve Gemini (Gemini Apps Privacy Hub, 13 October 2026). [S98]
-- Chats seen by Google's human reviewers are kept for up to 3 years. Gemini Apps Activity auto-deletes after 18 months by default. [S98]
-- Canva said on 8 June 2026 that its Gemini connected app was "available to all users globally". [S69] Google's page lists English only and names no countries. [S96]
-- **Gemini Spark** is a Gemini feature that runs scheduled tasks and skills. Google began rolling out Canva support for it on 1 July 2026. [S99]
-- Google's 17 June 2026 rollout of Spark excluded Australia. Its 14 July rollout to Google AI Ultra subscribers didn't list Australia as excluded. [S99]
+- Google says Gemini "saves and uses info from Connected Apps", including to provide and improve Gemini (Gemini Apps Privacy Hub, 17 November 2026). [S98]
+- Chats seen by Google's human reviewers are kept for up to 3 years. Gemini History auto-deletes after 18 months by default. [S98]
+- Canva said on 8 June 2026 that its Gemini connected app was "available to all users globally". [S69] Google's table says it's available in "All countries and territories where Gemini Apps and Canva are supported". [S96]
+- **Tasks in Gemini** (formerly known as Spark) runs multi-step projects and recurring routines in the background. [S98][S99] Google's table lists Canva as working in Tasks. [S96]
+- On 17 November 2026 Google said Tasks in Gemini was "rolling out free of charge" to users in the US, India, Canada, Australia, Japan and Korea. [S99]
 - **AI Mode in Google Search** can suggest Canva templates and send generated visuals to Canva (Canva, 16 July 2026). [S68] We couldn't confirm it's offered in Australia.
 
 ### Microsoft Copilot and Canva
@@ -677,12 +700,12 @@ Microsoft says the Agent 365 version lets people create and share Canva designs 
 It adds design collaboration requests and feedback notifications in Teams, and lets admins track all Canva agent activity in the admin center. [S100]
 
 **What you need.**
-- A Microsoft 365 work or school account. Microsoft says Copilot Chat users can use no-cost agents from the Agent Store once an admin enables them. [S102] Microsoft's page doesn't say whether the Canva agent is one of those.
+- A Microsoft 365 work or school account. [S101] Microsoft says each agent goes through submission and approval before people can use it, and people can only use the agents their admin has allowed. [S102]
 - The Cowork route needs a Microsoft 365 Copilot licence. Cowork and usage-based billing must also be switched on. [S103]
 - Some agents need IT approval first. You'll see **Request approval** instead of **Add**. [S101]
 - On a Canva team, your admin may need to allow third-party integrations and the AI Connector. [S63]
 
-**Steps to connect: Copilot Chat** (Canva Help Centre, no date shown; read 15 October 2026):
+**Steps to connect: Copilot Chat** (Canva Help Centre, no date shown; read 18 November 2026):
 
 1. Open Microsoft Copilot and select **Agent store**. [S63]
 2. Search for **Canva agent**, select it and install it. [S63]
@@ -690,7 +713,7 @@ It adds design collaboration requests and feedback notifications in Teams, and l
 4. Type **Canva** and select the agent. [S63]
 5. Use the suggested prompts or type your own request. You may be asked to sign in to Canva and authorise it. [S63][S56]
 
-**Steps to connect: Cowork** (Canva Help Centre, no date shown; read 15 October 2026):
+**Steps to connect: Cowork** (Canva Help Centre, no date shown; read 18 November 2026):
 
 1. On a task thread, select the plus icon and open **manage plugins**. [S63]
 2. Search for **Canva agent** and install it. [S63]
@@ -717,7 +740,7 @@ The pages we read don't cover how Microsoft handles Canva content, or whether th
 - Canva's usage page says "Generations made through third-party AI apps in the Marketplace aren't included" in your Canva allowance, and outside subscriptions or limits may apply. [S2]
 - The DALL·E and Imagen page instead calls them a premium AI tool with limited use on paid plans. [S20]
 - Leonardo.Ai is a paid add-on for Business and Enterprise. Canva says Leonardo.Ai Essential is no longer a built-in benefit of either plan. [S73]
-- Admins on Enterprise and Teams can set who uses any app: **Settings** > **Apps** > **Manage** tab > search for the app > more menu > **Override access**. [S106]
+- Admins on Enterprise and Business can set who uses any app, and existing Teams subscribers may still have this too: **Settings** > **Apps** > **Manage** tab > search for the app > more menu > **Override access**. [S106]
 - The choices are **Everyone**, **Team admins and Team brand designers**, **Team admins only** or **No one**. [S106]
 - In Education, students under 18 need administrator approval to use third-party apps. [S38]
 
@@ -730,7 +753,7 @@ These are for developers. Canva now groups them as one "Canva Developers SDK", a
 - **Apps inside Canva** (formerly the Apps SDK) run inside the Canva editor. Public apps must pass Canva's review before they appear in the Apps Marketplace. [S87]
 - Private apps for your own team are only available on Enterprise. Your own admins approve them, without Canva's review. [S86]
 - **Canva MCP for developers** lets your own AI app use the same server as the AI Connector, with OAuth sign-in. [S78]
-- Apps that identify themselves with a Client ID Metadata Document join a waitlist. Apps made in Canva's Developer Portal don't need to. [S78]
+- Developers first create an app in Canva's Developer Portal and turn on Canva MCP. [S78]
 - Canva's usage policy says Canva data, prompts and outputs "must not be used to train, fine-tune, evaluate, or improve external AI models". [S79]
 - The same policy requires each user to sign in with their own Canva account, and says background or bulk access must be opt-in and off by default. [S79]
 - Canva bans bulk extraction of designs, reverse engineering, building a competing product, and AI training through its MCP. [S80]
@@ -751,10 +774,10 @@ Each job below uses only what Canva's documentation says the tools can do. Check
 - Turn your own CSV of figures into a chart, replacing any sample data first. [S28]
 - Write a spreadsheet formula from a plain description, then test it on numbers you already know (our advice). [S33]
 - Build a simple quiz or landing page and publish it as a website. [S29][S31]
-- Ask ChatGPT, Claude or Gemini to find designs, using a prompt like Canva's own example, "Find all presentations that mention Q2 marketing strategy". [S57][S60][S96]
+- Ask ChatGPT, Claude or Gemini to find designs, using a prompt like Canva's own example, "Find all presentations that mention Q2 marketing strategy". [S57][S60]
 - Bring meeting notes or email threads into Canva AI as background for a design brief. The connection only reads. [S65]
 - Turn one design into versions for different platforms through a connected assistant (paid plans). [S59][S77]
-- Fill a Brand Template from a spreadsheet to make many designs at once. Most of Canva's pages say this needs Enterprise. [S57][S90]
+- Fill a Brand Template from a spreadsheet to make many designs at once. Canva's pages disagree on which plan this needs. [S57][S59][S90]
 
 **Schools**
 
@@ -768,8 +791,9 @@ Each job below uses only what Canva's documentation says the tools can do. Check
 
 ### Your allowance and costs
 
-- The free plan's 20 uses go quickly, and Ultra tools aren't on Free at all. [S2]
+- Free gets only limited access to the tools that use the allowance, and no Ultra tools at all. [S2]
 - Each person has their own allowance on team plans. Nothing is pooled. [S2]
+- Someone who takes over a seat another person left gets whatever allowance that seat has left. [S2]
 - Conversational design and video clips are Ultra tools and use the most. [S2]
 - Bigger files and multi-step Canva AI 2.0 tasks use more. [S2]
 - Designs generated inside ChatGPT, Claude, Copilot and other connected assistants can come out of your Canva allowance. [S2]
@@ -783,10 +807,10 @@ Each job below uses only what Canva's documentation says the tools can do. Check
 ### Your data and AI training
 
 - **Free and Pro.** Canva's Privacy Settings let you control whether your data can improve its AI features. [S40]
-- Canva's Terms of Use (19 August 2026) say the setting covers your general usage data and your own content. [S42]
+- Canva's Terms of Use (16 November 2026) say the setting covers your general usage data and your own content. [S42]
 - We couldn't find a current Canva page saying whether this setting starts on or off. When Canva launched Magic Studio on 4 October 2023, it said "By default, Canva doesn't use your content" to train its AI. [S47]
 - Canva's AI page links to a privacy settings page where you can check yours. [S10]
-- **Business, Teams and Enterprise.** Canva's Trust Center says it doesn't use "business, team or enterprise content" to improve AI, and the setting is greyed out for these accounts. [S40]
+- **Business, Teams and Enterprise.** Canva's Trust Center says it doesn't use "business, team or enterprise content" to improve AI, and the setting is disabled for these accounts. [S40]
 - It says the option for admins to opt in is "coming soon". [S40]
 - Canva's Master Services Agreement (21 May 2026), for customers who sign an Order Form, says Canva won't train its AI on customer material unless a customer administrator opts in "via the admin settings". [S48]
 - **Education.** "We will not use User Content of Canva Education for AI training." [S41][S42] Education users can't change this setting. [S40]
@@ -796,7 +820,7 @@ Each job below uses only what Canva's documentation says the tools can do. Check
 - To leave the beta, turn off the **CanvaAI Beta** toggle on your Canva privacy settings page. [S50]
 - **Who else handles it.** Canva may pass inputs to outside "Technology Partners" to run a feature. [S43] Its sub-processor list names Anthropic, OpenAI, Google, ElevenLabs and others for AI services, mostly in the United States. [S49]
 - For schools, Canva's Privacy Policy lists OpenAI among providers that process student data "for the sole purpose of delivering" Canva AI products. [S41]
-- **Memory Library** builds a profile from your designs and prompts. Turn it off under **AI personalization** if you don't want that. [S12]
+- **Memory Library** keeps an About Me page that Canva AI may update as you use it. Turn it off under **AI personalization** if you don't want that. [S12]
 - **Connected assistants.** Content an assistant reads from Canva is handled under that company's terms as well as Canva's. [S42] Canva "makes no representations or warranties" about third-party services. [S42]
 - We found no statement of how long Canva keeps AI prompts and outputs. [S41][S43]
 
@@ -806,6 +830,8 @@ Each job below uses only what Canva's documentation says the tools can do. Check
 - Enterprise organisation admins set defaults for every team and choose whether team admins can override them, under **Permissions** > **Team management** > **Team Overrides**. [S37]
 - Enterprise organisation defaults can be **Everyone**, **Team admins and team brand designers**, **Team admins only** or **No one**. [S37]
 - Turning the AI Connector off stops everyone on the team and breaks existing connections. [S56]
+- Team **Magic and AI** permissions also apply inside connected assistants. [S57]
+- On Free and Pro there's no admin, but each person can switch generative AI off for their own account once Canva's rollout reaches them. [S114]
 - If an app category is blocked for the admin role, it's hidden from admins too. [S106]
 - A language setting can hide features even when admins have switched them on. [S36]
 
@@ -822,7 +848,8 @@ Each job below uses only what Canva's documentation says the tools can do. Check
 - "AI connectors are blocked for all Education users" by default. [S38]
 - Generative AI apps and social media apps are blocked for students and allowed for teachers by default. Admins can change this. [S38]
 - Students under 18 need administrator approval for third-party apps. [S38]
-- Canva in Gemini doesn't work with school Google accounts. [S96]
+- Canva in Gemini needs a personal Google account, so school accounts can't use it. [S96]
+- Making videos through a connected assistant isn't available on Canva Education. [S57]
 - Canva AI tools inside Affinity are for admins and teachers only, for now. [S36]
 - Student accounts inactive for more than 12 months get a deletion notice, and are deleted if nobody logs in within 3 months. [S41]
 - Canva's World Teachers' Day post (5 October 2026) says student accounts that don't need an email address are expanding worldwide from October. [S75]
@@ -863,7 +890,7 @@ These points come from Canva's "How to use Magic Studio safely and legally" page
 
 ## Announced changes
 
-Newsroom dates come from each page's publishing data, in UTC.
+Where a newsroom post shows no date on screen, its date comes from the page's publishing data, in UTC.
 
 | Date | What changed | Source |
 |---|---|---|
@@ -876,30 +903,34 @@ Newsroom dates come from each page's publishing data, in UTC.
 | 11 Mar 2026 | Magic Layers in public beta in the US, the UK, Canada and Australia. | [S26] |
 | 15 Apr 2026 | Canva AI Beta Program Terms updated. | [S50] |
 | 16 Apr 2026 | Canva AI 2.0 announced as a research preview, with general availability "over the coming weeks". | [S11] |
-| 17 Apr 2026 | Canva in Claude Design announced. Canva's sub-processor list updated. | [S71][S49] |
+| 17 Apr 2026 | Canva in Claude Design announced. | [S71] |
 | 21 May 2026 | Master Services Agreement updated. | [S48] |
 | 8 Jun 2026 | Magic Layers inside ChatGPT and Gemini. Canva says both connections are available to all users globally. | [S69] |
 | 26 Jun 2026 | AI Product Terms take effect. | [S43] |
-| 1 Jul 2026 | Google starts rolling out Canva support in Gemini Spark. | [S99] |
 | 9 Jul 2026 | OpenAI replaces ChatGPT's App Directory with a Plugin Directory. Existing app connections carry on. | [S113] |
 | 14 Jul 2026 | Canva Code 2.0 available to Free, Pro, Business, Enterprise and Education users. | [S31] |
 | 16 Jul 2026 | Canva in Gemini expanded, and Canva added to AI Mode in Google Search. | [S68] |
-| 19 Aug 2026 | Terms of Use take effect. | [S42] |
-| 25 Aug 2026 | Privacy Policy updated. | [S41] |
 | 2 Sep 2026 | Visual Suite updates, including charts from Sheets data and AI presenter notes, "rolling out now to all Canva users globally". | [S74] |
 | 16 Sep 2026 | Canva ProSuite announced (Affinity, Cavalry, Flourish and Leonardo.Ai). Canva AI Studio in Affinity needs a premium plan. Cavalry AI tools "coming soon". | [S72] |
 | No date shown | Leonardo.Ai Essential is no longer a built-in benefit of Business or Enterprise. | [S73] |
 | 29 Sep 2026 | Canva connector for Meta's Muse, US and Canada only. | [S70] |
 | 1 Oct 2026 | Microsoft lists Canva as a ready-to-deploy Agent 365 partner agent. | [S100] |
 | 5 Oct 2026 | Student accounts without email addresses expanding worldwide from October. | [S75] |
+| 23 Oct 2026 | Canva Craft, Canva's own image model, announced. Canva's sub-processor list updated with more outside AI providers. | [S115][S49] |
+| 30 Oct 2026 | Canva Brush, Canva's own design model, starts powering design edits in Canva AI for Pro subscribers. | [S116] |
+| 2 Nov 2026 | Privacy Policy updated. | [S41] |
+| 16 Nov 2026 | New Terms of Use take effect. | [S42] |
+| 17 Nov 2026 | Tasks in Gemini (formerly Spark) starts rolling out free of charge in Australia and five other countries. Google's table lists Canva as working in Tasks. | [S99][S96] |
 
 **Announced with no date**
 
 - Admin opt-in to AI training for Business, Teams and Enterprise is "coming soon". [S40]
 - Usage limits for the AI Connector: "We'll introduce usage limits in the future." [S56]
-- Canva AI 2.0 and Canva AI connectors are marked "Soon" for Enterprise on the pricing page. [S1]
+- On the pricing page, the new Canva AI is marked "Soon" and Connectors in Canva AI "Coming soon" for Enterprise. [S1]
 - More admin controls over student AI access in Affinity. [S36]
-- Memory Library and Canva AI 2.0 features are rolling out gradually. [S8][S9]
+- Canva AI 2.0 features and the choice between Canva Core and Canva Brush are rolling out gradually. [S9][S8]
+- Wider availability for Canva Brush is "coming soon". [S116]
+- The switch that turns off generative AI on Free and Pro is rolling out gradually. [S114]
 - Canva isn't accepting third-party connectors for Canva AI yet, and gives no timeline. [S81]
 - Usage limits for the autofill API will be introduced later. [S85]
 - New Cavalry AI tools (Remove Background, Generate Vector and Image to Layers) are "coming soon". [S72]
@@ -909,19 +940,25 @@ Newsroom dates come from each page's publishing data, in UTC.
 - **Which ChatGPT plans can use the Canva plugin.** OpenAI's pages say it depends on plan, workspace, role and region, and its Canva page lists no plans. [S110][S108] A search-engine snippet said Free and Go plans can't use plugin extensions. OpenAI's release note introducing extensions names no plans, so we couldn't confirm it. [S113]
 - **Today's default for Canva's AI-training setting** on Free and Pro, and the setting's exact label. Canva's current pages don't state the default, and the setting sits behind a sign-in. The only "off by default" statement we found is from October 2023. [S40][S47]
 - **Admin opt-in for AI training.** The Trust Center says it's "coming soon" for Business, Teams and Enterprise, while the Master Services Agreement already refers to opting in "via the admin settings". We couldn't find that setting in Canva's admin help. [S40][S48][S36]
-- **Plan rules for connector actions.** Canva's pages disagree on Brand Template search, autofill and resize. See the table under "Canva's AI Connector". [S56][S57][S59][S77][S96]
-- **Who gets conversational design.** Help pages list either Pro, Teams, Business and Nonprofit, or Pro, Business and Enterprise. The pricing page marks Enterprise "Soon". [S3][S5][S1]
-- **AI Pass for Business.** The help page says 20 times more AI and the pricing page says 40 times. [S52][S1]
-- **Which tier some tools sit in.** Magic Formulas is Standard on the usage page and premium on its own page. "Create an image with Canva AI" appears under more than one tier, and Canva AI for Sheets contradicts itself. [S2][S32][S33]
+- **Plan rules for connector actions.** Canva's pages disagree on Brand Template search, autofill and resize. See the table under "Canva's AI Connector". [S56][S57][S59][S60][S77] Google's own page on Canva in Gemini, which listed resizing, Brand Template search and autofill as Enterprise only, now redirects to a general table of connected apps without those details. [S96]
+- **What Gemini can and can't do with Canva, in Google's words.** Google says the full list of supported and unsupported actions is on each app's page in Gemini's Connected Apps settings, which sit behind a sign-in. [S97]
+- **Gemini Spark's Canva date.** Google's "What's new for Gemini Spark" page, which dated Canva support to 1 July 2026, now redirects to Gemini's general release notes, and we couldn't find a Canva entry there. [S99]
+- **How much AI Free actually gets.** Canva no longer publishes a number. Its pages give the paid allowances only as multiples of Free's. [S1][S2]
+- **When the Free allowance resets.** The usage page now says only that allowances reset each month. [S2]
+- **Who gets conversational design.** Help pages list Pro, Teams, Business, Nonprofit and Enterprise. The page on editing by conversation lists no plans, and the pricing page marks the new Canva AI "Soon" for Enterprise. [S3][S5][S1]
+- **Which plans get Connectors in Canva AI.** The connector page says Free and supported paid plans. The Canva AI page lists paid plans including Enterprise, and the pricing page says not on Free and not yet on Enterprise. [S65][S3][S1]
+- **Which tier some tools sit in.** Magic Formulas is Standard on the usage and pricing pages and premium on its own page. Creating an image with Canva AI is Premium on the usage page and Standard on the pricing page. Conversational design is Ultra on one and Premium on the other. Canva AI for Sheets contradicts itself. [S2][S1][S32][S33]
+- **What an "AI Project Pack" is.** Canva mentions it as an option when a connected assistant makes a video, but the pages we read don't say what it includes or costs. [S57]
+- **When the generative AI switch reaches each account.** Canva says it's rolling out gradually and gives no dates. [S114]
 - **Whether DALL·E and Imagen use your Canva allowance.** The usage page says Marketplace AI apps don't, while the DALL·E and Imagen page calls them a limited premium AI tool. [S2][S20]
 - **Student defaults in Canva Education.** One sentence calls Magic Media, Dream Lab and Magic Insights "the only features enabled for students" without saying whether they're on by default. [S36]
 - **What "AI connectors are blocked" covers in Education**, and whether K–12 teachers can use the AI Connector. [S38][S59]
 - **AUD prices for monthly plans, AI Pass and AI top-ups.** The Australian pricing page shows yearly prices and no add-on prices. [S1] Canva's AI Pass help page gives a price in US dollars only, so we haven't quoted it. [S52]
 - **How long Canva keeps AI prompts, outputs and Canva AI chats.** Not stated in the pages we read. [S8][S41][S43]
 - **An Australia-only hosting option.** We didn't find one. The Trust Center says data is stored in the US, while the Privacy Policy lists Australia among several storage and processing countries. [S40][S41]
-- **Which model powers each feature.** Canva names OpenAI for Magic Write, on a page that may be out of date, and named Google's Veo 3 for video clips at launch. The sub-processor list names the AI companies but not which feature each one serves. [S14][S107][S49]
+- **Which model powers each feature.** Canva names OpenAI for Magic Write, on a page that may be out of date, and named Google's Veo 3 for video clips at launch. It now has its own models, Brush for design edits and Craft for images, but doesn't say which tools use Craft. The sub-processor list names the AI companies but not which feature each one serves. [S14][S107][S116][S115][S49]
 - **The AI indemnity's contract terms.** The 100-seat threshold comes from Canva's AI marketing page, and we couldn't find indemnity wording for AI output in the Master Services Agreement. [S10][S48]
-- **Microsoft's side.** Which licence the Canva agent needs, whether it counts as a no-cost agent for Copilot Chat, what it can read and change, whether it's offered in Australia, and how Microsoft handles the content. A Microsoft Tech Community post about partner apps in Copilot wouldn't load for us. [S63][S100][S102]
+- **Microsoft's side.** Which licence the Canva agent needs, what it can read and change, whether it's offered in Australia, and how Microsoft handles the content. A Microsoft Tech Community post about partner apps in Copilot wouldn't load for us. [S63][S100][S102]
 - **Claude Team and Enterprise data terms** for connector content. Anthropic's training page covers consumer plans only. [S94]
 - **Whether every action in a connected assistant uses your Canva allowance.** Canva says AI actions "may", and that limits are coming. [S56][S2]
 - **AI Mode in Google Search in Australia.** Not stated. [S68]
@@ -931,118 +968,123 @@ Newsroom dates come from each page's publishing data, in UTC.
 
 ## Sources
 
+All sources were read on 18 November 2026.
+
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
-| S1 | Canva pricing (English, Australia) | Canva | https://www.canva.com/en_au/pricing/ | No date shown | 15 Oct 2026 |
-| S2 | Understanding your AI usage | Canva Help Center | https://www.canva.com/help/ai-access/ | No date shown | 15 Oct 2026 |
-| S3 | Get started with Canva AI | Canva Help Centre | https://www.canva.com/en_au/help/using-canva-ai/ | No date shown | 15 Oct 2026 |
-| S4 | What's new in Canva AI | Canva Help Centre | https://www.canva.com/en_au/help/new-canva-ai/ | No date shown | 15 Oct 2026 |
-| S5 | Use Canva AI to refine designs through conversation | Canva Help Center | https://www.canva.com/help/canva-design-assistant/ | No date shown | 15 Oct 2026 |
-| S6 | Use Ask Canva for AI-powered design edits | Canva Help Center | https://www.canva.com/help/edit-designs-with-ask-canva/ | No date shown | 15 Oct 2026 |
-| S7 | Generate unique designs instantly with AI | Canva Help Centre | https://www.canva.com/en_au/help/using-magic-design/ | No date shown | 15 Oct 2026 |
-| S8 | Canva AI Frequently Asked Questions | Canva Help Center | https://www.canva.com/help/new-canva-ai-faq/ | No date shown | 15 Oct 2026 |
-| S9 | Fix issues and improve results with Canva AI | Canva Help Center | https://www.canva.com/help/fix-canva-ai-issues/ | No date shown | 15 Oct 2026 |
-| S10 | Canva AI 2.0 (product page) | Canva | https://www.canva.com/canva-ai/ | No date shown | 15 Oct 2026 |
-| S11 | Introducing Canva AI 2.0: Reimagining how the world creates | Canva Newsroom | https://www.canva.com/newsroom/news/canva-create-2026-ai/ | No date shown; page data 16 Apr 2026 | 15 Oct 2026 |
-| S12 | Use Memory Library to personalize Canva AI | Canva Help Center | https://www.canva.com/help/living-memory/ | No date shown | 15 Oct 2026 |
-| S13 | Use Magic Write to generate text | Canva Help Centre | https://www.canva.com/en_au/help/use-magic-write/ | No date shown | 15 Oct 2026 |
-| S14 | Learn about Magic Write | Canva Help Centre | https://www.canva.com/en_au/help/about-magic-write/ | No date shown | 15 Oct 2026 |
-| S15 | Use Magic Media to create photos, graphics, and videos | Canva Help Centre | https://www.canva.com/en_au/help/using-magic-media/ | No date shown | 15 Oct 2026 |
-| S16 | Generate images with Dream Lab | Canva Help Centre | https://www.canva.com/en_au/help/generate-with-dreamlab/ | No date shown | 15 Oct 2026 |
-| S17 | Dream Lab access restrictions | Canva Help Centre | https://www.canva.com/en_au/help/dreamlab-access-restrictions/ | No date shown | 15 Oct 2026 |
-| S18 | Create a video clip in Canva AI 1.0 | Canva Help Centre | https://www.canva.com/en_au/help/video-clip/ | No date shown | 15 Oct 2026 |
-| S19 | Transform your image into a video | Canva Help Centre | https://www.canva.com/en_au/help/image-to-video/ | No date shown | 15 Oct 2026 |
-| S20 | Use AI image generation apps | Canva Help Centre | https://www.canva.com/en_au/help/ai-image-generation-apps/ | No date shown | 15 Oct 2026 |
-| S21 | Use Magic Edit to add, replace, and modify photos | Canva Help Centre | https://www.canva.com/en_au/help/using-magic-edit/ | No date shown | 15 Oct 2026 |
-| S22 | Make your photo selectable and customisable with Magic Grab | Canva Help Centre | https://www.canva.com/en_au/help/using-magic-grab/ | No date shown | 15 Oct 2026 |
-| S23 | Erase or retouch photos | Canva Help Centre | https://www.canva.com/en_au/help/magic-eraser/ | No date shown | 15 Oct 2026 |
-| S24 | Expanding images | Canva Help Centre | https://www.canva.com/en_au/help/using-magic-expand/ | No date shown | 15 Oct 2026 |
-| S25 | Turn images into editable layers with Magic Layers | Canva Help Centre | https://www.canva.com/en_au/help/editable-magic-layers/ | No date shown | 15 Oct 2026 |
-| S26 | Introducing Magic Layers, bringing creative control to AI content | Canva Newsroom | https://www.canva.com/newsroom/news/magic-layers/ | No date shown; page data 11 Mar 2026 | 15 Oct 2026 |
-| S27 | Translate your Canva designs | Canva Help Centre | https://www.canva.com/en_au/help/translate-canva-designs/ | No date shown | 15 Oct 2026 |
-| S28 | Generate charts with AI | Canva Help Centre | https://www.canva.com/en_au/help/ai-charts/ | No date shown | 15 Oct 2026 |
-| S29 | Create interactive designs with Canva Code | Canva Help Centre | https://www.canva.com/en_au/help/canva-code/ | No date shown | 15 Oct 2026 |
-| S30 | Canva Code access restrictions | Canva Help Center | https://www.canva.com/help/canva-code-restrictions/ | No date shown | 15 Oct 2026 |
-| S31 | Vibe coding that matches your vision: Canva Code 2.0 is now available to all | Canva Newsroom | https://www.canva.com/newsroom/news/Canva-Code/ | No date shown; page data 14 Jul 2026 | 15 Oct 2026 |
-| S32 | Use Canva AI 2.0 for Sheets | Canva Help Center | https://www.canva.com/help/canva-sheets-assistant/ | No date shown | 15 Oct 2026 |
-| S33 | Use AI to write functions and formulas for Canva Sheets | Canva Help Center | https://www.canva.com/help/use-magic-formulas/ | No date shown | 15 Oct 2026 |
-| S34 | Analyse and summarise Canva Sheets data with Magic Insights | Canva Help Centre | https://www.canva.com/en_au/help/magic-insights/ | No date shown | 15 Oct 2026 |
-| S35 | Get quick help with Help Assistant | Canva Help Centre | https://www.canva.com/en_au/help/ai-powered-assistant/ | No date shown | 15 Oct 2026 |
-| S36 | Change access to Magic and AI features | Canva Help Centre | https://www.canva.com/en_au/help/magic-features-admin-controls/ | No date shown | 15 Oct 2026 |
-| S37 | Manage access and feature controls for your organisation | Canva Help Centre | https://www.canva.com/en_gb/help/admin-controls-for-enterprise/ | No date shown | 15 Oct 2026 |
-| S38 | App Restrictions for Students | Canva Help Centre | https://www.canva.com/en_au/help/app-restrictions-c4e/ | No date shown | 15 Oct 2026 |
-| S39 | About Canva Education | Canva Help Centre | https://www.canva.com/en_au/help/about-canva-for-education/ | No date shown | 15 Oct 2026 |
-| S40 | Trust Center: Privacy | Canva | https://www.canva.com/trust/privacy/ | No date shown | 15 Oct 2026 |
-| S41 | Privacy Policy | Canva | https://www.canva.com/policies/privacy-policy/ | Last updated 25 Aug 2026 | 15 Oct 2026 |
-| S42 | Terms of Use | Canva | https://www.canva.com/policies/terms-of-use/ | Effective 19 Aug 2026 | 15 Oct 2026 |
-| S43 | AI Product Terms | Canva | https://www.canva.com/policies/ai-product-terms/ | Effective 26 Jun 2026 | 15 Oct 2026 |
-| S44 | AI Safety at Canva | Canva | https://www.canva.com/policies/ai-safety/ | No date shown | 15 Oct 2026 |
-| S45 | Canva Shield (Safe AI) | Canva | https://www.canva.com/safe-ai-canva-shield/ | No date shown | 15 Oct 2026 |
-| S46 | Canva Shield: Safe, fair and secure AI | Canva Newsroom | https://www.canva.com/newsroom/news/safe-ai-canva-shield/ | No date shown; page data 5 Jan 2026 | 15 Oct 2026 |
-| S47 | Introducing Magic Studio: the power of AI, all in one place | Canva Newsroom | https://www.canva.com/newsroom/news/magic-studio/ | No date shown; page data 4 Oct 2023 | 15 Oct 2026 |
-| S48 | Canva Master Services Agreement | Canva | https://www.canva.com/policies/msa/ | Last updated 21 May 2026 | 15 Oct 2026 |
-| S49 | Canva List of Subprocessors (PDF, linked from https://www.canva.com/policies/subprocessors/) | Canva | https://content-management-files.canva.com/assets/en/f6022a49-58d4-40d8-88d3-803529880cc0 | Last updated 17 Apr 2026 | 15 Oct 2026 |
-| S50 | Canva AI Beta Program Terms | Canva | https://www.canva.com/policies/beta-service-terms/ | Last updated 15 Apr 2026 | 15 Oct 2026 |
-| S51 | How to use Magic Studio safely and legally | Canva Help Centre | https://www.canva.com/en_au/help/using-magic-studio-safely-and-legally/ | No date shown | 15 Oct 2026 |
-| S52 | Understanding AI Pass | Canva Help Centre | https://www.canva.com/en_au/help/ai-pass/ | No date shown | 15 Oct 2026 |
-| S53 | Understanding AI top-ups | Canva Help Center | https://www.canva.com/help/ai-top-ups/ | No date shown | 15 Oct 2026 |
-| S54 | About Canva Teams | Canva Help Centre | https://www.canva.com/en_au/help/about-canva-teams/ | No date shown | 15 Oct 2026 |
-| S55 | Meet Canva Business: A powerful new plan for small businesses with big ambitions | Canva Newsroom | https://www.canva.com/newsroom/news/introducing-canva-business/ | No date shown; page data 30 Oct 2025 | 15 Oct 2026 |
-| S56 | Connect Canva to an AI assistant (also read at /help/mcp-agent-setup/) | Canva Help Centre | https://www.canva.com/en_au/help/mcp-agent-setup/ | No date shown | 15 Oct 2026 |
-| S57 | Actions you can take in AI assistants connected to Canva MCP | Canva Help Center | https://www.canva.com/help/mcp-canva-usage/ | No date shown | 15 Oct 2026 |
-| S58 | Connect AI assistants and tools to Canva | Canva Help Center | https://www.canva.com/help/ai-connectors-canva/ | No date shown | 15 Oct 2026 |
-| S59 | Design smarter than ever with Canva's AI Connector | Canva | https://www.canva.com/ai-connector/ | No date shown | 15 Oct 2026 |
-| S60 | Connect your Canva account to ChatGPT (also read at /help/connect-chatgpt-to-canva/) | Canva Help Centre | https://www.canva.com/en_au/help/connect-chatgpt-to-canva/ | No date shown | 15 Oct 2026 |
-| S61 | Connect your Canva account to Claude | Canva Help Center | https://www.canva.com/help/connect-claude-to-canva/ | No date shown | 15 Oct 2026 |
-| S62 | Connect your Canva account to Gemini | Canva Help Center | https://www.canva.com/help/connect-gemini-to-canva/ | No date shown | 15 Oct 2026 |
-| S63 | Connect your Canva account to Microsoft Copilot (also read at /help/connect-copilot-to-canva/) | Canva Help Centre | https://www.canva.com/en_au/help/connect-copilot-to-canva/ | No date shown | 15 Oct 2026 |
-| S64 | Manage Cross app access for Enterprise | Canva Help Center | https://www.canva.com/help/manage-cross-app-access | No date shown | 15 Oct 2026 |
-| S65 | Connect third-party apps to Canva AI | Canva Help Center | https://www.canva.com/help/connect-apps-canva-ai/ | No date shown | 15 Oct 2026 |
-| S66 | Import files from third-party apps to Canva AI | Canva Help Center | https://www.canva.com/help/import-to-canva-ai/ | No date shown | 15 Oct 2026 |
-| S67 | Create on-brand Canva designs directly inside Claude | Canva Newsroom | https://www.canva.com/newsroom/news/claude-ai-connector/ | No date shown; page data 25 Jan 2026 | 15 Oct 2026 |
-| S68 | Canva expands design creation inside Google Gemini and AI Search | Canva Newsroom | https://www.canva.com/newsroom/news/google-gemini/ | No date shown; page data 16 Jul 2026 | 15 Oct 2026 |
-| S69 | Make AI images your own: Magic Layers is now inside the world's biggest AI assistants | Canva Newsroom | https://www.canva.com/newsroom/news/magic-layers-ai-assistants/ | No date shown; page data 8 Jun 2026 | 15 Oct 2026 |
-| S70 | Canva expands design with Muse, from Meta | Canva Newsroom | https://www.canva.com/newsroom/news/canva-meta-muse/ | No date shown; page data 29 Sep 2026 | 15 Oct 2026 |
-| S71 | Introducing Canva in Claude Design by Anthropic Labs | Canva Newsroom | https://www.canva.com/newsroom/news/canva-claude-design/ | No date shown; page data 17 Apr 2026 | 15 Oct 2026 |
-| S72 | Craft, upgraded: introducing the Canva ProSuite | Canva Newsroom | https://www.canva.com/newsroom/news/canva-prosuite-launch/ | No date shown; page data 16 Sep 2026 | 15 Oct 2026 |
-| S73 | Canva ProSuite for Business and Enterprise | Canva | https://www.canva.com/business/pro-suite/ | No date shown | 15 Oct 2026 |
-| S74 | Big updates just landed in the Visual Suite | Canva Newsroom | https://www.canva.com/newsroom/news/visual-suite-100-updates/ | No date shown; page data 2 Sep 2026 | 15 Oct 2026 |
-| S75 | This World Teachers' Day: celebrating what teachers make possible | Canva Newsroom | https://www.canva.com/newsroom/news/world-teachers-day-2026/ | No date shown; page data 5 Oct 2026 | 15 Oct 2026 |
-| S76 | Bringing free education tools to 100 million people | Canva Newsroom | https://www.canva.com/newsroom/news/100-million-education-milestone/ | No date shown; page data 22 Jul 2025 | 15 Oct 2026 |
-| S77 | MCP tools and rate limits | Canva Developers | https://www.canva.dev/docs/apps/mcp/tools.md | No date shown | 15 Oct 2026 |
-| S78 | Access and permissions (Canva MCP) | Canva Developers | https://www.canva.dev/docs/apps/mcp/access.md | No date shown | 15 Oct 2026 |
-| S79 | Usage Policy (Canva MCP server) | Canva Developers | https://www.canva.dev/docs/apps/mcp/usage-policy.md | No date shown | 15 Oct 2026 |
-| S80 | Prohibited use (Canva MCP) | Canva Developers | https://www.canva.dev/docs/apps/mcp/prohibited-use.md | No date shown | 15 Oct 2026 |
-| S81 | Connectors in Canva AI | Canva Developers | https://www.canva.dev/docs/apps/mcp/canva-ai.md | No date shown | 15 Oct 2026 |
-| S82 | Dev MCP server | Canva Developers | https://www.canva.dev/docs/apps/dev-mcp-server/ | No date shown | 15 Oct 2026 |
-| S83 | Canva Developers SDK documentation | Canva Developers | https://www.canva.dev/docs/apps/ | No date shown | 15 Oct 2026 |
-| S84 | About Canva's REST APIs | Canva Developers | https://www.canva.dev/docs/connect/ | No date shown | 15 Oct 2026 |
-| S85 | Autofill guide (REST APIs) | Canva Developers | https://www.canva.dev/docs/apps/rest-apis/autofill-guide.md | No date shown | 15 Oct 2026 |
-| S86 | Managing team apps | Canva Developers | https://www.canva.dev/docs/apps/managing-team-apps.md | No date shown | 15 Oct 2026 |
-| S87 | App review process | Canva Developers | https://www.canva.dev/docs/apps/app-review-process.md | No date shown | 15 Oct 2026 |
-| S88 | Authentication (REST APIs) | Canva Developers | https://www.canva.dev/docs/apps/rest-apis/authentication.md | No date shown | 15 Oct 2026 |
-| S89 | Canva for AI agents | Canva Developers | https://www.canva.dev/agents/ | No date shown | 15 Oct 2026 |
-| S90 | canva-sdks/canva-skills | Canva (GitHub) | https://github.com/canva-sdks/canva-skills | No date shown | 15 Oct 2026 |
-| S91 | Canva connector listing | Anthropic (claude.com) | https://claude.com/connectors/canva | "Added November 2025" | 15 Oct 2026 |
-| S92 | Use connectors to extend Claude's capabilities | Claude Help Center (Anthropic) | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated over 2 weeks ago" (no calendar date) | 15 Oct 2026 |
-| S93 | Use interactive connectors in Claude | Claude Help Center (Anthropic) | https://support.claude.com/en/articles/13454812-use-interactive-connectors-in-claude | 11 Aug 2026 | 15 Oct 2026 |
-| S94 | Is my data used for model training? | Anthropic Privacy Center | https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training | 16 Mar 2026 | 15 Oct 2026 |
-| S95 | Supported countries and regions | Anthropic | https://www.anthropic.com/supported-countries | Effective 12 May 2026 | 15 Oct 2026 |
-| S96 | Create designs & build websites with your creative apps in Gemini Apps | Gemini Apps Help (Google) | https://support.google.com/gemini/answer/17081444?hl=en | No date shown | 15 Oct 2026 |
-| S97 | Use & manage Connected Apps in Gemini | Gemini Apps Help (Google) | https://support.google.com/gemini/answer/13695044?hl=en | No date shown | 15 Oct 2026 |
-| S98 | Gemini Apps Privacy Hub | Gemini Apps Help (Google) | https://support.google.com/gemini/answer/13594961?hl=en | Last updated 13 Oct 2026 | 15 Oct 2026 |
-| S99 | What's new for Gemini Spark | Gemini Apps Help (Google) | https://support.google.com/gemini/answer/17171264?hl=en-GB | Dated entries; Canva entry 1 Jul 2026 | 15 Oct 2026 |
-| S100 | Ecosystem partner agents available in Agent 365 | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-agent-365/third-party-agents | 1 Oct 2026 (updated 2 Oct 2026) | 15 Oct 2026 |
-| S101 | Get more agents in the Microsoft Copilot app | Microsoft Support | https://support.microsoft.com/en-US/Microsoft-365-Copilot/get-more-agents-in-the-microsoft-365-copilot-app | No date shown | 15 Oct 2026 |
-| S102 | Prerequisites: Microsoft Copilot agent governance | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/agent-essentials/agent-prerequisites | 17 Jun 2026 (updated 18 Aug 2026) | 15 Oct 2026 |
-| S103 | Get started with Copilot Cowork | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/get-started | 14 Sep 2026 (updated 21 Sep 2026) | 15 Oct 2026 |
-| S104 | Connected apps in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt | "Updated: 4 days ago" (11 Oct 2026, UTC) | 15 Oct 2026 |
-| S105 | About Canva Pro Lite | Canva Help Centre | https://www.canva.com/en_au/help/pro-lite/ | No date shown | 15 Oct 2026 |
-| S106 | Manage third-party app integrations (admin controls) | Canva Help Center | https://www.canva.com/help/admin-control-third-party-app-integrations/ | No date shown | 15 Oct 2026 |
-| S107 | Google's Veo 3 comes to Canva: Introducing Create a Video Clip | Canva Newsroom | https://www.canva.com/newsroom/news/veo3-canva-ai-video/ | No date shown; page data 18 Jun 2025 | 15 Oct 2026 |
-| S108 | Canva plugin for ChatGPT | OpenAI | https://openai.com/business/plugins/canva/ | No date shown | 15 Oct 2026 |
-| S109 | Canva (ChatGPT plugin listing) | OpenAI | https://chatgpt.com/plugins/plugin_connector_68df33b1a2d081918778431a9cfca8ba | No date shown; version 17.0.1 | 15 Oct 2026 |
-| S110 | Plugins in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001256-plugins-in-chatgpt | "Updated: 17 hours ago" (14 Oct 2026, UTC) | 15 Oct 2026 |
-| S111 | Connecting and managing app accounts in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt | "Updated: 13 days ago" (2 Oct 2026, UTC) | 15 Oct 2026 |
-| S112 | Admin controls, security, and compliance for plugins and apps | OpenAI Help Center | https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps | "Updated: 17 hours ago" (14 Oct 2026, UTC) | 15 Oct 2026 |
-| S113 | ChatGPT release notes | OpenAI Help Center | https://help.openai.com/en/articles/6825453-chatgpt-release-notes | "Updated: 6 days ago" (9 Oct 2026, UTC) | 15 Oct 2026 |
+| S1 | Canva pricing (English, Australia) | Canva | https://www.canva.com/en_au/pricing/ | No date shown | 18 Nov 2026 |
+| S2 | Understanding your AI usage | Canva Help Center | https://www.canva.com/help/ai-access/ | No date shown | 18 Nov 2026 |
+| S3 | Get started with Canva AI | Canva Help Centre | https://www.canva.com/en_au/help/using-canva-ai/ | No date shown | 18 Nov 2026 |
+| S4 | What's new in Canva AI | Canva Help Centre | https://www.canva.com/en_au/help/new-canva-ai/ | No date shown | 18 Nov 2026 |
+| S5 | Use Canva AI to refine designs through conversation | Canva Help Center | https://www.canva.com/help/canva-design-assistant/ | No date shown | 18 Nov 2026 |
+| S6 | Use Ask Canva for AI-powered design edits | Canva Help Center | https://www.canva.com/help/edit-designs-with-ask-canva/ | No date shown | 18 Nov 2026 |
+| S7 | Generate unique designs instantly with AI | Canva Help Centre | https://www.canva.com/en_au/help/using-magic-design/ | No date shown | 18 Nov 2026 |
+| S8 | Canva AI Frequently Asked Questions | Canva Help Center | https://www.canva.com/help/new-canva-ai-faq/ | No date shown | 18 Nov 2026 |
+| S9 | Fix issues and improve results with Canva AI | Canva Help Center | https://www.canva.com/help/fix-canva-ai-issues/ | No date shown | 18 Nov 2026 |
+| S10 | Canva AI (product page) | Canva | https://www.canva.com/canva-ai/ | No date shown | 18 Nov 2026 |
+| S11 | Introducing Canva AI 2.0: Reimagining how the world creates | Canva Newsroom | https://www.canva.com/newsroom/news/canva-create-2026-ai/ | No date shown; page data 16 Apr 2026 | 18 Nov 2026 |
+| S12 | Use Memory Library to personalize Canva AI | Canva Help Center | https://www.canva.com/help/memory-library/ | No date shown | 18 Nov 2026 |
+| S13 | Use Magic Write to generate text | Canva Help Centre | https://www.canva.com/en_au/help/use-magic-write/ | No date shown | 18 Nov 2026 |
+| S14 | Learn about Magic Write | Canva Help Centre | https://www.canva.com/en_au/help/about-magic-write/ | No date shown | 18 Nov 2026 |
+| S15 | Use Magic Media to create photos, graphics, and videos | Canva Help Centre | https://www.canva.com/en_au/help/using-magic-media/ | No date shown | 18 Nov 2026 |
+| S16 | Generate images with Dream Lab | Canva Help Centre | https://www.canva.com/en_au/help/generate-with-dreamlab/ | No date shown | 18 Nov 2026 |
+| S17 | Dream Lab access restrictions | Canva Help Centre | https://www.canva.com/en_au/help/dreamlab-access-restrictions/ | No date shown | 18 Nov 2026 |
+| S18 | Create a video clip in Canva AI 1.0 | Canva Help Centre | https://www.canva.com/en_au/help/video-clip/ | No date shown | 18 Nov 2026 |
+| S19 | Transform your image into a video | Canva Help Centre | https://www.canva.com/en_au/help/image-to-video/ | No date shown | 18 Nov 2026 |
+| S20 | Use AI image generation apps | Canva Help Centre | https://www.canva.com/en_au/help/ai-image-generation-apps/ | No date shown | 18 Nov 2026 |
+| S21 | Use Magic Edit to add, replace, and modify photos | Canva Help Centre | https://www.canva.com/en_au/help/using-magic-edit/ | No date shown | 18 Nov 2026 |
+| S22 | Make your photo selectable and customisable with Magic Grab | Canva Help Centre | https://www.canva.com/en_au/help/using-magic-grab/ | No date shown | 18 Nov 2026 |
+| S23 | Erase or retouch photos | Canva Help Centre | https://www.canva.com/en_au/help/magic-eraser/ | No date shown | 18 Nov 2026 |
+| S24 | Expanding images | Canva Help Centre | https://www.canva.com/en_au/help/using-magic-expand/ | No date shown | 18 Nov 2026 |
+| S25 | Turn images into editable layers with Magic Layers | Canva Help Centre | https://www.canva.com/en_au/help/editable-magic-layers/ | No date shown | 18 Nov 2026 |
+| S26 | Introducing Magic Layers, bringing creative control to AI content | Canva Newsroom | https://www.canva.com/newsroom/news/magic-layers/ | No date shown; page data 11 Mar 2026 | 18 Nov 2026 |
+| S27 | Translate your Canva designs | Canva Help Centre | https://www.canva.com/en_au/help/translate-canva-designs/ | No date shown | 18 Nov 2026 |
+| S28 | Generate charts with AI | Canva Help Centre | https://www.canva.com/en_au/help/ai-charts/ | No date shown | 18 Nov 2026 |
+| S29 | Create interactive designs with Canva Code | Canva Help Centre | https://www.canva.com/en_au/help/canva-code/ | No date shown | 18 Nov 2026 |
+| S30 | Canva Code access restrictions | Canva Help Center | https://www.canva.com/help/canva-code-restrictions/ | No date shown | 18 Nov 2026 |
+| S31 | Vibe coding that matches your vision: Canva Code 2.0 is now available to all | Canva Newsroom | https://www.canva.com/newsroom/news/Canva-Code/ | No date shown; page data 14 Jul 2026 | 18 Nov 2026 |
+| S32 | Use Canva AI 2.0 for Sheets | Canva Help Center | https://www.canva.com/help/canva-sheets-assistant/ | No date shown | 18 Nov 2026 |
+| S33 | Use AI to write functions and formulas for Canva Sheets | Canva Help Center | https://www.canva.com/help/use-magic-formulas/ | No date shown | 18 Nov 2026 |
+| S34 | Analyse and summarise Canva Sheets data with Magic Insights | Canva Help Centre | https://www.canva.com/en_au/help/magic-insights/ | No date shown | 18 Nov 2026 |
+| S35 | Get quick help with Help Assistant | Canva Help Centre | https://www.canva.com/en_au/help/ai-powered-assistant/ | No date shown | 18 Nov 2026 |
+| S36 | Change access to Magic and AI features | Canva Help Centre | https://www.canva.com/en_au/help/magic-features-admin-controls/ | No date shown | 18 Nov 2026 |
+| S37 | Manage access and feature controls for your organisation | Canva Help Centre | https://www.canva.com/en_gb/help/admin-controls-for-enterprise/ | No date shown | 18 Nov 2026 |
+| S38 | App Restrictions for Students | Canva Help Centre | https://www.canva.com/en_au/help/app-restrictions-c4e/ | No date shown | 18 Nov 2026 |
+| S39 | About Canva Education | Canva Help Centre | https://www.canva.com/en_au/help/about-canva-for-education/ | No date shown | 18 Nov 2026 |
+| S40 | Trust Center: Privacy | Canva | https://www.canva.com/trust/privacy/ | No date shown | 18 Nov 2026 |
+| S41 | Privacy Policy | Canva | https://www.canva.com/policies/privacy-policy/ | Last updated 2 Nov 2026 | 18 Nov 2026 |
+| S42 | Terms of Use | Canva | https://www.canva.com/policies/terms-of-use/ | Effective 16 Nov 2026 | 18 Nov 2026 |
+| S43 | AI Product Terms | Canva | https://www.canva.com/policies/ai-product-terms/ | Effective 26 Jun 2026 | 18 Nov 2026 |
+| S44 | AI Safety at Canva | Canva | https://www.canva.com/policies/ai-safety/ | No date shown | 18 Nov 2026 |
+| S45 | Canva Shield (Safe AI) | Canva | https://www.canva.com/safe-ai-canva-shield/ | No date shown | 18 Nov 2026 |
+| S46 | Canva Shield: Safe, fair and secure AI | Canva Newsroom | https://www.canva.com/newsroom/news/safe-ai-canva-shield/ | No date shown; page data 5 Jan 2026 | 18 Nov 2026 |
+| S47 | Introducing Magic Studio: the power of AI, all in one place | Canva Newsroom | https://www.canva.com/newsroom/news/magic-studio/ | No date shown; page data 4 Oct 2023 | 18 Nov 2026 |
+| S48 | Canva Master Services Agreement | Canva | https://www.canva.com/policies/msa/ | Last updated 21 May 2026 | 18 Nov 2026 |
+| S49 | Canva List of Subprocessors (PDF, linked from https://www.canva.com/policies/subprocessors/) | Canva | https://content-management-files.canva.com/assets/en/d82918fa-87f4-4759-9800-1d791e02a065 | Last updated 23 Oct 2026 | 18 Nov 2026 |
+| S50 | Canva AI Beta Program Terms | Canva | https://www.canva.com/policies/beta-service-terms/ | Last updated 15 Apr 2026 | 18 Nov 2026 |
+| S51 | How to use Magic Studio safely and legally | Canva Help Centre | https://www.canva.com/en_au/help/using-magic-studio-safely-and-legally/ | No date shown | 18 Nov 2026 |
+| S52 | Understanding AI Pass | Canva Help Centre | https://www.canva.com/en_au/help/ai-pass/ | No date shown | 18 Nov 2026 |
+| S53 | Understanding AI top-ups | Canva Help Center | https://www.canva.com/help/ai-top-ups/ | No date shown | 18 Nov 2026 |
+| S54 | About Canva Teams | Canva Help Centre | https://www.canva.com/en_au/help/about-canva-teams/ | No date shown | 18 Nov 2026 |
+| S55 | Meet Canva Business: A powerful new plan for small businesses with big ambitions | Canva Newsroom | https://www.canva.com/newsroom/news/introducing-canva-business/ | No date shown; page data 30 Oct 2025 | 18 Nov 2026 |
+| S56 | Connect Canva to an AI assistant | Canva Help Centre | https://www.canva.com/en_au/help/mcp-agent-setup/ | No date shown | 18 Nov 2026 |
+| S57 | Actions you can take in AI assistants connected to Canva MCP | Canva Help Center | https://www.canva.com/help/mcp-canva-usage/ | No date shown | 18 Nov 2026 |
+| S58 | Connect AI assistants and tools to Canva | Canva Help Center | https://www.canva.com/help/ai-connectors-canva/ | No date shown | 18 Nov 2026 |
+| S59 | Design smarter than ever with Canva's AI Connector | Canva | https://www.canva.com/ai-connector/ | No date shown | 18 Nov 2026 |
+| S60 | Create designs with the Canva plugin in ChatGPT | Canva Help Centre | https://www.canva.com/en_au/help/connect-chatgpt-to-canva/ | No date shown | 18 Nov 2026 |
+| S61 | Connect your Canva account to Claude | Canva Help Center | https://www.canva.com/help/connect-claude-to-canva/ | No date shown | 18 Nov 2026 |
+| S62 | Connect your Canva account to Gemini | Canva Help Center | https://www.canva.com/help/connect-gemini-to-canva/ | No date shown | 18 Nov 2026 |
+| S63 | Connect your Canva account to Microsoft Copilot | Canva Help Centre | https://www.canva.com/en_au/help/connect-copilot-to-canva/ | No date shown | 18 Nov 2026 |
+| S64 | Manage Cross app access for Enterprise | Canva Help Center | https://www.canva.com/help/manage-cross-app-access | No date shown | 18 Nov 2026 |
+| S65 | Connect third-party apps to Canva AI | Canva Help Center | https://www.canva.com/help/connect-apps-canva-ai/ | No date shown | 18 Nov 2026 |
+| S66 | Import files from third-party apps to Canva AI | Canva Help Center | https://www.canva.com/help/import-to-canva-ai/ | No date shown | 18 Nov 2026 |
+| S67 | Create on-brand Canva designs directly inside Claude | Canva Newsroom | https://www.canva.com/newsroom/news/claude-ai-connector/ | No date shown; page data 25 Jan 2026 | 18 Nov 2026 |
+| S68 | Canva expands design creation inside Google Gemini and AI Search | Canva Newsroom | https://www.canva.com/newsroom/news/google-gemini/ | No date shown; page data 16 Jul 2026 | 18 Nov 2026 |
+| S69 | Make AI images your own: Magic Layers is now inside the world's biggest AI assistants | Canva Newsroom | https://www.canva.com/newsroom/news/magic-layers-ai-assistants/ | No date shown; page data 8 Jun 2026 | 18 Nov 2026 |
+| S70 | Canva expands design with Muse, from Meta | Canva Newsroom | https://www.canva.com/newsroom/news/canva-meta-muse/ | No date shown; page data 29 Sep 2026 | 18 Nov 2026 |
+| S71 | Introducing Canva in Claude Design by Anthropic Labs | Canva Newsroom | https://www.canva.com/newsroom/news/canva-claude-design/ | No date shown; page data 17 Apr 2026 | 18 Nov 2026 |
+| S72 | Craft, upgraded: introducing the Canva ProSuite | Canva Newsroom | https://www.canva.com/newsroom/news/canva-prosuite-launch/ | No date shown; page data 16 Sep 2026 | 18 Nov 2026 |
+| S73 | Canva ProSuite for Business and Enterprise | Canva | https://www.canva.com/business/pro-suite/ | No date shown | 18 Nov 2026 |
+| S74 | Big updates just landed in the Visual Suite | Canva Newsroom | https://www.canva.com/newsroom/news/visual-suite-100-updates/ | No date shown; page data 2 Sep 2026 | 18 Nov 2026 |
+| S75 | This World Teachers' Day: celebrating what teachers make possible | Canva Newsroom | https://www.canva.com/newsroom/news/world-teachers-day-2026/ | No date shown; page data 5 Oct 2026 | 18 Nov 2026 |
+| S76 | Bringing free education tools to 100 million people | Canva Newsroom | https://www.canva.com/newsroom/news/100-million-education-milestone/ | No date shown; page data 22 Jul 2025 | 18 Nov 2026 |
+| S77 | MCP tools and rate limits | Canva Developers | https://www.canva.dev/docs/apps/mcp/tools.md | No date shown | 18 Nov 2026 |
+| S78 | Access and permissions (Canva MCP) | Canva Developers | https://www.canva.dev/docs/apps/mcp/access.md | No date shown | 18 Nov 2026 |
+| S79 | Usage Policy (Canva MCP server) | Canva Developers | https://www.canva.dev/docs/apps/mcp/usage-policy.md | No date shown | 18 Nov 2026 |
+| S80 | Prohibited use (Canva MCP) | Canva Developers | https://www.canva.dev/docs/apps/mcp/prohibited-use.md | No date shown | 18 Nov 2026 |
+| S81 | Connectors in Canva AI | Canva Developers | https://www.canva.dev/docs/apps/mcp/canva-ai.md | No date shown | 18 Nov 2026 |
+| S82 | Dev MCP server | Canva Developers | https://www.canva.dev/docs/apps/dev-mcp-server/ | No date shown | 18 Nov 2026 |
+| S83 | Canva Developers SDK documentation | Canva Developers | https://www.canva.dev/docs/apps/ | No date shown | 18 Nov 2026 |
+| S84 | About Canva's REST APIs | Canva Developers | https://www.canva.dev/docs/connect/ | No date shown | 18 Nov 2026 |
+| S85 | Autofill guide (REST APIs) | Canva Developers | https://www.canva.dev/docs/apps/rest-apis/autofill-guide.md | No date shown | 18 Nov 2026 |
+| S86 | Managing team apps | Canva Developers | https://www.canva.dev/docs/apps/managing-team-apps.md | No date shown | 18 Nov 2026 |
+| S87 | App review process | Canva Developers | https://www.canva.dev/docs/apps/app-review-process.md | No date shown | 18 Nov 2026 |
+| S88 | Authentication (REST APIs) | Canva Developers | https://www.canva.dev/docs/apps/rest-apis/authentication.md | No date shown | 18 Nov 2026 |
+| S89 | Canva for AI agents | Canva Developers | https://www.canva.dev/agents/ | No date shown | 18 Nov 2026 |
+| S90 | canva-sdks/canva-skills | Canva (GitHub) | https://github.com/canva-sdks/canva-skills | No date shown | 18 Nov 2026 |
+| S91 | Canva connector listing | Anthropic (claude.com) | https://claude.com/connectors/canva | "Added November 2025" | 18 Nov 2026 |
+| S92 | Use connectors to extend Claude's capabilities | Claude Help Center (Anthropic) | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated today" (18 Nov 2026) | 18 Nov 2026 |
+| S93 | Use interactive connectors in Claude | Claude Help Center (Anthropic) | https://support.claude.com/en/articles/13454812-use-interactive-connectors-in-claude | "Updated over a week ago" (no calendar date) | 18 Nov 2026 |
+| S94 | Is my data used for model training? | Anthropic Privacy Center | https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training | 16 Mar 2026 | 18 Nov 2026 |
+| S95 | Supported countries and regions | Anthropic | https://www.anthropic.com/supported-countries | Effective 12 Nov 2026 | 18 Nov 2026 |
+| S96 | Check the availability & requirements of Connected Apps in Gemini Apps (the old Canva page, /gemini/answer/17081444, now redirects here) | Gemini Apps Help (Google) | https://support.google.com/gemini/table/17434654?hl=en | No date shown | 18 Nov 2026 |
+| S97 | Use & manage Connected Apps in Gemini | Gemini Apps Help (Google) | https://support.google.com/gemini/answer/13695044?hl=en | No date shown | 18 Nov 2026 |
+| S98 | Gemini Apps Privacy Hub | Gemini Apps Help (Google) | https://support.google.com/gemini/answer/13594961?hl=en | Last updated 17 Nov 2026 (Privacy Notice 16 Nov 2026) | 18 Nov 2026 |
+| S99 | Gemini Apps' release updates and improvements (the old "What's new for Gemini Spark" page now redirects here) | Google (gemini.google) | https://gemini.google/gb/release-notes/?hl=en-GB | Dated entries; latest 17 Nov 2026 | 18 Nov 2026 |
+| S100 | Ecosystem partner agents available in Agent 365 | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-agent-365/third-party-agents | 1 Oct 2026 (updated 2 Oct 2026) | 18 Nov 2026 |
+| S101 | Get more agents in the Microsoft Copilot app | Microsoft Support | https://support.microsoft.com/en-US/Microsoft-365-Copilot/get-more-agents-in-the-microsoft-365-copilot-app | No date shown | 18 Nov 2026 |
+| S102 | Manage agents in the Microsoft 365 admin center (the old agent prerequisites page now redirects here) | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-agent-365/admin/manage-copilot-agents-integrated-apps | 9 Jul 2026 (updated 23 Oct 2026) | 18 Nov 2026 |
+| S103 | Get started with Copilot Cowork | Microsoft Learn | https://learn.microsoft.com/en-us/copilot/cowork/get-started | 14 Sep 2026 (updated 17 Nov 2026) | 18 Nov 2026 |
+| S104 | Connected apps in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt | "Updated: yesterday" (17 Nov 2026) | 18 Nov 2026 |
+| S105 | About Canva Pro Lite | Canva Help Centre | https://www.canva.com/en_au/help/pro-lite/ | No date shown | 18 Nov 2026 |
+| S106 | Manage third-party app integrations (admin controls) | Canva Help Center | https://www.canva.com/help/admin-control-third-party-app-integrations/ | No date shown | 18 Nov 2026 |
+| S107 | Google's Veo 3 comes to Canva: Introducing Create a Video Clip | Canva Newsroom | https://www.canva.com/newsroom/news/veo3-canva-ai-video/ | No date shown; page data 18 Jun 2025 | 18 Nov 2026 |
+| S108 | Canva plugin for ChatGPT | OpenAI | https://openai.com/business/plugins/canva/ | No date shown | 18 Nov 2026 |
+| S109 | Canva (ChatGPT plugin listing) | OpenAI | https://chatgpt.com/plugins/plugin_connector_68df33b1a2d081918778431a9cfca8ba | No date shown; version 17.0.1 | 18 Nov 2026 |
+| S110 | Plugins in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001256-plugins-in-chatgpt | "Updated: yesterday" (17 Nov 2026) | 18 Nov 2026 |
+| S111 | Connecting and managing app accounts in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt | "Updated: yesterday" (17 Nov 2026) | 18 Nov 2026 |
+| S112 | Admin controls, security, and compliance for plugins and apps | OpenAI Help Center | https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps | "Updated: 13 days ago" (5 Nov 2026) | 18 Nov 2026 |
+| S113 | ChatGPT release notes | OpenAI Help Center | https://help.openai.com/en/articles/6825453-chatgpt-release-notes | "Updated: 21 hours ago" (17 Nov 2026) | 18 Nov 2026 |
+| S114 | Turn generative AI features off and see less AI-generated content | Canva Help Centre | https://www.canva.com/en_au/help/manage-ai-features/ | No date shown | 18 Nov 2026 |
+| S115 | Introducing Canva Craft | Canva Newsroom | https://www.canva.com/newsroom/news/canva-craft/ | 23 Oct 2026 | 18 Nov 2026 |
+| S116 | Introducing Canva Brush, a vision-language model for design | Canva Newsroom | https://www.canva.com/newsroom/news/canva-brush/ | 30 Oct 2026 | 18 Nov 2026 |

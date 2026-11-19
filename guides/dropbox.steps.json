@@ -41,14 +41,14 @@
       }
     ],
     "source": "S31, S53, S51",
-    "doc_updated": "2026-09-17"
+    "doc_updated": "2026-11-12"
   },
   {
     "id": "claude-plugin-dropbox",
     "from": "Claude Cowork or Claude Code",
     "to": "Dropbox",
     "who": "anyone",
-    "plan_needed": "A paid Claude plan (Pro, Max, Team or Enterprise) and any Dropbox plan. Your organisation must allow the plugin.",
+    "plan_needed": "A paid Claude plan (Pro, Max, Ultra, Team or Enterprise) and any Dropbox plan. Your organisation must allow the plugin.",
     "steps": [
       {
         "where": "claude.ai, or the Claude desktop app (Chat, Cowork or Code tab)",
@@ -67,7 +67,7 @@
       }
     ],
     "source": "S31, S52, S54",
-    "doc_updated": "2026-09-17"
+    "doc_updated": "2026-11-12"
   },
   {
     "id": "claude-owner-allows-dropbox",
@@ -100,7 +100,7 @@
       }
     ],
     "source": "S31, S53, S54",
-    "doc_updated": "2026-09-17"
+    "doc_updated": "2026-11-12"
   },
   {
     "id": "chatgpt-to-dropbox",
@@ -148,7 +148,7 @@
       }
     ],
     "source": "S30, S61, S58",
-    "doc_updated": "2026-09-30"
+    "doc_updated": "2026-10-27"
   },
   {
     "id": "chatgpt-to-dropbox-dash",
@@ -181,7 +181,7 @@
     "from": "Microsoft Copilot (Copilot Cowork)",
     "to": "Dropbox",
     "who": "anyone",
-    "plan_needed": "Any Dropbox plan and Microsoft Copilot with Cowork. Cowork for work accounts is generally available to Microsoft 365 Copilot tenants; Cowork for personal accounts is in preview. Your organisation might need to approve the plugin.",
+    "plan_needed": "Any Dropbox plan and Microsoft Copilot with Cowork turned on (Dropbox says Cowork must be on; Microsoft's listing says you need access to Microsoft 365 Copilot). Cowork for work accounts is generally available to Microsoft 365 Copilot tenants; Cowork for personal accounts is in preview. Your organisation might need to approve the plugin.",
     "steps": [
       {
         "where": "copilot.com or the Copilot desktop app",
@@ -222,7 +222,7 @@
       }
     ],
     "source": "S32, S69, S68",
-    "doc_updated": "2026-09-30"
+    "doc_updated": "2026-10-22"
   },
   {
     "id": "m365-admin-deploys-dropbox-connector",
@@ -349,7 +349,7 @@
       {
         "where": "ChatGPT, Settings > Apps & Connectors > Advanced settings",
         "do": "Dropbox's steps: toggle Developer mode on and click Confirm.",
-        "see": "OpenAI's current page says Enterprise and Edu users can add a custom MCP server from Plugins without turning on Developer Mode first."
+        "see": "OpenAI's current page says you can add a custom MCP server from Plugins (plus button, then Add custom MCP server) without turning on Developer Mode first."
       },
       {
         "where": "ChatGPT, Settings > Apps",

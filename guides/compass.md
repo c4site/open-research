@@ -1,6 +1,6 @@
 # Compass: the AI inside it, and the AI that connects to it
 
-Researched 17 October 2026 from vendor documentation. Every line is tagged with its source.
+Researched 18 November 2026 from vendor documentation. Every line is tagged with its source.
 
 ## The short version
 
@@ -11,7 +11,7 @@ Researched 17 October 2026 from vendor documentation. Every line is tagged with 
 - Compass publishes setup steps for Claude, as a custom connector, and for Gemini Enterprise, set up once by a school's Google administrator. Anthropic's connector directory doesn't list Compass yet. [S9] [S28]
 - Compass's privacy addendum also names ChatGPT and Microsoft Copilot as examples. We found no Compass setup steps for either, and no Compass listing in OpenAI's or Microsoft's directories. [S10] [S9] [S34] [S35]
 - Compass says it doesn't use connector data to train AI and doesn't store your AI conversations. Once data reaches the AI provider, that provider's own policy decides how long it's kept. [S10]
-- The assistant only sees what your Compass role allows. Compass strips medical, access-restriction and contact details, but two tools can return free-text notes that may mention health or pastoral matters. [S9]
+- The assistant only sees what your Compass role allows. Compass says sensitive personal data is filtered out before it reaches the assistant. Two tools return more: a single Chronicle entry comes back with its template fields as plain text, and attendance notes may carry pastoral comments. [S9]
 - Inside Compass, an AI support agent called Susie answers how-to questions. Compass's timetabling product, Griddle, uses AI to build elective lines. [S17] [S22]
 
 ## The tool, and the plans that matter
@@ -133,7 +133,7 @@ A quick translation of the jargon. **MCP** (Model Context Protocol) is "an open 
 **Official?**
 
 - Yes, on Compass's side. Compass runs the connector, and its setup page gives steps for Claude. [S9] [S10]
-- It isn't in Anthropic's Connectors Directory. The directory's published list on 17 October 2026 had no Compass Education connector, and Compass says a listing is still to come. [S28] [S9]
+- It isn't in Anthropic's Connectors Directory. The directory's published list on 18 November 2026 had no Compass Education connector, and Compass says a listing is still to come. [S28] [S9]
 - So you add it as a custom connector. Anthropic says custom connectors "allow connections to unverified services". [S29]
 
 **What it can see and do**
@@ -142,9 +142,9 @@ A quick translation of the jargon. **MCP** (Model Context Protocol) is "an open 
 - Compass lists 27 tools. They cover the student directory and profiles, Chronicle entries, attendance, learning tasks with results, calendars and class schedules, school events, and reference lists such as year levels and terms. [S9]
 - You only see what your Compass role allows. Tools your role can't use are hidden. [S9]
 - Compass says "A parent only sees their own children", which suggests parent accounts can connect too where a school allows it. That's our reading. [S9]
-- Compass says "Medical, access-restriction and contact PII are stripped server-side before they reach the assistant." PII means personally identifiable information. [S9]
-- Two tools go further. The single Chronicle entry tool returns the full entry, "unredacted by design". Attendance notes' free text "may carry medical / pastoral commentary". [S9]
-- The student record tool returns counts only, such as how many medical records exist, without their contents. [S9]
+- Compass says "Sensitive personal data is excluded server-side before they reach the assistant." Its tool notes say contact and access-restriction fields are stripped. [S9]
+- Two tools go further. The single Chronicle entry tool returns the entry record, and says "Template field values are included as plain text". Attendance notes' free text "may carry sensitive pastoral commentary". [S9]
+- The student record tool returns counts only, such as how many emergency contacts are listed, without their contents. [S9]
 - The privacy addendum also lists "Communication records (where permitted by your school's Compass configuration)". The published tool list has no messages tool. [S10] [S9]
 - In ordinary chats, Claude asks for your approval before it uses a connector's tools. [S30]
 
@@ -153,20 +153,20 @@ A quick translation of the jargon. **MCP** (Model Context Protocol) is "an open 
 - Compass AI switched on for your school by your Compass account manager. [S9]
 - Your school or education authority's approval of Claude as an AI provider. [S10]
 - The Compass permissions your school requires for the connector. [S10]
-- A Claude account. On the Free plan you can add one custom connector. Pro and Max users add their own. [S29] [S30]
+- A Claude account. On the Free plan you can add one custom connector. Pro, Max and Ultra users add their own. [S29] [S30]
 - On Claude Team or Enterprise, an Owner adds the custom connector for the organisation first. Members can't add it themselves. [S29] [S30]
 
 **Steps to connect** (Compass's setup page, not dated, and Anthropic's docs)
 
 1. In Claude on the web or desktop, go to **Customize > Connectors**. Compass's page calls this **Settings › Connectors**. [S29] [S9]
-2. Click **Add custom connector**. [S9] [S29]
-3. Paste `https://mcp.compass.education/mcp` as the server URL, then click **Add**. [S9]
-4. Claude opens Compass's school picker. Search for your school by name. [S9]
+2. Select **Add**, then **Add custom connector**. [S29] [S30] [S9]
+3. Enter a name for the connector and paste `https://mcp.compass.education/mcp` as the server URL. Click **Continue**, keep any sign-in settings marked **Detected**, then click **Add**. Compass's page says only to click **Add**. [S29] [S9]
+4. If the connector shows **Connect**, click it. Claude opens Compass's school picker. Search for your school by name. [S29] [S9]
 5. Log in with your normal Compass details. Compass says your assistant "never sees your password". [S9]
 6. In a chat, click **+**, choose **Connectors** and switch Compass on for that conversation. [S29]
 7. Ask a question. One of Compass's examples is "What does Alice have due in the next fortnight across all her subjects?" [S9]
 
-On Team and Enterprise plans, an Owner first goes to **Organization settings > Connectors**, selects **Add**, then **Custom**, and chooses **Web** if asked. They enter the URL and click **Add**. Members then find the connector under **Customize > Connectors** with the **Custom** label and click **Connect**. [S29]
+On Team and Enterprise plans, an Owner first goes to **Organization settings > Connectors**, selects **Add**, then **Custom**, and chooses **Web** if asked. They enter a name and the URL, click **Continue** if the dialog shows it, choose the sign-in settings and click **Add**. Members then find the connector under **Customize > Connectors** with the **Custom** label and click **Connect**. [S29]
 
 **To disconnect**
 
@@ -211,7 +211,7 @@ On Team and Enterprise plans, an Owner first goes to **Organization settings > C
 
 - No official connection found. [S9] [S35] [S36] [S37]
 - Compass's privacy addendum names Copilot (Microsoft) as an example assistant. Its setup page gives no Copilot steps. [S10] [S9]
-- Microsoft's list of federated Copilot connectors, last updated 16 October 2026, doesn't include Compass. Neither does Microsoft's partner connector gallery or a Microsoft Marketplace search for "compass education". [S35] [S36] [S37]
+- Microsoft's list of federated Copilot connectors, last updated 16 November 2026, doesn't include Compass. Neither does Microsoft's partner connector gallery or a Microsoft Marketplace search for "compass education". [S35] [S36] [S37]
 
 **What it can see and do**
 
@@ -245,10 +245,10 @@ On Team and Enterprise plans, an Owner first goes to **Organization settings > C
 - Google lists set-up work in Google Cloud first, including an organisation policy override for custom MCP data stores and the Discovery Engine Editor role. [S38]
 - Compass AI switched on for the school, and Gemini approved as an AI provider. [S9] [S10]
 
-**Steps to connect** (Compass's setup page, not dated; Google's guide, updated 16 October 2026)
+**Steps to connect** (Compass's setup page, not dated; Google's guide, updated 11 November 2026)
 
 1. Sign in to the Gemini Enterprise admin console as a Workspace administrator. [S9]
-2. Compass says to go to **Connectors › Custom MCP server › Add custom MCP server**. Google's guide describes this as **Data stores**, then **Create data store**, then searching for **Custom MCP Server** and clicking **Add MCP server**. [S9] [S38]
+2. Compass says to go to **Connectors › Custom MCP server › Add custom MCP server**. Google's guide now says to click **Apps**, select your app, click **Connected Data Stores**, then **New data store**, search for **Custom MCP Server** and click **Add MCP server**. [S9] [S38]
 3. Paste `https://mcp.compass.education/mcp` as the server URL. [S9]
 4. Confirm the sign-in (OAuth) handshake. A school picker appears. Pick your school once and Gemini remembers it for the whole organisation. [S9]
 5. Authorise the connector for the staff groups who should use it. [S9]
@@ -263,6 +263,7 @@ On Team and Enterprise plans, an Owner first goes to **Organization settings > C
 
 - Compass says its connector appears to Gemini Enterprise "as a standard third-party MCP server, so the same admin docs apply (including audit logging and per-group access control)". [S9]
 - Google's guide lets the admin pick a "Multi-region" location but says nothing more about where the data is processed. [S38]
+- Google's guide offers an optional **Sensitive data protection policy** field, which can inspect and block sensitive data that Gemini Enterprise retrieves through the data store. [S38]
 
 ### Compass's Public API (the developer route)
 
@@ -273,7 +274,8 @@ On Team and Enterprise plans, an Owner first goes to **Organization settings > C
 
 **What it can see and do**
 
-- The documentation lists 183 endpoints. Some only read, and others create or change records such as Chronicle entries, events and clubs. [S15]
+- The documentation lists 210 endpoints. Some only read, and others create or change records such as Chronicle entries, events and clubs. [S15]
+- Its OneRoster section, a standard format for school rosters and grades, lets a service such as Google Classroom write assignments and grades into Compass learning tasks. [S15]
 - Compass says API use "is recorded with personally identifiable information for auditing purposes". [S15]
 
 **What you need**
@@ -326,8 +328,8 @@ On Team and Enterprise plans, an Owner first goes to **Organization settings > C
 
 **Not every sensitive detail is filtered**
 
-- Medical, access-restriction and contact details are stripped. [S9]
-- The full Chronicle entry tool is "unredacted by design", and attendance notes can include health or pastoral comments. [S9]
+- Compass says sensitive personal data is excluded, and its tool notes name contact and access-restriction fields as stripped. The page doesn't name medical details. [S9]
+- The single Chronicle entry tool returns the entry's template fields as plain text, and attendance notes can include pastoral comments. [S9]
 - Chronicle entries and attendance notes are free text that people type. Text like that could carry instructions aimed at the AI. That's our inference, based on Anthropic's warning about hidden instructions. [S30]
 
 **The login sets the limit**
@@ -349,6 +351,7 @@ On Team and Enterprise plans, an Owner first goes to **Organization settings > C
 **Menu names differ**
 
 - Compass's page says **Settings › Connectors** in Claude. Anthropic's current docs say **Customize > Connectors**. [S9] [S29]
+- Compass's page says to click **Add** after pasting the URL. Anthropic's docs now add a **Continue** step and a sign-in settings screen first. [S9] [S29]
 - Compass's Gemini Enterprise menu path doesn't match Google's own guide. [S9] [S38]
 
 **Cost**
@@ -395,54 +398,54 @@ On Team and Enterprise plans, an Owner first goes to **Organization settings > C
 - **Whether Australian schools also have Terry**, or whether Terry and Susie are the same service. [S17] [S18]
 - **How Griddle's AI uses school data.** [S21] [S22]
 - **The 2024 AI security monitoring.** One blog post mentions it, and we found no detail. [S27]
-- **Compass's own help articles.** Its public Help Centre shows only parent videos and a parent guide, so we couldn't read staff help on AI. [S26]
+- **Compass's own help articles.** Its public Help Centre now holds a parent guide, a Griddle article and three onboarding articles. None covers AI, so we couldn't read staff help on it. [S26]
 - **Gemini Enterprise sign-in details.** Google's guide asks for OAuth details such as a client ID. Compass's page only says to "Confirm the OAuth handshake". [S38] [S9]
 - **Dates on Compass's policies.** The privacy policy and the addendum show no date on the page itself. We took their dates from the pages' details. [S11] [S10]
 - **OpenAI's in-app plugin directory** needs a login, so we checked OpenAI's public plugin pages only. [S34]
 
 ## Sources
 
-All sources were read on 17 October 2026.
+All sources were read on 18 November 2026.
 
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
-| S1 | Compass school management software (home page, Australia) | Compass Education | https://www.compass.education/ | No date shown (page metadata 13 Oct 2026) | 17 Oct 2026 |
-| S2 | About Compass | Compass Education | https://www.compass.education/about-compass/ | No date shown (page metadata 14 Apr 2026) | 17 Oct 2026 |
-| S3 | School management software for Government schools | Compass Education | https://www.compass.education/government-school-management-software/ | No date shown (page metadata 14 Apr 2026) | 17 Oct 2026 |
-| S4 | School management software for Catholic schools | Compass Education | https://www.compass.education/catholic-school-management-software/ | No date shown (page metadata 14 Apr 2026) | 17 Oct 2026 |
-| S5 | School management software for Independent schools | Compass Education | https://www.compass.education/independent-school-management-software/ | No date shown (page metadata 14 Apr 2026) | 17 Oct 2026 |
-| S6 | Compass for Schools | Compass Education | https://www.compass.education/compass-features/compass-for-schools/ | No date shown (page metadata 19 Jun 2026) | 17 Oct 2026 |
-| S7 | Features | Compass Education | https://www.compass.education/features/ | No date shown (page metadata 17 Jun 2026) | 17 Oct 2026 |
-| S8 | Register your interest in Compass OS & Compass AI | Compass Education | https://www.compass.education/register-your-interest-compass-os-compass-ai/ | No date shown (page metadata: published 9 Jun 2026, updated 13 Jul 2026) | 17 Oct 2026 |
-| S9 | Compass Education for AI assistants: connector reference | Compass Education | https://mcp.compass.education/help | No date shown | 17 Oct 2026 |
-| S10 | Privacy Policy (AI/MCP): Agent Connector Addendum | Compass Education | https://policies.compass.education/privacy-policy-aimcp | No date shown on the page ("Page details" metadata 14 May 2026) | 17 Oct 2026 |
-| S11 | Privacy Policy (Australia, the US and other countries) | Compass Education | https://policies.compass.education/privacy | No date shown on the page ("Page details" metadata 8 Nov 2023) | 17 Oct 2026 |
-| S12 | Terms of Use | Compass Education | https://policies.compass.education/ | No date shown on the page ("Page details" metadata 10 Mar 2026) | 17 Oct 2026 |
-| S13 | Integration Partners (Approved Integration Partner process) | Compass Education | https://policies.compass.education/integration-partners | No date shown on the page ("Page details" metadata 5 Oct 2023) | 17 Oct 2026 |
-| S14 | Integrations | Compass Education | https://www.compass.education/integrations/ | No date shown (page metadata 6 Oct 2026) | 17 Oct 2026 |
-| S15 | Compass Public API documentation (version 4.0.0) | Compass Education | https://docs.compass.education/ | No date shown (generated 16 Oct 2026, per page metadata) | 17 Oct 2026 |
-| S16 | Compass MCP server sign-in settings (OAuth resource metadata) | Compass Education | https://mcp.compass.education/.well-known/oauth-protected-resource | No date shown | 17 Oct 2026 |
-| S17 | Welcome Back to Term 2 (Introducing Susie) | Compass Education | https://www.compass.education/post/welcome-back-to-term-2/ | 24 Apr 2025 | 17 Oct 2026 |
-| S18 | Independent School Management Information System (UK) | Compass Education | https://www.compass.education/uk/products/independent-school-management-information-system/ | No date shown (page metadata 25 Jun 2026) | 17 Oct 2026 |
-| S19 | Ofsted's new inspection framework explained (UK) | Compass Education | https://www.compass.education/uk/post/ofsted-new-inspection-framework-explained/ | 27 Jul 2026 (page metadata: updated 28 Sep 2026) | 17 Oct 2026 |
-| S20 | Griddle launch event | Compass Education | https://www.compass.education/griddle-launch-event/ | No date shown (event on 13 Mar 2024; page metadata 22 Mar 2024) | 17 Oct 2026 |
-| S21 | Griddle: Simplified Scheduling (home page) | Griddle (Compass) | https://www.griddle.education/ | No date shown (page metadata 26 Aug 2026) | 17 Oct 2026 |
-| S22 | Line Generation | Griddle (Compass) | https://www.griddle.education/features/line-generation/ | No date shown (page metadata 26 Aug 2026) | 17 Oct 2026 |
-| S23 | About Griddle | Griddle (Compass) | https://www.griddle.education/about/ | No date shown (page metadata 12 Oct 2026) | 17 Oct 2026 |
-| S24 | Compass Secures WA DoE Contract | Compass Education | https://www.compass.education/post/compass-secures-wa-doe-contract/ | 7 Feb 2024 (release dated 22 Aug 2023) | 17 Oct 2026 |
-| S25 | PCI DSS Compliance | Compass Education | https://www.compass.education/pcidss/ | No date shown (page metadata 17 Jun 2026) | 17 Oct 2026 |
-| S26 | Compass Help Centre | Compass Education | https://support.compass.education/en/ | No date shown | 17 Oct 2026 |
-| S27 | Cyber security in schools: insights from EduTECH 2024 | Compass Education | https://www.compass.education/post/cyber-security-in-schools-insights-from-edutech-2024/ | 22 Aug 2024 | 17 Oct 2026 |
-| S28 | Claude site map (Connectors Directory pages; 973 connectors listed, none for Compass Education) | Anthropic | https://claude.com/sitemap.xml | No date shown | 17 Oct 2026 |
-| S29 | Add a connector that isn't in the directory | Anthropic | https://claude.com/docs/connectors/custom/add-unlisted | No date shown (page metadata 25 Sep 2026) | 17 Oct 2026 |
-| S30 | Get started with custom connectors using remote MCP | Anthropic Help Center | https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp | "Updated over 2 weeks ago" (timestamp 1 Oct 2026) | 17 Oct 2026 |
-| S31 | Is my data used for model training? (consumer products) | Anthropic Privacy Center | https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training | 16 Mar 2026 | 17 Oct 2026 |
-| S32 | Is my data used for model training? (commercial products) | Anthropic Privacy Center | https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training | 18 Aug 2026 | 17 Oct 2026 |
-| S33 | Connecting custom MCP servers in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt | "Updated: 11 hours ago" (timestamp 16 Oct 2026, 23:50 UTC) | 17 Oct 2026 |
-| S34 | OpenAI plugin directory pages (13 category site maps, 336 plugin pages, none for Compass) | OpenAI | https://openai.com/sitemap.xml | No date shown | 17 Oct 2026 |
-| S35 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | Last updated on 16 Oct 2026 | 17 Oct 2026 |
-| S36 | Partner-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-partners | Last updated on 27 Apr 2026 | 17 Oct 2026 |
-| S37 | Microsoft Marketplace search: "compass education" (no Compass Education listing) | Microsoft | https://appsource.microsoft.com/en-us/marketplace/apps?search=compass%20education | No date shown | 17 Oct 2026 |
-| S38 | Set up a custom MCP server (Gemini Enterprise) | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-custom-mcp-server | Last updated 16 Oct 2026 (UTC) | 17 Oct 2026 |
-| S39 | Use & manage Connected Apps in Gemini (computer) | Google Gemini Apps Help | https://support.google.com/gemini/answer/13695044?hl=en&co=GENIE.Platform%3DDesktop | No date shown | 17 Oct 2026 |
-| S40 | Connect & manage custom apps for Gemini Apps | Google Gemini Apps Help | https://support.google.com/gemini/answer/17209137 | No date shown | 17 Oct 2026 |
+| S1 | Compass school management software (home page, Australia) | Compass Education | https://www.compass.education/ | No date shown (page metadata 17 Nov 2026) | 18 Nov 2026 |
+| S2 | About Compass | Compass Education | https://www.compass.education/about-compass/ | No date shown (page metadata 14 Apr 2026) | 18 Nov 2026 |
+| S3 | School management software for Government schools | Compass Education | https://www.compass.education/government-school-management-software/ | No date shown (page metadata 14 Apr 2026) | 18 Nov 2026 |
+| S4 | School management software for Catholic schools | Compass Education | https://www.compass.education/catholic-school-management-software/ | No date shown (page metadata 14 Apr 2026) | 18 Nov 2026 |
+| S5 | School management software for Independent schools | Compass Education | https://www.compass.education/independent-school-management-software/ | No date shown (page metadata 14 Apr 2026) | 18 Nov 2026 |
+| S6 | Compass for Schools | Compass Education | https://www.compass.education/compass-features/compass-for-schools/ | No date shown (page metadata 19 Jun 2026) | 18 Nov 2026 |
+| S7 | Features | Compass Education | https://www.compass.education/features/ | No date shown (page metadata 17 Jun 2026) | 18 Nov 2026 |
+| S8 | Register your interest in Compass OS & Compass AI | Compass Education | https://www.compass.education/register-your-interest-compass-os-compass-ai/ | No date shown (page metadata: published 9 Jun 2026, updated 13 Jul 2026) | 18 Nov 2026 |
+| S9 | Compass Education for AI assistants: connector reference | Compass Education | https://mcp.compass.education/help | No date shown | 18 Nov 2026 |
+| S10 | Privacy Policy (AI/MCP): Agent Connector Addendum | Compass Education | https://policies.compass.education/privacy-policy-aimcp | No date shown on the page ("Page details" metadata 14 May 2026) | 18 Nov 2026 |
+| S11 | Privacy Policy (Australia, the US and other countries) | Compass Education | https://policies.compass.education/privacy | No date shown on the page ("Page details" metadata 8 Nov 2023) | 18 Nov 2026 |
+| S12 | Terms of Use | Compass Education | https://policies.compass.education/ | No date shown on the page ("Page details" metadata 10 Mar 2026) | 18 Nov 2026 |
+| S13 | Integration Partners (Approved Integration Partner process) | Compass Education | https://policies.compass.education/integration-partners | No date shown on the page ("Page details" metadata 5 Oct 2023) | 18 Nov 2026 |
+| S14 | Integrations | Compass Education | https://www.compass.education/integrations/ | No date shown (page metadata 6 Oct 2026) | 18 Nov 2026 |
+| S15 | Compass Public API documentation (version 4.0.0) | Compass Education | https://docs.compass.education/ | No date shown (generated 18 Nov 2026, per page metadata) | 18 Nov 2026 |
+| S16 | Compass MCP server sign-in settings (OAuth resource metadata) | Compass Education | https://mcp.compass.education/.well-known/oauth-protected-resource | No date shown | 18 Nov 2026 |
+| S17 | Welcome Back to Term 2 (Introducing Susie) | Compass Education | https://www.compass.education/post/welcome-back-to-term-2/ | 24 Apr 2025 | 18 Nov 2026 |
+| S18 | Independent School Management Information System (UK) | Compass Education | https://www.compass.education/uk/products/independent-school-management-information-system/ | No date shown (page metadata 25 Jun 2026) | 18 Nov 2026 |
+| S19 | Ofsted's new inspection framework explained (UK) | Compass Education | https://www.compass.education/uk/post/ofsted-new-inspection-framework-explained/ | 27 Jul 2026 (page metadata: updated 28 Sep 2026) | 18 Nov 2026 |
+| S20 | Griddle launch event | Compass Education | https://www.compass.education/griddle-launch-event/ | No date shown (event on 13 Mar 2024; page metadata 22 Mar 2024) | 18 Nov 2026 |
+| S21 | Griddle: Simplified Scheduling (home page) | Griddle (Compass) | https://www.griddle.education/ | No date shown (page metadata 26 Aug 2026) | 18 Nov 2026 |
+| S22 | Line Generation | Griddle (Compass) | https://www.griddle.education/features/line-generation/ | No date shown (page metadata 26 Aug 2026) | 18 Nov 2026 |
+| S23 | About Griddle | Griddle (Compass) | https://www.griddle.education/about/ | No date shown (page metadata 12 Oct 2026) | 18 Nov 2026 |
+| S24 | Compass Secures WA DoE Contract | Compass Education | https://www.compass.education/post/compass-secures-wa-doe-contract/ | 7 Feb 2024 (release dated 22 Aug 2023) | 18 Nov 2026 |
+| S25 | PCI DSS Compliance | Compass Education | https://www.compass.education/pcidss/ | No date shown (page metadata 17 Jun 2026) | 18 Nov 2026 |
+| S26 | Compass Help Centre | Compass Education | https://support.compass.education/en/ | No date shown | 18 Nov 2026 |
+| S27 | Cyber security in schools: insights from EduTECH 2024 | Compass Education | https://www.compass.education/post/cyber-security-in-schools-insights-from-edutech-2024/ | 22 Aug 2024 | 18 Nov 2026 |
+| S28 | Claude site map (Connectors Directory pages; 1,157 connector pages listed, none for Compass Education) | Anthropic | https://claude.com/sitemap.xml | No date shown | 18 Nov 2026 |
+| S29 | Add a connector that isn't in the directory | Anthropic | https://claude.com/docs/connectors/custom/add-unlisted | No date shown (page metadata 16 Nov 2026) | 18 Nov 2026 |
+| S30 | Get started with custom connectors using remote MCP | Anthropic Help Center | https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp | "Updated this week" (timestamp 13 Nov 2026) | 18 Nov 2026 |
+| S31 | Is my data used for model training? (consumer products) | Anthropic Privacy Center | https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training | 16 Mar 2026 | 18 Nov 2026 |
+| S32 | Is my data used for model training? (commercial products) | Anthropic Privacy Center | https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training | 18 Aug 2026 | 18 Nov 2026 |
+| S33 | Connecting custom MCP servers in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt | "Updated: 22 days ago" (timestamp 28 Oct 2026, 00:08 UTC) | 18 Nov 2026 |
+| S34 | OpenAI plugin directory pages (13 category site maps, 387 plugin pages, none for Compass) | OpenAI | https://openai.com/sitemap.xml | No date shown | 18 Nov 2026 |
+| S35 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | Last updated on 16 Nov 2026 | 18 Nov 2026 |
+| S36 | Partner-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-partners | Last updated on 16 Nov 2026 | 18 Nov 2026 |
+| S37 | Microsoft Marketplace search: "compass education" (no Compass Education listing) | Microsoft | https://marketplace.microsoft.com/en-us/search/products?search=compass+education | No date shown | 18 Nov 2026 |
+| S38 | Set up a custom MCP server (Gemini Enterprise) | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-custom-mcp-server | Last updated 11 Nov 2026 (UTC) | 18 Nov 2026 |
+| S39 | Use & manage Connected Apps in Gemini (computer) | Google Gemini Apps Help | https://support.google.com/gemini/answer/13695044?hl=en&co=GENIE.Platform%3DDesktop | No date shown | 18 Nov 2026 |
+| S40 | Connect & manage custom apps for Gemini Apps | Google Gemini Apps Help | https://support.google.com/gemini/answer/17209137 | No date shown | 18 Nov 2026 |

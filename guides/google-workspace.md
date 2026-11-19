@@ -1,16 +1,16 @@
 # Google Workspace: the AI inside it, and the AI that connects to it
 
-Researched 15 October 2026 from vendor documentation. Every line is tagged with its source.
+Researched 18 November 2026 from vendor documentation. Every line is tagged with its source.
 
 ## The short version
 
-Every Google Workspace business plan now has Google's Gemini AI built in, and it's included in the plan price [S11][S1]. How much you get depends on the plan: Business Starter mostly gets Gemini in Gmail, while Business Standard and above add it to Docs, Sheets, Slides, Drive, Meet and Chat [S1]. Google says your Workspace content isn't read by human reviewers or used to train its AI models outside your organisation without your permission [S9]. Gemini only pulls from files and emails the signed-in person can already open, so loose sharing settings will show up in its answers (our inference from [S9]). There's no Australian data region: Google's data-regions setting offers the United States or Europe, and only on some plans [S10]. ChatGPT, Claude and Microsoft Copilot each have an official way to connect to Gmail and Google Drive, and some of these connections can now make changes as well as read [S75][S80][S84][S87]. Out of the box, a Workspace admin's settings let staff connect any third-party app to their work account, so it's worth setting rules early [S55]. Two defaults changed recently: Meet now takes AI notes automatically on Business Standard and Plus (from 29 September 2026), and Gemini's links to apps like HubSpot and Salesforce are switched on for people who have Gemini [S28][S50]. Google is replacing Gems with "skills", and on business plans Gems stop working no sooner than 1 March 2027 [S49]. Google's own help pages warn that Gemini can get things wrong, so check summaries and drafts before you rely on them [S17][S35].
+Every Google Workspace business plan now has Google's Gemini AI built in, and it's included in the plan price [S11][S1]. How much you get depends on the plan: Business Starter mostly gets Gemini in Gmail, while Business Standard and above add it to Docs, Sheets, Slides, Drive, Meet and Chat [S1]. Google says your Workspace content isn't read by human reviewers or used to train its AI models outside your organisation without your permission [S9]. Gemini only pulls from files and emails the signed-in person can already open, so loose sharing settings will show up in its answers (our inference from [S9]). There's no Australian data region: Google's data-regions setting offers the United States or Europe, and only on some plans [S10]. ChatGPT, Claude and Microsoft Copilot each have an official way to connect to Gmail and Google Drive, and some of these connections can now make changes as well as read [S75][S80][S84][S87]. Out of the box, a Workspace admin's settings let staff connect any third-party app to their work account, so it's worth setting rules early [S55]. Two defaults changed recently: Meet now takes AI notes automatically on Business Standard and Plus (from 29 September 2026), and Gemini's links to apps like HubSpot and Salesforce are switched on for people who have Gemini [S28][S50]. Google is replacing Gems with "skills". Skills started reaching Gmail, Docs, Slides, Drive and Chat on 9 November 2026, and on business plans Gems stop working no sooner than 1 March 2027 [S49]. Google's own help pages warn that Gemini can get things wrong, so check summaries and drafts before you rely on them [S17][S35].
 
 ## The tool, and the plans that matter
 
 Google Workspace is Google's paid set of work apps, sold per user per month [S1]. This guide covers Gmail, Docs, Sheets, Slides, Drive, Meet, Calendar, Chat and Forms, plus the AI products Google sells alongside them [S1][S6].
 
-**Business plans in Australia** (A$ per user per month, excluding tax, read 15 October 2026)
+**Business plans in Australia** (A$ per user per month, excluding tax, read 18 November 2026)
 
 | Plan | Month to month | With a one-year commitment | Users |
 |---|---|---|---|
@@ -30,8 +30,9 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 | Gemini in Gmail | Yes | Yes | Yes | Yes |
 | Gemini in Docs, Sheets, Slides, Drive, Meet and Chat | No | Yes | Yes | Yes |
 | Gemini in Vids | Yes | Yes | Yes | Yes |
-| Gemini app | Basic access | Expanded access, incl. Google's most capable models | Expanded | Expanded |
+| Gemini app (chat on the web or mobile) | Yes | Yes, incl. Google's most capable models | Yes, incl. most capable models | Yes, incl. most capable models |
 | Gemini Notebook (formerly NotebookLM) | Basic, up to 3 Audio Overviews a day | Expanded, up to 20 a day | Expanded | Expanded |
+| Customise AI with skills | Yes | Yes | Yes | Yes |
 | Workspace Studio (AI automations) | Yes | Yes | Yes | Yes |
 
 - Enterprise also lists "AI classification for Google Drive" [S1].
@@ -54,7 +55,7 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 - Google's limits table shows "No access" for Business Starter on several Docs, Sheets, Slides and Drive AI features, such as the Sheets AI function and Drive audio overviews for PDFs [S15].
 
 **Google Workspace for Education** (where it differs)
-- The Gemini app and Gemini Notebook are core services in Education Fundamentals, Standard and Plus [S59].
+- The Gemini app and Gemini Notebook are core services in Education Fundamentals, Standard and Plus [S59][S40].
 - Google describes Gemini for Education as included free in all Workspace for Education editions [S58].
 - Students under 18 get a separate experience with extra guardrails [S58].
 - In primary and secondary schools, anyone not marked as 18 or older is treated as under 18 [S61].
@@ -78,6 +79,8 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 - Archives, deletes, labels or stars emails for you, after showing a confirmation [S16].
 - Uses Drive files you add with "Add sources" [S16].
 - Creates, moves or deletes events on your primary calendar [S16].
+- Google's help page also lists making Docs, Sheets, Slides and images, and moving, renaming, sharing or copying Drive files [S16].
+- It can use skills, which have to be made and turned on in Workspace Studio first [S16].
 - Google's feature table also lists AI Overviews for threads and for Gmail search, "Suggested replies" and "Proofread" [S6].
 
 **Where to find it**
@@ -89,6 +92,7 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 **Plans and cost**
 - Included in every Business and Enterprise plan, Business Starter included [S6][S1].
 - No separate charge [S1].
+- From 10 November 2026 Google is giving thread summaries and "Help me write" to all Workspace users aged 18 and over. They're on by default. People can turn them off, and so can admins [S103].
 
 **On by default, and who controls it**
 - Gemini features in Workspace apps are on by default [S7].
@@ -109,7 +113,8 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 
 **In Australia**
 - Google says work accounts can use "Help me write" globally in supported languages; the personal-account version is US-only [S17].
-- "AI Inbox", a Beta feature, is limited to Enterprise Plus users in the United States [S53].
+- "AI Inbox" (suggested to-dos and topic summaries) began rolling out to paid Workspace plans on 12 October 2026, but only for users in the United States with US English as their language [S102].
+- Google's Beta admin page still lists AI Inbox for Enterprise Plus only, so its own pages don't agree on which plans get it [S53][S102].
 
 ### Gemini in Google Docs
 
@@ -124,7 +129,7 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 - Or click the Gemini icon and type in the bar at the bottom; review changes with "Accept suggestion", "Accept all" or "Reject all" [S19].
 - To edit selected text, click "Refine" on the floating bar [S19].
 - To point Gemini at a file, click "Sources" or type "@" and pick the file [S19].
-- To build a reusable instruction, click Tools > "Skill builder" [S18].
+- To build a reusable instruction, click Tools > "Skill builder". To keep it, choose "Make this skill in Studio" and turn the skill on in Workspace Studio [S18].
 
 **Plans and cost**
 - Business Standard, Business Plus, Enterprise Standard and Enterprise Plus; not Business Starter [S6][S1].
@@ -184,6 +189,7 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 **What it does**
 - Generates images and new slides, summarises a deck, and rewrites text [S22].
 - Uses Drive files you reference while writing [S22].
+- Since 29 October 2026, one prompt in the side panel can edit several slides or a whole deck, for example to refresh the style. It works in English only for now [S105].
 
 **Where to find it**
 - Click "Ask Gemini" at the top right [S22].
@@ -193,7 +199,8 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 
 **Plans and cost**
 - Business Standard and Plus, Enterprise Standard and Plus [S6].
-- Generating whole presentations has a monthly cap; Business Starter has no access [S15].
+- Generating presentations is on promotional access until 1 December 2026. Google says per-person limits apply after that [S15][S105].
+- Whole-deck editing is listed for Business Standard and Plus and Enterprise Standard and Plus, and there's no admin switch for it [S105].
 
 **On by default, and who controls it**
 - On by default; same admin controls as Gmail [S7].
@@ -236,6 +243,7 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 **Limits**
 - "Suggest file moves" works on the web only, in English only, and needs Editor access [S24].
 - Since 20 April 2026 you can no longer ask the side panel to move files or create folders [S26].
+- Google's Gmail and Docs help pages list managing Drive files from their side panels, so Google's pages don't agree on this (see gaps) [S16][S18].
 
 **In Australia**
 - File organising is English-only; no other Australia-specific limits in the pages we read [S24].
@@ -380,6 +388,7 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 - A chat assistant at gemini.google.com and in the mobile app [S8].
 - Features include Deep Research, Audio Overviews, image and video generation, Canvas, Gems and scheduled actions [S37].
 - It can connect to your Workspace apps: find and summarise in Gmail, Drive and Chat; create and edit Calendar events; add tasks; and create Keep notes [S35][S34].
+- Since 29 October 2026 you can create, preview and edit files inside a chat. Slide decks open in Google Slides, spreadsheets open in Google Sheets, and drafts can be uploaded to Drive. There's no admin switch for this beyond turning the Gemini app off [S106].
 - Third-party apps available to work accounts include GitHub (web, 18+), Monday.com (18+, English) and WhatsApp (Android) [S38].
 - Gemini in Chrome is covered by the same admin setting [S8].
 
@@ -389,7 +398,7 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 
 **Plans and cost**
 - A core service in Business Starter, Standard and Plus, and in Enterprise editions [S8].
-- Business Starter gets basic access; Standard and above get expanded access and Google's most capable models [S1].
+- Every Business plan can chat with Gemini on the web or mobile; Google's most capable models are listed for Standard and above, not Starter [S1].
 - Usage caps apply, for example on Deep Research reports and image generation [S8].
 
 **On by default, and who controls it**
@@ -419,27 +428,32 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 ### Skills (replacing Gems)
 
 **What it does**
-- Skills are reusable custom instructions you call in a chat by typing "/" and the skill's name [S49].
+- Skills are reusable custom instructions you call in a chat by typing "/" or "@" and the skill's name [S49].
+- In Gmail, Docs, Slides, Drive and Chat, Gemini can also apply a skill by itself, for example to follow your team's templates [S104].
 - They use an open Markdown format (SKILL.md), so instructions can move between tools [S49].
 - Skills are replacing Gems, Gemini's earlier custom assistants [S49].
 
 **Where to find it**
-- In the Gemini app; in Docs, through Tools > "Skill builder" [S18][S49].
+- In the Gemini app [S49].
+- For Workspace apps, skills are made, tested and turned on in Workspace Studio. You can draft one in Docs through Tools > "Skill builder" [S104][S18].
 
 **Plans and cost**
 - Gemini app skills: all Workspace editions and all ages [S48].
-- Skills inside Workspace apps: Business Starter, Standard and Plus; Enterprise Standard and Plus; Google AI Pro for Education; AI Expanded Access; 18+ only [S48][S49].
+- Skills inside Workspace apps: Business Starter, Standard and Plus; Enterprise Starter, Standard and Plus; Google AI Pro for Education; AI Expanded Access; over-18s only [S48][S104].
 
 **On by default, and who controls it**
-- Admin setting for Workspace: "Allow people to use skills in Studio and Gemini in Workspace" [S48].
+- Skills in Workspace Studio and Workspace apps are on by default for eligible editions. Admins can turn them off for everyone, or for chosen organisational units or groups [S104].
 - There are no admin controls for skills in the Gemini app [S48].
 
 **Your data**
 - The skills pages we read don't add data terms beyond Google's general Workspace AI commitments [S9].
+- Sharing a skill gives the other person a copy. Any Drive files the skill uses have to be shared separately [S104].
 
 **Limits**
 - Skills and Gems don't sync between the Gemini app and Workspace apps [S49].
-- Gemini app skills began rolling out on 13 October 2026; skills inside Workspace apps are delayed "until further notice" [S48].
+- Gemini app skills began rolling out on 13 October 2026 [S48].
+- Skills in Workspace Studio and Workspace apps began rolling out on 9 November 2026, and reach Scheduled Release domains from 30 November [S49][S104].
+- Skills in Workspace apps work in English only for now, and not yet in Sheets or Meet [S104].
 
 **In Australia**
 - No Australia-specific limits in the pages we read [S48].
@@ -482,7 +496,6 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 - Steps can use Gemini, for example to recap unread emails and post the summary in Chat [S42].
 - Flows can take actions in other services, such as Asana, Mailchimp, Salesforce, HubSpot and monday, through Beta integration steps [S43].
 - Webhooks and custom steps written in Apps Script are also supported [S5].
-- Workspace Studio grew out of the earlier "Workspace Flows" alpha [S5].
 
 **Where to find it**
 - Go to studio.workspace.google.com and browse templates on "Discover", or choose "Choose a Starter" to build your own [S42].
@@ -490,13 +503,15 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 
 **Plans and cost**
 - Business Starter, Standard and Plus; Enterprise Standard and Plus; Education Fundamentals, Standard and Plus [S42][S45].
-- Usage is on promotional access now; limits start being enforced on 1 November 2026 [S15].
-- You can have up to 25 flows, with up to 20 steps each, and there's a daily cap on runs [S44].
+- Usage is on promotional access. Google's limits page no longer gives a date for when limits will be enforced [S15].
+- You can have up to 25 flows, with up to 100 steps each, and there's a daily cap on runs [S44].
+- No more than 25 active flows can be started by Gmail events [S44].
 
 **On by default, and who controls it**
 - By default everyone in the organisation can create and use flows [S45].
 - Admin switch: Menu > Apps > Google Workspace > Workspace Studio > "Flows" > "Create and use flows" [S45].
-- Admins can require staff to approve steps that share data outside the organisation, under "Approvals" [S46].
+- Admins choose whether staff must approve steps that share data with people outside the organisation, under "Collaboration & approvals" [S46].
+- The default, "Let user decide", currently works the same as "Always", so people approve each of those steps [S46].
 - Google recommends using the Marketplace allowlist to control which integrations people can use [S47].
 
 **Your data**
@@ -580,7 +595,8 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 - Google Drive: it searches and reads files the connected account can open, including Docs, Sheets and Slides. Where your workspace allows it, it can also create and update files, and share or delete them. ChatGPT may ask you to confirm first [S94].
 - Google Calendar: OpenAI's listing says it can check availability and create, update or delete events [S100].
 - Google Contacts: OpenAI's FAQ lists only read-only Google permissions for it [S93].
-- In Business and Enterprise workspaces, admins can limit connections that support "Action control" to read-only actions or an approved set [S76].
+- Google Meet: OpenAI's FAQ says Meet actions come through the Google Calendar app, such as looking up recordings and transcripts, with a read-only Meet permission [S93].
+- In Business and Enterprise workspaces, admins choose which of an app's actions people can use, including ones that change information, and whether actions added later are allowed [S76].
 - ChatGPT reaches only what the Google account you connect can open [S93]. A company-managed connection uses its own account's permissions, which can go beyond yours [S77].
 
 **What you need**
@@ -589,8 +605,9 @@ Google Workspace is Google's paid set of work apps, sold per user per month [S1]
 - Business workspaces start with apps switched on, including Drive's Docs, Sheets and Slides actions. In Enterprise and Edu those Drive actions stay off until an admin turns them on [S97].
 - On Google's side, the Workspace admin's API controls decide whether outside apps can reach Gmail and Drive [S55].
 - A Google Workspace admin may need to approve the Google permissions behind each action ChatGPT has switched on. If one is blocked, people may see an error when they connect or use that action [S93].
+- In Enterprise workspaces where the controls are turned on, admins can allow or block whole shared drives and decide whether My Drive is available [S93][S94].
 
-**Steps to connect** (OpenAI help centre, read 15 October 2026)
+**Steps to connect** (OpenAI help centre, read 18 November 2026)
 1. In ChatGPT, go to "Settings", then "Plugins", and select Gmail, Google Drive or Google Calendar [S96].
 2. Select "Install plugin" if you see it. This may start the sign-in [S96].
 3. Select "Connect" if asked, and sign in to the Google account that holds the email or files you want [S96].
@@ -603,14 +620,15 @@ OpenAI Academy's page, last updated 4 September 2026, still shows an older route
 - To disconnect your Google account in ChatGPT: "Settings" > "Plugins" > the app > the account's "•••" menu (or "Connection") > "Disconnect" [S96].
 - Open the plugin and choose "Uninstall plugin" where it's offered; workspace-installed plugins are managed by admins [S75].
 - OpenAI's help centre warns that uninstalling a plugin can disconnect all the accounts connected through it. Its Learn docs add that a separately connected integration stays connected [S96][S75].
-- Disconnecting doesn't delete past chats or saved memories, and it leaves any admin-managed Drive index in place [S93].
+- Disconnecting doesn't delete past chats or saved memories [S93][S96].
 - On Google's side, go to myaccount.google.com/linkedapps > "Access to your Google Account" > the app > "See details" > "Remove access" > "Confirm" [S57].
 
 **Limits**
-- OpenAI says information accessed through these connections isn't used to train models for Business, Enterprise and Edu customers [S76][S74].
+- OpenAI says information accessed through these connections isn't used to train models for Business, Enterprise and Edu customers by default [S95][S74].
 - On every plan, OpenAI says it doesn't train its general models on data from connected Google apps. The exceptions are feedback you send and anything that ends up in the chat itself, such as pasted content or ChatGPT's reply [S93].
 - With "Improve the model for everyone" turned off, OpenAI says app data isn't used to improve its models, even when it appears in your chats [S93].
-- The connected service's own retention and data-residency rules also apply [S76].
+- If Memory is on, OpenAI says eligible information from connected Google apps may be used to personalise ChatGPT [S93].
+- OpenAI tells admins to check that a connected service meets the organisation's requirements before allowing access to sensitive information [S76].
 
 ### ChatGPT for Google Sheets and Google Workspace
 
@@ -650,16 +668,19 @@ OpenAI Academy's page, last updated 4 September 2026, still shows an older route
 - Gmail: search and read emails, draft, send, reply and forward, and manage labels [S80].
 - Google Calendar: view calendars, create, update and delete events, and find a time that suits everyone [S80].
 - Google Drive: search and read Docs, Sheets, Slides, PDFs and Office files, upload files, create folders, and share, move or trash files [S80].
-- Separate Docs, Sheets and Slides connectors can create new Google files and edit them live (beta) [S80].
-- By default Claude asks for your approval before sending email or sharing, moving or trashing files [S80].
+- Separate Docs, Sheets and Slides connectors can create new Google files and edit them live in a pane beside the chat. In Docs they can also work with comments and suggestions [S80].
+- Live editing works in Claude on the web in Chrome, and in Claude Desktop with its built-in browser turned on [S80].
+- Outside Auto mode, Claude asks for your approval before each action such as sending email or sharing, moving or trashing files [S80].
+- In Auto mode those actions can run without asking, unless an automated check flags them as risky or your organisation requires approval. Anthropic says "The check can miss risky actions" [S80].
 - Claude only sees data for the Google account you connect and can't reach anything that account can't open [S80].
 
 **What you need**
 - Anthropic says the connectors are available to all Claude users [S80].
 - On Team and Enterprise plans, an Owner or Primary Owner must turn them on for the organisation first [S80].
+- On those plans, owners also decide whether members can let these actions run without asking each time [S80].
 - If your Workspace blocks unknown apps, a Google admin has to mark Claude as trusted [S80].
 
-**Steps to connect** (Claude Help Center, "updated over 2 weeks ago" as of 15 October 2026)
+**Steps to connect** (Claude Help Center, "updated today" as of 18 November 2026)
 1. In Claude, go to Customize > "Connectors" and click "+" next to Connectors [S81].
 2. Choose Gmail, Google Calendar or Google Drive, read the description and click "Connect" [S81][S80].
 3. Sign in to Google and approve access; Google's screen mentions permission to send email [S80].
@@ -684,7 +705,7 @@ For the Google admin, if access is blocked: admin.google.com > Security > Access
 ### Claude for Google Docs, Sheets and Slides and Google Workspace
 
 **Official?**
-- Yes. The "Claude" add-on in the Workspace Marketplace is published by Anthropic; the listing was updated on 14 October 2026 [S82].
+- Yes. The "Claude" add-on in the Workspace Marketplace is published by Anthropic; the listing was updated on 6 November 2026 [S82].
 - Anthropic calls it beta [S83].
 
 **What it can see and do**
@@ -693,10 +714,10 @@ For the Google admin, if access is blocked: admin.google.com > Security > Access
 - It can use connectors your organisation has set up in Claude [S83].
 
 **What you need**
-- A Claude Pro, Max, Team or Enterprise plan [S83].
+- A Claude Pro, Max, Ultra, Team or Enterprise plan [S83].
 - A Google account that's allowed to install Marketplace apps [S83].
 
-**Steps to connect** (Claude Help Center, "updated yesterday" as of 15 October 2026)
+**Steps to connect** (Claude Help Center, "updated over 2 weeks ago" as of 18 November 2026)
 1. Open the Claude listing in the Workspace Marketplace and click "Install"; one install covers all three apps [S83].
 2. Open a Doc, Sheet or Slides file and go to Extensions > Claude > "Open Claude" [S83].
 3. Allow the two permissions Google asks for [S83].
@@ -714,7 +735,7 @@ Admin install for the whole organisation: open the listing as a super admin, cli
 - In Docs it can't read or resolve comments or accept suggestions [S83].
 - Each task stops after six minutes; Firefox isn't supported [S83].
 - Anthropic says it doesn't train on this content and deletes inputs and outputs within 30 days [S83].
-- Pro and Max use falls under Anthropic's consumer terms; Team and Enterprise under its commercial terms [S83].
+- Pro, Max and Ultra use falls under Anthropic's consumer terms; Team and Enterprise under its commercial terms [S83].
 - Not for health information covered by HIPAA [S83].
 
 ### Microsoft 365 Copilot (Gmail, Google Calendar and Google Contacts) and Google Workspace
@@ -727,14 +748,15 @@ Admin install for the whole organisation: open the listing as a super admin, cli
 - Google Calendar: check events, invites and attendees [S84].
 - Google Contacts: look up names, emails and phone numbers [S84].
 - These are "federated" connectors: they fetch live data with your own sign-in and don't copy it into Microsoft 365 [S87].
-- Write, update and delete actions started rolling out in early October 2026 for connectors that offer them, and each one needs your approval [S87].
+- Where a connector offers the tools, Copilot can also create, update or delete data. Each of those tools asks for your approval at first, but you can pick "Always allow" for a tool so Copilot stops asking [S87].
+- Microsoft's older connectors overview page still calls federated connectors read-only, with a note that write actions arrive from early October 2026 [S89].
 
 **What you need**
-- A Microsoft 365 work account with Copilot Chat [S87].
+- A Microsoft 365 Copilot licence. Microsoft lists it as one of the conditions for seeing a federated connector in Copilot [S87].
 - Microsoft-published connectors are switched on in a Microsoft 365 tenant unless the admin turns them off [S87].
-- Microsoft's pages we read don't say whether a paid Microsoft 365 Copilot licence is required (see gaps) [S87][S89].
+- Admins can switch off all Microsoft-built connectors at once under Agents > Settings > "Agent and plugin access" [S88].
 
-**Steps to connect** (Microsoft Learn, 30 September 2026)
+**Steps to connect** (Microsoft Learn, 16 November 2026)
 1. Open Microsoft 365 Copilot Chat [S87].
 2. Select the "..." menu, then "Settings" [S87].
 3. Select "Sources" in the left pane [S87].
@@ -758,7 +780,8 @@ Admin install for the whole organisation: open the listing as a super admin, cli
 **What it can see and do**
 - Lets people search and summarise Google Drive files from Copilot [S85].
 - It keeps Google Drive's sharing permissions when set up as Microsoft recommends [S85].
-- Comments and folder details aren't indexed [S85].
+- Folder details aren't indexed, and only the text in files is indexed [S85].
+- The content of files over 20 MB isn't indexed or searchable [S85].
 
 **What you need**
 - A Google Workspace admin to create a Google Cloud service account with domain-wide delegation and read-only scopes [S86].
@@ -833,10 +856,11 @@ MCP (Model Context Protocol) is a standard way for an AI tool to plug into anoth
 
 **Official?**
 - Yes. Google runs MCP servers for Gmail, Google Drive, Google Calendar, Google Chat and the People API, all in "Developer Preview" [S68].
+- Google's list now also has Developer Preview servers for Google Docs, Google Sheets, Google Slides and "Google Workspace Universal Search" [S68].
 - OpenAI maintains Gmail, Google Calendar and Google Drive connectors in its API [S78].
 
 **What it can see and do**
-- Google's Gmail MCP server can search and read threads, list drafts and labels, create drafts and apply labels; it lists no tool for sending [S69].
+- Google's Gmail MCP server can search and read threads, list drafts and labels, create drafts, and add or remove labels; it lists no tool for sending [S69].
 - Google's Drive MCP server can search, read and download files, read permissions, and create or copy files [S70].
 - OpenAI's Google connectors are built around searching and reading; the Drive one uses a read-only scope [S78].
 
@@ -845,9 +869,9 @@ MCP (Model Context Protocol) is a standard way for an AI tool to plug into anoth
 - Google's guide names Google Antigravity and Claude (Pro, Max, Team or Enterprise, as a custom connector) as clients [S69].
 - For OpenAI's connectors: your own Google OAuth app supplying an access token [S78].
 
-**Steps to connect** (Google for Developers, 12 October 2026)
+**Steps to connect** (Google for Developers, 17 November 2026)
 1. Enable the Gmail API and the Gmail MCP API in your Cloud project [S69].
-2. Set up the OAuth consent screen with the read and compose scopes [S69].
+2. Set up the OAuth consent screen with the read, compose and modify scopes [S69].
 3. Create an OAuth client (Web application, "Use this client for an AI-powered agent") [S69].
 4. Add https://gmailmcp.googleapis.com/mcp/v1 to your MCP client [S69].
 5. Sign in and test [S69].
@@ -856,7 +880,7 @@ MCP (Model Context Protocol) is a standard way for an AI tool to plug into anoth
 - Remove the server from your AI tool and revoke its access on your Google Account [S57].
 
 **Limits**
-- Google warns that emails can carry hidden instructions that hijack the AI session and lead to data being changed or stolen [S69].
+- Google warns that emails can carry hidden instructions that hijack the AI session. It says an attacker could then change or delete your data, or steal it [S69].
 - OpenAI tells developers to trust any server they connect and to keep approvals on for sensitive actions [S78].
 - OpenAI's "connector_id" method is deprecated for models released after 1 September 2026 [S78].
 
@@ -870,6 +894,8 @@ MCP (Model Context Protocol) is a standard way for an AI tool to plug into anoth
 - Apps Script can add menus and sidebars to Docs, Sheets and Forms, and connect to Gmail, Calendar and Drive [S71].
 - Its Vertex AI service lets a script call Gemini models [S72].
 - Add-ons can provide custom steps and starters for Workspace Studio [S73].
+- Since 12 November 2026, Gemini in Apps Script can write a script from a plain-language description and suggest fixes when it fails. Scripts run with the person's existing permissions [S108].
+- Google lists Gemini in Apps Script for Business Standard and Plus, Enterprise Standard and Plus, and the AI Expanded Access add-on [S108].
 
 **What you need**
 - For Gemini from Apps Script: a Google Cloud project with billing turned on and the Agent Platform API (formerly Vertex AI API) enabled [S72].
@@ -878,7 +904,7 @@ MCP (Model Context Protocol) is a standard way for an AI tool to plug into anoth
 - This is a route for developers, and there's no one-click connection; see Google's developer guides [S71][S73].
 
 **To disconnect**
-- Remove the script or add-on; admins can uninstall add-ons from the Marketplace apps list [S56].
+- Remove the script or add-on. Taking an add-on off the Marketplace allowlist stops it working for people limited to allowlisted apps, even if they still have it installed [S56].
 
 **Limits**
 - Google's pages we read don't state what Apps Script costs, beyond needing a billed Cloud project for AI calls [S71][S72].
@@ -935,8 +961,8 @@ MCP (Model Context Protocol) is a standard way for an AI tool to plug into anoth
 
 **These tools can now change things**
 - Gemini in Gmail can delete, archive and label email after you confirm [S16].
-- Claude can send email and move or trash Drive files; it asks first by default, but Team and Enterprise owners can let members skip the prompt [S80].
-- Microsoft's federated connectors began getting write and delete actions in early October 2026 [S87].
+- Claude can send email and move or trash Drive files. It asks first unless you use Auto mode, and on Team and Enterprise plans owners decide whether members can let these actions run without asking [S80].
+- Microsoft's federated connectors can create, update or delete data where a connector offers those tools. They ask first, unless someone has picked "Always allow" for that tool [S87].
 - ChatGPT can send an email from Gmail once you choose to. Where those actions are allowed, it can also change or delete Drive files and Calendar events [S98][S94][S100].
 - A Workspace Studio test run does the real thing [S42].
 
@@ -944,9 +970,10 @@ MCP (Model Context Protocol) is a standard way for an AI tool to plug into anoth
 - Google: Workspace content isn't human-reviewed or used to train models outside your domain without permission [S9].
 - Thumbs-up or thumbs-down feedback to Google may be read by people, so leave out personal or confidential details [S18][S21].
 - Personal accounts, and editions where the Gemini app is only an "additional service", have different terms and possible human review [S8].
-- OpenAI: no training on connected data for Business, Enterprise and Edu [S76]; ChatGPT for Sheets follows each person's own training setting [S79].
+- OpenAI: no training on connected data for Business, Enterprise and Edu by default [S95]; ChatGPT for Sheets follows each person's own training setting [S79].
 - OpenAI, any plan: no training of its general models on data from connected Google apps, apart from feedback and anything that ends up in the chat itself [S93].
 - Anthropic: no training on Gmail, Drive or Calendar connector data [S80]; the Docs, Sheets and Slides add-on isn't for health information [S83].
+- Google Vault can now find and export people's Gemini conversations from Gmail, Drive, Docs, Sheets, Slides and Meet. Google lists Business Plus, Enterprise Standard and Plus, and Education editions, or the Vault add-on. It only captures conversations made while history was turned on [S107].
 
 **Where data lives**
 - Workspace data regions offer the United States or Europe only [S10].
@@ -960,6 +987,8 @@ MCP (Model Context Protocol) is a standard way for an AI tool to plug into anoth
 - Meet automatic notes: on for Business Standard and Plus from 29 September 2026 [S28].
 - Workspace Studio: everyone can build flows [S45].
 - Gemini integrations with outside apps: on for people with Gemini [S50].
+- Skills in Workspace Studio and Workspace apps: on for eligible editions [S104].
+- Gmail thread summaries and "Help me write" for all users aged 18 and over: on from 10 November 2026 [S103].
 - Unknown third-party apps: by default people can connect any of them ("Allow users to access any third-party apps") [S55].
 - Microsoft's own Copilot connectors, including Gmail: on in Microsoft 365 tenants unless disabled [S87].
 - ChatGPT Business: apps are on, and so are Google Drive's Docs, Sheets and Slides actions [S97].
@@ -982,7 +1011,8 @@ MCP (Model Context Protocol) is a standard way for an AI tool to plug into anoth
 - AI limits are per person and don't pool [S15].
 - Heavier use of advanced image and video generation needs the paid AI Expanded Access add-on [S14].
 - Removing an AI Expanded Access licence mid-month can still be charged for the whole month [S12].
-- Workspace Studio limits start being enforced on 1 November 2026 [S15].
+- Workspace Studio is on promotional access with no end date given. Google says customers "may get increased access before usage limits are enforced" [S15].
+- Promotional access to generating presentations in Slides runs until 1 December 2026 [S15].
 - Outside apps reached through integrations may need their own paid plans [S52].
 - Claude's Workspace add-on needs a paid Claude plan [S83], and Gemini Enterprise is a separate purchase [S63].
 
@@ -998,25 +1028,31 @@ MCP (Model Context Protocol) is a standard way for an AI tool to plug into anoth
 **Personal and work accounts**
 - Gemini with a personal account runs under consumer terms, with possible human review [S8].
 - Microsoft's consumer Copilot can connect to Gmail and Google Drive with a personal Microsoft account [S90].
-- Claude Pro and Max use of the Docs, Sheets and Slides add-on is under Anthropic's consumer terms [S83].
+- Claude Pro, Max and Ultra use of the Docs, Sheets and Slides add-on is under Anthropic's consumer terms [S83].
 
 ## Announced changes
 
 | Date | Change | Source |
 |---|---|---|
-| 13 Oct 2026 to mid-Nov 2026 | Skills roll out in the Gemini app for everyone | [S48] |
-| 13 Oct 2026 | Skills inside Workspace apps delayed "until further notice" | [S48] |
-| Early Oct 2026 | Microsoft's federated Copilot connectors start getting write, update and delete actions | [S87] |
-| 1 Nov 2026 | Workspace Studio usage limits start being enforced | [S15][S12] |
-| 1 Nov 2026 | Promotional access to "Convert Slides to Vids with avatars" ends | [S15] |
+| No sooner than 1 Jun 2027 | Education: the same as business plans, plus Gems removed from Classroom | [S49] |
+| No sooner than 1 Mar 2027 | Business and enterprise: Gems can't be created, edited or used; remaining Gems become draft skills in the Gemini app only | [S49] |
+| 1 Dec 2026 | Promotional access to generating presentations in Slides ends; per-person limits follow | [S15][S105] |
+| 30 Nov 2026 | Skills in Workspace apps and Studio start reaching Scheduled Release domains | [S104] |
 | 17 Nov 2026 | Gems move into Settings in the Gemini app; they can still be used | [S49] |
-| No sooner than 1 Mar 2027 | Business and enterprise: Gems can't be created, edited or used; remaining Gems become draft skills; Studio flows using "Ask a Gem" stop | [S49] |
-| No sooner than 1 Jun 2027 | Education: the same, plus Gems removed from Classroom | [S49] |
+| 12 Nov 2026 | Gemini in Apps Script starts rolling out | [S108] |
+| 10 Nov 2026 | Gmail thread summaries and "Help me write" extend to all Workspace users aged 18 and over | [S103] |
+| 9 Nov 2026 | Skills start rolling out in Workspace Studio and in Gmail, Docs, Slides, Drive and Chat | [S49][S104] |
+| 29 Oct 2026 | Gemini in Slides can edit a whole deck from one prompt (English only) | [S105] |
+| 29 Oct 2026 | The Gemini app can create, preview and edit files inside a chat | [S106] |
+| 22 Oct 2026 | Google Vault can export Gemini conversations from Workspace apps | [S107] |
+| 13 Oct 2026 to mid-Nov 2026 | Skills roll out in the Gemini app for everyone | [S48] |
+| 13 Oct 2026 | Workspace Studio stops letting people add new "Ask a Gem" steps to flows | [S49] |
+| 12 Oct 2026 | AI Inbox starts rolling out to paid Workspace plans, for US users with US English only | [S102] |
+| Early Oct 2026 | Microsoft's federated Copilot connectors start getting write, update and delete actions | [S89] |
 | From Sept 2026 | Meet's "Meet Recordings" folder renamed "Legacy Meet Recordings" and moved into a new "Google Meet" folder | [S27] |
 | 29 Sep 2026 | Meet automatic note-taking on by default for Business Standard and Plus | [S28] |
 | 1 Sep 2026 | OpenAI's API "connector_id" deprecated for models released after this date | [S78] |
 | 28 Aug 2026 | ChatGPT allows more than one Google account per person in its Gmail, Google Calendar and Google Contacts plugins | [S98] |
-| 25 Aug 2026 | Microsoft's set date for retiring its PowerShell switch for federated connectors, replaced by the "Allowed agent types" setting | [S88] |
 | 16 Jul 2026 | NotebookLM renamed Gemini Notebook | [S4] |
 | 8 Jun 2026 | ChatGPT can draft and send email through a connected Gmail account, on the web for Plus, Pro, Business and Enterprise | [S98] |
 | 20 Apr 2026 | Drive side panel can no longer move files or create folders | [S26] |
@@ -1029,120 +1065,128 @@ MCP (Model Context Protocol) is a standard way for an AI tool to plug into anoth
 - **How Business plan admins switch Gemini off in one app.** Google's per-app "Feature access" page lists only Enterprise Standard and Plus and some Education editions [S7].
 - **Exact usage limits per plan.** Google's limits table has four plan columns but three values in most rows, so we couldn't map every number to a plan with confidence [S15].
 - **Where Gemini processes Australian customers' data.** Google names no country, and its data regions cover only the US and Europe [S9][S10].
-- **Whether a paid Microsoft 365 Copilot licence is needed** for the Gmail, Google Calendar and Google Contacts connectors [S87][S88][S89].
+- **Whether Gemini can move Drive files from a side panel.** Google's April 2026 update says the Drive side panel can't, but the Gmail and Docs help pages list managing Drive files [S26][S16][S18].
+- **Which plans get AI Inbox.** Google's launch post lists paid Business and Enterprise plans but says Starter comes later, and its Beta page lists Enterprise Plus only. Either way it's for US users only [S102][S53].
 - **How to remove Microsoft's Google Drive connector.** The deployment page doesn't cover it [S86].
 - **Whether Claude's free plan includes the Google connectors.** Anthropic says "all users" but doesn't list plans [S80].
 - **Default state of Gemini's third-party integrations.** Google's launch post says on; the admin page doesn't say [S50][S51].
 - **Which company's terms cover data sent through Gemini integrations** to apps like HubSpot or Salesforce [S51][S52].
 - **Default state of Gemini Notebook and of Workspace Studio's third-party steps.** The admin pages don't state them clearly [S40][S46][S47].
-- **Gemini Enterprise prices and Australian data residency.** Google Cloud's pricing URL returned "not found", and its editions page has no prices [S65].
+- **Gemini Enterprise prices and Australian data residency.** Google Cloud's pricing URL returned "not found" in October, and its editions page has no prices. The only data residency options it lists are US, EU and global [S65].
 - **The Australian promotional pricing terms.** The pricing page's footnotes disagree about how long introductory prices last [S1].
 - **Google Contacts with Gemini.** Contacts isn't in Google's list of Workspace apps the Gemini app can connect to [S36].
 
 ## Sources
 
-All pages were read on 15 October 2026. Google's admin help on support.google.com/a now redirects to knowledge.workspace.google.com. We saw that on S36, S55 and S56.
+All sources were read on 18 November 2026. Google's admin help on support.google.com/a now redirects to knowledge.workspace.google.com. Several of those pages have since moved again to new addresses, and the table shows the current ones.
 
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
-| S1 | Google Workspace pricing (Australia) | Google | https://workspace.google.com/intl/en_au/pricing | No date shown | 15 Oct 2026 |
-| S2 | Google Workspace for business (Australia) | Google | https://workspace.google.com/intl/en_au/business/ | No date shown | 15 Oct 2026 |
-| S3 | Gemini Notebook (formerly NotebookLM) for business | Google | https://workspace.google.com/intl/en_au/products/notebooklm/ | No date shown | 15 Oct 2026 |
-| S4 | NotebookLM is now Gemini Notebook (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/07/notebooklm-now-gemini-notebook.html | 16 Jul 2026 | 15 Oct 2026 |
-| S5 | Workspace Studio (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2025/12/workspace-studio.html | 3 Dec 2025; update 19 Mar 2026 | 15 Oct 2026 |
-| S6 | Get started with Google Workspace with Gemini | Google (Docs Editors Help) | https://support.google.com/docs/answer/13952129 | No date shown | 15 Oct 2026 |
-| S7 | Manage access to Gemini features in Workspace services | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/gemini/manage-access-to-gemini-features-in-workspace-services | 13 Oct 2026 | 15 Oct 2026 |
-| S8 | Turn the Gemini app on or off | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/gemini/turn-the-gemini-app-on-or-off | 13 Oct 2026 | 15 Oct 2026 |
-| S9 | Generative AI in Google Workspace Privacy Hub | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/gemini/generative-ai-in-google-workspace-privacy-hub | 6 Oct 2026 (footer 13 Oct 2026) | 15 Oct 2026 |
-| S10 | Data covered by Data Regions | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/compliance/data-covered-by-data-regions | 13 Oct 2026 | 15 Oct 2026 |
-| S11 | Google Workspace enables the future of AI-powered work for every business | Google (Workspace blog) | https://workspace.google.com/blog/product-announcements/empowering-businesses-with-AI | 16 Jan 2025; updated 28 Apr 2025 | 15 Oct 2026 |
-| S12 | AI Expanded Access | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/gemini/ai-expanded-access | 13 Oct 2026 | 15 Oct 2026 |
-| S13 | AI tools for business | Google | https://workspace.google.com/products/ai-ultra | No date shown | 15 Oct 2026 |
-| S14 | Google Workspace AI Expanded Access (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/02/google-workspace-ai-expanded-access.html | 5 Feb 2026 | 15 Oct 2026 |
-| S15 | About AI usage limits | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/about-ai-usage-limits | 13 Oct 2026 | 15 Oct 2026 |
-| S16 | Collaborate with Gemini in Gmail | Google (Gmail Help) | https://support.google.com/mail/answer/14355636 | No date shown | 15 Oct 2026 |
-| S17 | Draft emails with Gemini in Gmail | Google (Gmail Help) | https://support.google.com/mail/answer/13955415 | No date shown | 15 Oct 2026 |
-| S18 | Collaborate with Gemini in Google Docs | Google (Docs Editors Help) | https://support.google.com/docs/answer/14206696 | No date shown | 15 Oct 2026 |
-| S19 | Write & edit with Gemini in Docs | Google (Docs Editors Help) | https://support.google.com/docs/answer/13951448 | No date shown | 15 Oct 2026 |
-| S20 | Collaborate with Gemini in Google Sheets | Google (Docs Editors Help) | https://support.google.com/docs/answer/14356410 | No date shown | 15 Oct 2026 |
-| S21 | Use the AI function in Google Sheets | Google (Docs Editors Help) | https://support.google.com/docs/answer/15877199 | No date shown | 15 Oct 2026 |
-| S22 | Collaborate with Gemini in Google Slides | Google (Docs Editors Help) | https://support.google.com/docs/answer/14355071 | No date shown | 15 Oct 2026 |
-| S23 | Get started with Gemini in Google Drive | Google (Drive Help) | https://support.google.com/drive/answer/14217860 | No date shown | 15 Oct 2026 |
-| S24 | Let Gemini organize your files | Google (Drive Help) | https://support.google.com/drive/answer/16671865 | No date shown | 15 Oct 2026 |
-| S25 | Organize, save, and share your Gemini sources using projects in Drive | Google (Drive Help) | https://support.google.com/drive/answer/14356148 | No date shown | 15 Oct 2026 |
-| S26 | Execute basic organizational tasks using Gemini in Drive (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2025/07/execute-basic-organizational-tasks-using-gemini-in-drive.html | 7 Jul 2025; update 20 Apr 2026 | 15 Oct 2026 |
-| S27 | "Take notes for me" in Google Meet | Google (Meet Help) | https://support.google.com/meet/answer/14754931 | No date shown | 15 Oct 2026 |
-| S28 | New Google Meet 'Take notes for me' settings for admins and end users take effect September 29th (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/09/new-google-meet-take-notes-for-me-settings-for-admins-and-end-users-take-effect-September-29th.html | 22 Sep 2026 | 15 Oct 2026 |
-| S29 | Let Google Meet AI take notes for my users | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/meet/let-google-meet-ai-take-notes-for-my-users | 13 Oct 2026 | 15 Oct 2026 |
-| S30 | Suggest times to meet with Gemini in Gmail | Google (Gmail Help) | https://support.google.com/mail/answer/16865189 | No date shown | 15 Oct 2026 |
-| S31 | Summarize chats in Google Chat | Google (Chat Help) | https://support.google.com/chat/answer/12918975 | No date shown | 15 Oct 2026 |
-| S32 | Help me create with Gemini in Google Forms (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2025/06/help-me-create-gemini-google-forms.html | 11 Jun 2025 | 15 Oct 2026 |
-| S33 | Get started with Google Vids | Google (Docs Editors Help) | https://support.google.com/docs/answer/15081495 | No date shown | 15 Oct 2026 |
-| S34 | Google Chat now available as a data source in the Gemini app (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/02/google-chat-now-available-as-data-source-in-gemini-app.html | 25 Feb 2026 | 15 Oct 2026 |
-| S35 | Use apps connected to Gemini with a work or school Google Account | Google (Gemini Apps Help) | https://support.google.com/gemini/answer/14959807 | No date shown | 15 Oct 2026 |
-| S36 | Control Gemini App access to Workspace services | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/gemini/turn-google-apps-in-gemini-on-or-off | 13 Oct 2026 | 15 Oct 2026 |
-| S37 | Use Gemini Apps with a work or school Google Account | Google (Gemini Apps Help) | https://support.google.com/gemini/answer/14620100 | No date shown | 15 Oct 2026 |
-| S38 | Check the availability & requirements of Connected Apps in Gemini Apps | Google (Gemini Apps Help) | https://support.google.com/gemini/table/17434654 | No date shown | 15 Oct 2026 |
-| S39 | Where you can use the Gemini web app | Google (Gemini Apps Help) | https://support.google.com/gemini/answer/13575153 | No date shown | 15 Oct 2026 |
-| S40 | Turn Gemini Notebook on or off for users | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/gemini-notebook/turn-gemini-notebook-on-or-off-for-users | 13 Oct 2026 | 15 Oct 2026 |
-| S41 | Learn about Gemini Notebook | Google (Gemini Notebook Help) | https://support.google.com/gemininotebook/answer/16164461 | No date shown | 15 Oct 2026 |
-| S42 | Get started with Google Workspace Studio | Google (Workspace Studio Help) | https://support.google.com/workspace-studio/answer/16444479 | No date shown | 15 Oct 2026 |
-| S43 | Take actions in third-party services with flows (Beta) | Google (Workspace Studio Help) | https://support.google.com/workspace-studio/answer/16658279 | No date shown | 15 Oct 2026 |
-| S44 | Learn about Google Workspace Studio limits | Google (Workspace Studio Help) | https://support.google.com/workspace-studio/answer/16765942 | No date shown | 15 Oct 2026 |
-| S45 | Allow people to create and use flows | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/studio/allow-or-block-flows | 13 Oct 2026 | 15 Oct 2026 |
-| S46 | Require approval for flows | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/studio/require-user-approval-for-external-studio-flows | 13 Oct 2026 | 15 Oct 2026 |
-| S47 | Set up Workspace Studio | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/studio/get-started-workspace-studio-set-up-guide-for-admins | 13 Oct 2026 | 15 Oct 2026 |
-| S48 | An update on the launch of skills in the Gemini app and Workspace (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/10/an-update-on-launch-of-skills-in-gemini-app-and-workspace.html | 13 Oct 2026 | 15 Oct 2026 |
-| S49 | About the transition to skills | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/about-the-transition-to-skills | 30 Sep 2026 (footer 13 Oct 2026) | 15 Oct 2026 |
-| S50 | Connect to more tools with Gemini in Google Workspace (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/09/connect-to-more-tools-with-gemini-in-Google-Workspace.html | 15 Sep 2026; update 30 Sep 2026 | 15 Oct 2026 |
-| S51 | Support access to Workspace Integrations | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/support-access-to-workspace-integrations | 13 Oct 2026 | 15 Oct 2026 |
-| S52 | Use integrations with Gemini in Workspace | Google (Gmail Help) | https://support.google.com/mail/answer/16796422 | No date shown | 15 Oct 2026 |
-| S53 | Turn access to Google Workspace with Gemini Beta on or off | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/turn-access-to-google-workspace-with-gemini-beta-on-or-off | 13 Oct 2026 | 15 Oct 2026 |
-| S54 | Learn about smart features & controls for Google Workspace & other Google products | Google (Gemini Apps Help) | https://support.google.com/gemini/answer/15604322 | No date shown | 15 Oct 2026 |
-| S55 | Control which apps access Google Workspace data | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/apps/control-which-apps-access-google-workspace-data | 13 Oct 2026 | 15 Oct 2026 |
-| S56 | Manage the Marketplace app allowlist for your organization | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/apps/manage-the-marketplace-app-allowlist-for-your-organization | 13 Oct 2026 | 15 Oct 2026 |
-| S57 | Manage links between your Google Account & apps from other developers | Google (Google Account Help) | https://support.google.com/accounts/answer/13533235 | No date shown | 15 Oct 2026 |
-| S58 | Gemini for Education (Australia) | Google for Education | https://edu.google.com/intl/ALL_au/ai/gemini-for-education/ | No date shown | 15 Oct 2026 |
-| S59 | Gemini for Google Workspace FAQ (Education) | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/gemini-for-google-workspace-faq-education | 13 Oct 2026 | 15 Oct 2026 |
-| S60 | Google AI Pro for Education | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/ai-pro-for-education | 13 Oct 2026 | 15 Oct 2026 |
-| S61 | Control access to Google services by age | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/getting-started/editions/control-access-to-google-services-by-age | 13 Oct 2026 | 15 Oct 2026 |
-| S62 | Learn about Gemini in Google Classroom | Google (Classroom Help) | https://support.google.com/edu/classroom/answer/15410566 | No date shown | 15 Oct 2026 |
-| S63 | Turn Gemini Enterprise on or off for users | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/gemini-enterprise/turn-gemini-enterprise-on-or-off-for-users | 13 Oct 2026 | 15 Oct 2026 |
-| S64 | What is Gemini Enterprise? | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs | 14 Oct 2026 | 15 Oct 2026 |
-| S65 | Gemini Enterprise editions | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/editions | 14 Oct 2026 | 15 Oct 2026 |
-| S66 | Introduction to connectors and data stores | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/connectors/introduction-to-connectors-and-data-stores | 14 Oct 2026 | 15 Oct 2026 |
-| S67 | Google Cloud MCP servers overview | Google Cloud | https://docs.cloud.google.com/mcp/overview | 13 Oct 2026 | 15 Oct 2026 |
-| S68 | Supported products (Google Cloud MCP servers) | Google Cloud | https://docs.cloud.google.com/mcp/supported-products | 13 Oct 2026 | 15 Oct 2026 |
-| S69 | Configure the Gmail MCP server | Google for Developers | https://developers.google.com/workspace/gmail/api/guides/configure-mcp-server | 12 Oct 2026 | 15 Oct 2026 |
-| S70 | MCP Reference: drivemcp.googleapis.com | Google for Developers | https://developers.google.com/workspace/drive/api/reference/mcp | 16 Jul 2026 | 15 Oct 2026 |
-| S71 | Google Apps Script overview | Google for Developers | https://developers.google.com/apps-script/overview | 3 Sep 2026 | 15 Oct 2026 |
-| S72 | Vertex AI Service (Apps Script) | Google for Developers | https://developers.google.com/apps-script/advanced/vertex-ai | 3 Sep 2026 | 15 Oct 2026 |
-| S73 | Add-ons overview (Google Workspace add-ons) | Google for Developers | https://developers.google.com/workspace/add-ons/overview | 9 Oct 2026 | 15 Oct 2026 |
-| S74 | Apps (OpenAI Academy) | OpenAI | https://academy.openai.com/public/clubs/work-users-ynjqu/resources/connectors | 28 Oct 2025; last updated 4 Sep 2026 | 15 Oct 2026 |
-| S75 | Plugins (ChatGPT Learn) | OpenAI | https://learn.chatgpt.com/docs/plugins | No date shown | 15 Oct 2026 |
-| S76 | Plugin controls (ChatGPT Learn) | OpenAI | https://learn.chatgpt.com/docs/enterprise/apps-and-connectors | No date shown | 15 Oct 2026 |
-| S77 | Workspace connections (ChatGPT Learn) | OpenAI | https://learn.chatgpt.com/docs/enterprise/shared-connections | No date shown | 15 Oct 2026 |
-| S78 | MCP servers (API docs, connectors) | OpenAI | https://developers.openai.com/api/docs/guides/tools-connectors-mcp | No date shown | 15 Oct 2026 |
-| S79 | ChatGPT (Google Workspace Marketplace listing, by OpenAI) | Google Workspace Marketplace / OpenAI | https://workspace.google.com/marketplace/app/chatgpt/870214997678 | Listing updated 1 Jun 2026 | 15 Oct 2026 |
-| S80 | Use Google Workspace connectors | Anthropic (Claude Help Center) | https://support.claude.com/en/articles/10166901-use-google-workspace-connectors | "Updated over 2 weeks ago" | 15 Oct 2026 |
-| S81 | Use connectors to extend Claude's capabilities | Anthropic (Claude Help Center) | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated over 2 weeks ago" | 15 Oct 2026 |
-| S82 | Claude (Google Workspace Marketplace listing, by Anthropic) | Google Workspace Marketplace / Anthropic | https://workspace.google.com/marketplace/app/claude/12459801340 | Listing updated 14 Oct 2026 | 15 Oct 2026 |
-| S83 | Use Claude in Google Docs, Sheets, and Slides | Anthropic (Claude Help Center) | https://support.claude.com/en/articles/16951679-use-claude-in-google-docs-sheets-and-slides | "Updated yesterday" | 15 Oct 2026 |
-| S84 | Microsoft-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft | 30 Sep 2026 | 15 Oct 2026 |
-| S85 | Google Drive connector overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/google-drive-overview | 15 Dec 2025 | 15 Oct 2026 |
-| S86 | Deploy the Google Drive connector | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/google-drive-deployment | 18 Nov 2025 | 15 Oct 2026 |
-| S87 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | 30 Sep 2026 | 15 Oct 2026 |
-| S88 | Manage federated connector availability | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/manage-federated-connectors | 28 Apr 2026 | 15 Oct 2026 |
-| S89 | Copilot connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/overview | 6 Oct 2026 | 15 Oct 2026 |
-| S90 | Connecting Microsoft Copilot to other services (Copilot connectors) | Microsoft Support | https://support.microsoft.com/en-us/microsoft-copilot/connecting-microsoft-copilot-to-other-services | No date shown | 15 Oct 2026 |
-| S91 | Search results for "claude" | Google Workspace Marketplace | https://workspace.google.com/marketplace/search/claude | No date shown | 15 Oct 2026 |
-| S92 | Search results for "chatgpt" | Google Workspace Marketplace | https://workspace.google.com/marketplace/search/chatgpt | No date shown | 15 Oct 2026 |
-| S93 | Google app data controls FAQ | OpenAI | https://help.openai.com/en/articles/10408842-google-app-data-controls-faq | "Updated: 20 days ago" (25 Sep 2026, UTC) | 15 Oct 2026 |
-| S94 | Google Drive app and setup in ChatGPT | OpenAI | https://help.openai.com/en/articles/10929079-google-drive-app-and-setup-in-chatgpt | "Updated: 6 days ago" (9 Oct 2026, UTC) | 15 Oct 2026 |
-| S95 | Connected apps in ChatGPT | OpenAI | https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt | "Updated: 4 days ago" (11 Oct 2026, UTC) | 15 Oct 2026 |
-| S96 | Connecting and managing app accounts in ChatGPT | OpenAI | https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt | "Updated: 13 days ago" (2 Oct 2026, UTC) | 15 Oct 2026 |
-| S97 | Admin controls, security, and compliance for plugins and apps | OpenAI | https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps | "Updated: 17 hours ago" (14 Oct 2026, UTC) | 15 Oct 2026 |
-| S98 | ChatGPT release notes | OpenAI | https://help.openai.com/en/articles/6825453-chatgpt-release-notes | "Updated: 6 days ago" (9 Oct 2026, UTC) | 15 Oct 2026 |
-| S99 | Gmail (ChatGPT plugin listing) | OpenAI | https://chatgpt.com/plugins/plugin_connector_1p_95d39881713c8191931482a62d6edff9 | No date shown; version 0.1.10 | 15 Oct 2026 |
-| S100 | Google Calendar (ChatGPT plugin listing) | OpenAI | https://chatgpt.com/plugins/plugin_connector_1p_f8509de903288191b14a160c6c5d20b0 | No date shown; version 1.2.7 | 15 Oct 2026 |
-| S101 | ChatGPT for Excel and Google Sheets | OpenAI | https://help.openai.com/en/articles/20001063-chatgpt-for-excel-and-google-sheets | "Updated: 2 months ago" (16 Aug 2026, UTC) | 15 Oct 2026 |
+| S1 | Google Workspace pricing (Australia) | Google | https://workspace.google.com/intl/en_au/pricing | No date shown | 18 Nov 2026 |
+| S2 | Google Workspace for business (Australia) | Google | https://workspace.google.com/intl/en_au/business/ | No date shown | 18 Nov 2026 |
+| S3 | Gemini Notebook (formerly NotebookLM) for business | Google | https://workspace.google.com/intl/en_au/products/notebooklm/ | No date shown | 18 Nov 2026 |
+| S4 | NotebookLM is now Gemini Notebook (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/07/notebooklm-now-gemini-notebook.html | 16 Jul 2026 | 18 Nov 2026 |
+| S5 | Workspace Studio (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2025/12/workspace-studio.html | 3 Dec 2025; update 19 Mar 2026 | 18 Nov 2026 |
+| S6 | Get started with Google Workspace with Gemini | Google (Docs Editors Help) | https://support.google.com/docs/answer/13952129 | No date shown | 18 Nov 2026 |
+| S7 | Manage access to Gemini features in Workspace services | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/manage-access-to-gemini-features-in-workspace-services | 10 Nov 2026 | 18 Nov 2026 |
+| S8 | Turn the Gemini app on or off | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/turn-the-gemini-app-on-or-off | 10 Nov 2026 (under-18 section 20 Oct 2026) | 18 Nov 2026 |
+| S9 | Generative AI in Google Workspace Privacy Hub | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub | 6 Oct 2026 (footer 10 Nov 2026) | 18 Nov 2026 |
+| S10 | Data covered by Data Regions | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/compliance/data-covered-by-data-regions | 10 Nov 2026 | 18 Nov 2026 |
+| S11 | Google Workspace enables the future of AI-powered work for every business | Google (Workspace blog) | https://workspace.google.com/blog/product-announcements/empowering-businesses-with-AI | 16 Jan 2025; updated 28 Apr 2025 | 18 Nov 2026 |
+| S12 | AI Expanded Access | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/ai-expanded-access | 10 Nov 2026 | 18 Nov 2026 |
+| S13 | AI tools for business | Google | https://workspace.google.com/intl/en_au/solutions/ai/ | No date shown | 18 Nov 2026 |
+| S14 | Google Workspace AI Expanded Access (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/02/google-workspace-ai-expanded-access.html | 5 Feb 2026 | 18 Nov 2026 |
+| S15 | About AI usage limits | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/about-ai-usage-limits | 10 Nov 2026 | 18 Nov 2026 |
+| S16 | Collaborate with Gemini in Gmail | Google (Gmail Help) | https://support.google.com/mail/answer/14355636 | No date shown | 18 Nov 2026 |
+| S17 | Draft emails with Gemini in Gmail | Google (Gmail Help) | https://support.google.com/mail/answer/13955415 | No date shown | 18 Nov 2026 |
+| S18 | Collaborate with Gemini in Google Docs | Google (Docs Editors Help) | https://support.google.com/docs/answer/14206696 | No date shown | 18 Nov 2026 |
+| S19 | Write & edit with Gemini in Docs | Google (Docs Editors Help) | https://support.google.com/docs/answer/13951448 | No date shown | 18 Nov 2026 |
+| S20 | Collaborate with Gemini in Google Sheets | Google (Docs Editors Help) | https://support.google.com/docs/answer/14356410 | No date shown | 18 Nov 2026 |
+| S21 | Use the AI function in Google Sheets | Google (Docs Editors Help) | https://support.google.com/docs/answer/15877199 | No date shown | 18 Nov 2026 |
+| S22 | Collaborate with Gemini in Google Slides | Google (Docs Editors Help) | https://support.google.com/docs/answer/14355071 | No date shown | 18 Nov 2026 |
+| S23 | Get started with Gemini in Google Drive | Google (Drive Help) | https://support.google.com/drive/answer/14217860 | No date shown | 18 Nov 2026 |
+| S24 | Let Gemini organize your files | Google (Drive Help) | https://support.google.com/drive/answer/16671865 | No date shown | 18 Nov 2026 |
+| S25 | Organize, save, and share your Gemini sources using projects in Drive | Google (Drive Help) | https://support.google.com/drive/answer/14356148 | No date shown | 18 Nov 2026 |
+| S26 | Execute basic organizational tasks using Gemini in Drive (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2025/07/execute-basic-organizational-tasks-using-gemini-in-drive.html | 7 Jul 2025; update 20 Apr 2026 | 18 Nov 2026 |
+| S27 | "Take notes for me" in Google Meet | Google (Meet Help) | https://support.google.com/meet/answer/14754931 | No date shown | 18 Nov 2026 |
+| S28 | New Google Meet 'Take notes for me' settings for admins and end users take effect September 29th (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/09/new-google-meet-take-notes-for-me-settings-for-admins-and-end-users-take-effect-September-29th.html | 22 Sep 2026 | 18 Nov 2026 |
+| S29 | Let Google Meet AI take notes for my users | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/meet/let-google-meet-ai-take-notes-for-my-users | 10 Nov 2026 | 18 Nov 2026 |
+| S30 | Suggest times to meet with Gemini in Gmail | Google (Gmail Help) | https://support.google.com/mail/answer/16865189 | No date shown | 18 Nov 2026 |
+| S31 | Summarize chats in Google Chat | Google (Chat Help) | https://support.google.com/chat/answer/12918975 | No date shown | 18 Nov 2026 |
+| S32 | Help me create with Gemini in Google Forms (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2025/06/help-me-create-gemini-google-forms.html | 11 Jun 2025 | 18 Nov 2026 |
+| S33 | Get started with Google Vids | Google (Docs Editors Help) | https://support.google.com/docs/answer/15081495 | No date shown | 18 Nov 2026 |
+| S34 | Google Chat now available as a data source in the Gemini app (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/02/google-chat-now-available-as-data-source-in-gemini-app.html | 25 Feb 2026 | 18 Nov 2026 |
+| S35 | Use apps connected to Gemini with a work or school Google Account | Google (Gemini Apps Help) | https://support.google.com/gemini/answer/14959807 | No date shown | 18 Nov 2026 |
+| S36 | Control Gemini App access to Workspace services | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/turn-google-apps-in-gemini-on-or-off | 10 Nov 2026 | 18 Nov 2026 |
+| S37 | Use Gemini Apps with a work or school Google Account | Google (Gemini Apps Help) | https://support.google.com/gemini/answer/14620100 | No date shown | 18 Nov 2026 |
+| S38 | Check the availability & requirements of Connected Apps in Gemini Apps | Google (Gemini Apps Help) | https://support.google.com/gemini/table/17434654 | No date shown | 18 Nov 2026 |
+| S39 | Where you can use the Gemini web app | Google (Gemini Apps Help) | https://support.google.com/gemini/answer/13575153 | No date shown | 18 Nov 2026 |
+| S40 | Turn Gemini Notebook on or off for users | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/gemini-notebook/turn-gemini-notebook-on-or-off-for-users | 10 Nov 2026 | 18 Nov 2026 |
+| S41 | Learn about Gemini Notebook | Google (Gemini Notebook Help) | https://support.google.com/gemininotebook/answer/16164461 | No date shown | 18 Nov 2026 |
+| S42 | Get started with Google Workspace Studio | Google (Workspace Studio Help) | https://support.google.com/workspace-studio/answer/16444479 | No date shown | 18 Nov 2026 |
+| S43 | Take actions in third-party services with flows (Beta) | Google (Workspace Studio Help) | https://support.google.com/workspace-studio/answer/16658279 | No date shown | 18 Nov 2026 |
+| S44 | Learn about Google Workspace Studio limits | Google (Workspace Studio Help) | https://support.google.com/workspace-studio/answer/16765942 | No date shown | 18 Nov 2026 |
+| S45 | Allow people to create and use flows | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/studio/allow-or-block-flows | 10 Nov 2026 | 18 Nov 2026 |
+| S46 | Require approval for flows | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/studio/require-user-approval-for-external-studio-flows | 17 Nov 2026 | 18 Nov 2026 |
+| S47 | Set up Workspace Studio | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/studio/get-started-workspace-studio-set-up-guide-for-admins | 10 Nov 2026 | 18 Nov 2026 |
+| S48 | An update on the launch of skills in the Gemini app and Workspace (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/10/an-update-on-launch-of-skills-in-gemini-app-and-workspace.html | 13 Oct 2026; update 9 Nov 2026 | 18 Nov 2026 |
+| S49 | About the transition to skills | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/about-the-transition-to-skills | 9 Nov 2026 (footer 10 Nov 2026) | 18 Nov 2026 |
+| S50 | Connect to more tools with Gemini in Google Workspace (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/09/connect-to-more-tools-with-gemini-in-Google-Workspace.html | 15 Sep 2026; update 30 Sep 2026 | 18 Nov 2026 |
+| S51 | Support access to Workspace Integrations | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/support-access-to-workspace-integrations | 10 Nov 2026 | 18 Nov 2026 |
+| S52 | Use integrations with Gemini in Workspace | Google (Gmail Help) | https://support.google.com/mail/answer/16796422 | No date shown | 18 Nov 2026 |
+| S53 | Turn access to Google Workspace with Gemini Beta on or off | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/turn-access-to-google-workspace-with-gemini-beta-on-or-off | 16 Nov 2026 | 18 Nov 2026 |
+| S54 | Learn about smart features & controls for Google Workspace & other Google products | Google (Gemini Apps Help) | https://support.google.com/gemini/answer/15604322 | No date shown | 18 Nov 2026 |
+| S55 | Control which apps access Google Workspace data | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/apps/control-which-apps-access-google-workspace-data | 10 Nov 2026 | 18 Nov 2026 |
+| S56 | Manage the Marketplace app allowlist for your organization | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/apps/manage-the-marketplace-app-allowlist-for-your-organization | 10 Nov 2026 | 18 Nov 2026 |
+| S57 | Manage links between your Google Account & apps from other developers | Google (Google Account Help) | https://support.google.com/accounts/answer/13533235 | No date shown | 18 Nov 2026 |
+| S58 | Gemini for Education (Australia) | Google for Education | https://edu.google.com/intl/ALL_au/ai/gemini-for-education/ | No date shown | 18 Nov 2026 |
+| S59 | Gemini for Google Workspace FAQ (Education) | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/gemini-for-google-workspace-faq-education | 10 Nov 2026 | 18 Nov 2026 |
+| S60 | Google AI Pro for Education | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/ai-pro-for-education | 10 Nov 2026 | 18 Nov 2026 |
+| S61 | Control access to Google services by age | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/getting-started/editions/control-access-to-google-services-by-age | 10 Nov 2026 | 18 Nov 2026 |
+| S62 | Learn about Gemini in Google Classroom | Google (Classroom Help) | https://support.google.com/edu/classroom/answer/15410566 | No date shown | 18 Nov 2026 |
+| S63 | Turn Gemini Enterprise on or off for users | Google (Workspace Admin Help) | https://knowledge.workspace.google.com/admin/generative-ai/gemini-enterprise/turn-gemini-enterprise-on-or-off-for-users | 10 Nov 2026 | 18 Nov 2026 |
+| S64 | What is Gemini Enterprise? | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs | 10 Nov 2026 | 18 Nov 2026 |
+| S65 | Gemini Enterprise editions | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/editions | 10 Nov 2026 | 18 Nov 2026 |
+| S66 | Introduction to connectors and data stores | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/connectors/introduction-to-connectors-and-data-stores | 10 Nov 2026 | 18 Nov 2026 |
+| S67 | Google Cloud MCP servers overview | Google Cloud | https://docs.cloud.google.com/mcp/overview | 10 Nov 2026 | 18 Nov 2026 |
+| S68 | Supported products (Google Cloud MCP servers) | Google Cloud | https://docs.cloud.google.com/mcp/supported-products | 12 Nov 2026 | 18 Nov 2026 |
+| S69 | Configure the Gmail MCP server | Google for Developers | https://developers.google.com/workspace/gmail/api/guides/configure-mcp-server | 17 Nov 2026 | 18 Nov 2026 |
+| S70 | MCP Reference: drivemcp.googleapis.com | Google for Developers | https://developers.google.com/workspace/drive/api/reference/mcp | 16 Jul 2026 | 18 Nov 2026 |
+| S71 | Google Apps Script overview | Google for Developers | https://developers.google.com/apps-script/overview | 3 Sep 2026 | 18 Nov 2026 |
+| S72 | Vertex AI Service (Apps Script) | Google for Developers | https://developers.google.com/apps-script/advanced/vertex-ai | 3 Sep 2026 | 18 Nov 2026 |
+| S73 | Add-ons overview (Google Workspace add-ons) | Google for Developers | https://developers.google.com/workspace/add-ons/overview | 23 Oct 2026 | 18 Nov 2026 |
+| S74 | Apps (OpenAI Academy) | OpenAI | https://academy.openai.com/public/clubs/work-users-ynjqu/resources/connectors | 28 Oct 2025; last updated 4 Sep 2026 | 18 Nov 2026 |
+| S75 | Plugins (ChatGPT Learn) | OpenAI | https://learn.chatgpt.com/docs/plugins | No date shown | 18 Nov 2026 |
+| S76 | Plugin controls (ChatGPT Learn) | OpenAI | https://learn.chatgpt.com/docs/enterprise/apps-and-connectors | No date shown | 18 Nov 2026 |
+| S77 | Workspace connections (ChatGPT Learn) | OpenAI | https://learn.chatgpt.com/docs/enterprise/shared-connections | No date shown | 18 Nov 2026 |
+| S78 | MCP servers (API docs, connectors) | OpenAI | https://developers.openai.com/api/docs/guides/tools-connectors-mcp | No date shown | 18 Nov 2026 |
+| S79 | ChatGPT (Google Workspace Marketplace listing, by OpenAI) | Google Workspace Marketplace / OpenAI | https://workspace.google.com/marketplace/app/chatgpt/870214997678 | Listing updated 1 Jun 2026 | 18 Nov 2026 |
+| S80 | Use Google Workspace connectors | Anthropic (Claude Help Center) | https://support.claude.com/en/articles/10166901-use-google-workspace-connectors | "Updated today" (18 Nov 2026) | 18 Nov 2026 |
+| S81 | Use connectors to extend Claude's capabilities | Anthropic (Claude Help Center) | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated today" (18 Nov 2026) | 18 Nov 2026 |
+| S82 | Claude (Google Workspace Marketplace listing, by Anthropic) | Google Workspace Marketplace / Anthropic | https://workspace.google.com/marketplace/app/claude/12459801340 | Listing updated 6 Nov 2026 | 18 Nov 2026 |
+| S83 | Use Claude in Google Docs, Sheets, and Slides | Anthropic (Claude Help Center) | https://support.claude.com/en/articles/16951679-use-claude-in-google-docs-sheets-and-slides | "Updated over 2 weeks ago" | 18 Nov 2026 |
+| S84 | Microsoft-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft | 16 Nov 2026 | 18 Nov 2026 |
+| S85 | Google Drive connector overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/google-drive-overview | 15 Dec 2025 | 18 Nov 2026 |
+| S86 | Deploy the Google Drive connector | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/google-drive-deployment | 18 Nov 2025 | 18 Nov 2026 |
+| S87 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | 16 Nov 2026 | 18 Nov 2026 |
+| S88 | Manage federated connector availability | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/manage-federated-connectors | 15 Oct 2026 | 18 Nov 2026 |
+| S89 | Copilot connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/overview | 6 Oct 2026 | 18 Nov 2026 |
+| S90 | Connecting Microsoft Copilot to other services (Copilot connectors) | Microsoft Support | https://support.microsoft.com/en-us/microsoft-copilot/connecting-microsoft-copilot-to-other-services | No date shown | 18 Nov 2026 |
+| S91 | Search results for "claude" | Google Workspace Marketplace | https://workspace.google.com/marketplace/search/claude | No date shown | 18 Nov 2026 |
+| S92 | Search results for "chatgpt" | Google Workspace Marketplace | https://workspace.google.com/marketplace/search/chatgpt | No date shown | 18 Nov 2026 |
+| S93 | Google app data controls FAQ | OpenAI | https://help.openai.com/en/articles/10408842-google-app-data-controls-faq | "Updated: 20 days ago" (29 Oct 2026, UTC) | 18 Nov 2026 |
+| S94 | Google Drive app and setup in ChatGPT | OpenAI | https://help.openai.com/en/articles/10929079-google-drive-app-and-setup-in-chatgpt | "Updated: 27 days ago" (22 Oct 2026, UTC) | 18 Nov 2026 |
+| S95 | Connected apps in ChatGPT | OpenAI | https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt | "Updated: yesterday" (17 Nov 2026, UTC) | 18 Nov 2026 |
+| S96 | Connecting and managing app accounts in ChatGPT | OpenAI | https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt | "Updated: yesterday" (17 Nov 2026, UTC) | 18 Nov 2026 |
+| S97 | Admin controls, security, and compliance for plugins and apps | OpenAI | https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps | "Updated: 13 days ago" (5 Nov 2026, UTC) | 18 Nov 2026 |
+| S98 | ChatGPT release notes | OpenAI | https://help.openai.com/en/articles/6825453-chatgpt-release-notes | "Updated: 21 hours ago" (17 Nov 2026, UTC) | 18 Nov 2026 |
+| S99 | Gmail (ChatGPT plugin listing) | OpenAI | https://chatgpt.com/plugins/plugin_connector_1p_95d39881713c8191931482a62d6edff9 | No date shown; version 0.1.10 | 18 Nov 2026 |
+| S100 | Google Calendar (ChatGPT plugin listing) | OpenAI | https://chatgpt.com/plugins/plugin_connector_1p_f8509de903288191b14a160c6c5d20b0 | No date shown; version 1.2.7 | 18 Nov 2026 |
+| S101 | ChatGPT for Excel and Google Sheets | OpenAI | https://help.openai.com/en/articles/20001063-chatgpt-for-excel-and-google-sheets | "Updated: 21 days ago" (28 Oct 2026, UTC) | 18 Nov 2026 |
+| S102 | Gmail's AI Inbox is rolling out to paid Workspace users (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/10/gmails-ai-inbox-is-rolling-out-to-paid-Workspace-users.html | 15 Oct 2026 | 18 Nov 2026 |
+| S103 | Expanding Gemini in Gmail to more Google Workspace users (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/11/expanding-gemini-in-gmail-to-more-Google-Workspace-users.html | 10 Nov 2026 | 18 Nov 2026 |
+| S104 | Scale customized AI across your team with skills in Google Workspace and Workspace Studio (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html | 10 Nov 2026 | 18 Nov 2026 |
+| S105 | Edit entire presentations with Gemini in Google Slides (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/10/edit-entire-presentations-with-gemini-in-Google-Slides.html | 30 Oct 2026 | 18 Nov 2026 |
+| S106 | Create, preview, and edit files directly in the Gemini app (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html | 29 Oct 2026 | 18 Nov 2026 |
+| S107 | Google Vault now supports filtered exports for Gemini in Workspace (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/10/google-vault-now-supports-filtered-exports-for-Gemini-in-Workspace.html | 22 Oct 2026 | 18 Nov 2026 |
+| S108 | Easily customize and extend Google Workspace with Gemini in Apps Script (Workspace Updates) | Google | https://workspaceupdates.googleblog.com/2026/11/customize-and-extend-workspace-with-apps-script.html | 16 Nov 2026 | 18 Nov 2026 |

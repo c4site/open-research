@@ -4,7 +4,7 @@
     "from": "ChatGPT",
     "to": "Google Workspace (Gmail, Google Drive)",
     "who": "anyone",
-    "plan_needed": "A ChatGPT account. OpenAI's help centre couldn't be read on 15 Oct 2026, so which plans include the Google apps is unconfirmed. In ChatGPT Business or Enterprise the ChatGPT admin decides which apps are available. The Workspace admin's API controls must allow the app.",
+    "plan_needed": "A ChatGPT plan that offers the apps; OpenAI's help centre says this depends on plan, location, workspace and Google's settings without listing plans. In ChatGPT Business or Enterprise the ChatGPT admin decides which apps are available. The Workspace admin's API controls must allow the app. This is the older route shown on OpenAI Academy (last updated 4 Sep 2026); OpenAI's help centre now uses Settings > Plugins.",
     "steps": [
       { "where": "ChatGPT, Settings", "do": "Open Settings, then Apps", "see": "The list of apps you can connect" },
       { "where": "Settings > Apps", "do": "Click Connect next to the app", "see": "A sign-in and permissions flow starts" },
@@ -19,15 +19,16 @@
     "from": "ChatGPT",
     "to": "Google Workspace (Gmail, Google Drive)",
     "who": "anyone",
-    "plan_needed": "A ChatGPT account; plan requirements for the Gmail and Google Drive plugins are not stated in the pages we could read. Workspace-installed plugins are managed by the ChatGPT admin.",
+    "plan_needed": "A ChatGPT plan that offers the apps; OpenAI's help pages say it depends on plan, location, workspace and Google's settings without listing plans. Workspace-installed plugins are managed by the ChatGPT admin. A Google Workspace admin may need to approve the Google permissions behind each enabled action.",
     "steps": [
-      { "where": "ChatGPT on the web or the desktop app", "do": "Open the Plugins tab", "see": "The plugin directory (OpenAI, workspace and Personal tabs)" },
-      { "where": "Plugins tab", "do": "Find the Gmail or Google Drive plugin, open it, and select the plus button to install it", "see": "The plugin installs" },
-      { "where": "Plugin install, or first use", "do": "If prompted, connect and sign in", "see": "The plugin can reach your Google account" },
-      { "where": "A new chat", "do": "Describe the task, or type @ and pick the plugin", "see": "ChatGPT uses the plugin for that task" }
+      { "where": "ChatGPT, Settings > Plugins", "do": "Select Gmail, Google Drive or Google Calendar", "see": "The plugin or app details" },
+      { "where": "Plugin details", "do": "Select Install plugin if you see it", "see": "The plugin installs; this may start the sign-in" },
+      { "where": "Plugin details, or first use", "do": "Select Connect if asked, and sign in to the Google account that holds the email or files you want", "see": "Google's permissions screen" },
+      { "where": "Google's permissions screen", "do": "Approve the permissions. If ChatGPT says it needs them all, select Try again and choose Select all; to connect fewer Google apps, use Select fewer apps in ChatGPT", "see": "The Google account is connected" },
+      { "where": "A ChatGPT chat", "do": "Type @ and pick the app, or select + and choose it", "see": "ChatGPT uses the app for that task" }
     ],
-    "source": "S75",
-    "doc_updated": null
+    "source": "S96",
+    "doc_updated": "2026-11-17"
   },
   {
     "id": "chatgpt-for-google-sheets",
@@ -90,7 +91,7 @@
     "from": "Claude for Google Workspace (Anthropic add-on, beta)",
     "to": "Google Docs, Sheets and Slides",
     "who": "anyone",
-    "plan_needed": "Claude Pro, Max, Team or Enterprise; a Google account that's allowed to install Marketplace apps",
+    "plan_needed": "Claude Pro, Max, Ultra, Team or Enterprise; a Google account that's allowed to install Marketplace apps",
     "steps": [
       { "where": "Google Workspace Marketplace, 'Claude' listing by Anthropic", "do": "Click Install", "see": "One install covers Docs, Sheets and Slides" },
       { "where": "A Google Doc, Sheet or Slides file", "do": "Go to Extensions > Claude > Open Claude", "see": "The Claude sidebar opens" },
@@ -98,28 +99,28 @@
       { "where": "Claude sidebar", "do": "Sign in with your Claude account (optionally turn on connectors)", "see": "Claude is ready; reload any files that were already open" }
     ],
     "source": "S83",
-    "doc_updated": "2026-10-14"
+    "doc_updated": null
   },
   {
     "id": "claude-addon-admin-install",
     "from": "Google Admin (super admin)",
     "to": "Claude for Google Workspace",
     "who": "admin",
-    "plan_needed": "Google Workspace super admin; users need Claude Pro, Max, Team or Enterprise",
+    "plan_needed": "Google Workspace super admin; users need Claude Pro, Max, Ultra, Team or Enterprise",
     "steps": [
       { "where": "Claude listing in Google Workspace Marketplace, signed in as a super admin", "do": "Click Admin install, then Continue", "see": "Installation options" },
       { "where": "Installation options", "do": "Choose everyone in the organisation, or specific groups or organisational units", "see": "Data access and terms to review" },
       { "where": "Terms screen", "do": "Tick the agreement box and click Finish", "see": "Claude is installed for the chosen users; they reload any open files" }
     ],
     "source": "S83",
-    "doc_updated": "2026-10-14"
+    "doc_updated": null
   },
   {
     "id": "microsoft-365-copilot-to-gmail",
     "from": "Microsoft 365 Copilot",
     "to": "Gmail, Google Calendar or Google Contacts",
     "who": "anyone",
-    "plan_needed": "A Microsoft 365 work account with Copilot Chat. Microsoft-published connectors are on unless the Microsoft 365 admin disables them. Whether a paid Microsoft 365 Copilot licence is needed was not confirmed.",
+    "plan_needed": "A Microsoft 365 work account with a Microsoft 365 Copilot licence (Microsoft lists the licence as a condition for seeing a federated connector). Microsoft-published connectors are on unless the Microsoft 365 admin disables them.",
     "steps": [
       { "where": "Microsoft 365 Copilot Chat", "do": "Select the ... menu, then Settings", "see": "The settings dialog" },
       { "where": "Settings", "do": "Select Sources in the left pane", "see": "Available data sources" },
@@ -128,7 +129,7 @@
       { "where": "Copilot Chat", "do": "Ask your question, naming the source", "see": "Copilot answers with live data fetched from Google" }
     ],
     "source": "S87",
-    "doc_updated": "2026-09-30"
+    "doc_updated": "2026-11-16"
   },
   {
     "id": "microsoft-365-copilot-google-drive-connector",
@@ -213,12 +214,12 @@
     "plan_needed": "Membership of the Google Workspace Developer Preview Program and a Google Cloud project; for Claude as the client, a Pro, Max, Team or Enterprise plan",
     "steps": [
       { "where": "Google Cloud project", "do": "Enable the Gmail API and the Gmail MCP API", "see": "Both APIs enabled" },
-      { "where": "Google Cloud console, OAuth consent screen", "do": "Set the app name, audience, test users, and the gmail.readonly and gmail.compose scopes", "see": "Consent screen configured" },
+      { "where": "Google Cloud console, OAuth consent screen", "do": "Set the app name, audience, test users, and the gmail.readonly, gmail.compose and gmail.modify scopes", "see": "Consent screen configured" },
       { "where": "Google Cloud console", "do": "Create an OAuth client ID and secret as a Web application, selecting Use this client for an AI-powered agent", "see": "A client ID and secret" },
       { "where": "Your MCP client", "do": "Add the server https://gmailmcp.googleapis.com/mcp/v1 (Streamable HTTP) with the client ID and secret", "see": "The client lists the Gmail tools" },
-      { "where": "Google sign-in", "do": "Authenticate, then test with a prompt", "see": "The AI can search and read threads, create drafts and apply labels" }
+      { "where": "Google sign-in", "do": "Authenticate, then test with a prompt", "see": "The AI can search and read threads, create drafts, and add or remove labels" }
     ],
     "source": "S69",
-    "doc_updated": "2026-10-12"
+    "doc_updated": "2026-11-17"
   }
 ]

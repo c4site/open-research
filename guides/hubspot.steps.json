@@ -16,7 +16,7 @@
       { "where": "Data permissions", "do": "Turn optional permissions on or off, then click Approve app", "see": "The app is approved and the chosen people can now connect it" }
     ],
     "source": "S80",
-    "doc_updated": "2026-09-10"
+    "doc_updated": "2026-10-20"
   },
   {
     "id": "chatgpt-to-hubspot",
@@ -36,7 +36,7 @@
       { "where": "HubSpot connector tool settings in ChatGPT", "do": "Set Write tools to Needs Approval", "see": "ChatGPT asks before creating or updating any record" }
     ],
     "source": "S43",
-    "doc_updated": "2026-09-28"
+    "doc_updated": "2026-11-12"
   },
   {
     "id": "claude-to-hubspot",
@@ -87,30 +87,31 @@
       { "where": "HubSpot agent, Users tab", "do": "Choose who can install it; All users in the organization can install saves people adding it themselves", "see": "The agent is available to the chosen users" }
     ],
     "source": "S59",
-    "doc_updated": "2026-09-24"
+    "doc_updated": "2026-11-12"
   },
   {
     "id": "copilot-to-hubspot-agent",
     "from": "Microsoft Copilot",
     "to": "HubSpot",
     "who": "anyone",
-    "plan_needed": "Microsoft 365 Copilot licence or the Copilot Chat add-on (HubSpot's wording), after the admin has made the agent available. Any HubSpot plan. Read-only.",
+    "plan_needed": "Microsoft 365 Copilot licence or the Copilot Chat add-on (HubSpot's wording), after the admin has made the agent available. Any HubSpot plan. Reads and makes changes; Copilot asks you to confirm before each create or update.",
     "steps": [
       { "where": "Microsoft 365 Copilot Chat or Copilot in Microsoft Teams", "do": "Open it", "see": "Copilot with an Agents list in the left sidebar" },
       { "where": "Left sidebar, Agents", "do": "Click HubSpot", "see": "The HubSpot agent with suggested prompts" },
       { "where": "HubSpot agent chat", "do": "Type a prompt, or pick a suggested HubSpot prompt", "see": "A request to sign in" },
       { "where": "HubSpot agent chat", "do": "Click Sign in to HubSpot", "see": "HubSpot's sign-in and permissions page" },
-      { "where": "HubSpot permissions page", "do": "Choose your HubSpot account and permissions, then click Connect app", "see": "Copilot answers using your HubSpot data" }
+      { "where": "HubSpot permissions page", "do": "Choose your HubSpot account and permissions, then click Connect app", "see": "You're back in Copilot, connected to HubSpot" },
+      { "where": "HubSpot agent chat", "do": "Add your prompt and press Enter", "see": "Copilot answers from your HubSpot data, and asks you to confirm before it creates or updates a record" }
     ],
     "source": "S59",
-    "doc_updated": "2026-09-24"
+    "doc_updated": "2026-11-12"
   },
   {
     "id": "copilot-federated-connector-to-hubspot",
     "from": "Microsoft Copilot Chat (Microsoft's HubSpot federated connector)",
     "to": "HubSpot",
     "who": "anyone",
-    "plan_needed": "Microsoft 365 Copilot Chat with the connector enabled by the tenant admin (Microsoft-published federated connectors are on by default). Licence requirement not confirmed. Your own HubSpot login.",
+    "plan_needed": "A Microsoft 365 Copilot licence (Microsoft's wording), with the connector available in the tenant (Microsoft-built federated connectors are available by default). Your own HubSpot login.",
     "steps": [
       { "where": "Microsoft 365 Copilot Chat", "do": "Open it", "see": "Copilot Chat" },
       { "where": "Copilot Chat", "do": "Select the ... menu, then Settings", "see": "The settings dialog" },
@@ -119,7 +120,7 @@
       { "where": "Copilot Chat", "do": "Ask your question, naming HubSpot in the prompt", "see": "Copilot fetches live HubSpot data; any write action shows a confirmation card first" }
     ],
     "source": "S60",
-    "doc_updated": "2026-09-30"
+    "doc_updated": "2026-11-16"
   },
   {
     "id": "gemini-app-to-hubspot",
@@ -134,20 +135,20 @@
       { "where": "HubSpot sign-in", "do": "Sign in with your HubSpot login", "see": "Gemini can answer @HubSpot prompts" }
     ],
     "source": "S64",
-    "doc_updated": "2026-08-21"
+    "doc_updated": "2026-11-13"
   },
   {
     "id": "gemini-workspace-to-hubspot",
     "from": "Gemini in Google Workspace",
     "to": "HubSpot",
     "who": "anyone",
-    "plan_needed": "Personal: Google AI Pro or Ultra. Work: Business Standard, Business Plus, Enterprise Standard, Enterprise Plus, Enterprise Essentials, Enterprise Essentials Plus or Google AI Pro for Education, with integrations allowed by the Workspace admin. Read-only.",
+    "plan_needed": "Personal: Google AI Pro or Ultra. Work: Business Standard, Business Plus, Enterprise Standard, Enterprise Plus, Enterprise Essentials, Enterprise Essentials Plus or Google AI Pro for Education, with connectors turned on by the Workspace admin. Read-only.",
     "steps": [
-      { "where": "Computer, Google Workspace Marketplace", "do": "Open the integrations page filtered to Gemini integrations", "see": "Gemini-compatible integrations" },
-      { "where": "Integrations page", "do": "Select HubSpot", "see": "HubSpot's integration details" },
-      { "where": "HubSpot integration page", "do": "Click Connect", "see": "Prompts to grant access" },
+      { "where": "Computer, Google Workspace Marketplace", "do": "Go to the Google Workspace Marketplace connectors page", "see": "Connectors you can use with Gemini in Workspace" },
+      { "where": "Connectors page", "do": "Select HubSpot", "see": "HubSpot's connector details" },
+      { "where": "HubSpot connector page", "do": "Click Connect", "see": "Prompts to grant access" },
       { "where": "Access prompts", "do": "Follow the on-screen steps to grant access", "see": "HubSpot is connected" },
-      { "where": "Gmail, Docs or Sheets, Gemini side panel", "do": "Type @ and choose HubSpot, then your prompt", "see": "Gemini answers from your HubSpot data" }
+      { "where": "A supported Gemini in Workspace app, such as Gmail, Docs or Sheets", "do": "Open Ask Gemini, type @ in the text box and choose HubSpot, then your prompt", "see": "Gemini answers from your HubSpot data" }
     ],
     "source": "S66",
     "doc_updated": null
@@ -160,11 +161,11 @@
     "plan_needed": "Gemini Enterprise (Business edition). A HubSpot administrator authorises the connector first. Write capability not stated.",
     "steps": [
       { "where": "Gemini Enterprise", "do": "A HubSpot administrator authorises the HubSpot connector", "see": "The connector is authorised for the organisation" },
-      { "where": "Gemini Enterprise, Settings & help > Manage team > Connectors", "do": "Switch the HubSpot connector on", "see": "HubSpot is available to the team" },
+      { "where": "Gemini Enterprise, Settings & help > your team > Manage team > Connectors", "do": "Switch the HubSpot connector on", "see": "HubSpot is available to the team" },
       { "where": "Gemini Enterprise", "do": "Each person authorises their own HubSpot account", "see": "Gemini Enterprise can use that person's HubSpot data" }
     ],
     "source": "S68",
-    "doc_updated": "2026-09-16"
+    "doc_updated": "2026-10-15"
   },
   {
     "id": "mcp-client-to-hubspot-mcp-server",
@@ -187,7 +188,7 @@
   },
   {
     "id": "agent-cli-to-hubspot",
-    "from": "AI coding agent (for example Claude Code, Claude Cowork or ChatGPT's Codex)",
+    "from": "AI coding agent (for example Claude Code, the Claude app or the ChatGPT app)",
     "to": "HubSpot Agent CLI",
     "who": "anyone",
     "plan_needed": "Any HubSpot plan (beta). A Super Admin must allow you to connect. Claude Cowork Team or Enterprise may need api.hubapi.com allowed by an admin.",
@@ -199,7 +200,7 @@
       { "where": "HubSpot permissions page", "do": "Click Connect app", "see": "The coding agent can work with your HubSpot account" }
     ],
     "source": "S78",
-    "doc_updated": "2026-08-26"
+    "doc_updated": "2026-09-29"
   },
   {
     "id": "developer-mcp-server-setup",
@@ -248,6 +249,6 @@
       { "where": "Breeze Assistant, right panel", "do": "Use the Apps dropdown to pick sources, or turn on Use all apps as sources", "see": "Breeze Assistant can search the chosen apps" }
     ],
     "source": "S34",
-    "doc_updated": "2026-09-28"
+    "doc_updated": "2026-11-05"
   }
 ]

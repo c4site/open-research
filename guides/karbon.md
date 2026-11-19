@@ -1,6 +1,6 @@
 # Karbon: the AI inside it, and the AI that connects to it
 
-Researched 17 October 2026 from vendor documentation. Every line is tagged with its source.
+Researched 18 November 2026 from vendor documentation. Every line is tagged with its source.
 
 ## The short version
 
@@ -18,9 +18,9 @@ Researched 17 October 2026 from vendor documentation. Every line is tagged with 
 
 Karbon is practice management software for accounting and bookkeeping firms. It brings email, workflow, client records, billing and a client portal together. [S1]
 
-Karbon says it has customers in 34 countries, and its team is based in the US, Australia, New Zealand, Canada and the UK. [S27]
+Karbon says it has customers in 40 countries, and its team is based in the US, Australia, New Zealand, Canada and the UK. [S27]
 
-These are the prices on Karbon's pricing page with Australian dollars selected, as read on 17 October 2026. Prices are per user, per month. [S1]
+These are the prices on Karbon's pricing page with Australian dollars selected, as read on 18 November 2026. Prices are per user, per month. [S1]
 
 | Plan | Paid annually (AUD, excl. GST) | Paid monthly (AUD, excl. GST) | What the plan adds |
 |---|---|---|---|
@@ -70,7 +70,8 @@ Karbon groups its AI on one page, under Karbon AI, Kai, Agentic Workflows and Me
 **What happens to your data**
 
 - Karbon says "Karbon AI is built on the Azure OpenAI Service." [S2] [S16]
-- Karbon says "Karbon does not use your firm's data to train AI models." [S2]
+- Karbon says "Firm data is not used to train AI models or inform another customer's experience." [S2]
+- Karbon says its AI policy is available on request. [S2]
 - Karbon's AI terms say Karbon "is not authorized to train the Karbon AI, with or without client/customer data", and that OpenAI and Azure OpenAI "have represented that neither will use client/customer data to train the AI models". [S7]
 - The same terms say Microsoft will process and store what you submit to Karbon AI, and its output, to monitor for abuse. Authorised Microsoft staff "may review data that has triggered its automated systems." [S7]
 - Since March 2026, Karbon says its AI features "process data exclusively within the region where your Karbon data is stored", so there are no cross-region transfers. [S8]
@@ -79,7 +80,7 @@ Karbon groups its AI on one page, under Karbon AI, Kai, Agentic Workflows and Me
 
 **In Australia**
 
-- The AI page's example of in-region processing is UK data staying in the UK. It doesn't name Australia. [S2]
+- The AI page no longer gives an example region, and it doesn't name Australia. It says only that the Azure OpenAI Service offers "regional availability". [S2]
 - Karbon's status page has referred to "the Australian domain". That suggests Australian firms run on a separate Australian instance. That's our inference; Karbon's pages we read don't say where Australian data is stored. [S26]
 - Karbon offers AUD pricing, and its help articles use Australian examples such as ATO notices. [S1] [S19]
 
@@ -150,13 +151,15 @@ Karbon groups its AI on one page, under Karbon AI, Kai, Agentic Workflows and Me
 
 **What it does**
 
-- Karbon names five AI Agents: Bookkeeper, Practice Manager, Tax Preparer, Client Relationship Manager and Fractional CFO. [S4]
-- Karbon says the agents can reconcile transactions, draft emails, send client reminders and prepare end-of-month workpapers, following your firm's playbook. [S4]
-- They work inside your existing jobs, checklists and client timelines. [S4]
+- Karbon's agents page now lists agent workflows instead of named agents: What can I bill today, Unbilled WIP review, Scope creep review, Client health review, Team utilisation check, Pre-meeting prep and Month-end billing. [S4]
+- The page describes Month-end billing as "Turn unbilled work into invoices." It doesn't describe the others in words. [S4]
+- Karbon says "Every workflow runs on your firm's processes, client knowledge, thresholds, and terminology", using knowledge articles your firm writes. [S4]
+- They run inside Karbon, "alongside your jobs, checklists, and client timelines". [S4]
+- Karbon calls Kai "the engine behind every agent workflow". [S4]
 
 **Where to find it**
 
-- Karbon's agents page offers a demo booking. It gives no product steps. [S4]
+- Karbon's agents page offers a demo booking and says "There's no separate app to install." It gives no product steps. [S4]
 
 **Which plans have it**
 
@@ -164,8 +167,9 @@ Karbon groups its AI on one page, under Karbon AI, Kai, Agentic Workflows and Me
 
 **What happens to your data**
 
-- Karbon says "You decide what AI Agents can do, when they need approval, and what requires a human touch." [S4]
-- It also says you can "Review their work before it goes out or let them run automatically." [S4]
+- Karbon says "You decide what agent workflows can do, when things need approval, and what requires a human touch." [S4]
+- It also says you can "Review work before anything changes, or approve routine steps once and let them run." [S4]
+- For Month-end billing, "Nothing is sent until the billing manager approves it." [S4]
 - Karbon says firms will later be able to configure each agent's capabilities. [S2]
 - The agents page has no training or retention statement. [S4]
 
@@ -180,7 +184,7 @@ Karbon groups its AI on one page, under Karbon AI, Kai, Agentic Workflows and Me
 - Karbon bought Aider, founded in New Zealand, in September 2025. Karbon now describes it as a period close automation platform. [S13] [S14]
 - Aider runs close checks on Xero and QuickBooks Online books and syncs progress to Karbon work items. [S14]
 - The AI Rule Builder turns a plain-English description of a check into a rule, which you review and adjust before saving. [S10]
-- AI Document Validation checks each document a client uploads against what was requested, and asks the client if it doesn't match. [S11] [S14]
+- AI Document Validation compares each document a client uploads against what was requested, so a wrong upload is caught before it reaches your team. [S11] [S14]
 
 **Where to find it**
 
@@ -216,7 +220,7 @@ A quick word on the jargon. MCP (Model Context Protocol) is an open standard tha
 
 **Official?**
 
-- No official connection found. Karbon isn't in Anthropic's connectors directory as read on 17 October 2026. [S35]
+- No official connection found. Searching Anthropic's connectors directory for Karbon on 18 November 2026 returned "No matching connectors". [S35]
 
 **What Karbon has said**
 
@@ -233,7 +237,7 @@ A quick word on the jargon. MCP (Model Context Protocol) is an open standard tha
 
 **Official?**
 
-- No official connection found. Searching ChatGPT's plugin directory for Karbon from Australia on 17 October 2026 returned "No plugins found". [S37]
+- No official connection found. Searching ChatGPT's plugin directory for Karbon from Australia on 18 November 2026 returned "No plugins found". [S37]
 - OpenAI's business plugins page doesn't mention Karbon. [S38]
 - Karbon's MCP server announcement didn't name ChatGPT. [S5]
 
@@ -241,19 +245,19 @@ A quick word on the jargon. MCP (Model Context Protocol) is an open standard tha
 
 **Official?**
 
-- No official connection found. Karbon isn't on Microsoft's list of federated Copilot connectors, updated 16 October 2026. [S39]
+- No official connection found. Karbon isn't on Microsoft's list of federated Copilot connectors, updated 16 November 2026. [S39]
 - Microsoft's galleries of partner-built and Microsoft-built Copilot connectors don't list Karbon either. [S40] [S41]
 
 **What Karbon does connect to**
 
-- Karbon integrates with Microsoft 365 email, calendars, OneDrive, SharePoint, Teams and Microsoft Entra ID. Karbon doesn't describe any of these as a Copilot connection. [S28]
+- Karbon's integrations page lists Microsoft Exchange, Office 365 email, Outlook Calendar, SharePoint, Teams and Microsoft Entra ID. It no longer lists OneDrive. Karbon doesn't describe any of these as a Copilot connection. [S28]
 - The Teams integration imports recorded and transcribed Teams meetings into the right client's timeline in Karbon. [S30]
 
 ### Google Gemini and Karbon
 
 **Official?**
 
-- No official connection found. Searching the Google Workspace Marketplace for Karbon on 17 October 2026 returned "No matching results". [S42]
+- No official connection found. Searching the Google Workspace Marketplace for Karbon on 18 November 2026 returned "No matching results". [S42]
 
 **What Karbon does connect to**
 
@@ -300,7 +304,7 @@ A quick word on the jargon. MCP (Model Context Protocol) is an open standard tha
 
 - Karbon lists a Zapier integration that connects your Karbon contacts and organisations with other apps. [S29]
 - New or updated contacts and organisations can trigger updates in other apps, and other apps can update them in Karbon. [S29]
-- Karbon says you can reach "the full Karbon API through Zapier's Webhooks by Zapier feature". [S29]
+- Karbon says you can "Leverage Webhooks by Zapier to interact directly with the full Karbon API." [S29]
 - Karbon's Zapier page doesn't mention AI, plans or setup steps. [S29]
 
 ## Jobs it's good for
@@ -343,7 +347,7 @@ A quick word on the jargon. MCP (Model Context Protocol) is an open standard tha
 
 **Early access means change**
 
-- Kai and AI Agents are early access. Karbon says Kai's actions need your sign-off, but its agents page also says you can let agents "run automatically". [S3] [S4]
+- Kai and AI Agents are early access. Karbon says Kai's actions need your sign-off, but its agents page also says you can "approve routine steps once and let them run". [S3] [S4]
 - Karbon said in June 2026 that agentic workflows will let AI "take autonomous action" inside firm workflows. [S5]
 
 **No official AI connections yet**
@@ -390,55 +394,54 @@ Karbon's Kai release says "Many of the features announced are available immediat
 - **AI in Karbon Analytics.** It was announced in June 2026, but the Analytics help topic has no article about it. [S5] [S21]
 - **Karbon's help centre search** returned no results to us, so we may have missed help articles on Kai, agents or the MCP server. [S17]
 - **The Karbon AI overview article.** The help topic lists it, but we couldn't open it. [S17]
-- **Customer numbers.** Karbon's about page says customers in 34 countries. Its June 2026 release says 40. [S27] [S5]
 - We didn't rely on third-party claims. Other companies advertise their own Karbon MCP servers and connectors. They aren't Karbon's, and we didn't review them.
 
 ## Sources
 
-All sources were read on 17 October 2026.
+All sources were read on 18 November 2026.
 
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
-| S1 | Practice Management Plans to Suit Every Accounting Firm (pricing, viewed with AUD selected) | Karbon | https://karbonhq.com/pricing/ | No date shown (© 2026) | 17 Oct 2026 |
-| S2 | AI-Powered Practice Management for Accounting Firms (Karbon AI) | Karbon | https://karbonhq.com/feature/ai/ | No date shown (© 2026) | 17 Oct 2026 |
-| S3 | Kai by Karbon: the AI coworker for your firm | Karbon | https://karbonhq.com/feature/kai/ | No date shown (© 2026) | 17 Oct 2026 |
-| S4 | AI Agents (Early Access) | Karbon | https://karbonhq.com/feature/agents/ | No date shown (© 2026) | 17 Oct 2026 |
-| S5 | Karbon launches Kai, the AI coworker that knows your firm | Karbon Magazine (media release) | https://karbonhq.com/resources/karbon-launches-kai/ | 3 Jun 2026 | 17 Oct 2026 |
-| S6 | Special Event: Kai and Practice Management's AI Evolution | Karbon | https://karbonhq.com/resources/webinars/karbon-product-roadmap-reveal-june-2026/ | No date shown (keynote at Karbon Next 2026) | 17 Oct 2026 |
-| S7 | Karbon AI Supplemental Terms | Karbon | https://karbonhq.com/karbon-ai-beta-terms-of-use/ | Last updated 27 Sep 2023 | 17 Oct 2026 |
-| S8 | Karbon AI is now available to all customers, plus clearer document visibility and greater control | Karbon release notes | https://karbonhq.com/release-notes/mar-31-2026/ | 31 Mar 2026 (date from Karbon's release notes list) | 17 Oct 2026 |
-| S9 | Karbon release notes (list) | Karbon | https://karbonhq.com/release-notes/ | Latest entry 6 Oct 2026 | 17 Oct 2026 |
-| S10 | Automated engagement renewals, AI-assisted period close, and Gusto integration | Karbon release notes | https://karbonhq.com/release-notes/june-29-2026/ | 29 Jun 2026 | 17 Oct 2026 |
-| S11 | End client back-and-forth with Client Questions and AI Document Validation in Aider's Period Close Automation | Karbon release notes | https://karbonhq.com/release-notes/aug-5-2026/ | 5 Aug 2026 | 17 Oct 2026 |
-| S12 | Period close automation powered by Aider, create work from engagements, Gusto integration, and more | Karbon release notes | https://karbonhq.com/release-notes/apr-27-2026/ | 27 Apr 2026 | 17 Oct 2026 |
-| S13 | Karbon acquires Aider to deliver the future of AI-powered accounting and bookkeeping | Karbon Magazine (media release) | https://karbonhq.com/resources/karbon-acquires-aider/ | 30 Sep 2025 | 17 Oct 2026 |
-| S14 | Aider + Karbon | Karbon | https://karbonhq.com/integrations/aider/ | No date shown (© 2026) | 17 Oct 2026 |
-| S15 | How can I get access to Karbon AI? | Karbon Help | https://help.karbonhq.com/en/s/articles/7853999-how-can-i-get-access-to-karbon-ai | 28 Sep 2026 | 17 Oct 2026 |
-| S16 | How secure is Karbon AI? | Karbon Help | https://help.karbonhq.com/en/s/articles/7854015-how-secure-is-karbon-ai | 14 Oct 2025 | 17 Oct 2026 |
-| S17 | Karbon AI (help topic) | Karbon Help | https://help.karbonhq.com/en/s/topic/0TORh0000003svTOAQ/karbon-ai | No date shown | 17 Oct 2026 |
-| S18 | Anatomy of Triage | Karbon Help | https://help.karbonhq.com/en/s/articles/63015897-anatomy-of-triage | 27 Jul 2026 | 17 Oct 2026 |
-| S19 | How AI Label Actions Work in Karbon Triage | Karbon Help | https://help.karbonhq.com/s/articles/2000273-ai-label-actions-triage | 10 Aug 2026 | 17 Oct 2026 |
-| S20 | Setting Up API Access in Karbon | Karbon Help | https://help.karbonhq.com/s/articles/000017541-setting-up-api-access-karbon | 28 Apr 2026 | 17 Oct 2026 |
-| S21 | Karbon Analytics (help topic) | Karbon Help | https://help.karbonhq.com/en/s/topic/0TORh0000003svWOAQ/karbon-analytics | No date shown; notes the January 2026 rename | 17 Oct 2026 |
-| S22 | Security | Karbon | https://karbonhq.com/security/ | No date shown (© 2026) | 17 Oct 2026 |
-| S23 | Privacy Policy | Karbon | https://karbonhq.com/privacy-policy/ | Last updated 3 Feb 2025 | 17 Oct 2026 |
-| S24 | Use of Google API Services | Karbon | https://karbonhq.com/use-of-google-api-services/ | No date shown (© 2026) | 17 Oct 2026 |
-| S25 | Karbon for Enterprise | Karbon | https://karbonhq.com/enterprise/ | No date shown | 17 Oct 2026 |
-| S26 | Some users are experiencing access issues in the Australian domain | Karbon Status | https://status.karbonhq.com/cmqhqe1v707xs2jlms6nue7fx | 17 Jun 2026 | 17 Oct 2026 |
-| S27 | About Karbon | Karbon | https://karbonhq.com/about/ | No date shown | 17 Oct 2026 |
-| S28 | With Karbon, your firm's apps connect better (integrations) | Karbon | https://karbonhq.com/integrations/ | No date shown | 17 Oct 2026 |
-| S29 | Zapier + Karbon | Karbon | https://karbonhq.com/integrations/zapier/ | No date shown (© 2026) | 17 Oct 2026 |
-| S30 | Microsoft Teams + Karbon | Karbon | https://karbonhq.com/integrations/teams/ | No date shown (© 2026) | 17 Oct 2026 |
-| S31 | Karbon Developer Center | Karbon | https://developers.karbonhq.com/ | No date shown; release notes run to 23 Sep 2026 | 17 Oct 2026 |
-| S32 | Karbon API documentation (llms.txt) | Karbon | https://developers.karbonhq.com/llms.txt | No date shown; release notes listed to 23 Sep 2026 | 17 Oct 2026 |
-| S33 | New Developer Quick-Reference Guide (Early Access) | Karbon Developer Center | https://developers.karbonhq.com/release-notes/2026-03-11/ | 11 Mar 2026 | 17 Oct 2026 |
-| S34 | Karbon Trust Center | Karbon (hosted by Conveyor) | https://app.conveyor.com/profile/karbonhq | No date shown. Asks for a work email before showing content | 17 Oct 2026 |
-| S35 | Connectors and plugins (Claude Marketplace) | Anthropic | https://claude.com/connectors | No date shown. Karbon not listed | 17 Oct 2026 |
-| S36 | Connector verification | Anthropic | https://claude.com/docs/connectors/verification | No date shown | 17 Oct 2026 |
-| S37 | ChatGPT plugin directory: search for "Karbon" | OpenAI | https://chatgpt.com/plugins?q=Karbon | No date shown. "No plugins found" (searched from Australia, signed out) | 17 Oct 2026 |
-| S38 | Plugins: Connect tools and apps to ChatGPT and Codex | OpenAI | https://openai.com/business/plugins/ | No date shown | 17 Oct 2026 |
-| S39 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | ms.date 30 Sep 2026; updated 16 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S40 | Partner-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-partners | ms.date 27 Apr 2026; updated 25 Sep 2026 (page metadata) | 17 Oct 2026 |
-| S41 | Microsoft-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft | ms.date 30 Sep 2026 (page metadata) | 17 Oct 2026 |
-| S42 | Google Workspace Marketplace: search for "karbon" | Google | https://workspace.google.com/marketplace/search/karbon | No date shown. "No matching results" | 17 Oct 2026 |
-| S43 | Karbon site summary for AI tools (llms-full.txt), pricing section | Karbon | https://karbonhq.com/llms-full.txt | Pricing section "Last updated: 2026-06-30" | 17 Oct 2026 |
+| S1 | Practice Management Plans to Suit Every Accounting Firm (pricing, viewed with AUD selected) | Karbon | https://karbonhq.com/pricing/ | No date shown (© 2026) | 18 Nov 2026 |
+| S2 | AI-Powered Practice Management for Accounting Firms (Karbon AI) | Karbon | https://karbonhq.com/feature/ai/ | No date shown (© 2026) | 18 Nov 2026 |
+| S3 | Kai by Karbon: the AI coworker for your firm | Karbon | https://karbonhq.com/feature/kai/ | No date shown (© 2026) | 18 Nov 2026 |
+| S4 | AI Agents for Accounting Firms (Early Access) | Karbon | https://karbonhq.com/feature/agents/ | No date shown (© 2026) | 18 Nov 2026 |
+| S5 | Karbon launches Kai, the AI coworker that knows your firm | Karbon Magazine (media release) | https://karbonhq.com/resources/karbon-launches-kai/ | 3 Jun 2026 | 18 Nov 2026 |
+| S6 | Special Event: Kai and Practice Management's AI Evolution | Karbon | https://karbonhq.com/resources/webinars/karbon-product-roadmap-reveal-june-2026/ | No date shown (keynote at Karbon Next 2026) | 18 Nov 2026 |
+| S7 | Karbon AI Supplemental Terms | Karbon | https://karbonhq.com/karbon-ai-beta-terms-of-use/ | Last updated 27 Sep 2023 | 18 Nov 2026 |
+| S8 | Karbon AI is now available to all customers, plus clearer document visibility and greater control | Karbon release notes | https://karbonhq.com/release-notes/mar-31-2026/ | 31 Mar 2026 (date from Karbon's release notes list) | 18 Nov 2026 |
+| S9 | Karbon release notes (list) | Karbon | https://karbonhq.com/release-notes/ | Latest entry 26 Oct 2026 | 18 Nov 2026 |
+| S10 | Automated engagement renewals, AI-assisted period close, and Gusto integration | Karbon release notes | https://karbonhq.com/release-notes/june-29-2026/ | 29 Jun 2026 | 18 Nov 2026 |
+| S11 | End client back-and-forth with Client Questions and AI Document Validation in Aider's Period Close Automation | Karbon release notes | https://karbonhq.com/release-notes/aug-5-2026/ | 5 Aug 2026 | 18 Nov 2026 |
+| S12 | Period close automation powered by Aider, create work from engagements, Gusto integration, and more | Karbon release notes | https://karbonhq.com/release-notes/apr-27-2026/ | 27 Apr 2026 | 18 Nov 2026 |
+| S13 | Karbon acquires Aider to deliver the future of AI-powered accounting and bookkeeping | Karbon Magazine (media release) | https://karbonhq.com/resources/karbon-acquires-aider/ | 30 Sep 2025 | 18 Nov 2026 |
+| S14 | Aider + Karbon | Karbon | https://karbonhq.com/integrations/aider/ | No date shown (© 2026) | 18 Nov 2026 |
+| S15 | How can I get access to Karbon AI? | Karbon Help | https://help.karbonhq.com/en/s/articles/7853999-how-can-i-get-access-to-karbon-ai | 28 Sep 2026 | 18 Nov 2026 |
+| S16 | How secure is Karbon AI? | Karbon Help | https://help.karbonhq.com/en/s/articles/7854015-how-secure-is-karbon-ai | 14 Oct 2025 | 18 Nov 2026 |
+| S17 | Karbon AI (help topic) | Karbon Help | https://help.karbonhq.com/en/s/topic/0TORh0000003svTOAQ/karbon-ai | No date shown | 18 Nov 2026 |
+| S18 | Anatomy of Triage | Karbon Help | https://help.karbonhq.com/en/s/articles/63015897-anatomy-of-triage | 27 Jul 2026 | 18 Nov 2026 |
+| S19 | How AI Label Actions Work in Karbon Triage | Karbon Help | https://help.karbonhq.com/s/articles/2000273-ai-label-actions-triage | 10 Aug 2026 | 18 Nov 2026 |
+| S20 | Setting Up API Access in Karbon | Karbon Help | https://help.karbonhq.com/s/articles/000017541-setting-up-api-access-karbon | 28 Apr 2026 | 18 Nov 2026 |
+| S21 | Karbon Analytics (help topic) | Karbon Help | https://help.karbonhq.com/en/s/topic/0TORh0000003svWOAQ/karbon-analytics | No date shown; notes the January 2026 rename | 18 Nov 2026 |
+| S22 | Security | Karbon | https://karbonhq.com/security/ | No date shown (© 2026) | 18 Nov 2026 |
+| S23 | Privacy Policy | Karbon | https://karbonhq.com/privacy-policy/ | Last updated 3 Feb 2025 | 18 Nov 2026 |
+| S24 | Use of Google API Services | Karbon | https://karbonhq.com/use-of-google-api-services/ | No date shown (© 2026) | 18 Nov 2026 |
+| S25 | Karbon for Enterprise | Karbon | https://karbonhq.com/enterprise/ | No date shown | 18 Nov 2026 |
+| S26 | Some users are experiencing access issues in the Australian domain | Karbon Status | https://status.karbonhq.com/cmqhqe1v707xs2jlms6nue7fx | 17 Jun 2026 | 18 Nov 2026 |
+| S27 | About Karbon | Karbon | https://karbonhq.com/about/ | No date shown | 18 Nov 2026 |
+| S28 | With Karbon, your firm's apps connect better (integrations) | Karbon | https://karbonhq.com/integrations/ | No date shown | 18 Nov 2026 |
+| S29 | Zapier + Karbon | Karbon | https://karbonhq.com/integrations/zapier/ | No date shown (© 2026) | 18 Nov 2026 |
+| S30 | Microsoft Teams + Karbon | Karbon | https://karbonhq.com/integrations/teams/ | No date shown (© 2026) | 18 Nov 2026 |
+| S31 | Karbon Developer Center | Karbon | https://developers.karbonhq.com/ | No date shown; release notes run to 16 Nov 2026 | 18 Nov 2026 |
+| S32 | Karbon API documentation (llms.txt) | Karbon | https://developers.karbonhq.com/llms.txt | No date shown; release notes listed to 16 Nov 2026 | 18 Nov 2026 |
+| S33 | New Developer Quick-Reference Guide (Early Access) | Karbon Developer Center | https://developers.karbonhq.com/release-notes/2026-03-11/ | 11 Mar 2026 | 18 Nov 2026 |
+| S34 | Karbon Trust Center | Karbon (hosted by Conveyor) | https://app.conveyor.com/profile/karbonhq | No date shown. Asks for a work email before showing content | 18 Nov 2026 |
+| S35 | Connectors and plugins (Claude Marketplace): search for "Karbon" | Anthropic | https://claude.com/marketplace/connectors-plugins?q=Karbon | No date shown. "No matching connectors" (claude.com/connectors now redirects here) | 18 Nov 2026 |
+| S36 | Connector verification | Anthropic | https://claude.com/docs/connectors/verification | No date shown | 18 Nov 2026 |
+| S37 | ChatGPT plugin directory: search for "Karbon" | OpenAI | https://chatgpt.com/plugins?q=Karbon | No date shown. "No plugins found" (searched from Australia, signed out) | 18 Nov 2026 |
+| S38 | Plugins: Connect tools and apps to ChatGPT and Codex | OpenAI | https://openai.com/business/plugins/ | No date shown | 18 Nov 2026 |
+| S39 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | ms.date 16 Nov 2026; updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S40 | Partner-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-partners | ms.date 16 Nov 2026; updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S41 | Microsoft-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft | ms.date 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S42 | Google Workspace Marketplace: search for "karbon" | Google | https://workspace.google.com/marketplace/search/karbon | No date shown. "No matching results" | 18 Nov 2026 |
+| S43 | Karbon site summary for AI tools (llms-full.txt), pricing section | Karbon | https://karbonhq.com/llms-full.txt | Pricing section "Last updated: 2026-06-30" | 18 Nov 2026 |

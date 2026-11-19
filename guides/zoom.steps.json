@@ -4,7 +4,7 @@
     "from": "Claude",
     "to": "Zoom (Zoom for Claude)",
     "who": "anyone",
-    "plan_needed": "A licensed user on Zoom Workplace Pro, Pro Plus, Business, Business Plus, Enterprise, Enterprise Plus or Enterprise Bundle, with a Zoom account owner or admin with privileges, and meeting summary and smart recording switched on. A Claude account; Zoom's page doesn't name a Claude plan. On Claude Team or Enterprise an Owner adds the connector first.",
+    "plan_needed": "A licensed user on Zoom Workplace Pro, Pro Plus, Business, Business Plus, Enterprise, Enterprise Plus or Enterprise Bundle, with a Zoom account owner or admin with privileges who may need to approve the app, and meeting summary or smart recording switched on for the meetings you want to search. A Claude account; Zoom's page doesn't name a Claude plan. On Claude Team or Enterprise an Owner adds the connector first and can choose which Zoom tools are available.",
     "steps": [
       {
         "where": "Claude (claude.ai or the desktop app), Customize",
@@ -18,8 +18,8 @@
       },
       {
         "where": "Zoom sign-in",
-        "do": "Sign in to Zoom and approve the access requested.",
-        "see": "You're returned to Claude. The exact Zoom approval screen isn't described in the docs we read."
+        "do": "Sign in to Zoom. If the Zoom App Marketplace asks, select Add, review the permissions and select Allow.",
+        "see": "You're returned to Claude."
       },
       {
         "where": "Claude chat",
@@ -29,7 +29,7 @@
       {
         "where": "Claude chat",
         "do": "Ask about a recorded meeting, for example its action items, or ask Claude to make a Zoom Doc of them.",
-        "see": "Claude answers from meeting summaries, transcripts and recordings you hosted or were given access to. Zoom's example says Claude confirms before creating a new Zoom Doc."
+        "see": "Claude answers from meeting summaries, transcripts, recordings and notes you hosted, made or were given access to. Zoom's example says Claude asks before creating and sharing a doc. It also asks before creating, updating or cancelling meetings, unless you've set those tools to Always allow."
       }
     ],
     "undo": [
@@ -45,7 +45,7 @@
       }
     ],
     "source": "S51, S34, S33, S50, S55",
-    "doc_updated": null
+    "doc_updated": "2026-11"
   },
   {
     "id": "claude-to-zoom-canvas",
@@ -90,32 +90,32 @@
     "from": "ChatGPT",
     "to": "Zoom (Zoom for ChatGPT)",
     "who": "anyone",
-    "plan_needed": "A licensed user on Zoom Workplace Pro, Pro Plus, Business, Business Plus, Enterprise, Enterprise Plus or Enterprise Bundle, a Zoom account owner or admin with privileges, and a ChatGPT account. Meeting summary or smart recording must be on. The Ask tool needs a ZoomMate or Custom AI Companion licence. OpenAI says some workspaces need admin approval.",
+    "plan_needed": "A licensed user on Zoom Workplace Pro, Pro Plus, Business, Business Plus, Enterprise, Enterprise Plus or Enterprise Bundle, a Zoom account owner or admin with privileges, and a ChatGPT account. Meeting summary or smart recording must be on. The Ask tool needs a ZoomMate or Custom AI Companion licence. OpenAI says some workspaces need admin approval, and in ChatGPT workspaces admins can turn individual Zoom actions on or off.",
     "steps": [
       {
-        "where": "ChatGPT",
-        "do": "Sign in, click your name, then Settings.",
-        "see": "ChatGPT settings."
+        "where": "ChatGPT sidebar",
+        "do": "Select Plugins.",
+        "see": "The Plugins directory."
       },
       {
-        "where": "ChatGPT Settings",
-        "do": "Click Apps & Connectors, then Zoom, then Connect. (OpenAI's current help pages call this area Plugins.)",
-        "see": "You're sent to the Zoom for ChatGPT page in the Zoom Marketplace."
+        "where": "ChatGPT Plugins",
+        "do": "Search for Zoom and open it.",
+        "see": "The Zoom plugin page, built by Zoom Communications, Inc."
       },
       {
-        "where": "Zoom Marketplace",
-        "do": "Click Add at the top right, confirm the permissions and click Allow.",
-        "see": "You're redirected back to ChatGPT."
+        "where": "Zoom plugin page",
+        "do": "Select Install plugin, then Connect.",
+        "see": "You're sent to Zoom to sign in."
       },
       {
-        "where": "ChatGPT",
-        "do": "Complete the authorisation.",
-        "see": "Zoom is connected."
+        "where": "Zoom sign-in and Zoom App Marketplace",
+        "do": "Sign in to Zoom. If the Zoom App Marketplace asks, select Add, review the permissions and select Allow. If you see Request instead of Add, a Zoom admin must approve the app first.",
+        "see": "Zoom is connected. Zoom says the older Settings > Apps & Connectors instructions are out of date."
       },
       {
         "where": "ChatGPT chat",
         "do": "Click the add icon, then More, then Zoom. Or type @Zoom or /Zoom, then ask for a meeting recap.",
-        "see": "ChatGPT answers from your Zoom meeting assets. Before creating a Zoom Canvas doc it asks you to confirm, and creates it only after you click Create."
+        "see": "ChatGPT answers from your Zoom meeting assets. Before creating a Zoom Canvas doc it asks you to confirm, and creates it only after you click Create. Zoom says ChatGPT also asks before creating, updating or cancelling a meeting."
       }
     ],
     "undo": [
@@ -130,8 +130,8 @@
         "see": "The app is removed from your Zoom account. (Zoom's general Marketplace article calls this area My Library.)"
       }
     ],
-    "source": "S41, S53, S39",
-    "doc_updated": "2026-09-17"
+    "source": "S57, S41, S53, S39",
+    "doc_updated": "2026-11"
   },
   {
     "id": "chatgpt-to-zoom-whiteboard",
@@ -174,9 +174,9 @@
   {
     "id": "m365-admin-deploys-zoom-for-cowork",
     "from": "Microsoft 365 Copilot (Cowork)",
-    "to": "Zoom (Zoom for Cowork)",
+    "to": "Zoom (Zoom Connector, formerly Zoom for Cowork)",
     "who": "admin",
-    "plan_needed": "A Microsoft 365 Copilot account with administrator privileges to deploy the app, a Zoom account owner or admin with privileges, and meeting summary or smart recording switched on. Agentic search needs a ZoomMate licence.",
+    "plan_needed": "A Microsoft 365 Copilot account with administrator privileges to deploy the app, a licensed Zoom user on Workplace Pro or above, a Zoom account owner or admin with privileges, and meeting summary or smart recording switched on. The Ask tool needs a ZoomMate licence.",
     "steps": [
       {
         "where": "Microsoft 365 admin center",
@@ -185,11 +185,11 @@
       },
       {
         "where": "Microsoft 365 admin center, Integrated apps",
-        "do": "Select Get Apps (or View more apps), search for Zoom for Cowork and select it.",
+        "do": "Select Get apps (or View more apps), search for Zoom Connector (publisher Zoom Communications, Inc.) and select it.",
         "see": "The app's information, permissions and terms."
       },
       {
-        "where": "Zoom for Cowork deployment",
+        "where": "Zoom Connector deployment",
         "do": "Review the permissions and terms, choose Everyone or Specific users/groups, and click Deploy. Then click Next and finish the wizard.",
         "see": "A confirmation that the app was deployed."
       },
@@ -201,7 +201,7 @@
       {
         "where": "Zoom sign-in",
         "do": "Sign in to your Zoom account and click Allow.",
-        "see": "Copilot can search your Zoom meetings. Before creating a Zoom Canvas doc of action items, Copilot asks you to confirm and creates it after you click Create."
+        "see": "Copilot can search your Zoom meetings. Before creating a Zoom Canvas doc of action items, or creating, updating or cancelling a meeting, Copilot asks you to confirm."
       }
     ],
     "undo": [
@@ -211,15 +211,15 @@
         "see": "The app is removed for your organisation."
       }
     ],
-    "source": "S43",
-    "doc_updated": "2026-09-11"
+    "source": "S58, S43",
+    "doc_updated": "2026-11"
   },
   {
     "id": "m365-admin-adds-zoom-meetings-connector",
     "from": "Microsoft 365 Copilot",
     "to": "Zoom Meetings (Microsoft's Copilot connector)",
     "who": "admin",
-    "plan_needed": "An AI administrator for the Microsoft 365 tenant, a paid Zoom Business or Enterprise plan with cloud recording enabled, and a Zoom account administrator to sign in and consent. Microsoft says the connector's app in the Zoom Marketplace isn't currently available in the EU.",
+    "plan_needed": "An AI administrator for the Microsoft 365 tenant, a paid Zoom Business or Enterprise plan with cloud recording and audio transcripts enabled, and a Zoom account administrator to sign in and consent. Microsoft says the connector's app in the Zoom Marketplace isn't currently available in the EU. It indexes Zoom meetings only, not webinars.",
     "steps": [
       {
         "where": "Microsoft 365 admin center, Zoom Meetings connector",
@@ -255,7 +255,7 @@
       }
     ],
     "source": "S44, S45",
-    "doc_updated": "2026-10-06"
+    "doc_updated": "2026-11-06"
   },
   {
     "id": "zoom-mcp-server-custom-connection",

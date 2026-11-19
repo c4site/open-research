@@ -2,6 +2,274 @@
  "kind": "changes",
  "entries": [
   {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "how-ai-connects"
+   ],
+   "text": "Google’s Gemini pages now call the Keep Activity setting History. With History off, Google now keeps chats with your account for around two months, where it was 72 hours. Claude also has a new Ultra plan, and OpenAI no longer offers administrator-managed app sync.",
+   "src": {
+    "label": "Google’s “Manage & delete your history in Gemini Apps”",
+    "href": "https://support.google.com/gemini/answer/13278892?hl=en"
+   },
+   "also": [
+    { "label": "Google’s Gemini Apps Privacy Hub", "href": "https://support.google.com/gemini/answer/13594961?hl=en" },
+    { "label": "Claude’s plans and pricing", "href": "https://claude.com/pricing" },
+    { "label": "OpenAI’s help page on admin controls for apps", "href": "https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps" }
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "microsoft-365"
+   ],
+   "text": "Microsoft says using Copilot from a personal plan on work documents is no longer available. Claude’s Microsoft 365 connector now takes personal Microsoft accounts, and Claude for Outlook is generally available. OpenAI has withdrawn ChatGPT’s synced connectors.",
+   "src": {
+    "label": "Microsoft’s “Multiple account access to Microsoft Copilot”",
+    "href": "https://learn.microsoft.com/en-us/copilot/plan/multiple-account-access"
+   },
+   "also": [
+    { "label": "Claude’s help on connecting Microsoft 365", "href": "https://support.claude.com/en/articles/15183774-connect-to-microsoft-365" },
+    { "label": "Claude for Outlook", "href": "https://claude.com/docs/office-agents/outlook" },
+    { "label": "OpenAI’s help page on admin controls for apps", "href": "https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps" }
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "google-workspace"
+   ],
+   "text": "Google’s skills began rolling out to Gmail, Docs, Slides, Drive, Chat and Workspace Studio on 9 November, and Studio flows now allow 100 steps, up from 20. Microsoft now says Copilot’s Gmail, Calendar and Contacts connectors need a Microsoft 365 Copilot licence.",
+   "src": {
+    "label": "Google’s “About the transition to skills”",
+    "href": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/about-the-transition-to-skills"
+   },
+   "also": [
+    { "label": "Google’s Workspace Studio help on flow limits", "href": "https://support.google.com/workspace-studio/answer/16765942" },
+    { "label": "Microsoft’s federated connectors overview", "href": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview" }
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "canva"
+   ],
+   "text": "Canva no longer gives a number of AI uses for each plan. Its help now says Pro gets 10 times the Free allowance and Business 20 times. Two Canva models arrived in late October, Canva Brush and Canva Craft, and Canva is bringing in, in stages, a switch that lets Free and Pro users turn generative AI off for their own account.",
+   "src": {
+    "label": "Canva’s “AI access” help page",
+    "href": "https://www.canva.com/help/ai-access/"
+   },
+   "also": [
+    { "label": "Canva’s Brush announcement", "href": "https://www.canva.com/newsroom/news/canva-brush/" },
+    { "label": "Canva’s Craft announcement", "href": "https://www.canva.com/newsroom/news/canva-craft/" },
+    { "label": "Canva’s help on managing AI features", "href": "https://www.canva.com/en_au/help/manage-ai-features/" }
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "xero"
+   ],
+   "text": "Xero’s help centre now says Gemini can only view your Xero data and can’t make changes. Its October release said Gemini could issue invoices once you confirm, so the guide records both and follows the help article. You can now connect more than one organisation to Claude, ChatGPT and Copilot.",
+   "src": {
+    "label": "Xero Central’s “Connect Xero to Google Gemini”",
+    "href": "https://central.xero.com/0/article/Connect-Xero-to-Google-Gemini"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "myob"
+   ],
+   "text": "The payroll price change MYOB flagged for 1 November has arrived. Payroll Only costs more after its intro offer, and so does payroll for each employee on Business Pro. The guide has the new figures. MYOB also split its Claude and ChatGPT help into a page for each.",
+   "src": {
+    "label": "MYOB’s pricing page",
+    "href": "https://www.myob.com/au/pricing"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "hubspot"
+   ],
+   "text": "HubSpot’s agent for Microsoft Copilot can now create and update records, and Copilot asks you to confirm each change. In October it could only read. ChatGPT and Claude can now create and update lists too.",
+   "src": {
+    "label": "HubSpot’s “Set up and use the HubSpot Agent for Copilot”",
+    "href": "https://knowledge.hubspot.com/integrations/set-up-and-use-the-hubspot-agent-for-copilot"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "quickbooks"
+   ],
+   "text": "QuickBooks’ regular monthly prices in Australia have gone up, and the pricing page no longer says they include GST. Microsoft now lists an Intuit QuickBooks plugin for Copilot. Its listing says the plugin is available in the United States and that availability may vary by market.",
+   "src": {
+    "label": "QuickBooks’ Australian pricing page",
+    "href": "https://quickbooks.intuit.com/au/pricing/"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "karbon"
+   ],
+   "text": "Karbon rewrote its AI Agents page. It no longer names five agents. It now lists seven agent workflows and says Kai runs them all.",
+   "src": {
+    "label": "Karbon’s AI Agents page",
+    "href": "https://karbonhq.com/feature/agents/"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "leap"
+   ],
+   "text": "Anthropic’s connector directory now lists LawY’s own connector for Claude. It needs a separate paid LawY account, and LEAP itself still isn’t listed. LawY’s terms now say it won’t use your questions or its answers to train AI models, and LEAP has added FairPay, an award research assistant.",
+   "src": {
+    "label": "The LawY listing in Claude’s connector directory",
+    "href": "https://claude.com/marketplace/connectors/lawy"
+   },
+   "also": [
+    { "label": "LawY’s help on Connected Agents", "href": "https://help.lawy.ai/en/articles/17607791-lawy-connected-agents" },
+    { "label": "LawY’s terms and conditions", "href": "https://www.lawy.ai/terms-and-conditions" },
+    { "label": "LEAP’s FairPay article", "href": "https://community.leap.com.au/s/article/FairPay-by-LEAP-AU" }
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "smokeball"
+   ],
+   "text": "Smokeball’s help for LawY in Archie no longer mentions sending research to a lawyer for verification, and the button is now called Legal Question. Archie gained new models on 13 November.",
+   "src": {
+    "label": "Smokeball’s “Using LawY in Archie for legal research”",
+    "href": "https://support.smokeball.com/hc/en-au/articles/33653338648599-Using-LawY-in-Archie-for-legal-research"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "actionstep"
+   ],
+   "text": "Actionstep’s pricing page now sells four packages. Trace and Acumen come in the Performance and Intelligence packages, and are add-ons with Connection. Prices still aren’t published.",
+   "src": {
+    "label": "Actionstep’s pricing page",
+    "href": "https://www.actionstep.com/pricing/"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "compass"
+   ],
+   "text": "Compass’s connector page now says sensitive personal data is filtered out, without naming medical details. Anthropic’s steps for adding a custom connector in Claude have changed, and Google moved the Gemini Enterprise menu path on 11 November.",
+   "src": {
+    "label": "Compass’s connector help page",
+    "href": "https://mcp.compass.education/help"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "seqta"
+   ],
+   "text": "Tes’s help article on SEQTA’s Microsoft Teams link, edited on 13 November, says Tes Support has to switch the link on for a school first. Nothing about SEQTA’s AI changed.",
+   "src": {
+    "label": "Tes’s “Integrating SEQTA with MS Teams”",
+    "href": "https://seqta.help.tes.com/support/solutions/articles/75000141305-integrating-seqta-with-ms-teams"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "slack"
+   ],
+   "text": "Microsoft now lists its own Slack connector for Copilot. Slack now allows fifteen automatic Slackbot task runs a day, and Salesforce’s sub-processor list now names OpenAI as an AI provider for Slack.",
+   "src": {
+    "label": "Microsoft’s connectors gallery",
+    "href": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "zoom"
+   ],
+   "text": "Zoom’s Claude, ChatGPT and Copilot connections can now create, update or cancel meetings, after asking. Zoom’s prices are now labelled as excluding GST, with the amounts unchanged, and My Notes now works on Zoom Phone calls.",
+   "src": {
+    "label": "Zoom’s Claude connector page",
+    "href": "https://developers.zoom.us/docs/mcp/plug-ins-and-connectors/claude-connector/"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "dropbox"
+   ],
+   "text": "Dropbox has taken down its Dash price page, so the guide no longer lists Dash prices. Its Claude page, updated 12 November, adds sending documents for signature through Dropbox Sign, and a beta that connects a whole Claude team at once.",
+   "src": {
+    "label": "Dropbox’s “Connect Dropbox to Claude”",
+    "href": "https://help.dropbox.com/integrations/connect-dropbox-to-claude"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "notion"
+   ],
+   "text": "Notion has a new credit system for its AI. Each Business and Enterprise seat now includes 1,500 Standard and 500 Select credits a month, and AI Meeting Notes starts using credits on 1 December 2026. Admin controls for outside AI apps have moved to Settings, then Notion MCP.",
+   "src": {
+    "label": "Notion’s post on its AI credits",
+    "href": "https://www.notion.com/blog/notion-ai-more-for-less"
+   },
+   "also": [
+    { "label": "Notion’s help on which features use credits", "href": "https://www.notion.com/help/standard-select-and-notion-credits-eligible-features" },
+    { "label": "Notion’s help on Notion MCP", "href": "https://www.notion.com/help/notion-mcp" }
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "shopify"
+   ],
+   "text": "Shopify now lists Australia for selling through Google’s AI Mode and Gemini, alongside the US and Canada, with checkout still rolling out. Microsoft now lists Shopify among its Copilot connectors, and Sidekick can generate apps on the Basic plan.",
+   "src": {
+    "label": "Shopify’s help page on Google AI Mode and Gemini",
+    "href": "https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts/google"
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "changed",
+   "tools": [
+    "mailchimp"
+   ],
+   "text": "Mailchimp’s Australian pricing page now redirects to its main pricing page, which still shows Australian dollar estimates. Essentials now has a 14-day free trial, and Premium is described as unlimited contacts.",
+   "src": {
+    "label": "Mailchimp’s pricing page",
+    "href": "https://mailchimp.com/pricing/marketing/"
+   }
+  },
+  {
    "date": "2026-11-13",
    "kind": "changed",
    "tools": [

@@ -1,27 +1,27 @@
 # Zoom: the AI inside it, and the AI that connects to it
 
-Researched 17 October 2026 from vendor documentation. Every line is tagged with its source.
+Researched 18 November 2026 from vendor documentation. Every line is tagged with its source.
 
 ## The short version
 
 - Zoom has retired the name "AI Companion". Its built-in AI features now go by plain names, like meeting summary, and Zoom groups them as Zoom AI. [S4] [S7] [S17]
 - Paid Zoom Workplace plans include the core AI at no extra cost, including meeting summaries, in-meeting questions and AI note-taking. The free Basic plan gets summaries for three meetings a month. [S4] [S1]
-- ZoomMate is Zoom's paid AI agent. With the currency set to Australian dollars, Zoom lists it at A$30.40 a user a month, or A$25.33 a month billed annually, with 2,200 AI credits a month. [S2]
+- ZoomMate is Zoom's paid AI agent. With the currency set to Australian dollars, Zoom lists it at A$30.40 a user a month, or A$25.33 a month billed annually, excluding GST, with 2,200 AI credits a month. Zoom's whitepaper says it's only available to customers hosted on Zoom's US-based infrastructure. [S2] [S16]
 - Zoom says it doesn't use your meeting audio, video, chat, screen sharing or other "communications-like" content to train its own or third-party AI models. [S18]
 - When meeting summary or meeting questions is on, everyone in the meeting sees a lit AI icon. Admins can add a custom message and require people to agree to recording and transcription. [S11] [S12]
-- My Notes is the one to watch. In Microsoft Teams, Google Meet or in-person meetings it transcribes your device's audio, and Zoom gives the other people no notice. [S14]
+- My Notes is the one to watch. In Microsoft Teams, Google Meet or in-person meetings it transcribes your device's audio, and Zoom gives the other people no notice. [S14] [S25]
 - Accounts hosted in Australia run Zoom's AI on Zoom's own models and Zoom-managed copies of other models on Amazon Bedrock. Some features, including ZoomMate's agents and deep research, aren't offered that way. [S9] [S15]
-- Claude and ChatGPT each have official Zoom connections. They read meeting summaries, transcripts and recordings, and create Zoom documents after you confirm. [S34] [S41]
-- Microsoft Copilot connects two ways: Microsoft's own Zoom Meetings connector, and Zoom's "Zoom for Cowork" app. [S44] [S43]
+- Claude and ChatGPT each have official Zoom connections. They read meeting summaries, transcripts and recordings, and create Zoom documents after you confirm. Zoom says both can now create, update or cancel meetings too, after asking. [S34] [S41] [S57]
+- Microsoft Copilot connects two ways: Microsoft's own Zoom Meetings connector, and Zoom's own app, now listed as "Zoom Connector" (formerly Zoom for Cowork). [S44] [S58]
 - We found no official connection between Zoom and Google Gemini. [S47] [S49]
 
 ## The tool, and the plans that matter
 
 Zoom Workplace puts Zoom's meetings together with team chat, phone, mail, calendar, whiteboards and documents. [S1]
 
-These are the plans on Zoom's pricing pages with the currency set to Australian dollars, read from Perth on 17 October 2026. [S1] [S2] [S3]
+These are the plans on Zoom's pricing pages with the currency set to Australian dollars, read from Perth on 18 November 2026. [S1] [S2] [S3]
 
-| Plan | Price a month (AUD, as shown) | AI included | Worth knowing |
+| Plan | Price a month (AUD, excluding GST, as shown) | AI included | Worth knowing |
 |---|---|---|---|
 | Basic | Free | Meeting summaries for 3 hosted meetings a month, 3 AI note-taking uses and 20 AI queries | 40-minute meetings, 100 participants |
 | Pro | A$25.99 per user paying monthly, or A$21.66 billed annually | Unlimited meeting summaries, in-meeting questions and AI note-taking. 8 custom summary templates a month. | 30-hour meetings, 10 GB of cloud recording per licence |
@@ -32,8 +32,9 @@ These are the plans on Zoom's pricing pages with the currency set to Australian 
 
 Sources for the table: [S1] [S2] [S3] [S4]
 
-- When we first loaded the pricing page it showed US dollars. Switching the currency selector to Australian dollars gave the prices above. [S1]
-- Zoom's FAQ says any GST is added in the shopping cart before checkout, depending on tax law and your details. It doesn't say whether listed prices include GST. [S1]
+- Zoom's pricing pages have a currency selector. The prices above are with it set to Australian dollars. [S1]
+- The Australian-dollar prices are now labelled "excluding GST", and Zoom says prices shown exclude applicable taxes and fees. Its FAQ says any GST is added in the shopping cart before checkout, depending on tax law and your details. [S1] [S2] [S3]
+- Extra AI credits come in packs, from A$38 for 2,750 credits to A$152 for 11,500, valid for 12 months, excluding GST. [S2]
 - Zoom's support articles also name Pro Plus, Business Plus, Enterprise Plus and Enterprise Bundle plans. The pricing pages we read don't price them. [S19]
 - The comparison table says AI features don't apply to users with Basic permissions on a paid account. [S1]
 - Zoom says many AI features, including meeting summaries and note-taking, don't use AI credits. Credits pay for metered features, such as ZoomMate's agents and AI-made slides and spreadsheets. [S29]
@@ -162,13 +163,14 @@ Sources for the table: [S1] [S2] [S3] [S4]
 
 **What it does**
 
-- A personal note-taker for Zoom meetings, other platforms' meetings such as Microsoft Teams and Google Meet, and in-person conversations. [S14]
+- A personal note-taker for Zoom meetings, Zoom Phone calls, other platforms' meetings such as Microsoft Teams and Google Meet, and in-person conversations. [S14] [S25]
 - It combines your own notes with a transcript to produce detailed notes after the meeting. [S14]
 - In other apps and in person, it uses your computer's microphone and system audio, once you've turned it on. [S14]
 
 **Where to find it**
 
 - Admins go to **Admin Center > Settings > Notes** and use **Enable My Notes** and its sub-settings, such as **Allow participants to transcribe meetings with My Notes**. [S25]
+- Admins can allow My Notes on Zoom Phone calls separately. They can also limit it to Zoom meetings, or to Zoom and in-person meetings, which keeps it out of Teams and Google Meet. [S25] [S14]
 - Saved notes are in Zoom Hub under My Notes, on the meeting card and in Canvas. [S14]
 - The desktop app can show a **Take notes** prompt when it detects your microphone in use. [S26]
 
@@ -180,9 +182,10 @@ Sources for the table: [S1] [S2] [S3] [S4]
 
 - Notes belong to the person who made them and aren't shared automatically. Authorised account admins can view them in the admin portal. [S14]
 - Zoom deletes the audio once transcription is complete. The notes and transcript stay in your account under your retention settings. [S14]
-- On mobile, the recording of a non-Zoom meeting is deleted by default. An admin setting can save it to cloud recording storage instead. [S26] [S25]
+- On mobile, the recording of a non-Zoom meeting is deleted by default. The **Auto-save recordings of non-Zoom meetings in My Notes on mobile** setting keeps it in a **My Notes recordings** tab instead. [S26] [S25]
 - In a Zoom meeting, others see a banner, a transcription icon and a pencil icon next to anyone using My Notes, and the host can stop it. [S11] [S14]
 - In other platforms' meetings, Zoom gives the other people no notice and their host can't stop it. Zoom reminds the user to follow the law, "which may include providing notice". [S14] [S26]
+- On Zoom Phone calls, the other person hears a voice announcement when transcription starts and when it stops, but not when it's paused. They can only stop it by asking you. [S14]
 - Muting yourself in Teams or a browser doesn't stop My Notes hearing your microphone. You have to pause it in My Notes. [S14]
 - Zoom's zero data retention option for summaries doesn't cover My Notes, which has its own retention settings. [S14] [S27]
 - Admins can auto-delete notes after a set time. Deleted notes sit in the trash for 30 days, but My Notes transcripts are deleted permanently with no trash. [S27]
@@ -251,6 +254,7 @@ Sources for the table: [S1] [S2] [S3] [S4]
 - Zoom calls ZoomMate "an agentic AI work surface". It searches Zoom, the web and connected business systems, then helps finish the work. [S5]
 - It can draft documents, slides and spreadsheets from meetings, schedule events and update records in other systems. [S5]
 - AI agents can sit in Zoom Chat channels. When they're in a channel, a notice says "AI agents present". [S6] [S11]
+- Agent Teams, where several agents work on parts of a project under a lead agent, went live at Zoom's Zoomtopia event on 20 October 2026. [S62]
 - Its connectors reach Salesforce, Jira, Slack, Google Calendar, Confluence, Workday, Outlook, OneDrive and ServiceNow. [S30]
 - It can browse the web and act on web pages through a Chrome extension or a cloud browser. [S30] [S18]
 
@@ -274,6 +278,7 @@ Sources for the table: [S1] [S2] [S3] [S4]
 **In Australia**
 
 - Zoom's launch named North America, with APAC expected later in 2026. Its Australian-dollar pricing page now lists ZoomMate. [S5] [S2]
+- Zoom's whitepaper, updated 10 November 2026, says ZoomMate "is currently only available to customers hosted on Zoom's United States-based infrastructure", and only in English. [S16] [S8]
 - Under ZM+, ZoomMate's AI agents, deep research, web search and live voice translation aren't available. [S15]
 - Zoom says ZoomMate "may not be available for select verticals and select regional customers". [S30]
 
@@ -328,25 +333,27 @@ Most of these connections read what Zoom's own AI has already made, so they need
 
 **What it can see and do**
 
-- Search Zoom Meetings, Zoom Chat and Zoom Canvas in plain language. [S34]
-- Retrieve AI summaries, transcripts, recordings, documents, whiteboards and next steps. [S34]
-- Create a Zoom Doc or follow-up Canvas from meeting content. Zoom's example says "Claude will confirm that you want to create a new Zoom Doc". [S34]
+- Search Zoom meetings by topic, attendees or date, plus Zoom Chat, phone calls and voicemail, docs, whiteboards and calendar events. [S34]
+- Bring in a meeting's transcript, AI summary, next steps and recording, and your My Notes notes, including from Teams, Google Meet, Webex and in-person meetings. [S34]
+- Turn a recap into a Canvas doc and share it. Zoom's example says Claude asks before creating and sharing the doc. [S34]
+- Create, update or cancel meetings, and use in-meeting controls when you host. Claude asks for approval before these actions unless you've set them to **Always allow**. [S34]
 - The Zoom Canvas connector can edit, rename, share and delete Canvas files, change link access and transfer ownership, all at your request. [S36]
-- You only see assets for meetings you hosted, or ones the host gave you access to. [S34]
+- You only see assets for meetings you hosted, or ones the host gave you access to, and notes you made or that were shared with you. [S34]
 - Claude can ask before using a tool. You can set each tool to **Always allow**, **Needs approval** or **Blocked**. [S51]
 
 **What you need**
 
-- A licensed user on Workplace Pro or above, and a Zoom account owner or admin with privileges. [S34]
-- Meeting summary and smart recording switched on, because the connector depends on them. Video features need cloud recordings. [S34]
+- A licensed user on Workplace Pro or above, and a Zoom account owner or admin with privileges, who may need to approve the app. Zoom applies the same requirements to all its own connections. [S34] [S58]
+- Meeting summary or smart recording switched on for the meetings you want to search. Video features need cloud recording with smart recording. [S34]
+- Claude organisation Owners can choose which Zoom tools are available. [S34]
 - For Zoom Canvas, non-admins can add it only if it's pre-approved in the Zoom Marketplace. [S36]
 - A Claude account. Zoom's page doesn't name a Claude plan. On Claude Team and Enterprise, an Owner adds the connector first. [S34] [S50]
 
-**Steps to connect** (Anthropic and Zoom docs, not dated)
+**Steps to connect** (Anthropic's docs, not dated, and Zoom's, last updated November 2026)
 
 1. In Claude, go to **Customize > Connectors** and select **Discover**. [S51]
 2. Search for Zoom for Claude, open it and select **Connect to Claude**. [S51] [S34]
-3. Sign in to Zoom and approve the access it asks for. [S34]
+3. Sign in to Zoom. If the Zoom App Marketplace asks, select **Add**, review the permissions and select **Allow**. [S34]
 4. In a chat, select **+**, then **Connectors**, and switch Zoom on. [S51]
 5. Ask for something from a recorded meeting, such as its action items. [S34]
 
@@ -381,6 +388,7 @@ Zoom Canvas (Zoom's support article, last modified 11 September 2026):
 
 - Read meeting details, past meetings, summaries, transcripts, recordings and files. It can find the moment a topic came up and play it in an embedded player. [S41] [S39]
 - Create agendas and other files attached to meetings, and Zoom Canvas docs. ChatGPT confirms first, and the doc is only made after you click **Create**. [S41]
+- Zoom's developer docs say it can also create, update or cancel a meeting, and that ChatGPT asks before using write actions. [S57]
 - The Whiteboard connector can create, update and delete whiteboards and change who has access. [S42]
 - Your ChatGPT permission setting decides when it asks first. OpenAI lists creating, editing or deleting a file as actions that may need extra review. [S52]
 
@@ -389,13 +397,14 @@ Zoom Canvas (Zoom's support article, last modified 11 September 2026):
 - A licensed user on Workplace Pro or above, a Zoom account owner or admin with privileges, and a ChatGPT account. [S41]
 - Meeting summary or smart recording switched on. The Ask tool needs a ZoomMate or Custom AI Companion licence. [S41]
 - OpenAI says availability depends on the plugin, your plan and workspace settings, and some connections need admin approval. [S39]
+- In ChatGPT workspaces, admins can turn individual Zoom actions on or off. If you see **Request** instead of **Add** in the Zoom App Marketplace, a Zoom admin must approve the app. [S57]
 
-**Steps to connect** (Zoom's support article, last modified 17 September 2026)
+**Steps to connect** (Zoom's developer docs, last updated November 2026)
 
-1. Sign in to ChatGPT, click your name, then **Settings**. [S41]
-2. Click **Apps & Connectors**, then **Zoom**, then **Connect**. [S41]
-3. On the Zoom Marketplace page, click **Add** at the top right. [S41]
-4. Confirm the permissions and click **Allow**, then finish the authorisation back in ChatGPT. [S41]
+1. In ChatGPT, select **Plugins** in the sidebar. [S57]
+2. Search for Zoom and open it. [S57]
+3. Select **Install plugin**, then **Connect**. [S57]
+4. Sign in to Zoom. If the Zoom App Marketplace asks, select **Add**, review the permissions and select **Allow**. [S57]
 5. In a chat, click the add icon, then **More**, then **Zoom**. Or type @Zoom or /Zoom. [S41]
 
 **To disconnect**
@@ -416,22 +425,23 @@ Zoom Canvas (Zoom's support article, last modified 11 September 2026):
 **Official?**
 
 - Yes, two ways. Microsoft builds a "Zoom Meetings" connector for Microsoft 365 Copilot. [S44] [S46]
-- Zoom builds "Zoom for Cowork", an app for Microsoft 365 Copilot's Cowork. [S43]
+- Zoom builds its own app for Microsoft 365 Copilot's Cowork. The Microsoft 365 admin center now lists it as "Zoom Connector". Its previous name was Zoom for Cowork. [S58] [S43]
+- Microsoft's partner gallery also lists a Zoom-built federated connector called "Zoom", for live access. Zoom's pages don't say whether it's the same app as Zoom Connector. [S59] [S60]
 
 **What it can see and do**
 
 - The Zoom Meetings connector copies meeting transcripts, key points, summaries and details into Microsoft 365, so Copilot can answer questions about them. [S44] [S45]
 - Only the meeting's owner can see its content in Copilot. Other participants can't, even if they attended. [S44]
-- Zoom for Cowork lets Copilot users search their Zoom meetings and retrieve summaries, recordings, transcripts and whiteboards. [S43]
-- It can create a Zoom Canvas document of action items. Copilot confirms first, and the doc is created after you click **Create**. [S43]
+- Zoom's app works live with each person's own Zoom sign-in. It finds meetings and brings in transcripts, summaries, recordings and My Notes notes, and searches Zoom Chat and docs. [S58]
+- It can create a Zoom Canvas document of action items, and create, update or cancel Zoom meetings. Copilot asks you to confirm first. [S58] [S43]
 
 **What you need**
 
-- For Microsoft's connector: an AI administrator in your Microsoft 365 tenant, a paid Zoom Business or Enterprise plan with cloud recording on, and a Zoom admin to sign in and consent. [S44]
-- For Zoom for Cowork: a Zoom owner or admin, a Microsoft 365 Copilot account with admin rights to deploy it, and meeting summary or smart recording switched on. [S43]
-- Zoom for Cowork's agentic search needs a ZoomMate licence. [S43]
+- For Microsoft's connector: an AI administrator in your Microsoft 365 tenant, a paid Zoom Business or Enterprise plan with cloud recording and audio transcripts on, and a Zoom admin to sign in and consent. [S44]
+- For Zoom's app: a licensed user on Workplace Pro or above, a Zoom owner or admin with privileges, a Microsoft 365 admin to deploy it, and meeting summary or smart recording switched on. [S58]
+- Its Ask tool needs a ZoomMate licence. Search and the other tools don't. [S58]
 
-**Steps to connect** (Microsoft Learn, updated 6 October 2026)
+**Steps to connect** (Microsoft Learn, updated 6 November 2026)
 
 1. In the Microsoft 365 admin center, set up the Zoom Meetings connector and give it a display name. [S44]
 2. Under authentication, select **OAuth 2.0**, then **Authorize**, and sign in with a Zoom administrator account. [S44]
@@ -439,21 +449,22 @@ Zoom Canvas (Zoom's support article, last modified 11 September 2026):
 4. Tick the box next to the Notice section, then choose **Create**. Indexing starts straight away. [S44]
 5. Check the connection shows **Ready** under **Copilot > Connectors > Your connections**, then ask Copilot about a recent recorded meeting. [S44]
 
-Zoom for Cowork (Zoom's support article, last modified 11 September 2026):
+Zoom's app, now listed as Zoom Connector (Zoom's developer docs, last updated November 2026):
 
-1. In the Microsoft 365 admin center, click **Show all**, then **Settings**, then **Integrated apps**. [S43]
-2. Select **Get Apps**, search for **Zoom for Cowork**, review its permissions and terms, choose who gets it and click **Deploy**. [S43]
-3. In Microsoft 365 Copilot, click **Cowork** at the top left, then the plugin icon, and check Zoom is switched on. [S43]
-4. Sign in to Zoom when asked and click **Allow**. [S43]
+1. In the Microsoft 365 admin center, click **Show all**, then **Settings**, then **Integrated apps**. [S58] [S43]
+2. Select **Get apps**, search for **Zoom Connector** (publisher Zoom Communications, Inc.), review its permissions and terms, choose who gets it and click **Deploy**. [S58]
+3. In Microsoft 365 Copilot, select **Cowork**, then the plugins icon (a puzzle piece), and turn Zoom on. [S58]
+4. Sign in to Zoom and select **Allow**. [S58]
 
 **To disconnect**
 
-- Zoom for Cowork: in the Microsoft 365 admin center, open **Settings > Integrated apps**, select the Zoom app and click **Remove**, then **Remove** again to confirm. [S43]
+- Zoom's app: in the Microsoft 365 admin center, open **Settings > Integrated apps**, select the Zoom app and click **Remove**, then **Remove** again to confirm. [S43]
 - The Microsoft connector page we read doesn't give removal steps. [S44]
 
 **Limits**
 
 - Microsoft says the Copilot connector app in the Zoom Marketplace "isn't currently available in the European Union". It doesn't mention Australia. [S44]
+- Microsoft's connector indexes Zoom meetings only. It skips webinars, meeting chat and local recordings. [S44]
 - Zoom's API rate limits can slow a full refresh. By default Microsoft checks for changes every 15 minutes and runs a full crawl daily. [S44]
 - Microsoft says Copilot Chat can't write back to other systems through indexing connectors by default. [S45]
 
@@ -468,6 +479,7 @@ Zoom for Cowork (Zoom's support article, last modified 11 September 2026):
 - Google's lists of apps that connect to the Gemini app, for personal and for work or school accounts, don't include Zoom. [S47] [S48]
 - Gemini Enterprise's list of third-party data sources has no Zoom connector. Its "LegalZoom" and "ZoomInfo" connectors are other companies' products. [S49]
 - Zoom's whitepaper says Google Gemini models are among those Zoom AI uses inside its own features. That happens within Zoom and isn't a connection you set up. [S9]
+- Zoom's Zoomtopia summary says its Search and Ask APIs, a developer route, can be queried from several AI tools, Gemini among them. We found no Gemini listing or Zoom setup guide for it. [S61]
 
 **What you need**
 
@@ -562,6 +574,8 @@ Zoom for Cowork (Zoom's support article, last modified 11 September 2026):
 - Zoom shows a lit AI icon for summaries and questions, and a banner, transcription icon and pencil icon for My Notes in Zoom meetings. [S11]
 - People can choose not to see the My Notes banner again, so they may not see it in later meetings. [S11]
 - Outside Zoom meetings, My Notes gives the other people no notice. Zoom reminds users to follow the law, which may include giving notice. [S14] [S26]
+- On Zoom Phone calls, My Notes announces when transcription starts and stops, but a pause isn't announced. [S14]
+- Admins can keep My Notes out of other platforms' meetings altogether. [S25] [S14]
 - Our note: whether you need people's consent depends on where you and they are. General information, not legal advice.
 
 **Summaries travel**
@@ -602,6 +616,7 @@ Zoom for Cowork (Zoom's support article, last modified 11 September 2026):
 
 - Zoom says ZoomMate "may take unintended actions", and that you're responsible for what it does. [S30]
 - Zoom bans using ZoomMate for decisions with legal or similarly significant effects, such as employment or lending, with little or no human input. [S30]
+- Zoom says its Claude, ChatGPT and Copilot connections can now create, update or cancel meetings after asking. Our suggestion: keep those actions on approval. [S34] [S57] [S58]
 
 ## Announced changes
 
@@ -612,14 +627,16 @@ Zoom for Cowork (Zoom's support article, last modified 11 September 2026):
 - **1 June 2026:** Zoom said ZoomMate's availability "may vary by customer type, region, and industry vertical at launch". [S56]
 - **22 June 2026:** AI agents arrived in ZoomMate. Zoom AI On-Prem launched, with meeting summaries, Q&A and agentic search promised "later this year". [S6]
 - **24 June 2026:** AI Companion's features were folded into Zoom Workplace under their functional names. [S4]
-- **2 July 2026:** Zoom's developer changelog recorded that the AI Companion brand was retired. Planned search and ask APIs weren't released, and Zoom points to its MCP server instead. [S7]
+- **13 July 2026:** Zoom's developer changelog recorded that the AI Companion brand was retired. Planned search and ask APIs weren't released, and Zoom points to its MCP server instead. [S7]
+- **20 October 2026 (Zoomtopia):** ZoomMate Agent Teams went live. Zoom said My Notes Workflows were expected in October 2026, and a standalone My Notes mobile app and "follow the meeting" catch-ups in December 2026. [S62] [S61]
+- **20 October 2026 (Zoomtopia):** Zoom listed coming admin tools: central AI management and deepfake risk detection in December 2026, custom AI guardrails in the first quarter of 2027, and Compliance Manager support for My Notes and Canvas in January 2027. [S61]
+- **November 2026:** Zoom said people would be able to launch Zoom workflows from Claude and Codex. [S62]
 - **Promotion:** Zoom Workflow Automation offers unlimited runs "for a limited time", and pricing may change afterwards. [S1]
-- **Microsoft:** write actions through Copilot connectors start "early October 2026". [S45]
+- **Microsoft:** its connectors overview still says write actions start "early October 2026". Its federated connectors page, updated 16 November 2026, now describes create, update and delete actions that need the user's approval. [S45] [S60]
 
 ## What we couldn't establish
 
-- **Whether ZoomMate is fully launched in Australia.** The June launch named North America only, but Zoom's Australian-dollar pricing page lists it. [S5] [S2]
-- **GST.** Zoom's pages don't say whether the listed prices include GST. [S1]
+- **Whether ZoomMate is available to Australian accounts.** Zoom's whitepaper says it's only for customers hosted on Zoom's US-based infrastructure, yet the Australian-dollar pricing page sells it. An Australian business hosted in the US may be able to use it. That's our inference. [S16] [S2]
 - **Prices for Pro Plus, Business Plus and Enterprise Plus.** These plans appear in support articles but not on the pricing pages we read. [S19] [S1]
 - **Which setup your account uses.** Zoom says AU-hosted accounts use ZM+, and that customers should ask Zoom support which deployment they have. An Australian business could be on Zoom's US-based cluster instead. [S9] [S15]
 - **Where Zoom AI runs for Australian accounts.** The whitepaper describes ZM+ for AU-hosted accounts, while the support article says data may be processed in US-based data centres. [S9] [S17]
@@ -628,71 +645,78 @@ Zoom for Cowork (Zoom's support article, last modified 11 September 2026):
 - **Who sees the Custom Message.** Zoom's whitepaper doesn't make clear whether it's shown to everyone in the meeting or only to the person turning the feature on. [S12]
 - **Notice in Teams and Google Meet.** Zoom's article on Zoom AI joining third-party meetings doesn't describe any notice inside those meetings. [S24]
 - **Microsoft's connector in Australia.** Microsoft only says the Zoom Marketplace app isn't available in the EU. [S44]
-- **ChatGPT menu names.** Zoom's article says **Apps & Connectors**, while OpenAI's current help pages say **Plugins**. [S41] [S53]
+- **ChatGPT menu names.** Zoom's developer docs now say instructions using **Apps & Connectors** are out of date, but Zoom's ChatGPT and Whiteboard support articles still use them. We followed the developer docs and OpenAI's help pages, which say **Plugins**. [S57] [S41] [S42] [S53]
+- **Whether Zoom's federated "Zoom" connector is the same as Zoom Connector.** Microsoft's partner gallery lists one, and Zoom's pages describe the other. Neither says. [S59] [S58]
 - **Removing Zoom for ChatGPT.** Zoom's ChatGPT article says **Manage > Added Apps**, while its general Marketplace article says **My Library**. [S41] [S55]
 - **Which Claude plans work with Zoom for Claude.** Neither Anthropic's listing nor Zoom's page says. [S33] [S34]
 - **Zoom's MCP server addresses.** Zoom's per-product MCP pages wouldn't load for us. [S37]
-- **Dates on Zoom's support articles.** We took their last-modified dates from each page's metadata. [S17]
+- **Dates on Zoom's support articles.** Our browser couldn't open Zoom's support site on 18 November, so we read those articles with a fetch tool that doesn't show their last-modified dates. Their rows keep the dates we saw in October. [S17]
 
 ## Sources
 
-All sources were read on 17 October 2026.
+All sources were read on 18 November 2026.
 
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
-| S1 | Zoom Workplace Pricing | Zoom | https://zoom.us/pricing | No date shown (©2026). Read from Perth in a browser with the currency set to Australian dollars | 17 Oct 2026 |
-| S2 | ZoomMate Pricing | Zoom | https://zoom.us/pricing/aic | No date shown. Read with the currency set to Australian dollars | 17 Oct 2026 |
-| S3 | My Notes Pricing | Zoom | https://zoom.us/pricing/my-notes | No date shown. Read with the currency set to Australian dollars | 17 Oct 2026 |
-| S4 | Meet ZoomMate: Zoom's next chapter in AI | Zoom blog | https://www.zoom.com/en/blog/zoom-ai-companion-zoommate/ | 24 Jun 2026 | 17 Oct 2026 |
-| S5 | Zoom launches ZoomMate: the first AI teammate built to turn conversations into completed work | Zoom (press release) | https://news.zoom.com/zoom-launches-zoommate/ | 1 Jun 2026 | 17 Oct 2026 |
-| S6 | Zoom introduces AI agents as part of ZoomMate and Zoom AI On-Prem for regulated enterprises | Zoom (press release) | https://news.zoom.com/zoom-introduces-ai-agents-as-part-of-zoommate-and-zoom-ai-on-prem-for-regulated-enterprises/ | 22 Jun 2026 | 17 Oct 2026 |
-| S7 | AI Companion Changelog | Zoom Developer | https://developers.zoom.us/changelog/ai-companion/ | Dated entries, latest 2 Jul 2026 | 17 Oct 2026 |
-| S8 | Zoom AI Whitepaper | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper | "Last updated: September 25, 2026" | 17 Oct 2026 |
-| S9 | Models, Processing, Storage, and Usage (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/models-processing-storage-and-usage | No date on the page (whitepaper last updated 25 Sep 2026) | 17 Oct 2026 |
-| S10 | Data Governance and Privacy (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/data-governance-and-privacy | No date on the page (whitepaper last updated 25 Sep 2026) | 17 Oct 2026 |
-| S11 | User Transparency and Notice (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/user-transparency-and-notice | No date on the page (whitepaper last updated 25 Sep 2026) | 17 Oct 2026 |
-| S12 | Administrative Controls (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/administrative-controls | No date on the page (whitepaper last updated 25 Sep 2026) | 17 Oct 2026 |
-| S13 | Zoom AI Features (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/zoom-ai-features | No date on the page (whitepaper last updated 25 Sep 2026) | 17 Oct 2026 |
-| S14 | My Notes (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/my-notes | No date on the page (whitepaper last updated 25 Sep 2026) | 17 Oct 2026 |
-| S15 | Feature Availability Table (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/feature-availability | No date on the page (whitepaper last updated 25 Sep 2026) | 17 Oct 2026 |
-| S16 | ZoomMate (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/zoommate | No date on the page (whitepaper last updated 25 Sep 2026) | 17 Oct 2026 |
-| S17 | Getting started with Zoom AI features | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057623 | Last modified 15 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S18 | How Zoom AI features handle your data | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057861 | Last modified 30 Sep 2026 (page metadata) | 17 Oct 2026 |
-| S19 | Using Meeting Summary with AI | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0058013 | Last modified 16 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S20 | Asking in-meeting questions with AI | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057748 | Last modified 24 Sep 2026 (page metadata) | 17 Oct 2026 |
-| S21 | Using smart recording with AI | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061101 | Last modified 5 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S22 | Enabling or disabling meeting transcripts | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0085675 | Last modified 16 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S23 | Customizing the recording consent disclaimer | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0068402 | Last modified 24 Sep 2026 (page metadata) | 17 Oct 2026 |
-| S24 | Enabling or disabling Zoom AI to join third-party meetings for meeting summaries | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0080357 | Last modified 14 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S25 | Enabling or disabling the My Notes feature | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0083850 | Last modified 16 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S26 | Using My Notes | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0083849 | Last modified 16 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S27 | Managing retention policies for My Notes | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0073651 | Last modified 16 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S28 | Managing Data & Storage location | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066473 | Last modified 15 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S29 | Understanding and managing Zoom AI Credits | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0085614 | Last modified 16 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S30 | Using ZoomMate | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0083738 | Last modified 16 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S31 | Sub-processors | Zoom | https://www.zoom.com/en/trust/subprocessors/ | Effective 2 Oct 2026 | 17 Oct 2026 |
-| S32 | Zoom Privacy Statement | Zoom | https://www.zoom.com/en/trust/privacy/privacy-statement/ | "Last updated: September 17, 2026" | 17 Oct 2026 |
-| S33 | Zoom for Claude (connector listing) | Anthropic | https://claude.com/connectors/zoom-for-claude | "Added April 2026" | 17 Oct 2026 |
-| S34 | Zoom for Claude Connector | Zoom Developer Docs | https://developers.zoom.us/docs/mcp/plug-ins-and-connectors/claude-connector/ | No date shown | 17 Oct 2026 |
-| S35 | Zoom unlocks meeting intelligence for AI workflows with Claude | Zoom (press release) | https://news.zoom.com/zoom-meeting-intelligence-in-claude/ | 9 Apr 2026 | 17 Oct 2026 |
-| S36 | Using the Zoom Canvas for Claude connector | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0088594 | Last modified 11 Sep 2026 (page metadata) | 17 Oct 2026 |
-| S37 | Connect to Zoom MCP Servers | Zoom Developer Docs | https://developers.zoom.us/docs/mcp/servers/connect-to-zoom-mcp-servers/ | No date shown | 17 Oct 2026 |
-| S38 | Zoom connects conversations and organizational context across AI tools through expanded MCP capabilities | Zoom (press release) | https://news.zoom.com/zoom-mcp-expanded-capabilities/ | 18 May 2026 | 17 Oct 2026 |
-| S39 | Zoom plugin for ChatGPT | OpenAI | https://openai.com/business/plugins/zoom/ | No date shown | 17 Oct 2026 |
-| S40 | ChatGPT plugin listing: Zoom | OpenAI | https://chatgpt.com/plugins/plugin_asdk_app_69373a13116c819189d046aea1278836 | No date shown (version 2.0.0) | 17 Oct 2026 |
-| S41 | Using the Zoom for ChatGPT app | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0083574 | Last modified 17 Sep 2026 (page metadata) | 17 Oct 2026 |
-| S42 | Using the Zoom Whiteboard for ChatGPT connector | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0087802 | Last modified 22 Sep 2026 (page metadata) | 17 Oct 2026 |
-| S43 | Using the Zoom for Cowork app | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0088547 | Last modified 11 Sep 2026 (page metadata) | 17 Oct 2026 |
-| S44 | Zoom Meetings connector | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/zoom-connector | Updated 6 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S45 | Microsoft 365 Copilot connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/overview | Updated 12 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S46 | Microsoft-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft | 30 Sep 2026 (page metadata) | 17 Oct 2026 |
-| S47 | Use & manage Connected Apps in Gemini (computer) | Google Gemini Apps Help | https://support.google.com/gemini/answer/13695044?hl=en&co=GENIE.Platform%3DDesktop | No date shown | 17 Oct 2026 |
-| S48 | Use apps connected to Gemini with a work or school Google Account | Google Gemini Apps Help | https://support.google.com/gemini/answer/14959807?hl=en | No date shown | 17 Oct 2026 |
-| S49 | Connect a third-party data source (Gemini Enterprise) | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source | "Last updated 2026-10-15 UTC" | 17 Oct 2026 |
-| S50 | Use connectors to extend Claude's capabilities | Anthropic Help Center | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated today" (17 Oct 2026) | 17 Oct 2026 |
-| S51 | Get started with connectors | Anthropic (Claude docs) | https://claude.com/docs/connectors/getting-started | No date shown | 17 Oct 2026 |
-| S52 | Managing app permissions in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001495-managing-app-permissions-in-chatgpt | "Updated: 15 days ago" (timestamp 2 Oct 2026, UTC) | 17 Oct 2026 |
-| S53 | Connecting and managing app accounts in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt | "Updated: 8 hours ago" (timestamp 17 Oct 2026, UTC) | 17 Oct 2026 |
-| S54 | Getting started with integrations | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066581 | Last modified 16 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S55 | Adding and removing Marketplace Apps for personal use | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0062865 | Last modified 14 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S56 | Getting Started with ZoomMate | Zoom blog | https://www.zoom.com/en/blog/zoommate-getting-started/ | 1 Jun 2026 | 17 Oct 2026 |
+| S1 | Zoom Workplace Pricing | Zoom | https://zoom.us/pricing | No date shown (©2026). Read from Perth in a browser with the currency set to Australian dollars | 18 Nov 2026 |
+| S2 | ZoomMate Pricing | Zoom | https://zoom.us/pricing/aic | No date shown. Read with the currency set to Australian dollars | 18 Nov 2026 |
+| S3 | My Notes Pricing | Zoom | https://zoom.us/pricing/my-notes | No date shown. Read with the currency set to Australian dollars | 18 Nov 2026 |
+| S4 | Meet ZoomMate: Zoom's next chapter in AI | Zoom blog | https://www.zoom.com/en/blog/zoom-ai-companion-zoommate/ | 24 Jun 2026 | 18 Nov 2026 |
+| S5 | Zoom launches ZoomMate: the first AI teammate built to turn conversations into completed work | Zoom (press release) | https://news.zoom.com/zoom-launches-zoommate/ | 1 Jun 2026 | 18 Nov 2026 |
+| S6 | Zoom introduces AI agents as part of ZoomMate and Zoom AI On-Prem for regulated enterprises | Zoom (press release) | https://news.zoom.com/zoom-introduces-ai-agents-as-part-of-zoommate-and-zoom-ai-on-prem-for-regulated-enterprises/ | 22 Jun 2026 | 18 Nov 2026 |
+| S7 | Developer Changelog: AI Companion | Zoom Developer | https://developers.zoom.us/changelog/?product=ai-companion | Dated entries, latest 13 Jul 2026 | 18 Nov 2026 |
+| S8 | Zoom AI Whitepaper | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper | "Last updated: November 10, 2026" | 18 Nov 2026 |
+| S9 | Models, Processing, Storage, and Usage (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/models-processing-storage-and-usage | No date on the page (whitepaper last updated 10 Nov 2026) | 18 Nov 2026 |
+| S10 | Data Governance and Privacy (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/data-governance-and-privacy | No date on the page (whitepaper last updated 10 Nov 2026) | 18 Nov 2026 |
+| S11 | User Transparency and Notice (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/user-transparency-and-notice | No date on the page (whitepaper last updated 10 Nov 2026) | 18 Nov 2026 |
+| S12 | Administrative Controls (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/administrative-controls | No date on the page (whitepaper last updated 10 Nov 2026) | 18 Nov 2026 |
+| S13 | Zoom AI Features (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/zoom-ai-features | No date on the page (whitepaper last updated 10 Nov 2026) | 18 Nov 2026 |
+| S14 | My Notes (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/my-notes | No date on the page (whitepaper last updated 10 Nov 2026) | 18 Nov 2026 |
+| S15 | Feature Availability Table (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/feature-availability | No date on the page (whitepaper last updated 10 Nov 2026) | 18 Nov 2026 |
+| S16 | ZoomMate (Zoom AI Whitepaper) | Zoom (Zoom Library) | https://library.zoom.com/ai/ai-whitepaper/zoommate | No date on the page (whitepaper last updated 10 Nov 2026) | 18 Nov 2026 |
+| S17 | Getting started with Zoom AI features | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057623 | Not visible today; metadata showed 15 Oct 2026 when read on 17 Oct | 18 Nov 2026 |
+| S18 | How Zoom AI features handle your data | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057861 | Not visible today; metadata showed 30 Sep 2026 when read on 17 Oct | 18 Nov 2026 |
+| S19 | Using Meeting Summary with AI | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0058013 | Not visible today; metadata showed 16 Oct 2026 when read on 17 Oct | 18 Nov 2026 |
+| S20 | Asking in-meeting questions with AI | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057748 | Not visible today; metadata showed 24 Sep 2026 when read on 17 Oct | 18 Nov 2026 |
+| S21 | Using smart recording with AI | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061101 | Not visible today; metadata showed 5 Oct 2026 when read on 17 Oct | 18 Nov 2026 |
+| S22 | Enabling or disabling meeting transcripts | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0085675 | Not visible today; metadata showed 16 Oct 2026 when read on 17 Oct | 18 Nov 2026 |
+| S23 | Customizing the recording consent disclaimer | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0068402 | Not visible today; metadata showed 24 Sep 2026 when read on 17 Oct | 18 Nov 2026 |
+| S24 | Enabling or disabling Zoom AI to join third-party meetings for meeting summaries | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0080357 | Not visible today; metadata showed 14 Oct 2026 when read on 17 Oct | 18 Nov 2026 |
+| S25 | Enabling or disabling the My Notes feature | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0083850 | Not visible today; metadata showed 16 Oct 2026 when read on 17 Oct | 18 Nov 2026 |
+| S26 | Using My Notes | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0083849 | Not visible today; metadata showed 16 Oct 2026 when read on 17 Oct | 18 Nov 2026 |
+| S27 | Managing retention policies for My Notes | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0073651 | Not visible today; metadata showed 16 Oct 2026 when read on 17 Oct | 18 Nov 2026 |
+| S28 | Managing Data & Storage location | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066473 | Not visible today; metadata showed 15 Oct 2026 when read on 17 Oct | 18 Nov 2026 |
+| S29 | Understanding and managing Zoom AI Credits | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0085614 | Not visible today; metadata showed 16 Oct 2026 when read on 17 Oct | 18 Nov 2026 |
+| S30 | Using ZoomMate | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0083738 | Not visible today; metadata showed 16 Oct 2026 when read on 17 Oct | 18 Nov 2026 |
+| S31 | Sub-processors | Zoom | https://www.zoom.com/en/trust/subprocessors/ | Effective 2 Oct 2026 | 18 Nov 2026 |
+| S32 | Zoom Privacy Statement | Zoom | https://www.zoom.com/en/trust/privacy/privacy-statement/ | "Last updated: September 17, 2026" | 18 Nov 2026 |
+| S33 | Zoom for Claude (connector listing) | Anthropic | https://claude.com/connectors/zoom-for-claude | "Added April 2026" | 18 Nov 2026 |
+| S34 | Zoom connector for Claude | Zoom Developer Docs | https://developers.zoom.us/docs/mcp/plug-ins-and-connectors/claude-connector/ | "Last updated: November 2026" | 18 Nov 2026 |
+| S35 | Zoom unlocks meeting intelligence for AI workflows with Claude | Zoom (press release) | https://news.zoom.com/zoom-meeting-intelligence-in-claude/ | 9 Apr 2026 | 18 Nov 2026 |
+| S36 | Using the Zoom Canvas for Claude connector | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0088594 | Not visible today; metadata showed 11 Sep 2026 when read on 17 Oct | 18 Nov 2026 |
+| S37 | Connect to Zoom MCP Servers | Zoom Developer Docs | https://developers.zoom.us/docs/mcp/servers/connect-to-zoom-mcp-servers/ | No date shown | 18 Nov 2026 |
+| S38 | Zoom connects conversations and organizational context across AI tools through expanded MCP capabilities | Zoom (press release) | https://news.zoom.com/zoom-mcp-expanded-capabilities/ | 18 May 2026 | 18 Nov 2026 |
+| S39 | Zoom plugin for ChatGPT | OpenAI | https://openai.com/business/plugins/zoom/ | No date shown | 18 Nov 2026 |
+| S40 | ChatGPT plugin listing: Zoom | OpenAI | https://chatgpt.com/plugins/plugin_asdk_app_69373a13116c819189d046aea1278836 | No date shown (version 2.2.0) | 18 Nov 2026 |
+| S41 | Using the Zoom for ChatGPT app | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0083574 | Not visible today; metadata showed 17 Sep 2026 when read on 17 Oct | 18 Nov 2026 |
+| S42 | Using the Zoom Whiteboard for ChatGPT connector | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0087802 | Not visible today; metadata showed 22 Sep 2026 when read on 17 Oct | 18 Nov 2026 |
+| S43 | Using the Zoom for Microsoft 365 Copilot connector | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0088547 | Not visible today; metadata showed 11 Sep 2026 when read on 17 Oct (the article has since been retitled) | 18 Nov 2026 |
+| S44 | Zoom Meetings connector | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/zoom-connector | Updated 6 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S45 | Microsoft 365 Copilot connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/overview | Updated 12 Oct 2026 (page metadata) | 18 Nov 2026 |
+| S46 | Microsoft-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft | Updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S47 | Use & manage Connected Apps in Gemini (computer) | Google Gemini Apps Help | https://support.google.com/gemini/answer/13695044?hl=en&co=GENIE.Platform%3DDesktop | No date shown | 18 Nov 2026 |
+| S48 | Use apps connected to Gemini with a work or school Google Account | Google Gemini Apps Help | https://support.google.com/gemini/answer/14959807?hl=en | No date shown | 18 Nov 2026 |
+| S49 | Connect a third-party data source (Gemini Enterprise) | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source | "Last updated 2026-11-17 UTC" | 18 Nov 2026 |
+| S50 | Use connectors to extend Claude's capabilities | Anthropic Help Center | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated today" (18 Nov 2026) | 18 Nov 2026 |
+| S51 | Get started with connectors | Anthropic (Claude docs) | https://claude.com/docs/connectors/getting-started | No date shown | 18 Nov 2026 |
+| S52 | Managing app permissions in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001495-managing-app-permissions-in-chatgpt | "Updated: yesterday" (timestamp 17 Nov 2026, UTC) | 18 Nov 2026 |
+| S53 | Connecting and managing app accounts in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt | "Updated: yesterday" (timestamp 17 Nov 2026, UTC) | 18 Nov 2026 |
+| S54 | Getting started with integrations | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066581 | Not visible today; metadata showed 16 Oct 2026 when read on 17 Oct | 18 Nov 2026 |
+| S55 | Adding and removing Marketplace Apps for personal use | Zoom Support | https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0062865 | Not visible today; metadata showed 14 Oct 2026 when read on 17 Oct | 18 Nov 2026 |
+| S56 | Getting Started with ZoomMate | Zoom blog | https://www.zoom.com/en/blog/zoommate-getting-started/ | 1 Jun 2026 | 18 Nov 2026 |
+| S57 | Zoom plugin for ChatGPT and Codex | Zoom Developer Docs | https://developers.zoom.us/docs/mcp/plug-ins-and-connectors/codex-plugin/ | "Last updated: November 2026" | 18 Nov 2026 |
+| S58 | Zoom for Microsoft 365 Copilot | Zoom Developer Docs | https://developers.zoom.us/docs/mcp/plug-ins-and-connectors/microsoft-365-copilot/ | "Last updated: November 2026" | 18 Nov 2026 |
+| S59 | Partner-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-partners | Updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S60 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | Updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S61 | Zoom advances its AI strategy with a new Unified Context Layer that helps turn meeting conversations into completed work (Zoomtopia 2026 roundup) | Zoom (press release) | https://news.zoom.com/zoomtopia-2026-news/ | 20 Oct 2026 | 18 Nov 2026 |
+| S62 | Zoom helps teams turn conversations into action with a unified context layer and enhanced My Notes and ZoomMate capabilities | Zoom (press release) | https://news.zoom.com/zoomtopia-2026-ai/ | 20 Oct 2026 | 18 Nov 2026 |

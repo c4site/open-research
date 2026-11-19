@@ -1,6 +1,6 @@
 # Smokeball: the AI inside it, and the AI that connects to it
 
-Researched 17 October 2026 from vendor documentation. Every line is tagged with its source.
+Researched 18 November 2026 from vendor documentation. Every line is tagged with its source.
 
 ## The short version
 
@@ -10,7 +10,7 @@ Researched 17 October 2026 from vendor documentation. Every line is tagged with 
 - You pick the model in Archie's settings. The list includes OpenAI GPT-5.x and Anthropic Claude models in Smokeball, and GPT-4.1 and Google Gemini 3.1 models in the Word add-in. [S15] [S19]
 - Smokeball says Archie runs under zero-data-retention agreements and client data is never used to train AI. It says data stays in its home region "as a principle". [S14]
 - Every user in the firm has Archie by default. A Firm Owner can switch it off for individual staff. [S16] [S18]
-- LawY legal research, with optional checking by a lawyer, comes with the Archie add-on at no extra cost. [S10] [S26]
+- LawY legal research, including Deep Research, comes with the Archie add-on at no extra cost. Smokeball's help article no longer mentions checking by a lawyer. [S10] [S26]
 - We found no official connection between Smokeball and ChatGPT, Claude, Microsoft Copilot or Google Gemini. [S54] [S55] [S56] [S58]
 - Smokeball documents a Zapier integration with triggers and actions, and API access for Prosper+ firms building their own apps. [S33] [S34]
 
@@ -18,7 +18,7 @@ Researched 17 October 2026 from vendor documentation. Every line is tagged with 
 
 Smokeball is legal practice management software for law firms and conveyancers. Its Australian pricing page says it's trusted by more than 34,000 legal professionals worldwide. [S2]
 
-Prices on Smokeball's Australian pricing page, as read on 17 October 2026. Smokeball says published prices exclude GST. [S2]
+Prices on Smokeball's Australian pricing page, as read on 18 November 2026. Smokeball says published prices exclude GST. [S2]
 
 | Plan | Price (AUD, per user per month, excl. GST) | Archie AI | Other add-ons |
 |---|---|---|---|
@@ -52,6 +52,7 @@ Sources for the table: [S2]
 - Open a matter in the desktop app and select the **Archie** tab, or the Archie button in the right-hand panel. [S16]
 - Settings sit under **Settings** in the bottom-left corner of the Archie screen. [S15]
 - Choose a model under **Show AI model options**. The default is **OpenAI GPT-5.2**. Other options include **OpenAI GPT-5.5 (Thinking)**, **Claude Opus 4.8** and **Claude Sonnet 5**. [S15]
+- On 13 November 2026 Smokeball added **OpenAI GPT-5.6 Terra** and its Thinking version, plus **Claude Opus 5.5** and **Claude Sonnet 5.5**. It says older models were retired. [S64] [S15]
 - Smokeball says every model offered "passed our privacy and security review" and doesn't "share, use, store or train on our users data". [S15]
 
 **Which plans have it**
@@ -64,6 +65,7 @@ Sources for the table: [S2]
 
 - When Archie is switched on, it indexes your firm's 50 most recent matters first. Other matters are read when you open them. [S16]
 - Files over Archie's size limits are skipped when it reads a matter. Videos over 1 GB are one example. [S25]
+- Smokeball also warns that Archie may read only the beginning of a file that's over the limits. You can point Archie at up to 20 files in one message. [S25]
 - Archie can see firm details including every user's name and email address, matter parties, tasks, events, memos, invoices, and trust and operating account details. [S16]
 - Smokeball says Archie works within one matter at a time and doesn't mix data across matters or firms. [S14] [S3]
 - Smokeball says Archie runs under "enterprise agreements with a strict zero-data-retention policy" and client data is never used to train AI models, "neither Smokeball's nor any third party's". [S14]
@@ -119,7 +121,7 @@ Sources for the table: [S2]
 **Which plans have it**
 
 - The new Outlook add-in supports Boost, Grow and Prosper+. Archie features need the Archie add-on. [S11] [S21]
-- You need a paid Microsoft 365 Business or Education email account. [S11] [S21]
+- You need a paid Microsoft 365 Business or Education email account. Smokeball's help article also lists Microsoft 365 hosted by GoDaddy. [S11] [S21]
 
 **What happens to your data**
 
@@ -134,22 +136,23 @@ Sources for the table: [S2]
 **What it does**
 
 - Answers questions of law tailored to the matter's practice area, with links to the resources it considered. [S26]
-- **Deep Research** takes about an hour. **Deep Research + Verification** sends the findings to a qualified lawyer and takes about one to three business days. [S26]
+- **Deep Research** looks further into the questions you tick and takes about an hour. Results appear in the **Deep Research** tab. [S26]
+- Smokeball's help article, edited on 20 October 2026, no longer describes sending research to a lawyer for verification. [S26]
 
 **Where to find it**
 
-- Open a matter, select the **Archie** tab, then **Legal Research** in the top-left corner. [S26] [S52]
+- Open a matter, select the **Archie** tab, then **Legal Question** in the top-left corner. Smokeball's blog and LawY's own pages still call it **Legal Research**. [S26] [S10] [S51] [S52]
 - If you ask Archie a legal research question, it offers to use LawY instead. [S26]
 
 **Which plans have it**
 
-- Included with the Archie add-on at no extra cost since 13 November 2025, including verification. [S37] [S26] [S51]
+- Included with the Archie add-on at no extra cost since 13 November 2025. Smokeball's help article says Deep Research is included too. [S37] [S26] [S51]
 
 **What happens to your data**
 
-- Smokeball says your LawY conversations aren't used to train AI models. If you verify an answer, the verifier sees only the rephrased question, the AI answer and the matter facts you selected, with your name removed. [S10]
+- Smokeball says your LawY conversations aren't used to train AI models. [S10]
 - LawY's own security page says it uses models from OpenAI and Google Gemini under zero data retention arrangements. [S53]
-- LawY's terms cover use through practice management partners, and let LawY and its providers use inputs and outputs to improve their services, including training machine learning models. [S61]
+- LawY's terms cover use through practice management partners. They let LawY and its providers use inputs and outputs to improve their services, and say LawY won't use them to train any AI model. [S61]
 
 **In Australia**
 
@@ -157,10 +160,10 @@ Sources for the table: [S2]
 
 ### Archie Apps
 
-- **What it does:** Task-specific AI tools inside Archie. The Australian list includes **Bank Statements Analyser**, **Legal Chronology**, **NSW AI Contract Review by InfoTrack** and **Audio Transcription**. [S27] [S9] [S28]
+- **What it does:** Task-specific AI tools inside Archie. The Australian list includes **Bank Statements Analyser**, **Legal Chronology**, **NSW AI Contract Review by InfoTrack** and **Audio and Video Transcription**. [S27] [S9] [S28]
 - **Where to find it:** In a matter, select the **Archie** tab, then **Apps**. Each app shows whether Smokeball or a third party such as InfoTrack made it. [S27]
-- **Which plans have it:** Audio Transcription is included in the Archie add-on. [S28]
-- **What happens to your data:** Audio and video up to 1 GB can be transcribed, and the transcript can be saved to the matter. [S28]
+- **Which plans have it:** Audio and Video Transcription is included in the Archie add-on. [S28]
+- **What happens to your data:** Audio and video files up to 1 GB and 8 hours long can be transcribed, with an AI summary. The transcript can be saved to the matter. [S28]
 - **In Australia:** The InfoTrack app analyses NSW residential contracts. [S9]
 
 ### Knowledge Sources and the Prompt Library
@@ -221,7 +224,7 @@ Smokeball's Archie runs OpenAI, Anthropic and Google models inside Smokeball. Us
 
 **Official?**
 
-- No official connection found. Smokeball isn't among Microsoft's federated Copilot connectors, last updated 16 October 2026. [S56]
+- No official connection found. Smokeball isn't among Microsoft's federated Copilot connectors, last updated 16 November 2026. [S56]
 - Smokeball isn't in Microsoft's list of Power Platform connectors either. [S57]
 
 **What Smokeball does offer in Microsoft 365**
@@ -289,7 +292,7 @@ Smokeball's Archie runs OpenAI, Anthropic and Google models inside Smokeball. Us
 - **AI Legal Assistant** is an Australian AI tool for document review, research and chronologies. Documents you create in it are saved to the Smokeball matter. [S35]
 - **AI Legal Toolbox** by Elysia Partners works in Outlook. Once connected, it can look up Smokeball matters and contacts and create time entries. [S36]
 - In both cases Smokeball says it integrates with the tool but doesn't develop or manage it. [S35] [S36]
-- Smokeball's Australian marketplace listed 109 partners on 17 October 2026, including Archie itself. [S49]
+- Smokeball's Australian marketplace listed 111 partners on 18 November 2026, including Archie itself. [S49]
 - Smokeball's privacy notice says third-party apps you enable handle your data under their own terms and privacy policies, and Smokeball isn't responsible for their privacy practices. [S4]
 
 ## Jobs it's good for
@@ -299,7 +302,7 @@ Smokeball's Archie runs OpenAI, Anthropic and Google models inside Smokeball. Us
 - **Checking a contract against your firm's rules.** Build a Playbook in the Word add-in and run it on the draft. [S20]
 - **Turning a recording into a file note.** Transcribe an audio or video file and save the transcript to the matter. [S28]
 - **Bank statements in family law.** Use the Bank Statements Analyser to filter transactions and spot patterns. [S9]
-- **A legal question with a second opinion.** Ask LawY in the Legal Research tab and send the deep research for verification. [S26]
+- **A legal question that needs more digging.** Ask LawY from **Legal Question** in the Archie tab, then run Deep Research on the follow-up questions. [S26]
 - **Admin from a chat.** Ask Archie to create a task or calendar event, then check it before saving. [S23]
 
 ## What to watch for
@@ -343,6 +346,7 @@ Smokeball's Archie runs OpenAI, Anthropic and Google models inside Smokeball. Us
 - **4 May 2026:** Archie moved to a new agentic model, gained the Word add-in, voice dictation and the ability to create tasks, memos and events. [S38]
 - **11 June 2026:** The model selector returned and Archie began reading read-only billing data. [S39]
 - **3 September 2026:** Archie began answering from live matter data "instead of cached data up to 6 hours old". [S40]
+- **13 November 2026:** Archie's drafts began keeping their formatting in Word, memos and email, and new OpenAI and Claude models were added. [S64]
 - **Coming soon:** Tone profiles, which apply your firm's writing rules to each audience. [S12]
 - **Not yet:** Smokeball says Archie can't yet add attachments or reminders to events, and "Full workflow automation is also not yet supported". [S23]
 - **Classic Outlook:** Smokeball will keep supporting it while Microsoft does, but new features go only to the new add-in. [S22]
@@ -357,73 +361,75 @@ Smokeball's Archie runs OpenAI, Anthropic and Google models inside Smokeball. Us
 - **How long the Archie question log is kept.** Not stated. [S14] [S16]
 - **Outlook mobile support.** The April 2026 post calls it "coming soon" in one place and lists it as supported in its FAQ. [S11]
 - **Who maintains Zapier's Smokeball app.** Smokeball documents the integration, but we didn't confirm who built it. [S33] [S59]
+- **Whether LawY's lawyer verification is still offered in Smokeball.** Smokeball's help article and its LawY blog post no longer mention it, and LawY's Smokeball page doesn't either. LawY's terms still give users who reach LawY through a practice management partner the right to "submit generated answers for Verification". [S26] [S10] [S51] [S61]
 
 ## Sources
 
-All sources were read on 17 October 2026.
+All sources were read on 18 November 2026.
 
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
-| S1 | Archie AI: Legal Assistant for Australian Law Firms | Smokeball | https://www.smokeball.com.au/archie | No date shown (sitemap 12 Oct 2026) | 17 Oct 2026 |
-| S2 | Legal Software Pricing for Australian Law Firms | Smokeball | https://www.smokeball.com.au/pricing | No date shown (sitemap 20 Aug 2026) | 17 Oct 2026 |
-| S3 | Smokeball security policy | Smokeball | https://www.smokeball.com.au/security | "Last updated 09/07/2026" | 17 Oct 2026 |
-| S4 | Privacy Notice | Smokeball | https://www.smokeball.com.au/privacy | "Last updated 02/06/2026" | 17 Oct 2026 |
-| S5 | Terms of service | Smokeball | https://www.smokeball.com.au/terms | "Last updated 09/07/2026" | 17 Oct 2026 |
-| S6 | Smokeball AI Revolutionises the Legal Tech Industry | Smokeball Blog | https://www.smokeball.com.au/blog/smokeball-ai-revolutionises-the-legal-tech-industry | 31 Jul 2024 | 17 Oct 2026 |
-| S7 | Archie AI is Getting a Major Upgrade | Smokeball Blog | https://www.smokeball.com.au/blog/archie-is-getting-a-major-upgrade | 13 Mar 2025 | 17 Oct 2026 |
-| S8 | Celebrating one year of Archie AI, our legal AI matter assistant | Smokeball Blog | https://www.smokeball.com.au/blog/celebrating-one-year-of-archie-our-ai-matter-assistant | 23 Jul 2025 | 17 Oct 2026 |
-| S9 | Say hello to new Archie AI features | Smokeball Blog | https://www.smokeball.com.au/blog/say-hello-to-new-archie-ai-features | 3 Sep 2025 | 17 Oct 2026 |
-| S10 | Smokeball announces LawY integration with Archie AI | Smokeball Blog | https://www.smokeball.com.au/blog/smokeball-announces-lawy-integration-with-archie-ai | 19 Nov 2025 | 17 Oct 2026 |
-| S11 | Bring AI productivity to your inbox with the new Smokeball Outlook add-in | Smokeball Blog | https://www.smokeball.com.au/blog/bring-ai-productivity-to-your-inbox-with-the-new-smokeball-outlook-add-in | 2 Apr 2026 | 17 Oct 2026 |
-| S12 | The next generation of Archie AI has arrived | Smokeball Blog | https://www.smokeball.com.au/blog/the-next-generation-of-archie-ai-has-arrived | 29 Apr 2026 | 17 Oct 2026 |
-| S13 | What is the difference between a general AI assistant and legal AI built for law firms? | Smokeball Blog | https://www.smokeball.com.au/blog/what-is-the-difference-between-a-general-ai-assistant-and-legal-ai-built-for-law-firms | 25 Jun 2026 ("Last updated: June 2026") | 17 Oct 2026 |
-| S14 | How Smokeball AI keeps your data private and secure | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/41226626717079-How-Smokeball-AI-keeps-your-data-private-and-secure | Edited 15 Jun 2026 (help centre data) | 17 Oct 2026 |
-| S15 | Configure Archie Settings | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/35181898764951-Configure-Archie-Settings | Edited 21 Sep 2026 (help centre data) | 17 Oct 2026 |
-| S16 | Getting Started with Archie, the Smokeball AI Assistant | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/24407844681751-Getting-Started-with-Archie-the-Smokeball-AI-Assistant | Edited 6 Sep 2026 (help centre data) | 17 Oct 2026 |
-| S17 | Getting Started with Archie for Smokeball Boost | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/30752793429527-Getting-Started-with-Archie-for-Smokeball-Boost | Edited 19 May 2025 (help centre data) | 17 Oct 2026 |
-| S18 | Managing staff and user permissions | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/8402863411991-Managing-staff-and-user-permissions | Edited 7 Oct 2026 (help centre data) | 17 Oct 2026 |
-| S19 | Using the Archie Word Add-in | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/39699442435095-Using-the-Archie-Word-Add-in | Edited 1 Oct 2026 (help centre data) | 17 Oct 2026 |
-| S20 | Using Archie Playbooks to Review Documents | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/43694624466455-Using-Archie-Playbooks-to-Review-Documents | Edited 23 Sep 2026 (help centre data) | 17 Oct 2026 |
-| S21 | Connect to New Outlook | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/31216774250135-Connect-to-New-Outlook | Edited 27 Aug 2026 (help centre data) | 17 Oct 2026 |
-| S22 | Microsoft Integrations for Smokeball Grow and Prosper+ | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/32905188463511-Microsoft-Integrations-for-Smokeball-Grow-and-Prosper | Edited 24 Apr 2026 (help centre data) | 17 Oct 2026 |
-| S23 | Creating tasks, memos and events with Archie | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/39618100098967-Creating-tasks-memos-and-events-with-Archie | Edited 4 May 2026 (help centre data) | 17 Oct 2026 |
-| S24 | Using Archie Suggestions | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/40283902464151-Using-Archie-Suggestions | Edited 13 Oct 2026 (help centre data) | 17 Oct 2026 |
-| S25 | Archie file size limits | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/37629892969623-Archie-file-size-limits | Edited 21 Aug 2026 (help centre data) | 17 Oct 2026 |
-| S26 | Using LawY in Archie for legal research | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/33653338648599-Using-LawY-in-Archie-for-legal-research | Edited 5 Nov 2025 (help centre data) | 17 Oct 2026 |
-| S27 | Getting Started with Archie Apps | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/32304670869399-Getting-Started-with-Archie-Apps | Edited 8 Sep 2025 (help centre data) | 17 Oct 2026 |
-| S28 | Transcribe audio files using Archie | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/36561902022679-Transcribe-audio-files-using-Archie | Edited 25 May 2026 (help centre data) | 17 Oct 2026 |
-| S29 | Upload Knowledge Sources to use with Archie | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/33653315990423-Upload-Knowledge-Sources-to-use-with-Archie | Edited 8 Sep 2025 (help centre data) | 17 Oct 2026 |
-| S30 | Generate AutoTime descriptions using Smokeball AI | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/34416807166103-Generate-AutoTime-descriptions-using-Smokeball-AI | Edited 1 Sep 2025 (help centre data) | 17 Oct 2026 |
-| S31 | Generate a custom Intake Form using Smokeball AI | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/24606986834583-Generate-a-custom-Intake-Form-using-Smokeball-AI | Edited 3 Oct 2025 (help centre data) | 17 Oct 2026 |
-| S32 | Summarise a matter conversation with AI | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/21308177955735-Summarise-a-matter-conversation-with-AI | Edited 18 Jun 2026 (help centre data) | 17 Oct 2026 |
-| S33 | Zapier Integration | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/15431574575511-Zapier-Integration | Edited 3 Aug 2026 (help centre data) | 17 Oct 2026 |
-| S34 | Request Smokeball API access for your app | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/24804817026327-Request-Smokeball-API-access-for-your-app | Edited 17 Mar 2025 (help centre data) | 17 Oct 2026 |
-| S35 | AI Legal Assistant Integration | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/29380827229975-AI-Legal-Assistant-Integration | Edited 23 Jul 2026 (help centre data) | 17 Oct 2026 |
-| S36 | AI Legal Toolbox Integration | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/44056406222231-AI-Legal-Toolbox-Integration | Edited 7 Oct 2026 (help centre data) | 17 Oct 2026 |
-| S37 | Smokeball Grow and Prosper+ Releases November 2025 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/36083001262231-Smokeball-Grow-and-Prosper-Releases-November-2025 | Edited 25 Nov 2025 (help centre data) | 17 Oct 2026 |
-| S38 | Smokeball Grow and Prosper+ Releases May 2026 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/40063185076887-Smokeball-Grow-and-Prosper-Releases-May-2026 | Edited 27 May 2026 (help centre data) | 17 Oct 2026 |
-| S39 | Smokeball Grow and Prosper+ Releases June 2026 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/40870816082711-Smokeball-Grow-and-Prosper-Releases-June-2026 | Edited 23 Jun 2026 (help centre data) | 17 Oct 2026 |
-| S40 | Smokeball Grow and Prosper+ Releases September 2026 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/43238244923799-Smokeball-Grow-and-Prosper-Releases-September-2026 | Edited 30 Sep 2026 (help centre data) | 17 Oct 2026 |
-| S41 | Smokeball Grow and Prosper+ Releases October 2026 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/43867861521943-Smokeball-Grow-and-Prosper-Releases-October-2026 | Edited 9 Oct 2026 (help centre data) | 17 Oct 2026 |
-| S42 | Smokeball and compatibility with New Outlook | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/14456059242135-Smokeball-and-compatibility-with-New-Outlook | Edited 24 Apr 2026 (help centre data) | 17 Oct 2026 |
-| S43 | Power BI Integration | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/27898948586007-Power-BI-Integration | Edited 29 Jul 2026 (help centre data) | 17 Oct 2026 |
-| S44 | Base URLs | Smokeball Developer Docs | https://docs.smokeball.com/docs/api-docs/z2q8vla6b77g8-base-urls | No date shown | 17 Oct 2026 |
-| S45 | Rate Limits | Smokeball Developer Docs | https://docs.smokeball.com/docs/api-docs/vj4jovpoopdov-rate-limits | No date shown | 17 Oct 2026 |
-| S46 | Scopes | Smokeball Developer Docs | https://docs.smokeball.com/docs/api-docs/qf83nz2scopes-scopes | No date shown | 17 Oct 2026 |
-| S47 | Documentation index (llms.txt) | Smokeball Developer Docs | https://docs.smokeball.com/llms.txt | No date shown | 17 Oct 2026 |
-| S48 | Archie powered by Smokeball AI (marketplace listing) | Smokeball Marketplace | https://marketplace.smokeball.com/partners/archie | No date shown | 17 Oct 2026 |
-| S49 | Smokeball Marketplace (Australia) | Smokeball Marketplace | https://marketplace.smokeball.com/?selectaregion=5 | No date shown; 109 partners listed | 17 Oct 2026 |
-| S50 | Smokeball Archie (Word add-in listing) | Microsoft Marketplace | https://marketplace.microsoft.com/en-gb/product/WA200010415?tab=Overview | No date shown | 17 Oct 2026 |
-| S51 | Meet LawY in Smokeball | LawY | https://www.lawy.ai/integration/smokeball | No date shown (sitemap 11 Sep 2026) | 17 Oct 2026 |
-| S52 | How to sign into LawY through an integration partner | LawY Help Centre | https://help.lawy.ai/en/articles/15201103-how-to-sign-into-lawy-through-an-integration-partner | 22 Jun 2026 | 17 Oct 2026 |
-| S53 | Security | LawY | https://www.lawy.ai/security | No date shown (sitemap 15 Oct 2026) | 17 Oct 2026 |
-| S54 | Connectors directory | Anthropic | https://claude.com/connectors | No date shown | 17 Oct 2026 |
-| S55 | ChatGPT Plugins (including the Legal category) | OpenAI | https://openai.com/business/plugins/ | No date shown | 17 Oct 2026 |
-| S56 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | Updated 16 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S57 | List of all Copilot Studio, Power Platform and Logic Apps connectors | Microsoft Learn | https://learn.microsoft.com/en-us/connectors/connector-reference/ | Updated 2 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S58 | Check the availability & requirements of Connected Apps in Gemini Apps | Google Gemini Apps Help | https://support.google.com/gemini/table/17434654?hl=en | No date shown | 17 Oct 2026 |
-| S59 | Smokeball MCP | Zapier | https://zapier.com/mcp/smokeball-1 | No date shown | 17 Oct 2026 |
-| S60 | Smokeball Bill and Boost Releases June 2026 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/40870909742359-Smokeball-Bill-and-Boost-Releases-June-2026 | Edited 25 Jun 2026 (help centre data) | 17 Oct 2026 |
-| S61 | Terms and Conditions | LawY | https://www.lawy.ai/terms-and-conditions | No date shown (sitemap 15 Oct 2026) | 17 Oct 2026 |
-| S62 | Smokeball Bill and Boost Releases May 2026 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/40150404843799-Smokeball-Bill-and-Boost-Releases-May-2026 | Edited 1 May 2026 (help centre data) | 17 Oct 2026 |
-| S63 | Get started with connectors | Anthropic | https://claude.com/docs/connectors/getting-started | No date shown (page metadata 25 Sep 2026) | 17 Oct 2026 |
+| S1 | Archie AI: Legal Assistant for Australian Law Firms | Smokeball | https://www.smokeball.com.au/archie | No date shown (sitemap 1 Nov 2026) | 18 Nov 2026 |
+| S2 | Legal Software Pricing for Australian Law Firms | Smokeball | https://www.smokeball.com.au/pricing | No date shown (sitemap 20 Aug 2026) | 18 Nov 2026 |
+| S3 | Smokeball security policy | Smokeball | https://www.smokeball.com.au/security | "Last updated 09/07/2026" | 18 Nov 2026 |
+| S4 | Privacy Notice | Smokeball | https://www.smokeball.com.au/privacy | "Last updated 02/06/2026" | 18 Nov 2026 |
+| S5 | Terms of service | Smokeball | https://www.smokeball.com.au/terms | "Last updated 09/07/2026" | 18 Nov 2026 |
+| S6 | Smokeball AI Revolutionises the Legal Tech Industry | Smokeball Blog | https://www.smokeball.com.au/blog/smokeball-ai-revolutionises-the-legal-tech-industry | 31 Jul 2024 | 18 Nov 2026 |
+| S7 | Archie AI is Getting a Major Upgrade | Smokeball Blog | https://www.smokeball.com.au/blog/archie-is-getting-a-major-upgrade | 13 Mar 2025 | 18 Nov 2026 |
+| S8 | Celebrating one year of Archie AI, our legal AI matter assistant | Smokeball Blog | https://www.smokeball.com.au/blog/celebrating-one-year-of-archie-our-ai-matter-assistant | 23 Jul 2025 | 18 Nov 2026 |
+| S9 | Say hello to new Archie AI features | Smokeball Blog | https://www.smokeball.com.au/blog/say-hello-to-new-archie-ai-features | 3 Sep 2025 | 18 Nov 2026 |
+| S10 | Smokeball announces LawY integration with Archie AI | Smokeball Blog | https://www.smokeball.com.au/blog/smokeball-announces-lawy-integration-with-archie-ai | 19 Nov 2025 (sitemap 22 Oct 2026) | 18 Nov 2026 |
+| S11 | Bring AI productivity to your inbox with the new Smokeball Outlook add-in | Smokeball Blog | https://www.smokeball.com.au/blog/bring-ai-productivity-to-your-inbox-with-the-new-smokeball-outlook-add-in | 2 Apr 2026 | 18 Nov 2026 |
+| S12 | The next generation of Archie AI has arrived | Smokeball Blog | https://www.smokeball.com.au/blog/the-next-generation-of-archie-ai-has-arrived | 29 Apr 2026 | 18 Nov 2026 |
+| S13 | What is the difference between a general AI assistant and legal AI built for law firms? | Smokeball Blog | https://www.smokeball.com.au/blog/what-is-the-difference-between-a-general-ai-assistant-and-legal-ai-built-for-law-firms | 25 Jun 2026 ("Last updated: June 2026") | 18 Nov 2026 |
+| S14 | How Smokeball AI keeps your data private and secure | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/41226626717079-How-Smokeball-AI-keeps-your-data-private-and-secure | Edited 15 Jun 2026 (help centre data) | 18 Nov 2026 |
+| S15 | Configure Archie Settings | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/35181898764951-Configure-Archie-Settings | Edited 13 Nov 2026 (help centre data) | 18 Nov 2026 |
+| S16 | Getting Started with Archie, the Smokeball AI Assistant | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/24407844681751-Getting-Started-with-Archie-the-Smokeball-AI-Assistant | Edited 6 Sep 2026 (help centre data) | 18 Nov 2026 |
+| S17 | Getting Started with Archie for Smokeball Boost | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/30752793429527-Getting-Started-with-Archie-for-Smokeball-Boost | Edited 19 May 2025 (help centre data) | 18 Nov 2026 |
+| S18 | Managing staff and user permissions | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/8402863411991-Managing-staff-and-user-permissions | Edited 7 Oct 2026 (help centre data) | 18 Nov 2026 |
+| S19 | Using the Archie Word Add-in | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/39699442435095-Using-the-Archie-Word-Add-in | Edited 1 Oct 2026 (help centre data) | 18 Nov 2026 |
+| S20 | Using Archie Playbooks to Review Documents | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/43694624466455-Using-Archie-Playbooks-to-Review-Documents | Edited 23 Sep 2026 (help centre data) | 18 Nov 2026 |
+| S21 | Connect to New Outlook | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/31216774250135-Connect-to-New-Outlook | Edited 12 Nov 2026 (help centre data) | 18 Nov 2026 |
+| S22 | Microsoft Integrations for Smokeball Grow and Prosper+ | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/32905188463511-Microsoft-Integrations-for-Smokeball-Grow-and-Prosper | Edited 24 Apr 2026 (help centre data) | 18 Nov 2026 |
+| S23 | Creating tasks, memos and events with Archie | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/39618100098967-Creating-tasks-memos-and-events-with-Archie | Edited 4 May 2026 (help centre data) | 18 Nov 2026 |
+| S24 | Using Archie Suggestions | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/40283902464151-Using-Archie-Suggestions | Edited 13 Oct 2026 (help centre data) | 18 Nov 2026 |
+| S25 | Archie file size limits | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/37629892969623-Archie-file-size-limits | Edited 9 Nov 2026 (help centre data) | 18 Nov 2026 |
+| S26 | Using LawY in Archie for legal research | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/33653338648599-Using-LawY-in-Archie-for-legal-research | Edited 20 Oct 2026 (help centre data) | 18 Nov 2026 |
+| S27 | Getting Started with Archie Apps | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/32304670869399-Getting-Started-with-Archie-Apps | Edited 9 Nov 2026 (help centre data) | 18 Nov 2026 |
+| S28 | Transcribe audio and video files using Archie | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/36561902022679-Transcribe-audio-and-video-files-using-Archie | Edited 9 Nov 2026 (help centre data) | 18 Nov 2026 |
+| S29 | Upload Knowledge Sources to use with Archie | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/33653315990423-Upload-Knowledge-Sources-to-use-with-Archie | Edited 8 Sep 2025 (help centre data) | 18 Nov 2026 |
+| S30 | Generate AutoTime descriptions using Smokeball AI | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/34416807166103-Generate-AutoTime-descriptions-using-Smokeball-AI | Edited 1 Sep 2025 (help centre data) | 18 Nov 2026 |
+| S31 | Generate a custom Intake Form using Smokeball AI | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/24606986834583-Generate-a-custom-Intake-Form-using-Smokeball-AI | Edited 3 Oct 2025 (help centre data) | 18 Nov 2026 |
+| S32 | Summarise a matter conversation with AI | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/21308177955735-Summarise-a-matter-conversation-with-AI | Edited 18 Jun 2026 (help centre data) | 18 Nov 2026 |
+| S33 | Zapier Integration | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/15431574575511-Zapier-Integration | Edited 3 Aug 2026 (help centre data) | 18 Nov 2026 |
+| S34 | Request Smokeball API access for your app | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/24804817026327-Request-Smokeball-API-access-for-your-app | Edited 17 Mar 2025 (help centre data) | 18 Nov 2026 |
+| S35 | AI Legal Assistant Integration | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/29380827229975-AI-Legal-Assistant-Integration | Edited 23 Jul 2026 (help centre data) | 18 Nov 2026 |
+| S36 | AI Legal Toolbox Integration | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/44056406222231-AI-Legal-Toolbox-Integration | Edited 7 Oct 2026 (help centre data) | 18 Nov 2026 |
+| S37 | Smokeball Grow and Prosper+ Releases November 2025 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/36083001262231-Smokeball-Grow-and-Prosper-Releases-November-2025 | Edited 25 Nov 2025 (help centre data) | 18 Nov 2026 |
+| S38 | Smokeball Grow and Prosper+ Releases May 2026 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/40063185076887-Smokeball-Grow-and-Prosper-Releases-May-2026 | Edited 27 May 2026 (help centre data) | 18 Nov 2026 |
+| S39 | Smokeball Grow and Prosper+ Releases June 2026 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/40870816082711-Smokeball-Grow-and-Prosper-Releases-June-2026 | Edited 23 Jun 2026 (help centre data) | 18 Nov 2026 |
+| S40 | Smokeball Grow and Prosper+ Releases September 2026 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/43238244923799-Smokeball-Grow-and-Prosper-Releases-September-2026 | Edited 30 Sep 2026 (help centre data) | 18 Nov 2026 |
+| S41 | Smokeball Grow and Prosper+ Releases October 2026 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/43867861521943-Smokeball-Grow-and-Prosper-Releases-October-2026 | Edited 29 Oct 2026 (help centre data) | 18 Nov 2026 |
+| S42 | Smokeball and compatibility with New Outlook | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/14456059242135-Smokeball-and-compatibility-with-New-Outlook | Edited 24 Apr 2026 (help centre data) | 18 Nov 2026 |
+| S43 | Power BI Integration | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/27898948586007-Power-BI-Integration | Edited 29 Jul 2026 (help centre data) | 18 Nov 2026 |
+| S44 | Base URLs | Smokeball Developer Docs | https://docs.smokeball.com/docs/api-docs/z2q8vla6b77g8-base-urls | No date shown | 18 Nov 2026 |
+| S45 | Rate Limits | Smokeball Developer Docs | https://docs.smokeball.com/docs/api-docs/vj4jovpoopdov-rate-limits | No date shown | 18 Nov 2026 |
+| S46 | Scopes | Smokeball Developer Docs | https://docs.smokeball.com/docs/api-docs/qf83nz2scopes-scopes | No date shown | 18 Nov 2026 |
+| S47 | Documentation index (llms.txt) | Smokeball Developer Docs | https://docs.smokeball.com/llms.txt | No date shown | 18 Nov 2026 |
+| S48 | Archie powered by Smokeball AI (marketplace listing) | Smokeball Marketplace | https://marketplace.smokeball.com/partners/archie | No date shown | 18 Nov 2026 |
+| S49 | Smokeball Marketplace (Australia) | Smokeball Marketplace | https://marketplace.smokeball.com/?selectaregion=5 | No date shown; 111 partners listed | 18 Nov 2026 |
+| S50 | Smokeball Archie (Word add-in listing) | Microsoft Marketplace | https://marketplace.microsoft.com/en-gb/product/WA200010415?tab=Overview | No date shown | 18 Nov 2026 |
+| S51 | Meet LawY in Smokeball | LawY | https://www.lawy.ai/integration/smokeball | No date shown (sitemap 11 Sep 2026) | 18 Nov 2026 |
+| S52 | How to sign into LawY through an integration partner | LawY Help Centre | https://help.lawy.ai/en/articles/15201103-how-to-sign-into-lawy-through-an-integration-partner | 22 Jun 2026 | 18 Nov 2026 |
+| S53 | Security | LawY | https://www.lawy.ai/security | No date shown (sitemap 15 Oct 2026) | 18 Nov 2026 |
+| S54 | Claude Marketplace: Connectors and plugins (the connectors directory) | Anthropic | https://claude.com/marketplace/connectors-plugins | No date shown; 1,157 connectors listed when read | 18 Nov 2026 |
+| S55 | ChatGPT Plugins (including the Legal category) | OpenAI | https://openai.com/business/plugins/ | No date shown | 18 Nov 2026 |
+| S56 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | Updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S57 | List of all Copilot Studio, Power Platform and Logic Apps connectors | Microsoft Learn | https://learn.microsoft.com/en-us/connectors/connector-reference/ | Updated 18 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S58 | Check the availability & requirements of Connected Apps in Gemini Apps | Google Gemini Apps Help | https://support.google.com/gemini/table/17434654?hl=en | No date shown | 18 Nov 2026 |
+| S59 | Smokeball MCP | Zapier | https://zapier.com/mcp/smokeball-1 | No date shown | 18 Nov 2026 |
+| S60 | Smokeball Bill and Boost Releases June 2026 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/40870909742359-Smokeball-Bill-and-Boost-Releases-June-2026 | Edited 25 Jun 2026 (help centre data) | 18 Nov 2026 |
+| S61 | Terms and Conditions | LawY | https://www.lawy.ai/terms-and-conditions | No date shown (sitemap 5 Nov 2026) | 18 Nov 2026 |
+| S62 | Smokeball Bill and Boost Releases May 2026 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/40150404843799-Smokeball-Bill-and-Boost-Releases-May-2026 | Edited 1 May 2026 (help centre data) | 18 Nov 2026 |
+| S63 | Get started with connectors | Anthropic | https://claude.com/docs/connectors/getting-started | No date shown (page metadata 25 Sep 2026) | 18 Nov 2026 |
+| S64 | Smokeball Grow and Prosper+ Releases November 2026 | Smokeball Support Hub (AU) | https://support.smokeball.com/hc/en-au/articles/44818820052375-Smokeball-Grow-and-Prosper-Releases-November-2026 | Edited 13 Nov 2026 (help centre data) | 18 Nov 2026 |

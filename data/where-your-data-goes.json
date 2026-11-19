@@ -1,14 +1,14 @@
 {
  "kind": "data-register",
- "checked": "2026-10-17",
+ "checked": "2026-11-18",
  "sources": [
   {
    "id": "data-register-chatgpt-claude:S1",
    "title": "How your data is used to improve model performance",
    "publisher": "OpenAI",
    "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance",
-   "updated": "\"Updated: 6 minutes ago\" (17 Oct 2026, 11:45 UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated: 2 days ago\" (16 Nov 2026, 20:14 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S2",
@@ -16,39 +16,39 @@
    "publisher": "OpenAI",
    "url": "https://chatgpt.com/pricing/",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S3",
    "title": "Data controls in ChatGPT",
    "publisher": "OpenAI",
    "url": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt",
-   "updated": "\"Updated: 19 days ago\" (28 Sep 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated: 2 days ago\" (16 Nov 2026, 19:44 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S4",
    "title": "Chat and file retention in ChatGPT",
    "publisher": "OpenAI",
    "url": "https://help.openai.com/en/articles/8983778-chat-and-file-retention-in-chatgpt",
-   "updated": "\"Updated: 25 days ago\" (22 Sep 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated: 15 days ago\" (3 Nov 2026, 20:30 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S5",
    "title": "Temporary chat in ChatGPT",
    "publisher": "OpenAI",
    "url": "https://help.openai.com/en/articles/8914046-temporary-chat-in-chatgpt",
-   "updated": "\"Updated: 28 days ago\" (19 Sep 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated: 18 days ago\" (31 Oct 2026, 22:56 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S6",
    "title": "Memory in ChatGPT",
    "publisher": "OpenAI",
    "url": "https://help.openai.com/en/articles/8590148-memory-in-chatgpt",
-   "updated": "\"Updated: 28 days ago\" (19 Sep 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated: 18 days ago\" (31 Oct 2026, 23:13 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S7",
@@ -56,23 +56,23 @@
    "publisher": "OpenAI",
    "url": "https://openai.com/index/response-to-nyt-data-demands/",
    "updated": "June 5, 2025, with \"Update on October 22, 2025\"",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S8",
    "title": "How OpenAI handles data in consumer services",
    "publisher": "OpenAI",
    "url": "https://help.openai.com/en/articles/7039943-how-openai-handles-data-in-consumer-services",
-   "updated": "\"Updated: 19 days ago\" (28 Sep 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated: 29 days ago\" (20 Oct 2026, 05:51 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S9",
    "title": "Data residency and inference residency for ChatGPT",
    "publisher": "OpenAI",
    "url": "https://help.openai.com/en/articles/9903489-data-residency-and-inference-residency-for-chatgpt",
-   "updated": "\"Updated: 9 hours ago\" (17 Oct 2026, 03:16 UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated: 13 hours ago\" (18 Nov 2026, 01:13 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S10",
@@ -80,7 +80,7 @@
    "publisher": "OpenAI",
    "url": "https://openai.com/index/our-commitment-to-community-safety/",
    "updated": "April 28, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S11",
@@ -88,7 +88,7 @@
    "publisher": "OpenAI",
    "url": "https://openai.com/enterprise-privacy/",
    "updated": "Updated: January 8, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S12",
@@ -96,7 +96,7 @@
    "publisher": "OpenAI",
    "url": "https://academy.openai.com/public/clubs/admins-6o6xf/resources/data-governance-and-compliance",
    "updated": "July 6, 2025; \"Last updated on September 17, 2026\"",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S13",
@@ -104,7 +104,7 @@
    "publisher": "OpenAI",
    "url": "https://openai.com/business/pricing/",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S14",
@@ -112,47 +112,47 @@
    "publisher": "OpenAI",
    "url": "https://openai.com/policies/sub-processor-list/",
    "updated": "Last updated: October 14, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S15",
    "title": "Managing members, seat types, and roles in ChatGPT Business",
    "publisher": "OpenAI",
    "url": "https://help.openai.com/en/articles/8542216-managing-members-seat-types-and-roles-in-chatgpt-business",
-   "updated": "\"Updated: 3 days ago\" (14 Oct 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated: 21 hours ago\" (17 Nov 2026, 17:30 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S16",
    "title": "Admin controls, security, and compliance for plugins and apps",
    "publisher": "OpenAI",
    "url": "https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps",
-   "updated": "\"Updated: 9 hours ago\" (17 Oct 2026, 03:16 UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated: 13 days ago\" (5 Nov 2026, 07:21 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S17",
    "title": "Memory FAQ (Business Version)",
    "publisher": "OpenAI",
    "url": "https://help.openai.com/en/articles/9295112-memory-faq-business-version",
-   "updated": "\"Updated: 29 days ago\" (18 Sep 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated: 30 days ago\" (19 Oct 2026, 16:32 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S18",
    "title": "Managing data, sharing, and privacy in ChatGPT Business",
    "publisher": "OpenAI",
    "url": "https://help.openai.com/en/articles/8798634-managing-data-sharing-and-privacy-in-chatgpt-business",
-   "updated": "\"Updated: 3 days ago\" (14 Oct 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated: 23 days ago\" (26 Oct 2026, 21:23 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S19",
    "title": "OpenAI Compliance Platform for Enterprise and Edu customers",
    "publisher": "OpenAI",
    "url": "https://help.openai.com/en/articles/9261474-openai-compliance-platform-for-enterprise-and-edu-customers",
-   "updated": "\"Updated: 6 days ago\" (11 Oct 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated: 15 days ago\" (3 Nov 2026, 14:21 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S20",
@@ -160,23 +160,23 @@
    "publisher": "OpenAI",
    "url": "https://developers.openai.com/api/docs/guides/your-data",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S21",
    "title": "Sharing feedback, evaluation and fine-tuning data, and API inputs and outputs with OpenAI",
    "publisher": "OpenAI",
    "url": "https://help.openai.com/en/articles/10306912-sharing-feedback-evaluation-and-fine-tuning-data-and-api-inputs-and-outputs-with-openai",
-   "updated": "\"Updated: 9 days ago\" (8 Oct 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated: 30 days ago\" (19 Oct 2026, 16:25 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S22",
    "title": "Admin and Audit Logs API for the API Platform",
    "publisher": "OpenAI",
    "url": "https://help.openai.com/en/articles/9687866-admin-and-audit-logs-api-for-the-api-platform",
-   "updated": "\"Updated: last month\" (2 Sep 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated: 28 days ago\" (21 Oct 2026, 04:46 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S23",
@@ -184,7 +184,7 @@
    "publisher": "Anthropic",
    "url": "https://www.anthropic.com/legal/privacy",
    "updated": "Effective September 10, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S24",
@@ -192,7 +192,7 @@
    "publisher": "Anthropic",
    "url": "https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings",
    "updated": "August 3, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S25",
@@ -200,7 +200,7 @@
    "publisher": "Anthropic",
    "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
    "updated": "March 16, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S26",
@@ -208,7 +208,7 @@
    "publisher": "Anthropic",
    "url": "https://www.anthropic.com/news/updates-to-our-consumer-terms",
    "updated": "Aug 28, 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S27",
@@ -216,23 +216,23 @@
    "publisher": "Anthropic",
    "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
    "updated": "July 1, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S28",
    "title": "Use incognito chats",
    "publisher": "Anthropic",
    "url": "https://support.claude.com/en/articles/12260368-use-incognito-chats",
-   "updated": "\"Updated over 2 weeks ago\" (30 Sep 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated over 2 weeks ago\" (30 Oct 2026, 17:08 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S29",
    "title": "Use Claude's chat search and memory to build on previous context",
    "publisher": "Anthropic",
    "url": "https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context",
-   "updated": "\"Updated this week\" (14 Oct 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated over a week ago\" (11 Nov 2026, 00:22 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S30",
@@ -240,7 +240,7 @@
    "publisher": "Anthropic",
    "url": "https://privacy.claude.com/en/articles/7996878-can-you-delete-data-sent-via-claude",
    "updated": "March 16, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S31",
@@ -248,15 +248,15 @@
    "publisher": "Anthropic",
    "url": "https://privacy.claude.com/en/articles/10458704-how-does-anthropic-protect-the-personal-data-of-claude-users",
    "updated": "March 16, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S32",
    "title": "I would like to input sensitive data into my chats with Claude. Who can view my conversations?",
    "publisher": "Anthropic",
    "url": "https://support.claude.com/en/articles/8325621-i-would-like-to-input-sensitive-data-into-my-chats-with-claude-who-can-view-my-conversations",
-   "updated": "May 22, 2026",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated over 2 weeks ago\" (30 Oct 2026, 17:08 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S33",
@@ -264,7 +264,7 @@
    "publisher": "Anthropic",
    "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
    "updated": "August 18, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S34",
@@ -272,15 +272,15 @@
    "publisher": "Anthropic",
    "url": "https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data",
    "updated": "July 1, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S35",
    "title": "Configure custom data retention controls for Enterprise plans",
    "publisher": "Anthropic",
    "url": "https://privacy.claude.com/en/articles/10440198-configure-custom-data-retention-controls-for-enterprise-plans",
-   "updated": "\"Updated today\" (16 Oct 2026, 17:34 UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated over 2 weeks ago\" (4 Nov 2026, 00:11 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S36",
@@ -288,7 +288,7 @@
    "publisher": "Anthropic",
    "url": "https://privacy.claude.com/en/articles/7996890-where-are-your-servers-located-do-you-host-your-models-on-eu-servers",
    "updated": "June 15, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S37",
@@ -296,7 +296,7 @@
    "publisher": "Anthropic",
    "url": "https://claude.com/docs/third-party/claude-desktop/feature-matrix",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S38",
@@ -304,31 +304,31 @@
    "publisher": "Anthropic",
    "url": "https://support.claude.com/en/articles/15422948-enable-us-only-inference-for-your-organization",
    "updated": "June 15, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S39",
    "title": "Use connectors to extend Claude's capabilities",
    "publisher": "Anthropic",
    "url": "https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities",
-   "updated": "\"Updated today\" (16 Oct 2026, 21:28 UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated today\" (18 Nov 2026, 00:20 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S40",
    "title": "Set up single sign-on (SSO)",
    "publisher": "Anthropic",
    "url": "https://support.claude.com/en/articles/13132885-set-up-single-sign-on-sso",
-   "updated": "\"Updated this week\" (13 Oct 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "October 13, 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S41",
    "title": "Export your organization's data",
    "publisher": "Anthropic",
    "url": "https://support.claude.com/en/articles/13346720-export-your-organization-s-data",
-   "updated": "\"Updated this week\" (14 Oct 2026, UTC)",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated over a week ago\" (10 Nov 2026, 19:50 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S42",
@@ -336,7 +336,7 @@
    "publisher": "Anthropic",
    "url": "https://support.claude.com/en/articles/9797531-what-is-the-enterprise-plan",
    "updated": "September 1, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S43",
@@ -344,15 +344,15 @@
    "publisher": "Anthropic",
    "url": "https://support.claude.com/en/articles/9970975-access-audit-logs",
    "updated": "June 15, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S44",
    "title": "Access the Compliance API",
    "publisher": "Anthropic",
    "url": "https://support.claude.com/en/articles/13015708-access-the-compliance-api",
-   "updated": "\"Updated today\" (16 Oct 2026, 16:38 UTC)",
-   "read": "17 Oct 2026"
+   "updated": "October 16, 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S45",
@@ -360,15 +360,15 @@
    "publisher": "Anthropic",
    "url": "https://privacy.claude.com/en/articles/10812588-how-does-clio-analyze-usage-patterns-while-protecting-user-data",
    "updated": "March 16, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S46",
    "title": "Who owns and manages the data of my Claude for Education account?",
    "publisher": "Anthropic",
    "url": "https://privacy.claude.com/en/articles/11732894-who-owns-and-manages-the-data-of-my-claude-for-education-account",
-   "updated": "March 16, 2026",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated over 2 weeks ago\" (30 Oct 2026, 17:08 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S47",
@@ -376,7 +376,7 @@
    "publisher": "Anthropic",
    "url": "https://support.claude.com/en/articles/11139094-get-started-with-claude-for-education-at-your-university-for-owners-admins",
    "updated": "August 6, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S48",
@@ -384,7 +384,7 @@
    "publisher": "Anthropic",
    "url": "https://www.anthropic.com/legal/commercial-terms",
    "updated": "Effective June 17, 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S49",
@@ -392,15 +392,15 @@
    "publisher": "Anthropic",
    "url": "https://privacy.claude.com/en/articles/7996875-can-you-delete-data-that-i-sent-via-api",
    "updated": "March 16, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S50",
    "title": "Manage user feedback settings on Claude Console",
    "publisher": "Anthropic",
    "url": "https://support.claude.com/en/articles/10504853-manage-user-feedback-settings-on-claude-console",
-   "updated": "March 16, 2026",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated over a month ago\" (19 Oct 2026, 19:39 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S51",
@@ -408,15 +408,15 @@
    "publisher": "Anthropic",
    "url": "https://platform.claude.com/docs/en/manage-claude/api-and-data-retention",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S52",
    "title": "I have a zero data retention agreement with Anthropic. What products does it apply to?",
    "publisher": "Anthropic",
    "url": "https://privacy.claude.com/en/articles/8956058-i-have-a-zero-data-retention-agreement-with-anthropic-what-products-does-it-apply-to",
-   "updated": "\"Updated yesterday\" (15 Oct 2026, 21:50 UTC)",
-   "read": "17 Oct 2026"
+   "updated": "October 15, 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S53",
@@ -424,7 +424,7 @@
    "publisher": "Anthropic",
    "url": "https://platform.claude.com/docs/en/manage-claude/data-residency",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S54",
@@ -432,7 +432,7 @@
    "publisher": "Anthropic",
    "url": "https://claude.com/regional-compliance",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S55",
@@ -440,15 +440,31 @@
    "publisher": "Anthropic",
    "url": "https://support.claude.com/en/articles/10186004-claude-console-roles-and-permissions",
    "updated": "August 18, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-chatgpt-claude:S56",
    "title": "Data retention practices for Covered Models",
    "publisher": "Anthropic",
    "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-covered-models",
-   "updated": "September 5, 2026",
-   "read": "17 Oct 2026"
+   "updated": "\"Updated over a week ago\" (9 Nov 2026, 19:00 UTC)",
+   "read": "18 Nov 2026"
+  },
+  {
+   "id": "data-register-chatgpt-claude:S57",
+   "title": "Plans & pricing (Claude)",
+   "publisher": "Anthropic",
+   "url": "https://claude.com/pricing",
+   "updated": "No date shown",
+   "read": "18 Nov 2026"
+  },
+  {
+   "id": "data-register-chatgpt-claude:S58",
+   "title": "Data residency (OpenAI API docs)",
+   "publisher": "OpenAI",
+   "url": "https://developers.openai.com/api/docs/guides/data-residency",
+   "updated": "No date shown",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S1",
@@ -456,7 +472,7 @@
    "publisher": "Microsoft",
    "url": "https://support.microsoft.com/en-us/privacy/microsoft-copilot/activity-history",
    "updated": "No date shown (page metadata 18 Aug 2026)",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S2",
@@ -464,7 +480,7 @@
    "publisher": "Microsoft",
    "url": "https://support.microsoft.com/en-us/privacy/microsoft-copilot/privacy-controls",
    "updated": "No date shown (page metadata 17 Sep 2026)",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S3",
@@ -472,55 +488,55 @@
    "publisher": "Microsoft",
    "url": "https://support.microsoft.com/en-us/privacy/microsoft-copilot/young-people",
    "updated": "No date shown (page metadata 18 Aug 2026)",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S4",
    "title": "Microsoft Privacy Statement",
    "publisher": "Microsoft",
    "url": "https://www.microsoft.com/en-us/privacy/privacystatement",
-   "updated": "Last Updated: September 2026",
-   "read": "17 Oct 2026"
+   "updated": "Last Updated: November 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S5",
    "title": "Privacy FAQ for Microsoft Copilot (applies to the older app only)",
    "publisher": "Microsoft",
    "url": "https://support.microsoft.com/en-au/microsoft-copilot/privacy-faq-for-microsoft-copilot",
-   "updated": "No date shown (page metadata 31 Aug 2026)",
-   "read": "17 Oct 2026"
+   "updated": "No date shown (page metadata 3 Nov 2026)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S6",
    "title": "Microsoft Copilot privacy controls (applies to the older app only)",
    "publisher": "Microsoft",
    "url": "https://support.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-privacy-controls",
-   "updated": "No date shown (page metadata 21 Aug 2026)",
-   "read": "17 Oct 2026"
+   "updated": "No date shown (page metadata 30 Oct 2026)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S7",
-   "title": "Manage Microsoft Copilot Chat",
+   "title": "Manage Copilot Chat",
    "publisher": "Microsoft",
-   "url": "https://learn.microsoft.com/en-us/copilot/manage",
-   "updated": "Last updated on 2026-10-12",
-   "read": "17 Oct 2026"
+   "url": "https://learn.microsoft.com/en-us/copilot/manage/manage-copilot-chat",
+   "updated": "Last updated on 2026-11-03",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S8",
    "title": "Microsoft Copilot Chat Privacy and Protections",
    "publisher": "Microsoft",
-   "url": "https://learn.microsoft.com/en-us/copilot/privacy-and-protections",
-   "updated": "Last updated on 2026-08-24",
-   "read": "17 Oct 2026"
+   "url": "https://learn.microsoft.com/en-us/copilot/plan/privacy-and-protections",
+   "updated": "Last updated on 2026-11-03",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S9",
    "title": "Data, Privacy, and Security for Microsoft Copilot",
    "publisher": "Microsoft",
-   "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy",
-   "updated": "Last updated on 2026-08-18",
-   "read": "17 Oct 2026"
+   "url": "https://learn.microsoft.com/en-us/copilot/plan/microsoft-365-copilot-privacy",
+   "updated": "Last updated on 2026-11-03",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S10",
@@ -528,31 +544,31 @@
    "publisher": "Microsoft",
    "url": "https://learn.microsoft.com/en-us/purview/retention-policies-copilot",
    "updated": "Last updated on 2025-09-26",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S11",
    "title": "Delete your Microsoft Copilot activity history",
    "publisher": "Microsoft",
    "url": "https://support.microsoft.com/en-au/privacy/delete-your-microsoft-365-copilot-activity-history",
-   "updated": "No date shown (page metadata 18 Aug 2026)",
-   "read": "17 Oct 2026"
+   "updated": "No date shown (page metadata 23 Oct 2026)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S12",
    "title": "Personalize what Microsoft Copilot remembers",
    "publisher": "Microsoft",
    "url": "https://support.microsoft.com/en-us/microsoft-365-copilot/personalize-what-microsoft-365-copilot-remembers",
-   "updated": "No date shown (page metadata 22 Sep 2026)",
-   "read": "17 Oct 2026"
+   "updated": "No date shown (page metadata 9 Nov 2026)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S13",
    "title": "Manage Copilot personalization and memory",
    "publisher": "Microsoft",
-   "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-personalization-memory",
-   "updated": "Last updated on 2026-09-02",
-   "read": "17 Oct 2026"
+   "url": "https://learn.microsoft.com/en-us/copilot/manage/copilot-personalization-memory",
+   "updated": "Last updated on 2026-11-03",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S14",
@@ -560,15 +576,15 @@
    "publisher": "Microsoft",
    "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-product-terms",
    "updated": "Last updated on 2026-10-08",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S15",
    "title": "Advanced Data Residency: Overview and requirements",
    "publisher": "Microsoft",
    "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-adr-overview",
-   "updated": "Last updated on 2026-10-08",
-   "read": "17 Oct 2026"
+   "updated": "Last updated on 2026-10-27",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S16",
@@ -576,23 +592,23 @@
    "publisher": "Microsoft (AI at Work Blog)",
    "url": "https://www.microsoft.com/en-us/copilot/blog/2025/11/04/microsoft-offers-in-country-data-processing-to-15-countries-to-strengthen-sovereign-controls-for-microsoft-365-copilot/",
    "updated": "Published 4 Nov 2025; editor's note dated 3 Apr 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S17",
-   "title": "Anthropic models in Microsoft Online Services",
+   "title": "Claude models from Anthropic in Microsoft Online Services",
    "publisher": "Microsoft",
-   "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor",
-   "updated": "Last updated on 2026-09-18",
-   "read": "17 Oct 2026"
+   "url": "https://learn.microsoft.com/en-us/copilot/implement/connect-to-ai-subprocessor",
+   "updated": "Last updated on 2026-11-04",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S18",
    "title": "OpenAI as a subprocessor in Microsoft Online Services",
    "publisher": "Microsoft",
-   "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/openai-subprocessor",
-   "updated": "Last updated on 2026-10-09",
-   "read": "17 Oct 2026"
+   "url": "https://learn.microsoft.com/en-us/copilot/implement/openai-subprocessor",
+   "updated": "Last updated on 2026-11-03",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S19",
@@ -600,23 +616,23 @@
    "publisher": "Microsoft",
    "url": "https://support.microsoft.com/en-us/privacy/microsoft-copilot/providing-feedback",
    "updated": "No date shown (page metadata 18 Aug 2026)",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S20",
    "title": "Gemini Apps Privacy Hub (includes the Gemini Apps Privacy Notice)",
    "publisher": "Google",
    "url": "https://support.google.com/gemini/answer/13594961?hl=en",
-   "updated": "Last updated: October 13, 2026",
-   "read": "17 Oct 2026"
+   "updated": "Last updated: November 17, 2026 (Privacy Notice: Last updated: November 16, 2026)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S21",
-   "title": "Manage & delete your activity in Gemini Apps",
+   "title": "Manage & delete your history in Gemini Apps (US English)",
    "publisher": "Google",
    "url": "https://support.google.com/gemini/answer/13278892?hl=en",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "20 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S22",
@@ -624,7 +640,7 @@
    "publisher": "Google",
    "url": "https://support.google.com/gemini/answer/13275745?hl=en",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S23",
@@ -632,39 +648,39 @@
    "publisher": "Google",
    "url": "https://policies.google.com/privacy?hl=en-US",
    "updated": "Effective October 16, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S24",
    "title": "Generative AI in Google Workspace Privacy Hub",
    "publisher": "Google",
    "url": "https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub",
-   "updated": "Last updated: October 6, 2026 (page footer: Last updated 2026-10-13 UTC)",
-   "read": "17 Oct 2026"
+   "updated": "Last updated: October 6, 2026 (page footer: Last updated 2026-11-10 UTC)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S25",
    "title": "Turn the Gemini App on or off",
    "publisher": "Google",
    "url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/turn-the-gemini-app-on-or-off",
-   "updated": "Last updated 2026-10-13 UTC",
-   "read": "17 Oct 2026"
+   "updated": "Last updated 2026-11-10 UTC",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S26",
    "title": "Google Workspace with Gemini FAQ for Education",
    "publisher": "Google",
    "url": "https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/gemini-for-google-workspace-faq-education",
-   "updated": "Last updated 2026-10-13 UTC",
-   "read": "17 Oct 2026"
+   "updated": "Last updated 2026-11-10 UTC",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S27",
    "title": "Google Workspace Data Regions",
    "publisher": "Google",
    "url": "https://knowledge.workspace.google.com/admin/compliance/data-covered-by-data-regions",
-   "updated": "Last updated 2026-10-13 UTC",
-   "read": "17 Oct 2026"
+   "updated": "Last updated 2026-11-10 UTC",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S28",
@@ -672,7 +688,7 @@
    "publisher": "Google (Workspace Updates blog)",
    "url": "https://workspaceupdates.googleblog.com/2026/06/gemini-app-data-regions-support.html",
    "updated": "June 29, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S29",
@@ -680,7 +696,7 @@
    "publisher": "Google",
    "url": "https://support.google.com/gemininotebook/answer/17004255?hl=en",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S30",
@@ -688,7 +704,7 @@
    "publisher": "Google",
    "url": "https://support.google.com/gemininotebook/answer/17003757?hl=en",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S31",
@@ -696,7 +712,7 @@
    "publisher": "Google",
    "url": "https://support.google.com/gemininotebook/answer/16179559?hl=en",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S32",
@@ -704,7 +720,7 @@
    "publisher": "Google",
    "url": "https://support.google.com/gemininotebook/answer/16164461?hl=en",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S33",
@@ -712,7 +728,7 @@
    "publisher": "Google",
    "url": "https://support.google.com/gemininotebook/answer/16337734?hl=en",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S34",
@@ -720,7 +736,7 @@
    "publisher": "Microsoft",
    "url": "https://support.microsoft.com/en-us/privacy/microsoft-copilot/activity-history",
    "updated": "No date shown",
-   "read": "13 Nov 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-copilot-gemini:S35",
@@ -728,15 +744,39 @@
    "publisher": "Microsoft",
    "url": "https://www.microsoft.com/en-us/privacy/privacystatement",
    "updated": "Last Updated: November 2026",
-   "read": "13 Nov 2026"
+   "read": "18 Nov 2026"
+  },
+  {
+   "id": "data-register-copilot-gemini:S36",
+   "title": "Data, privacy, and security for web search in Microsoft Copilot and Microsoft Copilot Chat",
+   "publisher": "Microsoft",
+   "url": "https://learn.microsoft.com/en-us/copilot/plan/manage-public-web-access",
+   "updated": "Last updated on 2026-11-03",
+   "read": "18 Nov 2026"
+  },
+  {
+   "id": "data-register-copilot-gemini:S37",
+   "title": "Control temporary chats and chat deletion in the Gemini App",
+   "publisher": "Google",
+   "url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/enable-temporary-chats-in-gemini-app",
+   "updated": "Last updated 2026-11-10 UTC",
+   "read": "18 Nov 2026"
+  },
+  {
+   "id": "data-register-copilot-gemini:S38",
+   "title": "Manage & delete your history in Gemini Apps (Australian English copy)",
+   "publisher": "Google",
+   "url": "https://support.google.com/gemini/answer/13278892?hl=en-AU",
+   "updated": "No date shown",
+   "read": "20 Nov 2026"
   },
   {
    "id": "data-register-others:S1",
    "title": "Perplexity Privacy Notice",
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/hub/legal/privacy-notice",
-   "updated": "Last updated 8 Jul 2026",
-   "read": "17 Oct 2026"
+   "updated": "Last updated 23 Oct 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S2",
@@ -744,7 +784,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
    "updated": "Last modified 31 Aug 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S3",
@@ -752,7 +792,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/10352993-account-settings",
    "updated": "Last modified 5 Aug 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S4",
@@ -760,7 +800,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/10968016-memory",
    "updated": "Last modified 14 Sep 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S5",
@@ -768,7 +808,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/10354873-how-long-does-perplexity-retain-my-search-history-profile-data-and-personal-information",
    "updated": "Last modified 25 Aug 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S6",
@@ -776,7 +816,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/10354879-account-deletion",
    "updated": "Last modified 31 Aug 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S7",
@@ -784,7 +824,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/12637451-where-did-my-threads-go",
    "updated": "Last modified 31 Aug 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S8",
@@ -792,7 +832,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/12639758-incognito-mode-troubleshooting",
    "updated": "Last modified 5 Sep 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S9",
@@ -800,7 +840,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/enterprise/security",
    "updated": "Last updated 21 Aug 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S10",
@@ -808,7 +848,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/hub/legal/terms-of-service",
    "updated": "Last updated 23 Jan 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S11",
@@ -816,7 +856,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/hub/legal/enterprise-terms-of-service",
    "updated": "Last updated 3 Aug 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S12",
@@ -824,7 +864,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/10354963-are-third-party-model-providers-training-on-my-data",
    "updated": "Last modified 14 Sep 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S13",
@@ -832,7 +872,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/11652701-data-retention-for-enterprise",
    "updated": "Last modified 7 Sep 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S14",
@@ -840,7 +880,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/10517443-enterprise-security-hub-settings",
    "updated": "Last modified 7 Sep 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S15",
@@ -848,7 +888,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/12009761-enterprise-file-limits",
    "updated": "Last modified 8 Oct 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S16",
@@ -856,7 +896,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/13654357-memory-for-enterprise-organizations",
    "updated": "Last modified 1 Sep 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S17",
@@ -864,7 +904,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/hub/legal/dpa",
    "updated": "Last updated 13 Aug 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S18",
@@ -880,7 +920,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/12067853-introduction-to-organization-admins",
    "updated": "Last modified 14 Oct 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S20",
@@ -888,7 +928,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/11652747-audit-logs",
    "updated": "Last modified 5 Sep 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S21",
@@ -896,7 +936,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/12310544-what-is-enterprise-max",
    "updated": "Last modified 8 Oct 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S22",
@@ -904,7 +944,7 @@
    "publisher": "Perplexity AI",
    "url": "https://www.perplexity.ai/help-center/en/articles/10352973-what-is-enterprise-pro",
    "updated": "Last modified 6 Oct 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S23",
@@ -912,7 +952,7 @@
    "publisher": "Meta",
    "url": "https://www.facebook.com/legal/ai-terms",
    "updated": "Effective from 13 May 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S24",
@@ -920,7 +960,7 @@
    "publisher": "Meta",
    "url": "https://www.facebook.com/privacy/policy/",
    "updated": "Effective from 23 Jul 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S25",
@@ -928,7 +968,7 @@
    "publisher": "Meta",
    "url": "https://www.facebook.com/privacy/genai/",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S26",
@@ -936,7 +976,7 @@
    "publisher": "Meta",
    "url": "https://www.facebook.com/privacy/dialog/your-interactions-with-ai-features/",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S27",
@@ -944,15 +984,15 @@
    "publisher": "Meta",
    "url": "https://www.facebook.com/privacy/dialog/correcting-ai-information/",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S28",
    "title": "Have an incognito chat with Meta AI",
    "publisher": "Meta",
    "url": "https://www.meta.com/help/artificial-intelligence/1152563063682644/",
-   "updated": "Updated 19 weeks ago (2 Jun 2026)",
-   "read": "17 Oct 2026"
+   "updated": "Updated 24 weeks ago (2 Jun 2026)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S29",
@@ -960,15 +1000,15 @@
    "publisher": "Meta",
    "url": "https://www.facebook.com/privacy/guide/generative-ai/",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S30",
    "title": "Information for people who don't use Muse",
    "publisher": "Meta",
    "url": "https://www.meta.com/help/artificial-intelligence/4532990443643263/",
-   "updated": "Updated 5 weeks ago (11 Sep 2026)",
-   "read": "17 Oct 2026"
+   "updated": "Updated 3 days ago (14 Nov 2026)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S31",
@@ -976,7 +1016,7 @@
    "publisher": "WhatsApp (Meta)",
    "url": "https://faq.whatsapp.com/2257017191175152",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S32",
@@ -984,7 +1024,7 @@
    "publisher": "WhatsApp (Meta)",
    "url": "https://faq.whatsapp.com/688464770796037",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S33",
@@ -992,15 +1032,15 @@
    "publisher": "WhatsApp (Meta)",
    "url": "https://faq.whatsapp.com/2089630958184255",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S34",
    "title": "Remove posts, chats and media from Meta AI and Vibes",
    "publisher": "Meta",
    "url": "https://www.meta.com/help/artificial-intelligence/2457110494637611/",
-   "updated": "Updated 36 weeks ago (3 Feb 2026)",
-   "read": "17 Oct 2026"
+   "updated": "Updated 3 weeks ago (26 Oct 2026)",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S35",
@@ -1008,7 +1048,7 @@
    "publisher": "DeepSeek",
    "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
    "updated": "Last update 10 Feb 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S36",
@@ -1016,7 +1056,7 @@
    "publisher": "DeepSeek",
    "url": "https://cdn.deepseek.com/policies/en-US/deepseek-terms-of-use.html",
    "updated": "Last update 27 Mar 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S37",
@@ -1024,55 +1064,55 @@
    "publisher": "DeepSeek",
    "url": "https://cdn.deepseek.com/policies/en-US/model-algorithm-disclosure.html",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S38",
    "title": "Privacy Policy",
-   "publisher": "SpaceXAI (xAI)",
+   "publisher": "SpaceXSI (xAI)",
    "url": "https://x.ai/legal/privacy-policy",
-   "updated": "Last updated 11 Oct 2026",
-   "read": "17 Oct 2026"
+   "updated": "Last updated 27 Oct 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S39",
    "title": "Consumer FAQs",
-   "publisher": "SpaceXAI (xAI)",
+   "publisher": "SpaceXSI (xAI)",
    "url": "https://x.ai/legal/faq",
    "updated": "12 May 2025 (date shown at top)",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S40",
    "title": "Terms of Service - Consumer",
-   "publisher": "SpaceXAI (xAI)",
+   "publisher": "SpaceXSI (xAI)",
    "url": "https://x.ai/legal/terms-of-service",
-   "updated": "Last updated 12 Oct 2026",
-   "read": "17 Oct 2026"
+   "updated": "Last updated 27 Oct 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S41",
    "title": "X Subscription Consumer Terms of Service",
-   "publisher": "SpaceXAI (xAI)",
+   "publisher": "SpaceXSI (xAI)",
    "url": "https://x.ai/legal/x-subscription-terms-of-service",
-   "updated": "Last updated 12 Oct 2026",
-   "read": "17 Oct 2026"
+   "updated": "Last updated 27 Oct 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S42",
    "title": "Subprocessor List",
-   "publisher": "SpaceXAI (xAI)",
+   "publisher": "SpaceXSI (xAI)",
    "url": "https://x.ai/legal/subprocessor-list",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S43",
    "title": "Data Processing Addendum",
-   "publisher": "SpaceXAI (xAI)",
+   "publisher": "SpaceXSI (xAI)",
    "url": "https://x.ai/legal/data-processing-addendum",
    "updated": "Effective 22 Sep 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S44",
@@ -1080,7 +1120,7 @@
    "publisher": "X Corp.",
    "url": "https://help.x.com/en/using-x/about-grok",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S45",
@@ -1088,70 +1128,71 @@
    "publisher": "X Corp.",
    "url": "https://x.com/en/privacy",
    "updated": "Effective 15 Jan 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S46",
    "title": "Terms of Service - Enterprise",
-   "publisher": "SpaceXAI (xAI)",
+   "publisher": "SpaceXSI (xAI)",
    "url": "https://x.ai/legal/terms-of-service-enterprise",
-   "updated": "Last updated 14 Aug 2026",
-   "read": "17 Oct 2026"
+   "updated": "Last updated 27 Oct 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S47",
    "title": "Enterprise FAQs",
-   "publisher": "SpaceXAI (xAI)",
+   "publisher": "SpaceXSI (xAI)",
    "url": "https://x.ai/legal/faq-enterprise",
    "updated": "Last updated 25 Feb 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S48",
    "title": "Pricing",
-   "publisher": "SpaceXAI (xAI)",
+   "publisher": "SpaceXSI (xAI)",
    "url": "https://x.ai/pricing",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S49",
    "title": "Grok.com User Guide (Grok Business / Enterprise)",
-   "publisher": "SpaceXAI (xAI)",
+   "publisher": "SpaceXSI (xAI)",
    "url": "https://docs.x.ai/grok/user-guide",
-   "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "updated": "Last updated 10 Oct 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S50",
    "title": "License & User Management (Grok Business / Enterprise)",
-   "publisher": "SpaceXAI (xAI)",
+   "publisher": "SpaceXSI (xAI)",
    "url": "https://docs.x.ai/grok/management",
-   "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "updated": "Last updated 10 Oct 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S51",
    "title": "Connector Management (Grok Business / Enterprise)",
-   "publisher": "SpaceXAI (xAI)",
+   "publisher": "SpaceXSI (xAI)",
    "url": "https://docs.x.ai/grok/connector-management",
-   "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "updated": "Last updated 10 Oct 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "data-register-others:S52",
    "title": "Introducing Grok Business and Grok Enterprise",
-   "publisher": "SpaceXAI (xAI)",
+   "publisher": "SpaceXSI (xAI)",
    "url": "https://x.ai/news/grok-business",
    "updated": "30 Dec 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   }
  ],
  "gaps": [
   "OpenAI's Enterprise privacy page says Business admins can control how long data is kept, but its pricing page lists custom retention only under Enterprise and its help article on removed members says Business chats are kept indefinitely; we found no Business retention setting.",
   "OpenAI's Enterprise privacy page says Business admins can view, export and delete members' chats, while its Business help articles say admins don't automatically see private chats but owners can export a member's data; we used the help articles.",
   "The 90-day minimum for Enterprise retention appears on OpenAI Academy; the help centre article on removed members gives 90 and 180 days only as examples.",
-  "OpenAI's training article names Free, Plus and Pro; Go appears only on OpenAI's pricing page, which shows the same opt-out.",
+  "OpenAI's training article and the training part of its data controls article name Free, Plus and Pro; Go appears on OpenAI's pricing page, which shows the same opt-out, and in the export and deletion parts of the data controls article.",
+  "OpenAI's data controls article says voice mode has a separate control for sharing data for model training, but doesn't name it.",
   "OpenAI's New York Times page says it holds limited April to September 2025 user data but doesn't say which plans it comes from; the earlier court order covered Free, Plus, Pro, Team (now Business) and API data without Zero Data Retention.",
   "OpenAI's Enterprise privacy page, Services Agreement and Data Processing Addendum don't say which country stores Business chats by default; its sub-processor list gives only the countries where its cloud providers process data.",
   "Anthropic's consumer training article and its 28 Aug 2025 Consumer Terms announcement describe training as your choice, made at sign-up, without saying which way the switch starts; its privacy policy says it trains unless you opt out, and the pop-up pictured in that announcement shows the switch on, so we marked it yes-default.",
@@ -1160,12 +1201,14 @@
   "Anthropic's custom retention article says the feature is for Enterprise plans, and its commercial retention page doesn't name Education; we applied both to Education because the Education admin guide links to the retention controls and Anthropic calls Education a commercial product.",
   "Anthropic's commercial pages don't list when its staff may read Team, Enterprise or API chats beyond safety review, product support and incident response.",
   "Anthropic's Console feedback page doesn't say whether the thumbs feedback switch starts on or off.",
+  "Anthropic's Console feedback article calls the page at platform.claude.com/settings/privacy \"Data retention\", while its zero data retention article still points to Settings > Privacy Controls > Data retention period; we couldn't confirm they're the same page without signing in.",
+  "Anthropic's consumer training, settings and retention articles still name only Free, Pro and Max; Ultra appears on its pricing page (model training \"Opt-out\") and in its newer help articles as a consumer plan, so we grouped it with the other personal plans.",
   "Anthropic offers no Australian storage in its own apps or API; its March 2026 Sydney office announcement says only that it is exploring more computing capacity in Australia, with no date.",
   "How long the updated personal Copilot app keeps chats: Microsoft's activity history and privacy controls pages and its Privacy Statement give no period.",
   "Whether Microsoft trains any models other than foundation models on chats in the updated personal Copilot app: its activity history page rules out foundation models only, while its Privacy Statement says Microsoft may use data to develop and train its AI models.",
   "Whether deleted chats in either version of the personal Copilot app are held for a time before they're erased: neither the older-app Privacy FAQ nor the new activity history page says.",
   "Whether the updated personal Copilot app has a temporary chat or any opt-out from human review: its privacy controls page lists neither, and only the older-app Privacy FAQ addresses human review, saying there is no opt-out.",
-  "When the older personal Copilot app stops working: Microsoft's pages say the updated app arrived on 18 August 2026 but give no end date for the older version.",
+  "When the older personal Copilot app stops working: Microsoft's older-app Privacy FAQ gives 31 December 2026 as the last day to move chats to the updated app, but no date for the older app itself to stop.",
   "How long Microsoft takes to erase a work account's Copilot history after the person deletes it when no retention policy applies: its deletion page says only that it might take some time.",
   "Whether Australian schools whose Microsoft 365 is already hosted here keep Copilot data in Australia without the Advanced Data Residency for Education add-on: Microsoft's Product Terms Data Residency page lists Copilot as covered for education but also lets Microsoft store education data in the EU or North America without the add-on.",
   "Whether Microsoft has started processing Copilot in Australia: the newest statement we found is the 3 April 2026 editor's note on its in-country processing announcement, which expects it by the end of 2026.",
@@ -1176,12 +1219,17 @@
   "How long Google keeps personal Gemini Notebook notebooks, sources and chat history, and how long deletion takes: its privacy and chat help pages give no period.",
   "What permission would let Google train on Workspace data, and how an organisation would give it: the Workspace Privacy Hub says 'without permission' and mentions new feedback and data donation flows added on 1 July 2026 without describing them.",
   "Google words the Workspace training promise two ways: the Gemini app admin page's comparison table and the Education FAQ say chats won't be used to improve AI models, while the Privacy Hub adds 'outside your domain without permission', and we used the Privacy Hub's wording.",
-  "Whether Keep Activity is on by default for personal Gemini users under 18: Google's activity help page gives the default only for people aged 18 and over.",
+  "Whether the History setting is on by default for personal Gemini users under 18: Google's history help page gives the default only for people aged 18 and over.",
+  "Whether personal Gemini accounts that had 'Keep Activity' on when we read Google's pages on 17 October 2026 now have the new training settings switched on: neither copy of the history help page says what happened to existing settings.",
+  "Which default applies to an Australian personal account: on 20 November 2026 Google's US English history help page said the 'Chat content including text & attachments' training setting is on by default for people over 18, and its Australian and British English copies said these settings are off by default. Neither says which countries its default applies to, so we show it as unclear.",
+  "Google's pages disagree on temporary chats for work and school accounts: the 'Use Gemini Apps' help page says they aren't available, while the Workspace admin page 'Control temporary chats and chat deletion in the Gemini App' lets admins allow them, so we used the admin page.",
   "Perplexity's 'Data Collection at Perplexity' page names Free, Pro and Max as training by default but not Education Pro; we grouped Education Pro with them because Perplexity's 'What is Education Pro?' page says it includes everything in Pro.",
   "Perplexity's privacy notice, terms and help centre don't say whether staff read conversations on personal plans for safety or feedback.",
   "Perplexity's 'Account Deletion' and 'Self-Serve Data Deletion' pages don't say how long a deleted thread is held before it's purged; the only period given is 30 days for deleting a whole account.",
   "Perplexity's help centre doesn't say whether searches made while logged out are used for training; its 'Where did my sessions go?' page only says logged-out threads expire after 14 days.",
   "We found no data residency option for Perplexity Enterprise, and no mention of Australia, on its Trust Center, enterprise terms, data processing addendum or help centre.",
+  "Perplexity's Trust Center subprocessor list couldn't be re-read on 18 November 2026, because the page didn't load for our reader; the count and locations given are from 17 October.",
+  "Perplexity's 'Introduction to Organization Admins' page says the usage analytics dashboard needs an active Enterprise subscription and the right permission, but its 'What is Enterprise Max?' page lists an 'Insights dashboard' among features that need an Enterprise Max seat or 50 Enterprise Pro seats. We couldn't tell whether they're the same dashboard, so we used the admin page.",
   "Meta's Privacy Centre guide 'AI at Meta' shows 'Submit an objection request' forms, but Meta's help page 'Information for people who don't use Muse' says objections apply 'in certain countries' without listing them, and the form we opened is tagged for the EU region in its page code, so we couldn't confirm Australians can use it.",
   "Meta's privacy policy and AI terms give no retention period for Meta AI chats or say how long Meta's copy lasts after a reset; the AI terms warn that deleting messages, threads or your account may not delete Meta's copy.",
   "Meta's help pages say incognito chats aren't available everywhere, and WhatsApp's 'About Private Processing' page says only English, Indonesian, Portuguese and Spanish are supported; neither says whether incognito chats are offered in Australia.",
@@ -1191,16 +1239,18 @@
   "DeepSeek's 'Model Mechanism and Training Methods' page sends readers to the privacy policy for how to opt out of training, but the policy only lists an opt-out right and an email address; the switch is named only in the terms of use.",
   "DeepSeek's privacy policy and terms give no retention period for chats, don't say how long deleted chats are held, don't mention a temporary or incognito chat, and don't say whether people review conversations for safety.",
   "The Australian Government's PSPF Direction 001-2025 (published 4 February 2025, updated 14 February 2025) requires Australian Government entities to prevent the use or installation of DeepSeek products, applications and web services and to remove existing instances from government systems and devices: https://www.protectivesecurity.gov.au/publications-library/direction-001-2025-deepseek-products-applications-and-web-services",
-  "xAI's site now names the company SpaceXAI LLC ('SpaceXSI') and carries a post titled 'xAI joins SpaceX' (2 February 2026), while X's help pages still say xAI; we found no formal rename notice, so we've written 'SpaceXAI (xAI)'.",
-  "SpaceXAI's pricing page calls the team plan 'Teams' while its business page and docs say 'Grok Business'; both are priced per user and we've treated them as one plan.",
-  "SpaceXAI's Grok Business user guide says custom retention policies are for the Enterprise tier, but its pricing page lists 'Custom Chat data retention' for Teams as well; we used the pricing page.",
-  "SpaceXAI's organisation docs say SSO is for Enterprise subscribers only, while its pricing page lists SAML/OIDC SSO for Teams and its security page offers SSO for 'Business Tier accounts'.",
-  "SpaceXAI's Grok Business announcement promises 'no training on it, ever', but its enterprise terms make the promise 'subject to disclosures to Customer and Customer-controlled user settings' and its enterprise FAQ mentions free credits in exchange for permission to train; we used the terms.",
-  "SpaceXAI's Grok Business guide doesn't say which terms cover chats in a personal workspace; it only says to use the team workspace so conversations are 'protected under business plan terms'.",
-  "SpaceXAI's statement on staff reviewing business data comes from its enterprise FAQ, dated February 2025 and written for API customers; we found no review statement specific to Grok Business chats.",
-  "SpaceXAI's pricing page offers Enterprise customers 'Data residency' through its sales team but names no regions, and its legal and security pages mention no Australian option.",
+  "xAI's privacy policy and terms, updated 27 October 2026, now name the company SpaceX Super Intelligence LLC ('SpaceXSI'); the versions read on 17 October said SpaceXAI LLC. X's 'About Grok' help page still mostly says xAI, and we found no formal rename notice, so we've written 'SpaceXSI (xAI)'.",
+  "SpaceXSI's pricing page calls the team plan 'Teams' while its business page and docs say 'Grok Business'; both are priced per user and we've treated them as one plan.",
+  "SpaceXSI's pricing page on 18 November 2026 lists Free, Plus, Premium, Super and Ultra for individuals and doesn't name SuperGrok. SuperGrok appears only as a licence type in its Grok Business docs, so we couldn't confirm it's still sold as a personal plan.",
+  "SpaceXSI's Grok Business user guide says custom retention policies are for the Enterprise tier, but its pricing page lists 'Custom Chat data retention' for Teams as well; we used the pricing page.",
+  "SpaceXSI's organisation docs say SSO is for Enterprise subscribers only, while its pricing page lists SAML/OIDC SSO for Teams and its security page offers SSO for 'Business Tier accounts'.",
+  "SpaceXSI's Grok Business announcement promises 'no training on it, ever', but its enterprise terms make the promise 'subject to disclosures to Customer and Customer-controlled user settings' and its enterprise FAQ mentions free credits in exchange for permission to train; we used the terms.",
+  "SpaceXSI's Grok Business guide doesn't say which terms cover chats in a personal workspace; it only says to use the team workspace so conversations are 'protected under business plan terms'.",
+  "SpaceXSI's statement on staff reviewing business data comes from its enterprise FAQ, dated February 2025 and written for API customers; we found no review statement specific to Grok Business chats.",
+  "SpaceXSI's pricing page offers Enterprise customers 'Data residency' through its sales team but names no regions, and its legal and security pages mention no Australian option.",
   "X's 'About Grok' help page and X Privacy Policy don't say whether people review Grok conversations on X or how long Grok chats are kept if you don't delete them.",
-  "SpaceXAI's Consumer FAQs page shows the date 12 May 2025 but already uses the SpaceXSI name, so it appears to have been edited since without a new date."
+  "X's 'About Grok' page also covers Grok Bot in X Chat, which it says is governed by the Cursor Privacy Policy, with data kept for the life of your Grok Bot account unless you delete it. Grok Bot isn't covered here.",
+  "SpaceXSI's Consumer FAQs page shows the date 12 May 2025 but already uses the SpaceXSI name, so it appears to have been edited since without a new date."
  ],
  "products": [
   {
@@ -1213,10 +1263,11 @@
      "who": "Personal accounts",
      "trains": {
       "value": "yes-default",
-      "words": "Yes, unless you switch it off. Even after you opt out, a thumbs up or thumbs down on a reply means OpenAI may use that whole conversation for training.",
+      "words": "Yes, unless you switch it off. Even after you opt out, a thumbs up or thumbs down on a reply means OpenAI may use that whole conversation for training. Content from a Trusted Access session, such as Daybreak, may be used too.",
       "src": [
        "data-register-chatgpt-claude:S1",
-       "data-register-chatgpt-claude:S2"
+       "data-register-chatgpt-claude:S2",
+       "data-register-chatgpt-claude:S3"
       ]
      },
      "optOut": {
@@ -1383,9 +1434,9 @@
       ]
      },
      "where": {
-      "words": "Eligible customers can store API data at rest in Australia, which needs OpenAI's approval for abuse-monitoring controls and adds 10% to prices on newer models. OpenAI doesn't offer in-region processing for Australia, so it may process and briefly store that content elsewhere.",
+      "words": "Eligible organisations can create a project that stores data at rest in Australia, which adds 10% to prices on models released from 5 March 2026. OpenAI lists processing in Australia only for gpt-6-luna, on its Responses and Chat Completions APIs, and says storage in a region doesn't mean processing happens there.",
       "src": [
-       "data-register-chatgpt-claude:S20",
+       "data-register-chatgpt-claude:S58",
        "data-register-chatgpt-claude:S9"
       ]
      },
@@ -1413,7 +1464,7 @@
    "maker": "Anthropic",
    "plans": [
     {
-     "plan": "Free, Pro and Max",
+     "plan": "Free, Pro, Max and Ultra",
      "who": "Personal accounts",
      "trains": {
       "value": "yes-default",
@@ -1422,7 +1473,8 @@
        "data-register-chatgpt-claude:S23",
        "data-register-chatgpt-claude:S24",
        "data-register-chatgpt-claude:S25",
-       "data-register-chatgpt-claude:S26"
+       "data-register-chatgpt-claude:S26",
+       "data-register-chatgpt-claude:S57"
       ]
      },
      "optOut": {
@@ -1480,7 +1532,7 @@
       ]
      },
      "kept": {
-      "words": "Chats stay until deleted, then leave Anthropic's systems within 30 days, and Enterprise owners can set a retention period of 30 days or more. Incognito chats are kept 30 days for safety, flagged chats up to 2 years and feedback 5 years.",
+      "words": "Chats stay until deleted, then leave Anthropic's systems within 30 days, and Enterprise owners can set a retention period of 30 days or more. Incognito chats are kept 30 days for safety, or longer under the organisation's retention policy. Flagged chats are kept up to 2 years and feedback 5 years.",
       "src": [
        "data-register-chatgpt-claude:S34",
        "data-register-chatgpt-claude:S35",
@@ -1581,7 +1633,7 @@
      },
      "optOut": {
       "value": "not-needed",
-      "words": "Nothing to switch off for API traffic. In the Console, admins can turn off thumbs feedback under Settings > Privacy controls.",
+      "words": "Nothing to switch off for API traffic. In the Console, admins can turn off thumbs feedback on the \"Data retention\" page, under \"Usage data and feedback\".",
       "src": [
        "data-register-chatgpt-claude:S50"
       ]
@@ -1602,7 +1654,7 @@
       ]
      },
      "admin": {
-      "words": "Console admins manage members, roles and API keys, and can limit workspaces to US-only processing. Settings > Privacy controls holds the feedback switch and shows whether zero data retention applies.",
+      "words": "Console admins manage members, roles and API keys, and can limit workspaces to US-only processing. The \"Data retention\" page holds the feedback switch, and Settings > Privacy Controls > Data retention period shows whether zero data retention applies.",
       "src": [
        "data-register-chatgpt-claude:S55",
        "data-register-chatgpt-claude:S53",
@@ -1694,7 +1746,7 @@
       ]
      },
      "kept": {
-      "words": "Microsoft keeps conversation history for 18 months by default. You can delete single conversations or your whole history at any time. Uploaded files are kept no longer than 18 months. Images shared with Copilot Vision aren't stored after the session, though text transcripts may be.",
+      "words": "Microsoft keeps conversation history for 18 months by default, and uploaded files no longer than 18 months. You can delete chats, or all history, at any time. Copilot Vision images aren't stored after the session, though text transcripts may be. Sign in to the updated app by 31 December 2026 to keep eligible chats; Microsoft will permanently delete the rest.",
       "src": [
        "data-register-copilot-gemini:S5",
        "data-register-copilot-gemini:S6"
@@ -1768,7 +1820,8 @@
        "data-register-copilot-gemini:S9",
        "data-register-copilot-gemini:S13",
        "data-register-copilot-gemini:S17",
-       "data-register-copilot-gemini:S18"
+       "data-register-copilot-gemini:S18",
+       "data-register-copilot-gemini:S36"
       ]
      },
      "humanReview": {
@@ -1790,24 +1843,26 @@
      "plan": "Free and paid personal plans",
      "who": "Personal Google accounts",
      "trains": {
-      "value": "yes-default",
-      "words": "Yes, by default for adults. With 'Keep Activity' on (the default from age 18), Google uses your chats and uploads to improve its services, including training generative AI models. With it off, future chats aren't used for training unless you send feedback. Temporary chats aren't used for training.",
+      "value": "unclear",
+      "short": "Google's own pages disagree",
+      "words": "Google's own pages disagree. Its US English page says chat-content training 'is on by default if you are over 18'. Its Australian English copy says 'These settings are off by default'. Look at the setting in your own account before you rely on either. Temporary chats aren't used for training. Google can still use feedback you send, with its chats.",
       "src": [
-       "data-register-copilot-gemini:S20",
-       "data-register-copilot-gemini:S21"
+       "data-register-copilot-gemini:S21",
+       "data-register-copilot-gemini:S38",
+       "data-register-copilot-gemini:S20"
       ]
      },
      "optOut": {
       "value": "yes",
-      "words": "Yes. At gemini.google.com go to Settings & help > Activity, select 'On' near the top, then 'Turn off' (or 'Turn off and delete activity'). For a one-off chat, select 'Temporary chat' next to 'New chat'. Some connected apps, including Google Workspace, stop working with Keep Activity off.",
+      "words": "Yes. Two training settings sit under History, which Google's US English page reaches from Settings and its Australian English page from Settings and help: 'Chat content including text & uploads' and the audio and Gemini Live setting. Google says you can turn them on or off at any time. For a one-off chat, select 'Temporary chat' next to 'New chat'.",
       "src": [
        "data-register-copilot-gemini:S21",
-       "data-register-copilot-gemini:S22",
-       "data-register-copilot-gemini:S20"
+       "data-register-copilot-gemini:S38",
+       "data-register-copilot-gemini:S22"
       ]
      },
      "kept": {
-      "words": "With Keep Activity on, chats are deleted after 18 months unless you choose 3 or 36 months or no auto-delete. With it off, or in a temporary chat, Google keeps chats up to 72 hours. Chats picked for human review are kept up to three years, even if you delete them.",
+      "words": "With History on, chats are deleted after 18 months unless you choose 3 or 36 months or no auto-delete. With it off, or in a temporary chat, Google keeps chats with your account for around two months. Chats picked for human review are kept up to three years, even if you delete them.",
       "src": [
        "data-register-copilot-gemini:S20",
        "data-register-copilot-gemini:S21"
@@ -1827,7 +1882,7 @@
       ]
      },
      "humanReview": {
-      "words": "Yes. Google says trained reviewers, including outside service providers, read a subset of chats, disconnected from your account. Turning Keep Activity off, or using a temporary chat, stops review for improving Google's AI. Google says chats can still be reviewed to protect it, its users and the public.",
+      "words": "Yes. Google says trained reviewers, including outside service providers, read some chats, disconnected from your account. With the chat content setting off, or in a temporary chat, chats stay out of review for training AI models. Google says chats can still be reviewed to improve its services in other ways and to protect it, its users and the public.",
       "src": [
        "data-register-copilot-gemini:S20"
       ]
@@ -1854,11 +1909,11 @@
       ]
      },
      "kept": {
-      "words": "Gemini app chats are kept 18 months by default; admins can pick 3 or 36 months, or turn 'Gemini conversation history' off, leaving chats held up to 72 hours. Side-panel chats in Gmail and Docs are kept for a period admins set, from 90 days to indefinitely. People can delete chats where admins allow. Temporary chat isn't offered.",
+      "words": "Gemini app chats are kept 18 months by default; admins can pick 3 or 36 months, or turn 'Gemini conversation history' off, leaving chats held up to 72 hours. Admins choose whether people can use temporary chats and delete chats, but Vault rules, where used, still keep that data. Gmail and Docs side-panel chats: admins set 90 days to indefinitely.",
       "src": [
        "data-register-copilot-gemini:S25",
        "data-register-copilot-gemini:S24",
-       "data-register-copilot-gemini:S22"
+       "data-register-copilot-gemini:S37"
       ]
      },
      "where": {
@@ -1896,7 +1951,7 @@
      "who": "Personal Google accounts",
      "trains": {
       "value": "no-default",
-      "words": "No, unless you send feedback. Google says notebook files, outputs and chats aren't used to directly train its foundational AI models unless you give thumbs up or down feedback. Chats with a notebook inside the Gemini app follow your Gemini 'Keep Activity' setting instead.",
+      "words": "No, unless you send feedback. Google says notebook files, outputs and chats aren't used to directly train its foundational AI models unless you give thumbs up or down feedback. Chats with a notebook inside the Gemini app follow your Gemini History settings instead.",
       "src": [
        "data-register-copilot-gemini:S29",
        "data-register-copilot-gemini:S30"
@@ -1904,13 +1959,13 @@
      },
      "optOut": {
       "value": "not-needed",
-      "words": "Not needed: there's no training switch. Google names thumbs up or down feedback as the exception, and feedback sends your prompts, sources, uploads and outputs, including Gemini chats in the notebook, even with Keep Activity off.",
+      "words": "Not needed: there's no training switch. Google names thumbs up or down feedback as the exception, and feedback sends your prompts, sources, uploads and outputs, including Gemini chats in the notebook, even with Gemini History off.",
       "src": [
        "data-register-copilot-gemini:S29"
       ]
      },
      "kept": {
-      "words": "Notebooks, sources and chat history stay until you delete them; we found no set time limit. Clear chat with 'Delete Chat History' in the chat panel's three-dots menu. Deleting a notebook removes its sources. Turning off Gemini's Keep Activity doesn't delete notebook data. Reviewed feedback is kept up to three years.",
+      "words": "Notebooks, sources and chat history stay until you delete them; we found no set time limit. Clear chat with 'Delete Chat History' in the chat panel's three-dots menu. Deleting a notebook removes its sources. Turning off Gemini's History setting doesn't delete notebook data. Reviewed feedback is kept up to three years.",
       "src": [
        "data-register-copilot-gemini:S31",
        "data-register-copilot-gemini:S30",
@@ -2081,7 +2136,7 @@
       ]
      },
      "admin": {
-      "words": "Admins manage members and roles, enforce SSO, set file, sharing and connector permissions, switch off Memory and enforce Incognito Mode. With 50+ seats, or any Enterprise Max seat, they also get session retention controls, audit logs sent to a webhook, SCIM and a usage dashboard.",
+      "words": "Admins manage members and roles, enforce SSO, set file, sharing and connector permissions, switch off Memory, enforce Incognito Mode and see a usage dashboard. With 50+ seats, or any Enterprise Max seat, they also get session retention controls, SCIM and audit logs, which come by webhook or through a read-only Audit API.",
       "src": [
        "data-register-others:S16",
        "data-register-others:S19",
@@ -2220,14 +2275,14 @@
   {
    "id": "grok",
    "name": "Grok",
-   "maker": "SpaceXAI (xAI)",
+   "maker": "SpaceXSI (xAI)",
    "plans": [
     {
      "plan": "Free, SuperGrok and The X Subscription (Plus, Premium, Super, Ultra)",
      "who": "Personal accounts in the Grok app and on grok.com",
      "trains": {
       "value": "yes-default",
-      "words": "Yes. SpaceXAI says it may use your prompts and Grok's replies to train its models unless you opt out. Private Chat isn't used for training. If you use Grok without logging in, in some regions outside the EU and UK you can't opt out.",
+      "words": "Yes. SpaceXSI says it may use your prompts and Grok's replies to train its models unless you opt out. Private Chat isn't used for training. If you use Grok without logging in, in some regions outside the EU and UK you can't opt out.",
       "src": [
        "data-register-others:S39",
        "data-register-others:S40"
@@ -2242,7 +2297,7 @@
       ]
      },
      "kept": {
-      "words": "Chats stay in your history until you delete them. Deleted chats, deleted accounts and Private Chat conversations are removed within 30 days, unless de-identified or kept for safety, security or legal reasons. SpaceXAI may delete accounts left inactive for more than 120 days.",
+      "words": "Chats stay in your history until you delete them. Deleted chats, deleted accounts and Private Chat conversations are removed within 30 days, unless de-identified or kept for safety, security or legal reasons. SpaceXSI may delete accounts left inactive for more than 120 days.",
       "src": [
        "data-register-others:S38",
        "data-register-others:S39",
@@ -2251,7 +2306,7 @@
       ]
      },
      "where": {
-      "words": "SpaceXAI is a US company and its privacy policy names no storage location. Its published subprocessor list puts its cloud providers, including AWS, Google Cloud and Oracle, in the US. We found nothing on Australian storage.",
+      "words": "SpaceXSI is a US company and its privacy policy names no storage location. Its published subprocessor list puts its cloud providers, including AWS, Google Cloud and Oracle, in the US. We found nothing on Australian storage.",
       "src": [
        "data-register-others:S38",
        "data-register-others:S42"
@@ -2264,7 +2319,7 @@
       ]
      },
      "humanReview": {
-      "words": "Yes. SpaceXAI says a limited number of authorised staff may review your Grok conversations to improve the model, investigate security incidents or misuse, and meet legal obligations. Automated classifiers also check for misuse.",
+      "words": "Yes. SpaceXSI says a limited number of authorised staff may review your Grok conversations to improve the model, investigate security incidents or misuse, and meet legal obligations. Automated classifiers also check for misuse.",
       "src": [
        "data-register-others:S39",
        "data-register-others:S40",
@@ -2297,7 +2352,7 @@
       ]
      },
      "where": {
-      "words": "SpaceXAI says Grok on X falls under X's privacy policy. X says it moves information across borders and uses data centres and providers 'in many parts of the world'. For Australians the data controller is X Corp. in the US. Nothing on Australian storage.",
+      "words": "SpaceXSI says Grok on X falls under X's privacy policy. X says it moves information across borders and uses data centres and providers 'in many parts of the world'. For Australians the data controller is X Corp. in the US. Nothing on Australian storage.",
       "src": [
        "data-register-others:S38",
        "data-register-others:S45"
@@ -2321,7 +2376,7 @@
      "who": "Work accounts",
      "trains": {
       "value": "no-default",
-      "words": "No by default. The enterprise terms say SpaceXAI won't use your content to train any AI model, 'subject to disclosures to Customer and Customer-controlled user settings'. SpaceXAI's guide ties these terms to the team workspace, so chats in a personal workspace may not be covered.",
+      "words": "No by default. The enterprise terms say SpaceXSI won't use your content to train any AI model, 'subject to disclosures to Customer and Customer-controlled user settings'. SpaceXSI's guide ties these terms to the team workspace, so chats in a personal workspace may not be covered.",
       "src": [
        "data-register-others:S46",
        "data-register-others:S49"
@@ -2329,7 +2384,7 @@
      },
      "optOut": {
       "value": "not-needed",
-      "words": "Not needed for the team workspace. Staff should check the workspace selector on grok.com: SpaceXAI's guide says to use the team workspace so conversations are 'protected under business plan terms'.",
+      "words": "Not needed for the team workspace. Staff should check the workspace selector on grok.com: SpaceXSI's guide says to use the team workspace so conversations are 'protected under business plan terms'.",
       "src": [
        "data-register-others:S49"
       ]
@@ -2342,7 +2397,7 @@
       ]
      },
      "where": {
-      "words": "SpaceXAI's subprocessor list puts its cloud providers in the US, with one support subsidiary in the UK, and its DPA allows processing in the US and other countries. Enterprise sales offer 'Data residency' but name no regions. Nothing on Australia.",
+      "words": "SpaceXSI's subprocessor list puts its cloud providers in the US, with one support subsidiary in the UK, and its DPA allows processing in the US and other countries. Enterprise sales offer 'Data residency' but name no regions. Nothing on Australia.",
       "src": [
        "data-register-others:S42",
        "data-register-others:S43",
@@ -2360,7 +2415,7 @@
       ]
      },
      "humanReview": {
-      "words": "SpaceXAI's enterprise FAQ, written for API customers, says classifiers check for misuse and a limited number of authorised staff may review business data when legally required, such as for security incidents. Your organisation's admin may access and monitor accounts on your work domain.",
+      "words": "SpaceXSI's enterprise FAQ, written for API customers, says classifiers check for misuse and a limited number of authorised staff may review business data when legally required, such as for security incidents. Your organisation's admin may access and monitor accounts on your work domain.",
       "src": [
        "data-register-others:S40",
        "data-register-others:S46",

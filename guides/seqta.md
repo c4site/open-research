@@ -1,6 +1,6 @@
 # SEQTA: the AI inside it, and the AI that connects to it
 
-Researched 17 October 2026 from vendor documentation. Every line is tagged with its source.
+Researched 18 November 2026 from vendor documentation. Every line is tagged with its source.
 
 ## The short version
 
@@ -107,7 +107,7 @@ Sources for the table: [S1] [S3] [S4] [S6] [S7]
 
 ## Outside AI that connects
 
-We checked each AI maker's directory on 17 October 2026 and found no SEQTA connector. SEQTA's public help centre had no articles on ChatGPT, Claude, Copilot, Gemini or MCP. [S27] [S28] [S29] [S32] [S20]
+We checked each AI maker's directory on 18 November 2026 and found no SEQTA connector. SEQTA's public help centre had no articles on ChatGPT, Claude, Copilot, Gemini or MCP. [S27] [S28] [S29] [S32] [S20]
 
 - We found no SEQTA MCP server and no public API documentation. MCP (Model Context Protocol) is the standard most AI connectors now use. [S20]
 - Tes's integration page says SEQTA works with "a wide array of educational tools and platforms", but names no AI assistant. [S12]
@@ -118,7 +118,7 @@ We checked each AI maker's directory on 17 October 2026 and found no SEQTA conne
 
 **Official?**
 
-- No official connection found. Anthropic's directory list on 17 October 2026 had no SEQTA connector. [S27]
+- No official connection found. Anthropic's directory list on 18 November 2026 had no SEQTA connector. [S27]
 
 **What it can see and do**
 
@@ -160,7 +160,7 @@ We checked each AI maker's directory on 17 October 2026 and found no SEQTA conne
 **What it can see and do**
 
 - Nothing documented. [S29]
-- SEQTA links to Microsoft 365 in other ways. It can create a Microsoft Teams team for each class and keep the members in step with SEQTA enrolments. "Data travels from SEQTA to MS Teams, but not back to SEQTA." [S15]
+- SEQTA links to Microsoft 365 in other ways. It can create a Microsoft Teams team for each class and keep the members in step with SEQTA enrolments. "Data travels from SEQTA to MS Teams, but not back to SEQTA." Tes Support has to switch the Teams link on for your school first. [S15]
 - Staff and students can also attach OneDrive files in SEQTA. [S16]
 - Tes doesn't describe either link as AI. Copilot inside your school's Microsoft 365 is covered in our separate Microsoft 365 guide. [S15] [S16]
 
@@ -296,40 +296,40 @@ We checked each AI maker's directory on 17 October 2026 and found no SEQTA conne
 
 ## Sources
 
-All sources were read on 17 October 2026.
+All sources were read on 18 November 2026.
 
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
-| S1 | SEQTA: School learning management system | Tes | https://www.tes.com/en-au/for-schools/seqta | No date shown | 17 Oct 2026 |
-| S2 | Education Horizons is now part of Tes | Tes | https://www.tes.com/for-schools/now-tes/education-horizons | No date shown | 17 Oct 2026 |
-| S3 | Revolutionising lesson planning with SEQTA AI Assist | Tes (blog) | https://www.tes.com/en-au/for-schools/blog/article/revolutionising-lesson-planning-seqta-ai-assist | No date shown | 17 Oct 2026 |
-| S4 | SEQTA's AI-powered summarised assessment feedback | Tes (blog) | https://www.tes.com/en-au/for-schools/blog/article/seqtas-ai-powered-summarised-assessment-feedback | No date shown | 17 Oct 2026 |
-| S5 | SEQTA AI Assist | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000142584-seqta-ai-assist | "Modified on Fri, 18 Sep" (2026) | 17 Oct 2026 |
-| S6 | SEQTA AI Assist for Lesson Planning | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000141704-seqta-ai-assist-for-lesson-planning | "Modified on Thu, 2 Apr" (2026) | 17 Oct 2026 |
-| S7 | SEQTA AI Assist: Summarised Assessment Feedback | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000141702-seqta-ai-assist-summarised-assessment-feedback | "Modified on Thu, 2 Apr" (2026) | 17 Oct 2026 |
-| S8 | SEQTA Required External Hostnames and Network Access | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000151163-seqta-required-external-hostnames-and-network-access | "Modified on Wed, 26 Aug" (2026) | 17 Oct 2026 |
-| S9 | SEQTA Suite v2026.6.2 (release notes) | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000150315-seqta-suite-v2026-6-2 | "Modified on Wed, 17 Jun" (2026) | 17 Oct 2026 |
-| S10 | Security and privacy (SEQTA) | Tes | https://www.tes.com/en-au/for-schools/seqta/security-and-privacy | No date shown | 17 Oct 2026 |
-| S11 | SEQTA Cloud | Tes | https://www.tes.com/en-au/for-schools/seqta/cloud | No date shown | 17 Oct 2026 |
-| S12 | Integration and compatibility (SEQTA) | Tes | https://www.tes.com/for-schools/seqta/integration-compatibility | No date shown | 17 Oct 2026 |
-| S13 | Set up cloud hosting for SEQTA | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000141735-set-up-cloud-hosting-for-seqta | "Modified on Wed, 11 Mar" (2026) | 17 Oct 2026 |
-| S14 | SEQTA Cloud Database Backup Service | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000151195-seqta-cloud-database-backup-service | "Modified on Fri, 4 Sep" (2026) | 17 Oct 2026 |
-| S15 | Integrating SEQTA with MS Teams | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000141305-integrating-seqta-with-ms-teams | "Modified on Fri, 27 Mar" (2026) | 17 Oct 2026 |
-| S16 | OneDrive integration setup | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000141483-onedrive-integration-setup | "Modified on Tue, 31 Mar" (2026) | 17 Oct 2026 |
-| S17 | Google Drive integration setup | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000141288-google-drive-integration-setup | "Modified on Tue, 24 Mar" (2026) | 17 Oct 2026 |
-| S18 | Start of Year Check-List DOE WA (Department of Education Western Australia) | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000143512-start-of-year-check-list-doe-wa-department-of-education-western-australia- | "Modified on Wed, 8 Apr" (2026) | 17 Oct 2026 |
-| S19 | Start of Year Check-List: CEWA (Catholic Education Western Australia) | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000143083-start-of-year-check-list-cewa-catholic-education-western-australia- | "Modified on Thu, 9 Apr" (2026) | 17 Oct 2026 |
-| S20 | SEQTA help and support portal (home page, and searches of its knowledge base for AI, MCP, ChatGPT, Claude, Copilot, Gemini, API, Zapier, Make and Power Automate) | Tes | https://seqta.help.tes.com/support/home | No date shown | 17 Oct 2026 |
-| S21 | Privacy Notice (Australia edition) | Tes | https://www.tes.com/en-au/policies/privacy-notice | Last updated 3 Aug 2026 | 17 Oct 2026 |
-| S22 | Tes Data Processing Agreement | Tes | https://www.tes.com/en-au/policies/data-processing-agreement | Last updated 10 Sep 2026 | 17 Oct 2026 |
-| S23 | General Terms of Business (Australia edition) | Tes | https://www.tes.com/en-au/policies/general-terms-business | Last updated 29 Sep 2026 | 17 Oct 2026 |
-| S24 | Tes sub-processors | Tes | https://www.tes.com/policies/sub-processors | No date shown | 17 Oct 2026 |
-| S25 | Generative AI: Saving teachers time and improving planning | Tes (blog) | https://www.tes.com/en-au/for-schools/blog/article/generative-ai-saving-teachers-time-and-improving-planning | No date shown | 17 Oct 2026 |
-| S26 | AI in Australian schools: Practical policy & classroom guidance for school leaders | Tes (blog) | https://www.tes.com/en-au/for-schools/blog/article/ai-australian-schools-practical-policy-classroom-guidance-school-leaders | No date shown | 17 Oct 2026 |
-| S27 | Claude site map (Connectors Directory pages; 973 connectors listed, none for SEQTA) | Anthropic | https://claude.com/sitemap.xml | No date shown | 17 Oct 2026 |
-| S28 | OpenAI plugin directory pages (13 category site maps, 336 plugin pages, none for SEQTA) | OpenAI | https://openai.com/sitemap.xml | No date shown | 17 Oct 2026 |
-| S29 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | Last updated on 16 Oct 2026 | 17 Oct 2026 |
-| S30 | Partner-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-partners | Last updated on 27 Apr 2026 | 17 Oct 2026 |
-| S31 | Microsoft Marketplace search: "seqta" (no SEQTA listing) | Microsoft | https://appsource.microsoft.com/en-us/marketplace/apps?search=seqta | No date shown | 17 Oct 2026 |
-| S32 | Use & manage Connected Apps in Gemini (computer) | Google Gemini Apps Help | https://support.google.com/gemini/answer/13695044?hl=en&co=GENIE.Platform%3DDesktop | No date shown | 17 Oct 2026 |
-| S33 | Connect & manage custom apps for Gemini Apps | Google Gemini Apps Help | https://support.google.com/gemini/answer/17209137 | No date shown | 17 Oct 2026 |
+| S1 | SEQTA: School learning management system | Tes | https://www.tes.com/en-au/for-schools/seqta | No date shown | 18 Nov 2026 |
+| S2 | Education Horizons is now part of Tes | Tes | https://www.tes.com/for-schools/now-tes/education-horizons | No date shown | 18 Nov 2026 |
+| S3 | Revolutionising lesson planning with SEQTA AI Assist | Tes (blog) | https://www.tes.com/en-au/for-schools/blog/article/revolutionising-lesson-planning-seqta-ai-assist | No date shown | 18 Nov 2026 |
+| S4 | SEQTA's AI-powered summarised assessment feedback | Tes (blog) | https://www.tes.com/en-au/for-schools/blog/article/seqtas-ai-powered-summarised-assessment-feedback | No date shown | 18 Nov 2026 |
+| S5 | SEQTA AI Assist | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000142584-seqta-ai-assist | "Modified on Fri, 18 Sep" (2026) | 18 Nov 2026 |
+| S6 | SEQTA AI Assist for Lesson Planning | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000141704-seqta-ai-assist-for-lesson-planning | "Modified on Thu, 2 Apr" (2026) | 18 Nov 2026 |
+| S7 | SEQTA AI Assist: Summarised Assessment Feedback | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000141702-seqta-ai-assist-summarised-assessment-feedback | "Modified on Thu, 2 Apr" (2026) | 18 Nov 2026 |
+| S8 | SEQTA Required External Hostnames and Network Access | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000151163-seqta-required-external-hostnames-and-network-access | "Modified on Wed, 26 Aug" (2026) | 18 Nov 2026 |
+| S9 | SEQTA Suite v2026.6.2 (release notes) | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000150315-seqta-suite-v2026-6-2 | "Modified on Wed, 17 Jun" (2026) | 18 Nov 2026 |
+| S10 | Security and privacy (SEQTA) | Tes | https://www.tes.com/en-au/for-schools/seqta/security-and-privacy | No date shown | 18 Nov 2026 |
+| S11 | SEQTA Cloud | Tes | https://www.tes.com/en-au/for-schools/seqta/cloud | No date shown | 18 Nov 2026 |
+| S12 | Integration and compatibility (SEQTA) | Tes | https://www.tes.com/for-schools/seqta/integration-compatibility | No date shown | 18 Nov 2026 |
+| S13 | Set up cloud hosting for SEQTA | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000141735-set-up-cloud-hosting-for-seqta | "Modified on Wed, 11 Mar" (2026) | 18 Nov 2026 |
+| S14 | SEQTA Cloud Database Backup Service | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000151195-seqta-cloud-database-backup-service | "Modified on Fri, 4 Sep" (2026) | 18 Nov 2026 |
+| S15 | Integrating SEQTA with MS Teams | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000141305-integrating-seqta-with-ms-teams | "Modified on Fri, 13 Nov" (2026) | 18 Nov 2026 |
+| S16 | OneDrive integration setup | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000141483-onedrive-integration-setup | "Modified on Tue, 31 Mar" (2026) | 18 Nov 2026 |
+| S17 | Google Drive integration setup | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000141288-google-drive-integration-setup | "Modified on Tue, 24 Mar" (2026) | 18 Nov 2026 |
+| S18 | Start of Year Check-List DOE WA (Department of Education Western Australia) | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000143512-start-of-year-check-list-doe-wa-department-of-education-western-australia- | "Modified on Wed, 8 Apr" (2026) | 18 Nov 2026 |
+| S19 | Start of Year Check-List: CEWA (Catholic Education Western Australia) | Tes (SEQTA help and support portal) | https://seqta.help.tes.com/support/solutions/articles/75000143083-start-of-year-check-list-cewa-catholic-education-western-australia- | "Modified on Thu, 9 Apr" (2026) | 18 Nov 2026 |
+| S20 | SEQTA help and support portal (home page, and searches of its knowledge base for AI, MCP, ChatGPT, Claude, Copilot, Gemini, API, Zapier, Make and Power Automate) | Tes | https://seqta.help.tes.com/support/home | No date shown | 18 Nov 2026 |
+| S21 | Privacy Notice (Australia edition) | Tes | https://www.tes.com/en-au/policies/privacy-notice | Last updated 3 Aug 2026 | 18 Nov 2026 |
+| S22 | Tes Data Processing Agreement | Tes | https://www.tes.com/en-au/policies/data-processing-agreement | Last updated 10 Sep 2026 | 18 Nov 2026 |
+| S23 | General Terms of Business (Australia edition) | Tes | https://www.tes.com/en-au/policies/general-terms-business | Last updated 16 Nov 2026 | 18 Nov 2026 |
+| S24 | Tes sub-processors | Tes | https://www.tes.com/policies/sub-processors | No date shown | 18 Nov 2026 |
+| S25 | Generative AI: Saving teachers time and improving planning | Tes (blog) | https://www.tes.com/en-au/for-schools/blog/article/generative-ai-saving-teachers-time-and-improving-planning | No date shown | 18 Nov 2026 |
+| S26 | AI in Australian schools: Practical policy & classroom guidance for school leaders | Tes (blog) | https://www.tes.com/en-au/for-schools/blog/article/ai-australian-schools-practical-policy-classroom-guidance-school-leaders | No date shown | 18 Nov 2026 |
+| S27 | Claude site map (Connectors Directory pages; 1,157 connector pages listed, none for SEQTA) | Anthropic | https://claude.com/sitemap.xml | No date shown | 18 Nov 2026 |
+| S28 | OpenAI plugin directory pages (13 category site maps, 387 plugin pages, none for SEQTA) | OpenAI | https://openai.com/sitemap.xml | No date shown | 18 Nov 2026 |
+| S29 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | Last updated on 16 Nov 2026 | 18 Nov 2026 |
+| S30 | Partner-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-partners | Last updated on 16 Nov 2026 | 18 Nov 2026 |
+| S31 | Microsoft Marketplace search: "seqta" (no SEQTA listing) | Microsoft | https://marketplace.microsoft.com/en-us/search/products?search=seqta | No date shown | 18 Nov 2026 |
+| S32 | Use & manage Connected Apps in Gemini (computer) | Google Gemini Apps Help | https://support.google.com/gemini/answer/13695044?hl=en&co=GENIE.Platform%3DDesktop | No date shown | 18 Nov 2026 |
+| S33 | Connect & manage custom apps for Gemini Apps | Google Gemini Apps Help | https://support.google.com/gemini/answer/17209137 | No date shown | 18 Nov 2026 |

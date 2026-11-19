@@ -90,7 +90,7 @@
     "from": "Claude Tag",
     "to": "Slack",
     "who": "admin",
-    "plan_needed": "Claude Team or Enterprise (public beta), run by an Owner of the Claude organisation, with a Slack workspace admin to install the app and run the pairing command. Not available on Free, Pro or Max, or with Zero Data Retention, customer-managed encryption or the HIPAA configuration. Routines must be enabled. Team plans need usage credits loaded.",
+    "plan_needed": "Claude Team or Enterprise (public beta), run by an Owner of the Claude organisation, with a Slack workspace admin to install the app and run the pairing command. Not available on Free, Pro, Max or Ultra, or with Zero Data Retention, customer-managed encryption or the HIPAA configuration. Routines must be enabled. Team plans need usage credits loaded.",
     "steps": [
       {
         "where": "claude.ai/admin-settings/claude-tag",
@@ -147,8 +147,8 @@
     "steps": [
       {
         "where": "ChatGPT, Settings",
-        "do": "Open Settings and find Slack under Apps or Plugins, depending on what your account shows.",
-        "see": "The Slack app or plugin page."
+        "do": "Open Settings and find Slack in Plugins.",
+        "see": "The Slack plugin page."
       },
       {
         "where": "Slack app page in ChatGPT",
@@ -158,7 +158,7 @@
       {
         "where": "Slack authorisation screen",
         "do": "Choose the Slack workspace you want and approve access.",
-        "see": "ChatGPT connects to that one workspace. To switch workspaces later, disconnect and connect again."
+        "see": "ChatGPT connects to that workspace. To add another later, select Slack in Settings > Plugins, then Connect another account."
       },
       {
         "where": "ChatGPT chat",
@@ -169,12 +169,12 @@
     "undo": [
       {
         "where": "ChatGPT, Settings > Plugins",
-        "do": "Select the Slack app or plugin, then Disconnect.",
-        "see": "Future access stops. Past chats, saved files and memories aren't deleted automatically."
+        "do": "Select Slack. If Connected accounts appears, open that account's more options menu (•••). Then select Disconnect.",
+        "see": "Future access through that account stops. Past chats, saved files and memories aren't deleted automatically."
       }
     ],
     "source": "S46, S54, S53",
-    "doc_updated": "2026-10-11"
+    "doc_updated": "2026-11-08"
   },
   {
     "id": "chatgpt-admin-sets-up-at-chatgpt-in-slack",
@@ -206,11 +206,11 @@
       {
         "where": "OpenAI admin console, the agent",
         "do": "To limit channels, select Selected channels only, add your test channels and select Save channel restrictions.",
-        "see": "Channel restrictions apply to Slack channels only. They don't restrict direct messages."
+        "see": "With Selected channels only on, @ChatGPT replies only in the channels you choose and can't reply to direct messages."
       },
       {
         "where": "Slack test channel",
-        "do": "Add @ChatGPT to the channel and mention it in a fresh thread with a short request. Test a direct message separately.",
+        "do": "Add @ChatGPT to the channel and mention it in a fresh thread with a short request. If channel restrictions are off, also test a direct message.",
         "see": "@ChatGPT replies in the thread, visible to everyone in the channel. It doesn't respond to guests or in Slack Connect channels."
       }
     ],
@@ -227,7 +227,7 @@
       }
     ],
     "source": "S49, S48, S47",
-    "doc_updated": "2026-10-17"
+    "doc_updated": "2026-11-15"
   },
   {
     "id": "gemini-enterprise-app-for-slack",
@@ -265,7 +265,7 @@
       }
     ],
     "source": "S64, S63, S65",
-    "doc_updated": "2026-10-14"
+    "doc_updated": "2026-11-10"
   },
   {
     "id": "agentforce-agent-in-slack",
@@ -297,9 +297,9 @@
     ],
     "undo": [
       {
-        "where": "Not documented",
-        "do": "The Slack articles we read don't describe uninstalling an agent.",
-        "see": "Not described."
+        "where": "Slack (Pro or Business+), Admin > Manage Agentforce",
+        "do": "Click Installed agents at the top of the page. Next to the agent, click Manage Agent. Click Manage in the top-right corner, then select Remove [agent name].",
+        "see": "The agent is uninstalled. On Enterprise, you can instead remove an agent from specific workspaces or uninstall it from the organisation."
       }
     ],
     "source": "S25, S26",
@@ -324,15 +324,15 @@
       },
       {
         "where": "A channel",
-        "do": "Click the channel name, open the Agents & apps tab and click Add agent or app. Then mention the agent with @.",
+        "do": "Click the agents & apps icon in the channel header, then Add agent or app (or Add more if the channel already has some). Click Add next to the app and close the panel. Then mention the agent with @.",
         "see": "The app can now read that channel's conversation as well as your messages with it."
       }
     ],
     "undo": [
       {
-        "where": "Not documented",
-        "do": "The article we read doesn't describe removing an AI app.",
-        "see": "Not described."
+        "where": "A channel",
+        "do": "Click the channel name in the header, open the Agents & apps tab, open the More menu next to the app and select Remove from this channel.",
+        "see": "The app is removed from that channel. The article doesn't describe uninstalling an app from the whole workspace."
       }
     ],
     "source": "S24",

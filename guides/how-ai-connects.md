@@ -1,6 +1,6 @@
 # How AI connects to the tools you already use
 
-Researched 15 October 2026 from vendor documentation. Every line is tagged with its source.
+Researched 18 November 2026 from vendor documentation. Every line is tagged with its source.
 
 ## The short version
 
@@ -22,7 +22,7 @@ OpenAI and Anthropic warn that a connected service can carry hidden instructions
 
 Automation services like Zapier, Make, n8n and Power Automate can sit in the middle, so one connection reaches many apps. [S80][S88][S96][S55]
 
-This area changes monthly. On 15 October 2026, Zapier's ChatGPT guide still described a developer mode step that OpenAI's newer page says is no longer needed. Check the date on any setup guide before you follow it. [S5][S83]
+This area changes monthly, and setup guides drift. Zapier's ChatGPT guide, updated 3 November 2026, says Create custom MCP server where OpenAI's own page says Add custom MCP server. Check the date on any setup guide before you follow it. [S5][S83]
 
 ## The words you'll see
 
@@ -53,7 +53,7 @@ This area changes monthly. On 15 October 2026, Zapier's ChatGPT guide still desc
 ### What it's called now
 
 - OpenAI's help centre calls these links apps. Its examples are Google Drive and Slack. [S1]
-- The word connectors still appears in places, including that page's answer about training. [S1]
+- The word connectors still appears in OpenAI's older release notes, from before the switch to apps. [S98]
 - Plugins are a newer layer. A plugin can include skills, connected apps, app templates for administrators and extensions. [S2]
 - Very old versions of the iOS and Android apps may say Apps where newer versions say Plugins. [S1]
 - Some apps show interactive content in the chat, such as maps or cards. [S1]
@@ -61,18 +61,20 @@ This area changes monthly. On 15 October 2026, Zapier's ChatGPT guide still desc
 
 ### Which plans have it
 
-OpenAI says availability depends on the app, your plan, region, workspace, role, model and where you use ChatGPT. [S1] Its pricing pages list these rows. The Free to Pro columns come from the individual pricing page, and the Business and Enterprise columns from the business pricing page. [S7][S8]
+OpenAI says availability depends on the app, your plan, region, workspace, role, model and where you use ChatGPT. [S1] Its pricing pages list these rows. The Free to Pro columns come from the individual pricing page, and the Business and Enterprise columns from the business pricing page. "Not listed" means the individual pricing page doesn't have that row. [S7][S8]
 
 | OpenAI's label | Free | Go | Plus | Pro | Business | Enterprise | Source |
 |---|---|---|---|---|---|---|---|
 | Discover & use Plugins | Yes | Yes | Yes | Yes | Yes | Yes | [S7][S8] |
-| Interactive apps | Yes | Yes | Yes | Yes | Yes | Yes | [S7][S8] |
-| Apps connecting to internal tools | No | No | Yes | Yes | Yes | Yes | [S7][S8] |
+| Create & share Plugins | No | Yes | Yes | Yes | Yes | Yes | [S7][S8] |
+| Share Plugins with your workspace | No | No | No | Yes | Yes | Yes | [S7][S8] |
+| Interactive apps | Not listed | Not listed | Not listed | Not listed | Yes | Yes | [S7][S8] |
+| Apps connecting to internal tools | Not listed | Not listed | Not listed | Not listed | Yes | Yes | [S7][S8] |
 | Apps for deep research | Limited | Limited | Yes | Yes | Yes | Yes | [S7][S8] |
 | Developer mode (beta) | No | No | Yes | Yes | Yes | Yes | [S7][S8] |
-| Company knowledge | No | No | No | No | Yes | Yes | [S7][S8] |
-| Workspace agents | No | No | No | No | Yes | Yes | [S7][S8] |
-| Connector registry | No | No | No | No | No | Yes | [S7][S8] |
+| Company knowledge | Not listed | Not listed | Not listed | Not listed | Yes | Yes | [S7][S8] |
+| Workspace agents | Not listed | Not listed | Not listed | Not listed | Yes | Yes | [S7][S8] |
+| Connector registry | Not listed | Not listed | Not listed | Not listed | No | Yes | [S7][S8] |
 
 - Edu isn't on either pricing page. OpenAI's help pages group Edu with Enterprise for apps and admin controls. [S5][S6]
 
@@ -110,7 +112,7 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 - Manage domains limits which email domains members can connect to an app. [S6]
 - Enterprise organisations can ask OpenAI Support to block work accounts on their verified domain from being connected to personal ChatGPT accounts. Covered apps include Gmail, Google Drive, Outlook Email, SharePoint, Slack and Teams. [S6][S1]
 - Some Outlook, Teams and SharePoint actions need a Microsoft Entra administrator to grant organisation-wide consent. Microsoft's screen has no per-permission boxes, so Accept grants the whole request. [S6]
-- App calls are logged, and Enterprise and Edu customers can retrieve conversations, including those using apps, through the Compliance API. [S1][S5][S6]
+- Enterprise and Edu customers can retrieve conversations, including those using apps, through the Compliance API. OpenAI says app logs depend on the app, product and workspace setup, so check the coverage for each app. [S1][S5][S6]
 - Business administrators don't automatically get access to members' ordinary private conversations. [S6]
 - Administrators can switch off the thumbs feedback buttons under Workspace settings > Allow response feedback. [S9]
 - Lockdown Mode is an optional setting that limits outbound network requests to reduce data theft through prompt injection. It turns off deep research and agent mode. On personal and self-serve Business accounts, it also blocks live access to outside services and connector write actions where they conflict with its protections. [S21]
@@ -153,7 +155,7 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 - Eligible API customers and new Enterprise and Edu customers can have their content stored in Australia. [S17][S8]
 - OpenAI offers in-region AI processing (it calls this inference residency) only for Europe, the United States and the UAE. Australia isn't on that list. [S17]
 - Data sent to apps or MCP servers can be stored outside the chosen region. [S17][S6]
-- Administrator-managed Google Drive sync works for workspaces set to Australian data residency. [S18]
+- Administrator-managed app sync, which covered Google Drive, is no longer offered. OpenAI's page on it now redirects to its admin controls page, which says members connect Google Drive for live access instead. [S6][S18]
 
 ## Claude
 
@@ -180,8 +182,8 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 ### Which plans have it
 
 - Directory connectors are available to all users of the Claude apps. [S23]
-- The pricing page lists connectors and desktop extensions for Free, Pro and both Max tiers. [S35]
-- Custom connectors work on Free, Pro, Max, Team and Enterprise. Free accounts can add one. [S23][S24][S34]
+- The pricing page lists connectors and desktop extensions for Free, Pro, Max and Ultra. [S35]
+- Custom connectors work on Free, Pro, Max, Ultra, Team and Enterprise. Free accounts can add one. [S23][S24][S34]
 - On Team and Enterprise, an Owner enables a connector first. Each member then signs in with their own account, unless the connector uses a shared credential. [S23][S24]
 - Installing connectors on mobile is in beta. [S23]
 
@@ -196,18 +198,18 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 - To use it, select + in the message box, then Connectors, and switch it on for that chat. [S31]
 - Claude may ask before using a tool. Allow once runs it this time, and Always allow skips the question for that tool from then on. [S31]
 - For each connector you can set groups of tools to Always allow, Needs approval or Blocked. [S31]
-- Anthropic's pages use slightly different menu names. Most say Customize > Connectors, and one says Settings > Connectors. [S31][S26]
+- Anthropic's pages now all say Customize > Connectors. For desktop extensions they differ: two say Settings > Desktop app, then Manage next to Extensions, and one says Settings > Extensions. Anthropic says Settings > Extensions is the older layout. [S25][S26][S34]
 - With 10 or more connectors, Anthropic suggests the On demand tool access mode so they don't crowd the conversation. [S23][S30]
 - Claude can suggest a connected app on its own. Before it books or buys anything, it checks with you. [S29]
 
 ### Custom connectors (remote MCP)
 
-1. Go to Customize > Connectors and click Add custom connector. [S34]
-2. Enter the server's https address. [S34]
+1. Go to Customize > Connectors, select Add, then Add custom connector. [S34]
+2. Enter a name for the connector and the server's https address, then click Continue. [S34]
 3. Choose how people sign in: Sign in now, Sign in when needed or No sign-in. [S34]
 4. If you chose a sign-in option, choose how Claude identifies itself. Anthropic recommends Use Claude's published identity. [S34]
 5. Put any fixed credential, such as an API key, under Request headers. This is in beta for a limited set of organisations. [S34]
-6. Click Add, then connect as you would with a directory connector. [S34][S24]
+6. Click Add. If the connector then shows Connect, click it and sign in. [S34][S24]
 
 - Claude reaches custom connectors from Anthropic's cloud, even in the desktop app, so the server must be reachable from the public internet. [S24]
 - A server behind a firewall needs Anthropic's IP addresses allowed through, or an MCP tunnel. [S24][S34]
@@ -215,7 +217,7 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 
 ### Desktop extensions (local MCP)
 
-1. In Claude Desktop, go to Settings > Extensions. [S25]
+1. In Claude Desktop, go to Settings > Desktop app and select Manage next to Extensions. In the older Settings layout, go to Settings > Extensions. [S25]
 2. Click Browse extensions, choose an Anthropic-reviewed extension, and click Install. [S25]
 3. Fill in any settings it needs, such as an API key. [S25]
 
@@ -229,12 +231,13 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 - Enable a connector for the organisation under Organization settings > Connectors > Browse connectors > Add to your team. [S23]
 - Limit actions for everyone, such as letting Claude search and summarise email while blocking sending. Each tool group can be Always allow, Needs approval or Blocked, and members can't override it. [S23]
 - Add custom connectors. On Team only Owners and Primary Owners can, and on Enterprise so can custom roles with library management rights. [S24]
-- Enterprise-managed auth: authorise a connector once through the organisation's identity provider, then choose which roles get it and which permissions it may request. Okta is supported at launch. [S27]
+- Enterprise-managed auth: authorise a connector once for the organisation, then choose which roles get it and which permissions it may request. It's for Team and Enterprise. The identity-provider version is generally available and supports Okta. A second version, Claude-issued auth, needs no identity provider, works only with connectors that support it, and is in beta. [S27]
+- Let members request connectors: members who can't add a connector select Request on its directory page, and Owners see the requests under Organization settings > Notifications. Anthropic says this is on by default on Team and off by default on Enterprise. [S23]
 - Enterprise only: stop work accounts on the company's verified domains being connected from personal Claude accounts. Covered services include Gmail, Google Drive, HubSpot, Canva, Microsoft 365 and Slack. [S28]
 - Desktop extensions: switch public extensions on or off, keep an allowlist and upload the organisation's own. Device-level policies override the in-app settings. [S25]
 - Switch off interactive connector tools. [S24]
 - Switch off the thumbs feedback buttons under Organization settings > Data and Privacy. [S37]
-- On Team and Enterprise, connectors only work in private projects, and chats with synced content can't be shared. [S23]
+- An organisation can turn off Share chats that use connectors. Members then can't share chats that use connectors or synced content, including every chat in a project that has synced content. [S23]
 
 ### Anthropic's warnings
 
@@ -254,7 +257,7 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 
 ### Australia
 
-- Australia is on Anthropic's Supported Regions Policy, effective 12 May 2026. [S38]
+- Australia is on Anthropic's Supported Regions Policy, effective 12 November 2026. [S38]
 - Connected services run on their own infrastructure under their own terms, which may be outside the United States. Settings that keep Claude's own processing in the US don't change where those services run. [S23]
 - Anthropic's regional compliance page covers Claude through AWS Bedrock, Google Vertex and Microsoft Foundry, with an Asia-Pacific row. It doesn't cover connectors in the Claude apps. [S39]
 
@@ -264,10 +267,10 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 
 ### Copilot Chat and the paid licence
 
-- Copilot Chat comes with eligible Microsoft 365 licences. It's mainly grounded on the web, plus files you upload or paste and some in-app context. [S40]
-- In Outlook, Copilot Chat can also search your mail, calendar, meetings and chats without the paid licence. [S40]
-- The paid Microsoft 365 Copilot licence adds reasoning across your organisation's emails, meetings, chats, documents and sites, and fuller access to agents. [S40]
-- Both respect existing Microsoft 365 permissions. [S40]
+- Microsoft now describes three levels. Copilot Chat (Basic) comes with eligible Microsoft 365 licences and mainly uses the web. It uses your organisation's content only when you upload it, work with content open in Teams or Outlook, or use a pay-as-you-go agent. [S40]
+- Microsoft 365 Copilot (Basic) is Microsoft's name for people without the Copilot add-on licence who can still use Copilot inside Word, Excel, PowerPoint and OneNote. [S40]
+- Microsoft 365 Copilot (Premium) is the paid add-on. It grounds answers in your organisation's emails, files, meetings, calendars and teams through Microsoft Graph, and includes agents that use work data. Copilot Cowork, Copilot Code and Autopilot are billed by usage on top. [S40]
+- All three respect existing Microsoft 365 permissions. [S40]
 
 ### Copilot connectors
 
@@ -281,7 +284,7 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 
 ### Write actions through connectors
 
-- Federated connectors have been read-only. Microsoft says write, update and delete actions begin rolling out in early October 2026. [S41][S42]
+- Microsoft's federated connectors page now says Copilot can create, update or delete data in a connected system, with the user's approval, where the connector provides those tools. Its main connectors overview still calls federated connectors read-only and says write actions "will be available starting early October 2026". [S42][S41]
 - Write tools ask for approval by default. The choices are Allow once, Allow for conversation, Always allow and Cancel. [S42]
 - If a publisher adds or changes a write tool, it goes back to needing approval. [S42]
 - The Researcher agent stays read-only. [S42]
@@ -294,9 +297,10 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 
 ### Admin controls
 
-- Microsoft-published federated connectors are on by default. Partner connectors need an administrator's approval. [S42]
+- Microsoft-built federated connectors are available by default. Connectors from outside publishers are available only when an administrator allows that publisher type or turns the connector on. [S42]
 - Administrators manage them in the Microsoft 365 admin center under Copilot connectors > Your connections, and can roll a connector out to chosen groups first. [S42]
-- A setting called Allowed agent types can keep federated connectors off by default, including future ones. [S42]
+- A setting called Agent and plugin access (Agents > Settings) can keep federated connectors off by publisher type, including future ones. A second setting there, User access, caps who can use any agent or connector. [S42]
+- Microsoft lists a Microsoft 365 Copilot licence among the conditions for a user to see a federated connector. [S42]
 - Microsoft asks administrators to check a connector's capabilities, privacy terms and third-party agreements before enabling one that has write tools. [S42]
 - The Agent Registry (Agents > All agents) lets administrators install, block or delete agents. Installing one includes a Grant admin consent step. [S46]
 - Microsoft says users can only use agents their administrator allows, and tells administrators to check each agent's privacy statement and terms. [S47]
@@ -313,14 +317,15 @@ OpenAI says availability depends on the app, your plan, region, workspace, role,
 ### Personal accounts: Connected Apps
 
 - Gemini can connect to Google apps and third-party services, and can act in them with your permission. [S61]
-- You must be signed in, and Keep Activity must be on. With it off, Connected Apps don't work on gemini.google.com or iOS devices, and on Android only Phone, Messages, WhatsApp and Device assistance still work. [S61][S60]
+- You must be signed in, and the History setting must be on. With it off, Connected Apps don't work on gemini.google.com, iOS devices or smart watches, and on Android only Phone, Messages, WhatsApp and Device assistance still work. [S61][S60]
+- Google's privacy hub and its Connected Apps pages now call this setting History. Its pages for work accounts and for Personal Intelligence still say Keep Activity. [S60][S61][S62][S63][S64]
 - To connect, open gemini.google.com, select Customize in the sidebar, then Connectors at the top, then Add. In a chat, type @ to pick an app. [S61]
 - Google's pages say Connected Apps. Some Google text also uses the word extension, such as "the Workspace extension". [S61][S66]
 
 ### Custom apps through MCP
 
 - Personal accounts can add a custom app by entering an MCP server's address. [S62]
-- You must be 18 or over and in the US, with Keep Activity on. For now, the feature is English-only and not available to work and school accounts. [S62]
+- You must be 18 or over and in the US, with History on. For now, the feature is English-only and not available to work and school accounts. [S62]
 - Google says it doesn't control, monitor or secure these servers. Once data reaches a custom app, that app's privacy practices apply. [S62]
 - Gemini currently asks you to confirm every write action, but Google notes Gemini can make mistakes. [S62]
 - Google warns custom apps may ask for more data than a task needs. Gemini may also share chat content and data from your other connected sources with them. [S62]
@@ -407,7 +412,7 @@ An automation service already holds sign-ins to many apps. Connect an AI to it o
 ### Make
 
 - Make's MCP server lets an AI tool run your Make scenarios (automated workflows) and manage your Make account. [S88][S90]
-- You connect with OAuth at mcp.make.com, and choose an organisation and permission scopes on the consent screen. [S89]
+- You connect with OAuth at https://mcp.make.com/v2, and choose an organisation and permission scopes on the consent screen. [S89]
 - The "Run your scenarios" scope gives access to every on-demand and active scenario in the organisation. [S89]
 - Scenario run tools are on all plans. Management tools need a paid plan. [S88]
 - MCP toolboxes are separate servers holding only the scenarios you pick, each marked Read only or Read & write. [S92][S91]
@@ -419,7 +424,7 @@ An automation service already holds sign-ins to many apps. Connect an AI to it o
 
 - The AI Agent node connects a chat model to at least one tool, and the agent decides which tools to call. [S94]
 - The MCP Client Tool node lets n8n agents use an outside MCP server. You choose which of its tools to expose. [S96]
-- The MCP Server Trigger node turns n8n workflows into tools that other AI apps can call. Its authentication can be None, Bearer or Header. [S95]
+- The MCP Server Trigger node turns n8n workflows into tools that other AI apps can call. Its authentication can be None, n8n User Auth (OAuth2, on node version 2 and later), Bearer or Header. [S95]
 - n8n can be self-hosted on your own infrastructure. [S97] Our reading: that lets an organisation choose where it runs. The pages we read don't mention Australian hosting.
 
 ### Power Automate
@@ -433,16 +438,18 @@ An automation service already holds sign-ins to many apps. Connect an AI to it o
 
 ## Your data when AI is connected
 
-### The take-home training table, re-checked 15 October 2026
+### The take-home sheet's training table still mostly holds
+
+We re-checked this table on 18 November 2026. The Gemini personal row changed. [S60]
 
 | Plan | What the take-home sheet relies on | Still holds? | What the vendor says now | Source |
 |---|---|---|---|---|
-| ChatGPT Free, Plus, Pro | May train on content. Opt out under Data controls. A thumbs rating overrides the opt-out. | Yes. Consider adding Go. | OpenAI may train on your content unless you turn off "Improve the model for everyone" (Settings > Data controls) or opt out in the Privacy Portal. Thumbs feedback can send the whole conversation for training even after opting out. The pricing page shows the same opt-out for Go. Page updated 12 Oct 2026 UTC (13 Oct in Perth). | [S9][S10][S7] |
+| ChatGPT Free, Plus, Pro | May train on content. Opt out under Data controls. A thumbs rating overrides the opt-out. | Yes. Consider adding Go. | OpenAI may train on your content unless you turn off "Improve the model for everyone" (Settings > Data controls) or opt out in the Privacy Portal. Thumbs feedback can send the whole conversation for training even after opting out. The pricing page shows the same opt-out for Go. Page updated 16 Nov 2026 UTC (17 Nov in Perth). | [S9][S10][S7] |
 | ChatGPT Business, Enterprise, Edu, API | Not trained on by default | Yes | Not used to improve models by default. For Business, Enterprise and Edu, thumbs feedback doesn't change that. The same applies to data from apps. | [S9][S20][S6] |
 | Claude Free, Pro, Max | Trains only if Model Improvement is on | Yes, with a nuance | Chats are used if you allow it, if a chat is flagged for safety review, or if you opt in to a programme such as Trusted Tester. Raw connector content is excluded. Thumbs feedback keeps the whole conversation for up to 5 years and may be used for training. Page still dated 16 Mar 2026. | [S36] |
 | Claude for Work, API | Not trained on by default, unless feedback is reported or you opt in | Yes | Unchanged. Page still dated 18 Aug 2026. Owners can switch off the feedback buttons. | [S37] |
-| Gemini, personal | Keep Activity on: trains, with some human review. Off: kept 72 hours, no training unless feedback is sent | Yes | Unchanged. Page dated 13 Oct 2026. With Keep Activity off, most Connected Apps don't work. | [S60][S61] |
-| Microsoft Copilot, work | No foundation-model training. Stored with your M365 data. Processing can leave your region. | Yes | Unchanged. Page updated 8 Oct 2026. Local processing in Australia is expected by the end of 2026. | [S47][S48] |
+| Gemini, personal | Keep Activity on: trains, with some human review. Off: kept 72 hours, no training unless feedback is sent | **Changed** | Google's privacy hub now calls the setting History. With History on, a separate Chat content setting in Gemini History decides whether your chats train Google's AI models. With History off, chats are kept for around two months, and aren't used for training unless you send feedback. Most Connected Apps don't work with History off. Page dated 17 Nov 2026. | [S60][S61] |
+| Microsoft Copilot, work | No foundation-model training. Stored with your M365 data. Processing can leave your region. | Yes | Unchanged. Page updated 4 Nov 2026. Local processing in Australia is expected by the end of 2026. | [S47][S48] |
 | Copilot, personal | Trains unless you opt out; kept 18 months. Where the control sits in the new app (18 Aug) is unconfirmed | **Changed** | For the updated Copilot app (from 18 Aug 2026), Microsoft says prompts, responses and file contents "aren't used to train foundation models". The new privacy controls page lists no training switch. The old FAQ, with opt-out training and 18-month storage, now says it applies only to the older app. We found no storage period for the new app. | [S50][S51][S49] |
 
 The one-pager's line "kept or used to train, depending on tool and settings" still holds. [S9][S36][S60][S50]
@@ -497,38 +504,37 @@ The one-pager's line "kept or used to train, depending on tool and settings" sti
 - **Data leaving the region.** Residency promises cover the AI vendor's own storage. Connected services keep their own terms and locations. [S17][S23][S68]
 - **Work that runs while you're away.** ChatGPT tasks can run when a connected app receives an event, and workspace agents can run on a schedule. Actions needing approval pause until someone reviews them. [S1][S16]
 - **Costs.** App use counts toward ChatGPT plan limits. [S1] Each Zapier MCP tool call uses two tasks. [S82] Agent flows use Copilot Studio capacity. [S53]
-- **Guides that go stale.** Menu names differ between a vendor's own pages, and third-party guides lag behind. [S31][S26][S61][S62][S5][S83]
+- **Guides that go stale.** Menu names differ between a vendor's own pages, and third-party guides lag behind. [S25][S34][S61][S62][S5][S83]
 
 ## Announced changes
 
-- Microsoft: write, update and delete actions through federated Copilot connectors "begin rolling out in early October 2026". [S42][S41]
 - Microsoft: a Tools list for each connector in the admin center is marked "Coming soon". [S42]
-- Microsoft: the Allowed agent types setting replaces a tenant-wide PowerShell switch for federated connectors. The old switch stops being honoured after a notice period. [S42]
+- Microsoft: people who used the older personal Copilot app must sign in to the updated app by 31 December 2026 to keep their eligible chats. Content that isn't moved across is then permanently deleted. [S49]
 - Microsoft: local processing of Microsoft 365 Copilot interactions in Australia is expected by the end of 2026. It was first promised for the end of 2025, and Microsoft revised the timeline on 3 April 2026. [S48]
 - OpenAI: workspace agents start switched off for Enterprise workspaces at launch. [S16]
 - OpenAI: developer mode carries a beta label on the pricing pages. [S7][S8]
 - OpenAI: more data residency and inference residency regions are planned. [S17]
-- Anthropic: Enterprise-managed auth supports Okta at launch, "with more identity providers coming soon". [S27]
+- Anthropic: Enterprise-managed auth through an identity provider supports Okta, "with more identity providers coming soon". The Claude-issued version is in beta. [S27]
 - Anthropic: request header sign-in for custom connectors is in beta for a limited set of organisations. [S34]
 - Anthropic: installing connectors on mobile is in beta. [S23]
 - Google: for now, custom MCP apps in Gemini are English-only and unavailable to work and school accounts. They also require the user to be in the US. [S62]
 - Google: Personal Intelligence, which connects Google apps for personalisation, is being released gradually and isn't offered in the EEA, Switzerland, the UK or Nigeria. [S64]
 - MCP: the Registry is in preview, and breaking changes or data resets may happen before general availability. [S76]
 - MCP: the 2026-07-28 version deprecates a feature called sampling. [S71]
-- Zapier: building Next Gen Zaps from AI tools is in early access. Running them is free during early access, then priced in tasks. [S79]
+- Zapier: building Next Gen Zaps from AI tools is in early access. Running them is free until billing starts on 1 December 2026. [S79]
 - Make: Make AI Agent (New) is in open beta, and its features and pricing may change. [S90]
 - n8n: the old version of the AI Agent node will be removed in n8n 3.0. [S94]
 
 ## What we couldn't establish
 
-- Whether ChatGPT Plus can connect custom MCP servers. We re-read both pages on 15 October 2026. The pricing page still lists Developer mode (beta) for Plus and Pro, while the help page names only Pro (read and fetch) and Business, Enterprise and Edu (full). [S7][S5]
-- Whether OpenAI-built apps can write. The custom MCP page says they're search-only, while other OpenAI pages describe write actions in apps such as Google Drive and Microsoft's apps. [S5][S6][S1]
+- Whether ChatGPT Plus can connect custom MCP servers. We re-read both pages on 18 November 2026. The pricing page still lists Developer mode (beta) for Plus and Pro, while the help page names only Pro (read and fetch) and Business, Enterprise and Edu (full). [S7][S5]
 - How the local MCP apps in ChatGPT desktop plugins fit with the custom MCP page, which answers "Not directly" when asked about local servers. [S2][S5]
-- Whether Anthropic's Enterprise-managed auth is in beta or generally available. One Anthropic page says beta, and another says generally available. [S23][S27]
-- Whether Microsoft's write actions through federated connectors are live in Australian tenants yet. [S42]
-- Whether Copilot Chat users without the paid licence can use federated connectors. Microsoft says "where available". [S42]
+- Whether Anthropic's Enterprise-managed auth through an identity provider is in beta. Anthropic's connectors page calls Enterprise-managed auth beta, while its setup page says the identity-provider version is generally available and only the Claude-issued version is beta. [S23][S27]
+- Whether Microsoft's write actions through federated connectors have reached Australian tenants. Microsoft's page describes them as available but gives no regional rollout detail. [S42]
+- Whether Copilot Chat users without the paid licence can use federated connectors. Microsoft lists a "Microsoft 365 Copilot license" as a condition, which appears to rule them out, but its new Basic and Premium licence names leave unclear which licence it means. [S42][S40]
 - A formal Microsoft statement that Graph connectors became Copilot connectors. The pages we read use the new name without stating a rename. [S41][S43]
 - A formal Google statement that Gemini extensions became Connected Apps. Current pages use the new name without stating a rename. [S61][S66]
+- A formal Google statement that the Keep Activity setting became History. Google's privacy hub and Connected Apps pages use History without stating a rename, and its pages for work accounts still say Keep Activity. [S60][S61][S63]
 - That Gemini Enterprise was formerly called Agentspace. Google's current overview doesn't mention an earlier name. [S67]
 - The storage period for the updated personal Copilot app, and whether it has any training switch. [S50][S51]
 - Whether Microsoft's wording for the new Copilot app ("foundation models") also covers other models. [S50]
@@ -536,111 +542,113 @@ The one-pager's line "kept or used to train, depending on tool and settings" sti
 - Whether Claude's memory saves information that came through connectors. The pages we read don't say.
 - What Zapier does with non-Enterprise data for AI training. [S82]
 - Connectors in Microsoft's personal Copilot app. We didn't research these.
-- Prices in Australian dollars. OpenAI's Business page shows A$ headline prices next to fine print in another, unlabelled currency, and Claude's pricing page shows US dollars only. We've named plans instead. [S8][S35]
+- Prices in Australian dollars. OpenAI's Business page shows A$ headline prices next to fine print in another, unlabelled currency. Claude's pricing page shows prices with a plain $ sign and the note "Prices include 10% GST", without naming the currency. We've named plans instead. [S8][S35]
 - Exact update dates for Google's Gemini help articles and Make's help centre, which show no date.
 - How Google Workspace admins control third-party apps in Gemini. We didn't read those admin settings in depth.
 
 ## Sources
 
+All sources were read on 18 November 2026.
+
 Many help centres show relative dates such as "4 days ago". Where a page carried an exact timestamp, it's given in brackets, in UTC. Perth is eight hours ahead of UTC. "Page metadata" means the date sits in the page's code, with no date shown to readers.
 
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
-| S1 | Connected apps in ChatGPT | OpenAI | https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt | "Updated: 4 days ago" (timestamp 11 Oct 2026, UTC) | 15 Oct 2026 |
-| S2 | Plugins in ChatGPT | OpenAI | https://help.openai.com/en/articles/20001256-plugins-in-chatgpt | "Updated: 17 hours ago" (14 Oct 2026, UTC) | 15 Oct 2026 |
-| S3 | Connecting and managing app accounts in ChatGPT | OpenAI | https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt | "Updated: 13 days ago" (2 Oct 2026, UTC) | 15 Oct 2026 |
-| S4 | Managing app permissions in ChatGPT | OpenAI | https://help.openai.com/en/articles/20001495-managing-app-permissions-in-chatgpt | "Updated: 13 days ago" (2 Oct 2026, UTC) | 15 Oct 2026 |
-| S5 | Connecting custom MCP servers in ChatGPT | OpenAI | https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt | "Updated: 17 hours ago" (14 Oct 2026, UTC) | 15 Oct 2026 |
-| S6 | Admin controls, security, and compliance for plugins and apps | OpenAI | https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps | "Updated: 17 hours ago" (14 Oct 2026, UTC) | 15 Oct 2026 |
-| S7 | Plans and Pricing (individual plans) | OpenAI | https://chatgpt.com/pricing/ | No date shown | 15 Oct 2026 |
-| S8 | ChatGPT Business and Enterprise pricing | OpenAI | https://openai.com/business/pricing/ | No date shown | 15 Oct 2026 |
-| S9 | How your data is used to improve model performance | OpenAI | https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance | "Updated: 3 days ago" (12 Oct 2026, UTC) | 15 Oct 2026 |
-| S10 | Data controls in ChatGPT | OpenAI | https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt | "Updated: 17 days ago" (28 Sep 2026, UTC) | 15 Oct 2026 |
-| S11 | Google app data controls FAQ | OpenAI | https://help.openai.com/en/articles/10408842-google-app-data-controls-faq | "Updated: 20 days ago" (25 Sep 2026, UTC) | 15 Oct 2026 |
-| S12 | Memory in ChatGPT | OpenAI | https://help.openai.com/en/articles/8590148 | "Updated: 26 days ago" (19 Sep 2026, UTC) | 15 Oct 2026 |
-| S13 | Deep research in ChatGPT | OpenAI | https://help.openai.com/en/articles/10500283-deep-research | "Updated: 24 days ago" (21 Sep 2026, UTC) | 15 Oct 2026 |
-| S14 | ChatGPT agent | OpenAI | https://help.openai.com/en/articles/11752874-chatgpt-agent | "Updated: 16 days ago" (about 27 Oct 2026) | 12 Nov 2026 |
-| S15 | ChatGPT Work and Codex | OpenAI | https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex | "Updated: 5 days ago" (10 Oct 2026, UTC) | 15 Oct 2026 |
-| S16 | ChatGPT Workspace Agents for Enterprise and Business | OpenAI | https://help.openai.com/en/articles/20001143 | "Updated: 2 days ago" (13 Oct 2026, UTC) | 15 Oct 2026 |
-| S17 | Data residency and inference residency for ChatGPT | OpenAI | https://help.openai.com/en/articles/9903489 | "Updated: 12 days ago" (3 Oct 2026, UTC) | 15 Oct 2026 |
-| S18 | Administrator-managed apps with sync in ChatGPT | OpenAI | https://help.openai.com/en/articles/10847137 | "Updated: 10 days ago" (5 Oct 2026, UTC) | 15 Oct 2026 |
-| S19 | ChatGPT Supported Countries | OpenAI | https://help.openai.com/en/articles/7947663-chatgpt-supported-countries | "Updated: 2 months ago" (12 Aug 2026, UTC) | 15 Oct 2026 |
-| S20 | Enterprise privacy at OpenAI | OpenAI | https://openai.com/enterprise-privacy/ | "Updated: January 8, 2026" | 15 Oct 2026 |
-| S21 | Lockdown Mode | OpenAI | https://help.openai.com/en/articles/20001061 | "Updated: 21 hours ago" (14 Oct 2026, UTC) | 15 Oct 2026 |
-| S22 | Elevated Risk labels | OpenAI | https://help.openai.com/en/articles/20001062 | "Updated: last month" (31 Aug 2026, UTC) | 15 Oct 2026 |
-| S23 | Use connectors to extend Claude's capabilities | Anthropic | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated over 2 weeks ago" (1 Oct 2026) | 15 Oct 2026 |
-| S24 | Get started with custom connectors using remote MCP | Anthropic | https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp | "Updated over 2 weeks ago" (1 Oct 2026) | 15 Oct 2026 |
-| S25 | Getting Started with Local MCP Servers on Claude Desktop | Anthropic | https://support.claude.com/en/articles/10949351-getting-started-with-local-mcp-servers-on-claude-desktop | "Updated over 2 weeks ago" (25 Sep 2026) | 15 Oct 2026 |
-| S26 | When to use desktop and web connectors | Anthropic | https://support.claude.com/en/articles/11725091-when-to-use-desktop-and-web-connectors | "Updated over 2 weeks ago" (25 Sep 2026) | 15 Oct 2026 |
-| S27 | Authorize MCP connectors for your entire organization | Anthropic | https://support.claude.com/en/articles/15537633-authorize-mcp-connectors-for-your-entire-organization | August 24, 2026 | 15 Oct 2026 |
-| S28 | Restrict verified-domain connectors to your Enterprise | Anthropic | https://support.claude.com/en/articles/15402193-restrict-verified-domain-connectors-to-your-enterprise | "Updated over 2 weeks ago" (25 Sep 2026) | 15 Oct 2026 |
-| S29 | How Claude suggests connected apps | Anthropic | https://support.claude.com/en/articles/14730684-how-claude-suggests-connected-apps | April 23, 2026 | 15 Oct 2026 |
-| S30 | Manage Claude's tool access | Anthropic | https://support.claude.com/en/articles/13730515-manage-claude-s-tool-access | March 16, 2026 | 15 Oct 2026 |
-| S31 | Get started with connectors | Anthropic | https://claude.com/docs/connectors/getting-started | No date shown (page metadata 25 Sep 2026) | 15 Oct 2026 |
-| S32 | Connector verification | Anthropic | https://claude.com/docs/connectors/verification | No date shown (page metadata 25 Sep 2026) | 15 Oct 2026 |
-| S33 | Connectors directory | Anthropic | https://claude.com/docs/connectors/directory | No date shown (page metadata 25 Sep 2026) | 15 Oct 2026 |
-| S34 | Add a connector that isn't in the directory | Anthropic | https://claude.com/docs/connectors/custom/add-unlisted | No date shown (page metadata 25 Sep 2026) | 15 Oct 2026 |
-| S35 | Plans & pricing | Anthropic | https://claude.com/pricing | No date shown | 15 Oct 2026 |
-| S36 | Is my data used for model training? (consumer products) | Anthropic | https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training | March 16, 2026 | 15 Oct 2026 |
-| S37 | Is my data used for model training? (commercial products) | Anthropic | https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training | August 18, 2026 | 15 Oct 2026 |
-| S38 | Supported Regions Policy | Anthropic | https://www.anthropic.com/legal/supported-regions | "Effective May 12, 2026" | 15 Oct 2026 |
-| S39 | Regional compliance | Anthropic | https://claude.com/regional-compliance | No date shown | 15 Oct 2026 |
-| S40 | Overview of Microsoft Copilot Chat | Microsoft | https://learn.microsoft.com/en-us/copilot/overview | "Last updated on 2026-09-10" | 15 Oct 2026 |
-| S41 | Copilot connectors overview | Microsoft | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/overview | Updated 12 Oct 2026 (page metadata) | 15 Oct 2026 |
-| S42 | Federated connectors overview | Microsoft | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | Updated 14 Oct 2026 (page metadata) | 15 Oct 2026 |
-| S43 | Microsoft 365 Copilot connectors overview (developer) | Microsoft | https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/overview-copilot-connector | Updated 30 Sep 2026 (page metadata) | 15 Oct 2026 |
-| S44 | Compare declarative and custom engine agents | Microsoft | https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agents-overview | Updated 30 Sep 2026 (page metadata) | 15 Oct 2026 |
-| S45 | Extend your agent with Model Context Protocol (Copilot Studio) | Microsoft | https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp | Updated 26 Aug 2026 (page metadata) | 15 Oct 2026 |
-| S46 | Governance and lifecycle actions for agents available in Microsoft 365 admin center | Microsoft | https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-actions | Updated 13 Oct 2026 (page metadata) | 15 Oct 2026 |
-| S47 | Data, Privacy, and Security for Microsoft Copilot | Microsoft | https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy | Updated 8 Oct 2026 (page metadata) | 15 Oct 2026 |
-| S48 | Microsoft offers in-country data processing to 15 countries to strengthen sovereign controls for Microsoft 365 Copilot | Microsoft (Microsoft 365 Blog) | https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/04/microsoft-offers-in-country-data-processing-to-15-countries-to-strengthen-sovereign-controls-for-microsoft-365-copilot/ | Published 5 Nov 2025; editor's note dated 3 Apr 2026 | 15 Oct 2026 |
-| S49 | Privacy FAQ for Microsoft Copilot (older app) | Microsoft | https://support.microsoft.com/en-au/microsoft-copilot/privacy-faq-for-microsoft-copilot | Updated 31 Aug 2026 (page metadata) | 15 Oct 2026 |
-| S50 | Microsoft Copilot for individuals: your activity history | Microsoft | https://support.microsoft.com/en-us/privacy/microsoft-copilot/activity-history | Updated 18 Aug 2026 (page metadata) | 15 Oct 2026 |
-| S51 | Microsoft Copilot for individuals: your privacy controls and choices | Microsoft | https://support.microsoft.com/en-us/privacy/microsoft-copilot/privacy-controls | Updated 17 Sep 2026 (page metadata) | 15 Oct 2026 |
-| S52 | Copilot in Power Automate | Microsoft | https://learn.microsoft.com/en-us/power-automate/copilot-overview | Updated 18 Aug 2026 (page metadata) | 15 Oct 2026 |
-| S53 | Agent flows overview (Copilot Studio) | Microsoft | https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-overview | Updated 3 Aug 2026 (page metadata) | 15 Oct 2026 |
-| S54 | Connectors overview | Microsoft | https://learn.microsoft.com/en-us/connectors/overview | Updated 27 Aug 2026 (page metadata) | 15 Oct 2026 |
-| S55 | Copilot Studio, Power Platform, and Azure Logic Apps connectors documentation | Microsoft | https://learn.microsoft.com/en-us/connectors/ | Updated 30 Sep 2026 (page metadata) | 15 Oct 2026 |
-| S56 | Overview of permissions and consent in the Microsoft identity platform | Microsoft | https://learn.microsoft.com/en-us/entra/identity-platform/permissions-consent-overview | Updated 25 Jun 2026 (page metadata) | 15 Oct 2026 |
-| S57 | Overview of user and admin consent | Microsoft | https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/user-admin-consent-overview | Updated 19 Feb 2026 (page metadata) | 15 Oct 2026 |
-| S58 | OAuth 2.0 and OIDC authentication flow in the Microsoft identity platform | Microsoft | https://learn.microsoft.com/en-us/entra/identity-platform/v2-protocols | Updated 30 Jun 2026 (page metadata) | 15 Oct 2026 |
-| S59 | Explore the Power Automate home page | Microsoft | https://learn.microsoft.com/en-us/power-automate/getting-started | Updated 25 Sep 2026 (page metadata) | 15 Oct 2026 |
-| S60 | Gemini Apps Privacy Hub | Google | https://support.google.com/gemini/answer/13594961 | "Last updated: October 13, 2026" | 15 Oct 2026 |
-| S61 | Use & manage Connected Apps in Gemini | Google | https://support.google.com/gemini/answer/13695044 | No date shown | 15 Oct 2026 |
-| S62 | Connect & manage custom apps for Gemini Apps | Google | https://support.google.com/gemini/answer/17209137 | No date shown | 15 Oct 2026 |
-| S63 | Use apps connected to Gemini with a work or school Google Account | Google | https://support.google.com/gemini/answer/14959807 | No date shown | 15 Oct 2026 |
-| S64 | Connect your Google apps to personalize your Gemini experience | Google | https://support.google.com/gemini/answer/16598406 | No date shown | 15 Oct 2026 |
-| S65 | Turn the Gemini App on or off | Google | https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/turn-the-gemini-app-on-or-off | "Last updated 2026-10-13 UTC" | 15 Oct 2026 |
-| S66 | Generative AI in Google Workspace Privacy Hub | Google | https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub | "Last updated 2026-10-13 UTC" | 15 Oct 2026 |
-| S67 | What is Gemini Enterprise? | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs | "Last updated 2026-10-14 UTC" | 15 Oct 2026 |
-| S68 | Introduction to connectors and data stores (Gemini Enterprise) | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/connectors/introduction-to-connectors-and-data-stores | "Last updated 2026-10-14 UTC" | 15 Oct 2026 |
-| S69 | Manage API keys | Google Cloud | https://docs.cloud.google.com/docs/authentication/api-keys | "Last updated 2026-10-13 UTC" | 15 Oct 2026 |
-| S70 | What is the Model Context Protocol (MCP)? | Model Context Protocol | https://modelcontextprotocol.io/docs/getting-started/intro | No date shown (page metadata 13 Oct 2026) | 15 Oct 2026 |
-| S71 | Architecture overview | Model Context Protocol | https://modelcontextprotocol.io/docs/learn/architecture | No date shown (page metadata 13 Oct 2026) | 15 Oct 2026 |
-| S72 | Specification (version 2026-07-28) | Model Context Protocol | https://modelcontextprotocol.io/specification/2026-07-28 | No date shown (page metadata 13 Oct 2026) | 15 Oct 2026 |
-| S73 | Security Best Practices | Model Context Protocol | https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices | No date shown (page metadata 28 Jul 2026) | 15 Oct 2026 |
-| S74 | Connect to remote MCP Servers | Model Context Protocol | https://modelcontextprotocol.io/docs/2026-07-28/develop/connect-remote-servers | No date shown (page metadata 28 Sep 2026) | 15 Oct 2026 |
-| S75 | Connect to local MCP servers | Model Context Protocol | https://modelcontextprotocol.io/docs/2026-07-28/develop/connect-local-servers | No date shown (page metadata 11 Oct 2026) | 15 Oct 2026 |
-| S76 | The MCP Registry | Model Context Protocol | https://modelcontextprotocol.io/registry/about | No date shown (page metadata 13 Oct 2026) | 15 Oct 2026 |
-| S77 | Governance and Stewardship | Model Context Protocol | https://modelcontextprotocol.io/community/governance | No date shown (page metadata 5 Aug 2026) | 15 Oct 2026 |
-| S78 | Model Context Protocol servers (README) | Model Context Protocol (official GitHub organisation) | https://github.com/modelcontextprotocol/servers | No date shown (README last changed 31 Aug 2026, per GitHub history) | 15 Oct 2026 |
-| S79 | Zapier MCP | Zapier | https://zapier.com/mcp | No date shown | 15 Oct 2026 |
-| S80 | Zapier MCP: Model Context Protocol for 9,000+ app integrations | Zapier | https://docs.zapier.com/mcp/home | No date shown (page metadata 9 Oct 2026) | 15 Oct 2026 |
-| S81 | How Zapier MCP connections work | Zapier | https://docs.zapier.com/mcp/overview/how-connections-work | No date shown (page metadata 1 Oct 2026) | 15 Oct 2026 |
-| S82 | Zapier MCP security | Zapier | https://docs.zapier.com/mcp/manage/security | No date shown (page metadata 1 Oct 2026) | 15 Oct 2026 |
-| S83 | Zapier MCP for ChatGPT | Zapier | https://docs.zapier.com/mcp/get-started/connect/chatgpt | No date shown (page metadata 7 Oct 2026) | 15 Oct 2026 |
-| S84 | Zapier MCP for Claude | Zapier | https://docs.zapier.com/mcp/get-started/connect/claude | No date shown (page metadata 1 Oct 2026) | 15 Oct 2026 |
-| S85 | What is Zapier? | Zapier | https://help.zapier.com/hc/en-us/articles/37518970271245-What-is-Zapier | 8 Sep 2026 (page timestamp) | 15 Oct 2026 |
-| S86 | Zapier Agents | Zapier | https://zapier.com/agents | No date shown | 15 Oct 2026 |
-| S87 | AI Actions (former addresses) | Zapier | https://actions.zapier.com/ and https://docs.zapier.com/ai-actions/home | No date; both redirected to Zapier MCP when read | 15 Oct 2026 |
-| S88 | Make MCP Server | Make | https://developers.make.com/mcp-server | "Last updated 2 hours ago" (15 Oct 2026) | 15 Oct 2026 |
-| S89 | Connect using OAuth | Make | https://developers.make.com/mcp-server/connect-using-oauth | "Last updated 1 month ago" | 15 Oct 2026 |
-| S90 | Introduction to Make AI Agent (New) | Make | https://help.make.com/introduction-to-make-ai-agent-new | No date shown | 15 Oct 2026 |
-| S91 | Introduction to MCP | Make | https://help.make.com/introduction-to-mcp | No date shown | 15 Oct 2026 |
-| S92 | MCP toolboxes | Make | https://help.make.com/mcp-toolboxes | No date shown | 15 Oct 2026 |
-| S93 | AI providers and data zones in Make | Make | https://help.make.com/ai-providers-and-data-zones-in-make | No date shown | 15 Oct 2026 |
-| S94 | AI Agent (node) | n8n | https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/ | "Last updated 2 days ago" (13 Oct 2026) | 15 Oct 2026 |
-| S95 | MCP Server Trigger (node) | n8n | https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-langchain.mcptrigger/ | "Last updated 2 days ago" (13 Oct 2026) | 15 Oct 2026 |
-| S96 | MCP Client Tool (node) | n8n | https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolmcp/ | "Last updated 2 days ago" (13 Oct 2026) | 15 Oct 2026 |
-| S97 | Host n8n | n8n | https://docs.n8n.io/deploy/host-n8n | "Last updated 2 days ago" (13 Oct 2026) | 15 Oct 2026 |
-| S98 | ChatGPT release notes | OpenAI | https://help.openai.com/en/articles/6825453-chatgpt-release-notes | "Updated: 6 days ago" (9 Oct 2026, UTC) | 15 Oct 2026 |
+| S1 | Connected apps in ChatGPT | OpenAI | https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt | "Updated: 24 hours ago" (timestamp 17 Nov 2026, UTC) | 18 Nov 2026 |
+| S2 | Plugins in ChatGPT | OpenAI | https://help.openai.com/en/articles/20001256-plugins-in-chatgpt | "Updated: 24 hours ago" (17 Nov 2026, UTC) | 18 Nov 2026 |
+| S3 | Connecting and managing app accounts in ChatGPT | OpenAI | https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt | "Updated: 24 hours ago" (17 Nov 2026, UTC) | 18 Nov 2026 |
+| S4 | Managing app permissions in ChatGPT | OpenAI | https://help.openai.com/en/articles/20001495-managing-app-permissions-in-chatgpt | "Updated: 24 hours ago" (17 Nov 2026, UTC) | 18 Nov 2026 |
+| S5 | Connecting custom MCP servers in ChatGPT | OpenAI | https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt | "Updated: 22 days ago" (28 Oct 2026, UTC) | 18 Nov 2026 |
+| S6 | Admin controls, security, and compliance for plugins and apps | OpenAI | https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps | "Updated: 13 days ago" (5 Nov 2026, UTC) | 18 Nov 2026 |
+| S7 | Plans and Pricing (individual plans) | OpenAI | https://chatgpt.com/pricing/ | No date shown | 18 Nov 2026 |
+| S8 | ChatGPT Business and Enterprise pricing | OpenAI | https://openai.com/business/pricing/ | No date shown | 18 Nov 2026 |
+| S9 | How your data is used to improve model performance | OpenAI | https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance | "Updated: 2 days ago" (16 Nov 2026, UTC) | 18 Nov 2026 |
+| S10 | Data controls in ChatGPT | OpenAI | https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt | "Updated: 2 days ago" (16 Nov 2026, UTC) | 18 Nov 2026 |
+| S11 | Google app data controls FAQ | OpenAI | https://help.openai.com/en/articles/10408842-google-app-data-controls-faq | "Updated: 20 days ago" (29 Oct 2026, UTC) | 18 Nov 2026 |
+| S12 | Memory in ChatGPT | OpenAI | https://help.openai.com/en/articles/8590148 | "Updated: 18 days ago" (31 Oct 2026, UTC) | 18 Nov 2026 |
+| S13 | Deep research in ChatGPT | OpenAI | https://help.openai.com/en/articles/10500283-deep-research-in-chatgpt | "Updated: 30 days ago" (19 Oct 2026, UTC) | 18 Nov 2026 |
+| S14 | ChatGPT agent | OpenAI | https://help.openai.com/en/articles/11752874-chatgpt-agent | "Updated: 22 days ago" (27 Oct 2026, UTC) | 18 Nov 2026 |
+| S15 | ChatGPT Work and Codex | OpenAI | https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex | "Updated: 20 hours ago" (17 Nov 2026, UTC) | 18 Nov 2026 |
+| S16 | ChatGPT Workspace Agents for Enterprise and Business | OpenAI | https://help.openai.com/en/articles/20001143 | "Updated: 26 days ago" (23 Oct 2026, UTC) | 18 Nov 2026 |
+| S17 | Data residency and inference residency for ChatGPT | OpenAI | https://help.openai.com/en/articles/9903489 | "Updated: 13 hours ago" (18 Nov 2026, UTC) | 18 Nov 2026 |
+| S18 | Administrator-managed apps with sync in ChatGPT (former address) | OpenAI | https://help.openai.com/en/articles/10847137 | No date; redirected to the admin controls page (S6) when read | 18 Nov 2026 |
+| S19 | ChatGPT and OpenAI API supported countries and territories | OpenAI | https://help.openai.com/en/articles/7947663-chatgpt-and-openai-api-supported-countries-and-territories | "Updated: 2 days ago" (16 Nov 2026, UTC) | 18 Nov 2026 |
+| S20 | Enterprise privacy at OpenAI | OpenAI | https://openai.com/enterprise-privacy/ | "Updated: January 8, 2026" | 18 Nov 2026 |
+| S21 | Lockdown Mode | OpenAI | https://help.openai.com/en/articles/20001061 | "Updated: 23 days ago" (26 Oct 2026, UTC) | 18 Nov 2026 |
+| S22 | Elevated Risk labels | OpenAI | https://help.openai.com/en/articles/20001062 | "Updated: 29 days ago" (20 Oct 2026, UTC) | 18 Nov 2026 |
+| S23 | Use connectors to extend Claude's capabilities | Anthropic | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated today" (18 Nov 2026) | 18 Nov 2026 |
+| S24 | Get started with custom connectors using remote MCP | Anthropic | https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp | "Updated this week" (13 Nov 2026, UTC) | 18 Nov 2026 |
+| S25 | Getting Started with Local MCP Servers on Claude Desktop | Anthropic | https://support.claude.com/en/articles/10949351-getting-started-with-local-mcp-servers-on-claude-desktop | "Updated over 3 weeks ago" (23 Oct 2026, UTC) | 18 Nov 2026 |
+| S26 | When to use desktop and web connectors | Anthropic | https://support.claude.com/en/articles/11725091-when-to-use-desktop-and-web-connectors | "Updated over 3 weeks ago" (23 Oct 2026, UTC) | 18 Nov 2026 |
+| S27 | Auto-connect your organization's apps to Claude | Anthropic | https://support.claude.com/en/articles/15537633-auto-connect-your-organization-s-apps-to-claude | "Updated over 2 weeks ago" (3 Nov 2026, UTC) | 18 Nov 2026 |
+| S28 | Restrict verified-domain connectors to your Enterprise | Anthropic | https://support.claude.com/en/articles/15402193-restrict-verified-domain-connectors-to-your-enterprise | "Updated over a week ago" (7 Nov 2026, UTC) | 18 Nov 2026 |
+| S29 | How Claude suggests connected apps | Anthropic | https://support.claude.com/en/articles/14730684-how-claude-suggests-connected-apps | April 23, 2026 | 18 Nov 2026 |
+| S30 | Manage Claude's tool access | Anthropic | https://support.claude.com/en/articles/13730515-manage-claude-s-tool-access | March 16, 2026 | 18 Nov 2026 |
+| S31 | Get started with connectors | Anthropic | https://claude.com/docs/connectors/getting-started | No date shown (page metadata 25 Sep 2026) | 18 Nov 2026 |
+| S32 | Connector verification | Anthropic | https://claude.com/docs/connectors/verification | No date shown (page metadata 16 Nov 2026) | 18 Nov 2026 |
+| S33 | Connectors directory | Anthropic | https://claude.com/docs/connectors/directory | No date shown (page metadata 25 Sep 2026) | 18 Nov 2026 |
+| S34 | Add a connector that isn't in the directory | Anthropic | https://claude.com/docs/connectors/custom/add-unlisted | No date shown (page metadata 16 Nov 2026) | 18 Nov 2026 |
+| S35 | Plans & pricing | Anthropic | https://claude.com/pricing | No date shown | 18 Nov 2026 |
+| S36 | Is my data used for model training? (consumer products) | Anthropic | https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training | March 16, 2026 | 18 Nov 2026 |
+| S37 | Is my data used for model training? (commercial products) | Anthropic | https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training | August 18, 2026 | 18 Nov 2026 |
+| S38 | Supported Regions Policy | Anthropic | https://www.anthropic.com/legal/supported-regions | "Effective Nov 12, 2026" | 18 Nov 2026 |
+| S39 | Regional compliance | Anthropic | https://claude.com/regional-compliance | No date shown | 18 Nov 2026 |
+| S40 | What is Microsoft Copilot? | Microsoft | https://learn.microsoft.com/en-us/copilot/plan/copilot-overview | Updated 17 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S41 | Copilot connectors overview | Microsoft | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/overview | Updated 12 Oct 2026 (page metadata) | 18 Nov 2026 |
+| S42 | Federated connectors overview | Microsoft | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | "Last updated on 2026-11-16" | 18 Nov 2026 |
+| S43 | Microsoft 365 Copilot connectors overview (developer) | Microsoft | https://learn.microsoft.com/en-us/plugins/overview-copilot-connector | Updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S44 | Compare declarative and custom engine agents | Microsoft | https://learn.microsoft.com/en-us/plugins/agents-overview | Updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S45 | Extend your agent with Model Context Protocol (Copilot Studio) | Microsoft | https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp | Updated 17 Oct 2026 (page metadata) | 18 Nov 2026 |
+| S46 | Governance and lifecycle actions for agents available in Microsoft 365 admin center | Microsoft | https://learn.microsoft.com/en-us/microsoft-agent-365/admin/agent-actions | Updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S47 | Data, Privacy, and Security for Microsoft Copilot | Microsoft | https://learn.microsoft.com/en-us/copilot/plan/microsoft-365-copilot-privacy | Updated 4 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S48 | Microsoft offers in-country data processing to 15 countries to strengthen sovereign controls for Microsoft 365 Copilot | Microsoft (Microsoft 365 Blog) | https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/04/microsoft-offers-in-country-data-processing-to-15-countries-to-strengthen-sovereign-controls-for-microsoft-365-copilot/ | "Nov 4, 2025"; editor's note dated 3 Apr 2026 | 18 Nov 2026 |
+| S49 | Privacy FAQ for Microsoft Copilot (older app) | Microsoft | https://support.microsoft.com/en-au/microsoft-copilot/privacy-faq-for-microsoft-copilot | Updated 3 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S50 | Microsoft Copilot for individuals: your activity history | Microsoft | https://support.microsoft.com/en-us/privacy/microsoft-copilot/activity-history | Updated 18 Aug 2026 (page metadata) | 18 Nov 2026 |
+| S51 | Microsoft Copilot for individuals: your privacy controls and choices | Microsoft | https://support.microsoft.com/en-us/privacy/microsoft-copilot/privacy-controls | Updated 17 Sep 2026 (page metadata) | 18 Nov 2026 |
+| S52 | Copilot in Power Automate | Microsoft | https://learn.microsoft.com/en-us/power-automate/copilot-overview | Updated 29 Oct 2026 (page metadata) | 18 Nov 2026 |
+| S53 | Agent flows overview (Copilot Studio) | Microsoft | https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-overview | Updated 12 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S54 | Connectors overview | Microsoft | https://learn.microsoft.com/en-us/connectors/overview | Updated 27 Aug 2026 (page metadata) | 18 Nov 2026 |
+| S55 | Copilot Studio, Power Platform, and Azure Logic Apps connectors documentation | Microsoft | https://learn.microsoft.com/en-us/connectors/ | Updated 30 Sep 2026 (page metadata) | 18 Nov 2026 |
+| S56 | Overview of permissions and consent in the Microsoft identity platform | Microsoft | https://learn.microsoft.com/en-us/entra/identity-platform/permissions-consent-overview | Updated 25 Jun 2026 (page metadata) | 18 Nov 2026 |
+| S57 | Overview of user and admin consent | Microsoft | https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/user-admin-consent-overview | Updated 19 Feb 2026 (page metadata) | 18 Nov 2026 |
+| S58 | OAuth 2.0 and OIDC authentication flow in the Microsoft identity platform | Microsoft | https://learn.microsoft.com/en-us/entra/identity-platform/v2-protocols | Updated 30 Jun 2026 (page metadata) | 18 Nov 2026 |
+| S59 | Explore the Power Automate home page | Microsoft | https://learn.microsoft.com/en-us/power-automate/getting-started | Updated 25 Sep 2026 (page metadata) | 18 Nov 2026 |
+| S60 | Gemini Apps Privacy Hub | Google | https://support.google.com/gemini/answer/13594961 | "Last updated: November 17, 2026" | 18 Nov 2026 |
+| S61 | Use & manage Connected Apps in Gemini | Google | https://support.google.com/gemini/answer/13695044 | No date shown | 18 Nov 2026 |
+| S62 | Connect & manage custom apps for Gemini Apps | Google | https://support.google.com/gemini/answer/17209137 | No date shown | 18 Nov 2026 |
+| S63 | Use apps connected to Gemini with a work or school Google Account | Google | https://support.google.com/gemini/answer/14959807 | No date shown | 18 Nov 2026 |
+| S64 | Connect your Google apps to personalize your Gemini experience | Google | https://support.google.com/gemini/answer/16598406 | No date shown | 18 Nov 2026 |
+| S65 | Turn the Gemini App on or off | Google | https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/turn-the-gemini-app-on-or-off | "Last updated 2026-11-10 UTC" | 18 Nov 2026 |
+| S66 | Generative AI in Google Workspace Privacy Hub | Google | https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub | "Last updated 2026-11-10 UTC" (the article text also shows "Last updated: October 6, 2026") | 18 Nov 2026 |
+| S67 | What is Gemini Enterprise? | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs | "Last updated 2026-11-10 UTC" | 18 Nov 2026 |
+| S68 | Introduction to connectors and data stores (Gemini Enterprise) | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/connectors/introduction-to-connectors-and-data-stores | "Last updated 2026-11-10 UTC" | 18 Nov 2026 |
+| S69 | Manage API keys | Google Cloud | https://docs.cloud.google.com/docs/authentication/api-keys | "Last updated 2026-11-17 UTC" | 18 Nov 2026 |
+| S70 | What is the Model Context Protocol (MCP)? | Model Context Protocol | https://modelcontextprotocol.io/docs/getting-started/intro | No date shown (page metadata 9 Nov 2026) | 18 Nov 2026 |
+| S71 | Architecture overview | Model Context Protocol | https://modelcontextprotocol.io/docs/learn/architecture | No date shown (page metadata 16 Nov 2026) | 18 Nov 2026 |
+| S72 | Specification (version 2026-07-28) | Model Context Protocol | https://modelcontextprotocol.io/specification/2026-07-28 | No date shown (page metadata 16 Nov 2026) | 18 Nov 2026 |
+| S73 | Security Best Practices | Model Context Protocol | https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices | No date shown (page metadata 16 Nov 2026) | 18 Nov 2026 |
+| S74 | Connect to remote MCP Servers | Model Context Protocol | https://modelcontextprotocol.io/docs/2026-07-28/develop/connect-remote-servers | No date shown (page metadata 28 Sep 2026) | 18 Nov 2026 |
+| S75 | Connect to local MCP servers | Model Context Protocol | https://modelcontextprotocol.io/docs/2026-07-28/develop/connect-local-servers | No date shown (page metadata 30 Oct 2026) | 18 Nov 2026 |
+| S76 | The MCP Registry | Model Context Protocol | https://modelcontextprotocol.io/registry/about | No date shown (page metadata 9 Nov 2026) | 18 Nov 2026 |
+| S77 | Governance and Stewardship | Model Context Protocol | https://modelcontextprotocol.io/community/governance | No date shown (page metadata 5 Aug 2026) | 18 Nov 2026 |
+| S78 | Model Context Protocol servers (README) | Model Context Protocol (official GitHub organisation) | https://github.com/modelcontextprotocol/servers | No date shown (README last changed 12 Nov 2026, per GitHub history) | 18 Nov 2026 |
+| S79 | Zapier MCP | Zapier | https://zapier.com/mcp | No date shown | 18 Nov 2026 |
+| S80 | Zapier MCP: Model Context Protocol for 9,000+ app integrations | Zapier | https://docs.zapier.com/mcp/home | No date shown (page metadata 17 Nov 2026) | 18 Nov 2026 |
+| S81 | How Zapier MCP connections work: OAuth and connection tokens | Zapier | https://docs.zapier.com/mcp/overview/how-connections-work | No date shown (page metadata 13 Nov 2026) | 18 Nov 2026 |
+| S82 | Zapier MCP security | Zapier | https://docs.zapier.com/mcp/manage/security | No date shown (page metadata 1 Oct 2026) | 18 Nov 2026 |
+| S83 | Zapier MCP for ChatGPT: setup with a workspace app or custom MCP server | Zapier | https://docs.zapier.com/mcp/get-started/connect/chatgpt | "Last modified on November 3, 2026" | 18 Nov 2026 |
+| S84 | Zapier MCP for Claude: setup with the Zapier connector | Zapier | https://docs.zapier.com/mcp/get-started/connect/claude | "Last modified on October 20, 2026" | 18 Nov 2026 |
+| S85 | What is Zapier? | Zapier | https://help.zapier.com/hc/en-us/articles/37518970271245-What-is-Zapier | "Updated November 13, 2026 12:50" | 18 Nov 2026 |
+| S86 | Zapier Agents | Zapier | https://zapier.com/agents | No date shown | 18 Nov 2026 |
+| S87 | AI Actions (former addresses) | Zapier | https://actions.zapier.com/ and https://docs.zapier.com/ai-actions/home | No date; both redirected to Zapier MCP when read | 18 Nov 2026 |
+| S88 | Make MCP Server | Make | https://developers.make.com/mcp-server | "Last updated 8 days ago" (9 Nov 2026) | 18 Nov 2026 |
+| S89 | Connect using OAuth | Make | https://developers.make.com/mcp-server/connect-using-oauth | "Last updated 26 days ago" (22 Oct 2026) | 18 Nov 2026 |
+| S90 | Introduction to Make AI Agent (New) | Make | https://help.make.com/introduction-to-make-ai-agent-new | No date shown | 18 Nov 2026 |
+| S91 | Introduction to MCP | Make | https://help.make.com/introduction-to-mcp | No date shown | 18 Nov 2026 |
+| S92 | MCP toolboxes | Make | https://help.make.com/mcp-toolboxes | No date shown | 18 Nov 2026 |
+| S93 | AI providers and data zones in Make | Make | https://help.make.com/ai-providers-and-data-zones-in-make | No date shown | 18 Nov 2026 |
+| S94 | AI Agent (node) | n8n | https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/ | "Last updated 21 days ago" (28 Oct 2026) | 18 Nov 2026 |
+| S95 | MCP Server Trigger (node) | n8n | https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-langchain.mcptrigger/ | "Last updated 14 days ago" (3 Nov 2026) | 18 Nov 2026 |
+| S96 | MCP Client Tool (node) | n8n | https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolmcp/ | "Last updated 21 days ago" (28 Oct 2026) | 18 Nov 2026 |
+| S97 | Host n8n | n8n | https://docs.n8n.io/deploy/host-n8n | "Last updated 4 days ago" (13 Nov 2026) | 18 Nov 2026 |
+| S98 | ChatGPT release notes | OpenAI | https://help.openai.com/en/articles/6825453-chatgpt-release-notes | "Updated: 20 hours ago" (17 Nov 2026, UTC) | 18 Nov 2026 |

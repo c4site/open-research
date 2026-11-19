@@ -18,7 +18,7 @@
       },
       {
         "where": "Claude's directory, the Xero listing",
-        "do": "Select Connect to Claude. Anthropic's docs use that name, and the public listing showed Add to Claude on 13 November 2026, so select whichever you see.",
+        "do": "Select Connect to Claude. Anthropic's docs use that name, and the public listing showed Add to Claude on 18 November 2026, so select whichever you see.",
         "see": "Xero's sign-in page. On claude.ai it opens in the same tab. In the desktop app it opens in your browser."
       },
       {
@@ -28,7 +28,7 @@
       },
       {
         "where": "Xero organisation choice",
-        "do": "Choose the organisation you want Claude to read, then select Allow.",
+        "do": "Choose the organisation you want Claude to read. If you have more than one, select each one you want. Then select Allow.",
         "see": "You're back in Claude, with Xero under Your connectors."
       },
       {
@@ -107,30 +107,30 @@
     "from": "ChatGPT",
     "to": "Xero",
     "who": "anyone",
-    "plan_needed": "A ChatGPT account and a Xero subscription. OpenAI says availability depends on your plan and workspace settings, and some workspaces need admin approval. Australian availability not confirmed.",
+    "plan_needed": "A ChatGPT account and a Xero subscription. Xero Central asks for ChatGPT Plus, or access to ChatGPT Work, Codex or ChatGPT for Excel and Google Sheets. OpenAI says availability depends on your plan, workspace, role and region, and some workspaces need admin approval. Xero's Australian release notes list the plugin, but no page names Australia outright.",
     "steps": [
       {
         "where": "ChatGPT (web, desktop or mobile), Plugins",
-        "do": "Open the Plugins directory and search for Xero.",
+        "do": "In ChatGPT on the web, desktop or mobile, open the Plugins tab and search for Xero.",
         "see": "The Xero plugin by Xero Limited appears."
       },
       {
         "where": "Xero plugin details",
-        "do": "Open its details and select the plus button to install it (OpenAI's help centre calls this Install plugin).",
-        "see": "The plugin installs."
+        "do": "Open the Xero plugin's details and select the plus button (OpenAI's help centre calls it Install plugin).",
+        "see": "The plugin installs and may start Xero's sign-in."
       },
       {
-        "where": "ChatGPT connection prompt",
-        "do": "When prompted, select Connect, sign in to Xero and approve access.",
-        "see": "The Xero connection is set up. The exact Xero screens weren't in the docs we could read."
+        "where": "Xero sign-in",
+        "do": "When asked, sign in with your Xero login. Select every Xero organisation you want ChatGPT to read, then click Allow access.",
+        "see": "The Xero plugin is connected to the organisations you chose."
       },
       {
         "where": "New ChatGPT chat",
-        "do": "Start a new chat. Type @ and choose Xero, or just ask and let ChatGPT pick it.",
+        "do": "Start a new chat. Type @ and pick Xero, or just ask and let ChatGPT choose.",
         "see": "Read-only answers from live Xero data, with links back to Xero."
       }
     ],
-    "source": "S68, S67, S65",
+    "source": "S68, S67, S46, S65",
     "doc_updated": null
   },
   {
@@ -138,35 +138,35 @@
     "from": "Microsoft Copilot",
     "to": "Xero",
     "who": "anyone",
-    "plan_needed": "A paid Microsoft 365 Business or Enterprise account and a Xero subscription. Your IT admin may need to approve the agent. These are Microsoft's general steps; Xero's own steps are in a Xero Central article we couldn't read.",
+    "plan_needed": "A paid Microsoft 365 Business or Enterprise account and a Xero subscription. Xero's Australian Copilot page asks for a paid Microsoft 365 Copilot licence. Xero Central says your Microsoft 365 administrator has to enable the Xero agent first.",
     "steps": [
       {
-        "where": "Microsoft Copilot app",
-        "do": "Select All Agents.",
-        "see": "The list of agents available to you."
+        "where": "Microsoft 365, Copilot chat",
+        "do": "From your Microsoft 365 account, open Copilot chat.",
+        "see": "Copilot chat, with Agents in the left navigation menu."
       },
       {
-        "where": "Microsoft Copilot app, agent list",
-        "do": "Find the Xero agent and select it.",
-        "see": "Its details open in the details pane."
+        "where": "Copilot chat, Agents or the Agent Store",
+        "do": "Under Agents, find and open Xero. Or go to the Agent Store, find Xero and click Add or Open. If your admin hasn't enabled it, you'll see an option to request approval instead.",
+        "see": "A chat with the Xero agent, or an approval request option."
       },
       {
-        "where": "Agent details pane",
-        "do": "Select Add. If the button says Request approval, ask your IT admin to approve it first.",
-        "see": "The agent is added, or an approval request goes to your admin."
+        "where": "Xero agent chat",
+        "do": "Ask a question about your Xero data.",
+        "see": "Copilot asks you to sign in to Xero."
       },
       {
         "where": "Xero sign-in",
-        "do": "Sign in to Xero when asked.",
-        "see": ""
+        "do": "Follow the prompts to sign in to Xero. Select every organisation you want Copilot to read, then click Allow access.",
+        "see": "Once connected, Copilot answers your question."
       },
       {
         "where": "Microsoft Copilot chat",
-        "do": "Ask about profit, cash position, receivables or overdue invoices.",
+        "do": "Ask about profit, cash, receivables or overdue invoices. If you've connected more than one organisation, name the one you mean.",
         "see": "Read-only answers from Xero, with links to open the report, invoice or customer record in Xero."
       }
     ],
-    "source": "S71, S7",
+    "source": "S47, S71, S7, S94",
     "doc_updated": null
   },
   {
@@ -195,38 +195,43 @@
     "from": "Google Gemini",
     "to": "Xero",
     "who": "anyone",
-    "plan_needed": "A personal Google account signed in to Gemini. Work or school accounts need a qualifying Google Workspace edition, Keep Activity on, and an admin who has enabled the app. Google's general steps; Google's article doesn't name Xero yet, and Australian availability isn't confirmed.",
+    "plan_needed": "Any Xero business plan and a Google account with access to Gemini. Google lists the Xero app for personal Google accounts only, for people 18 or over, in English. Scheduled tasks in Gemini Spark also need a Google AI Pro or AI Ultra plan. No page names Australia outright.",
     "steps": [
       {
         "where": "gemini.google.com",
-        "do": "In the sidebar, click Customize. If you don't see it, click More first.",
-        "see": "The Customize page opens."
+        "do": "Go to gemini.google.com.",
+        "see": "Gemini opens."
       },
       {
-        "where": "Gemini, Customize",
-        "do": "At the top, click Connectors.",
+        "where": "Gemini sidebar",
+        "do": "In the sidebar, click Customize (click More first if you don't see it), then click Connectors at the top. Xero Central calls this page Connected Apps.",
         "see": "The apps available to your account and country."
       },
       {
         "where": "Gemini, Connectors",
-        "do": "Find Xero and click Add, then follow the on-screen instructions.",
-        "see": "Xero is connected. The Xero sign-in screens weren't in the docs we could read."
+        "do": "Find and open Xero, then click Connect. Google's general steps call this button Add, so select whichever you see.",
+        "see": "Xero asks you to sign in, if you aren't signed in already."
+      },
+      {
+        "where": "Xero sign-in",
+        "do": "Enter your Xero email and password if asked. Select every organisation you want to use with Gemini, then click Allow.",
+        "see": "Xero is connected to Gemini."
       },
       {
         "where": "Gemini chat",
-        "do": "Type @ and select Xero, then ask your question.",
-        "see": "Answers from live Xero data. Any change, such as issuing an invoice, waits for your explicit confirmation."
+        "do": "In a chat, include @Xero or \"Xero\" in your question. If you've connected more than one organisation, name the one you mean.",
+        "see": "Answers from live Xero data. Xero Central says Gemini can't change anything in your Xero organisation."
       }
     ],
-    "source": "S72, S36",
-    "doc_updated": null
+    "source": "S90, S72, S95",
+    "doc_updated": "2026-11-04"
   },
   {
     "id": "mcp-server-to-xero",
     "from": "Xero MCP server (in an AI app such as Claude Desktop)",
     "to": "Xero",
     "who": "admin",
-    "plan_needed": "A Xero organisation in Australia, New Zealand, the UK or the US; a custom connection at $10 a month AUD incl. GST (free on the Demo Company); Node.js 18 or later; some programming experience.",
+    "plan_needed": "A Xero organisation in Australia, New Zealand, the UK or the US; a custom connection at $10 a month AUD incl. GST (free on the Demo Company); Node.js 18 or later; some programming experience. Xero stops letting anyone create a new custom connection app or buy a new subscription from 1 December 2026, so steps 1 and 3 only work until 30 November 2026.",
     "steps": [
       {
         "where": "developer.xero.com",
@@ -255,6 +260,6 @@
       }
     ],
     "source": "S52, S51, S55",
-    "doc_updated": "2026-06-05"
+    "doc_updated": "2026-11-09"
   }
 ]

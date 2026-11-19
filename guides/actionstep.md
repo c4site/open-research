@@ -1,13 +1,13 @@
 # Actionstep: the AI inside it, and the AI that connects to it
 
-Researched 17 October 2026 from vendor documentation. Every line is tagged with its source.
+Researched 18 November 2026 from vendor documentation. Every line is tagged with its source.
 
 ## The short version
 
 - Actionstep's AI is called Actionstep Intelligence, an AI layer built into its practice management platform and released on 11 August 2026. Its first parts are Trace, for AI time capture, and Acumen, for business reporting with an AI assistant. [S3]
-- Both are add-on modules. Actionstep doesn't publish prices. It quotes per user, plus implementation fees. [S2]
+- In Australia, both come in Actionstep's Performance and Intelligence packages, and are add-ons with its Connection package. Actionstep doesn't publish prices. It quotes per user, plus implementation, on an annual commitment. [S2]
 - Trace is a Windows app that watches the active window in Office apps and PDF readers. It drafts time entries with AI-written narratives for you to review, and nothing posts automatically. [S15] [S3]
-- Ask Acumen, in early access, answers plain-English questions about your firm's dashboard figures. Actionstep says Australian firms' data for it is hosted and processed in Australian AWS regions. [S19]
+- Ask Acumen, in early access, answers plain-English questions about the figures on whichever Acumen dashboard you're viewing. Actionstep says Australian firms' data for it is hosted and processed in Australian AWS regions. [S19]
 - Actionstep says it doesn't use your data to train AI models. Its Trust Center says AI runs inside Actionstep's AWS environment and your data doesn't leave AWS to reach a third-party AI provider. [S1] [S11]
 - Actionstep may keep what you type into its AI features and what they produce, for audit trails and quality checks. [S11]
 - Actionstep says "Every AI feature is opt-in." [S1]
@@ -20,20 +20,20 @@ Actionstep is cloud practice management software for midsize law firms. In Augus
 
 For users in Australia, Actionstep's terms say Actionstep Operations Australia Pty Ltd is responsible for personal information. [S14] Its Australian and New Zealand privacy policy says, "We host customer data in Australia and New Zealand". [S13]
 
-Actionstep doesn't publish prices. Each module is "Priced per user plus implementation fees", with a **Request Pricing** button. Certified implementation partners set firms up, and finance options are offered for implementation. [S2]
+Actionstep doesn't publish prices. It now sells four packages: Foundation, Connection, Performance and Intelligence. They're "offered on an annual commitment and priced per user, plus implementation", and each has a **Request Pricing** button. Certified implementation partners set firms up, and finance options are offered for implementation. [S2]
 
-| Module | What it is | AI in it | Price |
+| Module | What it is | AI in it | How it's sold in Australia and New Zealand |
 |---|---|---|---|
-| Practice Management | The core platform: matters, documents, email, time and billing | Matter suggestions in the Outlook add-in, and Scout for support questions | Per user plus implementation fees |
-| Trace – AI Time Capture | A premium add-on for passive time capture | AI matter mapping, billing codes and narratives | Per user plus implementation fees |
-| Acumen – Embedded Analytics | An add-on of dashboards, in early access | "AI-powered Q&A and 'Explain This Number' insights" | Per user plus implementation fees |
-| Builder | Document automation | None described | Per user plus implementation fees |
-| Capture | Client intake forms | None described | Per user plus implementation fees |
-| Legal Accounting | Separate accounting suite | None described | "Only available in North America" |
+| Practice Management | The core platform: matters, documents, email, time, billing and trust accounting | Matter suggestions in the Outlook add-in, and Scout for support questions | In every package |
+| Trace (AI Time Capture) | Passive time capture outside Actionstep | AI matter mapping, billing codes and narratives | Included in Performance and Intelligence. An add-on with Connection. Not in Foundation |
+| Acumen (AI Assisted Business Intelligence) | Dashboards, still called early access in the help centre | Ask Acumen, for plain-English questions about a dashboard | Included in Performance and Intelligence. An add-on with Connection. Not in Foundation |
+| Builder (Document Automation) | Document automation | None described | Included in Intelligence. An add-on with Connection and Performance |
+| Capture (Data Collection) | Client intake forms | None described | The packages list Advanced Data Collection, which appears to be Capture. Included in Intelligence. An add-on with Connection and Performance |
+| Legal Accounting | Separate accounting suite | None described | Listed only in the North American packages |
 
-Sources for the table: [S2] [S5] [S19] [S26] [S21]
+Sources for the table: [S2] [S15] [S19] [S20] [S21] [S26] [S44]
 
-- The pricing page shows the add-on modules, including Trace and Acumen, when you select the AU region. [S2]
+- The pricing page says "AI included from Performance up". Its menu links AI Time Capture to Trace and Business Intelligence to Acumen. [S2]
 
 ## AI built in
 
@@ -52,7 +52,7 @@ Sources for the table: [S2] [S5] [S19] [S26] [S21]
 
 **Which plans have it**
 
-- Trace and Acumen are sold as add-on modules. [S2]
+- Trace and Acumen are included in the Performance and Intelligence packages, and are add-ons with Connection. [S2]
 
 **What happens to your data**
 
@@ -83,10 +83,12 @@ Sources for the table: [S2] [S5] [S19] [S26] [S21]
 - The installer comes from **Admin > Trace > Installation Information**. IT can deploy it to everyone, or each fee earner can install Trace.msi. [S16]
 - Review captured work in **Time > Timesheet**. [S17]
 - Set minimum activity times in **My Profile**, under **Trace**, then **Configure**. [S18]
+- The same settings page lets each user block or allow particular websites and email addresses, and share their Trace suggestions with colleagues. [S45]
 
 **Which plans have it**
 
-- A premium add-on module. Actionstep planned it for select customers from July 2026 and a full release in August 2026. [S5]
+- Included in the Performance and Intelligence packages, and an add-on with Connection. [S2]
+- Actionstep announced it in January 2026 as a premium add-on, for select customers from July 2026 and a full release in August 2026. [S5]
 - Early access customers get the installer from an Actionstep representative. [S16]
 
 **What happens to your data**
@@ -97,24 +99,25 @@ Sources for the table: [S2] [S5] [S19] [S26] [S21]
 
 **In Australia**
 
-- Trace is listed among the add-ons shown for the AU region on the pricing page. [S2]
+- The pricing page lists AI Time Capture in its Australia and New Zealand packages. [S2]
 - It's supported only on Windows. [S15]
 
 ### Acumen and Ask Acumen (business intelligence)
 
 **What it does**
 
-- Pre-built dashboards for firm leaders and fee earners, covering work in progress, billing, collections and utilisation. [S20] [S2]
-- **Ask Acumen** answers natural-language questions about the Firm Management dashboard, "grounded in your Actionstep data". [S19]
-- Actionstep says answers respect each user's permissions. [S4]
+- Pre-built dashboards for firm leaders and fee earners, covering work in progress, billing, collections and utilisation. The two dashboards are Firm Management and Fee Earners. [S20] [S44]
+- **Ask Acumen** answers natural-language questions about the dashboard you're viewing, "grounded in your Actionstep data". [S19]
+- Actionstep says answers respect each user's permissions. [S4] [S44]
 
 **Where to find it**
 
-- In Practice Management, go to **Insights > Business Intelligence**, click **Firm Management**, then click **Ask Acumen** in the top-right corner. [S19]
+- In Practice Management, go to **Insights > Business Intelligence**, click the dashboard you want to ask about, then click **Ask Acumen** in the top-right corner. [S19]
 
 **Which plans have it**
 
-- An add-on module, "currently in early access". [S20] [S2]
+- Included in the Performance and Intelligence packages, and an add-on with Connection. [S2]
+- The help centre still says it's "currently in early access". [S20] [S44]
 
 **What happens to your data**
 
@@ -212,7 +215,7 @@ In plain words, a connector lets a chat assistant such as Claude or ChatGPT look
 **Limits**
 
 - When Scout used OpenAI technology, Actionstep said it was "fully separate from ChatGPT" and used only Actionstep's help content. [S7]
-- Actionstep's CEO wrote in August 2026 that someone using "a tool like ChatGPT" through an AI-native layer would inherit the same guardrails. That reads as a direction, and we found no released feature behind it. [S10]
+- Actionstep's CEO wrote in August 2026 that someone using "a tool like ChatGPT" through an AI-native layer would inherit the same guardrails. That reads as a direction, and we found no released feature behind it. [S10] [S3]
 
 ### Microsoft Copilot and Actionstep
 
@@ -223,7 +226,7 @@ In plain words, a connector lets a chat assistant such as Claude or ChatGPT look
 **What Actionstep does offer in Microsoft 365**
 
 - Actionstep for Outlook, Actionstep for Word and Actionstep Builder for Word are listed on Microsoft's Marketplace. None is a Copilot agent. [S34]
-- **Qanooni**, a separate legal AI that works in Word and Outlook, has an integration with Actionstep. Actionstep's page lists it as available globally at £100 to £150 per user per month. [S28]
+- **Qanooni**, a separate legal AI that works in Word and Outlook, has an integration with Actionstep. Actionstep's page lists it as available globally. It now says pricing "will vary by region" and to contact Qanooni. [S28]
 
 **Limits**
 
@@ -282,6 +285,7 @@ In plain words, a connector lets a chat assistant such as Claude or ChatGPT look
 - The API lets developers build apps that use Actionstep as the back end. [S22]
 - There's "a $500 initial setup charge for access to the API", which includes a sandbox. The article doesn't name the currency. [S22]
 - Actionstep reviews requests, usually within 7 to 14 business days, and reviews your integration before issuing production credentials. [S22]
+- The pricing page lists API Access in the Connection, Performance and Intelligence packages, and not in Foundation. [S2]
 - The Trust Center says APIs use token-based authentication and limited-scope access. [S11]
 
 ### Other AI apps that connect to Actionstep
@@ -307,6 +311,7 @@ In plain words, a connector lets a chat assistant such as Claude or ChatGPT look
 
 - Trace records application names, file names, email subject lines and content from whatever window is active. [S16] [S17]
 - It errs "on the side of capturing more time rather than less", so expect to clean up entries. [S15]
+- If you share your Trace suggestions with a colleague, they can see all your Trace activity, including activity on matters they can't otherwise open. [S45]
 
 **What Actionstep keeps**
 
@@ -343,63 +348,65 @@ In plain words, a connector lets a chat assistant such as Claude or ChatGPT look
 
 ## What we couldn't establish
 
-- **Prices.** Actionstep doesn't publish them for any module. [S2]
+- **Prices.** Actionstep doesn't publish them for any package or module. [S2]
 - **Where Trace's AI runs, and on which model.** Trace's articles don't say. [S15] [S16]
 - **What powers Scout.** The April 2026 FAQ says Zendesk's generative AI; the 2025 announcements said OpenAI technology. [S21] [S6]
 - **Trace and websites.** The same article says website tracking "will be in a future release" and that Trace "also captures activity you perform on web sites". [S15]
-- **Trace's minimum time.** One article says a 15-second threshold for emails and documents; the newer settings article says the default minimum is 5 seconds. [S15] [S18]
+- **Trace's minimum time for websites.** One settings article says the default minimum is 5 seconds for every kind of activity. Another, edited on 9 November, says 5 seconds for emails and documents and 5 minutes for websites. [S18] [S45]
 - **Hosting regions.** Actionstep's pages list different regions. [S11] [S32] [S33]
-- **Whether Trace and Acumen are generally available in Australia.** The pricing page lists them for AU, but the help centre still calls Acumen early access and mentions an early access programme for Trace. [S2] [S20] [S16]
+- **Whether Trace and Acumen are generally available in Australia.** The pricing page now includes them in two Australian packages, but the help centre still calls Acumen early access and mentions an early access programme for Trace. [S2] [S20] [S44] [S16]
 - **The MCP server.** No details, dates or documentation yet. [S3]
 - **The API setup fee's currency.** The article says "$500" only. [S22]
 - **The Outlook add-in's matter suggestions.** We couldn't find how they work or whether they can be switched off. [S26] [S25]
 
 ## Sources
 
-All sources were read on 17 October 2026.
+All sources were read on 18 November 2026.
 
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
-| S1 | Law Firm Artificial Intelligence (AI for Law firms) | Actionstep | https://www.actionstep.com/artificial-intelligence/ | No date shown (page metadata 12 Aug 2026) | 17 Oct 2026 |
-| S2 | Pricing | Actionstep | https://www.actionstep.com/pricing/ | No date shown (page metadata 20 Aug 2026) | 17 Oct 2026 |
-| S3 | Actionstep Releases Actionstep Intelligence: AI Built for the Business of Midsize Law Firms | Actionstep (news) | https://www.actionstep.com/blog/actionstep-releases-actionstep-intelligence-ai-built-for-the-business-of-midsize-law-firms/ | Posted 11 Aug 2026 | 17 Oct 2026 |
-| S4 | AI for Law Firms: Actionstep Intelligence Webinar Recap | Actionstep Blog | https://www.actionstep.com/blog/ai-for-law-firms-actionstep-intelligence-webinar-recap/ | Posted 28 Sep 2026 | 17 Oct 2026 |
-| S5 | Actionstep Accelerates AI Innovation With Trace, a Next-Gen Time Capture Module for Modern Law Firms | Actionstep (news) | https://www.actionstep.com/blog/actionstep-accelerates-ai-innovation-with-trace-a-next-gen-time-capture-module-for-modern-law-firms/ | Posted 29 Jan 2026 (release dated 28 Jan 2026; page metadata 15 Jul 2026) | 17 Oct 2026 |
-| S6 | Actionstep Introduces Scout AI Support Assistant | Actionstep (news) | https://www.actionstep.com/blog/actionstep-introduces-scout-ai-support-assistant/ | Posted 1 Jul 2025 | 17 Oct 2026 |
-| S7 | Meet Scout: Your New AI Support Assistant for Actionstep | Actionstep Blog | https://www.actionstep.com/meet-scout-your-new-ai-support-assistant-for-actionstep-practice-management/ | Posted 18 Jun 2025 | 17 Oct 2026 |
-| S8 | Actionstep Establishes AI Center of Excellence | Actionstep (news) | https://www.actionstep.com/actionstep-establishes-ai-center-of-excellence-helping-midsize-law-firms-leverage-ai-for-the-management-of-law/ | Posted 10 Aug 2025 | 17 Oct 2026 |
-| S9 | AI Legal Assistant Announces Integration with Actionstep | Actionstep (news) | https://www.actionstep.com/blog/ai-legal-assistant-announces-integration-with-actionstep/ | Posted 26 Nov 2025 (release dated 12 Nov 2025) | 17 Oct 2026 |
-| S10 | The Difference Between Using AI and Becoming an AI-Native Law Firm | Actionstep Blog | https://www.actionstep.com/blog/the-difference-between-using-ai-and-becoming-an-ai-native-law-firm/ | Posted 3 Aug 2026 | 17 Oct 2026 |
-| S11 | Trust Center: FAQ (including "AI in Actionstep" and "Data Sovereignty") | Actionstep | https://www.actionstep-trust.com/faq | No date shown | 17 Oct 2026 |
-| S12 | Trust Center: Subprocessors | Actionstep | https://www.actionstep-trust.com/subprocessors | No date shown | 17 Oct 2026 |
-| S13 | Privacy Policy (Australia and New Zealand) | Actionstep | https://www.actionstep.com/privacy-policy-australia-and-new-zealand/ | "Last Updated: 3 March, 2026" | 17 Oct 2026 |
-| S14 | Terms of Use | Actionstep | https://www.actionstep.com/terms/ | "Last updated: 14-April-2026" | 17 Oct 2026 |
-| S15 | About Trace | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/52520331660307-About-Trace | Edited 6 Aug 2026 (help centre data) | 17 Oct 2026 |
-| S16 | Installing Trace | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/52922246806931-Installing-Trace | Edited 6 Aug 2026 (help centre data) | 17 Oct 2026 |
-| S17 | Reviewing and Recording Time Entries Using Trace | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/52524297058963-Reviewing-and-Recording-Time-Entries-Using-Trace | Edited 12 Oct 2026 (help centre data) | 17 Oct 2026 |
-| S18 | Setting Minimum Activity Times for Trace Suggestions | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/56260144759699-Setting-Minimum-Activity-Times-for-Trace-Suggestions | Edited 9 Oct 2026 (help centre data) | 17 Oct 2026 |
-| S19 | Reviewing AI-Generated Insights About Your Business Intelligence Dashboards | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/54160035903379-Reviewing-AI-Generated-Insights-About-Your-Business-Intelligence-Dashboards | Edited 10 Aug 2026 (help centre data) | 17 Oct 2026 |
-| S20 | About the Firm Management Dashboard | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/51073934778899-About-the-Firm-Management-Dashboard | Edited 13 Oct 2026 (help centre data) | 17 Oct 2026 |
-| S21 | Using Scout (AI Support Assistant) FAQ | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/50482508470803-Using-Scout-AI-Support-Assistant-FAQ | Edited 20 Apr 2026 (help centre data) | 17 Oct 2026 |
-| S22 | Actionstep API | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/50482549518355-Actionstep-API | Edited 24 Apr 2026 (help centre data) | 17 Oct 2026 |
-| S23 | About Using Actionstep with Zapier | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/50482542026003-About-Using-Actionstep-with-Zapier | Edited 14 Apr 2026 (help centre data) | 17 Oct 2026 |
-| S24 | About Actionstep's Beta Testing Program | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/50482538737043-About-Actionstep-s-Beta-Testing-Program | Edited 14 Apr 2026 (help centre data) | 17 Oct 2026 |
-| S25 | Setting Up the Outlook Add-in | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/50717863869459-Setting-Up-the-Outlook-Add-in | Edited 15 Sep 2026 (help centre data) | 17 Oct 2026 |
-| S26 | Outlook add-in for Office 365 (integration page) | Actionstep | https://www.actionstep.com/integrations/outlook-add-in-for-office-365/ | No date shown (page metadata 17 Jun 2025) | 17 Oct 2026 |
-| S27 | Zapier (integration page) | Actionstep | https://www.actionstep.com/integrations/zapier/ | No date shown (page metadata 29 Sep 2024) | 17 Oct 2026 |
-| S28 | Qanooni AI (integration page) | Actionstep | https://www.actionstep.com/integrations/qanooni/ | No date shown (page metadata 16 Oct 2026) | 17 Oct 2026 |
-| S29 | Lexidesk (integration page) | Actionstep | https://www.actionstep.com/integrations/lexidesk/ | No date shown (page metadata 2 Sep 2025) | 17 Oct 2026 |
-| S30 | Rising Tide AI (integration page) | Actionstep | https://www.actionstep.com/integrations/rising-tide-ai/ | No date shown (page metadata 14 Jul 2026) | 17 Oct 2026 |
-| S31 | Integrations | Actionstep | https://www.actionstep.com/integrations/ | No date shown (page metadata 2 Oct 2026) | 17 Oct 2026 |
-| S32 | Cybersecurity | Actionstep | https://www.actionstep.com/cybersecurity/ | No date shown (page metadata 29 Sep 2024) | 17 Oct 2026 |
-| S33 | FAQs | Actionstep | https://www.actionstep.com/faqs/ | No date shown (page metadata 19 May 2026) | 17 Oct 2026 |
-| S34 | Search results for "Actionstep" | Microsoft Marketplace | https://marketplace.microsoft.com/en-gb/search/products?search=Actionstep | No date shown; listed Actionstep for Word, Actionstep for Outlook and Actionstep Builder for Word | 17 Oct 2026 |
-| S35 | Connectors directory | Anthropic | https://claude.com/connectors | No date shown | 17 Oct 2026 |
-| S36 | Get started with connectors | Anthropic | https://claude.com/docs/connectors/getting-started | No date shown (page metadata 25 Sep 2026) | 17 Oct 2026 |
-| S37 | ChatGPT Plugins (including the Legal category) | OpenAI | https://openai.com/business/plugins/ | No date shown | 17 Oct 2026 |
-| S38 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | Updated 16 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S39 | List of all Copilot Studio, Power Platform and Logic Apps connectors | Microsoft Learn | https://learn.microsoft.com/en-us/connectors/connector-reference/ | Updated 2 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S40 | Check the availability & requirements of Connected Apps in Gemini Apps | Google Gemini Apps Help | https://support.google.com/gemini/table/17434654?hl=en | No date shown | 17 Oct 2026 |
-| S41 | Actionstep MCP | Zapier | https://zapier.com/mcp/actionstep | No date shown | 17 Oct 2026 |
-| S42 | Gmail (integration page) | Actionstep | https://www.actionstep.com/integrations/gmail/ | No date shown (page metadata 29 Sep 2024) | 17 Oct 2026 |
-| S43 | Google Drive (integration page) | Actionstep | https://www.actionstep.com/integrations/google-drive/ | No date shown (page metadata 29 Sep 2024) | 17 Oct 2026 |
+| S1 | Law Firm Artificial Intelligence (AI for Law firms) | Actionstep | https://www.actionstep.com/artificial-intelligence/ | No date shown (page metadata 17 Nov 2026) | 18 Nov 2026 |
+| S2 | Pricing | Actionstep | https://www.actionstep.com/pricing/ | No date shown (page metadata 13 Nov 2026) | 18 Nov 2026 |
+| S3 | Actionstep Releases Actionstep Intelligence: AI Built for the Business of Midsize Law Firms | Actionstep (news) | https://www.actionstep.com/blog/actionstep-releases-actionstep-intelligence-ai-built-for-the-business-of-midsize-law-firms/ | Posted 11 Aug 2026 | 18 Nov 2026 |
+| S4 | AI for Law Firms: Actionstep Intelligence Webinar Recap | Actionstep Blog | https://www.actionstep.com/blog/ai-for-law-firms-actionstep-intelligence-webinar-recap/ | Posted 28 Sep 2026 | 18 Nov 2026 |
+| S5 | Actionstep Accelerates AI Innovation With Trace, a Next-Gen Time Capture Module for Modern Law Firms | Actionstep (news) | https://www.actionstep.com/blog/actionstep-accelerates-ai-innovation-with-trace-a-next-gen-time-capture-module-for-modern-law-firms/ | Posted 29 Jan 2026 (release dated 28 Jan 2026; page metadata 15 Jul 2026) | 18 Nov 2026 |
+| S6 | Actionstep Introduces Scout AI Support Assistant | Actionstep (news) | https://www.actionstep.com/blog/actionstep-introduces-scout-ai-support-assistant/ | Posted 1 Jul 2025 | 18 Nov 2026 |
+| S7 | Meet Scout: Your New AI Support Assistant for Actionstep | Actionstep Blog | https://www.actionstep.com/meet-scout-your-new-ai-support-assistant-for-actionstep-practice-management/ | Posted 18 Jun 2025 | 18 Nov 2026 |
+| S8 | Actionstep Establishes AI Center of Excellence | Actionstep (news) | https://www.actionstep.com/actionstep-establishes-ai-center-of-excellence-helping-midsize-law-firms-leverage-ai-for-the-management-of-law/ | Posted 10 Aug 2025 | 18 Nov 2026 |
+| S9 | AI Legal Assistant Announces Integration with Actionstep | Actionstep (news) | https://www.actionstep.com/blog/ai-legal-assistant-announces-integration-with-actionstep/ | Posted 26 Nov 2025 (release dated 12 Nov 2025) | 18 Nov 2026 |
+| S10 | The Difference Between Using AI and Becoming an AI-Native Law Firm | Actionstep Blog | https://www.actionstep.com/blog/the-difference-between-using-ai-and-becoming-an-ai-native-law-firm/ | Posted 3 Aug 2026 | 18 Nov 2026 |
+| S11 | Trust Center: FAQ (including "AI in Actionstep" and "Data Sovereignty") | Actionstep | https://www.actionstep-trust.com/faq | No date shown | 18 Nov 2026 |
+| S12 | Trust Center: Subprocessors | Actionstep | https://www.actionstep-trust.com/subprocessors | No date shown | 18 Nov 2026 |
+| S13 | Privacy Policy (Australia and New Zealand) | Actionstep | https://www.actionstep.com/privacy-policy-australia-and-new-zealand/ | "Last Updated: 3 March, 2026" | 18 Nov 2026 |
+| S14 | Terms of Use | Actionstep | https://www.actionstep.com/terms/ | "Last updated: 14-April-2026" | 18 Nov 2026 |
+| S15 | About Trace | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/52520331660307-About-Trace | Edited 10 Nov 2026 (help centre data) | 18 Nov 2026 |
+| S16 | Installing Trace | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/52922246806931-Installing-Trace | Edited 6 Aug 2026 (help centre data) | 18 Nov 2026 |
+| S17 | Reviewing and Recording Time Entries Using Trace | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/52524297058963-Reviewing-and-Recording-Time-Entries-Using-Trace | Edited 19 Oct 2026 (help centre data) | 18 Nov 2026 |
+| S18 | Setting Minimum Activity Times for Trace Suggestions | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/56260144759699-Setting-Minimum-Activity-Times-for-Trace-Suggestions | Edited 9 Oct 2026 (help centre data) | 18 Nov 2026 |
+| S19 | Reviewing AI-Generated Insights About Your Business Intelligence Dashboards | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/54159989882259-Reviewing-AI-Generated-Insights-About-Your-Business-Intelligence-Dashboards | Edited 30 Oct 2026 (help centre data) | 18 Nov 2026 |
+| S20 | About the Firm Management Dashboard | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/51073934778899-About-the-Firm-Management-Dashboard | Edited 13 Oct 2026 (help centre data) | 18 Nov 2026 |
+| S21 | Using Scout (AI Support Assistant) FAQ | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/50482508470803-Using-Scout-AI-Support-Assistant-FAQ | Edited 20 Apr 2026 (help centre data) | 18 Nov 2026 |
+| S22 | Actionstep API | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/50482549518355-Actionstep-API | Edited 24 Apr 2026 (help centre data) | 18 Nov 2026 |
+| S23 | About Using Actionstep with Zapier | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/50482542026003-About-Using-Actionstep-with-Zapier | Edited 14 Apr 2026 (help centre data) | 18 Nov 2026 |
+| S24 | About Actionstep's Beta Testing Program | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/50482538737043-About-Actionstep-s-Beta-Testing-Program | Edited 14 Apr 2026 (help centre data) | 18 Nov 2026 |
+| S25 | Setting Up the Outlook Add-in | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/50717863869459-Setting-Up-the-Outlook-Add-in | Edited 15 Sep 2026 (help centre data) | 18 Nov 2026 |
+| S26 | Outlook add-in for Office 365 (integration page) | Actionstep | https://www.actionstep.com/integrations/outlook-add-in-for-office-365/ | No date shown (page metadata 17 Jun 2025) | 18 Nov 2026 |
+| S27 | Zapier (integration page) | Actionstep | https://www.actionstep.com/integrations/zapier/ | No date shown (page metadata 29 Sep 2024) | 18 Nov 2026 |
+| S28 | Qanooni AI (integration page) | Actionstep | https://www.actionstep.com/integrations/qanooni/ | No date shown (page metadata 17 Nov 2026) | 18 Nov 2026 |
+| S29 | Lexidesk (integration page) | Actionstep | https://www.actionstep.com/integrations/lexidesk/ | No date shown (page metadata 2 Sep 2025) | 18 Nov 2026 |
+| S30 | Rising Tide AI (integration page) | Actionstep | https://www.actionstep.com/integrations/rising-tide-ai/ | No date shown (page metadata 14 Jul 2026) | 18 Nov 2026 |
+| S31 | Integrations | Actionstep | https://www.actionstep.com/integrations/ | No date shown (page metadata 12 Nov 2026) | 18 Nov 2026 |
+| S32 | Cybersecurity | Actionstep | https://www.actionstep.com/cybersecurity/ | No date shown (page metadata 29 Sep 2024) | 18 Nov 2026 |
+| S33 | FAQs | Actionstep | https://www.actionstep.com/faqs/ | No date shown (page metadata 19 May 2026) | 18 Nov 2026 |
+| S34 | Search results for "Actionstep" | Microsoft Marketplace | https://marketplace.microsoft.com/en-gb/search/products?search=Actionstep | No date shown; listed Actionstep for Word, Actionstep for Outlook and Actionstep Builder for Word | 18 Nov 2026 |
+| S35 | Connectors and plugins directory (Claude Marketplace) | Anthropic | https://claude.com/marketplace/connectors-plugins | No date shown | 18 Nov 2026 |
+| S36 | Get started with connectors | Anthropic | https://claude.com/docs/connectors/getting-started | No date shown (page metadata 25 Sep 2026) | 18 Nov 2026 |
+| S37 | ChatGPT Plugins (including the Legal category) | OpenAI | https://openai.com/business/plugins/ | No date shown | 18 Nov 2026 |
+| S38 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | Updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S39 | List of all Copilot Studio, Power Platform and Logic Apps connectors | Microsoft Learn | https://learn.microsoft.com/en-us/connectors/connector-reference/ | Updated 18 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S40 | Check the availability & requirements of Connected Apps in Gemini Apps | Google Gemini Apps Help | https://support.google.com/gemini/table/17434654?hl=en | No date shown | 18 Nov 2026 |
+| S41 | Actionstep MCP | Zapier | https://zapier.com/mcp/actionstep | No date shown | 18 Nov 2026 |
+| S42 | Gmail (integration page) | Actionstep | https://www.actionstep.com/integrations/gmail/ | No date shown (page metadata 29 Sep 2024) | 18 Nov 2026 |
+| S43 | Google Drive (integration page) | Actionstep | https://www.actionstep.com/integrations/google-drive/ | No date shown (page metadata 29 Sep 2024) | 18 Nov 2026 |
+| S44 | About Actionstep Acumen | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/56993674713875-About-Actionstep-Acumen | Edited 30 Oct 2026 (help centre data) | 18 Nov 2026 |
+| S45 | Managing Your Individual Trace Settings | Actionstep Help Center | https://support.actionstep.com/hc/en-us/articles/52523402699539-Managing-Your-Individual-Trace-Settings | Edited 9 Nov 2026 (help centre data) | 18 Nov 2026 |

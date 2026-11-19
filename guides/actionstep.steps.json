@@ -4,7 +4,7 @@
     "from": "Actionstep Practice Management (admin)",
     "to": "Trace (AI time capture)",
     "who": "admin",
-    "plan_needed": "The Trace add-on module (priced per user plus implementation fees; prices not published). Windows computers only. Early access customers get the installer from an Actionstep representative instead of the Admin > Trace page.",
+    "plan_needed": "Trace, which Actionstep includes in its Performance and Intelligence packages and sells as an add-on with Connection (priced per user plus implementation; prices not published). Windows computers only. Early access customers get the installer from an Actionstep representative instead of the Admin > Trace page.",
     "steps": [
       {
         "where": "Actionstep Practice Management, Admin > General",
@@ -22,8 +22,8 @@
         "see": "Trace installed on each timekeeper's Windows computer."
       }
     ],
-    "source": "S15, S16",
-    "doc_updated": "2026-08-06"
+    "source": "S15, S16, S2",
+    "doc_updated": "2026-11-13"
   },
   {
     "id": "actionstep-fee-earner-installs-trace",
@@ -54,14 +54,14 @@
       }
     ],
     "source": "S16, S15, S17",
-    "doc_updated": "2026-10-12"
+    "doc_updated": "2026-11-10"
   },
   {
     "id": "actionstep-ask-acumen",
     "from": "Actionstep Practice Management",
     "to": "Ask Acumen (AI questions about firm reports)",
     "who": "anyone",
-    "plan_needed": "The Acumen add-on module, currently in early access. Answers follow each user's permissions.",
+    "plan_needed": "Acumen, which Actionstep includes in its Performance and Intelligence packages and sells as an add-on with Connection. Its help articles still call it early access. Answers follow each user's permissions.",
     "steps": [
       {
         "where": "Actionstep Practice Management",
@@ -70,8 +70,8 @@
       },
       {
         "where": "Insights panel on the left",
-        "do": "Click Firm Management.",
-        "see": "The Firm Management Dashboard."
+        "do": "Click the dashboard you want to ask about, such as Firm Management.",
+        "see": "That dashboard is displayed."
       },
       {
         "where": "Firm Management Dashboard",
@@ -91,8 +91,8 @@
         "see": "The saved session is removed from your history."
       }
     ],
-    "source": "S19",
-    "doc_updated": "2026-08-10"
+    "source": "S19, S2",
+    "doc_updated": "2026-11-13"
   },
   {
     "id": "actionstep-outlook-add-in",

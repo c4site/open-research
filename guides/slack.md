@@ -1,6 +1,6 @@
 # Slack: the AI inside it, and the AI that connects to it
 
-Researched 17 October 2026 from vendor documentation. Every line is tagged with its source.
+Researched 18 November 2026 from vendor documentation. Every line is tagged with its source.
 
 ## The short version
 
@@ -11,7 +11,7 @@ Researched 17 October 2026 from vendor documentation. Every line is tagged with 
 - Slack's Australian pricing page shows US dollars, and Slack doesn't list the Australian dollar as a billing currency. [S1] [S2]
 - Claude connects through a Slack-built connector that reads Slack and can send messages. Claude Tag, a beta for Claude Team and Enterprise, puts Claude to work inside your channels. [S35] [S38]
 - ChatGPT connects through its Slack app, which searches Slack and can act once an admin allows it. Business, Enterprise and Edu workspaces can also set up @ChatGPT inside Slack. [S46] [S47]
-- Microsoft hasn't built a Slack connector for Copilot. Its gallery lists two Slack connectors built by partners. [S55] [S56]
+- Microsoft now lists its own Slack connector for Microsoft 365 Copilot, which gets Slack data live using each person's own sign-in. Two partner-built connectors are listed too. [S55] [S57] [S56]
 - The everyday Gemini app doesn't connect to Slack. Gemini Enterprise, Google's separate business product, has a Slack connector that can read and send messages. [S61] [S63]
 - Salesforce's Agentforce agents also work inside Slack on any plan, if you hold Salesforce Agentforce licences. [S25]
 
@@ -49,7 +49,7 @@ Sources for the table: [S1] [S5] [S7] [S16] [S22]
 - It can summarise past conversations before a meeting, analyse a spreadsheet or draft a first version of a document. [S6]
 - It can also draw on Salesforce, on third-party apps installed in your workspace and on enterprise search sources. [S6]
 - Deep research produces a longer report from channels and files, the web, Salesforce data and connected MCP servers. It can take up to ten minutes. [S6]
-- Scheduled tasks can send reminders or build meeting agendas. Each task can run at most three times a day. [S6] [S7]
+- Tasks can build a meeting agenda or summarise updates on a project. They can run at a set time or when something happens, like a new message in a channel or a list item changing. Your tasks can run automatically up to 15 times a day in total. [S68] [S7]
 - It can create and edit canvases. When it edits a shared canvas, you click **Confirm** before anything is added, or **Cancel**. [S6]
 - Since April 2026 it can connect to Gmail, Google Calendar or Microsoft Outlook for calendar and email actions. [S12]
 - Since May 2026 it can create or update Salesforce records and read, create and edit lists, with approval before changes. [S12]
@@ -58,16 +58,16 @@ Sources for the table: [S1] [S5] [S7] [S16] [S22]
 
 **Where to find it**
 
-- On desktop, click **Slackbot** in the top right-hand corner of the screen or at the top of your sidebar. If you can't see it, click **More**. [S6]
+- On desktop, click **Slackbot** in the top right-hand corner of the screen or at the top of your sidebar. If you can't see it, click **More**. [S6] [S68]
 - On mobile, go to the **Home** tab and tap **Slackbot** at the top of the screen. [S6]
-- For recurring work, open the **Tasks** tab, click **Add task** and select **Create with Slackbot**. Slackbot drafts the task and you click **Create task**. [S6]
+- For recurring work, open the **Tasks** tab, click **Add task** and select **Create with Slackbot**. Slackbot drafts the task and you click **Create task**. [S68]
 - For deep research, click the plus button next to the message field and select **Deep research**. [S6]
 
 **Which plans have it**
 
 - Ongoing access is on Business+ and Enterprise+. Free and Pro get a limited trial or preview. [S1] [S7]
 - Business+ members can send 15 messages to Slackbot each week, resetting at midnight on Monday. Enterprise+ members have no weekly or lifetime cap. [S7]
-- Slack says it may bring in usage limits or usage-based pricing for advanced capabilities released after June 2026, with 30 days' written notice. [S7]
+- Slack says it has no limits yet on advanced Slackbot actions, such as deep research, but may add them in future. [S7]
 - The new Slackbot became generally available for Business+ and Enterprise+ on 13 January 2026. [S10]
 
 **What happens to your data**
@@ -78,6 +78,7 @@ Sources for the table: [S1] [S5] [S7] [S16] [S22]
 - To turn memory off, open Slackbot, click the three dots icon, select **Manage memories** and switch off **Generate memory from conversations**. You can edit or remove saved items there too. [S8]
 - Slack says dictated messages are transcribed but the audio isn't stored. [S6]
 - Admins can decide whether Slackbot may create and edit canvases, use files in its answers or search the web. [S5]
+- Owners and admins also decide whether members can use Slackbot to manage calendar events and to draft and send emails for them. [S12]
 - If web search is allowed, Salesforce's sub-processor list says SuSea, Inc. (trading as You.com) supplies the results and may pass public links and content into Slackbot's answers. [S23]
 
 **In Australia**
@@ -121,13 +122,13 @@ Sources for the table: [S1] [S5] [S7] [S16] [S22]
 
 - When AI notes are on, Slack uses the live conversation and the messages in the huddle thread to capture key points and action items in a canvas. [S13]
 - After the huddle, the notes are posted as a canvas in the huddle thread. They list the people in the huddle, topics discussed and action items. [S13]
-- The transcript is embedded in the notes canvas. It doesn't show up in search results. [S13]
+- If your admins allow it, the transcript is embedded in the notes canvas. It doesn't show up in search results. [S13]
 
 **Where to find it**
 
-- On desktop, click **AI notes: Off** at the top left of the huddle, then **Start AI notes and transcription**, then **Start notes**. [S13]
+- On desktop, click **AI notes: Off** at the top left of the huddle, then **Start AI notes**, then **Start**. [S13]
 - On mobile, tap the three dots icon at the bottom of the screen, then **Start AI notes**, then **Start notes**. A banner confirms notes are on. [S13]
-- To pause on desktop, click **AI notes: On**, then **Stop AI notes**. To remove them, click **Delete AI notes and transcription**, then **Delete and cancel**. [S13]
+- To pause on desktop, click **AI notes: On**, then **Stop AI notes**. To remove them, click **Delete AI notes**, then **Delete and cancel**. [S13]
 - To start notes automatically in a channel, click the channel name, then **Settings**. Next to **Always start AI notes**, click **Edit**, tick the box and click **Save**. [S13]
 
 **Which plans have it**
@@ -141,6 +142,7 @@ Sources for the table: [S1] [S5] [S7] [S16] [S22]
 - Anyone in the channel or DM where the huddle took place can view the notes, and they can be shared like any canvas. [S13]
 - AI notes can't be used in huddles with external people or guests. [S13]
 - Admins can stop members changing the automatic huddle notes setting in channels. [S5]
+- Since November 2026, owners and admins can turn transcription on or off for AI huddle notes. [S12]
 - Canvases follow your workspace's data retention settings. On paid plans, Slack keeps data for the life of the workspace unless you set a shorter period. [S67]
 - Salesforce's sub-processor list names Amazon Transcribe for huddle transcripts, with Australia among its listed locations. [S23]
 
@@ -199,6 +201,7 @@ Sources for the table: [S1] [S5] [S7] [S16] [S22]
 **What happens to your data**
 
 - Admins choose whether files and third-party connectors can be used in AI workflow steps. [S5]
+- When a workflow sends AI-made content to another app, it pauses for a person to review it by default. Admins can change when review is needed. [S12] [S5]
 - Slack's content safety filters cover canvas writing and workflow creation, as well as Slackbot and search. [S17]
 
 **In Australia**
@@ -215,7 +218,7 @@ Sources for the table: [S1] [S5] [S7] [S16] [S22]
 **Where to find it**
 
 - On desktop, click **Tools** (or **More**), then **Agents**, and pick one under **Installed agents**. On mobile, tap **Agentforce**. [S26]
-- To add one to a channel, click the channel name, open the **Agents & apps** tab and choose **Add Agentforce agent**. [S24]
+- To add one to a channel, click the **agents & apps** icon in the channel header, then **Add Agentforce agent** (or **Add agent** if the channel already has some). Type the agent's name and click **Add**. [S24]
 
 **Which plans have it**
 
@@ -264,7 +267,7 @@ Sources for the table: [S1] [S5] [S7] [S16] [S22]
 - Slack's other machine learning models, which aren't generative, do analyse customer data. You can opt out by emailing feedback@slack.com with the subject "Slack global model opt-out request". [S20]
 - Slack's blog says AI answers use the requesting person's access rights, and that summaries and search answers aren't stored on disk. [S21]
 - Members' feedback on AI responses is blocked by default in some workspaces. Owners and admins can allow it. [S5]
-- Salesforce's sub-processor list for Slack names Google LLC and Microsoft (Azure) as providers of "generative artificial intelligence services", both in the United States. [S23]
+- Salesforce's sub-processor list for Slack, republished on 17 November 2026, names Google LLC, Microsoft (Azure) and OpenAI as providers of "generative artificial intelligence services", all in the United States. For OpenAI, it says data goes to Microsoft Azure if there's a failover. [S23]
 
 **In Australia**
 
@@ -272,6 +275,7 @@ Sources for the table: [S1] [S5] [S7] [S16] [S22]
 - Member profiles, membership information and some analytics data can be stored outside your chosen region. Flagged content may be stored in the United States. [S22]
 - Without data residency, Slack says your data is stored in the US. [S22]
 - The data residency article doesn't mention the AI features. [S22]
+- In November 2026 Slack let the latest Business+ and Enterprise+ subscriptions send AI prompts and responses to a chosen region. It started with Japan and says more regions will follow "in the coming months". Australia isn't named yet. [S12]
 
 ## Outside AI that connects
 
@@ -285,7 +289,7 @@ Connections run in two directions. An outside AI can read Slack from its own app
 
 - Yes. The "Slack" connector in Claude's directory is made by Slack, marked "Anthropic verified", and was added in November 2025. [S35]
 - Claude Tag puts Claude inside your Slack channels for teams. It's a beta, and the earlier Claude in Slack app switched over to it on 3 August 2026. [S38] [S39]
-- Slack lists Claude.ai and Claude Code among the partner apps for its MCP server. [S30]
+- Slack's help centre lists Claude among the partner apps for its MCP server, and its developer docs show how to connect Claude Code. [S29] [S31]
 
 **What it can see and do**
 
@@ -300,12 +304,12 @@ Connections run in two directions. An outside AI can read Slack from its own app
 
 **What you need**
 
-- For the connector, a Claude account. Anthropic's Slack page says Team and Enterprise, and its blog says Pro and Max were added on 26 January 2026. [S36] [S37]
+- For the connector, a Claude account. Anthropic's Slack page says Team and Enterprise, and its blog says Pro and Max were added on 26 January 2026. Anthropic now notes that older mentions of Max cover what are now its Max and Ultra plans. [S36] [S37]
 - Slack's developer docs say your Slack workspace admin must approve the MCP integration. [S31]
 - On Team and Enterprise, an Owner adds the connector for the organisation first. Each person then signs in with their own account. [S44]
 - Slack Enterprise+ organisations on Claude Team or Enterprise can manage access through Okta. Slack says Okta is currently the only identity provider supported for this. [S32]
 - For Claude Tag, a Claude Team or Enterprise plan, an Owner to run setup and a Slack workspace admin to install the app and run the pairing command. [S40]
-- Claude Tag isn't available on Free, Pro or Max plans. It also isn't available to organisations with Zero Data Retention. [S39] [S40]
+- Claude Tag isn't available on Free, Pro, Max or Ultra plans. It also isn't available to organisations with Zero Data Retention. [S39] [S40]
 - Claude Tag adds no per-seat charge. Channel work draws on a usage balance, up to a monthly spend limit an Owner sets. On Team plans nothing runs until credits are loaded. [S39] [S40]
 
 **Steps to connect** (Anthropic's docs, not dated)
@@ -369,21 +373,21 @@ Claude Tag setup, for a Claude Owner working with a Slack admin (Anthropic's doc
 - If your Slack requires admin approval for app permissions, a Slack admin may need to approve or reinstall the ChatGPT app. [S46]
 - For @ChatGPT, a ChatGPT Business, Enterprise or Edu workspace with credits. A ChatGPT workspace admin sets it up and a Slack admin approves the app. [S49]
 
-**Steps to connect** (OpenAI's help centre, updated 11 October 2026)
+**Steps to connect** (OpenAI's help centre, updated 8 November 2026)
 
-1. In ChatGPT, open **Settings** and find Slack under **Apps** or **Plugins**. [S46]
+1. In ChatGPT, open **Settings** and find Slack in **Plugins**. [S46]
 2. Select **Connect**. [S46]
-3. Sign in to the Slack workspace you want and approve access. ChatGPT connects to one Slack workspace at a time. [S46]
+3. Sign in to the Slack workspace you want and approve access. To add another workspace later, select Slack in **Settings > Plugins**, then **Connect another account**. [S46]
 4. In a chat, mention Slack with **@** or pick it from the **+** menu. ChatGPT can also use Slack automatically when it's relevant. [S54] [S46]
 
-@ChatGPT setup, for admins (OpenAI's help centre, updated 17 October 2026):
+@ChatGPT setup, for admins (OpenAI's help centre, updated 15 November 2026):
 
 1. In the OpenAI admin console, select the ChatGPT workspace. [S49]
 2. Open **Agents**, select **@ChatGPT agents**, select **Add** and choose **Slack**. [S49]
 3. Connect the Slack workspace and review the permissions. A Slack owner or app manager approves the app if required. [S49]
 4. In **New agent**, choose the Slack workspace, give it a name and select **Create agent**. [S49]
 5. To limit channels, open the agent, select **Selected channels only**, add channels and select **Save channel restrictions**. [S49]
-6. Add @ChatGPT to a test channel, mention it in a new thread, then test a DM separately. [S49]
+6. Add @ChatGPT to a test channel and mention it in a new thread. If channel restrictions are off, test a DM too. [S49]
 
 **To disconnect**
 
@@ -395,7 +399,7 @@ Claude Tag setup, for a Claude Owner working with a Slack admin (Anthropic's doc
 
 - When connected, ChatGPT may share relevant chats and memories with the Slack app. Slack's terms and privacy policy then apply. [S52]
 - OpenAI says information sent to Slack follows Slack's own storage, retention, privacy and data-residency terms. [S46]
-- Channel restrictions for @ChatGPT don't restrict DMs. [S49]
+- OpenAI's admin guide says that with **Selected channels only** on, @ChatGPT can't reply to DMs. Its user guide still says channel restrictions don't restrict DMs. [S49] [S48]
 - @ChatGPT doesn't respond to Slack guests and isn't supported in Slack Connect channels. [S48]
 - In Slack, **Allow for a week** remembers the access level you approved for seven days. [S48]
 - Replies from @ChatGPT in shared conversations are visible to everyone in them. [S47]
@@ -406,11 +410,14 @@ Claude Tag setup, for a Claude Owner working with a Slack admin (Anthropic's doc
 
 **Official?**
 
-- No connection built by Microsoft or Slack found. Microsoft's own gallery of Copilot connectors has no Slack entry, and neither does its list of federated (live) connectors. [S55] [S57]
-- Microsoft's partner gallery lists two Slack connectors built and supported by partners: one from RheinInsights and a "Slack external content connector" from ServiceNow. [S56]
+- Yes, since our October check. Microsoft's gallery of the connectors it builds now lists a Slack federated connector, described as giving access to "Slack data in real time". Slack also appears in its list of federated (live) connectors. [S55] [S57]
+- Microsoft's partner gallery also lists two Slack connectors built and supported by partners: one from RheinInsights and a "Slack external content connector" from ServiceNow. [S56]
 
 **What it can see and do**
 
+- Federated connectors fetch data live, using each person's own sign-in and permissions. They don't copy content into Microsoft 365. [S57]
+- Where a connector provides the tools, Copilot can also create, update or delete data in the other app. It asks for your approval first, and you can choose **Allow once**, **Allow for conversation** or **Always allow**. [S57]
+- The pages we read don't list the Slack connector's tools, so we couldn't confirm whether it can post messages. [S55] [S57]
 - RheinInsights' connector indexes public and private channels, messages, threads and attached files, following Slack's permission model. [S56]
 - ServiceNow's connector indexes messages, threads and shared files from all public channels. [S56]
 - Indexing connectors copy content into your Microsoft 365 search index so Copilot can use it. Copilot Chat can't write back to the other app by default. [S60]
@@ -419,22 +426,26 @@ Claude Tag setup, for a Claude Owner working with a Slack admin (Anthropic's doc
 
 **What you need**
 
+- For the federated connector, a Microsoft 365 Copilot licence, and an admin who makes the connector available in the Microsoft 365 admin center. [S57]
 - A Microsoft 365 admin sets up indexing connectors in the Microsoft 365 admin center. [S60]
 - Microsoft says partner connectors are supported by the partner, and support models vary. [S56]
-- Microsoft's Slack connector is a Standard connector in Copilot Studio and Power Automate. [S58]
+- For builders, the Slack connector is a Standard connector in Copilot Studio and Power Automate. [S58]
 
 **Steps to connect**
 
-- Not documented on the Microsoft pages we read. The partner gallery links to each partner's own setup guide. [S56]
+- Microsoft hasn't published Slack-specific steps. Its general steps for federated connectors are: in Microsoft 365 Copilot Chat, select **...**, then **Settings**, then **Sources**, find the data source and select **Connect**, then sign in. [S57]
+- For the partner connectors, the partner gallery links to each partner's own setup guide. [S56]
 
 **To disconnect**
 
-- Not covered for these partner connectors. Microsoft says that when a user disconnects or an admin disables a self-serve synced connector, its indexed content is removed. [S60]
+- Microsoft says people can turn a federated source off in Researcher or manage it in Copilot Chat settings. [S57]
+- Not covered for the partner connectors. Microsoft says that when a user disconnects or an admin disables a self-serve synced connector, its indexed content is removed. [S60]
 
 **Limits**
 
-- These are partner products. We didn't review the partners' own pages. [S56]
-- Microsoft's Slack connector limits each connection to 100 calls a minute. [S58]
+- Microsoft's Researcher agent can't use federated connectors' write, update or delete tools. [S57]
+- The partner connectors are partner products. We didn't review the partners' own pages. [S56]
+- The Slack connector for Copilot Studio and Power Automate limits each connection to 100 calls a minute. [S58]
 
 ### Google Gemini and Slack
 
@@ -457,7 +468,7 @@ Claude Tag setup, for a Claude Owner working with a Slack admin (Anthropic's doc
 - For the Slack app, Google lists "Access to the Slack AI add-on" as a prerequisite. [S64]
 - A Google Cloud admin creates OAuth credentials, and each person grants one-time access. [S64]
 
-**Steps to connect** (Google Cloud docs, last updated 14 October 2026)
+**Steps to connect** (Google Cloud docs, last updated 10 November 2026)
 
 1. In Google Cloud, go to **APIs & Services > Credentials** and create an OAuth client ID for a web application. [S64]
 2. In Gemini Enterprise, open the app and go to **Integration > Slack**. Enter the Slack workspace ID, client ID and client secret, then click **Save**. [S64]
@@ -480,8 +491,8 @@ Claude Tag setup, for a Claude Owner working with a Slack admin (Anthropic's doc
 **Official?**
 
 - Yes. Slack's MCP server and its Real-Time Search API became generally available on 17 February 2026. [S33]
-- Slack names Claude.ai, Claude Code, Perplexity and Cursor as partner apps that need no coding. [S30]
-- Slack's help centre also lists ChatGPT among the outside AI tools that use it. [S29]
+- Slack's help centre lists the partner apps that need no coding. They include ChatGPT, Claude, Cursor and Perplexity. [S29]
+- Slack's developer page no longer lists partner apps itself. It points to the help centre's list. [S30]
 
 **What it can see and do**
 
@@ -531,10 +542,12 @@ Claude Tag setup, for a Claude Owner working with a Slack admin (Anthropic's doc
 
 1. Click **Agents & tools**, then **AgentExchange**, and search for an app. [S24]
 2. Click **Add to Slack**, then **Allow**. If you need permission, add a note for your admin and click **Submit request**. [S24]
+3. To add it to a channel, click the **agents & apps** icon in the channel header, then **Add agent or app** (or **Add more**). Click **Add** next to the app, then mention it with @. [S24]
 
 **To disconnect**
 
-- Not covered in the article we read. [S24]
+- To take an app out of a channel, click the channel name, open the **Agents & apps** tab, open the **More** menu next to the app and select **Remove from this channel**. [S24]
+- The article doesn't describe uninstalling an app from the whole workspace. [S24]
 
 **Limits**
 
@@ -555,7 +568,7 @@ Claude Tag setup, for a Claude Owner working with a Slack admin (Anthropic's doc
 
 **Notes and transcripts are records**
 
-- Huddle notes include a transcript, and anyone in the channel or DM can open it. [S13]
+- Huddle notes can include a transcript, and anyone in the channel or DM can open it. Admins can now switch transcription off. [S13] [S12]
 - Slack tells everyone in the huddle when notes start. People who join the channel later can still read old notes. That's our reading of who can view them. [S13]
 - Claude Tag keeps the original text of messages even after they're edited or deleted in Slack. [S42]
 
@@ -573,7 +586,7 @@ Claude Tag setup, for a Claude Owner working with a Slack admin (Anthropic's doc
 
 - Slack says customer data isn't used to train LLMs and its models run inside its own cloud. [S19] [S1]
 - Slack's other machine learning analyses customer data unless you opt out by email. [S20]
-- Salesforce's sub-processor list names Google and Microsoft (Azure) as generative AI providers for Slack, located in the United States. [S23]
+- Salesforce's sub-processor list names Google, Microsoft (Azure) and OpenAI as generative AI providers for Slack, located in the United States. [S23]
 - Sydney data residency covers messages and files, but some data, like member profiles, can be stored elsewhere. [S22]
 - When ChatGPT uses the Slack app, it may share relevant chats and memories with Slack, under Slack's terms. [S52]
 - Google warns that Gemini Enterprise's federated search sends your query to every enabled third-party search backend. [S63]
@@ -612,10 +625,13 @@ Claude Tag setup, for a Claude Owner working with a Slack admin (Anthropic's doc
 - **17 June 2026:** The Gemini Enterprise app for Slack became generally available. Channel mentions followed on 10 September 2026. [S65]
 - **3 August 2026:** Claude in Slack switched over to Claude Tag. [S38]
 - **15 September 2026 (Dreamforce):** Slack said Slackbot in channels is in early pilot, with two-way voice and video generation "coming later this year". [S11]
-- **October 2026:** Workflows can start a conversation with Slackbot or an agent. [S12]
+- **October 2026:** Workflows can start a conversation with Slackbot or an agent. Slackbot tasks can start from channel and list events, and run up to 15 times a day. [S12]
+- **November 2026:** Regional AI inference for Business+ and Enterprise+ started with Japan. Admins can turn transcription off for AI huddle notes. [S12]
+- **By 16 November 2026:** Microsoft listed its own Slack federated connector for Microsoft 365 Copilot. [S55]
+- **17 November 2026:** The new edition of Salesforce's sub-processor list names OpenAI as a generative AI provider for Slack. [S23]
 - **Coming soon, no date:** Slack's pricing FAQ says Salesforce CRM customers who connect to Slack will get ongoing Slackbot access. [S1]
-- **After June 2026:** Slack says advanced Slackbot features may get usage limits or usage-based pricing, with 30 days' notice. [S7]
-- **Microsoft:** write actions through Copilot connectors start "early October 2026". [S60]
+- **No date:** Slack says it may add limits to advanced Slackbot actions, such as deep research, in future. [S7]
+- **Microsoft:** its connectors overview still says write actions start "early October 2026". Its federated connectors page, updated 16 November 2026, now describes create, update and delete actions that need the user's approval. [S60] [S57]
 - **OpenAI:** @ChatGPT replaces the older ChatGPT app in Slack. Existing installations don't stop immediately. [S47]
 
 ## What we couldn't establish
@@ -624,8 +640,10 @@ Claude Tag setup, for a Claude Owner working with a Slack admin (Anthropic's doc
 - **Free and Pro AI on the pricing cards.** The plan cards list AI items under Free and Pro without saying which are included. We relied on the help centre's table, which puts search answers, recaps and file summaries on Business+ and up. [S1] [S5]
 - **Which Claude plans get the Slack connector.** Anthropic's Slack page says Team and Enterprise and that the Claude in Slack app must be installed first. Its blog says Pro and Max were added in January 2026. Neither mentions Free. [S36] [S37]
 - **Who built ChatGPT's Slack plugin.** OpenAI's business page says OpenAI and the ChatGPT directory says Slack. [S51] [S52]
-- **Which models Slack uses.** Slack says Slackbot is powered by Claude and that its models run in its own AWS cloud. Salesforce's sub-processor list names Google and Microsoft Azure for generative AI and doesn't name Anthropic. We couldn't match features to providers. [S11] [S1] [S23]
-- **Where Slack's AI runs for Australian workspaces.** The data residency article doesn't mention AI features, and we found no page saying AI processing stays in Australia. [S22] [S18]
+- **Which models Slack uses.** Slack says Slackbot is powered by Claude and that its models run in its own AWS cloud. Salesforce's sub-processor list names Google, Microsoft Azure and OpenAI for generative AI and doesn't name Anthropic. We couldn't match features to providers. [S11] [S1] [S23]
+- **Where Slack's AI runs for Australian workspaces.** The data residency article doesn't mention AI features. Slack's regional AI inference started with Japan in November 2026 and doesn't list Australia yet. We found no page saying AI processing stays in Australia. [S22] [S18] [S12]
+- **What Microsoft's Slack connector can do.** Microsoft's gallery lists it, but no page we read lists its tools or says whether it can post messages. [S55] [S57]
+- **Whether @ChatGPT answers DMs with channel limits on.** OpenAI's admin guide says it can't, and its user guide says channel limits don't restrict DMs. [S49] [S48]
 - **How long huddle transcripts are kept.** The huddle notes article doesn't say. Canvases follow workspace retention, but no page we read says the embedded transcript does too. [S13] [S67]
 - **Whether "Restrict AI use" covers outside AI.** The article doesn't say whether it applies to third-party AI apps or the MCP server. [S16]
 - **Agentforce in Australia.** No page we read gave regions, languages or prices for Agentforce in Slack. Salesforce's help pages need JavaScript and wouldn't load for us. [S25] [S27]
@@ -636,74 +654,75 @@ Claude Tag setup, for a Claude Owner working with a Slack admin (Anthropic's doc
 
 ## Sources
 
-All sources were read on 17 October 2026.
+All sources were read on 18 November 2026.
 
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
-| S1 | Slack pricing for subscriptions (Australia) | Slack | https://slack.com/intl/en-au/pricing | No date shown (©2026). Read from Perth in a browser, prices shown in $US | 17 Oct 2026 |
-| S2 | Supported billing currencies | Slack Help Centre | https://slack.com/help/articles/115004062808-Supported-billing-currencies | No date shown | 17 Oct 2026 |
-| S3 | Updates to feature availability and pricing for Slack plans | Slack Help Centre | https://slack.com/help/articles/39264531104275-Updates-to-feature-availability-and-pricing-for-Slack-plans | No date shown | 17 Oct 2026 |
-| S4 | Guide to AI features in Slack | Slack Help Centre | https://slack.com/help/articles/25076892548883-Guide-to-AI-features-in-Slack | No date shown | 17 Oct 2026 |
-| S5 | Manage access to AI features in Slack | Slack Help Centre | https://slack.com/help/articles/28244420881555-Manage-access-to-AI-features-in-Slack | No date shown | 17 Oct 2026 |
-| S6 | How to work with Slackbot | Slack Help Centre | https://slack.com/help/articles/202026038-How-to-work-with-Slackbot | No date shown | 17 Oct 2026 |
-| S7 | Slackbot limits and credit usage | Slack Help Centre | https://slack.com/help/articles/53579676130195-Slackbot-limits-and-credit-usage | No date shown | 17 Oct 2026 |
-| S8 | Build your Slackbot memory | Slack Help Centre | https://slack.com/help/articles/52916888307091-Build-your-Slackbot-memory | No date shown | 17 Oct 2026 |
-| S9 | Introducing Slackbot, your context-aware AI agent for work | Slack blog | https://slack.com/blog/news/slackbot-context-aware-ai-agent-for-work | 13 Mar 2026 (the text describes a January and February rollout) | 17 Oct 2026 |
-| S10 | Salesforce Announces the General Availability of Slackbot | Salesforce (press release) | https://www.salesforce.com/news/press-releases/2026/01/13/slackbot-announcement/ | 13 Jan 2026 | 17 Oct 2026 |
-| S11 | Slack's newest innovations turn AI into a true teammate (Dreamforce 2026) | Slack blog | https://slack.com/blog/news/ai-powered-interface-for-work | 15 Sep 2026 | 17 Oct 2026 |
-| S12 | Slack updates and changes | Slack Help Centre | https://slack.com/help/articles/115004846068-Slack-updates-and-changes | Monthly entries, latest October 2026 | 17 Oct 2026 |
-| S13 | Use AI to take huddle notes in Slack | Slack Help Centre | https://slack.com/help/articles/31377193680019-Use-AI-to-take-huddle-notes-in-Slack | No date shown | 17 Oct 2026 |
-| S14 | Search with AI in Slack | Slack Help Centre | https://slack.com/help/articles/31739993134867-Search-with-AI-in-Slack | No date shown | 17 Oct 2026 |
-| S15 | Set up and manage Slack enterprise search | Slack Help Centre | https://slack.com/help/articles/39044407124755-Set-up-and-manage-Slack-enterprise-search | No date shown | 17 Oct 2026 |
-| S16 | Restrict AI access to certain channels, canvases and lists | Slack Help Centre | https://slack.com/help/articles/47421816860947-Restrict-AI-access-to-certain-channels-canvases-and-lists | No date shown | 17 Oct 2026 |
-| S17 | Guide to the Slack AI Guardrails | Slack Help Centre | https://slack.com/help/articles/53359847722131-Guide-to-the-Slack-AI-Guardrails | No date shown | 17 Oct 2026 |
-| S18 | Security for AI features in Slack | Slack Help Centre | https://slack.com/help/articles/28310650165907-Security-for-AI-features-in-Slack | No date shown | 17 Oct 2026 |
-| S19 | AI Principles | Slack | https://slack.com/trust/ai-principles | No date shown | 17 Oct 2026 |
-| S20 | Privacy Principles: Search, Learning and Artificial Intelligence | Slack | https://slack.com/trust/data-management/privacy-principles | No date shown | 17 Oct 2026 |
-| S21 | How we built Slack AI to be secure and private | Slack blog | https://slack.com/blog/news/how-we-built-slack-ai-to-be-secure-and-private | 16 Jul 2025 | 17 Oct 2026 |
-| S22 | Data residency for Slack | Slack Help Centre | https://slack.com/help/articles/360035633934-Data-residency-for-Slack | No date shown | 17 Oct 2026 |
-| S23 | Salesforce Infrastructure and Sub-processors (Slack section) | Salesforce | https://slack.com/slack-subprocessors | Published 2 Oct 2026 (the link opens a Salesforce PDF) | 17 Oct 2026 |
-| S24 | Work with AI agents in Slack | Slack Help Centre | https://slack.com/help/articles/33076000248851-Understand-AI-apps-in-Slack | No date shown | 17 Oct 2026 |
-| S25 | Set up and manage Agentforce in Slack | Slack Help Centre | https://slack.com/help/articles/36218109305875-Set-up-and-manage-Agentforce-in-Slack | No date shown | 17 Oct 2026 |
-| S26 | Use Agentforce in Slack | Slack Help Centre | https://slack.com/help/articles/36218786859667-Use-Agentforce-in-Slack | No date shown | 17 Oct 2026 |
-| S27 | Agentforce for Slack (Australia) | Salesforce | https://www.salesforce.com/au/slack/agentforce-in-slack/ | No date shown | 17 Oct 2026 |
-| S28 | Connect Slackbot to other apps with MCP | Slack Help Centre | https://slack.com/help/articles/52414744085139-Connect-Slackbot-to-other-apps-with-MCP | No date shown | 17 Oct 2026 |
-| S29 | Guide to Model Context Protocol in Slack | Slack Help Centre | https://slack.com/help/articles/48855576908307-Guide-to-Model-Context-Protocol-in-Slack | No date shown | 17 Oct 2026 |
-| S30 | Slack MCP server overview | Slack Developer Docs | https://docs.slack.dev/ai/slack-mcp-server/ | No date shown | 17 Oct 2026 |
-| S31 | Connect to Claude (Slack MCP server) | Slack Developer Docs | https://docs.slack.dev/ai/slack-mcp-server/connect-to-claude/ | No date shown | 17 Oct 2026 |
-| S32 | Manage access to the Slack MCP server through your identity provider | Slack Help Centre | https://slack.com/help/articles/54548358406419-Manage-access-to-the-Slack-MCP-server-through-your-identity-provider | No date shown | 17 Oct 2026 |
-| S33 | Slack Securely Powers Your Third-Party Agents With Your Business Context (MCP server and Real-Time Search API now generally available) | Slack blog | https://slack.com/blog/news/mcp-real-time-search-api-now-available | 17 Feb 2026 | 17 Oct 2026 |
-| S34 | Slack connectors for Workflow Builder | Slack Help Centre | https://slack.com/help/articles/20155812595219-Slack-connectors-for-Workflow-Builder | No date shown | 17 Oct 2026 |
-| S35 | Slack connector (Claude directory listing) | Anthropic | https://claude.com/connectors/slack | "Added November 2025" | 17 Oct 2026 |
-| S36 | Slack integration (earlier Claude in Slack app and Slack connector) | Anthropic (Claude docs) | https://claude.com/docs/connectors/slack | No date shown | 17 Oct 2026 |
-| S37 | Claude and Slack | Anthropic | https://claude.com/blog/claude-and-slack | 1 Oct 2025; update note dated 26 Jan 2026 | 17 Oct 2026 |
-| S38 | What is Claude Tag? | Anthropic Help Center | https://support.claude.com/en/articles/15594475-what-is-claude-tag | "Updated over 3 weeks ago" (no date) | 17 Oct 2026 |
-| S39 | Work with Claude Tag | Anthropic (Claude docs) | https://claude.com/docs/claude-tag/overview | No date shown; marked Public Beta | 17 Oct 2026 |
-| S40 | Set up Claude Tag | Anthropic (Claude docs) | https://claude.com/docs/claude-tag/admins/setup-overview | No date shown | 17 Oct 2026 |
-| S41 | Security and data handling (Claude Tag) | Anthropic (Claude docs) | https://claude.com/docs/claude-tag/concepts/security-and-data | No date shown | 17 Oct 2026 |
-| S42 | Data lifecycle and deletion (Claude Tag) | Anthropic (Claude docs) | https://claude.com/docs/claude-tag/concepts/data-lifecycle | No date shown | 17 Oct 2026 |
-| S43 | Claude in Slack | Anthropic | https://claude.com/claude-for-slack | No date shown (©2026) | 17 Oct 2026 |
-| S44 | Use connectors to extend Claude's capabilities | Anthropic Help Center | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated today" (17 Oct 2026) | 17 Oct 2026 |
-| S45 | Get started with connectors | Anthropic (Claude docs) | https://claude.com/docs/connectors/getting-started | No date shown | 17 Oct 2026 |
-| S46 | Using Slack in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/12525822-using-slack-in-chatgpt | "Updated: 6 days ago" (timestamp 11 Oct 2026, UTC) | 17 Oct 2026 |
-| S47 | ChatGPT with Slack and Microsoft Teams | OpenAI Help Center | https://help.openai.com/en/articles/20001536-chatgpt-with-slack-and-microsoft-teams | "Updated: 10 hours ago" (timestamp 17 Oct 2026, UTC) | 17 Oct 2026 |
-| S48 | Using @ChatGPT in Slack and Microsoft Teams | OpenAI Help Center | https://help.openai.com/en/articles/20001537-using-chatgpt-in-slack-and-microsoft-teams | "Updated: 11 hours ago" (timestamp 17 Oct 2026, UTC) | 17 Oct 2026 |
-| S49 | Setting up and managing @ChatGPT in Slack and Microsoft Teams | OpenAI Help Center | https://help.openai.com/en/articles/20001538-setting-up-and-managing-chatgpt-in-slack-and-microsoft-teams | "Updated: 11 hours ago" (timestamp 17 Oct 2026, UTC) | 17 Oct 2026 |
-| S50 | Creating and managing team tasks in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001540-creating-and-managing-team-tasks-in-chatgpt | "Updated: 13 days ago" (timestamp 4 Oct 2026, UTC) | 17 Oct 2026 |
-| S51 | Slack plugin for ChatGPT | OpenAI | https://openai.com/business/plugins/slack/ | No date shown | 17 Oct 2026 |
-| S52 | ChatGPT plugin listing: Slack | OpenAI | https://chatgpt.com/plugins/plugin_asdk_app_69a1d78e929881919bba0dbda1f6436d | No date shown (version 0.1.8) | 17 Oct 2026 |
-| S53 | Managing app permissions in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001495-managing-app-permissions-in-chatgpt | "Updated: 15 days ago" (timestamp 2 Oct 2026, UTC) | 17 Oct 2026 |
-| S54 | Connecting and managing app accounts in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt | "Updated: 8 hours ago" (timestamp 17 Oct 2026, UTC) | 17 Oct 2026 |
-| S55 | Microsoft-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft | 30 Sep 2026 (page metadata) | 17 Oct 2026 |
-| S56 | Partner-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-partners | Updated 25 Sep 2026 (page metadata) | 17 Oct 2026 |
-| S57 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | Updated 16 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S58 | Slack (connector reference for Copilot Studio, Power Automate, Logic Apps and Power Apps) | Microsoft Learn | https://learn.microsoft.com/en-us/connectors/slack/ | Updated 2 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S59 | Publish an agent to Azure Bot Service channels (Copilot Studio) | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-connect-bot-to-azure-bot-service-channels | Updated 3 Aug 2026 (page metadata) | 17 Oct 2026 |
-| S60 | Microsoft 365 Copilot connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/overview | Updated 12 Oct 2026 (page metadata) | 17 Oct 2026 |
-| S61 | Use & manage Connected Apps in Gemini (computer) | Google Gemini Apps Help | https://support.google.com/gemini/answer/13695044?hl=en&co=GENIE.Platform%3DDesktop | No date shown | 17 Oct 2026 |
-| S62 | Use apps connected to Gemini with a work or school Google Account | Google Gemini Apps Help | https://support.google.com/gemini/answer/14959807?hl=en | No date shown | 17 Oct 2026 |
-| S63 | Slack connector overview (Gemini Enterprise) | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/connectors/slack | "Last updated 2026-10-14 UTC" | 17 Oct 2026 |
-| S64 | Configure the Gemini Enterprise app for Slack | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/configure-slack-app | "Last updated 2026-10-14 UTC" | 17 Oct 2026 |
-| S65 | Gemini Enterprise release notes | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/release-notes | "Last updated 2026-10-14 UTC" | 17 Oct 2026 |
-| S66 | Connect a third-party data source (Gemini Enterprise) | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source | "Last updated 2026-10-15 UTC" | 17 Oct 2026 |
-| S67 | Customise data retention in Slack | Slack Help Centre | https://slack.com/help/articles/203457187-Customize-data-retention-in-Slack | No date shown | 17 Oct 2026 |
+| S1 | Slack pricing for subscriptions (Australia) | Slack | https://slack.com/intl/en-au/pricing | No date shown (©2026). Read from Perth in a browser, prices shown in $US | 18 Nov 2026 |
+| S2 | Supported billing currencies | Slack Help Centre | https://slack.com/help/articles/115004062808-Supported-billing-currencies | No date shown | 18 Nov 2026 |
+| S3 | Updates to feature availability and pricing for Slack plans | Slack Help Centre | https://slack.com/help/articles/39264531104275-Updates-to-feature-availability-and-pricing-for-Slack-plans | No date shown | 18 Nov 2026 |
+| S4 | Guide to AI features in Slack | Slack Help Centre | https://slack.com/help/articles/25076892548883-Guide-to-AI-features-in-Slack | No date shown | 18 Nov 2026 |
+| S5 | Manage access to AI features in Slack | Slack Help Centre | https://slack.com/help/articles/28244420881555-Manage-access-to-AI-features-in-Slack | No date shown | 18 Nov 2026 |
+| S6 | How to work with Slackbot | Slack Help Centre | https://slack.com/help/articles/202026038-How-to-work-with-Slackbot | No date shown | 18 Nov 2026 |
+| S7 | Slackbot limits and credit usage | Slack Help Centre | https://slack.com/help/articles/53579676130195-Slackbot-limits-and-credit-usage | No date shown | 18 Nov 2026 |
+| S8 | Build your Slackbot memory | Slack Help Centre | https://slack.com/help/articles/52916888307091-Build-your-Slackbot-memory | No date shown | 18 Nov 2026 |
+| S9 | Introducing Slackbot, your context-aware AI agent for work | Slack blog | https://slack.com/blog/news/slackbot-context-aware-ai-agent-for-work | 13 Mar 2026 (the text describes a January and February rollout) | 18 Nov 2026 |
+| S10 | Salesforce Announces the General Availability of Slackbot | Salesforce (press release) | https://www.salesforce.com/news/press-releases/2026/01/13/slackbot-announcement/ | 13 Jan 2026 | 18 Nov 2026 |
+| S11 | Slack's newest innovations turn AI into a true teammate (Dreamforce 2026) | Slack blog | https://slack.com/blog/news/ai-powered-interface-for-work | 15 Sep 2026 | 18 Nov 2026 |
+| S12 | Slack updates and changes | Slack Help Centre | https://slack.com/help/articles/115004846068-Slack-updates-and-changes | Monthly entries, latest November 2026 | 18 Nov 2026 |
+| S13 | Use AI to take huddle notes in Slack | Slack Help Centre | https://slack.com/help/articles/31377193680019-Use-AI-to-take-huddle-notes-in-Slack | No date shown | 18 Nov 2026 |
+| S14 | Search with AI in Slack | Slack Help Centre | https://slack.com/help/articles/31739993134867-Search-with-AI-in-Slack | No date shown | 18 Nov 2026 |
+| S15 | Set up and manage Slack enterprise search | Slack Help Centre | https://slack.com/help/articles/39044407124755-Set-up-and-manage-Slack-enterprise-search | No date shown | 18 Nov 2026 |
+| S16 | Restrict AI access to certain channels, canvases and lists | Slack Help Centre | https://slack.com/help/articles/47421816860947-Restrict-AI-access-to-certain-channels-canvases-and-lists | No date shown | 18 Nov 2026 |
+| S17 | Guide to the Slack AI Guardrails | Slack Help Centre | https://slack.com/help/articles/53359847722131-Guide-to-the-Slack-AI-Guardrails | No date shown | 18 Nov 2026 |
+| S18 | Security for AI features in Slack | Slack Help Centre | https://slack.com/help/articles/28310650165907-Security-for-AI-features-in-Slack | No date shown | 18 Nov 2026 |
+| S19 | AI Principles | Slack | https://slack.com/trust/ai-principles | No date shown | 18 Nov 2026 |
+| S20 | Privacy Principles: Search, Learning and Artificial Intelligence | Slack | https://slack.com/trust/data-management/privacy-principles | No date shown | 18 Nov 2026 |
+| S21 | How we built Slack AI to be secure and private | Slack blog | https://slack.com/blog/news/how-we-built-slack-ai-to-be-secure-and-private | 16 Jul 2025 | 18 Nov 2026 |
+| S22 | Data residency for Slack | Slack Help Centre | https://slack.com/help/articles/360035633934-Data-residency-for-Slack | No date shown | 18 Nov 2026 |
+| S23 | Salesforce Infrastructure and Sub-processors (Slack section) | Salesforce | https://slack.com/slack-subprocessors | Published 17 Nov 2026 (the link opens a Salesforce PDF) | 18 Nov 2026 |
+| S24 | Work with AI agents in Slack | Slack Help Centre | https://slack.com/help/articles/33076000248851-Work-with-AI-agents-in-Slack | No date shown | 18 Nov 2026 |
+| S25 | Set up and manage Agentforce in Slack | Slack Help Centre | https://slack.com/help/articles/36218109305875-Set-up-and-manage-Agentforce-in-Slack | No date shown | 18 Nov 2026 |
+| S26 | Use Agentforce in Slack | Slack Help Centre | https://slack.com/help/articles/36218786859667-Use-Agentforce-in-Slack | No date shown | 18 Nov 2026 |
+| S27 | Agentforce for Slack (Australia) | Salesforce | https://www.salesforce.com/au/slack/agentforce-in-slack/ | No date shown | 18 Nov 2026 |
+| S28 | Connect Slackbot to other apps with MCP | Slack Help Centre | https://slack.com/help/articles/52414744085139-Connect-Slackbot-to-other-apps-with-MCP | No date shown | 18 Nov 2026 |
+| S29 | Guide to MCP in Slack | Slack Help Centre | https://slack.com/help/articles/48855576908307-Guide-to-MCP-in-Slack | No date shown | 18 Nov 2026 |
+| S30 | Slack MCP server overview | Slack Developer Docs | https://docs.slack.dev/ai/slack-mcp-server/ | No date shown | 18 Nov 2026 |
+| S31 | Connect to Claude (Slack MCP server) | Slack Developer Docs | https://docs.slack.dev/ai/slack-mcp-server/connect-to-claude/ | No date shown | 18 Nov 2026 |
+| S32 | Manage access to the Slack MCP server through your identity provider | Slack Help Centre | https://slack.com/help/articles/54548358406419-Manage-access-to-the-Slack-MCP-server-through-your-identity-provider | No date shown | 18 Nov 2026 |
+| S33 | Slack Securely Powers Your Third-Party Agents With Your Business Context (MCP server and Real-Time Search API now generally available) | Slack blog | https://slack.com/blog/news/mcp-real-time-search-api-now-available | 17 Feb 2026 | 18 Nov 2026 |
+| S34 | Slack connectors for Workflow Builder | Slack Help Centre | https://slack.com/help/articles/20155812595219-Slack-connectors-for-Workflow-Builder | No date shown | 18 Nov 2026 |
+| S35 | Slack connector (Claude directory listing) | Anthropic | https://claude.com/connectors/slack | "Added November 2025" | 18 Nov 2026 |
+| S36 | Slack integration (earlier Claude in Slack app and Slack connector) | Anthropic (Claude docs) | https://claude.com/docs/connectors/slack | No date shown | 18 Nov 2026 |
+| S37 | Claude and Slack | Anthropic | https://claude.com/blog/claude-and-slack | 1 Oct 2025; update note dated 26 Jan 2026; editor's note on Max and Ultra plan names | 18 Nov 2026 |
+| S38 | What is Claude Tag? | Anthropic Help Center | https://support.claude.com/en/articles/15594475-what-is-claude-tag | 25 Sep 2026 | 18 Nov 2026 |
+| S39 | Work with Claude Tag | Anthropic (Claude docs) | https://claude.com/docs/claude-tag/overview | No date shown; marked Public Beta | 18 Nov 2026 |
+| S40 | Set up Claude Tag | Anthropic (Claude docs) | https://claude.com/docs/claude-tag/admins/setup-overview | No date shown | 18 Nov 2026 |
+| S41 | Security and data handling (Claude Tag) | Anthropic (Claude docs) | https://claude.com/docs/claude-tag/concepts/security-and-data | No date shown | 18 Nov 2026 |
+| S42 | Data lifecycle and deletion (Claude Tag) | Anthropic (Claude docs) | https://claude.com/docs/claude-tag/concepts/data-lifecycle | No date shown | 18 Nov 2026 |
+| S43 | Claude in Slack | Anthropic | https://claude.com/claude-for-slack | No date shown (©2026) | 18 Nov 2026 |
+| S44 | Use connectors to extend Claude's capabilities | Anthropic Help Center | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated today" (18 Nov 2026) | 18 Nov 2026 |
+| S45 | Get started with connectors | Anthropic (Claude docs) | https://claude.com/docs/connectors/getting-started | No date shown | 18 Nov 2026 |
+| S46 | Using Slack in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/12525822-using-slack-in-chatgpt | "Updated: 10 days ago" (timestamp 8 Nov 2026, UTC) | 18 Nov 2026 |
+| S47 | ChatGPT with Slack and Microsoft Teams | OpenAI Help Center | https://help.openai.com/en/articles/20001536-chatgpt-with-slack-and-microsoft-teams | "Updated: 28 days ago" (timestamp 21 Oct 2026, UTC) | 18 Nov 2026 |
+| S48 | Using @ChatGPT in Slack and Microsoft Teams | OpenAI Help Center | https://help.openai.com/en/articles/20001537-using-chatgpt-in-slack-and-microsoft-teams | "Updated: 26 days ago" (timestamp 23 Oct 2026, UTC) | 18 Nov 2026 |
+| S49 | Setting up and managing @ChatGPT in Slack and Microsoft Teams | OpenAI Help Center | https://help.openai.com/en/articles/20001538-setting-up-and-managing-chatgpt-in-slack-and-microsoft-teams | "Updated: 4 days ago" (timestamp 15 Nov 2026, UTC) | 18 Nov 2026 |
+| S50 | Creating and managing team tasks in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001540-creating-and-managing-team-tasks-in-chatgpt | "Updated: 23 days ago" (timestamp 26 Oct 2026, UTC) | 18 Nov 2026 |
+| S51 | Slack plugin for ChatGPT | OpenAI | https://openai.com/business/plugins/slack/ | No date shown | 18 Nov 2026 |
+| S52 | ChatGPT plugin listing: Slack | OpenAI | https://chatgpt.com/plugins/plugin_asdk_app_69a1d78e929881919bba0dbda1f6436d | No date shown (version 0.1.8) | 18 Nov 2026 |
+| S53 | Managing app permissions in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001495-managing-app-permissions-in-chatgpt | "Updated: yesterday" (timestamp 17 Nov 2026, UTC) | 18 Nov 2026 |
+| S54 | Connecting and managing app accounts in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt | "Updated: yesterday" (timestamp 17 Nov 2026, UTC) | 18 Nov 2026 |
+| S55 | Microsoft-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft | Updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S56 | Partner-built connectors gallery | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-partners | Updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S57 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | Updated 16 Nov 2026 (page metadata) | 18 Nov 2026 |
+| S58 | Slack (connector reference for Copilot Studio, Power Automate, Logic Apps and Power Apps) | Microsoft Learn | https://learn.microsoft.com/en-us/connectors/slack/ | Updated 2 Oct 2026 (page metadata) | 18 Nov 2026 |
+| S59 | Publish an agent to Azure Bot Service channels (Copilot Studio) | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-connect-bot-to-azure-bot-service-channels | Updated 3 Aug 2026 (page metadata) | 18 Nov 2026 |
+| S60 | Microsoft 365 Copilot connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/overview | Updated 12 Oct 2026 (page metadata) | 18 Nov 2026 |
+| S61 | Use & manage Connected Apps in Gemini (computer) | Google Gemini Apps Help | https://support.google.com/gemini/answer/13695044?hl=en&co=GENIE.Platform%3DDesktop | No date shown | 18 Nov 2026 |
+| S62 | Use apps connected to Gemini with a work or school Google Account | Google Gemini Apps Help | https://support.google.com/gemini/answer/14959807?hl=en | No date shown | 18 Nov 2026 |
+| S63 | Slack connector overview (Gemini Enterprise) | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/connectors/slack | "Last updated 2026-11-10 UTC" | 18 Nov 2026 |
+| S64 | Configure the Gemini Enterprise app for Slack | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/configure-slack-app | "Last updated 2026-11-10 UTC" | 18 Nov 2026 |
+| S65 | Gemini Enterprise release notes | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/release-notes | "Last updated 2026-11-13 UTC" (latest entry 16 Nov 2026) | 18 Nov 2026 |
+| S66 | Connect a third-party data source (Gemini Enterprise) | Google Cloud | https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source | "Last updated 2026-11-17 UTC" | 18 Nov 2026 |
+| S67 | Customise data retention in Slack | Slack Help Centre | https://slack.com/help/articles/203457187-Customize-data-retention-in-Slack | No date shown | 18 Nov 2026 |
+| S68 | Automate recurring tasks with Slackbot | Slack Help Centre | https://slack.com/help/articles/56644676445715-Automate-recurring-tasks-with-Slackbot | No date shown | 18 Nov 2026 |

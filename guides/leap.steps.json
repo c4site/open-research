@@ -112,7 +112,7 @@
       }
     ],
     "source": "S45",
-    "doc_updated": "2026-02-18"
+    "doc_updated": "2026-10-22"
   },
   {
     "id": "claude-to-lawy",
@@ -124,7 +124,7 @@
       {
         "where": "Claude, connector settings",
         "do": "LawY's article says go to Settings → Connectors (or browse the connector directory) and find LawY. Anthropic's current page calls this Customize > Connectors.",
-        "see": "The LawY connector. We didn't find LawY on Anthropic's public directory page on 17 October 2026."
+        "see": "The LawY connector, made by LawY. Anthropic's public directory lists it with an \"Anthropic verified\" mark, added October 2026."
       },
       {
         "where": "Claude, LawY connector",
@@ -149,7 +149,7 @@
         "see": "LawY says this immediately suspends the agent's access. You can also disconnect in Claude's connector settings, and a firm administrator can block the connector for the whole firm."
       }
     ],
-    "source": "S26, S55",
+    "source": "S26, S55, S68",
     "doc_updated": "2026-10-15"
   },
   {
@@ -162,7 +162,7 @@
       {
         "where": "ChatGPT, settings",
         "do": "LawY's article says open Settings → Apps & Connectors and find LawY. OpenAI's current help page calls this Settings > Plugins.",
-        "see": "The LawY entry. We didn't find LawY on OpenAI's public plugin page on 17 October 2026."
+        "see": "The LawY entry. We didn't find LawY on OpenAI's public plugin page on 18 November 2026."
       },
       {
         "where": "ChatGPT, LawY",

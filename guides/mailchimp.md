@@ -1,19 +1,19 @@
 # Mailchimp: the AI inside it, and the AI that connects to it
 
-Researched 17 October 2026 from vendor documentation. Every line is tagged with its source.
+Researched 18 November 2026 from vendor documentation. Every line is tagged with its source.
 
 ## The short version
 
 - Mailchimp is owned by Intuit, and its AI now goes by the name Intuit Intelligence. Mailchimp calls it a beta for certain users on Standard, Premium and legacy plans, at no extra cost "at this time". [S2] [S22]
 - The main built-in pieces are Analytics AI, a chat box that answers questions about your results, and Write with AI in the email builder. Mailchimp also predicts things like the best send time and which customers might stop buying. [S5] [S6] [S11] [S12]
-- Most of it needs the Standard plan or higher. Mailchimp's pricing table shows its generative AI features as not included on Free or Essentials. [S1] [S6]
+- Most of it needs the Standard plan or higher. Mailchimp's pricing table shows its generative AI features as not included on Free or Essentials. [S1] [S51] [S6]
 - Write with AI works for accounts with a mailing address in Australia, Canada, the UK or the US. AI-written automation flows are for US addresses only. [S6] [S9]
 - Claude and ChatGPT both have official "Intuit Mailchimp" connections. They plan campaigns from your past results and can save drafts into your Mailchimp account. You still send from Mailchimp. [S27] [S26] [S32] [S24]
 - Mailchimp said on 28 May 2026 that its app in Claude and ChatGPT is available in the US, Canada, the UK and Australia. A later Mailchimp page still calls the ChatGPT app US only. [S4] [S25]
-- Google lists Intuit Mailchimp among the tools Gemini can reach from Gmail, Docs and other Workspace apps. Google's help says these integrations only read for now. [S41] [S39]
-- We found no official Mailchimp connection for Microsoft Copilot. Microsoft publishes its own Mailchimp connector for Power Automate and Copilot Studio. [S35] [S36] [S37]
+- Google lists Intuit Mailchimp among the tools Gemini can reach from Gmail, Docs and other Workspace apps. Google's help says these connectors only read for now. [S41] [S39]
+- We found no official Mailchimp connection for Microsoft Copilot. Microsoft publishes its own Mailchimp connector for Power Automate and Copilot Studio. [S35] [S36] [S52] [S37]
 - Mailchimp's terms let it use your AI inputs and outputs, including customer data, for machine learning. You can opt out of its data analytics projects in your account settings. [S17] [S16]
-- Mailchimp charges in US dollars. Its Australian pricing page shows AUD figures as estimates only, so we haven't quoted prices. [S1]
+- Mailchimp charges in US dollars. Its pricing page, opened from Australia, shows AUD figures as estimates only, so we haven't quoted prices. [S1]
 
 ## The tool, and the plans that matter
 
@@ -21,11 +21,11 @@ Mailchimp is Intuit's email and SMS marketing platform. Intuit also makes QuickB
 
 Mailchimp says it has more customers in Australia than any other email marketing and automation brand, based on public data as at February 2024. [S1]
 
-**Prices.** Mailchimp's Australian pricing page can show prices in Australian dollars. It says those figures are estimates, and what you're charged depends on the US dollar exchange rate on your billing day. Displayed prices also exclude taxes and fees. For exact base prices it points to the US dollar figures, so we haven't quoted any. [S1]
+**Prices.** Mailchimp's pricing page shows prices in Australian dollars when you open it from Australia. Its old Australian address now redirects there. It says those figures are estimates, and what you're charged depends on the US dollar exchange rate on your billing day. Displayed prices also exclude taxes and fees. For exact base prices it points to the US dollar figures, so we haven't quoted any. [S1]
 
 | | Free | Essentials | Standard | Premium |
 |---|---|---|---|---|
-| Contacts | 250 maximum | From 500, up to 50,000 | From 500, up to 100,000 | From 10,000, up to 1.5 million |
+| Contacts | Up to 250 | From 500, up to 50,000 | From 500, up to 100,000 | From 10,000. Mailchimp says "unlimited contacts" and offers custom plans |
 | "Generative AI Features" in Mailchimp's comparison table | Not included | Not included | "No additional cost add-on" | "No additional cost add-on" |
 | Write with AI (beta) | No | No | Yes | Yes |
 | Analytics AI | No | Mailchimp's pages disagree | Yes | Yes |
@@ -33,9 +33,9 @@ Mailchimp says it has more customers in Australia than any other email marketing
 | Send time optimisation and predictive analytics | No | No | Yes | Yes |
 | Claude, ChatGPT and other AI connectors | Mailchimp's pages disagree | Mailchimp's pages disagree | Yes | Yes |
 
-Sources for the table: [S1] [S2] [S5] [S6] [S9] [S11] [S12] [S25]
+Sources for the table: [S1] [S51] [S2] [S5] [S6] [S9] [S11] [S12] [S25]
 
-- Standard comes with a 14-day free trial. [S1]
+- Standard and Essentials come with a 14-day free trial for new customers. Mailchimp also mentions a one-month Premium trial for qualified new customers, through its sales team. [S1]
 - Intuit Intelligence (beta) is for "certain users" on Premium, Standard and legacy plans, at no additional cost "at this time". [S2]
 - The pricing page uses the older name, Intuit Assist, and says it's available "in select countries in English only". [S1]
 - SMS is an add-on for Essentials and above in select countries. Australia is on Mailchimp's list, and you have to apply and be approved first. [S50]
@@ -60,7 +60,7 @@ Mailchimp's AI page is headed "Mailchimp with Intuit Intelligence". It names Ana
 **Which plans have it**
 
 - The help page says paid accounts, and you need Admin or Owner permissions. [S5]
-- Mailchimp's AI page and its What's New page say Standard and Premium. [S2] [S3]
+- Mailchimp's AI page says Standard and Premium. Its What's New page says paid plans, for users with the Admin or Owner role who have campaign activity. [S2] [S3]
 - Revenue questions need a connected online store, and Mailchimp says it works best after you've sent your first campaign. [S5]
 
 **What happens to your data**
@@ -245,7 +245,6 @@ Mailchimp says it connects to ChatGPT, Claude, Perplexity, Codex and Google Work
 **Official?**
 
 - Yes. Anthropic's directory lists the "Intuit Mailchimp" connector, made by Intuit Mailchimp and marked "Anthropic verified". It was added in March 2026. [S27]
-- Mailchimp announced it on its What's New page on 18 May 2026. [S3]
 - Intuit Mailchimp is one of 37 partner connectors in Anthropic's Claude for Small Business, announced 15 September 2026. Anthropic lists it for the Monday brief, Speed to Lead and marketing workflows. [S29]
 
 **What it can see and do**
@@ -263,7 +262,7 @@ Mailchimp says it connects to ChatGPT, Claude, Perplexity, Codex and Google Work
 - Mailchimp's AI page says Standard or Premium. Its Claude help article doesn't name a plan. [S2] [S26]
 - On Claude Team and Enterprise, an Owner adds the connector for the organisation first, and each person then signs in. [S28]
 
-**Steps to connect** (Mailchimp's help article, no date shown; Anthropic's help article, updated 17 October 2026)
+**Steps to connect** (Mailchimp's help article, no date shown; Anthropic's help article, shown as updated 18 November 2026)
 
 1. In Claude, go to **Customize > Connectors** and click **+** next to **Connectors**. Mailchimp's article puts it as "go to Connectors". [S28] [S26]
 2. Find Mailchimp, listed as Intuit Mailchimp, and click **Connect**. [S26] [S27]
@@ -288,7 +287,7 @@ Mailchimp says it connects to ChatGPT, Claude, Perplexity, Codex and Google Work
 
 **Official?**
 
-- Yes. OpenAI's directory lists the "Intuit Mailchimp" plugin, with Intuit Inc as the developer. We could read OpenAI's pages only through search-engine copies. [S32] [S33]
+- Yes. OpenAI's directory lists the "Intuit Mailchimp" plugin, with Intuit Inc as the developer. [S32] [S33]
 - Mailchimp announced a ChatGPT integration on 10 February 2026. [S23]
 
 **What it can see and do**
@@ -322,6 +321,7 @@ Mailchimp says it connects to ChatGPT, Claude, Perplexity, Codex and Google Work
 - OpenAI's listing says ChatGPT may share relevant chats and memories with the plugin, under Intuit Mailchimp's terms and privacy policy. [S33]
 - OpenAI says that when ChatGPT sends data through a plugin's server, that service's terms and privacy policy apply. [S34]
 - Mailchimp's ChatGPT page says the app is "currently available in the US only". Mailchimp's earlier 28 May release listed Australia too. [S25] [S4]
+- On 18 November 2026, ChatGPT's Intuit Mailchimp listing opened for us from Australia, signed out. That doesn't show whether an Australian account can connect. [S33]
 
 ### Microsoft Copilot and Mailchimp
 
@@ -329,7 +329,8 @@ Mailchimp says it connects to ChatGPT, Claude, Perplexity, Codex and Google Work
 
 - No official Mailchimp connection found. Mailchimp's AI page lists ChatGPT, Claude, Perplexity, Codex and Google Workspace, and doesn't mention Copilot. [S2]
 - Mailchimp isn't one of Microsoft's federated Copilot connectors. [S35]
-- Microsoft's list of Copilot Cowork partner plugins, updated 15 October 2026, doesn't include Mailchimp. [S36]
+- Microsoft's list of Copilot Cowork partner plugins, updated 13 November 2026, doesn't include Mailchimp. [S36]
+- Searching Microsoft's Copilot plugin catalogue for Mailchimp on 18 November 2026 found no Mailchimp plugin. [S52]
 
 **What Microsoft offers instead**
 
@@ -348,30 +349,29 @@ Mailchimp says it connects to ChatGPT, Claude, Perplexity, Codex and Google Work
 **Official?**
 
 - Yes, through Gemini in Google Workspace. Google's 15 September 2026 update names Intuit Mailchimp among the tools Gemini can reach through MCP integrations. [S41]
-- The Google Workspace Marketplace lists an "Intuit Mailchimp Connector". It's free, works with Gemini and Workspace Studio, and was updated 16 October 2026. The listing doesn't clearly name a publisher. [S40]
-- Mailchimp's What's New page says Mailchimp connects to Gemini and can send campaign performance into Google Slides. [S3]
+- The Google Workspace Marketplace lists an "Intuit Mailchimp Connector". It's free, works with Gemini and Workspace Studio, and was updated 16 October 2026. The listing names Google as the developer. [S40]
 - Mailchimp isn't in Google's table of connected apps for the personal Gemini app. [S44]
 
 **What it can see and do**
 
 - Google's help says Gemini can "Retrieve details about your email campaigns and audience lists" and "Pull up recent subscriber reports to review performance". [S39]
-- Google's help says "Integrations currently only support read actions." [S39]
-- Two other Google pages suggest more. The Marketplace listing talks about "taking Intuit Mailchimp actions directly in Gemini", and Google's admin page says integrations let people "access and take action on their third-party content". [S40] [S42]
+- Google's help says "Connectors currently only support read actions." [S39]
+- Two other Google pages suggest more. The Marketplace listing talks about "taking Intuit Mailchimp actions directly in Gemini", and says it lets you "manage subscribers and launch campaigns without ever leaving Gemini". Google's admin page says integrations let people "access and take action on their third-party content". [S40] [S42]
 - Workspace Studio, Google's automation tool, can include Mailchimp steps in its beta integrations. [S43]
 
 **What you need**
 
 - Google lists Google AI Pro and Ultra for personal accounts, and editions including Business Standard, Business Plus, Enterprise Standard and Enterprise Plus for work accounts. [S39]
-- Work accounts need an admin who allows integrations. [S39]
+- Work accounts need an admin who allows connectors. [S39]
 - Google says the feature is on by default for people with Gemini for Google Workspace access. [S41]
 - Mailchimp says its Google Workspace connectors need Business Standard, Business Plus, Enterprise Standard or Enterprise Plus, and a Standard or Premium Mailchimp plan. [S2]
 
 **Steps to connect** (Google's help, no date shown)
 
-1. On a computer, go to the Google Workspace Marketplace integrations page. [S39]
-2. Select the Intuit Mailchimp integration and click **Connect**. [S39] [S40]
+1. On a computer, go to the Google Workspace Marketplace connectors page. [S39]
+2. Select the Intuit Mailchimp connector and click **Connect**. [S39] [S40]
 3. Follow the on-screen steps to grant access. [S39]
-4. Open Gmail, Docs, Sheets, Slides, Drive or Chat, open **Ask Gemini**, type **@** in the text box and choose the integration. Then ask your question. [S39]
+4. Open Gmail, Docs, Sheets, Slides, Drive or Chat, open **Ask Gemini**, type **@** in the text box and choose the connector. Then ask your question. [S39]
 
 **To disconnect**
 
@@ -414,7 +414,7 @@ These are for developers and people building their own AI tools. [S45] [S47]
 - **A blog post into an email.** Paste a public blog link into AI-generated columns. [S8]
 - **Better send times.** Turn on Send Time Optimization for a regular email. [S11]
 - **Win-back emails.** Use predictive analytics to find customers at risk of not buying again. [S12] [S13]
-- **Results into a report.** Ask Gemini in Docs or Slides about recent campaigns and subscriber reports. [S39] [S3]
+- **Results into a report.** Ask Gemini in Docs or Slides about recent campaigns and subscriber reports. [S39]
 - **On-brand graphics.** Set up the brand kit once so AI-made layouts match your look. [S10]
 
 ## What to watch for
@@ -468,7 +468,6 @@ These are for developers and people building their own AI tools. [S45] [S47]
 - **1 July 2025:** Intuit announced a Marketing Agent for QuickBooks Online, "Coming later this year", to run campaigns via Mailchimp. It named only the US for the rollout. [S22]
 - **10 February 2026:** Mailchimp announced a ChatGPT integration and predictive analytics, expected to start rolling out globally that day for eligible plans. [S23]
 - **March 2026:** The Intuit Mailchimp connector was added to Claude's directory. [S27]
-- **18 May 2026:** Mailchimp's What's New page announced Analytics AI and the Claude connector. [S3]
 - **28 May 2026:** Analytics AI launched for paid plans, and the Claude and ChatGPT app was listed for the US, Canada, the UK and Australia. [S4]
 - At the same time Mailchimp said AI Segment Builder is in beta "with general availability coming soon", and that native marketing agents are coming. [S4]
 - **15 September 2026:** Google added Intuit Mailchimp to Gemini in Workspace, and Anthropic launched Claude for Small Business with Intuit Mailchimp. [S41] [S29]
@@ -478,13 +477,12 @@ These are for developers and people building their own AI tools. [S45] [S47]
 ## What we couldn't establish
 
 - **Which plan the AI connectors need.** Mailchimp's AI page says Standard and Premium, its ChatGPT page says no specific plan, and its Claude help article doesn't say. [S2] [S25] [S26]
-- **Whether the ChatGPT app works in Australia.** Mailchimp's 28 May release says yes, but its 3 June ChatGPT page says US only. [S4] [S25]
+- **Whether the ChatGPT app works in Australia.** Mailchimp's 28 May release says yes, but its 3 June ChatGPT page says US only. OpenAI's listing opened for us from Australia while signed out, which doesn't settle it. [S4] [S25] [S33]
 - **Whether Gemini can change anything in Mailchimp.** Google's help says read-only, but its listing and admin page talk about taking action. [S39] [S40] [S42]
-- **Who publishes Google's Intuit Mailchimp Connector.** The listing doesn't say clearly. [S40]
 - **Whether opting out of data analytics stops AI training use.** Mailchimp doesn't say. [S16] [S17]
 - **Whether Analytics AI is on Essentials.** The help page says paid accounts, while other Mailchimp pages say Standard and Premium. [S5] [S2]
 - **Mailchimp's own steps for ChatGPT.** We found a help article for Claude, but only a marketing page for ChatGPT. [S26] [S25]
-- **OpenAI's pages.** OpenAI's Mailchimp listing and plugin page blocked automated reading, so we relied on search-engine copies. [S32] [S33]
+- **Mailchimp's What's New entries from 18 May 2026.** The entries we cited in October are no longer on the page. One announced Analytics AI and the Claude connector, and one said Mailchimp connects to Gemini and can send campaign performance into Google Slides. [S3]
 - **Prices in AUD.** Mailchimp shows AUD figures only as estimates and bills in US dollars. [S1]
 - **The Marketing Agent.** We couldn't confirm it reached Mailchimp customers or Australia. [S22]
 - **Dates on Mailchimp's AI terms.** The Generative AI Beta Terms show no date. [S7]
@@ -493,57 +491,59 @@ These are for developers and people building their own AI tools. [S45] [S47]
 
 ## Sources
 
-All sources were read on 17 October 2026.
+All sources were read on 18 November 2026.
 
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
-| S1 | Mailchimp Pricing Plans (Australian site) | Mailchimp | https://mailchimp.com/en-au/pricing/marketing/ | No date shown (© 2001–2026) | 17 Oct 2026 |
-| S2 | AI marketing tools — Mailchimp with Intuit Intelligence | Mailchimp | https://mailchimp.com/solutions/ai-tools/ | No date shown (© 2001–2026) | 17 Oct 2026 |
-| S3 | What's New in Mailchimp | Mailchimp | https://mailchimp.com/whats-new/ | Entries dated 18 May 2026 to 30 Sep 2026 | 17 Oct 2026 |
-| S4 | Intuit Mailchimp Launches Analytics AI and Expanded Data Integrations to Give Brands Conversational, Actionable Intelligence | Mailchimp (newsroom) | https://mailchimp.com/newsroom/introducinganalyticsai/ | 28 May 2026 | 17 Oct 2026 |
-| S5 | Use the Analytics AI | Mailchimp Help | https://mailchimp.com/help/use-analytics-ai/ | No date shown | 17 Oct 2026 |
-| S6 | Use Write with AI to Create Content | Mailchimp Help | https://mailchimp.com/help/use-inline-content-generation/ | No date shown | 17 Oct 2026 |
-| S7 | Mailchimp Generative AI Beta Terms | Mailchimp | https://mailchimp.com/additionalterms/textgenerationbeta/ | No date shown | 17 Oct 2026 |
-| S8 | Create Email Content with AI | Mailchimp Help | https://mailchimp.com/help/create-email-content-with-ai/ | No date shown | 17 Oct 2026 |
-| S9 | Use Intuit AI with Automation Flow Templates | Mailchimp Help | https://mailchimp.com/help/create-pre-built-journey-emails-intuit-ai/ | No date shown | 17 Oct 2026 |
-| S10 | Use Brand Kit | Mailchimp Help | https://mailchimp.com/help/use-brand-kit-creative-assistant/ | No date shown | 17 Oct 2026 |
-| S11 | Use Send Time Optimization | Mailchimp Help | https://mailchimp.com/help/use-send-time-optimization/ | No date shown | 17 Oct 2026 |
-| S12 | About Predictive Analytics and Demographics | Mailchimp Help | https://mailchimp.com/help/about-predicted-demographics/ | No date shown | 17 Oct 2026 |
-| S13 | All the Segmenting Options | Mailchimp Help | https://mailchimp.com/help/all-the-segmenting-options/ | No date shown | 17 Oct 2026 |
-| S14 | Predictive E-Commerce Insights | Mailchimp | https://mailchimp.com/features/customer-lifetime-value-and-purchase-likelihood/ | No date shown | 17 Oct 2026 |
-| S15 | About Campaign Benchmarking | Mailchimp Help | https://mailchimp.com/help/about-campaign-benchmarking/ | No date shown | 17 Oct 2026 |
-| S16 | Set Account Security Options | Mailchimp Help | https://mailchimp.com/help/set-account-security-options/ | No date shown | 17 Oct 2026 |
-| S17 | Mailchimp's Standard Terms of Use | Mailchimp | https://mailchimp.com/legal/terms/ | Updated and effective 10 Oct 2025 | 17 Oct 2026 |
-| S18 | Intuit Global Privacy Statement | Intuit | https://www.intuit.com/privacy/statement/ | Last updated 9 Mar 2026 | 17 Oct 2026 |
-| S19 | Mailchimp Privacy FAQs | Mailchimp Help | https://mailchimp.com/help/mailchimp-intuit-privacy-faq/ | No date shown | 17 Oct 2026 |
-| S20 | Introducing Intuit Assist for Mailchimp | Mailchimp (newsroom) | https://mailchimp.com/newsroom/introducing-intuit-assist/ | 6 Sep 2023 | 17 Oct 2026 |
-| S21 | Intuit Mailchimp Previews AI-Powered Revenue Intelligence System, Launches SMS Marketing Tools in the UK | Mailchimp (newsroom) | https://mailchimp.com/newsroom/ai-powered-revenue-intelligence-system/ | 13 Jun 2024 | 17 Oct 2026 |
-| S22 | Intuit Introduces Ground-Breaking Virtual Team of AI Agents to Fuel Growth for Businesses | Intuit (investor relations) | https://investors.intuit.com/news-events/press-releases/detail/1258/intuit-introduces-ground-breaking-virtual-team-of-ai-agents-to-fuel-growth-for-businesses | 1 Jul 2025 | 17 Oct 2026 |
-| S23 | Intuit Mailchimp Unlocks a New Era of Profitable Ecommerce Marketing with Advanced, Data-Driven Capabilities | Mailchimp | https://mailchimp.com/february-2026-release-data-driven-ecommerce-marketing/ | 10 Feb 2026 | 17 Oct 2026 |
-| S24 | Smarter campaigns with the Mailchimp x Claude Connector | Mailchimp | https://mailchimp.com/resources/connect-mailchimp-to-claude/ | 3 Jun 2026 | 17 Oct 2026 |
-| S25 | Better campaigns, faster: Mailchimp + ChatGPT integration | Mailchimp | https://mailchimp.com/resources/connect-mailchimp-to-chatgpt/ | 3 Jun 2026 | 17 Oct 2026 |
-| S26 | Use the Mailchimp Connector in Claude | Mailchimp Help | https://mailchimp.com/help/use-mailchimp-connector-claude | No date shown | 17 Oct 2026 |
-| S27 | Intuit Mailchimp connector | Anthropic (Claude directory) | https://claude.com/connectors/intuit-mailchimp | "Added March 2026" | 17 Oct 2026 |
-| S28 | Use connectors to extend Claude's capabilities | Anthropic Help Center | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated today" (17 Oct 2026) | 17 Oct 2026 |
-| S29 | Claude for Small Business launches new workflows, integrations, and training programs | Anthropic | https://claude.com/resources/articles/claude-for-small-business-launches-new-workflows-integrations-and-training-programs | 15 Sep 2026 | 17 Oct 2026 |
-| S30 | Is my data used for model training? (consumer products) | Anthropic Privacy Center | https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training | 16 Mar 2026 | 17 Oct 2026 |
-| S31 | Is my data used for model training? (commercial products) | Anthropic Privacy Center | https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training | 18 Aug 2026 | 17 Oct 2026 |
-| S32 | Intuit Mailchimp plugin for ChatGPT | OpenAI | https://openai.com/business/plugins/mailchimp/ | Page blocked automated reading; text seen only as a search-engine copy | 17 Oct 2026 |
-| S33 | ChatGPT plugin listing: Intuit Mailchimp | OpenAI | https://chatgpt.com/plugins/plugin_asdk_app_693b20fccbac8191bdc178bb493de3e5 | Page blocked automated reading; text seen only as a search-engine copy (version 7.0.0) | 17 Oct 2026 |
-| S34 | Plugins | OpenAI (ChatGPT docs) | https://learn.chatgpt.com/docs/plugins | No date shown | 17 Oct 2026 |
-| S35 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | ms.date 30 Sep 2026 (page metadata updated 16 Oct 2026) | 17 Oct 2026 |
-| S36 | Available plugins for Copilot Cowork | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-available-plugins | ms.date 15 Oct 2026 | 17 Oct 2026 |
-| S37 | MailChimp (connector reference) | Microsoft Learn (connectors) | https://learn.microsoft.com/en-us/connectors/mailchimp/ | ms.date 1 Mar 2024 (page metadata updated 25 Apr 2025) | 17 Oct 2026 |
-| S38 | Mandrill (connector reference) | Microsoft Learn (connectors) | https://learn.microsoft.com/en-us/connectors/mandrill/ | ms.date 1 Mar 2024 (page metadata updated 18 Sep 2025) | 17 Oct 2026 |
-| S39 | Use integrations with Gemini in Workspace | Google (Gmail Help) | https://support.google.com/mail/answer/16796422?hl=en | No date shown | 17 Oct 2026 |
-| S40 | Intuit Mailchimp Connector (Google Workspace Marketplace listing) | Google Workspace Marketplace | https://workspace.google.com/marketplace/app/intuit_mailchimp_integration/47883168141 | Listing updated 16 Oct 2026 | 17 Oct 2026 |
-| S41 | Connect to more tools with Gemini in Google Workspace | Google Workspace Updates | https://workspaceupdates.googleblog.com/2026/09/connect-to-more-tools-with-gemini-in-Google-Workspace.html | 15 Sep 2026 (correction dated 30 Sep 2026) | 17 Oct 2026 |
-| S42 | Support access to Workspace Integrations | Google Workspace Help | https://knowledge.workspace.google.com/admin/gemini/support-access-to-workspace-integrations?hl=en | Last updated 13 Oct 2026 | 17 Oct 2026 |
-| S43 | Take actions in third-party services with flows (Beta) | Google (Workspace Studio Help) | https://support.google.com/workspace-studio/answer/16658279?hl=en | No date shown | 17 Oct 2026 |
-| S44 | Check the availability and requirements of connected apps in Gemini Apps | Google Gemini Apps Help | https://support.google.com/gemini/table/17434654?hl=en | No date shown | 17 Oct 2026 |
-| S45 | MCP server | Mailchimp Developer | https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server | No date shown | 17 Oct 2026 |
-| S46 | Agent skills | Mailchimp Developer | https://mailchimp.com/developer/marketing/build/ai-tools/agent-skills | No date shown | 17 Oct 2026 |
-| S47 | How to Use Mailchimp's Transactional Messaging MCP | Mailchimp Developer | https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp | No date shown | 17 Oct 2026 |
-| S48 | Connect Mailchimp to more apps using Zapier | Mailchimp (integrations directory) | https://mailchimp.com/integrations/zapier/ | No date shown | 17 Oct 2026 |
-| S49 | Make, formerly Integromat | Mailchimp (integrations directory) | https://mailchimp.com/integrations/make_integromat/ | No date shown | 17 Oct 2026 |
-| S50 | About SMS Marketing with Mailchimp | Mailchimp Help | https://mailchimp.com/help/about-sms-marketing/ | No date shown | 17 Oct 2026 |
+| S1 | Mailchimp Pricing Plans (opened from Australia, prices shown in AUD) | Mailchimp | https://mailchimp.com/pricing/marketing/ | No date shown (© 2001–2026). The old Australian address, mailchimp.com/en-au/pricing/marketing/, now redirects here | 18 Nov 2026 |
+| S2 | AI marketing tools — Mailchimp with Intuit Intelligence | Mailchimp | https://mailchimp.com/solutions/ai-tools/ | No date shown (© 2001–2026) | 18 Nov 2026 |
+| S3 | What's New in Mailchimp | Mailchimp | https://mailchimp.com/whats-new/ | Entries dated 28 May 2026 to 30 Sep 2026 | 18 Nov 2026 |
+| S4 | Intuit Mailchimp Launches Analytics AI and Expanded Data Integrations to Give Brands Conversational, Actionable Intelligence | Mailchimp (newsroom) | https://mailchimp.com/newsroom/introducinganalyticsai/ | 28 May 2026 | 18 Nov 2026 |
+| S5 | Use the Analytics AI | Mailchimp Help | https://mailchimp.com/help/use-analytics-ai/ | No date shown | 18 Nov 2026 |
+| S6 | Use Write with AI to Create Content | Mailchimp Help | https://mailchimp.com/help/use-inline-content-generation/ | No date shown | 18 Nov 2026 |
+| S7 | Mailchimp Generative AI Beta Terms | Mailchimp | https://mailchimp.com/additionalterms/textgenerationbeta/ | No date shown | 18 Nov 2026 |
+| S8 | Create Email Content with AI | Mailchimp Help | https://mailchimp.com/help/create-email-content-with-ai/ | No date shown | 18 Nov 2026 |
+| S9 | Use Intuit AI with Automation Flow Templates | Mailchimp Help | https://mailchimp.com/help/create-pre-built-journey-emails-intuit-ai/ | No date shown | 18 Nov 2026 |
+| S10 | Use Brand Kit | Mailchimp Help | https://mailchimp.com/help/use-brand-kit-creative-assistant/ | No date shown | 18 Nov 2026 |
+| S11 | Use Send Time Optimization | Mailchimp Help | https://mailchimp.com/help/use-send-time-optimization/ | No date shown | 18 Nov 2026 |
+| S12 | About Predictive Analytics and Demographics | Mailchimp Help | https://mailchimp.com/help/about-predicted-demographics/ | No date shown | 18 Nov 2026 |
+| S13 | All the Segmenting Options | Mailchimp Help | https://mailchimp.com/help/all-the-segmenting-options/ | No date shown | 18 Nov 2026 |
+| S14 | Predictive E-Commerce Insights | Mailchimp | https://mailchimp.com/features/customer-lifetime-value-and-purchase-likelihood/ | No date shown | 18 Nov 2026 |
+| S15 | About Campaign Benchmarking | Mailchimp Help | https://mailchimp.com/help/about-campaign-benchmarking/ | No date shown | 18 Nov 2026 |
+| S16 | Set Account Security Options | Mailchimp Help | https://mailchimp.com/help/set-account-security-options/ | No date shown | 18 Nov 2026 |
+| S17 | Mailchimp's Standard Terms of Use | Mailchimp | https://mailchimp.com/legal/terms/ | Updated and effective 10 Oct 2025 | 18 Nov 2026 |
+| S18 | Intuit Global Privacy Statement | Intuit | https://www.intuit.com/privacy/statement/ | Last updated 9 Mar 2026 | 18 Nov 2026 |
+| S19 | Mailchimp Privacy FAQs | Mailchimp Help | https://mailchimp.com/help/mailchimp-intuit-privacy-faq/ | No date shown | 18 Nov 2026 |
+| S20 | Introducing Intuit Assist for Mailchimp | Mailchimp (newsroom) | https://mailchimp.com/newsroom/introducing-intuit-assist/ | 6 Sep 2023 | 18 Nov 2026 |
+| S21 | Intuit Mailchimp Previews AI-Powered Revenue Intelligence System, Launches SMS Marketing Tools in the UK | Mailchimp (newsroom) | https://mailchimp.com/newsroom/ai-powered-revenue-intelligence-system/ | 13 Jun 2024 | 18 Nov 2026 |
+| S22 | Intuit Introduces Ground-Breaking Virtual Team of AI Agents to Fuel Growth for Businesses | Intuit (investor relations) | https://investors.intuit.com/news-events/press-releases/detail/1258/intuit-introduces-ground-breaking-virtual-team-of-ai-agents-to-fuel-growth-for-businesses | 1 Jul 2025 | 18 Nov 2026 |
+| S23 | Intuit Mailchimp Unlocks a New Era of Profitable Ecommerce Marketing with Advanced, Data-Driven Capabilities | Mailchimp | https://mailchimp.com/february-2026-release-data-driven-ecommerce-marketing/ | 10 Feb 2026 | 18 Nov 2026 |
+| S24 | Smarter campaigns with the Mailchimp x Claude Connector | Mailchimp | https://mailchimp.com/resources/connect-mailchimp-to-claude/ | 3 Jun 2026 | 18 Nov 2026 |
+| S25 | Better campaigns, faster: Mailchimp + ChatGPT integration | Mailchimp | https://mailchimp.com/resources/connect-mailchimp-to-chatgpt/ | 3 Jun 2026 | 18 Nov 2026 |
+| S26 | Use the Mailchimp Connector in Claude | Mailchimp Help | https://mailchimp.com/help/use-mailchimp-connector-claude | No date shown | 18 Nov 2026 |
+| S27 | Intuit Mailchimp connector | Anthropic (Claude directory) | https://claude.com/connectors/intuit-mailchimp | "Added March 2026" | 18 Nov 2026 |
+| S28 | Use connectors to extend Claude's capabilities | Anthropic Help Center | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated today" (as shown on 18 Nov 2026) | 18 Nov 2026 |
+| S29 | Claude for Small Business launches new workflows, integrations, and training programs | Anthropic | https://claude.com/resources/articles/claude-for-small-business-launches-new-workflows-integrations-and-training-programs | 15 Sep 2026 | 18 Nov 2026 |
+| S30 | Is my data used for model training? (consumer products) | Anthropic Privacy Center | https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training | 16 Mar 2026 | 18 Nov 2026 |
+| S31 | Is my data used for model training? (commercial products) | Anthropic Privacy Center | https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training | 18 Aug 2026 | 18 Nov 2026 |
+| S32 | Intuit Mailchimp plugin for ChatGPT | OpenAI | https://openai.com/business/plugins/mailchimp/ | No date shown | 18 Nov 2026 |
+| S33 | ChatGPT plugin listing: Intuit Mailchimp | OpenAI | https://chatgpt.com/plugins/plugin_asdk_app_693b20fccbac8191bdc178bb493de3e5 | No date shown (version 7.0.0). Opened from Australia, signed out | 18 Nov 2026 |
+| S34 | Plugins | OpenAI (ChatGPT docs) | https://learn.chatgpt.com/docs/plugins | No date shown | 18 Nov 2026 |
+| S35 | Federated connectors overview | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview | ms.date 16 Nov 2026 (page metadata updated 16 Nov 2026) | 18 Nov 2026 |
+| S36 | Available plugins for Copilot Cowork | Microsoft Learn | https://learn.microsoft.com/en-us/copilot/cowork/cowork-available-plugins | ms.date 13 Nov 2026 (page metadata updated 17 Nov 2026) | 18 Nov 2026 |
+| S37 | MailChimp (connector reference) | Microsoft Learn (connectors) | https://learn.microsoft.com/en-us/connectors/mailchimp/ | ms.date 1 Mar 2024 (page metadata updated 25 Apr 2025) | 18 Nov 2026 |
+| S38 | Mandrill (connector reference) | Microsoft Learn (connectors) | https://learn.microsoft.com/en-us/connectors/mandrill/ | ms.date 1 Mar 2024 (page metadata updated 18 Sep 2025) | 18 Nov 2026 |
+| S39 | Use connectors with Gemini in Workspace | Google (Gmail Help) | https://support.google.com/mail/answer/16796422?hl=en | No date shown | 18 Nov 2026 |
+| S40 | Intuit Mailchimp Connector (Google Workspace Marketplace listing) | Google Workspace Marketplace | https://workspace.google.com/marketplace/app/intuit_mailchimp_connector/47883168141 | Listing updated 16 Oct 2026 | 18 Nov 2026 |
+| S41 | Connect to more tools with Gemini in Google Workspace | Google Workspace Updates | https://workspaceupdates.googleblog.com/2026/09/connect-to-more-tools-with-gemini-in-Google-Workspace.html | 15 Sep 2026 (correction dated 30 Sep 2026) | 18 Nov 2026 |
+| S42 | Support access to Workspace Integrations | Google Workspace Help | https://knowledge.workspace.google.com/admin/gemini/support-access-to-workspace-integrations?hl=en | Last updated 10 Nov 2026 | 18 Nov 2026 |
+| S43 | Take actions in third-party services with flows (Beta) | Google (Workspace Studio Help) | https://support.google.com/workspace-studio/answer/16658279?hl=en | No date shown | 18 Nov 2026 |
+| S44 | Check the availability and requirements of connected apps in Gemini Apps | Google Gemini Apps Help | https://support.google.com/gemini/table/17434654?hl=en | No date shown | 18 Nov 2026 |
+| S45 | MCP server | Mailchimp Developer | https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server | No date shown | 18 Nov 2026 |
+| S46 | Agent skills | Mailchimp Developer | https://mailchimp.com/developer/marketing/build/ai-tools/agent-skills | No date shown | 18 Nov 2026 |
+| S47 | How to Use Mailchimp's Transactional Messaging MCP | Mailchimp Developer | https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp | No date shown | 18 Nov 2026 |
+| S48 | Connect Mailchimp to more apps using Zapier | Mailchimp (integrations directory) | https://mailchimp.com/integrations/zapier/ | No date shown | 18 Nov 2026 |
+| S49 | Make, formerly Integromat | Mailchimp (integrations directory) | https://mailchimp.com/integrations/make_integromat/ | No date shown | 18 Nov 2026 |
+| S50 | About SMS Marketing with Mailchimp | Mailchimp Help | https://mailchimp.com/help/about-sms-marketing/ | No date shown | 18 Nov 2026 |
+| S51 | Compare Marketing plans | Mailchimp | https://mailchimp.com/pricing/marketing/compare-plans/ | No date shown (© 2001–2026) | 18 Nov 2026 |
+| S52 | Copilot Plugin Catalog: search for "Mailchimp" | Microsoft | https://www.microsoft.com/en-us/copilot/features/plugins/explore?q=Mailchimp | No date shown. Searched 18 Nov 2026; the one result was Airtable | 18 Nov 2026 |

@@ -40,7 +40,7 @@
     "from": "Microsoft Outlook (new Outlook or Outlook on the web)",
     "to": "Smokeball, with Archie drafting",
     "who": "anyone",
-    "plan_needed": "Smokeball Boost, Grow or Prosper+, and a paid Microsoft 365 Business or Education mailbox. Archie features need the Archie add-on. Personal Outlook.com, Hotmail and Gmail accounts aren't supported. If you see Admin approval required, your IT administrator must allow Outlook add-ins.",
+    "plan_needed": "Smokeball Boost, Grow or Prosper+, and a paid Microsoft 365 Business or Education mailbox (Smokeball also lists Microsoft 365 hosted by GoDaddy). Archie features need the Archie add-on. Personal Outlook.com, Hotmail and Gmail accounts aren't supported. If you see Admin approval required, your IT administrator must allow Outlook add-ins.",
     "steps": [
       {
         "where": "Outlook on the web or the Outlook (new) app",
@@ -76,14 +76,14 @@
       }
     ],
     "source": "S21, S11",
-    "doc_updated": "2026-08-27"
+    "doc_updated": "2026-11-12"
   },
   {
     "id": "smokeball-archie-to-lawy",
     "from": "Smokeball Archie",
     "to": "LawY (legal research)",
     "who": "anyone",
-    "plan_needed": "The Archie add-on. LawY, including Deep Research and lawyer verification, is included at no extra cost.",
+    "plan_needed": "The Archie add-on. LawY, including Deep Research, is included at no extra cost. Smokeball's help article no longer mentions lawyer verification.",
     "steps": [
       {
         "where": "Smokeball desktop app or web app",
@@ -92,7 +92,7 @@
       },
       {
         "where": "Archie screen",
-        "do": "Select Legal Research in the top-left corner.",
+        "do": "Select Legal Question in the top-left corner. Smokeball's blog and LawY's pages still call this Legal Research.",
         "see": "The LawY chat box, set to the matter's practice area."
       },
       {
@@ -102,12 +102,12 @@
       },
       {
         "where": "LawY conversation",
-        "do": "To go further, select Deep Research + Human Verification, tick the questions, select relevant facts and choose Request Research.",
-        "see": "Deep Research takes about an hour. With verification, a qualified lawyer reviews it in about 1 to 3 business days. Smokeball says the verifier sees only the rephrased question, the AI answer and the facts you selected."
+        "do": "To go further, select Deep Research. In the panel that opens, tick the recommended questions or add your own, then select Submit.",
+        "see": "Deep Research takes about an hour. The findings appear in the Deep Research tab on the left panel."
       }
     ],
     "source": "S26, S10",
-    "doc_updated": "2025-11-05"
+    "doc_updated": "2026-10-20"
   },
   {
     "id": "smokeball-owner-switches-archie-off-for-a-user",

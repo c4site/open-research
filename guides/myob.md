@@ -1,6 +1,6 @@
 # MYOB: the AI inside it, and the AI that connects to it
 
-Researched 15 October 2026 from vendor documentation. Every line is tagged with its source.
+Researched 18 November 2026 from vendor documentation. Every line is tagged with its source.
 
 ## The short version
 
@@ -14,7 +14,7 @@ Smart Reconciliation and category suggestions match bank transactions for you, a
 
 The MYOB Connector lets Claude or ChatGPT read figures such as profit and loss, sales, receivables and payables. It can't change anything in MYOB, and the business owner has to allow it in My Account first. [S4][S6]
 
-Once you connect, the figures you ask about go into the AI company's systems under its own terms, so MYOB tells you to turn off model training in Claude or ChatGPT. [S4]
+Once you connect, the figures you ask about go into the AI company's systems under its own terms, so MYOB tells you to turn off model training in Claude or ChatGPT. [S4][S72][S73]
 
 There's no official MYOB link for Microsoft Copilot, Google Gemini, Zapier or Power Automate that we could find, so the documented fallback is exporting a report and uploading it, which copies your data out of MYOB. [S1][S32][S41][S55]
 
@@ -26,19 +26,20 @@ MYOB's AI pages warn that the AI can get things wrong, and its terms make you re
 
 What AI you get depends on which MYOB product and plan you're on, so check yours first. [S2]
 
-**Small-business plans in Australia** (prices are the "after offer period" figures shown on MYOB's pages on 15 October 2026; intro discounts were also showing) [S2][S25]
+**Small-business plans in Australia** (prices are the "after offer period" figures shown on MYOB's pages on 18 November 2026; intro discounts were also showing) [S2][S25]
 
 | Plan | What it is | Price after the intro offer | AI features MYOB lists for it |
 |---|---|---|---|
 | Solo by MYOB | A phone app for sole traders and freelancers, one user, no web version [S26] | $99/year [S2] | Category Suggestions [S2] |
-| MYOB Business Lite | For sole traders and small businesses, payroll for up to 2 employees [S22] | $315/year [S2] | Ask Iris, Category Suggestions, Smart Invoice Reminders. AI BAS is "Available as an additional purchase" [S2] |
-| MYOB Business Pro | Payroll for unlimited employees at an extra $3/month each [S23] | $70/month [S2] | Ask Iris, AI Business Insights (beta), Smart Reconciliation (beta), Category Suggestions, Smart Invoice Reminders. AI BAS is an extra purchase [S2] |
+| MYOB Business Lite | For sole traders and small businesses, payroll for up to 2 employees at an extra $5/month each [S2][S22] | $315/year [S2] | Ask Iris, Category Suggestions, Smart Invoice Reminders. AI BAS is "Available as an additional purchase" [S2] |
+| MYOB Business Pro | Payroll for unlimited employees at an extra $5/month each [S2][S23] | $70/month [S2] | Ask Iris, AI Business Insights (beta), Smart Reconciliation (beta), Category Suggestions, Smart Invoice Reminders. AI BAS is an extra purchase [S2] |
 | AccountRight Plus | Needs a Windows computer for setup and some features; unlimited payroll included [S24] | $165/month [S2] | The same list as Pro, without AI BAS [S2] |
 | AccountRight Premier | For multiple locations, jobs or currencies; Windows needed for setup and some features [S25] | $210/month [S25] | The product page mentions AI category suggestions [S25]. Premier isn't in the pricing page's AI comparison table [S2] |
-| Payroll Only | A payroll-only plan [S2] | $15/month [S2] | None listed [S2] |
+| Payroll Only | A payroll-only plan for up to 4 employees [S2] | $20/month [S2] | None listed [S2] |
 
 - The pricing page doesn't say whether these prices include GST. [S2]
-- MYOB says it will change the prices of Payroll Only and the per-user Payroll premium feature from 1 November 2026, without showing the new prices. [S2]
+- The payroll price change MYOB flagged for 1 November 2026 has arrived. The pricing page now shows Payroll Only at $20 a month after the intro offer, and payroll on Lite and Pro at an extra $5 a month per employee. It no longer shows a change notice. [S2]
+- AccountRight Premier's price is no longer on the pricing page. Its product page still shows $210 a month. [S2][S25]
 - AccountRight Plus and Premier now sit under "MYOB Business" on MYOB's support site. [S63]
 
 **Other MYOB products this guide covers**
@@ -56,7 +57,7 @@ What AI you get depends on which MYOB product and plan you're on, so check yours
 
 ## AI built in
 
-MYOB groups most of its small-business AI under the name Iris by MYOB, which it calls the "intelligence engine built into your accounting software". [S1] It says availability "varies by feature and plan". [S1] MYOB says it designs these features in line with the Australian Government's Guidance for AI Adoption, with human oversight and transparency among its principles. [S1] You can see the data behind a suggestion, and override or ignore it. [S1]
+MYOB groups most of its small-business AI under the name Iris by MYOB, which it calls the "intelligence engine built into your accounting software". [S1] It says availability "varies by feature and plan". [S1] MYOB formally launched Iris on 19 October 2026, describing it as an "intelligence layer" built into its software. The launch named no features beyond the ones below, and gave no new dates. [S74] MYOB says it designs these features in line with the Australian Government's Guidance for AI Adoption, with human oversight and transparency among its principles. [S1] You can see the data behind a suggestion, and override or ignore it. [S1]
 
 MYOB's terms of use (June 2026) say it will tell you when a feature relies on AI, and that you're responsible for checking AI-generated information before relying on it. [S27] Beta features are used "at your own risk" under the same terms. [S27]
 
@@ -155,7 +156,7 @@ AI category matching only covers recent transactions, dated within 30 days of to
 
 **Where to find it.** In MYOB Business: Settings (gear icon) > **Sales settings** > **Reminders** tab > select **Send reminders to all customers**, edit each reminder, then **Save**. [S14] For one customer: **Contacts** > open the customer > **Invoice reminders** > **Send reminders to this customer**. [S14] Overdue suggestions: **Sales** menu > **Invoices** > **Overdue**. [S14] In AccountRight, use the **Sales** command centre > **Invoice Reminders**, which opens the browser settings. [S14]
 
-**Plans and cost.** Ticked for Lite, Pro and AccountRight Plus. Solo doesn't have it. [S2] No extra charge is listed. [S2]
+**Plans and cost.** Ticked for Lite, Pro and AccountRight Plus. Solo doesn't have it. [S2] No extra charge is listed. [S2] The pricing page's description of the feature says "Currently in beta", though its comparison table shows no beta label. [S2]
 
 **On by default, and who controls it.** Reminders only go out after you switch them on. [S14] Once saved, they're emailed to customers automatically on the schedule. [S14] Turn them off by deselecting **Send reminders to all customers**, then **Confirm** and **Save**. [S14] They don't go out for invoices on Prepaid or Cash on delivery terms. [S14] The page doesn't say which user roles can change the settings. [S14]
 
@@ -247,113 +248,115 @@ In version 2026.1.1, "AI Studio" was renamed **AI Automation** and "Detection of
 
 In plain words, a connector lets a chat assistant such as Claude or ChatGPT look things up in another app while you're chatting. [S33] MYOB has built one, called the MYOB Connector, for Claude and ChatGPT. [S1][S4] It runs on an MCP server, which is the standard kind of plug that Claude's connectors use. [S6][S34] MYOB's sits at https://mcp.myob.com/mcp. [S6]
 
-Before anyone can connect, the business owner has to allow it. The help page says "the business owner (the Owner user in the MYOB Business file) must allow access". [S4] After that, "a user who has access to the MYOB Business file and their own Claude or ChatGPT account" can connect. [S4]
+Before anyone can connect, the business owner has to allow it. MYOB's Claude help page says "the business owner (the Owner user in the MYOB Business file) must allow access". [S72] After that, "A user who has access to the MYOB business must still sign in to the AI tool and authorise the connection there." [S4] MYOB now has one overview page and a separate help page each for Claude and ChatGPT. [S4][S72][S73]
 
 ### Claude and MYOB
 
 **Official?** Yes. It's MYOB's own connector, listed in Anthropic's Connectors Directory as "MYOB", made by MYOB, with the "Anthropic verified" label. [S6] The listing says it was added in July 2026 and "This feature is currently in beta." [S6] MYOB announced it on 17 August 2026, with a phased rollout from August. [S5] Anthropic says verification means it tested the tools for quality, and it "isn't a security audit". [S35]
 
 **What it can see and do.**
-- Read-only. "The connection with MYOB is read-only." [S4] MYOB says it "can't create, edit or delete anything in your MYOB account". [S4]
+- Read-only. "The connection with MYOB is read-only." [S4] MYOB says it "can't create, edit or delete anything in your MYOB account". [S72]
 - Anthropic's listing shows seven tools, all for getting information: business details, financial year dates, outstanding customer balances, outstanding payables, profit and loss, sales invoice totals, and standard payment terms. [S6]
-- MYOB says you can ask about revenue and profit, expenses, receivables and overdue invoices, and cash position. [S4]
-- It doesn't cover payroll, inventory or job tracking, year-end tax advice or lodgement, or MYOB help content. [S4]
+- MYOB says you can ask about revenue and profit, expenses, receivables and overdue invoices, and cash position. [S4][S72]
+- It doesn't cover payroll, inventory or job tracking, year-end tax advice or lodgement, or MYOB help content. [S72]
 - It can only reach what your own MYOB user permissions allow. [S4] Claude inherits each person's permissions from the connected service. [S33]
-- Example questions from MYOB: "Do I have any overdue invoices?" and "What is my cash position?" [S4]
+- Example questions from MYOB: "Do I have any overdue invoices?" and "What is my cash position?" [S72]
 
 **What you need.**
-- An active MYOB Business Pro, Lite or AccountRight subscription. [S4]
-- Your own Claude account. [S4] Anthropic says web connectors are available for all users on Claude, Claude Desktop and Claude Mobile. [S33]
-- Your MYOB username and password. [S4]
-- The MYOB file's Owner user must first allow Claude in My Account. [S4]
+- An active MYOB Business Pro, Lite or AccountRight subscription. [S4][S72]
+- Your own Claude subscription, in MYOB's words. [S72] Anthropic says web connectors are available for all users on Claude, Claude Desktop and Claude Mobile. [S33]
+- Your MYOB username and password. [S72]
+- The MYOB file's Owner user must first allow Claude in My Account. [S4][S72]
 - On Claude Team and Enterprise plans, an Owner or Primary Owner must enable the connector for the organisation before members can connect. [S33][S34] On Team plans, members without that permission see a **Request** button that goes to the Owners. [S34]
-- Access is being rolled out gradually, so MYOB may not show up for you yet. [S4]
+- Access is being rolled out gradually, so MYOB may not show up for you yet. [S72]
 
-**Steps to connect** (MYOB help page, no date shown, read 15 October 2026) [S4]
+**Steps to connect** (MYOB's Claude help page, no date shown, read 18 November 2026) [S72]
 
 First, the Owner user in MYOB:
-1. Sign in to My Account (myaccount.myob.com). [S4]
-2. If you have several MYOB businesses, choose the one to allow. [S4]
-3. From the quick links on the right, click **Manage AI connections**. [S4]
-4. Click **AI file access**. [S4]
-5. Find the business and allow access for **Claude**, **ChatGPT** or both. [S4] Allowing access doesn't connect anything by itself. [S4]
+1. Sign in to My Account (myaccount.myob.com). [S4][S72]
+2. If you have several MYOB businesses, choose the one to allow. [S4][S72]
+3. From the quick links on the right, click **Manage AI connections**. [S4][S72]
+4. Click **AI file access**. [S4][S72]
+5. Find the business you want to connect. [S4][S72]
+6. Allow access for **Claude**, **ChatGPT** or both. [S72][S73] Allowing access doesn't connect anything by itself. [S72]
 
 Then anyone with access to that file, in Claude:
-1. Go to the Connectors directory in your Claude account. [S4] (Anthropic's path is **Customize** > **Connectors**, then **+**.) [S33]
-2. Search for MYOB, then click **Connect to Claude**. [S4]
-3. If prompted, enter your MYOB username and password. [S4]
-4. If you can see more than one MYOB Business file, choose the one to connect. [S4]
-5. At the confirmation, click **Done**. [S4]
+1. Go to the **Connectors** directory in your Claude account. [S72] (Anthropic's path is **Customize** > **Connectors**, then **+**.) [S33]
+2. Search for **MYOB**, then click **Connect to Claude**. [S72]
+3. If prompted, enter your MYOB username and password. [S72]
+4. If you can see more than one MYOB Business file, choose the one to connect. [S72]
+5. At the confirmation, click **Done**. [S72]
 
 In a chat, you can switch connectors on or off for that conversation from the **+** menu > **Connectors**. [S33]
 
 **To disconnect.**
-1. In Claude, go to the Connectors directory and open MYOB. [S4]
-2. Click **Disconnect**. [S4]
+1. In Claude, go to the **Connectors** directory and open **MYOB**. [S72]
+2. Click **Disconnect**. [S72]
 
-To switch to a different business file, disconnect and then connect the other one, which must also be allowed in My Account. [S4] The help page doesn't explain how the Owner withdraws access in My Account. [S4]
+To switch to a different business file, disconnect and then connect the other one, which must also be allowed in My Account. [S72] MYOB says the Owner "can review the available AI connections in My Account", but its help pages don't explain how to withdraw access. [S4][S72]
 
 **Limits.**
-- Beta, rolling out gradually. [S4][S6]
-- One business file per connection, going by MYOB's switching instructions. [S4]
+- Beta [S1][S6], and rolling out gradually. [S72]
+- One business file per connection, going by MYOB's switching instructions. [S72]
 - In **Customize** > **Connectors**, each of the connector's tools can be set to **Always allow**, **Needs approval** or **Blocked**. On Team and Enterprise plans, Owners can restrict these for everyone. [S33]
-- MYOB's sign-in protects your password: "Claude or ChatGPT doesn't see or store your MYOB password". [S4]
-- Your chat is still covered by Claude's own privacy settings and terms. [S4] MYOB tells you to go to **Settings** > **Privacy** and turn off **Help improve our AI models**. [S4][S36] On Claude's Free, Pro and Max plans, if that setting is on, Anthropic says chats may be kept in de-identified form for up to five years in training pipelines. [S36][S37] Deleted chats are removed from Anthropic's back-end within 30 days. [S37]
-- Claude's memory can hold older figures that aren't live MYOB data. [S4] Manage it in **Settings** > **Memory**. [S4]
+- MYOB's sign-in protects your password: "MYOB handles your sign-in, so Claude doesn't see or store your MYOB password." [S72]
+- Your chat is still covered by Claude's own privacy settings and terms. [S72] MYOB tells you to go to **Settings** > **Privacy** and turn off **Help improve our AI models**. [S72][S36] On Claude's Free, Pro and Max plans, if that setting is on, Anthropic says chats may be kept in de-identified form for up to five years in training pipelines. [S36][S37] Deleted chats are removed from Anthropic's back-end within 30 days. [S37]
+- Claude's memory can hold older figures that aren't live MYOB data. [S72] Manage it in **Settings** > **Memory**. [S72]
 - For anything the connector doesn't cover, the fallback is exporting a MYOB report and uploading the file to Claude, which accepts PDF, CSV and XLSX files. [S32][S38] Payroll reports carry employees' personal details, so think before uploading those. (Our note.)
 - Anthropic says connected services process data on their own infrastructure under their own terms. [S33] Anthropic's advice for any connector it didn't build: "Only use connectors from developers you trust." [S6][S35]
 
 ### ChatGPT and MYOB
 
-**Official?** Yes. MYOB says the same MYOB Connector is installed in ChatGPT as a plugin. [S1][S4][S5] OpenAI's plugin directory, which replaced its App Directory on 9 July 2026, lists **MYOB**, made by MYOB Australia Pty Ltd, version 1.0.0. The listing says "This feature is currently in beta." [S66][S71]
+**Official?** Yes. MYOB says the same MYOB Connector is installed in ChatGPT as a plugin. [S1][S5][S73] OpenAI's plugin directory, which replaced its App Directory on 9 July 2026, lists **MYOB**, made by MYOB Australia Pty Ltd, version 1.0.0. The listing says "This feature is currently in beta." [S66][S71]
 
-**What it can see and do.** MYOB describes the same read-only connector for both Claude and ChatGPT, with the same supported and unsupported topics as above. [S4] OpenAI's listing describes a read-only view of profit and loss, sales, receivables and payables. It says access is "read-only in this phase, with no write actions", and it doesn't list the individual tools. [S66]
+**What it can see and do.** MYOB describes the same read-only connector for both Claude and ChatGPT, with the same supported and unsupported topics as above. [S72][S73] OpenAI's listing describes a read-only view of profit and loss, sales, receivables and payables. It says access is "read-only in this phase, with no write actions", and it doesn't list the individual tools. [S66]
 
 **What you need.**
-- An active MYOB Business Pro, Lite or AccountRight subscription. [S4] OpenAI's listing asks for an active MYOB Business subscription in Australia or New Zealand. [S66]
-- Your own ChatGPT subscription. [S4] MYOB doesn't name a ChatGPT plan. [S4] OpenAI doesn't list plans for it either. It says using any plugin depends on your plan, workspace, role and region. [S67]
+- An active MYOB Business Pro, Lite or AccountRight subscription. [S4][S73] OpenAI's listing asks for an active MYOB Business subscription in Australia or New Zealand. [S66]
+- Your own ChatGPT subscription. [S73] MYOB doesn't name a ChatGPT plan. [S73] OpenAI doesn't list plans for it either. It says using any plugin depends on your plan, workspace, role and region. [S67]
 - In ChatGPT Business, apps start switched on. In Enterprise and Edu, new plugins and apps generally stay off until an admin reviews them. [S68]
-- Your MYOB username and password. [S4]
-- The MYOB file's Owner user must first allow ChatGPT in My Account (the same five steps as for Claude). [S4]
+- Your MYOB username and password. [S73]
+- The MYOB file's Owner user must first allow ChatGPT in My Account (the same six steps as for Claude). [S4][S73]
 
-**Steps to connect** (MYOB help page, no date shown, read 15 October 2026) [S4]
-1. In ChatGPT, open **Plugins**. [S4]
-2. Search for MYOB, then click **Install plugin**. [S4] (OpenAI's general instructions describe opening the plugin's details and selecting the plus button, then approving its requested permissions.) [S39]
-3. If prompted, enter your MYOB username and password. [S4]
-4. If you can see more than one MYOB Business file, choose the one to connect. [S4]
-5. At the confirmation, click **Done**. [S4]
+**Steps to connect** (MYOB's ChatGPT help page, no date shown, read 18 November 2026) [S73]
+1. In ChatGPT, open **Plugins**. [S73]
+2. Search for **MYOB**, then click **Install plugin**. [S73] (OpenAI's general instructions describe opening the plugin's details and selecting the plus button, then connecting or signing in if the plugin asks.) [S39]
+3. If prompted, enter your MYOB username and password. [S73]
+4. If you can see more than one MYOB Business file, choose the one to connect. [S73]
+5. At the confirmation, click **Done**. [S73]
 
 **To disconnect.**
-1. In ChatGPT, open **Plugins** and find MYOB. [S4]
-2. Click the three dots at the top right and choose **Uninstall**. [S4]
+1. In ChatGPT, open **Plugins** and find MYOB. [S73]
+2. Click the three dots at the top right and choose **Uninstall**. [S73]
 
 OpenAI's own guide says "Separately connected MCP server integrations remain connected in ChatGPT until you disconnect them there." [S39] After uninstalling, check that no MYOB connection is left in ChatGPT. (This is our caution; MYOB's page doesn't mention it.)
 
 OpenAI's help centre adds that uninstalling a plugin can disconnect every account connected through it, after a warning. To disconnect only the account, go to **Settings** > **Plugins** > MYOB > the account's **•••** menu (or **Connection**) > **Disconnect**. [S69]
 
 **Limits.**
-- ChatGPT doesn't use MYOB automatically. Select the MYOB plugin before each question; "If it isn't selected, ChatGPT defaults to a web search." [S4] MYOB warns you could get a plausible-looking answer that isn't based on your MYOB data. [S4]
-- MYOB tells you to turn off **Improve the model for everyone** in **Settings** > **Data Controls**. [S4] OpenAI says that on Free, Go, Plus and Pro it may use information from apps to train its models while that setting is on. Business, Enterprise and Edu aren't used for training by default. [S70]
+- "ChatGPT doesn't automatically connect to MYOB." Select the MYOB plugin before each question, or "ChatGPT defaults to a web search". [S73] MYOB warns you could get a plausible-looking answer that isn't based on your MYOB data. [S73]
+- MYOB tells you to turn off **Improve the model for everyone** in **Settings** > **Data Controls**. [S73] OpenAI says that on Free, Go, Plus and Pro it may use information from apps to train its models while that setting is on. Business, Enterprise and Edu aren't used for training by default. [S70]
 - OpenAI's listing says ChatGPT may share relevant chats and memories with MYOB, under MYOB's terms and privacy policy. [S66]
-- Manage memory in **Settings** > **Personalization** > **Memory**. [S4] Deleting a chat may not delete memories made from it. [S4]
+- Manage memory in **Settings** > **Personalization** > **Memory**. [S73] Deleting a chat may not delete memories made from it. [S73]
 - When ChatGPT sends data through an MCP server, that service's terms and privacy policy apply. [S39]
 
 ### Other AI tools and MYOB's MCP server
 
-**Official?** Only for Claude and ChatGPT. The My Account screen lets the Owner allow "Claude, ChatGPT or both", and MYOB documents no other AI tools. [S4]
+**Official?** Only for Claude and ChatGPT. MYOB's overview page says "You can currently connect to MYOB from Claude or ChatGPT." [S4] It documents no other AI tools. [S4]
 
 **What it can see and do.** Not documented for other tools. [S4]
 
 **What you need, steps, disconnecting.** Not documented. [S4]
 
-**Limits.** Anthropic notes that any connector URL can be added to Claude as a custom connector. [S35] Because MYOB's permission screen only names Claude and ChatGPT, it appears other AI tools can't use MYOB's server. That's our inference; MYOB doesn't say.
+**Limits.** Anthropic notes that any connector URL can be added to Claude as a custom connector. [S35] Because MYOB's pages only name Claude and ChatGPT, it appears other AI tools can't use MYOB's server. That's our inference; MYOB doesn't say. [S4]
 
 ### Microsoft Copilot and MYOB
 
-**Official?** No. We found no MYOB connector for Microsoft 365 Copilot or the Copilot apps. [S40][S41]
+**Official?** No. We found no MYOB connector for Microsoft 365 Copilot or the Copilot apps. [S40][S41][S75][S76]
+- Microsoft's galleries of Microsoft 365 Copilot connectors, one for Microsoft-built and one for partner-built connectors (both updated 16 November 2026), list no MYOB connector. [S75][S76]
 - MYOB and Microsoft signed a five-year partnership on 8 April 2026. [S40] It's about MYOB building its own AI with Microsoft technology: Microsoft Foundry for customer-facing AI agents, Copilot Studio for MYOB's own staff, and Agent 365 for governance. [S40] The announcement doesn't describe any link between MYOB and Microsoft 365 Copilot. [S40]
 - The first jointly built customer features were due "later in 2026". [S40]
-- Microsoft's list of connectors for Power Automate, Power Apps and Logic Apps (updated 2 October 2026) has no MYOB connector. [S41]
+- Microsoft's list of connectors for Power Automate, Power Apps and Logic Apps (updated 18 November 2026) has no MYOB connector. [S41]
 
 **The documented alternative: export to Excel, then use Copilot in Excel.**
 - What it can see and do: whatever is in the exported report. Copilot in Excel can summarise data, make charts and PivotTables, and answer questions about it. [S42] It can also edit the sheet, and opens in **Allow editing** mode by default. [S42] Any edits stay in the copy and never reach MYOB. (Our note.)
@@ -384,7 +387,7 @@ OpenAI's help centre adds that uninstalling a plugin can disconnect every accoun
 
 ### Your own app or automation and MYOB (the MYOB API)
 
-**Official?** Yes, MYOB has a public API, called the MYOB Business API (also known as the AccountRight API). [S44] An API is how other software reads and writes data in MYOB, under rules MYOB sets. [S44][S47] Using it is a job for a developer, who has to register an app with MYOB first. [S44]
+**Official?** Yes, MYOB has a public API, called the MYOB Business API (its getting-started page also calls it the AccountRight Online API). [S44] An API is how other software reads and writes data in MYOB, under rules MYOB sets. [S44][S47] Using it is a job for a developer, who has to register an app with MYOB first. [S44]
 
 **What it can see and do.** Apps can read and write. For example, the sale invoice endpoint supports "GET | PUT | POST | DELETE", meaning read, update, create and delete. [S65] Access is split into granular scopes such as sme-sales, sme-purchases, sme-banking, sme-payroll and sme-general-ledger, and apps should request only the ones they need. [S45][S46]
 
@@ -416,8 +419,8 @@ OpenAI's help centre adds that uninstalling a plugin can disconnect every accoun
 ### Zapier, Make and Power Automate and MYOB
 
 **Official?** No official MYOB integration that we could confirm on any of the three. [S41][S55]
-- **Zapier:** Zapier's MYOB page, as shown in search results, says MYOB "has not yet built an integration on Zapier". [S55] The page itself returned "not found" when we loaded it directly. [S55]
-- **Make:** We couldn't confirm either way. Make's MYOB page didn't load properly. (See gaps.)
+- **Zapier:** Zapier's MYOB page says "Myob has not yet built an integration on Zapier." [S55]
+- **Make:** We couldn't confirm either way. Make's address for a MYOB app showed a "doesn't exist or has been moved" page on 18 November 2026. (See gaps.)
 - **Power Automate:** Microsoft's connector list has no MYOB connector. [S41]
 
 **What it can see and do, what you need, steps.** Nothing official to document. Zapier suggests building your own connection with webhooks or code [S55], and with MYOB that would mean using the API, which needs Developer Program membership. [S48] That's our inference about how it would work.
@@ -444,7 +447,7 @@ OpenAI's help centre adds that uninstalling a plugin can disconnect every accoun
 **For a small business**
 
 - **"How did last month go?" without building a report.** Ask Iris answers questions like "What was my total income last month?" inside MYOB, with data processed in Australia. [S3]
-- **Checking who owes you from a chat you already use.** With the MYOB Connector, ask Claude or ChatGPT "Do I have any overdue invoices?" or "Who are my biggest customers by revenue?". [S4] The connector can't send anything, so any follow-up still goes out from MYOB. [S4]
+- **Checking who owes you from a chat you already use.** With the MYOB Connector, ask Claude or ChatGPT "Do I have any overdue invoices?" or "Who are my biggest customers by revenue?". [S72][S73] The connector can't send anything, so any follow-up still goes out from MYOB. [S4]
 - **Getting paid sooner.** Set up to five automatic reminders with the tone you want, and check the Overdue tab's suggested next step for each late payer. [S14]
 - **Keeping on top of the bank feed.** On Pro or AccountRight Plus, Smart Reconciliation matches transactions as they arrive; you accept suggestions in bulk and finalise. [S2][S12]
 - **BAS through the quarter.** If you're GST-registered on Lite or Pro with a simple quarterly cash BAS, AI BAS flags missing documents and GST codes as you go, then gives your BAS agent a decision report and CSV. [S7][S8] You or your agent still lodge. [S8]
@@ -466,10 +469,10 @@ OpenAI's help centre adds that uninstalling a plugin can disconnect every accoun
 ## What to watch for
 
 **Your data leaves MYOB when you use Claude or ChatGPT.**
-- MYOB's promise that data is processed in Australia and not used for training is made for Ask Iris. [S3] The connector page says instead that your conversation is subject to Claude's or ChatGPT's own privacy settings and terms. [S4]
-- Turn off model training: **Help improve our AI models** in Claude, **Improve the model for everyone** in ChatGPT. [S4][S36]
+- MYOB's promise that data is processed in Australia and not used for training is made for Ask Iris. [S3] The connector pages say instead that your conversation is subject to the AI provider's own settings and terms, and "the provider may use conversations to improve its AI models". [S4][S72]
+- Turn off model training: **Help improve our AI models** in Claude, **Improve the model for everyone** in ChatGPT. [S72][S73][S36]
 - Check memory settings in both, because memory can hold older figures. [S4]
-- In ChatGPT, select the MYOB plugin each time, or you may get an answer from the web. [S4]
+- In ChatGPT, select the MYOB plugin each time, or you may get an answer from the web. [S73]
 
 **Who can connect a file.**
 - Once the Owner allows it, any user with access to the file and their own AI account can connect. [S4]
@@ -502,7 +505,7 @@ OpenAI's help centre adds that uninstalling a plugin can disconnect every accoun
 - Marketplace apps are third-party products, and installing one lets it access your data. [S27][S51]
 
 **Protect the MYOB login.**
-- Connecting Claude or ChatGPT uses your MYOB username and password. [S4]
+- Connecting Claude or ChatGPT uses your MYOB username and password. [S72][S73]
 - MYOB recommends passkeys, or an authenticator app with SMS as backup, and says "Email 2FA is not recommended and will be phased out in 2027." [S30]
 
 **Larger businesses.**
@@ -512,7 +515,7 @@ OpenAI's help centre adds that uninstalling a plugin can disconnect every accoun
 
 | When | What | Source |
 |---|---|---|
-| 1 November 2026 | Prices change for MYOB Business Payroll Only and the per-user Payroll premium feature (new prices not shown). | [S2] |
+| 1 November 2026 (arrived) | Payroll prices changed. Payroll Only now shows $20/month after the intro offer, and payroll on Lite and Pro is an extra $5/month per employee. | [S2] |
 | 2027 | Email two-factor authentication to be phased out. | [S30] |
 | "For a limited time" (no date) | AI BAS beta users keep free access, then must add AI BAS as a paid Premium Feature. | [S8] |
 | Through 2026 | AI BAS support to expand; employing businesses joined the beta from September 2026. | [S7][S10] |
@@ -536,12 +539,11 @@ OpenAI's help centre adds that uninstalling a plugin can disconnect every accoun
 - **How long AI data is kept.** We found no retention periods for Ask Iris chats or AI BAS decisions. The connector page doesn't give one for connector activity either.
 - **Revoking access from MYOB's side.** How the Owner withdraws AI file access in My Account, and what happens to a connection when a user loses file access.
 - **Other AI tools on MYOB's MCP server.** Whether anything besides Claude and ChatGPT can use mcp.myob.com.
-- **New Zealand customers and the connector.** MYOB's Australian help page doesn't say whether New Zealand subscriptions can use the MYOB Connector. [S4] OpenAI's listing for the ChatGPT plugin asks for a MYOB Business subscription in Australia or New Zealand. [S66] We couldn't confirm the same for Claude.
+- **New Zealand customers and the connector.** MYOB's Australian help pages don't say whether New Zealand subscriptions can use the MYOB Connector. [S4][S72][S73] OpenAI's listing for the ChatGPT plugin asks for a MYOB Business subscription in Australia or New Zealand. [S66] We couldn't confirm the same for Claude.
 - **How "cash position" is answered** through the connector.
 - **The API scope deadline.** An MYOB community forum post says the old "CompanyFile" API scope was removed on 1 September 2026, forcing integrations to move to granular scopes. MYOB's developer pages we could load don't state it, and MYOB's API support site blocked our reader. If an older integration stopped working in September, this is the likely lead, but it isn't confirmed here.
 - **API rate limits.** Not on the public pages we read. [S44][S47]
-- **Make.com.** Whether Make lists a MYOB app.
-- **Microsoft's Copilot connector gallery.** We checked Microsoft's Power Platform connector list [S41] but not the Microsoft 365 Copilot connector gallery.
+- **Make.com.** Whether Make lists a MYOB app. The address we tried (make.com/integrations/myob) shows a "doesn't exist" page, but we didn't search Make's whole directory.
 - **The full marketplace.** We checked a handful of the 350+ listed apps for AI features. [S51] The marketplace pages we loaded had no AI category or search filter we could use.
 - **New Zealand data in predictions.** Whether "other MYOB businesses" in Smart Reconciliation includes New Zealand businesses.
 - **AccountRight Premier and Solo AI.** Premier isn't in the pricing page's AI comparison [S2], and Solo's only AI item, Category Suggestions, has no Solo help article. [S2][S26]
@@ -550,76 +552,83 @@ OpenAI's help centre adds that uninstalling a plugin can disconnect every accoun
 
 ## Sources
 
+All sources were read on 18 November 2026.
+
 | # | Title | Publisher | URL | Updated (as shown) | Read |
 |---|---|---|---|---|---|
-| S1 | MYOB AI Accounting Software (Iris by MYOB) | MYOB | https://www.myob.com/au/ai-accounting | No date shown | 15 Oct 2026 |
-| S2 | Plans and pricing | MYOB | https://www.myob.com/au/pricing | No date shown | 15 Oct 2026 |
-| S3 | Understand your business with Ask Iris (Beta) | MYOB | https://www.myob.com/au/support/myob-business/get-help-support/ai-assistant | No date shown | 15 Oct 2026 |
-| S4 | Connecting Claude or ChatGPT to MYOB | MYOB | https://www.myob.com/au/support/myob-business/product-account/connecting-myob | No date shown | 15 Oct 2026 |
-| S5 | MYOB brings SME financial intelligence into Claude and ChatGPT | MYOB | https://www.myob.com/au/press-releases/myob-brings-sme-financial-intelligence-into-chatgpt-and-claude | 17 August 2026 | 15 Oct 2026 |
-| S6 | MYOB (connector listing) | Anthropic | https://claude.com/connectors/myob | "Added July 2026" | 15 Oct 2026 |
-| S7 | AI BAS | MYOB | https://www.myob.com/au/products/ai-bas-software | No date shown | 15 Oct 2026 |
-| S8 | Get BAS-ready faster with AI BAS | MYOB | https://www.myob.com/au/support/myob-business/end-of-period/month-end-procedures/ai-bas | No date shown | 15 Oct 2026 |
-| S9 | MYOB Premium Features | MYOB | https://www.myob.com/au/support/billing-and-account/myob-premium-features | No date shown | 15 Oct 2026 |
-| S10 | MYOB expands AI BAS beta to employing businesses | MYOB | https://www.myob.com/au/press-releases/myob-expands-ai-bas-beta-to-employing-businesses | 15 September 2026 | 15 Oct 2026 |
-| S11 | MYOB rolls out suite of AI products to power up SME productivity | MYOB | https://www.myob.com/au/press-releases/myob-rolls-out-suite-of-ai-products-to-power-up-sme-productivity | 2 March 2026 | 15 Oct 2026 |
-| S12 | Review as you go for easier reconciliation | MYOB | https://www.myob.com/au/support/myob-business/banking/smart-reconciliation | No date shown | 15 Oct 2026 |
-| S13 | Matching transactions with automatches and suggestions | MYOB | https://www.myob.com/au/support/myob-business/banking/automatches-and-suggestions | No date shown | 15 Oct 2026 |
-| S14 | Send Smart Invoice Reminders | MYOB | https://www.myob.com/au/support/myob-business/sales/online-invoicing/setting-up-invoice-reminders | No date shown | 15 Oct 2026 |
-| S15 | AI Business Insights | MYOB | https://www.myob.com/au/ai-accounting/business-insights | No date shown | 15 Oct 2026 |
-| S16 | Business Insights, including AI Business Insights (Beta) | MYOB | https://www.myob.com/au/support/myob-business/accounting/financial-control/reviewing-financial-information/business-insights-overview | No date shown | 15 Oct 2026 |
-| S17 | MYOB Assist | MYOB | https://www.myob.com/au/myob-apps/assist | No date shown | 15 Oct 2026 |
-| S18 | Getting started with the MYOB Assist app | MYOB | https://www.myob.com/au/support/myobapp/getting-started-with-myob-assist | No date shown | 15 Oct 2026 |
-| S19 | Capture an expense | MYOB | https://www.myob.com/au/support/myobapp/apphelp/capture | No date shown | 15 Oct 2026 |
-| S20 | Working with uploaded documents | MYOB | https://www.myob.com/au/support/myob-business/purchases/working-with-in-tray-documents | No date shown | 15 Oct 2026 |
-| S21 | What's new and what's next (product roadmap) | MYOB | https://www.myob.com/au/myob-product-roadmap | No date shown | 15 Oct 2026 |
-| S22 | MYOB Business Lite | MYOB | https://www.myob.com/au/products/myob-business/lite | No date shown | 15 Oct 2026 |
-| S23 | MYOB Business Pro | MYOB | https://www.myob.com/au/products/myob-business/pro | No date shown | 15 Oct 2026 |
-| S24 | MYOB Business AccountRight Plus | MYOB | https://www.myob.com/au/products/myob-business/accountright-plus | No date shown | 15 Oct 2026 |
-| S25 | MYOB Business AccountRight Premier | MYOB | https://www.myob.com/au/products/myob-business/accountright-premier | No date shown | 15 Oct 2026 |
-| S26 | Solo by MYOB (product page) and Solo support home | MYOB | https://www.myob.com/au/products/solo and https://www.myob.com/au/support/solo | No date shown | 15 Oct 2026 |
-| S27 | MYOB Business Terms of Use | MYOB | https://www.myob.com/au/legal/myob-business-terms | "Last updated: June 2026" | 15 Oct 2026 |
-| S28 | Privacy Policy | MYOB | https://www.myob.com/au/legal/privacy-policy | "August 2026" | 15 Oct 2026 |
-| S29 | Security Practices (Trust Centre) | MYOB | https://www.myob.com/au/legal/security-practices | No date shown | 15 Oct 2026 |
-| S30 | Security at MYOB | MYOB | https://www.myob.com/au/support/security | No date shown | 15 Oct 2026 |
-| S31 | Manage users (user access) | MYOB | https://www.myob.com/au/support/myob-business/business-settings/manage-users | No date shown | 15 Oct 2026 |
-| S32 | Exporting reports | MYOB | https://www.myob.com/au/support/myob-business/reporting/exporting-reports | No date shown | 15 Oct 2026 |
-| S33 | Use connectors to extend Claude's capabilities | Anthropic | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated over 2 weeks ago" (as at 15 Oct 2026) | 15 Oct 2026 |
-| S34 | Connectors directory | Anthropic | https://claude.com/docs/connectors/directory | No date shown | 15 Oct 2026 |
-| S35 | Connector verification | Anthropic | https://claude.com/docs/connectors/verification | No date shown | 15 Oct 2026 |
-| S36 | How do I change my model improvement privacy settings? | Anthropic | https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings | 3 August 2026 | 15 Oct 2026 |
-| S37 | How long do you store my data? | Anthropic | https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data | 1 July 2026 | 15 Oct 2026 |
-| S38 | Upload files to Claude | Anthropic | https://support.claude.com/en/articles/8241126-what-kinds-of-documents-can-i-upload-to-claude-ai | 23 July 2026 | 15 Oct 2026 |
-| S39 | Plugins (ChatGPT Learn) | OpenAI | https://learn.chatgpt.com/docs/plugins | No date shown | 15 Oct 2026 |
-| S40 | MYOB and Microsoft sign five-year strategic partnership | Microsoft (Source Asia) | https://news.microsoft.com/source/asia/2026/04/08/myob-and-microsoft-sign-five-year-strategic-partnership/ | 8 April 2026 | 15 Oct 2026 |
-| S41 | List of all connectors (Azure Logic Apps, Power Automate, Power Apps) | Microsoft Learn | https://learn.microsoft.com/en-us/connectors/connector-reference/ | 2 October 2026 (page metadata) | 15 Oct 2026 |
-| S42 | Get started with Copilot in Excel | Microsoft Support | https://support.microsoft.com/en-us/office/get-started-with-copilot-in-excel-d7110502-0334-4b4f-a175-a73abdfc118a | No date shown | 15 Oct 2026 |
-| S43 | Upload & analyze files in Gemini Apps | Google | https://support.google.com/gemini/answer/14903178 | No date shown | 15 Oct 2026 |
-| S44 | MYOB Business API: Getting Started | MYOB Developer | https://developer.myob.com/api/myob-business-api/api-overview/getting-started/ | April 2023 | 15 Oct 2026 |
-| S45 | MYOB Business API: Authentication | MYOB Developer | https://developer.myob.com/api/myob-business-api/api-overview/authentication/ | "Date Updated: Mar 2025" | 15 Oct 2026 |
-| S46 | Granular Data Scopes | MYOB Developer | https://developer.myob.com/api/myob-business-api/api-overview/granular_data_scopes/ | Nov 2025 | 15 Oct 2026 |
-| S47 | MYOB Developer Program and Platform Terms | MYOB Developer | https://developer.myob.com/program/terms-conditions/business-api-tandcs/ | "Last Updated 12 March 2026" | 15 Oct 2026 |
-| S48 | What is the Developer Program | MYOB Developer | https://developer.myob.com/what-is-the-developer-program/ | No date shown | 15 Oct 2026 |
-| S49 | MYOB Developer Security Requirements | MYOB Developer | https://developer.myob.com/program/security-requirements/ | No date shown | 15 Oct 2026 |
-| S50 | MYOB App Marketplace (listing your app) | MYOB Developer | https://developer.myob.com/program/add-on-listing-on-myob-com/ | No date shown | 15 Oct 2026 |
-| S51 | MYOB App Marketplace | MYOB | https://www.myob.com/au/apps | No date shown | 15 Oct 2026 |
-| S52 | Dext (marketplace listing) | MYOB | https://www.myob.com/au/apps/dext | No date shown | 15 Oct 2026 |
-| S53 | Accounts Payable – AP Automation Solution for MYOB (marketplace listing) | MYOB | https://www.myob.com/au/apps/accounts-payable-solution-for-myob | No date shown | 15 Oct 2026 |
-| S54 | Lightyear (marketplace listing) | MYOB | https://www.myob.com/au/apps/lightyear | No date shown | 15 Oct 2026 |
-| S55 | MYOB integrations | Zapier | https://zapier.com/apps/myob/integrations | No date shown. Returned "not found" when loaded directly; wording read from the search index | 15 Oct 2026 |
-| S56 | AI tools for MYOB Acumatica | MYOB | https://www.myob.com/au/erp-software/solutions/ai-erp | No date shown | 15 Oct 2026 |
-| S57 | MYOB Acumatica launches new AI Studio in collaboration with AWS | MYOB | https://www.myob.com/au/press-releases/myob-acumatica-launches-new-ai-studio-in-collaboration-with-aws | 28 April 2026 | 15 Oct 2026 |
-| S58 | AI Studio: Renaming of AI Features (2026 R1 release notes) | MYOB | https://help.myob.com.au/advanced/Docs/Published/ReleaseNotes/RN_2026_R1_AI_Studio_Renaming_Features.html | Version 2026.1.1; no date shown | 15 Oct 2026 |
-| S59 | Finance: Anomaly Detection for Journal Entries (2026 R1 release notes) | MYOB | https://help.myob.com.au/advanced/Docs/Published/ReleaseNotes/RN_2026_R1_Finance_AnomalyDetection_GI.html | Version 2026.1.1; no date shown | 15 Oct 2026 |
-| S60 | Practice Compliance | MYOB | https://www.myob.com/au/accountants-and-bookkeepers/products/practice-compliance | No date shown | 15 Oct 2026 |
-| S61 | Accountants and bookkeepers | MYOB | https://www.myob.com/au/accountants-and-bookkeepers | No date shown | 15 Oct 2026 |
-| S62 | Move your company file online to keep working | MYOB | https://www.myob.com/au/support/myob-business/product-account/working-online/put-your-company-file-online | No date shown | 15 Oct 2026 |
-| S63 | MYOB Support (home) | MYOB | https://www.myob.com/au/support | No date shown | 15 Oct 2026 |
-| S64 | MYOB and Mastercard pilot agentic payments for SMEs | MYOB | https://www.myob.com/au/press-releases/myob-and-mastercard-pilot-agentic-payments-for-smes | 15 June 2026 | 15 Oct 2026 |
-| S65 | Sale Invoice endpoint (MYOB Business API v2) | MYOB Developer | https://developer.myob.com/api/myob-business-api/v2/sale/invoice/ | Last updated January 2022 | 15 Oct 2026 |
-| S66 | MYOB (ChatGPT plugin listing) | OpenAI | https://chatgpt.com/plugins/plugin_asdk_app_6a698d6712708191b639ff0f4d92446b | No date shown; version 1.0.0 | 15 Oct 2026 |
-| S67 | Plugins in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001256-plugins-in-chatgpt | "Updated: 17 hours ago" (14 Oct 2026, UTC) | 15 Oct 2026 |
-| S68 | Admin controls, security, and compliance for plugins and apps | OpenAI Help Center | https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps | "Updated: 17 hours ago" (14 Oct 2026, UTC) | 15 Oct 2026 |
-| S69 | Connecting and managing app accounts in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt | "Updated: 13 days ago" (2 Oct 2026, UTC) | 15 Oct 2026 |
-| S70 | Connected apps in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt | "Updated: 4 days ago" (11 Oct 2026, UTC) | 15 Oct 2026 |
-| S71 | ChatGPT release notes | OpenAI Help Center | https://help.openai.com/en/articles/6825453-chatgpt-release-notes | "Updated: 6 days ago" (9 Oct 2026, UTC) | 15 Oct 2026 |
+| S1 | MYOB AI Accounting Software (Iris by MYOB) | MYOB | https://www.myob.com/au/ai-accounting | No date shown | 18 Nov 2026 |
+| S2 | Plans and pricing | MYOB | https://www.myob.com/au/pricing | No date shown | 18 Nov 2026 |
+| S3 | Understand your business with Ask Iris (Beta) | MYOB | https://www.myob.com/au/support/myob-business/get-help-support/ai-assistant | No date shown | 18 Nov 2026 |
+| S4 | Connecting AI tools to MYOB (titled "Connecting Claude or ChatGPT to MYOB" when read on 15 Oct 2026) | MYOB | https://www.myob.com/au/support/myob-business/product-account/connecting-myob | No date shown | 18 Nov 2026 |
+| S5 | MYOB brings SME financial intelligence into Claude and ChatGPT | MYOB | https://www.myob.com/au/press-releases/myob-brings-sme-financial-intelligence-into-chatgpt-and-claude | 17 August 2026 | 18 Nov 2026 |
+| S6 | MYOB (connector listing) | Anthropic | https://claude.com/marketplace/connectors/myob | "Added July 2026" | 18 Nov 2026 |
+| S7 | AI BAS | MYOB | https://www.myob.com/au/products/ai-bas-software | No date shown | 18 Nov 2026 |
+| S8 | Get BAS-ready faster with AI BAS | MYOB | https://www.myob.com/au/support/myob-business/end-of-period/month-end-procedures/ai-bas | No date shown | 18 Nov 2026 |
+| S9 | MYOB Premium Features | MYOB | https://www.myob.com/au/support/billing-and-account/myob-premium-features | No date shown | 18 Nov 2026 |
+| S10 | MYOB expands AI BAS beta to employing businesses | MYOB | https://www.myob.com/au/press-releases/myob-expands-ai-bas-beta-to-employing-businesses | 15 September 2026 | 18 Nov 2026 |
+| S11 | MYOB rolls out suite of AI products to power up SME productivity | MYOB | https://www.myob.com/au/press-releases/myob-rolls-out-suite-of-ai-products-to-power-up-sme-productivity | 2 March 2026 | 18 Nov 2026 |
+| S12 | Review as you go for easier reconciliation | MYOB | https://www.myob.com/au/support/myob-business/banking/smart-reconciliation | No date shown | 18 Nov 2026 |
+| S13 | Matching transactions with automatches and suggestions | MYOB | https://www.myob.com/au/support/myob-business/banking/automatches-and-suggestions | No date shown | 18 Nov 2026 |
+| S14 | Send Smart Invoice Reminders | MYOB | https://www.myob.com/au/support/myob-business/sales/online-invoicing/setting-up-invoice-reminders | No date shown | 18 Nov 2026 |
+| S15 | AI Business Insights | MYOB | https://www.myob.com/au/ai-accounting/business-insights | No date shown | 18 Nov 2026 |
+| S16 | Business Insights, including AI Business Insights (Beta) | MYOB | https://www.myob.com/au/support/myob-business/accounting/financial-control/reviewing-financial-information/business-insights-overview | No date shown | 18 Nov 2026 |
+| S17 | MYOB Assist | MYOB | https://www.myob.com/au/myob-apps/assist | No date shown | 18 Nov 2026 |
+| S18 | Getting started with the MYOB Assist app | MYOB | https://www.myob.com/au/support/myobapp/getting-started-with-myob-assist | No date shown | 18 Nov 2026 |
+| S19 | Capture an expense | MYOB | https://www.myob.com/au/support/myobapp/apphelp/capture | No date shown | 18 Nov 2026 |
+| S20 | Working with uploaded documents | MYOB | https://www.myob.com/au/support/myob-business/purchases/working-with-in-tray-documents | No date shown | 18 Nov 2026 |
+| S21 | What's new and what's next (product roadmap) | MYOB | https://www.myob.com/au/myob-product-roadmap | No date shown | 18 Nov 2026 |
+| S22 | MYOB Business Lite | MYOB | https://www.myob.com/au/products/myob-business/lite | No date shown | 18 Nov 2026 |
+| S23 | MYOB Business Pro | MYOB | https://www.myob.com/au/products/myob-business/pro | No date shown | 18 Nov 2026 |
+| S24 | MYOB Business AccountRight Plus | MYOB | https://www.myob.com/au/products/myob-business/accountright-plus | No date shown | 18 Nov 2026 |
+| S25 | MYOB Business AccountRight Premier | MYOB | https://www.myob.com/au/products/myob-business/accountright-premier | No date shown | 18 Nov 2026 |
+| S26 | Solo by MYOB (product page) and Solo support home | MYOB | https://www.myob.com/au/products/solo and https://www.myob.com/au/support/solo | No date shown | 18 Nov 2026 |
+| S27 | MYOB Business Terms of Use | MYOB | https://www.myob.com/au/legal/myob-business-terms | "Last updated: June 2026" | 18 Nov 2026 |
+| S28 | Privacy Policy | MYOB | https://www.myob.com/au/legal/privacy-policy | "August 2026" | 18 Nov 2026 |
+| S29 | Security Practices (Trust Centre) | MYOB | https://www.myob.com/au/legal/security-practices | No date shown | 18 Nov 2026 |
+| S30 | Security at MYOB | MYOB | https://www.myob.com/au/support/security | No date shown | 18 Nov 2026 |
+| S31 | Manage users (user access) | MYOB | https://www.myob.com/au/support/myob-business/business-settings/manage-users | No date shown | 18 Nov 2026 |
+| S32 | Exporting reports | MYOB | https://www.myob.com/au/support/myob-business/reporting/exporting-reports | No date shown | 18 Nov 2026 |
+| S33 | Use connectors to extend Claude's capabilities | Anthropic | https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities | "Updated today" (as at 18 Nov 2026) | 18 Nov 2026 |
+| S34 | Connectors directory | Anthropic | https://claude.com/docs/connectors/directory | No date shown | 18 Nov 2026 |
+| S35 | Connector verification | Anthropic | https://claude.com/docs/connectors/verification | No date shown | 18 Nov 2026 |
+| S36 | How do I change my model improvement privacy settings? | Anthropic | https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings | 3 August 2026 | 18 Nov 2026 |
+| S37 | How long do you store my data? | Anthropic | https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data | 1 July 2026 | 18 Nov 2026 |
+| S38 | Upload files to Claude | Anthropic | https://support.claude.com/en/articles/8241126-what-kinds-of-documents-can-i-upload-to-claude-ai | 23 July 2026 | 18 Nov 2026 |
+| S39 | Plugins (ChatGPT Learn) | OpenAI | https://learn.chatgpt.com/docs/plugins | No date shown | 18 Nov 2026 |
+| S40 | MYOB and Microsoft sign five-year strategic partnership | Microsoft (Source Asia) | https://news.microsoft.com/source/asia/2026/04/08/myob-and-microsoft-sign-five-year-strategic-partnership/ | 8 April 2026 | 18 Nov 2026 |
+| S41 | List of all connectors (Azure Logic Apps, Power Automate, Power Apps) | Microsoft Learn | https://learn.microsoft.com/en-us/connectors/connector-reference/ | 18 November 2026 (page metadata) | 18 Nov 2026 |
+| S42 | Get started with Copilot in Excel | Microsoft Support | https://support.microsoft.com/en-us/office/get-started-with-copilot-in-excel-d7110502-0334-4b4f-a175-a73abdfc118a | No date shown | 18 Nov 2026 |
+| S43 | Attach & analyze files in Gemini Apps | Google | https://support.google.com/gemini/answer/14903178 | No date shown | 18 Nov 2026 |
+| S44 | MYOB Business API: Getting Started | MYOB Developer | https://developer.myob.com/api/myob-business-api/api-overview/getting-started/ | April 2023 | 18 Nov 2026 |
+| S45 | MYOB Business API: Authentication | MYOB Developer | https://developer.myob.com/api/myob-business-api/api-overview/authentication/ | "Date Updated: Mar 2025" | 18 Nov 2026 |
+| S46 | Granular Data Scopes | MYOB Developer | https://developer.myob.com/api/myob-business-api/api-overview/granular_data_scopes/ | Nov 2025 | 18 Nov 2026 |
+| S47 | MYOB Developer Program and Platform Terms | MYOB Developer | https://developer.myob.com/program/terms-conditions/business-api-tandcs/ | "Last Updated 12 March 2026" | 18 Nov 2026 |
+| S48 | What is the Developer Program | MYOB Developer | https://developer.myob.com/what-is-the-developer-program/ | No date shown | 18 Nov 2026 |
+| S49 | MYOB Developer Security Requirements | MYOB Developer | https://developer.myob.com/program/security-requirements/ | No date shown | 18 Nov 2026 |
+| S50 | MYOB App Marketplace (listing your app) | MYOB Developer | https://developer.myob.com/program/add-on-listing-on-myob-com/ | No date shown | 18 Nov 2026 |
+| S51 | MYOB App Marketplace | MYOB | https://www.myob.com/au/apps | No date shown | 18 Nov 2026 |
+| S52 | Dext (marketplace listing) | MYOB | https://www.myob.com/au/apps/dext | No date shown | 18 Nov 2026 |
+| S53 | Accounts Payable – AP Automation Solution for MYOB (marketplace listing) | MYOB | https://www.myob.com/au/apps/accounts-payable-solution-for-myob | No date shown | 18 Nov 2026 |
+| S54 | Lightyear (marketplace listing) | MYOB | https://www.myob.com/au/apps/lightyear | No date shown | 18 Nov 2026 |
+| S55 | MYOB integrations | Zapier | https://zapier.com/apps/myob/integrations | No date shown (© 2026). Refuses automated readers ("not found"); read in a browser on 18 Nov 2026 | 18 Nov 2026 |
+| S56 | AI tools for MYOB Acumatica | MYOB | https://www.myob.com/au/erp-software/solutions/ai-erp | No date shown | 18 Nov 2026 |
+| S57 | MYOB Acumatica launches new AI Studio in collaboration with AWS | MYOB | https://www.myob.com/au/press-releases/myob-acumatica-launches-new-ai-studio-in-collaboration-with-aws | 28 April 2026 | 18 Nov 2026 |
+| S58 | AI Studio: Renaming of AI Features (2026 R1 release notes) | MYOB | https://help.myob.com.au/advanced/Docs/Published/ReleaseNotes/RN_2026_R1_AI_Studio_Renaming_Features.html | Version 2026.1.1; no date shown | 18 Nov 2026 |
+| S59 | Finance: Anomaly Detection for Journal Entries (2026 R1 release notes) | MYOB | https://help.myob.com.au/advanced/Docs/Published/ReleaseNotes/RN_2026_R1_Finance_AnomalyDetection_GI.html | Version 2026.1.1; no date shown | 18 Nov 2026 |
+| S60 | Practice Compliance | MYOB | https://www.myob.com/au/accountants-and-bookkeepers/products/practice-compliance | No date shown | 18 Nov 2026 |
+| S61 | Accountants and bookkeepers | MYOB | https://www.myob.com/au/accountants-and-bookkeepers | No date shown | 18 Nov 2026 |
+| S62 | Move your company file online to keep working | MYOB | https://www.myob.com/au/support/myob-business/product-account/working-online/put-your-company-file-online | No date shown | 18 Nov 2026 |
+| S63 | MYOB Support (home) | MYOB | https://www.myob.com/au/support | No date shown | 18 Nov 2026 |
+| S64 | MYOB and Mastercard pilot agentic payments for SMEs | MYOB | https://www.myob.com/au/press-releases/myob-and-mastercard-pilot-agentic-payments-for-smes | 15 June 2026 | 18 Nov 2026 |
+| S65 | Sale Invoice endpoint (MYOB Business API v2) | MYOB Developer | https://developer.myob.com/api/myob-business-api/v2/sale/invoice/ | Last updated January 2022 | 18 Nov 2026 |
+| S66 | MYOB (ChatGPT plugin listing) | OpenAI | https://chatgpt.com/plugins/plugin_asdk_app_6a698d6712708191b639ff0f4d92446b | No date shown; version 1.0.0 | 18 Nov 2026 |
+| S67 | Plugins in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001256-plugins-in-chatgpt | "Updated: yesterday" (17 Nov 2026) | 18 Nov 2026 |
+| S68 | Admin controls, security, and compliance for plugins and apps | OpenAI Help Center | https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps | "Updated: 13 days ago" (5 Nov 2026) | 18 Nov 2026 |
+| S69 | Connecting and managing app accounts in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt | "Updated: yesterday" (17 Nov 2026) | 18 Nov 2026 |
+| S70 | Connected apps in ChatGPT | OpenAI Help Center | https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt | "Updated: yesterday" (17 Nov 2026) | 18 Nov 2026 |
+| S71 | ChatGPT release notes | OpenAI Help Center | https://help.openai.com/en/articles/6825453-chatgpt-release-notes | "Updated: 21 hours ago" (17 Nov 2026) | 18 Nov 2026 |
+| S72 | Connecting Claude to MYOB | MYOB | https://www.myob.com/au/support/myob-business/product-account/connecting-claude-to-myob | No date shown | 18 Nov 2026 |
+| S73 | Connecting ChatGPT to MYOB | MYOB | https://www.myob.com/au/support/myob-business/product-account/connecting-chatgpt-to-myob | No date shown | 18 Nov 2026 |
+| S74 | MYOB launches Iris by MYOB, the agentic AI foundation for future-ready businesses | MYOB | https://www.myob.com/au/press-releases/myob-launches-iris-by-myob-the-agentic-ai-foundation-for-future-ready-businesses | 19 October 2026 | 18 Nov 2026 |
+| S75 | Microsoft-built connectors gallery (Microsoft 365 Copilot connectors) | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft | 16 November 2026 (page metadata) | 18 Nov 2026 |
+| S76 | Partner-built connectors gallery (Microsoft 365 Copilot connectors) | Microsoft Learn | https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-partners | 16 November 2026 (page metadata) | 18 Nov 2026 |

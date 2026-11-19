@@ -4,16 +4,16 @@
     "from": "Claude",
     "to": "Compass",
     "who": "anyone",
-    "plan_needed": "Your school must have Compass AI switched on by its Compass account manager, and your school or education authority must have approved Claude. You need the Compass permissions your school requires for the connector. Any Claude plan: Free allows one custom connector, and Pro and Max users add their own. On Claude Team or Enterprise, an Owner adds the connector first (see claude-team-owner-adds-compass). Compass isn't in Anthropic's Connectors Directory yet, so it's added as a custom connector.",
+    "plan_needed": "Your school must have Compass AI switched on by its Compass account manager, and your school or education authority must have approved Claude. You need the Compass permissions your school requires for the connector. Any Claude plan: Free allows one custom connector, and Pro, Max and Ultra users add their own. On Claude Team or Enterprise, an Owner adds the connector first (see claude-team-owner-adds-compass). Compass isn't in Anthropic's Connectors Directory yet, so it's added as a custom connector.",
     "steps": [
       {
         "where": "Claude (web or desktop), Customize > Connectors",
-        "do": "Go to Customize > Connectors and click Add custom connector. Compass's page calls this menu Settings › Connectors.",
+        "do": "Go to Customize > Connectors, select Add, then Add custom connector. Compass's page calls this menu Settings › Connectors.",
         "see": "The Add custom connector dialog."
       },
       {
         "where": "Add custom connector dialog",
-        "do": "Paste https://mcp.compass.education/mcp as the server URL, then click Add.",
+        "do": "Enter a name for the connector and paste https://mcp.compass.education/mcp as the server URL. Click Continue, keep any sign-in settings marked Detected, then click Add. If the connector shows Connect, click it. Compass's page says only to click Add.",
         "see": "Claude opens Compass's school picker."
       },
       {
@@ -55,7 +55,7 @@
       }
     ],
     "source": "S9, S29, S30, S10",
-    "doc_updated": null
+    "doc_updated": "2026-11-16"
   },
   {
     "id": "claude-team-owner-adds-compass",
@@ -71,7 +71,7 @@
       },
       {
         "where": "Add custom connector dialog",
-        "do": "Enter https://mcp.compass.education/mcp as the server URL and click Add.",
+        "do": "Enter a name for the connector and https://mcp.compass.education/mcp as the server URL. If the dialog shows Continue, click it. Choose the sign-in settings, keeping any marked Detected, then click Add.",
         "see": "The connector appears for members under Customize > Connectors with the Custom label."
       },
       {
@@ -88,7 +88,7 @@
       }
     ],
     "source": "S29, S30, S9",
-    "doc_updated": null
+    "doc_updated": "2026-11-16"
   },
   {
     "id": "gemini-enterprise-admin-adds-compass",
@@ -103,8 +103,8 @@
         "see": "The Gemini Enterprise console."
       },
       {
-        "where": "Gemini Enterprise, Data stores",
-        "do": "Compass says go to Connectors › Custom MCP server › Add custom MCP server. Google's guide says click Data stores, then Create data store, type Custom MCP Server into Search sources and click Add MCP server.",
+        "where": "Gemini Enterprise, Apps > your app > Connected Data Stores",
+        "do": "Compass says go to Connectors › Custom MCP server › Add custom MCP server. Google's guide says click Apps, select your app, click Connected Data Stores, then New data store, type Custom MCP Server into Search sources and click Add MCP server.",
         "see": "The MCP Server Configuration page."
       },
       {
@@ -146,7 +146,7 @@
       }
     ],
     "source": "S9, S38, S10",
-    "doc_updated": "2026-10-16"
+    "doc_updated": "2026-11-11"
   },
   {
     "id": "developer-app-to-compass-api",
@@ -177,6 +177,6 @@
       }
     ],
     "source": "S15, S13",
-    "doc_updated": "2026-10-16"
+    "doc_updated": "2026-11-18"
   }
 ]

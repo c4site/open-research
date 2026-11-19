@@ -1,6 +1,6 @@
 {
  "kind": "rules",
- "checked": "2026-10-17",
+ "checked": "2026-11-18",
  "sources": [
   {
    "id": "rules-courts:S1",
@@ -8,7 +8,7 @@
    "publisher": "Supreme Court of New South Wales",
    "url": "https://supremecourt.nsw.gov.au/documents/Practice-and-Procedure/Practice-Notes/general/current/PN_SC_Gen_23.pdf",
    "updated": "28 January 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S2",
@@ -16,7 +16,7 @@
    "publisher": "Supreme Court of New South Wales",
    "url": "https://supremecourt.nsw.gov.au/practice-procedure/generative-artificial-intelligence.html",
    "updated": "Last updated: 23 March 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S3",
@@ -24,7 +24,7 @@
    "publisher": "Supreme Court of New South Wales",
    "url": "https://supremecourt.nsw.gov.au/documents/media/Statement-AI-20251117.pdf",
    "updated": "17 November 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S4",
@@ -48,7 +48,7 @@
    "publisher": "Supreme Court of Victoria",
    "url": "https://www.supremecourt.vic.gov.au/sites/default/files/2026-05/SC%20Gen%2025%20Use%20of%20Artificial%20Intelligence%20by%20Court%20Users_0.pdf",
    "updated": "14 May 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S7",
@@ -56,7 +56,7 @@
    "publisher": "Queensland Courts",
    "url": "https://www.courts.qld.gov.au/__data/assets/pdf_file/0011/889148/sc-pd-5-pf-2025.pdf",
    "updated": "24 September 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S8",
@@ -64,7 +64,7 @@
    "publisher": "Queensland Courts",
    "url": "https://www.courts.qld.gov.au/__data/assets/pdf_file/0010/867502/artificial-intelligence-guidelines-for-non-lawyers.pdf",
    "updated": "15 September 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S9",
@@ -72,15 +72,15 @@
    "publisher": "Queensland Courts",
    "url": "https://www.courts.qld.gov.au/__data/assets/pdf_file/0005/867479/scpd-14-of-2024.pdf",
    "updated": "10 September 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S10",
    "title": "Consolidated Practice Directions (PD 9.21 and Table of Amendments)",
    "publisher": "Supreme Court of Western Australia",
-   "url": "https://www.supremecourt.wa.gov.au/_files/Consolidated%20Practice%20Directions%20(Original%20as%20at%2025%20September%202026).pdf",
-   "updated": "As updated on 25 September 2026; amendment table lists PD 9.21 as new on 10/12/2025",
-   "read": "17 Oct 2026"
+   "url": "https://www.supremecourt.wa.gov.au/_files/Consolidated%20Practice%20Directions%20(Original%20as%20at%2028%20October%202026).pdf",
+   "updated": "As updated on 28 October 2026; amendment table lists PD 9.21 as new on 10/12/2025",
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S11",
@@ -88,7 +88,7 @@
    "publisher": "Supreme Court of Western Australia",
    "url": "https://www.supremecourt.wa.gov.au/_files/Guidelines%20for%20the%20Use%20of%20Generative%20Artificial%20Intelligence.pdf",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S12",
@@ -96,7 +96,7 @@
    "publisher": "Courts Administration Authority (South Australia)",
    "url": "https://www.courts.sa.gov.au/download/generative-ai-guidelines-and-information-sheet-for-self-represented-litigants/?ind=1766530847811&filename=Generative%20AI%20Guidelines.pdf&wpdmdl=25796",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S13",
@@ -104,7 +104,7 @@
    "publisher": "Courts Administration Authority (South Australia)",
    "url": "https://www.courts.sa.gov.au/2025/12/24/guidelines-concerning-the-use-of-generative-artificial-intelligence-in-litigation-in-south-australian-courts/",
    "updated": "December 24th, 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S14",
@@ -112,7 +112,7 @@
    "publisher": "Courts Administration Authority (South Australia)",
    "url": "https://www.courts.sa.gov.au/2026/01/19/supreme-court-issues-guidelines-for-the-use-of-generative-ai/",
    "updated": "January 19th, 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S15",
@@ -120,7 +120,7 @@
    "publisher": "Courts Administration Authority (South Australia)",
    "url": "https://www.courts.sa.gov.au/download/generative-ai-guidelines-and-information-sheet-for-self-represented-litigants/?ind=1766530873177&filename=Gen%20AI%20Information%20Sheet%20for%20Self-Represented%20Litigants.pdf&wpdmdl=25796",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S16",
@@ -128,7 +128,7 @@
    "publisher": "Federal Court of Australia",
    "url": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-ai",
    "updated": "16 April 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S17",
@@ -136,7 +136,7 @@
    "publisher": "Federal Court of Australia",
    "url": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/notice-to-profession/16-april-2026",
    "updated": "16 April 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S18",
@@ -144,7 +144,7 @@
    "publisher": "Federal Court of Australia",
    "url": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/notice-to-profession/29-april-2025",
    "updated": "29 April 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S19",
@@ -152,7 +152,7 @@
    "publisher": "Federal Circuit and Family Court of Australia",
    "url": "https://www.fcfcoa.gov.au/sites/default/files/2026-05/fcfcoa_pd_-_use_of_artificial_intelligence_-_pd-ai_-_0526v1.pdf",
    "updated": "Issued: 29 May 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S20",
@@ -160,7 +160,7 @@
    "publisher": "District Court of New South Wales",
    "url": "https://districtcourt.nsw.gov.au/documents/practice-notes/district-court-pn---general/Gen_AI_Practice_Note.pdf",
    "updated": "18 December 2024",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S21",
@@ -168,7 +168,7 @@
    "publisher": "Local Court of New South Wales",
    "url": "https://localcourt.nsw.gov.au/documents/practice-notes/other/Practice_Note_Generative_Artificial_Intelligence_Commences_12.01.26.pdf",
    "updated": "Issued: 12 December 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S22",
@@ -176,7 +176,7 @@
    "publisher": "Land and Environment Court of New South Wales",
    "url": "https://lec.nsw.gov.au/documents/practice-notes/Practice_Note_-_Use_of_Generative_Artificial_Intelligence_UPDATED.pdf",
    "updated": "11 February 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S23",
@@ -184,7 +184,7 @@
    "publisher": "Land and Environment Court of New South Wales",
    "url": "https://lec.nsw.gov.au/news-and-announcements/practice-note---use-of-generative-ai.html",
    "updated": "Last updated: 11 February 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S24",
@@ -192,7 +192,7 @@
    "publisher": "NSW Civil and Administrative Tribunal",
    "url": "https://ncat.nsw.gov.au/documents/procedural-directions/ncat-pd7-use-of-generative-ai.pdf",
    "updated": "Issued: 7 March 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S25",
@@ -200,7 +200,7 @@
    "publisher": "NSW Civil and Administrative Tribunal",
    "url": "https://ncat.nsw.gov.au/publications-and-resources/news-and-announcements/news/2026/protect-your-privacy-when-using-gen-ai-in-tribunal-proceedings.html",
    "updated": "Last updated: 05 May 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S26",
@@ -208,7 +208,7 @@
    "publisher": "Industrial Relations Commission of New South Wales",
    "url": "https://irc.nsw.gov.au/documents/practice-notes/Practice_Note_No_33_-_Use_of_GenAI.pdf",
    "updated": "14 February 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S27",
@@ -216,7 +216,7 @@
    "publisher": "Personal Injury Commission of New South Wales",
    "url": "https://www.pi.nsw.gov.au/resources/procedural-directions/procedural-direction-pic13-use-of-generative-artificial-intelligence",
    "updated": "Date of commencement: 1 January 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S28",
@@ -224,7 +224,7 @@
    "publisher": "Children's Court of New South Wales",
    "url": "https://childrenscourt.nsw.gov.au/documents/practice-notes/Practice_Note_21__Generative_Artificial_Intelligence.pdf",
    "updated": "Issued 4 September 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S29",
@@ -232,7 +232,7 @@
    "publisher": "Western Australian Industrial Relations Commission",
    "url": "https://www.wairc.wa.gov.au/assets/Practice-Notes/Practice-Note-1-of-2026-Use-of-artificial-intelligence.pdf",
    "updated": "No issue date shown; gives its Gazette publication as 22 April 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S30",
@@ -240,7 +240,7 @@
    "publisher": "Legal Practice Board of Western Australia",
    "url": "https://www.lpbwa.org.au/artificial-intelligence-joint-statement",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S31",
@@ -248,7 +248,7 @@
    "publisher": "Legal Practice Board of Western Australia",
    "url": "https://www.lpbwa.org.au/ai-guidance-to-safeguard-consumers-of-legal-services",
    "updated": "06 December, 2024",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S32",
@@ -256,15 +256,15 @@
    "publisher": "Victorian Legal Services Board + Commissioner",
    "url": "https://lsbc.vic.gov.au/news-updates/news/statement-use-artificial-intelligence-australian-legal-practice",
    "updated": "06 December 2024",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S33",
-   "title": "A Solicitor's Guide to Responsible Use of Artificial Intelligence",
+   "title": "A Solicitor's Guide to Responsible Use of Artificial Intelligence (October 2024 version)",
    "publisher": "Law Society of New South Wales",
    "url": "https://www.lawsociety.com.au/sites/default/files/2024-12/LS4527_MKG_ResponsibleAIGuide_2024-10-25%5B43%5D.pdf",
    "updated": "October 2024",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S34",
@@ -272,7 +272,7 @@
    "publisher": "New South Wales Bar Association",
    "url": "https://nswbar.asn.au/uploads/pdf-documents/Updated_NSWBA_Gen-AI_Guidelines.pdf",
    "updated": "19 December 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S35",
@@ -280,7 +280,7 @@
    "publisher": "New South Wales Bar Association",
    "url": "https://nswbar.asn.au/the-bar-association/publications/inbrief/view/bb2507f02d4ff8b399e840ed490159aa",
    "updated": "19/12/2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S36",
@@ -288,7 +288,7 @@
    "publisher": "Victorian Legal Services Board + Commissioner",
    "url": "https://lsbc.vic.gov.au/lawyers/risk-outlook/risk-outlook-2026",
    "updated": "Last updated on 29 April 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S37",
@@ -296,7 +296,7 @@
    "publisher": "Victorian Legal Services Board + Commissioner",
    "url": "https://lsbc.vic.gov.au/news-updates/news/risk-outlook-2026-new-and-persistent-risks-lawyers-highlighted",
    "updated": "31 March 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S38",
@@ -304,7 +304,7 @@
    "publisher": "Queensland Law Society",
    "url": "https://www.qls.com.au/practising-law-in-qld/ethics/guidance-statements/no-37-artificial-intelligence-in-legal-practice",
    "updated": "Published 31 May 2024",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-courts:S39",
@@ -312,7 +312,47 @@
    "publisher": "Law Council of Australia",
    "url": "https://lawcouncil.au/policy-agenda/advancing-the-profession/artificial-intelligence-and-the-legal-profession",
    "updated": "Last Updated on 03/09/2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
+  },
+  {
+   "id": "rules-courts:S40",
+   "title": "A Solicitor's Guide to Responsible Use of Artificial Intelligence (January 2026)",
+   "publisher": "Law Society of New South Wales",
+   "url": "https://www.lawsociety.com.au/sites/default/files/2026-01/20260109%20LS4816_PSU_GuidetoAI_2026-01-08a%20FINALv2.pdf",
+   "updated": "Updated January 2026",
+   "read": "18 Nov 2026"
+  },
+  {
+   "id": "rules-courts:S41",
+   "title": "New resources support lawyers to use artificial intelligence",
+   "publisher": "Victorian Legal Services Board + Commissioner",
+   "url": "https://lsbc.vic.gov.au/news-updates/news/new-resources-support-lawyers-use-artificial-intelligence",
+   "updated": "09 November 2026",
+   "read": "18 Nov 2026"
+  },
+  {
+   "id": "rules-courts:S42",
+   "title": "AI checklist for lawyers",
+   "publisher": "Victorian Legal Services Board + Commissioner",
+   "url": "https://lsbc.vic.gov.au/ai-checklist-lawyers",
+   "updated": "Last updated on 10 November 2026",
+   "read": "18 Nov 2026"
+  },
+  {
+   "id": "rules-courts:S43",
+   "title": "AI checklist for law practice leaders and principals",
+   "publisher": "Victorian Legal Services Board + Commissioner",
+   "url": "https://lsbc.vic.gov.au/ai-checklist-law-practice-leaders-and-principals",
+   "updated": "Last updated on 10 November 2026",
+   "read": "18 Nov 2026"
+  },
+  {
+   "id": "rules-courts:S44",
+   "title": "Notices to the Profession",
+   "publisher": "Federal Court of Australia",
+   "url": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/notice-to-profession",
+   "updated": "No date shown",
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S1",
@@ -320,7 +360,7 @@
    "publisher": "Department of Industry, Science and Resources",
    "url": "https://www.industry.gov.au/publications/national-ai-plan",
    "updated": "Date published 2 December 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S2",
@@ -328,7 +368,7 @@
    "publisher": "Department of Industry, Science and Resources",
    "url": "https://www.industry.gov.au/publications/national-ai-plan/keep-australians-safe",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S3",
@@ -336,7 +376,7 @@
    "publisher": "Department of Industry, Science and Resources",
    "url": "https://consult.industry.gov.au/ai-mandatory-guardrails",
    "updated": "No date shown for the update; consultation ran 5 September to 4 October 2024",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S4",
@@ -344,7 +384,7 @@
    "publisher": "Department of Industry, Science and Resources",
    "url": "https://www.industry.gov.au/publications/australian-government-response-senate-select-committee-adopting-artificial-intelligence-ai-report",
    "updated": "Date published 1 April 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S5",
@@ -352,7 +392,7 @@
    "publisher": "National Artificial Intelligence Centre (AI.gov.au)",
    "url": "https://www.ai.gov.au/staying-safe-and-responsible/essential-ai-practices/guidance-ai-adoption-foundations",
    "updated": "Page shows 'Published 05 May 2026'",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S6",
@@ -360,7 +400,7 @@
    "publisher": "National Artificial Intelligence Centre",
    "url": "https://www.ai.gov.au/sites/default/files/2026-07/Guidance-for-AI-adoption-foundations_2.pdf",
    "updated": "October 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S7",
@@ -368,7 +408,7 @@
    "publisher": "National Artificial Intelligence Centre (Department of Industry, Science and Resources)",
    "url": "https://www.industry.gov.au/publications/voluntary-ai-safety-standard",
    "updated": "Published 5 September 2024; updated 2 December 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S8",
@@ -376,7 +416,7 @@
    "publisher": "National Artificial Intelligence Centre (AI.gov.au)",
    "url": "https://www.ai.gov.au/staying-safe-and-responsible/essential-ai-practices/be-clear-about-ai-use",
    "updated": "Download shows 'Published 22 April 2026'",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S9",
@@ -384,7 +424,7 @@
    "publisher": "National Artificial Intelligence Centre",
    "url": "https://www.ai.gov.au/sites/default/files/2026-07/Being-clear-about-AI-generated-content_0_0.pdf",
    "updated": "November 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S10",
@@ -392,7 +432,7 @@
    "publisher": "Office of the Australian Information Commissioner",
    "url": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products",
    "updated": "Published 21 October 2024; updated 17 January 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S11",
@@ -400,7 +440,7 @@
    "publisher": "Office of the Australian Information Commissioner",
    "url": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-developing-and-training-generative-ai-models",
    "updated": "Published 21 October 2024; updated 23 October 2024",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S12",
@@ -408,7 +448,7 @@
    "publisher": "Office of the Australian Information Commissioner",
    "url": "https://www.oaic.gov.au/__data/assets/pdf_file/0021/269013/APP-1.7-1.9-Transparency-Obligation-Fact-Sheet.PDF",
    "updated": "September 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S13",
@@ -416,7 +456,7 @@
    "publisher": "Office of the Australian Information Commissioner",
    "url": "https://www.oaic.gov.au/news/media-centre/new-resources-on-transparency-for-use-of-ai-and-automated-decision-making",
    "updated": "Published 30 September 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S14",
@@ -424,7 +464,7 @@
    "publisher": "Fair Work Ombudsman",
    "url": "https://www.fairwork.gov.au/about-us/responsible-use-of-ai/using-ai-for-help-with-workplace-questions",
    "updated": "Content last updated 5 October 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S15",
@@ -432,7 +472,7 @@
    "publisher": "Australian Securities and Investments Commission",
    "url": "https://www.asic.gov.au/regulatory-resources/find-a-document/reports/rep-798-beware-the-gap-governance-arrangements-in-the-face-of-ai-innovation",
    "updated": "Released 29 October 2024",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S16",
@@ -440,7 +480,7 @@
    "publisher": "Australian Securities and Investments Commission",
    "url": "https://download.asic.gov.au/media/mtllqjo0/rep-798-published-29-october-2024.pdf",
    "updated": "October 2024",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S17",
@@ -448,7 +488,7 @@
    "publisher": "Australian Securities and Investments Commission",
    "url": "https://download.asic.gov.au/media/xhrf1w0e/26-092mr-open-letter-to-afs-licensees-and-market-participants.pdf",
    "updated": "8 May 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S18",
@@ -456,7 +496,7 @@
    "publisher": "Australian Prudential Regulation Authority and Australian Securities and Investments Commission",
    "url": "https://www.apra.gov.au/news-and-publications/insights-apra-asic-industry-roundtables",
    "updated": "Published 27 August 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S19",
@@ -464,7 +504,7 @@
    "publisher": "Australian Prudential Regulation Authority",
    "url": "https://www.apra.gov.au/news-and-publications/apra-letter-industry-artificial-intelligence-ai",
    "updated": "Published 30 April 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S20",
@@ -472,7 +512,7 @@
    "publisher": "eSafety Commissioner",
    "url": "https://www.esafety.gov.au/newsroom/blogs/sharing-school-imagery-in-the-age-of-ai-risks-deepfakes-and-how-to-protect-students-and-staff",
    "updated": "28 July 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S21",
@@ -480,15 +520,15 @@
    "publisher": "eSafety Commissioner",
    "url": "https://www.esafety.gov.au/sites/default/files/2026-03/Respond-Guide-to-responding-to-image-based-abuse-involving-AI-deepfakes.pdf",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S22",
    "title": "Toolkit for Schools: Respond",
    "publisher": "eSafety Commissioner",
    "url": "https://www.esafety.gov.au/educators/toolkit-schools/respond",
-   "updated": "Last updated 9 March 2026",
-   "read": "17 Oct 2026"
+   "updated": "Last updated 20 October 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S23",
@@ -496,7 +536,7 @@
    "publisher": "eSafety Commissioner",
    "url": "https://www.esafety.gov.au/sites/default/files/2025-06/Respond%203A%20-%20Guide%20to%20responding%20to%20image-based%20abuse%20involving%20AI%20deepfakes.pdf",
    "updated": "Published 06/2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S24",
@@ -504,7 +544,7 @@
    "publisher": "Department of Home Affairs",
    "url": "https://www.protectivesecurity.gov.au/system/files/2025-02/PSPF-Direction-001-2025_1.pdf",
    "updated": "February 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S25",
@@ -512,7 +552,7 @@
    "publisher": "Department of Home Affairs (protectivesecurity.gov.au)",
    "url": "https://www.protectivesecurity.gov.au/publications-library/direction-001-2025-deepseek-products-applications-and-web-services",
    "updated": "Publication date 4 February 2025; last updated 14 February 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S26",
@@ -520,7 +560,7 @@
    "publisher": "Department of Home Affairs",
    "url": "https://www.protectivesecurity.gov.au/system/files/2025-10/pspf-policy-advisory-information-use-gen-ai.pdf",
    "updated": "Version 1.0, 7 October 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S27",
@@ -528,7 +568,7 @@
    "publisher": "Digital Transformation Agency",
    "url": "https://www.digital.gov.au/policy/ai/staff-guidance-public-generative-ai",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S28",
@@ -536,23 +576,15 @@
    "publisher": "Digital Transformation Agency",
    "url": "https://www.dta.gov.au/media-releases/dta-releases-new-guidance-australian-government-use-public-generative-ai-tools",
    "updated": "13 October 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S29",
-   "title": "Policy for the responsible use of AI in government, Version 2.0 (web version)",
+   "title": "Policy for the responsible use of AI in government, Version 2.1 (web version)",
    "publisher": "Digital Transformation Agency",
    "url": "https://www.digital.gov.au/ai/ai-in-government-policy",
-   "updated": "Last updated 1 December 2025",
-   "read": "17 Oct 2026"
-  },
-  {
-   "id": "rules-regulators:S30",
-   "title": "Policy for the responsible use of AI in government, Version 2.0 (PDF)",
-   "publisher": "Digital Transformation Agency",
-   "url": "https://www.digital.gov.au/sites/default/files/documents/2025-12/Policy%20for%20the%20responsible%20use%20of%20AI%20in%20Government%202.0_0.pdf",
-   "updated": "No date shown beyond 'The December 2025 update'",
-   "read": "17 Oct 2026"
+   "updated": "Last updated 22 October 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S31",
@@ -560,7 +592,7 @@
    "publisher": "Office of Digital Government, Department of the Premier and Cabinet (WA)",
    "url": "https://www.wa.gov.au/government/publications/wa-government-artificial-intelligence-policy-and-assurance-framework",
    "updated": "First published 5 March 2024; last updated 25 August 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S32",
@@ -568,7 +600,7 @@
    "publisher": "Office of Digital Government, Department of the Premier and Cabinet (WA)",
    "url": "https://www.wa.gov.au/system/files/2025-07/ai_policyv2.pdf",
    "updated": "Published March 2024; updated June 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S33",
@@ -576,7 +608,7 @@
    "publisher": "Office of Digital Government, Department of the Premier and Cabinet (WA)",
    "url": "https://www.wa.gov.au/organisation/department-of-the-premier-and-cabinet/office-of-digital-government/artificial-intelligence-toolkit-wa-public-sector-staff",
    "updated": "Last updated 25 August 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S34",
@@ -584,7 +616,7 @@
    "publisher": "Office of Digital Government, Department of the Premier and Cabinet (WA)",
    "url": "https://www.wa.gov.au/system/files/2025-02/cybersecuritydirectiondeepseek.pdf",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S35",
@@ -592,7 +624,7 @@
    "publisher": "Office of Digital Government, Department of the Premier and Cabinet (WA)",
    "url": "https://www.wa.gov.au/government/publications/wa-government-cyber-security-policy",
    "updated": "First published 3 May 2022; last updated 7 October 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S36",
@@ -600,7 +632,7 @@
    "publisher": "State Records Office of Western Australia",
    "url": "https://www.wa.gov.au/government/publications/artificial-intelligence-and-record-keeping",
    "updated": "First published 15 January 2026; last updated 15 January 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-regulators:S37",
@@ -608,7 +640,15 @@
    "publisher": "State Records Office of Western Australia",
    "url": "https://www.wa.gov.au/system/files/2026-01/artificial-intelligence-and-record-keeping.pdf",
    "updated": "January 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
+  },
+  {
+   "id": "rules-regulators:S38",
+   "title": "Policy for the responsible use of AI in government, Version 2.1 (PDF)",
+   "publisher": "Digital Transformation Agency",
+   "url": "https://www.digital.gov.au/sites/default/files/documents/2026-10/Policy%20for%20the%20responsible%20use%20of%20AI%20in%20government%202_1_1.pdf",
+   "updated": "Version 2.1; minor updates published 21 October 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-schools-finance:S1",
@@ -616,7 +656,7 @@
    "publisher": "Australian Government Department of Education",
    "url": "https://www.education.gov.au/download/17416/australian-framework-generative-artificial-intelligence-ai-schools/35400/australian-framework-generative-ai-schools/pdf",
    "updated": "No date shown (copyright 2023)",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-schools-finance:S2",
@@ -632,7 +672,7 @@
    "publisher": "Australian Government Department of Education",
    "url": "https://www.education.gov.au/download/17416/australian-framework-generative-artificial-intelligence-ai-schools/41436/2024-review-australian-framework-generative-ai-schools/pdf",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-schools-finance:S4",
@@ -640,7 +680,7 @@
    "publisher": "Australian Government Department of Education",
    "url": "https://www.education.gov.au/schooling/announcements/2024-review-australian-framework-generative-artificial-intelligence-schools",
    "updated": "17 June 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-schools-finance:S5",
@@ -648,7 +688,7 @@
    "publisher": "Department of Education, Western Australia",
    "url": "https://www.education.wa.edu.au/web/policies/-/online-services-acceptable-use-procedures-1",
    "updated": "5 August 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-schools-finance:S6",
@@ -656,7 +696,7 @@
    "publisher": "Department of Education, Western Australia",
    "url": "https://www.education.wa.edu.au/web/policies/-/ceo-instruction-ban-on-smart-glasses-school-premises-and-residential-facilities",
    "updated": "Effective 12 October 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-schools-finance:S7",
@@ -664,15 +704,15 @@
    "publisher": "School Curriculum and Standards Authority",
    "url": "https://www.scsa.wa.edu.au/__data/assets/pdf_file/0018/1232028/_WACE-Manual-2026-April.pdf",
    "updated": "17 April 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-schools-finance:S11",
    "title": "AI companions: information sheet",
    "publisher": "eSafety Commissioner",
    "url": "https://www.esafety.gov.au/educators/training-for-professionals/professional-learning-program-teachers/ai-companions-information-sheet",
-   "updated": "Last updated 12 December 2025",
-   "read": "17 Oct 2026"
+   "updated": "Last updated 30 October 2026",
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-schools-finance:S12",
@@ -680,7 +720,7 @@
    "publisher": "ACARA (Australian Curriculum website)",
    "url": "https://www.australiancurriculum.edu.au/curriculum-information/understand-this-curriculum-connection/artificial-intelligence",
    "updated": "No date shown",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-schools-finance:S13",
@@ -688,7 +728,7 @@
    "publisher": "ACARA",
    "url": "https://www.acara.edu.au/docs/default-source/media-releases/media-release-new-resource-for-teachers-to-support-australian-students-in-understanding-ai-25-3-24.pdf",
    "updated": "25 March 2024",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-schools-finance:S14",
@@ -696,7 +736,7 @@
    "publisher": "Tax Practitioners Board",
    "url": "https://www.tpb.gov.au/tpbgs-552026-use-artificial-intelligence-and-code-professional-conduct",
    "updated": "Issued 22 July 2026; last modified 22 July 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-schools-finance:S15",
@@ -704,7 +744,7 @@
    "publisher": "Accounting Professional & Ethical Standards Board",
    "url": "https://apesb.org.au/wp-content/uploads/2025/10/TA_Use_of_AI_Oct_31_Oct_25.pdf",
    "updated": "31 October 2025",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-schools-finance:S16",
@@ -712,7 +752,7 @@
    "publisher": "Australian Taxation Office",
    "url": "https://www.ato.gov.au/about-ato/commitments-and-reporting/information-and-privacy/ato-ai-transparency-statement",
    "updated": "Last updated 27 July 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-schools-finance:S17",
@@ -720,7 +760,7 @@
    "publisher": "Australian Taxation Office",
    "url": "https://www.ato.gov.au/about-ato/protect-yourself-from-misinformation-and-disinformation",
    "updated": "Last updated 1 June 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
   },
   {
    "id": "rules-schools-finance:S18",
@@ -728,7 +768,23 @@
    "publisher": "Australian Taxation Office",
    "url": "https://www.ato.gov.au/media-centre/from-hacks-to-half-truths-ato-warns-of-tax-time-misinformation-and-reveals-focus-areas",
    "updated": "Published 27 April 2026",
-   "read": "17 Oct 2026"
+   "read": "18 Nov 2026"
+  },
+  {
+   "id": "rules-schools-finance:S19",
+   "title": "A Digital Detox (PDF)",
+   "publisher": "Australian Government Department of Education",
+   "url": "https://www.education.gov.au/download/20853/digital-detox/46397/document/pdf",
+   "updated": "November 2026; the resource page shows a creation date of 4 November 2026",
+   "read": "18 Nov 2026"
+  },
+  {
+   "id": "rules-schools-finance:S20",
+   "title": "A Digital Detox for rebalancing technology use in Australian schools (announcement)",
+   "publisher": "Australian Government Department of Education",
+   "url": "https://www.education.gov.au/schooling/announcements/digital-detox-rebalancing-technology-use-australian-schools",
+   "updated": "4 November 2026",
+   "read": "18 Nov 2026"
   }
  ],
  "gaps": [
@@ -739,34 +795,211 @@
   "The Bar Association of Queensland has published guidelines on AI for barristers. The document shows no date, so we haven't listed it.",
   "We found no stand-alone AI statement from Queensland's Legal Services Commission or the NSW Office of the Legal Services Commissioner.",
   "South Australia's courts said in January 2026 the guidelines would 'shortly be given force under Rules of the Court'. The Uniform Civil Rules we checked, current to 15 September 2026, don't mention AI.",
-  "The NSW Supreme Court's review of SC Gen 23 closed for submissions on 18 December 2025. We found no revised note by 17 October 2026.",
-  "The Victorian Legal Services Board + Commissioner said it would give lawyers more AI guidance during 2026. We found none published by 17 October 2026.",
+  "The NSW Supreme Court's review of SC Gen 23 closed for submissions on 18 December 2025. We found no revised note by 18 November 2026.",
+  "The Victorian Legal Services Board + Commissioner's two AI checklists show no publication date. We used the date of its 9 November 2026 news post. Both pages say they were last updated on 10 November 2026.",
   "Some documents show no issue date of their own. For WA's guidelines we used the 10 December 2025 entry in the Court's table of amendments.",
   "For PIC13 we used its commencement date. For South Australia we used the date of the Courts' web post, and for the Law Council its 'last updated' date.",
   "WAIRC Practice Note 1 of 2026 says it's effective 14 days after Gazette publication, 'being 22 April 2026'. It isn't clear whether that date is the publication or the start.",
+  "On 18 November 2026 we couldn't re-read the two NSW rules of court (Amendments No 104 and No 106) on the NSW legislation website, which blocked our reader. What we say about them is from our 17 October 2026 reading.",
   "The consultation page notice that the Government 'will not proceed at this time' with mandatory guardrails carries no date, and the National AI Plan itself doesn't mention guardrails.",
   "The Voluntary AI Safety Standard is still online (page updated 2 December 2025). The department says the Guidance for AI Adoption 'evolves' it and doesn't say the Standard has been withdrawn.",
   "AI.gov.au shows 'Published' dates of 5 May 2026 and 22 April 2026 for the two National AI Centre guides, but the guides themselves are dated October and November 2025, so we used the guides' own dates.",
   "The Fair Work Ombudsman page shows only a 'content last updated' date of 5 October 2026, so we couldn't establish when it was first published.",
   "The WA staff AI toolkit shows only a 'last updated' date of 25 August 2026, so we couldn't establish when it was first published.",
   "WA's DeepSeek direction carries no issue date beyond the '2025' in its number; it asked for compliance reports by 19 February 2025.",
-  "The current eSafety deepfake guide (Respond 3B) carries no date, so we used June 2025 from the earlier version and the Toolkit page's 'last updated' date of 9 March 2026.",
+  "The current eSafety deepfake guide (Respond 3B) carries no date. We used June 2025 from the earlier version, and 9 March 2026, the Toolkit page's 'last updated' date when we read it on 17 October 2026. On 18 November the page showed 20 October 2026 and didn't say what changed. It still links the same guide file, and nothing we report from the guide had changed.",
   "ASIC's 8 May 2026 letter has no title of its own, so we named it from its file name and ASIC's media release, which calls it an open letter.",
   "PSPF Direction 004-2025 (October 2025) adds a Deny List under a Commonwealth Technology Standard, but we couldn't find the list published, so we can't say whether DeepSeek is also on it.",
   "We found no ACCC guidance specific to AI at work; its December 2025 AI industry snapshot is a market-monitoring report, so we left it out.",
-  "The 2024 review says the national framework's work will be assessed through a 2025 Framework Review, but we found no 2025 review published on education.gov.au.",
+  "The 2024 review says the national framework's work will be assessed through a 2025 Framework Review, but we found no 2025 review published on education.gov.au. The department's November 2026 Digital Detox paper mentions only the 2024 review.",
+  "The Department of Education's 1 December 2023 announcement of the schools framework returned 'Page not found' on 18 November 2026, so it couldn't be re-read. We kept what it said when we read it on 17 October 2026.",
   "The WA Department of Education's guidance on using generative AI sits on its staff-only intranet (Ikon), so we couldn't read it; its public procedures only point to it.",
   "We found no AI guidance published on Catholic Education WA's own websites (cewa.edu.au, policy.cewa.edu.au and news.cewa.edu.au).",
   "AISWA's public site has a December 2023 news item pointing schools to the national framework, but we found no AI guidance of its own.",
   "SCSA's copyright terms say its works can't be uploaded to generative AI tools without its written permission, but the page shows no date, so we haven't listed it as an item.",
-  "eSafety's AI companions sheet, the ATO's AI transparency statement and the ATO's misinformation page show only a 'last updated' date, so that's the date we give for each.",
+  "The ATO's AI transparency statement and misinformation page show only a 'last updated' date, so that's the date we give for each.",
+  "eSafety's AI companions sheet shows only a 'last updated' date. We give 12 December 2025, the date it showed on 17 October 2026, as its date. We give 30 October 2026, the date it shows now, as its update. The page doesn't say what changed.",
   "CPA Australia's AI Hub sets out how members should use AI responsibly under APES 110, but the page shows no date, so we haven't listed it as an item.",
   "CA ANZ's AI Fluency Playbook page blocked our automated access, and its AI ethics page mostly links to other bodies' material and a 2021 research report, so we haven't listed CA ANZ guidance.",
-  "The ATO is consulting on public advice about taxpayers' use of AI, including updates to rulings MT 2008/1 and MT 2008/2, with consultation expected to finish in October 2026, so there's no final version to report yet.",
+  "The ATO is consulting on public advice about taxpayers' use of AI, including updates to rulings MT 2008/1 and MT 2008/2 and a fact sheet. Its consultation page, last updated 6 November 2026, now expects consultation to finish in December 2026, so there's no final version to report yet.",
   "APESB's guidance on AI in forensic accounting and valuation services was still a preliminary draft for board discussion in August 2026, so we haven't listed it.",
   "The department's 2024 review says ministers published the schools framework in October 2023, while the department's announcement of it is dated 1 December 2023. We give the announcement's date."
  ],
  "items": [
+  {
+   "id": "vlsbc-ai-checklist-principals",
+   "who": "Victorian Legal Services Board + Commissioner",
+   "title": "AI checklist for law practice leaders and principals",
+   "kind": "regulator guidance",
+   "where": "VIC",
+   "binding": "It says it 'is designed to help law practice leaders and principals, including sole practitioners and barristers, get their practice ready to use AI'. It doesn't describe its legal force.",
+   "published": "2026-11-09",
+   "updated": "2026-11-10",
+   "appliesTo": [
+    "law",
+    "office"
+   ],
+   "says": [
+    {
+     "text": "It's written for practice leaders and principals, including sole practitioners and barristers. It recommends every leader completes its first section, even if the practice isn't using or planning to use AI.",
+     "src": [
+      "rules-courts:S43"
+     ]
+    },
+    {
+     "text": "It says a practice should have an AI policy even if it isn't using AI, and that the policy should list which AI tools and uses are approved and which aren't. It adds that a written policy isn't a complete answer to AI risks.",
+     "src": [
+      "rules-courts:S43"
+     ]
+    },
+    {
+     "text": "Tools without security guarantees aren't secure enough to use with client information, it says. It gives a promise that the data won't be used to train AI models as one such guarantee, and says paying for a subscription doesn't guarantee security on its own.",
+     "src": [
+      "rules-courts:S43"
+     ]
+    },
+    {
+     "text": "Leaders are asked to train all staff on responsible AI use and to complete equivalent training themselves. It says the training should cover verifying AI outputs and supervising AI use by junior lawyers.",
+     "src": [
+      "rules-courts:S43"
+     ]
+    },
+    {
+     "text": "Where charging is time-based, it says the time recorded must accurately reflect the work done, and that clients shouldn't be charged for unnecessary AI-related experimentation or training.",
+     "src": [
+      "rules-courts:S43"
+     ]
+    }
+   ],
+   "quote": {
+    "text": "Having a policy on AI is important, even if your practice is not using AI.",
+    "src": [
+     "rules-courts:S43"
+    ]
+   },
+   "url": "https://lsbc.vic.gov.au/ai-checklist-law-practice-leaders-and-principals",
+   "src": [
+    "rules-courts:S43",
+    "rules-courts:S41"
+   ]
+  },
+  {
+   "id": "vlsbc-ai-checklist-lawyers",
+   "who": "Victorian Legal Services Board + Commissioner",
+   "title": "AI checklist for lawyers",
+   "kind": "regulator guidance",
+   "where": "VIC",
+   "binding": "It says it 'is designed to help you comply with your professional obligations'. It doesn't otherwise describe its force.",
+   "published": "2026-11-09",
+   "updated": "2026-11-10",
+   "appliesTo": [
+    "law"
+   ],
+   "says": [
+    {
+     "text": "The regulator published it on 9 November 2026, with a checklist for practice leaders and a guide to everyday AI use. It says the new resources are particularly valuable for small practices and sole practitioners.",
+     "src": [
+      "rules-courts:S41"
+     ]
+    },
+    {
+     "text": "It says never to use client information, or other confidential or personal information, with an AI tool your practice hasn't approved for that use. Putting it into an insecure tool can breach confidentiality obligations.",
+     "src": [
+      "rules-courts:S42"
+     ]
+    },
+    {
+     "text": "Lawyers are asked to always verify AI outputs before relying on them and to check primary sources. It says not to rely only on the citations and summaries an AI tool produces.",
+     "src": [
+      "rules-courts:S42"
+     ]
+    },
+    {
+     "text": "It notes some practice notes or rules require disclosing certain uses of AI. It also asks lawyers to tell clients how AI was used on their matter, and to consider voluntary disclosure where appropriate.",
+     "src": [
+      "rules-courts:S42"
+     ]
+    },
+    {
+     "text": "It says not to bill for unnecessary costs caused by using AI, or for time spent learning to use it. It suggests keeping accurate records of how AI was used on a matter.",
+     "src": [
+      "rules-courts:S42"
+     ]
+    }
+   ],
+   "quote": {
+    "text": "all quotations, references and citations are accurate, exist, and support the proposition for which they are cited",
+    "src": [
+     "rules-courts:S42"
+    ]
+   },
+   "url": "https://lsbc.vic.gov.au/ai-checklist-lawyers",
+   "src": [
+    "rules-courts:S42",
+    "rules-courts:S41"
+   ]
+  },
+  {
+   "id": "aus-digital-detox-2026",
+   "who": "Australian Government Department of Education",
+   "title": "A Digital Detox",
+   "kind": "government policy",
+   "where": "Australia",
+   "binding": "The paper doesn't say it is binding. It records that Education Ministers agreed to restrict student use of generative AI, 'with the timing, scope and application of potential limits to be determined by each jurisdiction or sector'.",
+   "published": "2026-11-04",
+   "appliesTo": [
+    "schools"
+   ],
+   "says": [
+    {
+     "text": "The paper says Education Ministers adopted a common strategic policy on technology use in schools at their meeting on 2 November 2026. They agreed student use of technology should be restricted when it fails to support learning and wellbeing.",
+     "src": [
+      "rules-schools-finance:S19"
+     ]
+    },
+    {
+     "text": "Ministers agreed to restrict student use of generative AI applications in primary schools. The paper notes this may involve continued use of some AI features built into technologies already in use.",
+     "src": [
+      "rules-schools-finance:S19"
+     ]
+    },
+    {
+     "text": "Ministers also agreed to restrict student use of generative AI in secondary school assessments. Each jurisdiction or sector decides the timing, scope and application of both restrictions.",
+     "src": [
+      "rules-schools-finance:S19"
+     ]
+    },
+    {
+     "text": "It says a new Australian Schools Digital Detox Taskforce will gather evidence and advise Ministers on further action. Its preliminary advice is due by mid-2027.",
+     "src": [
+      "rules-schools-finance:S19"
+     ]
+    },
+    {
+     "text": "It notes Education Services Australia's Responsible AI Standard, which checks AI products used in schools against ethical principles, is being piloted throughout 2026.",
+     "src": [
+      "rules-schools-finance:S19"
+     ]
+    },
+    {
+     "text": "The department's announcement says students still need digital skills, including the ability to use AI safely and responsibly. It says the paper isn't about removing technology from schools.",
+     "src": [
+      "rules-schools-finance:S20"
+     ]
+    }
+   ],
+   "quote": {
+    "text": "Ministers agreed to restrict student use of GenAI in secondary school assessments",
+    "src": [
+     "rules-schools-finance:S19"
+    ]
+   },
+   "url": "https://www.education.gov.au/download/20853/digital-detox/46397/document/pdf",
+   "src": [
+    "rules-schools-finance:S19",
+    "rules-schools-finance:S20"
+   ]
+  },
   {
    "id": "wa-doe-smart-glasses-ban",
    "who": "Department of Education (WA)",
@@ -1612,10 +1845,11 @@
      ]
     },
     {
-     "text": "It follows an April 2025 notice that asked court users to use Gen AI responsibly while the Court consulted. That notice also expected disclosure if a Judge or Registrar asked.",
+     "text": "It follows an April 2025 notice that asked court users to use Gen AI responsibly while the Court consulted. That notice also expected disclosure if a Judge or Registrar asked. The Court now lists that notice as historical.",
      "src": [
       "rules-courts:S17",
-      "rules-courts:S18"
+      "rules-courts:S18",
+      "rules-courts:S44"
      ]
     }
    ],
@@ -1629,7 +1863,8 @@
    "src": [
     "rules-courts:S16",
     "rules-courts:S17",
-    "rules-courts:S18"
+    "rules-courts:S18",
+    "rules-courts:S44"
    ]
   },
   {
@@ -1671,9 +1906,10 @@
      ]
     },
     {
-     "text": "Lawyers should check whether clients used GenAI on documents for their matter and explain risks such as losing privilege. The regulator said it would publish further AI guidance in 2026.",
+     "text": "Lawyers should check whether clients used GenAI on documents for their matter and explain risks such as losing privilege. The regulator said it would publish further AI guidance in 2026. It published new AI resources on 9 November 2026.",
      "src": [
-      "rules-courts:S36"
+      "rules-courts:S36",
+      "rules-courts:S41"
      ]
     }
    ],
@@ -1686,7 +1922,8 @@
    "url": "https://lsbc.vic.gov.au/lawyers/risk-outlook/risk-outlook-2026",
    "src": [
     "rules-courts:S36",
-    "rules-courts:S37"
+    "rules-courts:S37",
+    "rules-courts:S41"
    ]
   },
   {
@@ -2028,6 +2265,7 @@
    "where": "Australia",
    "binding": "The document doesn't say.",
    "published": "2025-12-12",
+   "updated": "2026-10-30",
    "appliesTo": [
     "schools"
    ],
@@ -2234,51 +2472,52 @@
   {
    "id": "dta-ai-policy-v2",
    "who": "Digital Transformation Agency",
-   "title": "Policy for the responsible use of AI in government (Version 2.0)",
+   "title": "Policy for the responsible use of AI in government (Version 2.1)",
    "kind": "government policy",
    "where": "Australia",
    "binding": "It says non-corporate Commonwealth entities 'must apply this policy'. Corporate Commonwealth entities are 'encouraged to apply' it.",
    "published": "2025-12",
+   "updated": "2026-10-21",
    "appliesTo": [
     "office"
    ],
    "says": [
     {
-     "text": "Version 2.0 takes effect on 15 December 2025 and replaces version 1.1, which started on 1 September 2024. The defence portfolio and the national intelligence community are carved out.",
+     "text": "Version 2.0 took effect on 15 December 2025 and replaced version 1.1, which started on 1 September 2024. Minor updates were published as version 2.1 on 21 October 2026. The defence portfolio and the national intelligence community are carved out.",
      "src": [
       "rules-regulators:S29",
-      "rules-regulators:S30"
+      "rules-regulators:S38"
      ]
     },
     {
      "text": "Its mandatory requirements include a public AI transparency statement, a strategic position on AI adoption, named accountable officials, and an internal register of in-scope AI use cases.",
      "src": [
-      "rules-regulators:S30"
+      "rules-regulators:S38"
      ]
     },
     {
      "text": "Agencies must put in place mandatory training on responsible AI use for all staff within 12 months of the policy taking effect.",
      "src": [
-      "rules-regulators:S30"
+      "rules-regulators:S38"
      ]
     },
     {
      "text": "Agencies must give staff a way to report AI safety concerns, including AI incidents, and have clear processes for dealing with incidents.",
      "src": [
-      "rules-regulators:S30"
+      "rules-regulators:S38"
      ]
     },
     {
      "text": "Its principles say APS officers need to be able to explain, justify and take ownership of advice and decisions when using AI.",
      "src": [
-      "rules-regulators:S30"
+      "rules-regulators:S38"
      ]
     }
    ],
    "url": "https://www.digital.gov.au/ai/ai-in-government-policy",
    "src": [
     "rules-regulators:S29",
-    "rules-regulators:S30"
+    "rules-regulators:S38"
    ]
   },
   {
@@ -2759,7 +2998,7 @@
      ]
     },
     {
-     "text": "The Toolkit page, updated 9 March 2026, links this version (Respond 3B). An earlier version of the same guide was dated June 2025.",
+     "text": "The Toolkit page, last updated 20 October 2026, links this version (Respond 3B). An earlier version of the same guide was dated June 2025.",
      "src": [
       "rules-regulators:S22",
       "rules-regulators:S23"
@@ -3440,6 +3679,7 @@
    "where": "NSW",
    "binding": "It calls itself a guideline that 'seeks to remind legal practitioners of their relevant legal and ethical obligations'.",
    "published": "2024-10",
+   "updated": "2026-01",
    "appliesTo": [
     "law"
    ],
@@ -3447,42 +3687,50 @@
     {
      "text": "The guide's two principles are to understand the tool being used, and to know how professional and ethical obligations apply to it.",
      "src": [
-      "rules-courts:S33"
+      "rules-courts:S40"
      ]
     },
     {
      "text": "It says putting client confidential information into a public generative AI system is akin to putting it in the public domain. That's likely a breach of confidentiality, and clients may lose privilege.",
      "src": [
-      "rules-courts:S33"
+      "rules-courts:S40"
      ]
     },
     {
      "text": "Solicitors stay responsible for the accuracy of their advice and court material. They shouldn't rely on generative AI to verify sources AI produced.",
      "src": [
-      "rules-courts:S33"
+      "rules-courts:S40"
      ]
     },
     {
      "text": "It says it may be appropriate to tell clients a generative AI program was used. Its checklist suggests making sure clients know about and approve its use.",
      "src": [
-      "rules-courts:S33"
+      "rules-courts:S40"
      ]
     },
     {
      "text": "Solicitors are asked to give AI output the same care they'd give work from a legal assistant or paralegal, with human oversight at every level.",
      "src": [
-      "rules-courts:S33"
+      "rules-courts:S40"
+     ]
+    },
+    {
+     "text": "The guide was first issued in October 2024 and updated in January 2026. The update adds a section on legal costs. Where a practice bills by time, it says time saved with generative AI should show in the client's bill.",
+     "src": [
+      "rules-courts:S33",
+      "rules-courts:S40"
      ]
     }
    ],
    "quote": {
     "text": "any placing of client confidential information into a publicly available generative AI system is akin to putting it in the public domain.",
     "src": [
-     "rules-courts:S33"
+     "rules-courts:S40"
     ]
    },
-   "url": "https://www.lawsociety.com.au/sites/default/files/2024-12/LS4527_MKG_ResponsibleAIGuide_2024-10-25%5B43%5D.pdf",
+   "url": "https://www.lawsociety.com.au/sites/default/files/2026-01/20260109%20LS4816_PSU_GuidetoAI_2026-01-08a%20FINALv2.pdf",
    "src": [
+    "rules-courts:S40",
     "rules-courts:S33"
    ]
   },
