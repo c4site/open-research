@@ -1,0 +1,1762 @@
+{
+ "checked": "2026-11-19",
+ "industries": [
+  {
+   "key": "law",
+   "name": "Law",
+   "entries": [
+    {
+     "id": "law-1",
+     "who": "Supreme Court of New South Wales",
+     "where": "Australia",
+     "title": "The NSW Supreme Court bars AI from writing affidavits",
+     "use": "The Court’s practice note on generative AI has applied to all proceedings since 3 February 2025. It accepts that Gen AI can help lawyers and people running their own case with tasks such as drafting documents and summarising information. The rest of the note sets out what they mustn’t do with it.",
+     "result": null,
+     "guardrails": [
+      "Gen AI must not be used to generate the content of affidavits, witness statements or character references. Each one must state that Gen AI wasn’t used to generate it.",
+      "Suppressed material, documents produced on subpoena and similar material must not go into any Gen AI program. The exception is a controlled platform under confidentiality terms, where the data stays private, isn’t used for training and is used only for that case.",
+      "If Gen AI helped prepare written submissions, the author must confirm in the document that every citation exists, is accurate and is relevant. That check can’t be done by a Gen AI tool alone.",
+      "Experts need the Court’s leave before using Gen AI to draft any part of a report. With leave, the report must say which parts used it and annex a record of the prompts."
+     ],
+     "kind": "rule",
+     "src": [
+      "I1"
+     ]
+    },
+    {
+     "id": "law-2",
+     "who": "Victorian Legal Services Board + Commissioner, after a referral by the Federal Circuit and Family Court",
+     "where": "Australia",
+     "title": "A solicitor filed an AI-made case list and can no longer run his own firm",
+     "use": "In a 2024 matter in the Federal Circuit and Family Court, a Victorian solicitor handed the court a list and summary of authorities generated with AI. The citations and summaries were inaccurate. UNSW’s review of the case says the list came from an AI research tool in his legal practice software, and that he didn’t verify it before filing.",
+     "result": "On 19 August 2025 the Board varied his practising certificate. He can no longer practise as a principal, handle trust money or run his own firm. He must work as an employee under supervision for two years, with quarterly reports to the Board. A UNSW review counted 87 Australian court and tribunal cases involving generative AI misuse between January 2023 and September 2025. Ten involved legal professionals and 68 involved people representing themselves.",
+     "guardrails": [
+      "The Board says its action shows lawyers who choose to use AI must do so responsibly and consistently with their professional obligations.",
+      "UNSW’s review names failure to verify AI output as a key driver of two problems it found: fake or incorrect citations and summaries, and flawed legal reasoning."
+     ],
+     "kind": "failure",
+     "src": [
+      "I2",
+      "I3",
+      "I4"
+     ]
+    },
+    {
+     "id": "law-3",
+     "who": "Allens (Australian law firm)",
+     "where": "Australia",
+     "title": "A law firm marks AI’s answers on Australian law",
+     "use": "Allens tests general-purpose AI models against 30 questions on Australian law, the standard of a lawyer five years after admission. In 2025 it tested seven leading models, three attempts per question. A panel of 23 senior Allens lawyers marked each answer on substance, citations and clarity in April 2025.",
+     "result": "Every model gave at least one high-quality answer, but quality varied across the question set. Despite being asked for citations, 23% of answers had case law or legislation that was missing entirely or made up. Some models applied overseas law instead of Australian law, and several overstated how confident their advice was.",
+     "guardrails": [
+      "Allens concluded that current models still fall short of the critical analysis needed for consistently reliable legal advice.",
+      "It notes the model providers don’t recommend their products be used for Australian legal advice, and supply their output ‘as is’."
+     ],
+     "kind": "use",
+     "src": [
+      "I5",
+      "I6",
+      "I7"
+     ]
+    },
+    {
+     "id": "law-4",
+     "who": "Legal Practice Board of WA, with the Law Society of NSW and the Victorian Legal Services Board + Commissioner",
+     "where": "Australia",
+     "title": "WA’s legal regulator says client secrets stay out of public chatbots",
+     "use": "In December 2024 the legal regulators of the three Uniform Law states, including WA, issued a joint statement of what they expect from lawyers who use AI. It says lawyers using AI must keep complying with their existing professional obligations under the Uniform Law and its conduct rules.",
+     "result": null,
+     "guardrails": [
+      "Lawyers can’t safely enter confidential, sensitive or privileged client information into public AI chatbots such as ChatGPT.",
+      "Lawyers who use AI to prepare documents must be able to verify the contents personally, and must make sure they’re accurate.",
+      "Bills must reflect the legal work actually done. AI shouldn’t push a client’s costs above traditional methods, for example through time spent fixing its output.",
+      "It suggests firm policies keep AI to lower-risk tasks that are easy to verify, such as drafting a polite email. It suggests prohibiting AI for higher-risk tasks, such as translating advice into another language.",
+      "Lawyers should record and disclose to clients when and how they used AI on a matter, and to the court where needed."
+     ],
+     "kind": "rule",
+     "src": [
+      "I8",
+      "I9"
+     ]
+    },
+    {
+     "id": "law-5",
+     "who": "Courts and Tribunals Judiciary (England and Wales)",
+     "where": "United Kingdom",
+     "title": "Judges in England and Wales are told AI isn’t for legal research",
+     "use": "Guidance for judges and tribunal members, updated on 8 October 2025, lists tasks AI is suited to. These include summarising large bodies of text, suggesting topics for a presentation, and admin such as prioritising emails and summarising meetings. It lists legal research and legal analysis as tasks not recommended.",
+     "result": null,
+     "guardrails": [
+      "Don’t enter anything into a public AI chatbot that isn’t already public. Treat anything you enter as published to the world.",
+      "Judges are personally responsible for material produced in their name. AI may assist, but it can’t replace direct judicial engagement with the evidence.",
+      "Summaries need checking for accuracy, and anything found through AI should be checked against authoritative legal sources.",
+      "Turn off chat history in public chatbots where possible."
+     ],
+     "kind": "rule",
+     "src": [
+      "I10"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "health",
+   "name": "Health and medicine",
+   "entries": [
+    {
+     "id": "health-1",
+     "who": "Australian Health Practitioner Regulation Agency (Ahpra) and the National Boards",
+     "where": "Australia",
+     "title": "An AI scribe will generally need the patient’s consent",
+     "use": "Ahpra’s guidance explains how practitioners’ existing codes of conduct apply when they use AI. It singles out AI scribes, which listen to a consultation and write the clinical notes.",
+     "result": null,
+     "guardrails": [
+      "The practitioner stays responsible for safe, quality care, whatever technology is used.",
+      "A generative AI scribe will generally need the patient’s informed consent, and ideally the patient’s response goes in the health record.",
+      "Consent is especially important for tools that record consultations. Ahpra notes there may be criminal implications if consent isn’t obtained before recording.",
+      "The practitioner must check the accuracy and relevance of records the scribe creates.",
+      "TGA approval of a tool doesn’t change the practitioner’s duty to apply human oversight. Tools should be tested to make sure they’re fit for purpose before clinical use.",
+      "Practitioners should tell patients about their use of AI and consider any concerns they raise."
+     ],
+     "kind": "rule",
+     "src": [
+      "I11"
+     ]
+    },
+    {
+     "id": "health-2",
+     "who": "Lions Outback Vision (Lions Eye Institute) and The University of Western Australia",
+     "where": "Australia",
+     "title": "An AI camera in a van took eye screening to Pilbara communities",
+     "use": "Diabetic eye disease screening rates are poor in remote WA. This team co-designed a mobile screening model with local Aboriginal communities in the Pilbara. A research officer with no formal healthcare qualification took retinal photos in a van, using an automated camera with built-in AI that gives a diagnosis on the spot.",
+     "result": "From February to August 2024 the van visited 9 Pilbara communities. 78 patients gave research consent, 56.4% of them Aboriginal or Torres Strait Islander. 10.3% of retinal photos showed disease needing referral, and 8.4% couldn’t be graded. 96% of patients said they were happy with the use of AI. The authors report an 11-fold increase in screening rates compared with 2023 Pilbara data.",
+     "guardrails": [
+      "A remote clinician supervised the screening and gave on-the-spot telehealth consultations when the AI found disease needing referral.",
+      "The model was co-designed with local Aboriginal communities, and patients gave research consent."
+     ],
+     "kind": "use",
+     "src": [
+      "I12"
+     ]
+    },
+    {
+     "id": "health-3",
+     "who": "Lund University and Skåne University Hospital, in Sweden’s national screening programme (MASAI trial)",
+     "where": "Sweden",
+     "title": "AI helped radiologists find more breast cancers in a Swedish trial",
+     "use": "In the MASAI trial, women due for breast screening at four sites in Sweden were randomly given either AI-supported screening or the standard double reading by two radiologists. The AI decided whether an exam went to one radiologist or two, and highlighted suspicious findings for them.",
+     "result": "105,934 women were randomised between April 2021 and December 2022. The AI group had 338 cancers detected against 262, a detection rate of 6.4 per 1,000 against 5.0. False positives didn’t rise significantly. Radiologists did 44.2% fewer screen readings. The 2026 analysis found interval cancers (those that appear between screens) were no more common with AI, and sensitivity was 80.5% against 73.8%.",
+     "guardrails": [
+      "Radiologists read every exam. The AI only sorted exams to single or double reading and flagged findings for the readers.",
+      "The trial’s primary outcome was the interval cancer rate, with a 20% non-inferiority margin. The 2026 paper reporting it is the one that concludes AI-supported screening may be considered for clinical practice."
+     ],
+     "kind": "use",
+     "src": [
+      "I13",
+      "I14"
+     ]
+    },
+    {
+     "id": "health-4",
+     "who": "UCLA Health (University of California, Los Angeles)",
+     "where": "United States",
+     "title": "UCLA put two AI scribes through a randomised trial",
+     "use": "Ambient AI scribes record the visit and draft the note. The UCLA researchers note their impact hadn’t been tested in randomised trials, so they ran one. 238 outpatient doctors in 14 specialties were split three ways: Microsoft’s DAX Copilot, Nabla, or usual care. It ran from 4 November 2024 to 3 January 2025.",
+     "result": "Doctors used DAX in 33.5% of 24,696 visits and Nabla in 29.5% of 23,653 visits. Nabla users cut time writing notes by 9.5% compared with the control group. DAX users showed no significant change. Both groups’ survey scores suggested less burnout and task load. Doctors reported clinically significant inaccuracies ‘occasionally’.",
+     "guardrails": [
+      "The researchers say the occasional inaccuracies in either scribe require ongoing vigilance.",
+      "They say the burnout findings need confirming in larger trials across several centres."
+     ],
+     "kind": "use",
+     "src": [
+      "I15"
+     ]
+    },
+    {
+     "id": "health-5",
+     "who": "Researchers at UC Berkeley, Brigham and Women’s Hospital, Massachusetts General Hospital and the University of Chicago (published in Science)",
+     "where": "United States",
+     "title": "A US care algorithm underrated how sick Black patients were",
+     "use": "US health systems use commercial algorithms to pick patients with complex needs for extra care. This study examined one widely used algorithm, affecting millions of patients, that used predicted health care costs as its stand-in for how sick someone is.",
+     "result": "At the same risk score, Black patients were considerably sicker than White patients. Less money is spent caring for Black patients, because of unequal access to care, so the cost measure understated their illness. Fixing the gap would lift the share of Black patients getting extra help from 17.7% to 46.5%.",
+     "guardrails": [
+      "The authors warn that choosing a convenient, seemingly effective stand-in for what you really want to measure can be an important source of algorithmic bias.",
+      "Their lesson is that an algorithm can look accurate by some measures and still carry large biases."
+     ],
+     "kind": "failure",
+     "src": [
+      "I16"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "finance",
+   "name": "Accounting and finance",
+   "entries": [
+    {
+     "id": "finance-1",
+     "who": "Commonwealth Bank of Australia (CommBank)",
+     "where": "Australia",
+     "title": "CommBank’s AI agent drafts fraud rules for people to approve",
+     "use": "CommBank’s own data science team built an AI agent in three months that watches transaction and payments data for new fraud and scam patterns. When it spots one, it assesses how serious it is and proposes a new detection rule.",
+     "result": "CommBank says the agent has helped develop or update three quarters of its card fraud rules. It says its fraud detection technology played a role in cutting fraud losses by over 20% in the first half of the 2026 financial year, compared with a year earlier. These are the bank’s own figures, and it doesn’t say how much of the fall came from the agent.",
+     "guardrails": [
+      "New detection rules are reviewed and approved by CommBank’s fraud analytics team before they’re used. The bank calls this human-in-the-loop oversight."
+     ],
+     "kind": "use",
+     "src": [
+      "I17"
+     ]
+    },
+    {
+     "id": "finance-2",
+     "who": "Australian Taxation Office (ATO), audited by the Australian National Audit Office (ANAO)",
+     "where": "Australia",
+     "title": "The national auditor checked how the tax office uses AI",
+     "use": "The ATO uses AI to work through large amounts of unstructured data and to draft and edit its communications. Its AI risk models flag possible non-compliance or fraud for a person to review. It had 43 of its own AI models in production in May 2024.",
+     "result": "In design testing on 2015 to 2020 data, the ATO’s work-related expenses model picked audit cases that turned out to be non-compliant 19 percentage points more often than the older model. But the ANAO rated the ATO’s AI arrangements only partly effective. 74% of its AI models in production didn’t have completed data ethics assessments, and there was no structured, regular monitoring of its own models in production. The ATO agreed to all seven of the ANAO’s recommendations.",
+     "guardrails": [
+      "The ATO says decisions that adversely affect taxpayers’ rights will always be made by a human, and taxpayers keep their right of review whatever technology was used.",
+      "As of June 2024, ATO staff could use eight publicly available generative AI tools that it had approved as low risk."
+     ],
+     "kind": "use",
+     "src": [
+      "I18",
+      "I19"
+     ]
+    },
+    {
+     "id": "finance-3",
+     "who": "Australian Securities and Investments Commission (ASIC)",
+     "where": "Australia",
+     "title": "ASIC found AI use at banks and insurers running ahead of their rules",
+     "use": "ASIC looked at 624 AI use cases at 23 licensees, among them banks, lenders, insurers and financial advisers, as at December 2023. Common uses included predicting credit default risk to support lending decisions and detecting fraud. ASIC found AI mostly helped people make decisions rather than making them on its own.",
+     "result": "57% of the use cases were less than two years old or still in development, and 61% of licensees planned to increase AI use within a year. Only 12 licensees had AI policies that mentioned fairness, and 10 had policies on telling consumers when AI affects them. ASIC warned of a governance gap that could widen as AI use speeds up.",
+     "guardrails": [
+      "ASIC asks licensees what human oversight their AI needs and how they’ll monitor it.",
+      "It flagged weaknesses in how licensees provided meaningful human oversight and responded to unexpected model outputs. Some didn’t consistently identify AI-specific risks such as algorithmic bias."
+     ],
+     "kind": "use",
+     "src": [
+      "I20"
+     ]
+    },
+    {
+     "id": "finance-4",
+     "who": "Tax Practitioners Board (TPB)",
+     "where": "Australia",
+     "title": "Typing client details into AI can count as disclosing them",
+     "use": "The TPB’s guidance explains how tax agents’ Code of Professional Conduct applies when they use AI. It says AI can deliver significant benefits, but practitioners stay responsible for the services they provide.",
+     "result": null,
+     "guardrails": [
+      "Entering client information into an AI tool can count as disclosing it to a third party, depending on how the tool is set up and used. That needs the client’s permission first, for example in a signed letter of engagement.",
+      "Practitioners should verify and review AI-generated content for accuracy at every step, and have processes to understand and challenge AI outputs.",
+      "Whether a practitioner took reasonable care depends partly on whether they checked the AI’s output before relying on it.",
+      "Practitioners must check that a tool keeps information secure and meets the Privacy Act. Tax file numbers carry extra rules."
+     ],
+     "kind": "rule",
+     "src": [
+      "I21"
+     ]
+    },
+    {
+     "id": "finance-5",
+     "who": "Deloitte, for the Department of Employment and Workplace Relations (DEWR)",
+     "where": "Australia",
+     "title": "Deloitte reissued a government review to fix its references",
+     "use": "From December 2024 to June 2025, Deloitte reviewed the Targeted Compliance Framework for DEWR. The framework checks that people on income support meet their mutual obligation requirements, and runs on an IT system that makes automated compliance decisions. Part of Deloitte’s review used a generative AI tool chain built on Azure OpenAI GPT-4o, licensed by DEWR and hosted in DEWR’s own cloud.",
+     "result": "The report dated 4 July 2025 was replaced on 26 September 2025. The new version corrects errors in its citations and reference list, and in its summary of the Amato court case. The reissued version discloses the use of GPT-4o. The report says the changes don’t affect its findings or recommendations. DEWR updated it again on 3 February 2026 to address further corrections.",
+     "guardrails": [
+      "The reissued report now tells readers that a generative AI tool was used, and for which phase of the work.",
+      "The AI tool ran inside the client’s own Azure tenancy, under a licence DEWR held."
+     ],
+     "kind": "failure",
+     "src": [
+      "I22",
+      "I23"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "government",
+   "name": "Government and public service",
+   "entries": [
+    {
+     "id": "government-1",
+     "who": "Digital Transformation Agency (Australian Government)",
+     "where": "Australia",
+     "title": "The public service trialled Copilot for six months",
+     "use": "Australian Public Service staff trialled Microsoft 365 Copilot from January to June 2024, with over 5,765 licences issued across agencies. The DTA’s evaluation found staff used it mostly to summarise meetings and information and to rewrite content.",
+     "result": "The evaluation engaged with more than 50 agencies and more than 2,000 participants. Only a third used Copilot daily. Staff in APS 3 to 6, EL1 and ICT roles estimated they saved around an hour a day on tasks such as summarising and first drafts. These were staff estimates, and the DTA said Copilot’s inaccuracy reduced the scale of the benefit. At the end, 77% were optimistic about it, and around 65% of managers saw a productivity uplift in their team.",
+     "guardrails": [
+      "The DTA found poor information management and permissions let Copilot surface sensitive information to staff who shouldn’t have seen it. Its lesson is to sort out data security and permissions first.",
+      "Some agencies chose not to allow meeting transcription after staff said they felt pressured to consent to being recorded.",
+      "The DTA called for clearer guidance on who is accountable for Copilot’s outputs, and for training so managers can verify them. Most managers in the trial couldn’t recognise Copilot’s output."
+     ],
+     "kind": "use",
+     "src": [
+      "I24",
+      "I25"
+     ]
+    },
+    {
+     "id": "government-2",
+     "who": "Department of the Treasury (evaluated by the Australian Centre for Evaluation)",
+     "where": "Australia",
+     "title": "Treasury staff used Copilot less than expected",
+     "use": "218 Treasury staff trialled Microsoft 365 Copilot for 14 weeks, from 20 May to 23 August 2024. Staff found it most useful for summarising meeting minutes, finding files and information, drafting plans and documents, and changing the tone of writing.",
+     "result": "Use was lower than expected. 22% of post-trial survey respondents used it four or five times a week or more, and most used it two or three times a week or less. 49% agreed it made them faster at tasks, while 22% disagreed. Staff found it unsuitable for complex tasks such as drafting briefs, and trying it there often made the work slower. The evaluators worked out that an APS6 would need to move about 13 minutes a week from low-value to high-value work to cover the licence cost.",
+     "guardrails": [
+      "Before getting a licence, each participant had to audit their SharePoint Online permissions and pass a mandatory training module’s knowledge test with 80% or more.",
+      "Participants had to agree to follow the relevant policies and guidance when using Copilot.",
+      "Every use case Treasury gave staff stressed reviewing the output for errors and checking its accuracy."
+     ],
+     "kind": "use",
+     "src": [
+      "I26"
+     ]
+    },
+    {
+     "id": "government-3",
+     "who": "Office of the Victorian Information Commissioner (OVIC), investigating Victoria’s Department of Families, Fairness and Housing (DFFH)",
+     "where": "Australia",
+     "title": "A child protection worker drafted a court report with ChatGPT",
+     "use": "In 2023 a Victorian child protection worker used ChatGPT while drafting a Protection Application Report, a document that goes to the Children’s Court. The worker entered personal and sensitive information about the child and family. OVIC found the report contained inaccurate information that downplayed the risks to the child.",
+     "result": "DFFH’s own review of the worker’s broader unit found 100 cases over one year with signs that ChatGPT may have been used to draft child protection documents. Between July and December 2023, nearly 900 DFFH employees, almost 13% of its workforce, had visited the ChatGPT website. OVIC found DFFH’s controls were far from sufficient for the risk.",
+     "guardrails": [
+      "OVIC ordered DFFH to block Child Protection staff from web-based and external generative AI text tools, naming tools including ChatGPT, Gemini and Copilot.",
+      "DFFH also had to stop Child Protection staff using Microsoft 365 Copilot, and regularly scan for similar new tools so they could be blocked too.",
+      "The orders had to be in place by 5 November 2024 and kept until 5 November 2026."
+     ],
+     "kind": "failure",
+     "src": [
+      "I27",
+      "I28"
+     ]
+    },
+    {
+     "id": "government-4",
+     "who": "WA Government (Office of Digital Government, Department of the Premier and Cabinet)",
+     "where": "Australia",
+     "title": "WA agencies must ask first whether a non-AI option would do the job",
+     "use": "The WA Government AI Policy sets principles that WA government organisations must apply when they use AI. Every project driven by AI or automated decision-making must complete a self-assessment, approved by the agency’s AI Accountable Officer.",
+     "result": null,
+     "guardrails": [
+      "AI-based functions and decisions must always be subject to human review and intervention.",
+      "Staff must consider whether a non-AI solution could achieve the same result. When AI is used, it must be because it is the best solution for the task.",
+      "People in WA must have an efficient and transparent way to question the use of data or AI-informed outcomes.",
+      "Some projects must go to the WA Government AI Advisory Board, such as those with mid-range or higher residual risk or costing more than $5 million. Projects funded through the Digital Capability Fund go to it too."
+     ],
+     "kind": "rule",
+     "src": [
+      "I29",
+      "I30"
+     ]
+    },
+    {
+     "id": "government-5",
+     "who": "UK Department for Transport, with The Alan Turing Institute",
+     "where": "United Kingdom",
+     "title": "A UK department sorts consultation replies with AI and tests it for bias",
+     "use": "The Department for Transport runs around 55 public consultations a year. It built a Consultation Analysis Tool that uses large language models to draw themes out of free-text responses and tag each response with them. Staff then read a random sample of responses to check and fix the themes before the tool does the tagging.",
+     "result": "By its December 2025 evaluation, the tool had been piloted on live consultations covering 200,000 responses. Its tagging scored 0.75 out of 1 on a standard accuracy measure (F1) against human-coded data. The department found no evidence that accuracy differed across the demographic groups it could observe. It estimates the tool saves around 50 to 70% of the cost and time of a medium-sized consultation.",
+     "guardrails": [
+      "The department says the human check of the themes is there to make sure no main theme is missed.",
+      "Every response is processed. Theme counts are reported as estimates with confidence intervals.",
+      "A data protection impact assessment covers the tool, and each consultation that uses it has its own data protection checks.",
+      "The department tested accuracy across demographic groups as its measure of bias, and says it publishes privacy notices on its use of AI for consultations."
+     ],
+     "kind": "use",
+     "src": [
+      "I31",
+      "I32"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "engineering",
+   "name": "Engineering and construction",
+   "entries": [
+    {
+     "id": "engineering-1",
+     "who": "Austroads (the association of Australian and New Zealand road agencies), in a project managed by Main Roads Western Australia",
+     "where": "Australia",
+     "title": "Austroads tested whether a model can learn road repair decisions from experts",
+     "use": "Deciding when to resurface or repair a road relies heavily on practitioners’ expertise, and the reasons behind those decisions aren’t always recorded. Austroads tested whether machine learning can give pavement managers decision support by learning from past expert decisions. A Main Roads WA staff member managed the project.",
+     "result": "Preliminary results suggest the models can learn to reproduce most expert decisions within a road agency. Their agreement with the experts was comparable to, or slightly below, the experts’ agreement with each other (F1 scores of 50 to 75%). Austroads notes that experts don’t always agree.",
+     "guardrails": [
+      "Austroads says decision support means building tools that help human experts make decisions, rather than automating the process.",
+      "In one part of the work, human experts checked the interactions the model identified and agreed with the vast majority."
+     ],
+     "kind": "use",
+     "src": [
+      "I33"
+     ]
+    },
+    {
+     "id": "engineering-2",
+     "who": "Engineers Australia",
+     "where": "Australia",
+     "title": "Engineers Australia says a ‘use with caution’ label isn’t enough",
+     "use": "In its July 2023 submission on safe and responsible AI, Engineers Australia set out what it expects of engineers and companies that build and deploy AI. It said it was exploring an AI area of practice to support engineers working in the field.",
+     "result": null,
+     "guardrails": [
+      "People developing AI can’t rely on disclaimers such as ‘use with caution’ to absolve themselves, especially where vulnerable people are affected.",
+      "Developers should be held accountable for outputs and have validation and testing processes for their algorithms.",
+      "At a minimum, high-risk AI used for decision making should require human-in-the-loop or oversight assessments."
+     ],
+     "kind": "rule",
+     "src": [
+      "I34"
+     ]
+    },
+    {
+     "id": "engineering-3",
+     "who": "Arup (global engineering firm), in an interview its Chief Information Officer gave the World Economic Forum",
+     "where": "United Kingdom",
+     "title": "An Arup employee paid criminals after a deepfake video call",
+     "use": "Early in 2024, an Arup employee sent $25 million to criminals after a video call with what looked like senior managers. They were deepfakes created with AI. Arup’s CIO, Rob Greig, calls it technology-enhanced social engineering rather than a cyberattack. The interview doesn’t say which currency the $25 million was in.",
+     "result": "Greig says none of Arup’s systems were compromised and no data was affected. After the incident he tried making a real-time deepfake of himself with open-source software. It took about 45 minutes and wasn’t particularly convincing, but he was surprised what could be done in that time.",
+     "guardrails": [
+      "Greig says people now have to start questioning what they see, because audio and visual cues are what these tools play on.",
+      "He says organisations need visibility of who has access to what and what data is moving, so they can detect odd activity and respond.",
+      "He recommends rehearsing a response to a general set of incidents, so everyone knows their role."
+     ],
+     "kind": "failure",
+     "src": [
+      "I35"
+     ]
+    },
+    {
+     "id": "engineering-4",
+     "who": "National Society of Professional Engineers (NSPE) Board of Ethical Review",
+     "where": "United States",
+     "title": "An ethics board ruled on an engineer who let AI draft the plans",
+     "use": "The Board reviewed a case in which an engineer, without their retired mentor to check their work, used AI to draft a client report and AI-assisted tools to produce preliminary design plans. The engineer checked the report thoroughly against journal articles, but gave the plans only a cursory review. The client found misaligned dimensions and missing safety features required by local regulations.",
+     "result": null,
+     "guardrails": [
+      "Using AI to write the report was partly ethical. The engineer checked it thoroughly, but put client information into the tool without permission and didn’t cite sources properly.",
+      "Using AI drafting tools wasn’t unethical in itself. Failing to stay in responsible charge of the tool and its output before sealing the plans was.",
+      "The Board found no general duty to tell the client about AI use unless the contract requires it, but says ethics favour transparency when AI plays a substantial role."
+     ],
+     "kind": "rule",
+     "src": [
+      "I36"
+     ]
+    },
+    {
+     "id": "engineering-5",
+     "who": "American Society of Civil Engineers (ASCE)",
+     "where": "United States",
+     "title": "ASCE says AI can’t replace an engineer’s judgement",
+     "use": "ASCE’s policy statement on AI and engineering responsibility, first approved in 2024, sets out where AI fits in civil engineering work, from planning and design to building and operation.",
+     "result": null,
+     "guardrails": [
+      "AI can’t be held accountable, and can’t replace a professional engineer’s judgement and experience.",
+      "Protecting public health, safety and welfare stays the main focus when AI is used under a licensed engineer’s direction."
+     ],
+     "kind": "rule",
+     "src": [
+      "I37"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "mining",
+   "name": "Mining and resources",
+   "entries": [
+    {
+     "id": "mining-1",
+     "who": "BHP",
+     "where": "Australia",
+     "title": "BHP uses AI to support decisions while people make the call",
+     "use": "BHP’s Western Australia Iron Ore business runs mines, rail, conveyors and port from a remote operations centre. BHP says the operation is too complex for people to optimise every decision, so it uses AI as decision support. At its Escondida copper mine in Chile, AI gives operators real-time options for saving water and flags anomalies in energy use.",
+     "result": "BHP says AI at Escondida’s processing plants has helped save more than three gigalitres of water and 118 gigawatt hours of energy since the 2022 financial year. These are BHP’s own figures, and it doesn’t say how they were measured.",
+     "guardrails": [
+      "In WA Iron Ore, BHP says its team members make the ultimate decision, supported by AI.",
+      "At Escondida the AI offers operators options to act on, though BHP says some corrective actions on energy and water use are now automated."
+     ],
+     "kind": "use",
+     "src": [
+      "I38"
+     ]
+    },
+    {
+     "id": "mining-2",
+     "who": "WorkSafe WA (the code was first issued by WA’s Department of Mines and Petroleum)",
+     "where": "Australia",
+     "title": "WA has a code of practice for driverless mining equipment",
+     "use": "In 2015 WA’s mines regulator issued a code of practice for mobile autonomous mining, such as driverless haul trucks. It gives guidance on autonomous and semi-autonomous systems in surface and underground mines and quarries. It describes what has to be considered to show such a system is safe and performing as designed.",
+     "result": null,
+     "guardrails": [
+      "Keep the autonomous fleet separate from people and staffed equipment where possible, and design work areas to keep interaction low.",
+      "Use contingency controls such as layers of protection and systems that fail to a safe state.",
+      "Consult workers on the rollout and its hazards, and train staff with competency-based assessment.",
+      "Run any changes to the system or its design through a formal change management process."
+     ],
+     "kind": "rule",
+     "src": [
+      "I39"
+     ]
+    },
+    {
+     "id": "mining-3",
+     "who": "WA mines safety regulator (Significant Incident Report No. 286, approved by the State Mining Engineer)",
+     "where": "Australia",
+     "title": "Two driverless trucks started moving as operators climbed aboard",
+     "use": "A failed communications trailer cut wireless coverage for a WA mine’s autonomous haulage system. Two autonomous trucks stopped, as designed, and operators went to recover them by hand. When the last nearby vehicle was switched off, the trucks resumed their last command and drove forward while the operators were boarding.",
+     "result": "It was recorded as a near miss. One operator got into a cab and took control, and the other moved out of the second truck’s path. The regulator found the trucks hadn’t lost communications themselves. They had stopped because nearby vehicles had. Among the contributing causes it listed: past communication problems may have desensitised operators to the hazard, and the trucks didn’t detect a person about to board.",
+     "guardrails": [
+      "The regulator says safe states in which autonomous trucks can be approached must be clearly defined and recognisable in the field.",
+      "Boarding procedures should follow the manufacturer’s recommendations, and staff should be trained and checked on them.",
+      "Communication networks for autonomous haulage need to be reliable.",
+      "Letting people manually override safety controls should be risk assessed first."
+     ],
+     "kind": "failure",
+     "src": [
+      "I40"
+     ]
+    },
+    {
+     "id": "mining-4",
+     "who": "Rio Tinto",
+     "where": "Australia",
+     "title": "Rio Tinto runs driverless trains in the Pilbara from Perth",
+     "use": "Rio Tinto’s AutoHaul system runs iron ore trains in the Pilbara without a driver on board. A train controller in Perth, 1,500 kilometres away, sets the route. A network of computers keeps the train to the speed limit and away from other trains, and checks level crossings are clear. Rio Tinto calls it an autonomous system.",
+     "result": "The first autonomous delivery ran in July 2018, and the system was fully operational in June 2019. Rio Tinto says it removes the need to drive train drivers 1.5 million kilometres a year to and from shift changes.",
+     "guardrails": [
+      "Operators in Perth monitor trains remotely, and a controller sets each route.",
+      "Rio Tinto says the system detects faults such as a broken coupler and stops the train."
+     ],
+     "kind": "use",
+     "src": [
+      "I41"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "science",
+   "name": "Science and research",
+   "entries": [
+    {
+     "id": "science-1",
+     "who": "Australian Research Council (ARC)",
+     "where": "Australia",
+     "title": "The ARC tells grant reviewers not to use generative AI",
+     "use": "The ARC funds research through competitive grants judged by expert peer reviewers. Its policy of July 2023, the latest version we could read, covers how applicants and reviewers may use generative AI. Applicants are told to be cautious. Reviewers are told not to use it at all in their assessments. The ARC’s site was down when we checked on 19 November 2026, so a newer version may exist.",
+     "result": null,
+     "guardrails": [
+      "Putting application material into a generative AI tool is a breach of confidentiality, so peer reviewers must not use generative AI in their assessment work.",
+      "Where the ARC suspects an assessor used generative AI, it removes that assessment from the process.",
+      "The ARC says generative AI could compromise peer review, for example by producing generic comments or restating the application.",
+      "The organisations submitting applications stay responsible for them being accurate and not misleading."
+     ],
+     "kind": "rule",
+     "src": [
+      "I42"
+     ]
+    },
+    {
+     "id": "science-2",
+     "who": "CSIRO, Kakadu National Park rangers and Bininj Traditional Owners (Healthy Country Partnership)",
+     "where": "Australia",
+     "title": "Kakadu rangers count magpie geese with drones and AI",
+     "use": "Para grass, an introduced fodder crop, is crowding out native plants and magpie geese habitat in Kakadu’s wetlands. Indigenous rangers fly drones over the wetlands, and AI reviews the footage to count animals and identify para grass in its different states. That replaces people reviewing thousands of hours of video. Rangers see the results on a mobile dashboard to support decisions on the ground.",
+     "result": null,
+     "guardrails": [
+      "Drones are flown under the direction of Indigenous rangers, and the footage is labelled and interpreted using Indigenous knowledge alongside the AI.",
+      "Data sits in three rings. Some is restricted to Traditional Owners and Indigenous elders, some goes to researchers, and some is public.",
+      "The rangers’ dashboard was designed with Traditional Owners around their cultural values and the season."
+     ],
+     "kind": "use",
+     "src": [
+      "I43"
+     ]
+    },
+    {
+     "id": "science-3",
+     "who": "Google DeepMind and EMBL’s European Bioinformatics Institute",
+     "where": "United Kingdom",
+     "title": "AlphaFold puts a confidence score on every protein it predicts",
+     "use": "AlphaFold2 is an AI model that predicts a protein’s 3D structure from its amino acid sequence, a problem researchers had worked on since the 1970s. Its developers, Demis Hassabis and John Jumper, shared half of the 2024 Nobel Prize in Chemistry. Its predictions are published in a public database run by EMBL’s European Bioinformatics Institute with Google DeepMind.",
+     "result": "The Royal Swedish Academy of Sciences says AlphaFold2 has predicted the structure of virtually all 200 million known proteins, and has been used by more than two million people in 190 countries. When a software bug made about 4% of the database’s predictions inaccurate in 2022, those predictions also carried low confidence scores, and they were replaced in November 2022.",
+     "guardrails": [
+      "Every prediction carries a confidence score from 0 to 100 for each part of the protein, shown in colour in the viewer and stored in the files.",
+      "The database says the score measures AlphaFold’s confidence in the 3D arrangement. It doesn’t measure whether the model is biologically correct.",
+      "It states AlphaFold has not been validated for predicting the effect of mutations, and doesn’t place non-protein parts such as metals or DNA."
+     ],
+     "kind": "use",
+     "src": [
+      "I44",
+      "I45"
+     ]
+    },
+    {
+     "id": "science-4",
+     "who": "Frontiers (publisher of Frontiers in Cell and Developmental Biology)",
+     "where": "Switzerland",
+     "title": "A journal retracted a paper over AI-generated figures",
+     "use": "An article published on 13 February 2024 contained AI-generated figures, and readers quickly raised the alarm. Frontiers retracted it and removed it from its databases, announcing this on 16 February.",
+     "result": "Frontiers’ investigation found one peer reviewer had raised valid concerns about the figures and asked for revisions. The authors didn’t respond, and the paper was published anyway.",
+     "guardrails": [
+      "Frontiers said it was investigating how its processes failed to act when the authors didn’t comply with the reviewers’ requirements.",
+      "It apologised to the scientific community and thanked the readers who raised the alarm."
+     ],
+     "kind": "failure",
+     "src": [
+      "I46",
+      "I47"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "education",
+   "name": "Teaching",
+   "entries": [
+    {
+     "id": "education-1",
+     "who": "WA Department of Education, with Catholic Education WA, the Association of Independent Schools of WA and the School Curriculum and Standards Authority",
+     "where": "Australia",
+     "title": "WA is building a lesson planning AI with its schools",
+     "use": "WA’s pilot began in 2024 in eight public, Catholic and independent schools, funded through the federal-state Workload Reduction Fund. Its platform, WA ClassmAIte, lets teachers draft lesson plans and classroom resources aligned to the WA Curriculum. By May 2026, 60 schools were involved, with more than 100 expected by the end of 2026.",
+     "result": "The government says early results are strong, but it hadn’t published an evaluation when we checked.",
+     "guardrails": [
+      "Teachers get editable outputs and a secure chat function, so what the AI drafts can be changed before it’s used.",
+      "Schools are co-designing the platform as the pilot runs.",
+      "The pilot was set up to follow the Australian Framework for Generative Artificial Intelligence in Schools."
+     ],
+     "kind": "use",
+     "src": [
+      "I48",
+      "I49"
+     ]
+    },
+    {
+     "id": "education-2",
+     "who": "Curtin University",
+     "where": "Australia",
+     "title": "Curtin switched off Turnitin’s AI detection",
+     "use": "From 1 January 2026, Curtin disabled the AI writing detection feature in Turnitin across all its campuses and study periods. Turnitin’s ordinary text-matching checks for copying stay on. Curtin’s notice doesn’t say why.",
+     "result": null,
+     "guardrails": [
+      "All assessments are still reviewed for academic integrity, and integrity procedures still apply.",
+      "How students may use generative AI varies by unit, so they’re told to check with their unit coordinator.",
+      "Curtin recommends students and staff acknowledge when and how they used generative AI, especially in work that will be assessed or shared."
+     ],
+     "kind": "rule",
+     "src": [
+      "I50",
+      "I51"
+     ]
+    },
+    {
+     "id": "education-3",
+     "who": "NSW Department of Education",
+     "where": "Australia",
+     "title": "NSW built a school AI that won’t hand over the answer",
+     "use": "The NSW Department of Education built its own generative AI app, NSWEduChat, with separate versions for teachers and students. It was trialled in 16 schools from early 2024 and 50 by Term 2. All public school teachers got it from Term 4 2024, and students in Years 5 to 12 from Term 4 2025.",
+     "result": "The evidence so far is self-reported. Some teachers in the trial reported saving over an hour a week producing lesson resources, according to the NSW Government’s release.",
+     "guardrails": [
+      "The student version doesn’t reveal full answers. It asks guiding questions and gets students to reason through the problem.",
+      "It runs in the department’s own cloud environment, which the department says keeps data secure.",
+      "Its content filters work in layers. They screen for profanity and harmful content, and some topics are restricted."
+     ],
+     "kind": "use",
+     "src": [
+      "I52",
+      "I53",
+      "I54"
+     ]
+    },
+    {
+     "id": "education-4",
+     "who": "The University of Sydney",
+     "where": "Australia",
+     "title": "The University of Sydney sorts assessments into two lanes",
+     "use": "The University of Sydney sorts assessments into two lanes. Lane 1 covers secure tasks supervised in person, such as exams and in-class tasks. Lane 2 is open: AI use is allowed and, where relevant, scaffolded and supported by teaching. The university planned to align its assessments to the two lanes from Semester 2 2025.",
+     "result": null,
+     "guardrails": [
+      "Secure, supervised Lane 1 assessments are the ones used to form trustworthy judgements of what students have learned. In Lane 1 the examiner decides whether AI is allowed.",
+      "In open assessments, staff can’t ban AI. The university says AI use can’t be reliably or equitably detected when an assessment isn’t supervised face to face.",
+      "The university expects deeper changes to assessments and curriculum to take one to two years."
+     ],
+     "kind": "rule",
+     "src": [
+      "I55"
+     ]
+    },
+    {
+     "id": "education-5",
+     "who": "Education Endowment Foundation, evaluated by the National Foundation for Educational Research (NFER)",
+     "where": "United Kingdom",
+     "title": "ChatGPT cut teachers’ lesson planning time by 31% in an English trial",
+     "use": "259 Year 7 and 8 science teachers from 68 English schools took part in a trial in 2024 in which schools were randomly assigned. Teachers in one group used ChatGPT with a guide to plan lessons and resources, and the others planned without generative AI. Teachers mostly used it for one or two activities per lesson, such as writing quiz questions or finding new activity ideas.",
+     "result": "Teachers using ChatGPT spent 56.2 minutes a week on lesson and resource planning, against 81.5 minutes for the comparison group. That’s a saving of 25.3 minutes a week, or 31%. An expert panel that didn’t know which resources were made with ChatGPT found no drop in quality.",
+     "guardrails": [
+      "The evaluators put the rule against entering personal data, such as pupil data, at the top of the trial guidance.",
+      "Teachers got an online guide, which warns users to check what ChatGPT produces because it can make mistakes. They then took an eight-question quiz on the guide’s principles.",
+      "The EEF says teachers need support to make sure outputs are high quality."
+     ],
+     "kind": "use",
+     "src": [
+      "I56",
+      "I57"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "media",
+   "name": "Journalism and media",
+   "entries": [
+    {
+     "id": "media-1",
+     "who": "ABC News (Australian Broadcasting Corporation)",
+     "where": "Australia",
+     "title": "The ABC turns regional radio stories into online briefs with its own tool",
+     "use": "Regional ABC bulletins air on more than 40 stations each weekday, and some of those stories might otherwise not feature online. In a pilot, journalists use ABC Assist, a tool the ABC built, to reformat their verified radio stories into digital briefings. The original stories are written by ABC journalists, and the ABC says the tool doesn’t generate any stories.",
+     "result": "The ABC says internal trials showed the tool can cut the time the conversion takes by up to half, while still meeting editorial standards. It doesn’t say how many stories were tested.",
+     "guardrails": [
+      "ABC journalists check and edit every reformatted story, and approve it before it’s published.",
+      "Content made with AI help must be clearly disclosed to the audience.",
+      "The ABC’s editorial guidance says all AI output must be controlled and approved by a senior staff member, who stays accountable for it. AI output used in news must be independently verified first.",
+      "Only approved AI tools may be used, and evidentiary source material must not be altered with AI in any way."
+     ],
+     "kind": "use",
+     "src": [
+      "I58",
+      "I59"
+     ]
+    },
+    {
+     "id": "media-2",
+     "who": "Australian Communications and Media Authority (ACMA), registering the industry’s Commercial Radio Code of Practice 2026",
+     "where": "Australia",
+     "title": "Radio stations must say when a synthetic voice is the host",
+     "use": "From 1 July 2026, Australia’s commercial radio code requires stations to tell listeners when a synthetic voice hosts a regularly scheduled program or news broadcast. The ACMA says it’s the first time AI has been addressed in a broadcasting code of practice.",
+     "result": null,
+     "guardrails": [
+      "Stations must let their audience know when a synthetic voice is used to host a regular program or news broadcast.",
+      "Commercial Radio & Audio, the industry body, describes it as an AI transparency requirement for programs hosted by synthetic voices, including news programs."
+     ],
+     "kind": "rule",
+     "src": [
+      "I60",
+      "I61"
+     ]
+    },
+    {
+     "id": "media-3",
+     "who": "The Associated Press (AP)",
+     "where": "United States",
+     "title": "AP treats AI output as unvetted source material",
+     "use": "AP has a licensing agreement with OpenAI. Its staff may experiment with ChatGPT with caution, and they don’t use it to create publishable content. AP also runs projects that automate repetitive newsroom work, such as suggesting headlines and transcribing videos.",
+     "result": null,
+     "guardrails": [
+      "Any output from a generative AI tool should be treated as unvetted source material, subject to AP’s editorial judgment and sourcing standards.",
+      "AP doesn’t alter any element of its photos, video or audio.",
+      "It won’t transmit AI-generated images suspected or proven to be false depictions of reality."
+     ],
+     "kind": "rule",
+     "src": [
+      "I62",
+      "I63"
+     ]
+    },
+    {
+     "id": "media-4",
+     "who": "CNET",
+     "where": "United States",
+     "title": "CNET paused its AI tool after auditing 77 stories",
+     "use": "In November 2022, CNET’s money team began testing an in-house AI engine to help editors write basic financial explainers. Editors wrote the outlines, then expanded and edited the AI drafts. CNET published 77 of these short stories, about 1% of its content over the same period.",
+     "result": "After one story was rightly cited for factual errors, the team audited them all. It found more stories needing correction, a small number of them substantially, plus minor issues like transposed numbers. In a handful, the plagiarism checker wasn’t properly used or missed sentences closely resembling other sources. CNET paused the tool.",
+     "guardrails": [
+      "CNET said it would only restart once it was confident the tool and its editorial processes would prevent both human and AI errors.",
+      "It made the disclosure visible without hovering over the byline, and the human editor who reviewed each story shares the byline.",
+      "Corrected stories carry an editors’ note explaining what changed."
+     ],
+     "kind": "failure",
+     "src": [
+      "I64"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "architecture",
+   "name": "Architecture and design",
+   "entries": [
+    {
+     "id": "architecture-1",
+     "who": "Australian Institute of Architects",
+     "where": "Australia",
+     "title": "Australia’s architects are asking for national guidance on AI",
+     "use": "The Institute made a supplementary submission on AI to a Senate inquiry in 2026. It says AI is already being used or explored for design generation, zoning analysis, code compliance, specification writing, documentation review and project management. The Institute says these areas intersect with professional responsibility, and that AI brings public safety, regulatory and liability risks.",
+     "result": null,
+     "guardrails": [
+      "The Institute says there’s no nationally consistent guidance on how AI use fits with architects’ competence, registration, conduct and disciplinary obligations. Until there is, existing obligations continue in full and aren’t diluted by AI.",
+      "Whatever tools they use, architects must still meet the national competency standard and stay accountable for services delivered under their supervision.",
+      "It recommends risk-based AI governance in practice, and that future guidance cover client-owned and confidential project information.",
+      "It asks for explicit protection of Indigenous Cultural and Intellectual Property, including cultural datasets, images, place-based knowledge and Country-related information."
+     ],
+     "kind": "rule",
+     "src": [
+      "I65"
+     ]
+    },
+    {
+     "id": "architecture-2",
+     "who": "Royal Institute of British Architects (RIBA)",
+     "where": "United Kingdom",
+     "title": "Most UK practices now use AI, but few have a policy for it",
+     "use": "RIBA has surveyed its members on AI twice, in 2024 and 2025. Practices use it most for early design visualisations and for writing specifications. They use it least for building performance simulation and environmental impact modelling.",
+     "result": "In RIBA’s 2025 survey, run from January to April 2025 with just under 500 respondents, 59% of practices were using AI, up from 41% in 2024. Among users, 70% used it for early design visualisations and 58% for specification writing. Only 15% of practices had an AI policy, though 53% expected to within two years. 67% worried AI will make it easier to imitate their work. Only 3% agreed AI had led to staff reductions.",
+     "guardrails": [
+      "RIBA says it’s developing guidance and pushing for more transparency, so architects can use AI without losing agency over their creative work."
+     ],
+     "kind": "use",
+     "src": [
+      "I66",
+      "I67"
+     ]
+    },
+    {
+     "id": "architecture-3",
+     "who": "Foster + Partners (Applied Research and Development group)",
+     "where": "United Kingdom",
+     "title": "Foster + Partners trains fast stand-ins for slow building simulations",
+     "use": "Engineering simulations such as structural deformation, solar radiation and pedestrian movement can take hours or days. Foster + Partners’ research group trains ‘surrogate’ machine learning models on chosen simulation results, so designers get an approximate answer in near real time while they’re still designing. It has used the same approach to analyse how well office floor plans connect, visually and spatially.",
+     "result": "In a 2017 project with Autodesk on self-deforming facade panels, the firm says its trained model produced material layering patterns for a target shape within milliseconds. Its predictions weren’t identical to the full simulation, but the firm says they were close enough to show the approach works. These are the firm’s own results.",
+     "guardrails": [
+      "The firm says the surrogate’s approximation is good enough for designers to make a quick decision during design.",
+      "It acknowledges a downside: designers can’t ask these systems why they reached a result, only review the result."
+     ],
+     "kind": "use",
+     "src": [
+      "I68"
+     ]
+    },
+    {
+     "id": "architecture-4",
+     "who": "United States Copyright Office",
+     "where": "United States",
+     "title": "AI-generated images in a comic weren’t protected by copyright",
+     "use": "Kristina Kashtanova registered a comic book, Zarya of the Dawn, without saying its images were made with the AI image generator Midjourney. In February 2023 the Copyright Office reviewed the registration.",
+     "result": "The Office decided the text, and the selection, coordination and arrangement of text and images, were Kashtanova’s work and protected. The Midjourney images weren’t, because they aren’t the product of human authorship. It said it would cancel the original certificate and issue a new one covering only the material she created.",
+     "guardrails": [
+      "The Office noted that, by Midjourney’s own description, it doesn’t interpret prompts as specific instructions to create a particular result.",
+      "Because the registration didn’t disclaim the Midjourney-generated content, the Office replaced it with a more limited one."
+     ],
+     "kind": "rule",
+     "src": [
+      "I69"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "real-estate",
+   "name": "Real estate",
+   "entries": [
+    {
+     "id": "real-estate-1",
+     "who": "NSW Government (Minister for Better Regulation and Fair Trading)",
+     "where": "Australia",
+     "title": "NSW rental ads will have to flag altered or AI-generated photos",
+     "use": "The NSW Government says digitally altered or AI-generated images in rental ads can mislead tenants, for example fake furniture that hides structural damage or misrepresents room proportions. In September 2026 the NSW Parliament passed the Residential Tenancies (Protection of Personal Information) Amendment Bill 2025, which deals with this and with renters’ personal information.",
+     "result": null,
+     "guardrails": [
+      "Landlords and agents will have to disclose when images in rental ads have been digitally altered or AI-generated to hide faults.",
+      "Businesses that don’t disclose altered photos face penalties of up to $22,000.",
+      "The new laws are expected to take effect in early 2027."
+     ],
+     "kind": "rule",
+     "src": [
+      "I70"
+     ]
+    },
+    {
+     "id": "real-estate-2",
+     "who": "Real Estate Authority, New Zealand’s real estate regulator",
+     "where": "New Zealand",
+     "title": "An AI’s mistake is no defence for a New Zealand agent",
+     "use": "The regulator’s guidance for licensed agents lists common uses of generative AI in real estate. They include generating property valuations from market data, and virtual staging that digitally furnishes rooms. It can also draft marketing and emails, book appointments and answer common questions.",
+     "result": null,
+     "guardrails": [
+      "Agents are responsible for the services they provide. An error made by a generative AI tool won’t be a defence to a breach of their professional obligations.",
+      "Generative AI can create inaccurate or false information, and agents’ duties on accurate, complete information and against misleading statements still apply.",
+      "Government guidance recommends against putting personal and client information into external AI tools, because the provider may be able to see the data.",
+      "Agencies should have clear policies on AI use and think about what disclosure to, or consent from, customers is needed."
+     ],
+     "kind": "rule",
+     "src": [
+      "I71"
+     ]
+    },
+    {
+     "id": "real-estate-3",
+     "who": "Royal Institution of Chartered Surveyors (RICS), whose members include property valuers",
+     "where": "United Kingdom",
+     "title": "Valuers and surveyors must tell clients in writing where AI is used",
+     "use": "RICS’s first global standard on AI applies to its members and regulated firms from 9 March 2026, across surveying work including valuation. It covers AI outputs that have a material impact on the service, such as summaries relied on when writing a report or outputs that compose significant parts of an opinion.",
+     "result": null,
+     "guardrails": [
+      "Terms of engagement must say in writing when AI will be involved and in which parts of the service. They must also tell clients how to challenge its use or seek redress, and whether they can opt out.",
+      "Firms whose AI use materially affects their services must keep a risk register covering bias, wrong outputs and what happens to data they put into AI systems. It must be reviewed at least quarterly.",
+      "Members and firms must take random dip samples of AI outputs at regular intervals to check their quality.",
+      "Firm policies must set out training, at least once a year, for everyone involved in buying or using AI."
+     ],
+     "kind": "rule",
+     "src": [
+      "I72"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "agriculture",
+   "name": "Agriculture",
+   "entries": [
+    {
+     "id": "agriculture-1",
+     "who": "James Cook University and Sugar Research Australia, with AutoWeed (the tool’s maker)",
+     "where": "Australia",
+     "title": "A sprayer that sees weeds used 35% less herbicide in Queensland cane",
+     "use": "Researchers built a robotic spot sprayer that uses computer vision and deep learning to find weeds and spray only them. They compared it with standard broadcast spraying, which covers the whole field, in field trials in the Burdekin, one of Australia’s largest sugarcane regions.",
+     "result": "Across 25 hectares of trials, spot spraying was 97% as effective as broadcast spraying and used 35% less herbicide on average. In strips with fewer weeds, herbicide use fell by up to 65%. In irrigation runoff three to six days after spraying, the mean herbicide concentration was 39% lower and the mean load 54% lower.",
+     "guardrails": [
+      "To measure the sprayer’s hit rate, a team manually annotated each image, counting the target weeds sprayed and the target weeds missed.",
+      "They note the model can wrongly flag an image with no weed, or miss a weed, and identify that as a limitation to improve."
+     ],
+     "kind": "use",
+     "src": [
+      "I74"
+     ]
+    },
+    {
+     "id": "agriculture-2",
+     "who": "Grains Research and Development Corporation (GRDC), reporting a NSW grain-growing family’s experience",
+     "where": "Australia",
+     "title": "A NSW grain family cut its summer herbicide use with AI spot spraying",
+     "use": "The Holland family farm grain on 4,400 hectares in southern NSW. They fitted their boomspray with 12 video cameras that run weed-recognition algorithms, so it sprays only where a weed is identified, in fallow and in crops. Growers can send images back to the developer to improve the algorithms.",
+     "result": "Broden Holland told GRDC the system has cut their summer herbicide use by up to 76% compared with blanket spraying, even in two very wet summers. This is the farm’s own estimate, and GRDC doesn’t report a controlled trial behind it.",
+     "guardrails": [
+      "The manufacturer recommends two spray passes for in-crop weeds, because the cameras don’t hit every weed.",
+      "The family is taking its time to collect the data needed to make the system reliable before relying on it heavily for in-crop weeds.",
+      "High stubble residue can reduce how well the cameras work in some situations, and the family still burns high stubble loads."
+     ],
+     "kind": "use",
+     "src": [
+      "I75"
+     ]
+    },
+    {
+     "id": "agriculture-3",
+     "who": "GRDC and BioScout, with state plant pathologists including WA’s Department of Primary Industries and Regional Development (DPIRD)",
+     "where": "Australia",
+     "title": "Robotic spore traps tell growers when disease is in the air",
+     "use": "Fungicides are usually sprayed on a calendar or when the weather suits disease, without knowing whether the fungus is actually present. Solar-powered SporeScout traps sample the air, and machine learning identifies fungal spores in the samples and estimates their concentration. A GRDC-supported network of 60 samplers across grain regions shows results on an online dashboard alongside weather data.",
+     "result": null,
+     "guardrails": [
+      "State department pathologists, including from WA’s DPIRD, support the network with technical expertise.",
+      "In each growing region, pathologists place a separate sampler that can genotype fungal strains alongside a SporeScout unit."
+     ],
+     "kind": "use",
+     "src": [
+      "I76"
+     ]
+    },
+    {
+     "id": "agriculture-4",
+     "who": "National Farmers’ Federation (NFF)",
+     "where": "Australia",
+     "title": "The farm data code says data can’t be used against a farmer without consent",
+     "use": "Sensors, machinery and farm software collect data that ag-tech and AI tools rely on. The NFF’s Australian Farm Data Code, edition 2 (May 2023), is a voluntary code for providers that manage farm data. Providers that fully comply can be certified by the NFF. The Code itself doesn’t mention AI. It covers the farm data those tools use.",
+     "result": null,
+     "guardrails": [
+      "Providers must get the farmer’s express and fully informed consent to the terms for collecting, using or sharing farm data.",
+      "Farm data must not be used to the farmer’s detriment without that consent.",
+      "If terms change materially, farmers must be able to leave without a financial penalty and with time to move or delete their data.",
+      "Providers must take all precautions against re-identifying a farm or farmer from de-identified data."
+     ],
+     "kind": "rule",
+     "src": [
+      "I77",
+      "I78"
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "I1",
+   "title": "Supreme Court Practice Note SC Gen 23: Use of Generative Artificial Intelligence (Gen AI)",
+   "publisher": "Supreme Court of New South Wales",
+   "url": "https://supremecourt.nsw.gov.au/documents/Practice-and-Procedure/Practice-Notes/general/current/PN_SC_Gen_23.pdf",
+   "published": "2025-01-28",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I2",
+   "title": "Statement on the ‘Mr Dayal’ matter",
+   "publisher": "Victorian Legal Services Board + Commissioner",
+   "url": "https://lsbc.vic.gov.au/news-updates/news/statement-mr-dayal-matter",
+   "published": "2025-09-02",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I3",
+   "title": "GenAI, Fake Law & Fallout: A review of the misuse of generative artificial intelligence in legal proceedings",
+   "publisher": "Centre for the Future of the Legal Profession, UNSW Law & Justice",
+   "url": "https://old.lawsocietywa.asn.au/wp-content/uploads/2025/11/CFLP_GenAI-Fake-Law-and-Fallout_Report_.pdf",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I4",
+   "title": "GenAI, Fake Law & Fallout (news item)",
+   "publisher": "UNSW Sydney",
+   "url": "https://www.unsw.edu.au/news/2025/11/genai-fake-law-and-fallout-report",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I5",
+   "title": "The Allens AI Australian law benchmark 2025: the results",
+   "publisher": "Allens",
+   "url": "https://www.allens.com.au/insights-news/explore/2025/the-allens-ai-australian-law-benchmark-2025/the-results/",
+   "published": "2025-06-26",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I6",
+   "title": "The Allens AI Australian law benchmark 2025: introduction",
+   "publisher": "Allens",
+   "url": "https://www.allens.com.au/insights-news/explore/2025/the-allens-ai-australian-law-benchmark-2025/introduction/",
+   "published": "2025-06-26",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I7",
+   "title": "The Allens AI Australian law benchmark 2025: the future of law",
+   "publisher": "Allens",
+   "url": "https://www.allens.com.au/insights-news/explore/2025/the-allens-ai-australian-law-benchmark-2025/the-future-of-law/",
+   "published": "2025-06-26",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I8",
+   "title": "Statement on the use of artificial intelligence in Australian legal practice",
+   "publisher": "Legal Practice Board of Western Australia (joint with the Law Society of NSW and the Victorian Legal Services Board + Commissioner)",
+   "url": "https://www.lpbwa.org.au/artificial-intelligence-joint-statement",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I9",
+   "title": "AI guidance to safeguard consumers of legal services",
+   "publisher": "Legal Practice Board of Western Australia",
+   "url": "https://www.lpbwa.org.au/ai-guidance-to-safeguard-consumers-of-legal-services",
+   "published": "2024-12-06",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I10",
+   "title": "Artificial Intelligence (AI) Guidance for Judicial Office Holders",
+   "publisher": "Courts and Tribunals Judiciary (England and Wales)",
+   "url": "https://www.judiciary.uk/wp-content/uploads/2025/10/Artificial-Intelligence-AI-Guidance-for-Judicial-Office-Holders-1.pdf",
+   "published": "2025-10-08",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I11",
+   "title": "Meeting your professional obligations when using Artificial Intelligence in healthcare",
+   "publisher": "Australian Health Practitioner Regulation Agency (Ahpra) and National Boards",
+   "url": "https://www.ahpra.gov.au/Resources/Artificial-Intelligence-in-healthcare.aspx",
+   "published": "2024-08-22",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I12",
+   "title": "Implementation of A New, Mobile Diabetic Retinopathy Screening Model Incorporating Artificial Intelligence in Remote Western Australia (Li Q, Drinkwater JJ, Woods K, Douglas E, Ramirez A, Turner AW), Australian Journal of Rural Health 33(2):e70031, doi 10.1111/ajr.70031",
+   "publisher": "Australian Journal of Rural Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/40110918/",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I13",
+   "title": "Screening performance and characteristics of breast cancer detected in the Mammography Screening with Artificial Intelligence trial (MASAI) (Hernström V et al.), Lancet Digital Health 7(3):e175-e183, doi 10.1016/S2589-7500(24)00267-X",
+   "publisher": "The Lancet Digital Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/39904652/",
+   "published": "2025-02-03",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I14",
+   "title": "Interval cancer, sensitivity, and specificity comparing AI-supported mammography screening with standard double reading without AI in the MASAI study (Gommers J et al.), The Lancet 407(10527):505-514, doi 10.1016/S0140-6736(25)02464-X",
+   "publisher": "The Lancet",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/41620232/",
+   "published": "2026-01-31",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I15",
+   "title": "Ambient AI Scribes in Clinical Practice: A Randomized Trial (Lukac PJ et al.), NEJM AI 2(12), doi 10.1056/aioa2501000",
+   "publisher": "NEJM AI",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/41497288/",
+   "published": "2025-11-26",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I16",
+   "title": "Dissecting racial bias in an algorithm used to manage the health of populations (Obermeyer Z, Powers B, Vogeli C, Mullainathan S), Science 366(6464):447-453, doi 10.1126/science.aax2342",
+   "publisher": "Science",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/31649194/",
+   "published": "2019-10-25",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I17",
+   "title": "CommBank develops AI agent that spots new fraud and helps build defences",
+   "publisher": "Commonwealth Bank of Australia (newsroom)",
+   "url": "https://www.commbank.com.au/articles/newsroom/2026/04/ai-agent-spots-fraud-in-real-time.html",
+   "published": "2026-04-24",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I18",
+   "title": "Auditor-General Report No. 26 2024–25: Governance of Artificial Intelligence at the Australian Taxation Office",
+   "publisher": "Australian National Audit Office",
+   "url": "https://www.anao.gov.au/sites/default/files/2025-02/Auditor-General_Report_2024-25_26.pdf",
+   "published": "2025-02-24",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I19",
+   "title": "ATO AI transparency statement",
+   "publisher": "Australian Taxation Office",
+   "url": "https://www.ato.gov.au/about-ato/commitments-and-reporting/information-and-privacy/ato-ai-transparency-statement",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I20",
+   "title": "REP 798 Beware the gap: Governance arrangements in the face of AI innovation",
+   "publisher": "Australian Securities and Investments Commission",
+   "url": "https://download.asic.gov.au/media/mtllqjo0/rep-798-published-29-october-2024.pdf",
+   "published": "2024-10-29",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I21",
+   "title": "TPB(GS) 55/2026 The use of Artificial Intelligence and the Code of Professional Conduct",
+   "publisher": "Tax Practitioners Board",
+   "url": "https://www.tpb.gov.au/tpbgs-552026-use-artificial-intelligence-and-code-professional-conduct",
+   "published": "2026-07-22",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I22",
+   "title": "Targeted Compliance Framework Assurance Review: Final Report (Deloitte)",
+   "publisher": "Department of Employment and Workplace Relations",
+   "url": "https://www.dewr.gov.au/download/17099/targeted-compliance-framework-assurance-review-final-report/42052/targeted-compliance-framework-independent-review-final-report/pdf",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I23",
+   "title": "Targeted Compliance Framework Assurance Review – Final Report (page)",
+   "publisher": "Department of Employment and Workplace Relations",
+   "url": "https://www.dewr.gov.au/assuring-integrity-targeted-compliance-framework/resources/targeted-compliance-framework-assurance-review-final-report",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I24",
+   "title": "Evaluation of the whole-of-government trial of Microsoft 365 Copilot: full report, executive summary and glossary",
+   "publisher": "Digital Transformation Agency",
+   "url": "https://www.digital.gov.au/initiatives/copilot-trial/microsoft-365-copilot-evaluation-report-full/executive-summary-glossary",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I25",
+   "title": "Evaluation of the whole-of-government trial of Microsoft 365 Copilot: full report, whole-of-government adoption of generative AI",
+   "publisher": "Digital Transformation Agency",
+   "url": "https://www.digital.gov.au/initiatives/copilot-trial/microsoft-365-copilot-evaluation-report-full/whole-government-adoption-generative-ai",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I26",
+   "title": "Evaluation of Generative Artificial Intelligence: Copilot Microsoft 365 trial in the Department of the Treasury",
+   "publisher": "Australian Centre for Evaluation (Department of the Treasury)",
+   "url": "https://evaluation.treasury.gov.au/sites/evaluation.treasury.gov.au/files/2025-02/evaluation-generative-artificial-intelligence.docx",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I27",
+   "title": "Investigation into the use of ChatGPT by a Child Protection worker",
+   "publisher": "Office of the Victorian Information Commissioner",
+   "url": "https://ovic.vic.gov.au/wp-content/uploads/2024/11/DFFH-ChatGPT-investigation-report-20240924-Re-upload.pdf",
+   "published": "2024-09-24",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I28",
+   "title": "Investigation into the use of ChatGPT by a Child Protection worker (regulatory action page)",
+   "publisher": "Office of the Victorian Information Commissioner",
+   "url": "https://ovic.vic.gov.au/regulatory-action/investigation-into-the-use-of-chatgpt-by-a-child-protection-worker/",
+   "published": "2024-09-24",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I29",
+   "title": "Western Australian Government Artificial Intelligence Policy",
+   "publisher": "Office of Digital Government, Department of the Premier and Cabinet (WA)",
+   "url": "https://www.wa.gov.au/system/files/2025-07/ai_policyv2.pdf",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I30",
+   "title": "WA Government Artificial Intelligence Policy and Assurance Framework",
+   "publisher": "WA Government",
+   "url": "https://www.wa.gov.au/government/publications/wa-government-artificial-intelligence-policy-and-assurance-framework",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I31",
+   "title": "AI Consultation Analysis Tool v1.0 evaluation",
+   "publisher": "UK Department for Transport",
+   "url": "https://assets.publishing.service.gov.uk/media/696f6641011505255b2d4203/ai-consultation-analysis-tool-CAT-evaluation.pdf",
+   "published": "2025-12-23",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I32",
+   "title": "AI consultation analysis tool evaluation (publication page)",
+   "publisher": "UK Department for Transport",
+   "url": "https://www.gov.uk/government/publications/ai-consultation-analysis-tool-evaluation",
+   "published": "2025-12-23",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I33",
+   "title": "Machine learning for asset management (project AAM6201: Development of Machine-Learning Decision-Support Tools for Pavement Asset Management)",
+   "publisher": "Austroads",
+   "url": "https://austroads.gov.au/infrastructure/asset-management/machine-learning-for-asset-management",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I34",
+   "title": "Responsible AI in Australia: An engineering perspective (submission to the Safe and Responsible AI in Australia discussion paper)",
+   "publisher": "Engineers Australia",
+   "url": "https://www.engineersaustralia.org.au/sites/default/files/2023-09/Responsible-AI-in-Australia-an%20engineering-perspective.pdf",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I35",
+   "title": "'This happens more frequently than people realize': Arup chief on the lessons learned from a $25m deepfake crime (David Elliott, interviewing Rob Greig)",
+   "publisher": "World Economic Forum (Forum Stories)",
+   "url": "https://www.weforum.org/stories/2025/02/deepfake-ai-cybercrime-arup/",
+   "published": "2025-02-04",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I36",
+   "title": "Use of Artificial Intelligence in Engineering Practice (Board of Ethical Review Case 24-2)",
+   "publisher": "National Society of Professional Engineers",
+   "url": "https://www.nspe.org/career-growth/ethics/board-ethical-review-cases/use-artificial-intelligence-engineering-practice",
+   "published": "2024-07-18",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I37",
+   "title": "Policy statement 573 – Artificial Intelligence and engineering responsibility",
+   "publisher": "American Society of Civil Engineers",
+   "url": "https://www.asce.org/advocacy/policy-statements/ps573---artificial-intelligence-and-engineering-responsibility",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I38",
+   "title": "Artificial Intelligence is unearthing a smarter future",
+   "publisher": "BHP (BHP Insights)",
+   "url": "https://www.bhp.com/news/bhp-insights/2024/08/artificial-intelligence-is-unearthing-a-smarter-future",
+   "published": "2024-08-01",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I39",
+   "title": "Safe mobile autonomous mining in Western Australia: code of practice",
+   "publisher": "Department of Mines and Petroleum (WA), republished by WorkSafe WA",
+   "url": "https://worksafe.wa.gov.au/system/files/documents/2025-02/MSH_COP_SafeMobileAutonomousMiningWA.pdf",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I40",
+   "title": "Significant Incident Report No. 286: Near miss following unplanned movement of autonomous haul trucks during recovery operations",
+   "publisher": "WA mines safety regulator (DMIRS at the time, now hosted by WorkSafe WA)",
+   "url": "https://worksafe.wa.gov.au/system/files/documents/2025-03/MSH_SIR_286.pdf",
+   "published": "2021-05-24",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I41",
+   "title": "How did one of the world's largest robots come to life?",
+   "publisher": "Rio Tinto (news story)",
+   "url": "https://www.riotinto.com/en/news/stories/how-did-worlds-biggest-robot",
+   "published": "2019-09-09",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I42",
+   "title": "Policy on Use of Generative Artificial Intelligence in the ARC’s grants programs (version 2023.1)",
+   "publisher": "Australian Research Council",
+   "url": "https://www.arc.gov.au/sites/default/files/2023-07/Policy%20on%20Use%20of%20Generative%20Artificial%20Intelligence%20in%20the%20ARCs%20grants%20programs%202023.pdf",
+   "published": "2023-07-07",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I43",
+   "title": "AI transforms Kakadu management (partner release)",
+   "publisher": "CSIRO (joint partner release with Microsoft and Kakadu partners)",
+   "url": "https://www.csiro.au/en/news/all/news/2019/november/ai-transforms-kakadu-management",
+   "published": "2019-11-20",
+   "read": "19 Nov 2026",
+   "vendorAccount": true
+  },
+  {
+   "id": "I44",
+   "title": "Press release: The Nobel Prize in Chemistry 2024",
+   "publisher": "The Royal Swedish Academy of Sciences (nobelprize.org)",
+   "url": "https://www.nobelprize.org/prizes/chemistry/2024/press-release/",
+   "published": "2024-10-09",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I45",
+   "title": "AlphaFold Protein Structure Database: frequently asked questions",
+   "publisher": "EMBL-EBI (European Bioinformatics Institute) with Google DeepMind",
+   "url": "https://alphafold.ebi.ac.uk/faq",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I46",
+   "title": "Frontiers statement concerning the article 'Cellular functions of spermatogonial stem cells in relation to JAK/STAT signaling pathway'",
+   "publisher": "Frontiers",
+   "url": "https://www.frontiersin.org/news/2024/02/16/frontiers-statement-concerning-the-article-cellular-functions-of-spermatogonial-stem-cells",
+   "published": "2024-02-16",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I47",
+   "title": "Retraction: Cellular functions of spermatogonial stem cells in relation to JAK/STAT signaling pathway",
+   "publisher": "Frontiers in Cell and Developmental Biology (Frontiers Editorial Office)",
+   "url": "https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2024.1386861/full",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I48",
+   "title": "$4.6 million for AI platform designed to reduce teacher's workloads",
+   "publisher": "Government of Western Australia (media statement)",
+   "url": "https://www.wa.gov.au/government/media-statements/Cook%20Labor%20Government/%244.6-million-for-AI-platform-designed-to-reduce-teacher%27s-workloads-20260509",
+   "published": "2026-05-09",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I49",
+   "title": "AI pilot to help tackle WA teacher workloads (joint media release)",
+   "publisher": "Australian Government Minister for Education and WA Minister for Education",
+   "url": "https://ministers.education.gov.au/clare/ai-pilot-help-tackle-wa-teacher-workloads",
+   "published": "2024-08-12",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I50",
+   "title": "Update on Turnitin AI detection tool",
+   "publisher": "Curtin University (student news)",
+   "url": "https://www.curtin.edu.au/news/oasis-news/update-on-turnitin-ai-detection-tool/",
+   "published": "2025-09-04",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I51",
+   "title": "GenAI use at Curtin",
+   "publisher": "Curtin University",
+   "url": "https://www.curtin.edu.au/students/study-support/genai-use-at-curtin/",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I52",
+   "title": "Expansion of AI education tool trial delivers more time for teachers in our classrooms",
+   "publisher": "NSW Government (media release, Deputy Premier and Minister for Education)",
+   "url": "https://www.nsw.gov.au/media-releases/expansion-of-ai-education-tool-trial-delivers-more-time-for-teachers-our-classrooms",
+   "published": "2024-09-16",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I53",
+   "title": "NSW to roll out purpose-built AI education tool to all public school students from Year 5",
+   "publisher": "NSW Government (ministerial release)",
+   "url": "https://www.nsw.gov.au/ministerial-releases/nsw-to-roll-out-purpose-built-ai-education-tool-to-all-public-school-students-from-year-5",
+   "published": "2025-09-23",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I54",
+   "title": "Student use of NSWEduChat",
+   "publisher": "NSW Department of Education",
+   "url": "https://education.nsw.gov.au/schooling/parents-and-carers/artificial-intelligence/student-use-of-nsweduchat",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I55",
+   "title": "Frequently asked questions about the two-lane approach to assessment in the age of AI (Adam Bridgeman and Danny Liu)",
+   "publisher": "The University of Sydney (Teaching@Sydney)",
+   "url": "https://educational-innovation.sydney.edu.au/teaching@sydney/frequently-asked-questions-about-the-two-lane-approach-to-assessment-in-the-age-of-ai/",
+   "published": "2024-07-02",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I56",
+   "title": "ChatGPT in lesson preparation – Teacher Choices trial (project page)",
+   "publisher": "Education Endowment Foundation",
+   "url": "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/choices-in-edtech-using-generative-ai-chatgpt-for-ks3-science-lesson-preparation-2024-teacher-choices-trial",
+   "published": "2024-12-12",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I57",
+   "title": "ChatGPT in lesson preparation: A Teacher Choices Trial, evaluation report (NFER)",
+   "publisher": "Education Endowment Foundation",
+   "url": "https://d2tic4wvo1iusb.cloudfront.net/production/documents/projects/chatgpt_in_lesson_planning_-_evaluation_report.pdf",
+   "published": "2024-12-12",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I58",
+   "title": "ABC News is bringing more regional stories to audiences using AI with journalist oversight",
+   "publisher": "ABC News",
+   "url": "https://www.abc.net.au/news/2026-06-30/abc-news-bringing-more-regional-stories-to-audiences-using-ai/106831202",
+   "published": "2026-06-30",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I59",
+   "title": "Using AI tools in ABC content (editorial guidance note)",
+   "publisher": "ABC Editorial Policies",
+   "url": "https://www.abc.net.au/edpols/using-ai-tools-in-abc-content/104367478",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I60",
+   "title": "AI disclosure required under new commercial radio rules",
+   "publisher": "Australian Communications and Media Authority",
+   "url": "https://www.acma.gov.au/articles/2026-02/ai-disclosure-required-under-new-commercial-radio-rules",
+   "published": "2026-02-10",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I61",
+   "title": "CRA welcomes registration of the new Commercial Radio Code of Practice",
+   "publisher": "Commercial Radio & Audio (CRA)",
+   "url": "https://cra.au/en/media-releases/cra-welcomes-registration-of-the-new-commercial-radio-code-of-practice",
+   "published": "2026-02-10",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I62",
+   "title": "Standards around generative AI",
+   "publisher": "The Associated Press",
+   "url": "https://www.ap.org/the-definitive-source/behind-the-news/standards-around-generative-ai/",
+   "published": "2023-08-15",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I63",
+   "title": "AI at AP",
+   "publisher": "The Associated Press",
+   "url": "https://www.ap.org/solutions/artificial-intelligence/",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I64",
+   "title": "CNET Is Testing an AI Engine. Here's What We've Learned, Mistakes and All (Connie Guglielmo)",
+   "publisher": "CNET",
+   "url": "https://www.cnet.com/tech/cnet-is-testing-an-ai-engine-heres-what-weve-learned-mistakes-and-all/",
+   "published": "2023-01-25",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I65",
+   "title": "Inquiry into AI and Data Centres (AI supplementary submission) – Senate Environment and Communications References Committee",
+   "publisher": "Australian Institute of Architects",
+   "url": "https://www.architecture.com.au/wp-content/uploads/Senate-Inquiry-AI-and-Data-Centres-AI_RAIA-31082026.pdf",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I66",
+   "title": "Second RIBA AI Report shows surge in usage among UK architects",
+   "publisher": "Royal Institute of British Architects",
+   "url": "https://www.riba.org/news/second-riba-ai-report-shows-surge-in-usage-among-uk-architects/",
+   "published": "2025-06-27",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I67",
+   "title": "RIBA AI Report 2025",
+   "publisher": "Royal Institute of British Architects",
+   "url": "https://www.riba.org/media/uqmlay5m/riba-ai-report-2025-final.pdf",
+   "published": "2025-06-27",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I68",
+   "title": "Towards Artificial Intelligence in Architecture: How machine learning can change the way we approach design",
+   "publisher": "Foster + Partners (Plus Journal)",
+   "url": "https://www.fosterandpartners.com/insights/towards-artificial-intelligence-in-architecture-how-machine-learning-can-change-the-way-we-approach-design",
+   "published": "2021-03-29",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I69",
+   "title": "Re: Zarya of the Dawn (Registration # VAu001480196), letter to Van Lindberg, Taylor English Duma LLP",
+   "publisher": "United States Copyright Office",
+   "url": "https://www.copyright.gov/docs/zarya-of-the-dawn.pdf",
+   "published": "2023-02-21",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I70",
+   "title": "Minns Labor Government delivers NSW renters landmark protections against privacy breaches and misleading rental ads",
+   "publisher": "NSW Government (ministerial release)",
+   "url": "https://www.nsw.gov.au/ministerial-releases/renters-get-landmark-protections-against-privacy-breaches-and-misleading-rental-ads",
+   "published": "2026-09-25",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I71",
+   "title": "Generative AI Guidance for Real Estate Licensees",
+   "publisher": "Real Estate Authority (New Zealand)",
+   "url": "https://www.rea.govt.nz/assets/2024-Uploads/REA-Generative-AI-Guidance-for-Real-Estate-Licensees_November-2024.pdf",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I72",
+   "title": "Responsible use of artificial intelligence in surveying practice (RICS professional standard, global 1st edition)",
+   "publisher": "Royal Institution of Chartered Surveyors",
+   "url": "https://www.rics.org/content/dam/ricsglobal/documents/standards/Responsible-use-of-artificial-intelligence-in-surveying-practice_September-2025.pdf",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I74",
+   "title": "Precision robotic spot-spraying: Reducing herbicide use and enhancing environmental outcomes in sugarcane (Rahimi Azghadi M, Olsen A, Wood J, Saleh A, Calvert B, Granshaw T, Fillols E, Philippa B), Computers and Electronics in Agriculture 235 (2025) 110365, doi 10.1016/j.compag.2025.110365",
+   "publisher": "Computers and Electronics in Agriculture",
+   "url": "https://researchonline.jcu.edu.au/89739/1/89739.pdf",
+   "published": "2025-04-16",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I75",
+   "title": "A battle to watch: AI eyes versus weeds",
+   "publisher": "GRDC GroundCover",
+   "url": "https://groundcover.grdc.com.au/weeds-pests-diseases/weeds/a-battle-to-watch-ai-eyes-versus-weeds",
+   "published": "2023-06-16",
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I76",
+   "title": "Automated detection takes guesswork from fungicide response",
+   "publisher": "GRDC GroundCover",
+   "url": "https://groundcover.grdc.com.au/weeds-pests-diseases/diseases/automated-detection-takes-guesswork-from-fungicide-response",
+   "published": "2024-06-03",
+   "read": "19 Nov 2026",
+   "vendorAccount": true
+  },
+  {
+   "id": "I77",
+   "title": "Australian Farm Data Code, Edition 2 (May 2023)",
+   "publisher": "National Farmers' Federation",
+   "url": "https://nff.org.au/wp-content/uploads/2023/06/NFF-Australian-Farm-Data-Code-v2-May-2023.pdf",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  },
+  {
+   "id": "I78",
+   "title": "Australian Farm Data Code (program page)",
+   "publisher": "National Farmers' Federation",
+   "url": "https://nff.org.au/initiatives/projects/australian-farm-data-code/",
+   "published": null,
+   "read": "19 Nov 2026",
+   "vendorAccount": false
+  }
+ ],
+ "gaps": [
+  {
+   "industry": "law",
+   "text": "The judgments in the solicitor’s case and a related one are on AustLII, which blocks automated readers. The law cards rely on the regulator’s statement and UNSW’s summary of the cases instead."
+  },
+  {
+   "industry": "law",
+   "text": "A WA lawyer was reportedly referred to the Legal Practice Board of WA over AI-generated citations in 2025. We couldn’t open the judgment, so that case isn’t here."
+  },
+  {
+   "industry": "health",
+   "text": "No Australian health service has published measured time savings from an AI scribe trial that we could find."
+  },
+  {
+   "industry": "health",
+   "text": "The MASAI trial is often reported as finding 29% more cancers. That’s the paper’s detection ratio of 1.29, so the card gives the counts instead."
+  },
+  {
+   "industry": "finance",
+   "text": "News reports say Deloitte refunded part of its fee for the DEWR review. We found no government record of a refund, so the card leaves it out."
+  },
+  {
+   "industry": "finance",
+   "text": "CommBank’s figures for falling scam losses come from several measures, and AI is only one of them, so they aren’t used."
+  },
+  {
+   "industry": "government",
+   "text": "The Copilot trial is often summarised as more than 7,600 staff in over 60 agencies. The DTA’s full report says over 5,765 licences and over 50 agencies, so the card uses the report."
+  },
+  {
+   "industry": "engineering",
+   "text": "We found no Australian construction company publishing measured results from its own AI use."
+  },
+  {
+   "industry": "mining",
+   "text": "Three of the four mining cards are about autonomous equipment, which the companies and the regulator call autonomous rather than AI. We found few measured uses of AI in WA mining from a primary source."
+  },
+  {
+   "industry": "education",
+   "text": "There’s no card about AI going wrong in teaching. We couldn’t confirm a case from a primary source."
+  },
+  {
+   "industry": "media",
+   "text": "Other outlets reported that 41 of CNET’s 77 stories were corrected. CNET’s own note gives no number, so the card doesn’t either."
+  },
+  {
+   "industry": "media",
+   "text": "News reports in July 2026 say the ABC is piloting Claude with 100 staff. We didn’t find the ABC’s own announcement, so it isn’t used."
+  },
+  {
+   "industry": "architecture",
+   "text": "No Australian architecture practice, the Institute or a registration board has published measured results of AI use that we could find."
+  },
+  {
+   "industry": "architecture",
+   "text": "The comic book decision is US law. Australian copyright in AI-generated work isn’t covered here."
+  },
+  {
+   "industry": "real-estate",
+   "text": "No Australian agency, platform or industry body has published measured results of AI use that we could find. An agency’s own marketing isn’t counted here."
+  },
+  {
+   "industry": "real-estate",
+   "text": "We found no WA guidance on AI-edited listing photos. The NSW law covers rental ads, and it doesn’t cover sales listings."
+  },
+  {
+   "industry": "agriculture",
+   "text": "We found no documented case of AI going wrong in Australian agriculture from a primary source."
+  }
+ ]
+}

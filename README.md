@@ -1,6 +1,6 @@
 # C4Site open research
 
-The research behind [c4site.com.au](https://c4site.com.au): the tool guides, where your data goes, what the rules say, the AI answers we checked, the templates and the change log. Every fact names the page it came from and the date we read it.
+This is the research behind [c4site.com.au](https://c4site.com.au). Each folder below matches a page on the site, and every fact names the page it came from and the date we read it.
 
 It's free to reuse under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Please credit "C4Site, c4site.com.au". The licence's text is in `LICENSE`, and `NOTICE.md` covers credit and the words we quote.
 
@@ -11,6 +11,8 @@ It's free to reuse under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0
 | `guides/` | One research file per tool guide (19 tools), every line tagged with its source, plus each connection's steps as JSON. | [AI in your tools](https://c4site.com.au/ai-in-your-tools/) |
 | `data/` | Each AI assistant and plan: training, retention, storage, admin controls and human review, as JSON and CSV, with sources. | [Where your data goes](https://c4site.com.au/where-your-data-goes/) |
 | `rules/` | What Australian regulators, courts, governments and education bodies have published about AI, as JSON and CSV. It reports. General information, not legal advice. | [What the rules say](https://c4site.com.au/what-the-rules-say/) |
+| `industries/` | Each of the 53 cases from 12 industries, with the guardrails people set and the sources, as JSON and CSV. | [How industries use AI](https://c4site.com.au/how-industries-use-ai/) |
+| `universities/` | The page's points on students and AI, and each Perth university's rules, as JSON and CSV, with sources. | [AI at universities](https://c4site.com.au/ai-policy-for-universities/) |
 | `it-sounded-right/` | Every question we asked local AI models, every answer word for word, the settings, the answer key with its sources, and our marks. `ask.py` reruns it. | [It sounded right](https://c4site.com.au/it-sounded-right/) |
 | `templates/` | A one-page AI policy, a never-paste list, an AI tools register and lines for saying AI helped, as Word and Markdown. | [Templates](https://c4site.com.au/templates/) |
 | `changes/` | When each guide was checked, and what changed in the tools since. | [What's changed](https://c4site.com.au/ai-in-your-tools/changes/) |

@@ -1,0 +1,806 @@
+{
+ "checked": "2026-11-19",
+ "headlineFigures": [
+  {
+   "figure": "91%",
+   "words": "of students said they worried about breaking the rules on AI.",
+   "src": [
+    "S67"
+   ]
+  },
+  {
+   "figure": "40%",
+   "words": "said they’d used AI in an assessment when they weren’t allowed to.",
+   "src": [
+    "S67"
+   ]
+  }
+ ],
+ "holdBack": [
+  {
+   "text": "In the survey’s 2026 round, which more than 10,000 students answered, 56% said they had avoided AI out of fear of being caught.",
+   "src": [
+    "S69"
+   ]
+  },
+  {
+   "text": "In 2024, about a third said their university gave them enough guidance to use AI in their studies. Fewer than a quarter said the same about using it in their future profession.",
+   "src": [
+    "S67"
+   ]
+  },
+  {
+   "text": "At the University of Queensland in 2026, 26% of students felt prepared to use AI in their future professions, up from 17% in 2024.",
+   "src": [
+    "S66"
+   ]
+  },
+  {
+   "text": "Jobs and Skills Australia says graduates are likely to work alongside generative AI, and that people should get at least basic AI literacy through their education.",
+   "src": [
+    "S72"
+   ]
+  },
+  {
+   "text": "Microsoft’s own 2024 survey found 84% of Australian workers used generative AI at work. About three quarters of the Australian business leaders it asked said they wouldn’t hire someone without AI skills.",
+   "src": [
+    "S75",
+    "S74"
+   ]
+  },
+  {
+   "text": "Not every source sees the change coming fast. Only 14% of employers told the Australian Association of Graduate Employers that AI is changing the number or type of early-career roles they offer, and Jobs and Skills Australia found no evidence yet of entry-level jobs disappearing.",
+   "src": [
+    "S73",
+    "S72"
+   ]
+  }
+ ],
+ "rushAhead": [
+  {
+   "text": "In the 2024 survey, 83% of students used AI for their studies, and 44% used it every week or every day.",
+   "src": [
+    "S67"
+   ]
+  },
+  {
+   "text": "UNSW recorded 530 cases of generative AI misuse in 2024, up from 166 in 2023. It says most involved tools like ChatGPT, or translation and editing tools such as Grammarly.",
+   "src": [
+    "S61"
+   ]
+  },
+  {
+   "text": "Notre Dame’s policy counts grammar checkers, translation tools and paraphrasing tools as AI, unless an assessment expressly allows them.",
+   "src": [
+    "S48"
+   ]
+  },
+  {
+   "text": "Uploading can be the breach. Curtin tells students not to upload lecture slides or assessment questions to AI tools. Notre Dame warns that putting library articles into a public AI tool may breach the library’s licence.",
+   "src": [
+    "S29",
+    "S52"
+   ]
+  },
+  {
+   "text": "The privacy regulator, the OAIC, advises organisations not to put personal information, especially sensitive information, into publicly available AI tools.",
+   "src": [
+    "S71"
+   ]
+  },
+  {
+   "text": "TEQSA says an AI detector’s score alone isn’t enough to bring a misconduct case, and that detectors can wrongly flag a person’s own writing. ECU tells students to keep their drafts and notes for that reason.",
+   "src": [
+    "S10",
+    "S42"
+   ]
+  }
+ ],
+ "perthUniversities": [
+  {
+   "key": "uwa",
+   "name": "The University of Western Australia",
+   "short": "UWA",
+   "rows": [
+    {
+     "q": "Who decides?",
+     "a": "The Unit Coordinator sets one of three tiers for each assessment: no AI, AI assistance or collaboration, or full embedded AI. The student FAQ says AI may be used only where it’s explicitly permitted.",
+     "src": [
+      "S19",
+      "S20"
+     ]
+    },
+    {
+     "q": "How do students say they used it?",
+     "a": "They always cite and reference it, with an acknowledgement, a citation or both.",
+     "src": [
+      "S20",
+      "S25"
+     ]
+    },
+    {
+     "q": "Are some tasks secure and others open?",
+     "a": "Its Academic Integrity Policy says unsupervised assessments “shall not be restricted” in their use of AI tools. That reads differently from the student FAQ, so it’s worth checking with the Unit Coordinator.",
+     "src": [
+      "S21",
+      "S22"
+     ]
+    },
+    {
+     "q": "What does it give students?",
+     "a": "Students get Microsoft Copilot Chat through their UWA login, and it’s the only AI tool allowed to summarise UWA’s own material. Every student can take a free four-hour course called AI Literacy for All. UWA has blocked DeepSeek on its networks and devices.",
+     "src": [
+      "S24",
+      "S26"
+     ]
+    },
+    {
+     "q": "Does it use AI detection?",
+     "a": "No. UWA decided not to use AI detection tools, which it calls unreliable and unsuitable for high-stakes decisions, and it ran about 98,000 supervised exam sittings in 2025.",
+     "src": [
+      "S27"
+     ]
+    }
+   ],
+   "updated": "The policy now in force was approved on 23 September 2026, and a new version applies from 1 January 2027."
+  },
+  {
+   "key": "curtin",
+   "name": "Curtin University",
+   "short": "Curtin",
+   "rows": [
+    {
+     "q": "Who decides?",
+     "a": "It varies by unit. Students can’t use AI in any assessment unless the Unit Coordinator gives written permission, though they can use it for general study.",
+     "src": [
+      "S28",
+      "S29",
+      "S30"
+     ]
+    },
+    {
+     "q": "How do students say they used it?",
+     "a": "They cite it in the text and add a declaration after the reference list that names the tools, how they used them and the prompts.",
+     "src": [
+      "S29"
+     ]
+    },
+    {
+     "q": "Are some tasks secure and others open?",
+     "a": "Yes. Curtin runs two lanes. Since 1 January 2026 AI can be banned in supervised Lane 1 tasks, and Curtin calls banning it in unsupervised Lane 2 tasks inadvisable.",
+     "src": [
+      "S31"
+     ]
+    },
+    {
+     "q": "What does it give students?",
+     "a": "Students get Microsoft Copilot and Adobe Express Premium with their login, and Curtin’s own Grammarly is the only version accepted in assessments. Students who choose not to use AI aren’t penalised.",
+     "src": [
+      "S34",
+      "S29",
+      "S30"
+     ]
+    },
+    {
+     "q": "Does it use AI detection?",
+     "a": "No. Turnitin’s AI detection has been off since 1 January 2026, and third-party detectors aren’t permitted.",
+     "src": [
+      "S33",
+      "S31"
+     ]
+    }
+   ],
+   "updated": "Its student pages were updated on 10 April and 9 June 2026."
+  },
+  {
+   "key": "murdoch",
+   "name": "Murdoch University",
+   "short": "Murdoch",
+   "rows": [
+    {
+     "q": "Who decides?",
+     "a": "Each Unit Outline sets how AI may be used. Students have to confirm the level allowed, and unauthorised use may be treated as misconduct.",
+     "src": [
+      "S36",
+      "S37"
+     ]
+    },
+    {
+     "q": "How do students say they used it?",
+     "a": "They follow the referencing style. Murdoch’s APA guide says to credit AI in the text and the reference list, and to say how it was used, even for editing or grammar.",
+     "src": [
+      "S82"
+     ]
+    },
+    {
+     "q": "Are some tasks secure and others open?",
+     "a": "We didn’t find a two-lane approach on Murdoch’s public pages. Its guiding principles for AI are on its staff intranet.",
+     "src": [
+      "S36",
+      "S37"
+     ]
+    },
+    {
+     "q": "What does it give students?",
+     "a": "Every student and staff member gets Microsoft Copilot. Some units have their own AI agents, and AI Essentials modules are open to all students.",
+     "src": [
+      "S38",
+      "S36"
+     ]
+    },
+    {
+     "q": "Does it use AI detection?",
+     "a": "No. Murdoch turned off Turnitin’s AI detection reports to line up with other WA universities. Concerns about AI use can still go to an academic integrity investigation.",
+     "src": [
+      "S36"
+     ]
+    }
+   ],
+   "updated": "Its announcement to students is dated 28 May 2026, and its library guide was updated on 18 November 2026."
+  },
+  {
+   "key": "ecu",
+   "name": "Edith Cowan University",
+   "short": "ECU",
+   "rows": [
+    {
+     "q": "Who decides?",
+     "a": "Students check with their unit instructor. ECU tells them not to put AI-generated outputs directly into classwork or assessments, and to use AI for research and study instead.",
+     "src": [
+      "S40"
+     ]
+    },
+    {
+     "q": "How do students say they used it?",
+     "a": "Any AI help, even for research, needs a written acknowledgement at the end of the assessment. Not crediting AI counts as plagiarism, and there’s no penalty for using it in the ways ECU allows.",
+     "src": [
+      "S42",
+      "S40"
+     ]
+    },
+    {
+     "q": "Are some tasks secure and others open?",
+     "a": "We didn’t find a two-lane approach. ECU’s framework for AI literacy marks the tasks where AI is built in on purpose with what it calls AI Stamps.",
+     "src": [
+      "S44"
+     ]
+    },
+    {
+     "q": "What does it give students?",
+     "a": "Students get Microsoft Copilot with their ECU login, which ECU says keeps their data inside ECU. It also runs Copilot workshops and drop-in sessions.",
+     "src": [
+      "S41",
+      "S45"
+     ]
+    },
+    {
+     "q": "Does it use AI detection?",
+     "a": "We couldn’t find ECU’s position on AI detection. It warns students they may be wrongly identified as having used AI.",
+     "src": [
+      "S42"
+     ]
+    }
+   ],
+   "updated": "Its library guides were updated on 17 November 2026, and its misconduct rules were amended in June 2025."
+  },
+  {
+   "key": "notre-dame",
+   "name": "The University of Notre Dame Australia",
+   "short": "Notre Dame",
+   "rows": [
+    {
+     "q": "Who decides?",
+     "a": "AI is allowed only where the course coordinator and the course materials say so. Using it without permission to produce an assessment is a breach of academic integrity.",
+     "src": [
+      "S47",
+      "S48"
+     ]
+    },
+    {
+     "q": "How do students say they used it?",
+     "a": "Where AI is allowed, a written acknowledgement is required, listing the tool, how it was used and the prompts.",
+     "src": [
+      "S51"
+     ]
+    },
+    {
+     "q": "Are some tasks secure and others open?",
+     "a": "We didn’t find a two-lane label. Its assessment procedure from 29 June 2026 asks for clear statements on AI use, and for learning outcomes to be covered by secure or supervised assessments.",
+     "src": [
+      "S49",
+      "S50"
+     ]
+    },
+    {
+     "q": "What does it give students?",
+     "a": "New students must complete academic integrity modules. We couldn’t confirm whether students get Microsoft Copilot.",
+     "src": [
+      "S47"
+     ]
+    },
+    {
+     "q": "Does it use AI detection?",
+     "a": "We couldn’t find Notre Dame’s position on AI detection.",
+     "src": []
+    }
+   ],
+   "updated": "Its Academic Integrity Policy has applied since 8 November 2023 and lists a review date of 1 March 2026."
+  }
+ ],
+ "regulator": [
+  {
+   "text": "TEQSA’s November 2023 paper on assessment reform says there’s “little value in ignoring AI or implementing blanket bans on particular tools”. It says learning to work with AI is fast becoming a critical capability for graduates, and that it isn’t a TEQSA guidance note.",
+   "src": [
+    "S1"
+   ]
+  },
+  {
+   "text": "The same paper says it appears almost impossible to reliably detect whether AI was used to produce an assessment.",
+   "src": [
+    "S1"
+   ]
+  },
+  {
+   "text": "In 2024 TEQSA asked every registered provider for a plan to deal with the risk AI poses to the integrity of its awards, and every provider sent one.",
+   "src": [
+    "S5",
+    "S4"
+   ]
+  },
+  {
+   "text": "Its 2025 follow-up describes the ways providers are responding: assuring learning across a whole degree, putting at least one secure task in every unit, or a mix of the two. It warns it may be too easy to fall back on more timed exams, which can be inequitable.",
+   "src": [
+    "S2"
+   ]
+  },
+  {
+   "text": "TEQSA tells students that, depending on their university, AI may be banned for a task, or encouraged or even required, and that using it outside the rules can lead to a misconduct finding.",
+   "src": [
+    "S8"
+   ]
+  },
+  {
+   "text": "The Australian Framework for Artificial Intelligence in Higher Education, published in December 2025, says students should be able to make informed choices about whether to use AI.",
+   "src": [
+    "S12"
+   ]
+  }
+ ],
+ "ruleForEveryTask": [
+  {
+   "text": "Monash puts a statement on every assessment saying whether AI can be used without limits, in guided ways or not at all. A ban has to rest on stated educational reasons.",
+   "src": [
+    "S56",
+    "S57"
+   ]
+  },
+  {
+   "text": "UNSW labels each assessment “Can use AI”, “Can’t use AI” or “Must use AI”, and uses the last where knowing how to use AI is itself what the course teaches.",
+   "src": [
+    "S59"
+   ]
+  },
+  {
+   "text": "Curtin asks educators to explain why some tasks are secure and others aren’t. It also asks them to declare their own AI use, and to offer another way for students who’d rather not use it.",
+   "src": [
+    "S31"
+   ]
+  },
+  {
+   "text": "UWA and Murdoch both offer an AI course to every student, and ECU runs Copilot workshops and drop-in sessions.",
+   "src": [
+    "S26",
+    "S36",
+    "S45"
+   ]
+  },
+  {
+   "text": "Between the survey’s 2024 and 2026 rounds, the share of students who said they had enough guidance rose from 36% to 47%, and the share who avoided AI for fear of being caught fell seven points to 56%.",
+   "src": [
+    "S69"
+   ]
+  },
+  {
+   "text": "UQ students rated assessments that restrict AI as better for deep learning than ones that allow it, and three in four agreed assessment should avoid depending on AI.",
+   "src": [
+    "S66"
+   ]
+  }
+ ],
+ "gaps": [
+  "We couldn’t find how UWA fits its policy’s line on unsupervised tasks together with its student FAQ, or when that line was added. Its 2026 student guide to AI tools returned an error page.",
+  "ECU’s current misconduct rules sit behind a sign-in, so we haven’t read their exact wording on AI.",
+  "We couldn’t find ECU’s or Notre Dame’s position on AI detection, or whether Notre Dame students get Microsoft Copilot.",
+  "Murdoch’s guiding principles for AI are on its staff intranet, so we haven’t read them.",
+  "No Perth university has published counts of AI misconduct cases that we could find.",
+  "The 2024 student survey gives its sample as 8,028 in one summary and 8,458 in another. We used the summary the figures come from.",
+  "UQ doesn’t say how many of its students answered. We took the graduate employers’ figures from their media release and haven’t read the full report.",
+  "Two vendors’ figures were left out because the companies sell AI products to universities."
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "title": "Assessment reform for the age of artificial intelligence",
+   "publisher": "TEQSA (Lodge, Howard, Bearman, Dawson & Associates)",
+   "url": "https://www.teqsa.gov.au/guides-resources/resources/corporate-publications/assessment-reform-age-artificial-intelligence",
+   "updated": "2023-11-23",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S2",
+   "title": "Enacting assessment reform in a time of artificial intelligence",
+   "publisher": "TEQSA (Lodge, Bearman, Dawson, Gniel, Harper, Liu, McLean, Ucnik)",
+   "url": "https://www.teqsa.gov.au/guides-resources/resources/corporate-publications/enacting-assessment-reform-time-artificial-intelligence",
+   "updated": "2025-09-24",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S4",
+   "title": "Gen AI strategies for Australian higher education: Emerging practice (toolkit)",
+   "publisher": "TEQSA",
+   "url": "https://www.teqsa.gov.au/sites/default/files/2024-11/Gen-AI-strategies-emerging-practice-toolkit.pdf",
+   "updated": "2024-11-28",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S5",
+   "title": "Request for information: Addressing the risk of artificial intelligence",
+   "publisher": "TEQSA",
+   "url": "https://www.teqsa.gov.au/guides-resources/higher-education-good-practice-hub/artificial-intelligence/request-information-addressing-risk-artificial-intelligence",
+   "updated": "2024-11-28",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S8",
+   "title": "Artificial intelligence: advice for students",
+   "publisher": "TEQSA",
+   "url": "https://www.teqsa.gov.au/students/artificial-intelligence-advice-students",
+   "updated": "2024-07-29",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S10",
+   "title": "Detecting plagiarism of AI-generated text in student assessments and securing take-home written assessments",
+   "publisher": "TEQSA Academic Integrity Toolkit (author Guy Curtis, UWA)",
+   "url": "https://www.teqsa.gov.au/guides-resources/protecting-academic-integrity/academic-integrity-toolkit/risks-academic-integrity-ai/detecting-plagiarism-ai-generated-text-student-assessments-and-securing-take-home-written-assessments",
+   "updated": "2026-05-08",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S12",
+   "title": "Australian Framework for Artificial Intelligence in Higher Education",
+   "publisher": "Australian Centre for Student Equity and Success (Lodge, Bower, Gulson, Henderson, Slade, Southgate)",
+   "url": "https://www.acses.edu.au/publication/australian-framework-for-artificial-intelligence-in-higher-education/",
+   "updated": "2025-12-08",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S19",
+   "title": "AI Assessment Guidelines (student), 2025",
+   "publisher": "University of Western Australia",
+   "url": "https://www.uwa.edu.au/about/-/media/project/uwa/uwa/students/academic-support/ai-assessment-guidelines-student_2025_final.pdf",
+   "updated": "2025-06-20",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S20",
+   "title": "Using ChatGPT and other AI tools in your assessments (askUWA)",
+   "publisher": "University of Western Australia",
+   "url": "https://ipoint.uwa.edu.au/app/answers/detail/a_id/3432/~/using-chatgpt-and-other-ai-tools-in-your-assessments",
+   "updated": "2026-07-13",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S21",
+   "title": "Academic Integrity Policy and Schedules (applies to 31 Dec 2026)",
+   "publisher": "University of Western Australia",
+   "url": "https://www.uwa.edu.au/policy/-/media/project/uwa/uwa/policy-library/policy/student-administration/academic-integrity/academic-integrity-policy-and-schedules-applies-to-31-dec-2026.pdf",
+   "updated": "2026-09-23",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S22",
+   "title": "Academic Integrity Policy and Schedules 1-4 (applies from 1 January 2027)",
+   "publisher": "University of Western Australia",
+   "url": "https://www.uwa.edu.au/policy/-/media/project/uwa/uwa/policy-library/policy/student-administration/academic-integrity/academic-integrity-policy-and-schedules1-4-applies-from-01-january-2027.pdf",
+   "updated": "2026-11-11",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S24",
+   "title": "Gen AI Tools – Artificial Intelligence (AI) Library Guide",
+   "publisher": "University of Western Australia Library",
+   "url": "https://guides.library.uwa.edu.au/artificial_intelligence/gen_AI_tools",
+   "updated": "2026-11-11",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S25",
+   "title": "Acknowledge and Reference AI – Artificial Intelligence (AI) Library Guide",
+   "publisher": "University of Western Australia Library",
+   "url": "https://guides.library.uwa.edu.au/artificial_intelligence/acknowledging_and_referencing_AI",
+   "updated": "2026-11-11",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S26",
+   "title": "AI Literacy for All course (Further Resources) – Artificial Intelligence (AI) Library Guide",
+   "publisher": "University of Western Australia Library",
+   "url": "https://guides.library.uwa.edu.au/artificial_intelligence/ai_literacy_course",
+   "updated": "2026-11-11",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S27",
+   "title": "What we are doing about AI at UWA",
+   "publisher": "University of Western Australia (Professor Guy Littlefair, DVC Education and Student Experience)",
+   "url": "https://www.uwa.edu.au/news/article/2026/february/what-we-are-doing-about-ai-at-uwa",
+   "updated": "2026-02-16",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S28",
+   "title": "GenAI use at Curtin",
+   "publisher": "Curtin University",
+   "url": "https://www.curtin.edu.au/students/study-support/genai-use-at-curtin/",
+   "updated": "2026-04-10",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S29",
+   "title": "Appropriate use of GenAI technologies",
+   "publisher": "Curtin University",
+   "url": "https://www.curtin.edu.au/students/essentials/rights/academic-integrity/gen-ai/",
+   "updated": "2026-06-09",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S30",
+   "title": "GenAI Guidance for Students (Assessment 2030 x Curtin Student Guild), 2026",
+   "publisher": "Curtin University, Office of the DVC Academic",
+   "url": "https://cdnm.heyzine.com/files/uploaded/75f6b85c48d6c20d81867c6c7e8849b267f83884-24.pdf",
+   "updated": "",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S31",
+   "title": "GenAI Guidance for Curtin Educators in 2026",
+   "publisher": "Curtin University, Office of the DVC Academic",
+   "url": "https://cdnc.heyzine.com/flip-book/pdf/c7405a144307b9679ffc150c5b7c100dc2786d69-12.pdf",
+   "updated": "",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S33",
+   "title": "Update on Turnitin AI-Detection Tool",
+   "publisher": "Curtin University (OASIS news)",
+   "url": "https://www.curtin.edu.au/news/oasis-news/update-on-turnitin-ai-detection-tool/",
+   "updated": "2025-09-04",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S34",
+   "title": "How to navigate Gen AI tools at Curtin",
+   "publisher": "Curtin University (OASIS news)",
+   "url": "https://www.curtin.edu.au/news/oasis-news/how-to-navigate-gen-ai-tools-at-curtin/",
+   "updated": "2025-07-23",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S36",
+   "title": "Using Generative AI in your studies",
+   "publisher": "Murdoch University (Professor Don Klinger, DVC Education)",
+   "url": "https://announcements.murdoch.edu.au/id/11294/",
+   "updated": "2026-05-28",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S37",
+   "title": "Generative AI and the Library – Generative AI tools for study and research",
+   "publisher": "Murdoch University Library",
+   "url": "https://libguides.murdoch.edu.au/genAI",
+   "updated": "2026-11-18",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S38",
+   "title": "Digital learning tools",
+   "publisher": "Murdoch University (myMurdoch)",
+   "url": "https://www.murdoch.edu.au/mymurdoch/support-advice/tools-apps",
+   "updated": "",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S40",
+   "title": "Principles for using Gen AI at ECU",
+   "publisher": "Edith Cowan University Library",
+   "url": "https://ecu.au.libguides.com/generative-ai/principles",
+   "updated": "2026-11-17",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S41",
+   "title": "Access Gen AI with MS Copilot",
+   "publisher": "Edith Cowan University Library",
+   "url": "https://ecu.au.libguides.com/generative-ai/copilot",
+   "updated": "2026-11-17",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S42",
+   "title": "6. Acknowledgement & Referencing – Generative AI and Copilot",
+   "publisher": "Edith Cowan University Library",
+   "url": "https://ecu.au.libguides.com/generative-ai/referencing",
+   "updated": "2026-11-17",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S44",
+   "title": "Developing AI Literacy in Higher Education: A Framework",
+   "publisher": "Edith Cowan University, Centre for Learning and Teaching (Dr Megan Ellyard)",
+   "url": "https://learningandteaching.ecu.edu.au/technology/developing-ai-literacy-in-higher-education/",
+   "updated": "2026-07-28",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S45",
+   "title": "Generative AI in Learning (student intranet)",
+   "publisher": "Edith Cowan University",
+   "url": "https://intranet.ecu.edu.au/student/my-studies/study-assistance/generative-ai-in-learning",
+   "updated": "2025-08-05",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S47",
+   "title": "Academic integrity (students)",
+   "publisher": "University of Notre Dame Australia",
+   "url": "https://www.notredame.edu.au/students/support/study-support/academic-integrity",
+   "updated": "2026-10-09",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S48",
+   "title": "Policy: Academic Integrity",
+   "publisher": "University of Notre Dame Australia",
+   "url": "https://www.notredame.edu.au/__data/assets/pdf_file/0028/357661/Policy-Academic-Integrity.pdf",
+   "updated": "",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S49",
+   "title": "Policy: Assessment in Higher Education and Enabling Coursework Programs",
+   "publisher": "University of Notre Dame Australia",
+   "url": "https://www.notredame.edu.au/__data/assets/pdf_file/0035/876617/Policy-Assessment-in-Higher-Education-and-Enabling-Coursework-Programs.pdf",
+   "updated": "",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S50",
+   "title": "Procedure: Assessment and Examinations",
+   "publisher": "University of Notre Dame Australia",
+   "url": "https://www.notredame.edu.au/__data/assets/pdf_file/0034/876616/Procedure-Assessment-and-Examinations.pdf",
+   "updated": "2026-06-29",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S51",
+   "title": "Guidelines for use – Generative artificial intelligence (Gen-AI)",
+   "publisher": "University of Notre Dame Australia Library",
+   "url": "https://library.nd.edu.au/gen_ai/overview",
+   "updated": "2026-02-09",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S52",
+   "title": "Copyright and Gen-AI",
+   "publisher": "University of Notre Dame Australia Library",
+   "url": "https://library.nd.edu.au/gen_ai/copyright",
+   "updated": "",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S56",
+   "title": "AI and assessments (AI Hub)",
+   "publisher": "Monash University, Student Academic Success",
+   "url": "https://www.monash.edu/student-academic-success/ai-hub/ai-and-assessments",
+   "updated": "2026-08-10",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S57",
+   "title": "Assessment Regime Procedure (version 12.0)",
+   "publisher": "Monash University",
+   "url": "https://publicpolicydms.monash.edu/Monash/documents/1935756",
+   "updated": "2026-07-27",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S59",
+   "title": "Why UNSW is adopting a new approach to assessment",
+   "publisher": "UNSW Sydney (Inside UNSW)",
+   "url": "https://www.inside.unsw.edu.au/education/why-unsw-adopting-new-approach-assessment",
+   "updated": "2026-10-13",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S61",
+   "title": "Student Conduct and Complaints 2024 (annual report)",
+   "publisher": "UNSW Sydney, Conduct and Integrity",
+   "url": "https://www.unsw.edu.au/content/dam/pdfs/planning-assurance/conduct-integrity/2025-09-2024-student-conduct-and-complaints-annual-report-public2.pdf",
+   "updated": "",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S66",
+   "title": "Introducing AI and what students think about it",
+   "publisher": "University of Queensland, Institute for Teaching and Learning Innovation",
+   "url": "https://itali.uq.edu.au/node/11631",
+   "updated": "2026-11-02",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S67",
+   "title": "Students perspectives on AI in higher education (2024 survey insights)",
+   "publisher": "AI in Higher Education: Students and AI Project (Monash, Deakin, UQ, UTS)",
+   "url": "https://aiinhe.org/wp-content/uploads/2024/10/aiinhe_surveyinsights.pdf",
+   "updated": "2024-10-22",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S69",
+   "title": "Most uni students now use AI, but that doesn't mean they like it",
+   "publisher": "University of Wollongong (Kelly Matthews, UOW, and Tim Fawns, Monash; republished from The Conversation)",
+   "url": "https://www.uow.edu.au/media/2026/most-uni-students-now-use-ai-but-that-doesnt-mean-they-likeit.php",
+   "updated": "2026-11-10",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S71",
+   "title": "Guidance on privacy and the use of commercially available AI products",
+   "publisher": "Office of the Australian Information Commissioner",
+   "url": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products",
+   "updated": "2025-01-17",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S72",
+   "title": "Our Gen AI Transition: Implications for Work and Skills",
+   "publisher": "Jobs and Skills Australia",
+   "url": "https://www.jobsandskills.gov.au/download/19803/our-gen-ai-transition-implications-work-and-skills/3364/our-gen-ai-transition/pdf",
+   "updated": "2025-08-14",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S73",
+   "title": "AI is changing graduate jobs, not killing them: new research (The Future of Early Careers)",
+   "publisher": "Australian Association of Graduate Employers",
+   "url": "https://aage.com.au/media/13708662",
+   "updated": "2026-09-21",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S74",
+   "title": "2024 Work Trend Index: AI at work is here. Now comes the hard part",
+   "publisher": "Microsoft and LinkedIn",
+   "url": "https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part",
+   "updated": "2024-05-08",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S75",
+   "title": "Work Trend Index 2024: AI at work is here. Now comes the hard part (Australian results)",
+   "publisher": "Microsoft Australia News Centre",
+   "url": "https://news.microsoft.com/en-au/features/ai-at-work-is-here-now-comes-the-hard-part/",
+   "updated": "2024-05-09",
+   "read": "19 Nov 2026"
+  },
+  {
+   "id": "S82",
+   "title": "AI Generated Content – APA – Referencing Guide",
+   "publisher": "Murdoch University Library",
+   "url": "https://libguides.murdoch.edu.au/APA/generativeAI",
+   "updated": "2026-08-19",
+   "read": "20 Nov 2026"
+  }
+ ]
+}
